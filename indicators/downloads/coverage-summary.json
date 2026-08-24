@@ -1,0 +1,40 @@
+{
+  "release": "1.0.0-bounded",
+  "cutoff": "2026-08-24",
+  "definition": "All catalogue records satisfying the published inclusion rule for each Release 1 source, plus the curated priority collection.",
+  "totalRecords": 3108,
+  "priorityRecords": 80,
+  "sourceManifestations": 3028,
+  "declaredSources": 19,
+  "includedSources": 5,
+  "sourceCompleteCatalogues": 4,
+  "counts": {
+    "WHO_IMR": 1320,
+    "WB_HEALTH": 658,
+    "UN_SDG": 251,
+    "UNICEF_DW": 799,
+    "PRIORITY": 80,
+    "WHO_CORE100": 0,
+    "OECD_HEALTH": 0,
+    "EU_ECHI": 0,
+    "PAHO_PLISA": 0,
+    "JMP": 0,
+    "UNAIDS": 0,
+    "WHO_GLASS": 0,
+    "ILOSTAT_OSH": 0,
+    "WHO_SCORE": 0,
+    "CIHI": 0,
+    "AHRQ": 0,
+    "CDC_PLACES": 0,
+    "FINGERPRINTS": 0,
+    "IHME_GBD": 0
+  },
+  "metadataLevels": {
+    "E": 80,
+    "A": 1880,
+    "B": 1148
+  },
+  "averageCompleteness": 50,
+  "unresolvedMappings": 3028,
+  "statement": "Bounded-exhaustive for the four declared machine-readable/global catalogues at the cut-off date. It is not yet exhaustive across every authority in the source census."
+}
