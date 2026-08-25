@@ -2,7 +2,7 @@ const state = { indicators: [], filtered: [], visible: 24 };
 const $ = (id) => document.getElementById(id);
 const fields = ['search','geography','program','domain','type','source','pillar','sort'];
 
-fetch('./data/indicators.json').then(r => r.json()).then(data => {
+fetch('./data/indicators.json?v=1.1.0-india-subset', { cache: 'no-store' }).then(r => r.json()).then(data => {
   state.indicators = data.indicators || [];
   $('metric-indicators').textContent = state.indicators.length;
   $('metric-domains').textContent = new Set(state.indicators.map(x => x.domain)).size;
