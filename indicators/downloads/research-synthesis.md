@@ -30,7 +30,7 @@ This release contains every eligible catalogue record found in four declared glo
 - Many catalogue records provide discovery metadata but not full numerator, denominator, formula, frequency or disaggregation metadata.
 - Similar names across sources remain separate source manifestations until equivalence is methodologically reviewed.
 - Domain labels for harvested records are search-oriented rule-based classifications, not classifications asserted by the source authority.
-- Nineteen authorities are recorded in the Source Census. Four global catalogues are source-complete in Release 1; specialist, regional and national extensions remain scheduled for later releases.
+- Thirty-four source families are recorded in the Source Census. Four global catalogues are source-complete in Release 1; 15 authoritative Indian source families and other specialist or regional extensions remain scheduled for later releases.
 
 ## Maintenance rule
 

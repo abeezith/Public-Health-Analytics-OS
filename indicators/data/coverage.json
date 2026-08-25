@@ -5,7 +5,7 @@
   "totalRecords": 3108,
   "priorityRecords": 80,
   "sourceManifestations": 3028,
-  "declaredSources": 19,
+  "declaredSources": 34,
   "includedSources": 5,
   "sourceCompleteCatalogues": 4,
   "counts": {
@@ -27,7 +27,22 @@
     "AHRQ": 0,
     "CDC_PLACES": 0,
     "FINGERPRINTS": 0,
-    "IHME_GBD": 0
+    "IHME_GBD": 0,
+    "IND_HMIS_OGD": 0,
+    "IND_NHM_RMNCHA": 0,
+    "IND_NHM_UIP": 0,
+    "IND_NTEP": 0,
+    "IND_NACP": 0,
+    "IND_NCVBDC": 0,
+    "IND_NLEP": 0,
+    "IND_IDSP_IHIP": 0,
+    "IND_NP_NCD": 0,
+    "IND_NQAS": 0,
+    "IND_FDSI": 0,
+    "IND_ABDM": 0,
+    "IND_PMJAY": 0,
+    "IND_NFHS": 0,
+    "IND_CBHI_NHP": 0
   },
   "metadataLevels": {
     "E": 80,
@@ -36,5 +51,8 @@
   },
   "averageCompleteness": 50,
   "unresolvedMappings": 3028,
-  "statement": "Bounded-exhaustive for the four declared machine-readable/global catalogues at the cut-off date. It is not yet exhaustive across every authority in the source census."
+  "statement": "Bounded-exhaustive for the four declared machine-readable/global catalogues at the cut-off date. It is not yet exhaustive across every authority in the source census.",
+  "indiaSpecificRecords": 0,
+  "indiaSourceCensus": 15,
+  "indiaStatus": "No India-source-specific records in Release 1; authoritative programme sources are now scheduled for phased extraction."
 }
