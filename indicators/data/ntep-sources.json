@@ -1,0 +1,92 @@
+[
+  {
+    "id": "NTEP-EQA-2023",
+    "title": "Comprehensive Guidance for External Quality Assessment of TB Laboratories under NTEP",
+    "version": "Official PDF accessed 2026-08-25",
+    "scope": "Chapter 6 KPIs, case-finding/laboratory indicators and Annexures 6.1-6.4",
+    "access": "Public PDF",
+    "status": "Included - bounded chapters and annexures",
+    "url": "https://tbcindia.mohfw.gov.in/wp-content/uploads/2023/05/7236636542Comprehensive-Guidance-for-External-Quality-Assessment-of-TB-Laboratories-under-National-TB-Elimination-Programme.pdf"
+  },
+  {
+    "id": "NTEP-CBNAAT-XLS",
+    "title": "CBNAAT Monthly Lab Indicators workbook",
+    "version": "Official XLSX accessed 2026-08-25",
+    "scope": "CBNAAT monthly reporting elements",
+    "access": "Public XLSX",
+    "status": "Cross-checked; current PDF annexure used as primary",
+    "url": "https://tbcindia.mohfw.gov.in/wp-content/uploads/2023/05/585485341CBNAAT-Monthly-Lab-Indicators.xlsx"
+  },
+  {
+    "id": "NTEP-LAB-Q-XLS",
+    "title": "Quarterly Report on Laboratory Performance Indicators",
+    "version": "Official XLSX accessed 2026-08-25",
+    "scope": "Nineteen C&DST laboratory performance measures",
+    "access": "Public XLSX",
+    "status": "Included",
+    "url": "https://tbcindia.mohfw.gov.in/wp-content/uploads/2023/05/6042225208R-R_Quarterly-Report-on-Lab-Performance-Indicators.xlsx"
+  },
+  {
+    "id": "NTEP-DRTB-2024",
+    "title": "National Guidelines for Management of Drug Resistant TB",
+    "version": "November 2024",
+    "scope": "Section 6 recording, reporting and programme monitoring",
+    "access": "Public PDF",
+    "status": "Included - Section 6.2",
+    "url": "https://tbcindia.mohfw.gov.in/wp-content/uploads/2025/01/National-Guidelines-for-Management-of-DR-TB_Final-website.pdf"
+  },
+  {
+    "id": "NTEP-TMP-2023",
+    "title": "TB Mukt Panchayat Handbook",
+    "version": "Official handbook accessed 2026-08-25",
+    "scope": "Prerequisites, verification indicators and claim forms",
+    "access": "Public PDF",
+    "status": "Included - verification indicators",
+    "url": "https://tbcindia.mohfw.gov.in/wp-content/uploads/2023/05/956455182TB-Mukt-Panchayat-Handbook.pdf"
+  },
+  {
+    "id": "NTEP-TBREPORT-2024",
+    "title": "India TB Report 2024",
+    "version": "2024 edition",
+    "scope": "National/state performance, TB Index, programme chapters and appendices",
+    "access": "Public PDF",
+    "status": "Used for contextual cross-check; complete table extraction pending",
+    "url": "https://tbcindia.mohfw.gov.in/wp-content/uploads/2024/10/TB-Report_for-Web_08_10-2024-1.pdf"
+  },
+  {
+    "id": "NTEP-PERFORMANCE",
+    "title": "NTEP Performance Reports",
+    "version": "Live page checked 2026-08-25",
+    "scope": "Published indicator definitions, quarterly, annual and state reports",
+    "access": "Public HTML/reports",
+    "status": "Included for definition cross-check; historical reports pending",
+    "url": "https://tbcindia.mohfw.gov.in/performance-reports/"
+  },
+  {
+    "id": "NTEP-FORMS-LEGACY",
+    "title": "Forms and Registers",
+    "version": "Legacy RNTCP-era forms on current website",
+    "scope": "PHI, TU, district and state PMR forms, treatment card and registers",
+    "access": "Public PDF",
+    "status": "Catalogued as historical; not treated as current Ni-kshay definitions",
+    "url": "https://tbcindia.mohfw.gov.in/forms-registers/"
+  },
+  {
+    "id": "NTEP-NIKSHAY",
+    "title": "Ni-kshay live reporting system and reports",
+    "version": "Live system",
+    "scope": "Patient-wise and aggregate operational data dictionary and downloadable reports",
+    "access": "Restricted/login-dependent",
+    "status": "Pending - public metadata insufficient for source-complete extraction",
+    "url": "https://reports.nikshay.in/"
+  },
+  {
+    "id": "NTEP-COMMUNITY-2026",
+    "title": "Ni-kshay Mitra and community-engagement guidance",
+    "version": "2026",
+    "scope": "Community follow-up, adherence, nutrition, symptoms, adverse reactions and support",
+    "access": "Public PDF/pages",
+    "status": "Source census complete; stable indicator definitions pending",
+    "url": "https://tbcindia.mohfw.gov.in/community-engagement/"
+  }
+]

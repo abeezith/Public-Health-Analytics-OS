@@ -1,8 +1,8 @@
 {
-  "release": "1.1.0-india-subset",
+  "release": "1.2.0-ntep-deep",
   "cutoff": "2026-08-25",
   "definition": "All catalogue records satisfying the published inclusion rule for each Release 1 source, plus the curated priority collection.",
-  "totalRecords": 3236,
+  "totalRecords": 3446,
   "priorityRecords": 80,
   "sourceManifestations": 3028,
   "declaredSources": 34,
@@ -31,7 +31,7 @@
     "IND_HMIS_OGD": 12,
     "IND_NHM_RMNCHA": 8,
     "IND_NHM_UIP": 6,
-    "IND_NTEP": 12,
+    "IND_NTEP": 222,
     "IND_NACP": 12,
     "IND_NCVBDC": 10,
     "IND_NLEP": 4,
@@ -49,11 +49,14 @@
     "A": 1880,
     "B": 1276
   },
-  "averageCompleteness": 51,
+  "averageCompleteness": 53,
   "unresolvedMappings": 3028,
   "statement": "Bounded-exhaustive for four declared global machine-readable catalogues at the cut-off date. The India extension is a verified official subset across all registered source families, not yet source-complete.",
-  "indiaSpecificRecords": 128,
+  "indiaSpecificRecords": 338,
   "indiaSourceCensus": 15,
-  "indiaStatus": "128 verified India-specific discovery records from 15 official source families; source-complete extraction remains pending.",
-  "indiaSourcesWithVerifiedRecords": 15
+  "indiaStatus": "338 India-specific records; NTEP deep vertical includes 222 official-source records.",
+  "indiaSourcesWithVerifiedRecords": 15,
+  "ntepRecords": 222,
+  "ntepSourceDocuments": 10,
+  "ntepPublicBoundaryStatus": "Deep source-bounded extraction complete for declared public KPI, laboratory, DR-TB and Panchayat sources; restricted Ni-kshay data dictionary pending."
 }

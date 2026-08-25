@@ -269,10 +269,10 @@
     "org": "Central Tuberculosis Division, MoHFW",
     "url": "https://tbcindia.mohfw.gov.in/monitoring-and-evaluation/",
     "access": "Ni-kshay reports, definitions, guidelines and monitoring tools",
-    "boundary": "Current NTEP detection, notification, diagnostic, treatment, prevention, benefit and programme-management indicators",
-    "release": "India extension — Release 1",
-    "status": "Included — verified official subset; source-complete extraction pending",
-    "observedRecords": 12,
+    "boundary": "Public NTEP KPIs, Chapter 6 case-finding/laboratory indicators, CBNAAT/Truenat monthly formats, Annexure M, laboratory performance measures, DR-TB monitoring and TB Mukt Panchayat verification indicators",
+    "release": "India extension - NTEP deep Release 1.2",
+    "status": "Included - NTEP deep vertical Release 1.2; bounded official sources complete, restricted Ni-kshay dictionary pending",
+    "observedRecords": 222,
     "lastChecked": "2026-08-25"
   },
   {
