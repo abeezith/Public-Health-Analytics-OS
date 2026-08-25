@@ -1,13 +1,13 @@
 # India public-health indicator coverage audit and expansion plan
 
 **Audit date:** 25 August 2026  
-**Registry audited:** Bounded-exhaustive Release 1, 3,108 records
+**Registry release:** 1.1 India verified subset, 3,236 records
 
 ## Finding
 
-Release 1 contains **no India-source-specific indicator record**: no record is governed by MoHFW, NHM, DGHS, NHA, NACO, NCDC, NCVBDC, NHSRC, IIPS or another Indian authority. Many global records are relevant to Indian programmes, but they are not substitutes for Indian operational definitions, reporting forms, targets, administrative levels or programme systems.
+Release 1.1 contains **128 India-source-specific discovery records** governed by MoHFW, NHM, DGHS, NHA, NACO, NCDC, NCVBDC, NHSRC, IIPS or CBHI. All 15 registered Indian source families are represented. The ingestion is a verified official subset and is not yet a source-complete extraction of every programme form, dashboard, table and historical edition.
 
-Keyword cross-checks found global catalogue records mentioning HIV (112), tuberculosis (25), malaria (51), leprosy (11), immunization (29), maternal health (378) and noncommunicable diseases (69). These are discovery counts, not validated equivalence mappings. There were no records explicitly labelled India, NHM, NTEP, NACP or Ayushman Bharat.
+Indian source manifestations remain separate from similar global indicators until a reviewed crosswalk establishes equivalence. Every India record carries country, programme, reporting system, administrative level, record type, source version, official URL and WHO building-block tags.
 
 ## Why an India extension is required
 
@@ -33,7 +33,14 @@ Indian programmes often specify operational numerators, denominators, reporting 
 | 2 | NFHS | MoHFW and IIPS | https://www.nfhsiips.in/nfhsuser/nfhs5.php | All published indicators with survey-wave and geographic provenance |
 | 2 | National Health Profile | CBHI, DGHS | https://cbhidghs.mohfw.gov.in/publications/national-health-profile | Demography, morbidity, mortality, finance, workforce and infrastructure indicators by edition |
 
-## Phased implementation plan
+## Implementation status and remaining plan
+
+### Completed in Release 1.1
+
+1. Established `IND-*` identifier namespaces and added 128 official-source records.
+2. Added country, India programme, reporting system, administrative level, facility type, record type, source version, target and source-location fields.
+3. Added geography and India programme filters alongside the six-pillar WHO building-block filter.
+4. Updated JSON, CSV, source census, coverage ledger and XLSX workbook.
 
 ### Phase 0 — governance and version control
 
@@ -76,4 +83,4 @@ The mapping is deterministic and multi-label, using registry domains and metadat
 
 ## Recommended release claim
 
-Until Phase 1 is completed, describe the registry as: **“Globally bounded-exhaustive for four Release 1 catalogues; India national-programme coverage is planned but not yet source-complete.”**
+Describe the registry as: **“Globally bounded-exhaustive for four Release 1 catalogues; India Release 1.1 is a verified official subset across 15 national source families and is not yet source-complete.”**

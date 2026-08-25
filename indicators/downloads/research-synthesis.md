@@ -1,7 +1,7 @@
-# Master Public Health Indicator Registry — bounded-exhaustive Release 1
+# Master Public Health Indicator Registry — Release 1.1 India verified subset
 
-Cut-off date: 24 August 2026  
-Release: 1.0.0-bounded
+Cut-off date: 25 August 2026  
+Release: 1.1.0-india-subset
 
 ## What “bounded-exhaustive” means
 
@@ -16,7 +16,8 @@ This release contains every eligible catalogue record found in four declared glo
 | UN Global SDG Indicator Framework | 251 | Every indicator currently returned by the official UNSD API |
 | UNICEF Indicator Data Warehouse | 799 | Every code in `CL_UNICEF_INDICATOR` for `GLOBAL_DATAFLOW` |
 | Curated priority collection | 80 | Previously validated, decision-oriented public-health indicators |
-| **Total** | **3,108** | Source manifestations are retained rather than prematurely merged |
+| India national programme extension | 128 | Verified discovery records from 15 official source families; not source-complete |
+| **Total** | **3,236** | Source manifestations are retained rather than prematurely merged |
 
 ## Authoritative acquisition sources
 
@@ -30,7 +31,7 @@ This release contains every eligible catalogue record found in four declared glo
 - Many catalogue records provide discovery metadata but not full numerator, denominator, formula, frequency or disaggregation metadata.
 - Similar names across sources remain separate source manifestations until equivalence is methodologically reviewed.
 - Domain labels for harvested records are search-oriented rule-based classifications, not classifications asserted by the source authority.
-- Thirty-four source families are recorded in the Source Census. Four global catalogues are source-complete in Release 1; 15 authoritative Indian source families and other specialist or regional extensions remain scheduled for later releases.
+- Thirty-four source families are recorded in the Source Census. Four global catalogues are source-complete; all 15 authoritative Indian source families now have a verified subset, while full programme-form and edition reconciliation remains scheduled.
 
 ## Maintenance rule
 

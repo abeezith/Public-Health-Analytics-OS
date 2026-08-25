@@ -234,9 +234,9 @@
     "url": "https://www.data.gov.in/catalog/performance-key-hmis-indicators-upto-district-level-all-indicators",
     "access": "Portal, reports and OGD APIs/downloads",
     "boundary": "Current HMIS data elements, computed key indicators, facility reporting forms and definitions",
-    "release": "India extension — Phase 1",
-    "status": "Planned — obtain versioned data dictionary and source-complete extract",
-    "observedRecords": 0,
+    "release": "India extension — Release 1",
+    "status": "Included — verified official subset; source-complete extraction pending",
+    "observedRecords": 12,
     "lastChecked": "2026-08-25"
   },
   {
@@ -246,9 +246,9 @@
     "url": "https://nhm.gov.in/",
     "access": "Guidelines, reports and programme MIS",
     "boundary": "Official maternal, newborn, child, adolescent, reproductive-health and nutrition programme indicators",
-    "release": "India extension — Phase 1",
-    "status": "Planned — programme-by-programme extraction",
-    "observedRecords": 0,
+    "release": "India extension — Release 1",
+    "status": "Included — verified official subset; source-complete extraction pending",
+    "observedRecords": 8,
     "lastChecked": "2026-08-25"
   },
   {
@@ -258,9 +258,9 @@
     "url": "https://nhm.gov.in/New_Updates_2018/NHM_Components/Immunization/Guildelines_for_immunization/Mission_Indradhanush_Guidelines.pdf",
     "access": "Operational guidelines and monitoring formats",
     "boundary": "Routine immunization, campaign, cold-chain and AEFI monitoring indicators",
-    "release": "India extension — Phase 1",
-    "status": "Planned — extract current programme definitions and denominators",
-    "observedRecords": 0,
+    "release": "India extension — Release 1",
+    "status": "Included — verified official subset; source-complete extraction pending",
+    "observedRecords": 6,
     "lastChecked": "2026-08-25"
   },
   {
@@ -270,9 +270,9 @@
     "url": "https://tbcindia.mohfw.gov.in/monitoring-and-evaluation/",
     "access": "Ni-kshay reports, definitions, guidelines and monitoring tools",
     "boundary": "Current NTEP detection, notification, diagnostic, treatment, prevention, benefit and programme-management indicators",
-    "release": "India extension — Phase 1",
-    "status": "Planned — source and version census",
-    "observedRecords": 0,
+    "release": "India extension — Release 1",
+    "status": "Included — verified official subset; source-complete extraction pending",
+    "observedRecords": 12,
     "lastChecked": "2026-08-25"
   },
   {
@@ -282,9 +282,9 @@
     "url": "https://naco.mohfw.gov.in/sankalak/",
     "access": "Sankalak, SIMS formats, strategy and programme reports",
     "boundary": "NACP prevention, testing, treatment, viral suppression, key-population, STI, blood-safety and system indicators",
-    "release": "India extension — Phase 1",
-    "status": "Planned — extract programme scorecard and SIMS definitions",
-    "observedRecords": 0,
+    "release": "India extension — Release 1",
+    "status": "Included — verified official subset; source-complete extraction pending",
+    "observedRecords": 12,
     "lastChecked": "2026-08-25"
   },
   {
@@ -294,9 +294,9 @@
     "url": "https://ncvbdc.mohfw.gov.in/index1.php?lang=1&level=1&lid=3686&sublinkid=5899&theme=Cream",
     "access": "Guidelines, surveillance reports and monitoring tools",
     "boundary": "Malaria, dengue, chikungunya, Japanese encephalitis, kala-azar and lymphatic-filariasis indicators",
-    "release": "India extension — Phase 1",
-    "status": "Planned — disease-specific extraction",
-    "observedRecords": 0,
+    "release": "India extension — Release 1",
+    "status": "Included — verified official subset; source-complete extraction pending",
+    "observedRecords": 10,
     "lastChecked": "2026-08-25"
   },
   {
@@ -306,9 +306,9 @@
     "url": "https://dghs.mohfw.gov.in/nlep.php",
     "access": "Programme dashboard, reports and strategic plan",
     "boundary": "Prevalence, new-case detection, child cases, disability, treatment and programme-performance indicators",
-    "release": "India extension — Phase 1",
-    "status": "Planned — extract definitions and targets",
-    "observedRecords": 0,
+    "release": "India extension — Release 1",
+    "status": "Included — verified official subset; source-complete extraction pending",
+    "observedRecords": 4,
     "lastChecked": "2026-08-25"
   },
   {
@@ -318,9 +318,9 @@
     "url": "https://ncdc.mohfw.gov.in/includes/About/CentresAndDivision/IDSP.php",
     "access": "IHIP portal, surveillance reports and forms",
     "boundary": "Syndromic, presumptive, laboratory, outbreak, timeliness, completeness and response indicators",
-    "release": "India extension — Phase 1",
-    "status": "Planned — reconcile current IHIP and legacy IDSP definitions",
-    "observedRecords": 0,
+    "release": "India extension — Release 1",
+    "status": "Included — verified official subset; source-complete extraction pending",
+    "observedRecords": 6,
     "lastChecked": "2026-08-25"
   },
   {
@@ -330,9 +330,9 @@
     "url": "https://www.mohfw.gov.in/sites/default/files/NP-NCD%20Operational%20Guidelines.pdf",
     "access": "Operational guidelines and NP-NCD portal/reporting formats",
     "boundary": "Population-based screening, diagnosis, treatment, control, follow-up, readiness and programme indicators",
-    "release": "India extension — Phase 1",
-    "status": "Planned — extract current operational definitions",
-    "observedRecords": 0,
+    "release": "India extension — Release 1",
+    "status": "Included — verified official subset; source-complete extraction pending",
+    "observedRecords": 8,
     "lastChecked": "2026-08-25"
   },
   {
@@ -342,9 +342,9 @@
     "url": "https://qps.nhsrcindia.org/national-quality-assurance-standards/nqas-tools",
     "access": "Assessment tools, standards and dashboards",
     "boundary": "Facility-level service, patient-rights, inputs, support, clinical-care, infection-control, management and outcome measures",
-    "release": "India extension — Phase 2",
-    "status": "Planned — normalize measures without flattening checklist structure",
-    "observedRecords": 0,
+    "release": "India extension — Release 1",
+    "status": "Included — verified official subset; source-complete extraction pending",
+    "observedRecords": 9,
     "lastChecked": "2026-08-25"
   },
   {
@@ -354,9 +354,9 @@
     "url": "https://nhm.gov.in/images/pdf/NHM/NHM-Guidelines/Free_Drugs_Service_Intitiative.pdf",
     "access": "Operational guidelines and logistics systems",
     "boundary": "Availability, stock-out, expiry, procurement lead-time, fulfilment, diagnostics and prescription-audit indicators",
-    "release": "India extension — Phase 2",
-    "status": "Planned — extract facility and warehouse indicators",
-    "observedRecords": 0,
+    "release": "India extension — Release 1",
+    "status": "Included — verified official subset; source-complete extraction pending",
+    "observedRecords": 12,
     "lastChecked": "2026-08-25"
   },
   {
@@ -366,9 +366,9 @@
     "url": "https://abdm.gov.in/",
     "access": "Official dashboard, registries and reports",
     "boundary": "ABHA, HFR, HPR, linked health records, adoption, interoperability and microsite indicators",
-    "release": "India extension — Phase 2",
-    "status": "Planned — separate operational counts from stable indicator definitions",
-    "observedRecords": 0,
+    "release": "India extension — Release 1",
+    "status": "Included — verified official subset; source-complete extraction pending",
+    "observedRecords": 4,
     "lastChecked": "2026-08-25"
   },
   {
@@ -378,9 +378,9 @@
     "url": "https://insights.pmjay.gov.in/",
     "access": "Official dashboard suite and reports",
     "boundary": "Beneficiary, hospitalization, claim, hospital-empanelment, portability, utilization and financial-protection indicators",
-    "release": "India extension — Phase 2",
-    "status": "Planned — document public versus restricted dashboard metadata",
-    "observedRecords": 0,
+    "release": "India extension — Release 1",
+    "status": "Included — verified official subset; source-complete extraction pending",
+    "observedRecords": 7,
     "lastChecked": "2026-08-25"
   },
   {
@@ -390,9 +390,9 @@
     "url": "https://www.nfhsiips.in/nfhsuser/nfhs5.php",
     "access": "Survey reports, questionnaires and fact sheets",
     "boundary": "All published national, state and district NFHS indicators with survey-wave provenance",
-    "release": "India extension — Phase 2",
-    "status": "Planned — wave-specific indicator dictionary and crosswalk",
-    "observedRecords": 0,
+    "release": "India extension — Release 1",
+    "status": "Included — verified official subset; source-complete extraction pending",
+    "observedRecords": 12,
     "lastChecked": "2026-08-25"
   },
   {
@@ -402,9 +402,9 @@
     "url": "https://cbhidghs.mohfw.gov.in/publications/national-health-profile",
     "access": "Annual publication and tables",
     "boundary": "Demography, morbidity, mortality, finance, workforce and infrastructure indicators published for India",
-    "release": "India extension — Phase 2",
-    "status": "Planned — table and definition extraction by edition",
-    "observedRecords": 0,
+    "release": "India extension — Release 1",
+    "status": "Included — verified official subset; source-complete extraction pending",
+    "observedRecords": 6,
     "lastChecked": "2026-08-25"
   }
 ]
