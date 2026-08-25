@@ -1,11 +1,11 @@
 {
-  "release": "1.0.0-bounded",
-  "cutoff": "2026-08-24",
+  "release": "1.1.0-india-subset",
+  "cutoff": "2026-08-25",
   "definition": "All catalogue records satisfying the published inclusion rule for each Release 1 source, plus the curated priority collection.",
-  "totalRecords": 3108,
+  "totalRecords": 3236,
   "priorityRecords": 80,
   "sourceManifestations": 3028,
-  "declaredSources": 19,
+  "declaredSources": 34,
   "includedSources": 5,
   "sourceCompleteCatalogues": 4,
   "counts": {
@@ -27,14 +27,33 @@
     "AHRQ": 0,
     "CDC_PLACES": 0,
     "FINGERPRINTS": 0,
-    "IHME_GBD": 0
+    "IHME_GBD": 0,
+    "IND_HMIS_OGD": 12,
+    "IND_NHM_RMNCHA": 8,
+    "IND_NHM_UIP": 6,
+    "IND_NTEP": 12,
+    "IND_NACP": 12,
+    "IND_NCVBDC": 10,
+    "IND_NLEP": 4,
+    "IND_IDSP_IHIP": 6,
+    "IND_NP_NCD": 8,
+    "IND_NQAS": 9,
+    "IND_FDSI": 12,
+    "IND_ABDM": 4,
+    "IND_PMJAY": 7,
+    "IND_NFHS": 12,
+    "IND_CBHI_NHP": 6
   },
   "metadataLevels": {
     "E": 80,
     "A": 1880,
-    "B": 1148
+    "B": 1276
   },
-  "averageCompleteness": 50,
+  "averageCompleteness": 51,
   "unresolvedMappings": 3028,
-  "statement": "Bounded-exhaustive for the four declared machine-readable/global catalogues at the cut-off date. It is not yet exhaustive across every authority in the source census."
+  "statement": "Bounded-exhaustive for four declared global machine-readable catalogues at the cut-off date. The India extension is a verified official subset across all registered source families, not yet source-complete.",
+  "indiaSpecificRecords": 128,
+  "indiaSourceCensus": 15,
+  "indiaStatus": "128 verified India-specific discovery records from 15 official source families; source-complete extraction remains pending.",
+  "indiaSourcesWithVerifiedRecords": 15
 }
