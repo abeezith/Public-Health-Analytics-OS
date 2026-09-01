@@ -1,0 +1,18 @@
+﻿group,field,requirement
+identity,registry_id,Stable local identifier; never reuse after retirement
+identity,official_item_code,All observed form/portal codes with source-version context
+identity,label,Exact official wording plus normalized preferred label
+semantics,definition,"Official definition; distinguish quoted, paraphrased and analyst-inferred"
+semantics,record_class,"Raw data element, derived indicator, reporting-quality metric, target or contextual denominator"
+calculation,numerator_denominator_multiplier,Only when explicitly sourced; store expression and zero-denominator rule
+calculation,aggregation_rule,"Sum, average, ratio-of-sums, last-value, distinct count or non-additive"
+time,reporting_period,Monthly source period and recommended analytical periodicity
+geography,reporting_and_aggregation_levels,"Facility, outreach unit, block/subdistrict, district, state/UT, national"
+facility,applicable_facility_types,"SC/AAM, PHC/AAM, CHC, SDH, DH, medical college, BHQ, DHQ and other mapped types"
+lineage,primary_register_to_portal,"Register/source event, form field, portal field, aggregation and publication output"
+quality,validation_and_plausibility_rules,"Logical checks, temporal checks, outliers and reporting completeness"
+quality,zero_blank_not_applicable_semantics,"Do not collapse zero, blank, unavailable service and non-reporting"
+governance,source_version_currentness,"Effective date, supersession, custodian and verification date"
+governance,access_and_license,"Public, session-dependent, restricted; OGD licence where applicable"
+use,decision_use_and_caveats,"Operational use, interpretation constraints, denominator/catchment warning"
+framework,who_building_blocks,"Analyst mapping, clearly marked as non-custodian metadata"

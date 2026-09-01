@@ -1,0 +1,203 @@
+﻿ogd_code,published_label,object_class,exact_label_present_in_april_2025_forms,source_period,source_resource,currentness
+1,Estimated Number of Annual Pregnancies #,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+2,Total number of pregnant women Registered for ANC,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+3,% ANC Registered to Estimated Pregnancies,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+4,Number of Pregnant women registered within first trimester,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+5,% 1st Trimester registration to Total ANC Registrations,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+6,Number of pregnant women received 4 or more ANC check ups,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+7,TT2 given to Pregnant women (numbers),Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+8,TT Booster given to Pregnant women (numbers),Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+9,% Pregnant Woman received 4 ANC check ups to Total ANC Registrations,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+10,% Pregnant women received TT2+ TT Booster to Total ANC Registration,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+11,Number of Pregnant women given 180 IFA tablets,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+12,% Pregnant women given 180 IFA to Total ANC Registration,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+13,Number of Pregnant Women having Hb level<11 (tested cases),Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+14,Number of Pregnant Women having severe anaemia (Hb<7) treated at institution,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+15,% Pregnant women having severe anaemia (Hb<7) treated at institution to women having hb level<7,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+16,% New cases of Pregnant Women detected at institution for hypertension to Total ANC Registrations,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+17,Number of Home deliveries,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+18,Number of home deliveries attended by SBA trained (Doctor/Nurse/ANM),Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+19,Number of home deliveries attended by Non SBA trained (trained TB/Dai),Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+20,% SBA attended home deliveries to Total Reported Home Deliveries,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+21,Deliveries Conducted at Public Institutions,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+22,Number of Women Discharged under 48 hours of delivery in public facilities,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+23,% Women discharged in less than 48 hours of delivery to Total Reported Deliveries at public institutions,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+24,Deliveries Conducted at Private Institutions,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+25,Number of Women Discharged under 48 hours of delivery in private institutions,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+26,% Women discharged in less than 48 hours of delivery to Total Reported Deliveries at private institutions,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+27,Institutional deliveries (Public Insts.+Pvt. Insts.),Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+28,% Institutional Deliveries to total ANC registration,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+29,Total reported deliveries,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+30,% Institutional deliveries to Total Reported Deliveries,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+31,% Safe deliveries to Total Reported Deliveries,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+32,% Home deliveries to Total Reported Deliveries,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+33,Number of C-section deliveries conducted at public facilities,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+34,Number of C-section deliveries conducted at private facilities,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+35,% C-section deliveries (Public + Pvt.) to reported institutional (Public + Pvt.) deliveries,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+36,% C-sections conducted at public facilities to Deliveries conducted at public facilities,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+37,% C-sections conducted at Private facilities to Deliveries conducted at private facilities,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+38,% Deliveries conducted at Public Institutions to Total Institutional Deliveries,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+39,% Deliveries conducted at Private Institutions to Total Institutional Deliveries,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+40,Women received 1st post partum check-up within 48 hours of home delivery,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+41,Women received 1st post partum check up between 48 hours and 14 days,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+42,% Women getting 1st post partum check-up within 48 hours of home delivery to Total Reported Home Deliveries,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+43,% Women getting 1st Post Partum Checkup between 48 hours and 14 days to Total Reported Deliveries,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+44,Estimated Number of Annual Live Births ##,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+45,Total Number of reported live births,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+46,% Live Births to Estimated Annual Live Births,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+47,% Live Births to Total Deliveries,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+48,Total Number of reported Still Births,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+49,% live birth to Reported Birth,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+50,Number of Newborns weighed at birth,Published aggregate/count,Yes,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+51,% Newborns weighed at birth to live birth,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+52,Number of Newborns having weight less than 2.5 kg,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+53,% Newborns having weight less than 2.5 kg to Newborns weighed at birth,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+54,Number of New Borns Breast Fed within 1 hour,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+55,% Newborns breast fed within 1 hour of birth to Total live birth,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+56,Sex Ratio at birth ( Female Live Births/ Male Live Births *1000),Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+57,% cases of Pregnant women with Obstetric Complications and attended to reported deliveries,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+58,% Complicated Pregnancies treated with Blood Transfusion to Total Women with Obstetric Complications attended,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+59,Number of PW given 360 Calcium tablets,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+60,% Pregnant women given 360 Calcium to Total ANC Registration,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+61,Number of PW given one Albendazole tablet after 1st trimester,Published aggregate/count,Yes,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+62,% Pregnant women given one Albendazole tablet after 1st trimester to Total ANC Registration,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+63,Number of PW tested for blood sugar using OGTT (Oral Glucose Tolerance Test),Published aggregate/count,Yes,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+64,% Pregnant women tested for blood sugar using OGTT to Total ANC Registration,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+65,Number of PW tested positive for GDM,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+66,% Pregnant women tested positive for GDM to Total ANC Registration,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+67,Number of pregnant women tested for Syphilis,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+68,Number of pregnant women tested found sero positive for Syphilis,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+69,% Pregnant women tested for Syphilis to Total ANC Registration,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+70,% Pregnant women treatd for Syphilis to Total sero positive for Syphilis,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+71,% of babies treated for congenital Syphilis to babies total diagnosed with Congenital Syphilis,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+72,Total no. maternal deaths,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+73,Total Facility Based Maternal Death Reviews (FBMDR) done,Published aggregate/count,Yes,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+74,Total Number of Abortions ( Spontaneous) Reported,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+75,Total Number of MTPs ( Public) conducted,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+76,% MTPs to total Abortions,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+77,% MTPs up to 12 weeks of Pregnancy to Total MTPs at Public Institutions,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+78,% MTPs more than 12 weeks of Pregnancy to Total MTPs at Public Institutions,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+79,% MTPs Conducted at Public Institutions to Total MTPs,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+80,% MTPs Conducted at Private Institutions to Total MTPs,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+81,% Total MTPs (Public) Conducted to Total ANC Registration,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+82,Number of Vasectomies Conducted,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+83,Number of Tubectomies Conducted,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+84,Total Sterilisation Conducted,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+85,% Male Sterlisation (Vasectomies) to Total sterilisation,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+86,% Female Serlisation (Tubectomies) to Total sterilisation,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+87,Total Sterlisation (Tubectomies and Vasectomies) conducted at PHC,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+88,Total Sterlisation (Tubectomies and Vasectomies) conducted at CHC,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+89,Total Sterlisation (Tubectomies and Vasectomies) conducted at SDH,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+90,Total Sterlisation (Tubectomies and Vasectomies) conducted at DH,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+91,Total Sterlisation (Tubectomies and Vasectomies) conducted at Private institutions,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+92,Total Sterlisation (Tubectomies and Vasectomies) conducted at Public institutions,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+93,% Total Sterilisation (Tubectomies and Vasectomies) conducted at Private institutions to Total Sterlisation,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+94,% Total Sterilisation (Tubectomies and Vasectomies) conducted at Public institutions to Total Sterlisation,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+95,% Laparoscopic sterlisations to Total Female Sterilisations,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+96,% Mini Lap Sterlisations to Total Female Sterilisations,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+97,% Post Partum Sterlisations to Total Female Sterilisations,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+98,% Post Abortion Sterlisations to Total Female Sterilisations,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+99,% Laparoscopic sterlisations at Public Institutions to Total Laparoscopic Sterilisations,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+100,% Mini Lap sterlisations at Public Institutions to Total Mini Lap Sterilisations,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+101,% Post Partum sterlisations at Public Institutions to Total Post Partum Sterilisation,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+102,% Post Abortion sterlisations at Public Institutions to Total Post Partum Sterilisation,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+103,Total cases of deaths following Sterlisation ( Male + Female),Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+104,Total cases of deaths following Male Sterlisation,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+105,Total cases of deaths following Female Sterlisation,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+106,Total cases of failure following Male Sterlisation,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+107,Total cases of failure following Female Sterlisation,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+108,Total cases of complication following Male Sterlisation,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+109,Total cases of complication following Female Sterlisation,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+110,IUCD Insertions done (public facilities),Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+111,IUCD insertions done (pvt. facilities),Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+112,% PP IUCD Insertions (public) to Total IUCD Insertions (public),Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+113,% PP IUCD Insertions (public) to Total Institutional Deliveries (public),Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+114,% IUCD insertions to all family planning methods ( IUCD plus permanent),Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+115,Total Interval IUCD Insertions done,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+116,Total PP IUCD Insertions done,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+117,Total PAIUCD insertions done,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+118,Combined Oral Pills distributed,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+119,Emergency pills distributed,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+120,Condom pieces distributed,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+121,Centchroman ( weekly pills) distributed,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+122,Number of beneficiaries given 1st dose of Injectable (Antara Program),Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+123,Number of beneficiaries given 2nd dose of Injectable (Antara Program),Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+124,Number of beneficiaries given 3rd dose of Injectable (Antara Program),Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+125,Number of beneficiaries given 4th or more than 4 doses of Injectable (Antara Program),Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+126,Pregnancy testing kits used,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+127,Number of Infants given OPV 0 (Birth Dose),Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+128,Number of Infants given BCG,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+129,Number of Infants given Hep- B0 (birth dose),Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+130,% Newborns given OPV0 at birth to Reported live birth,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+131,% Newborns given BCG to Reported live birth,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+132,% Newborns given Hep-B0(Birth Dose)at birth to Reported live birth,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+133,Number of Infants given DPT1,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+134,Number of Infants given DPT2,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+135,Number of Infants given DPT3,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+136,Number of Infants given Pentavalent 1,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+137,Number of Infants given Pentavalent 2,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+138,Number of Infants given Pentavalent 3,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+139,Number of Infants given Measles,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+140,Number of Infants given MR,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+141,% Infants 0 to 11 months old who received Measles+ MR vaccine to reported live births,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+142,Number of fully immunized children (9-11 months),Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+143,% Drop Out between BCG & Measles/ MR,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+144,% Children given Vit A dose1 to Reported live birth,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+145,% Children given Vitamin A Dose 9 to Children given Vit A dose1,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+146,Adverse Events Following Imunisation (Abcess ),Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+147,Adverse Events Following Imunisation (Deaths),Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+148,Adverse Events Following Imunisation (Others),Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+149,% immunisation Sessions Held to Immunisation Sessions Planned,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+150,% Immunisation Sessions where ASHAs were present to Immunisation Sessions Planned,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+151,Pneumonia in Children 0-5 Years of Age,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+152,Asthma in Children 0-5 Years of Age,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+153,Sepsis in Children 0-5 Years of Age,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+154,Diphtheria in Children 0-5 Years of Age,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+155,Pertussis in Children 0-5 Years of Age,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+156,Tetanus Neonatorum in Children 0-5 Years of Age,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+157,Tuberculosis (TB) in Children 0-5 Years of Age,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+158,Acute Flaccid Paralysis(AFP)in Children 0-5 Years of Age,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+159,Measles in Children 0-5 Years of Age,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+160,Malaria in Children 0-5 Years of Age,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+161,Diarrhoea in Children 0-5 Years of Age,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+162,Diarrhoea treated in Inpatients in Children 0-5 Years of Age,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+163,No. of infants given Measles Rubella vaccine 1st dose,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+165,No. of infants received Rotavirus Vaccine 1st dose,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+166,No. of infants received Rotavirus Vaccine 2nd dose,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+167,No. of infants received Rotavirus Vaccine 3nd dose,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+168,No of children 16-24 months age given Measles 2nd dose,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+169,No of children 16-24 months age given Measles Rubella Vaccine 2nd dose,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+170,% Adult Female Inpatients to Total Adult Inpatient,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+171,% Children Inpatient to Total Inpatient,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+172,% Female Inpatient Deaths to Total Inpatient Deaths,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+173,% Inpatient Deaths to Total IPD,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+174,IPD (Number),Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+175,OPD (Allopathic),Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+176,Ayush OPD (Number),Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+177,OPD(Ayush+Allopathic),Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+178,% IPD to OPD,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+179,Number of Major Operations,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+180,Number of Minor Operations,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+181,% Major Operations to Total Operation,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+182,Number of Hysterectomy Surgeries,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+183,% Hysterectomy Surgeries to Total Major Operations,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+184,% AYUSH OPD to Total OPD,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+185,Dental OPD (Number),Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+186,% Dental OPD to Total OPD,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+187,% Hb < 7 mg to Total Hb Tests Conducted,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+188,% Male HIV Positive to Total Males Tested,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+189,% Female screened for HIV to Total ANC Registration,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+190,% Female HIV Positive to Total Females Tested,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+191,% Total HIV Positive to Total Tested ( Male + Female),Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+192,% Plasmodium Vivax test positive to Total Blood Smears Examined,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+193,% Plasmodium Falciparum test positive to Total Blood Smears Examined,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+194,Total Number of Infant Deaths reported,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+195,% Deaths due to Sepsis to Total Reported Infant Deaths,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+196,% Deaths due to Asphyxia to Total Reported Infant Deaths,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+197,% Deaths due to Pneumonia to Total Reported Infant Deaths,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+198,% Deaths due to Diarrhoea to Total Reported Infant Deaths,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+199,% Deaths due to Fever to Total Reported Infant Deaths,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+200,% Deaths due to Measles to Total Reported Infant Deaths,Derived/calculated output,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+201,Institutional Deliveries at Urban Heatlh Facilities i.e SC+PHC+CHC+SDH,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+202,Institutional Deliveries at District Hospitals,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS
+203,Measles immunization at urban Health facilities i.e SC+PHC+CHC+SDH+DH,Published aggregate/count,No,FY 2019-20,OGD resource 6817214,Historical; verify against live HMIS

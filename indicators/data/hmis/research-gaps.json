@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "release": "1.3.0-hmis-knowledge-structure",
+    "cutoff": "2026-09-01",
+    "title": "HMIS linked knowledge registry",
+    "statement": "Public-source-bounded research structure; not a complete live national HMIS dictionary.",
+    "counts": {
+      "Derived indicator": 54,
+      "Data element": 700,
+      "Published output": 202,
+      "Validation rule": 25
+    },
+    "totalObjects": 981,
+    "sourceCount": 12,
+    "openEvidenceGaps": 10,
+    "versionPolicy": "Current public forms, historical technical definitions and historical published outputs remain explicitly separated."
+  },
+  "gaps": [
+    {
+      "gap_id": "G01",
+      "gap": "Current machine-readable national HMIS data dictionary",
+      "priority": "Critical",
+      "resolution_route": "MoHFW/NHSRC custodian request or authenticated portal metadata export",
+      "status": "Open"
+    },
+    {
+      "gap_id": "G02",
+      "gap": "Current validation-rule catalogue and severity",
+      "priority": "Critical",
+      "resolution_route": "Custodian documentation/export; compare against portal behavior",
+      "status": "Open"
+    },
+    {
+      "gap_id": "G03",
+      "gap": "Current KPI formula and aggregation library",
+      "priority": "Critical",
+      "resolution_route": "Portal metadata/export plus formal MoHFW definition document",
+      "status": "Open"
+    },
+    {
+      "gap_id": "G04",
+      "gap": "API specification and public access terms",
+      "priority": "High",
+      "resolution_route": "MoHFW/NIC technical documentation or formal request",
+      "status": "Open"
+    },
+    {
+      "gap_id": "G05",
+      "gap": "Facility master and HMIS facility-type taxonomy",
+      "priority": "High",
+      "resolution_route": "LGD/HMIS facility export and versioned code list",
+      "status": "Open"
+    },
+    {
+      "gap_id": "G06",
+      "gap": "State-specific extensions and implementation dates",
+      "priority": "High",
+      "resolution_route": "State HMIS nodal officers and format census",
+      "status": "Open"
+    },
+    {
+      "gap_id": "G07",
+      "gap": "Legacy-to-April-2025 item crosswalk",
+      "priority": "High",
+      "resolution_route": "Probabilistic label/code match followed by custodian validation",
+      "status": "Partially researched"
+    },
+    {
+      "gap_id": "G08",
+      "gap": "Zero/blank/NA and late-revision rules in HMIS 2.0",
+      "priority": "High",
+      "resolution_route": "Current user/operational manual or portal validation documentation",
+      "status": "Open"
+    },
+    {
+      "gap_id": "G09",
+      "gap": "Inter-system field lineage",
+      "priority": "High",
+      "resolution_route": "Interface specifications for RCH, U-WIN, NCD, Ni-kshay, IHIP and state systems",
+      "status": "Open"
+    },
+    {
+      "gap_id": "G10",
+      "gap": "Current denominator tables and estimation methods",
+      "priority": "High",
+      "resolution_route": "MoHFW statistical division/NHSRC documentation",
+      "status": "Open"
+    }
+  ]
+}

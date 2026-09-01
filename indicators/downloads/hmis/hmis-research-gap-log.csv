@@ -1,0 +1,11 @@
+﻿gap_id,gap,priority,resolution_route,status
+G01,Current machine-readable national HMIS data dictionary,Critical,MoHFW/NHSRC custodian request or authenticated portal metadata export,Open
+G02,Current validation-rule catalogue and severity,Critical,Custodian documentation/export; compare against portal behavior,Open
+G03,Current KPI formula and aggregation library,Critical,Portal metadata/export plus formal MoHFW definition document,Open
+G04,API specification and public access terms,High,MoHFW/NIC technical documentation or formal request,Open
+G05,Facility master and HMIS facility-type taxonomy,High,LGD/HMIS facility export and versioned code list,Open
+G06,State-specific extensions and implementation dates,High,State HMIS nodal officers and format census,Open
+G07,Legacy-to-April-2025 item crosswalk,High,Probabilistic label/code match followed by custodian validation,Partially researched
+G08,Zero/blank/NA and late-revision rules in HMIS 2.0,High,Current user/operational manual or portal validation documentation,Open
+G09,Inter-system field lineage,High,"Interface specifications for RCH, U-WIN, NCD, Ni-kshay, IHIP and state systems",Open
+G10,Current denominator tables and estimation methods,High,MoHFW statistical division/NHSRC documentation,Open

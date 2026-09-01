@@ -1,0 +1,2151 @@
+{
+  "metadata": {
+    "release": "1.3.0-hmis-knowledge-structure",
+    "cutoff": "2026-09-01",
+    "title": "HMIS linked knowledge registry",
+    "statement": "Public-source-bounded research structure; not a complete live national HMIS dictionary.",
+    "counts": {
+      "Derived indicator": 54,
+      "Data element": 700,
+      "Published output": 202,
+      "Validation rule": 25
+    },
+    "totalObjects": 981,
+    "sourceCount": 12,
+    "openEvidenceGaps": 10,
+    "versionPolicy": "Current public forms, historical technical definitions and historical published outputs remain explicitly separated."
+  },
+  "indicators": [
+    {
+      "id": "IND-HMIS-IND-001",
+      "objectType": "Derived indicator",
+      "name": "ANC registration rate",
+      "definition": "% of pregnant women who used ANC care provided by skilled health personnel",
+      "numerator": "Total ANC registered",
+      "denominator": "Estimated pregnancies",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Antenatal care and high-risk pregnancy",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "National, State, District/ Block",
+      "periodicity": "Annual, Semiannual",
+      "sourcePage": 23,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0681",
+        "HMIS-DE-0624",
+        "HMIS-DE-0573"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-002",
+      "objectType": "Derived indicator",
+      "name": "Early registration rate",
+      "definition": "Proportion of women who were registered within first trimester (12weeks) of pregnancy",
+      "numerator": "Total no. of ANC registered within first trimester (12weeks)",
+      "denominator": "Total ANC registered",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Antenatal care and high-risk pregnancy",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "National, State, District/ Block",
+      "periodicity": "Quarterly, annual",
+      "sourcePage": 23,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0573",
+        "HMIS-DE-0681",
+        "HMIS-DE-0624"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-003",
+      "objectType": "Derived indicator",
+      "name": "TT2/Booster coverage rate",
+      "definition": "% of women who were given TT2/Booster dose during current pregnancy",
+      "numerator": "Total no. pregnant women given TT2/booster",
+      "denominator": "Total ANC registered",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Antenatal care and high-risk pregnancy",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State, District/ Block",
+      "periodicity": "Annual, semiannual",
+      "sourcePage": 23,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0492",
+        "HMIS-DE-0681",
+        "HMIS-DE-0624",
+        "HMIS-DE-0573"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-004",
+      "objectType": "Derived indicator",
+      "name": "ANC 3 checkups rate",
+      "definition": "% of pregnant women who used antenatal care provided by skilled health personnel at least 3 times during pregnancy",
+      "numerator": "Total ANC 3 check ups",
+      "denominator": "Total ANC registered",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Antenatal care and high-risk pregnancy",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State, District/ Block",
+      "periodicity": "Annual, semiannual",
+      "sourcePage": 23,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0499",
+        "HMIS-DE-0681",
+        "HMIS-DE-0624",
+        "HMIS-DE-0573"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-005",
+      "objectType": "Derived indicator",
+      "name": "ANC 100 IFA coverage rate",
+      "definition": "% of women who were given at least 100 IFA tablets",
+      "numerator": "Total no. of ANC women given 100 IFA tablets",
+      "denominator": "Total ANC registered",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Antenatal care and high-risk pregnancy",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State, District/ Block",
+      "periodicity": "Annual, semiannual",
+      "sourcePage": 23,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0444",
+        "HMIS-DE-0681",
+        "HMIS-DE-0624",
+        "HMIS-DE-0573"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-006",
+      "objectType": "Derived indicator",
+      "name": "Full immunization coverage rate",
+      "definition": "% of children aged between 9 and 11 months who have been fully immunized (Child given one dose of BCG, three dosages of DPT i.e. DPT 1,2,3; three dosages of polio i.e. OPV 1,2,3 and a dosage of Measles)",
+      "numerator": "Total Number of children aged between 9 and 11 months who have been fully immunized",
+      "denominator": "Estimated children below 1 year",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Immunization",
+      "domain": "Child, adolescent and nutrition services",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "National, State , District and Block",
+      "periodicity": "Annual, semiannual",
+      "sourcePage": 25,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0136",
+        "HMIS-DE-0135",
+        "HMIS-DE-0314",
+        "HMIS-DE-0154"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-007",
+      "objectType": "Derived indicator",
+      "name": "BCG Coverage rate",
+      "definition": "The percentage of live births that received BCG within one year",
+      "numerator": "BCG dose under 1 year",
+      "denominator": "Estimated children below 1 year",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Immunization",
+      "domain": "Child, adolescent and nutrition services",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "National, State , District and Block",
+      "periodicity": "Annual, semiannual",
+      "sourcePage": 25,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0062",
+        "HMIS-DE-0154"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-008",
+      "objectType": "Derived indicator",
+      "name": "DPT3 Coverage rate",
+      "definition": "The percentage of children who received their 3 doses of DTP-3",
+      "numerator": "DPT 3 dose under 1 year",
+      "denominator": "Estimated children below 1 year",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Immunization",
+      "domain": "Child, adolescent and nutrition services",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "National, State , District and Block",
+      "periodicity": "Annual, semiannual",
+      "sourcePage": 25,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0062",
+        "HMIS-DE-0154"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-009",
+      "objectType": "Derived indicator",
+      "name": "OPV3 Coverage rate",
+      "definition": "The percentage of children under 1 immunised with OPV dose 3.",
+      "numerator": "OPV 3 dose under 1 year",
+      "denominator": "Estimated children below 1 year",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Immunization",
+      "domain": "Child, adolescent and nutrition services",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "National, State , District and Block",
+      "periodicity": "Annual, semiannual",
+      "sourcePage": 26,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0062",
+        "HMIS-DE-0154"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-010",
+      "objectType": "Derived indicator",
+      "name": "Measles coverage rate",
+      "definition": "The percentage of children who received their measles dose (normally at 9 months)",
+      "numerator": "Measles dose under 1 year",
+      "denominator": "Estimated children below 1 year",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Immunization",
+      "domain": "Child, adolescent and nutrition services",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "National, State , District and Block",
+      "periodicity": "Annual, semiannual",
+      "sourcePage": 26,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0062",
+        "HMIS-DE-0154"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-011",
+      "objectType": "Derived indicator",
+      "name": "BCG - measles dropout rates",
+      "definition": "% of children who dropped out of immunisation schedule between BCG dose measles dose",
+      "numerator": "Total number of infants (0-11 months), given BCG immunization- number of children given measles",
+      "denominator": "Number of children given BCG",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Immunization",
+      "domain": "Child, adolescent and nutrition services",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State and District",
+      "periodicity": "Annual",
+      "sourcePage": 27,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0386",
+        "HMIS-DE-0313"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-012",
+      "objectType": "Derived indicator",
+      "name": "DPT3 - Measles dropout rate",
+      "definition": "The percentage of children who dropped out of the immunisation schedule between the third doses (normally at 14 weeks) and the measles dose (normally at 9 months)",
+      "numerator": "Number of children given DPT 3 – number of children given measles",
+      "denominator": "Number of children given DPT3",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Immunization",
+      "domain": "Child, adolescent and nutrition services",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State and District",
+      "periodicity": "Annual",
+      "sourcePage": 27,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0313"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-013",
+      "objectType": "Derived indicator",
+      "name": "Institutional delivery Rate (Public facilities )",
+      "definition": "% of deliveries conducted at public institution/facility",
+      "numerator": "Deliveries at public institution/facility",
+      "denominator": "Estimated deliveries",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Delivery and intrapartum care",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State and District",
+      "periodicity": "Annual, semiannual",
+      "sourcePage": 29,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0350",
+        "HMIS-DE-0658"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-014",
+      "objectType": "Derived indicator",
+      "name": "Institutional delivery Rate",
+      "definition": "% of deliveries conducted at public and private institution/facility",
+      "numerator": "Deliveries at public and private institution/facility",
+      "denominator": "Estimated deliveries",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Delivery and intrapartum care",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State and District",
+      "periodicity": "Annual, semiannual",
+      "sourcePage": 29,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0601",
+        "HMIS-DE-0658"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-015",
+      "objectType": "Derived indicator",
+      "name": "Home Delivery Rate",
+      "definition": "% of deliveries conducted at home",
+      "numerator": "Number of home deliveries",
+      "denominator": "Estimated deliveries",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Delivery and intrapartum care",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State and District",
+      "periodicity": "Annual, semiannual",
+      "sourcePage": 29,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0104",
+        "HMIS-DE-0369",
+        "HMIS-DE-0370",
+        "HMIS-DE-0658"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-016",
+      "objectType": "Derived indicator",
+      "name": "Skilled Birth Attendant (SBA) Delivery Rate",
+      "definition": "Proportion of total deliveries assisted by a Skilled Birth Attendant (at home and at institutions)",
+      "numerator": "Deliveries by SBA (SBA Home + all Institutional deliveries)",
+      "denominator": "Total reported deliveries",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Delivery and intrapartum care",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State and District",
+      "periodicity": "Quarterly, annual",
+      "sourcePage": 29,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0370",
+        "HMIS-DE-0301"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-017",
+      "objectType": "Derived indicator",
+      "name": "Caesarean section rate",
+      "definition": "Proportion of C- section deliveries out of total reported institutional deliveries.",
+      "numerator": "Number. of caesarian section done",
+      "denominator": "Total institutional deliveries (Caesarean section + Normal delivery)",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Delivery and intrapartum care",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State and District",
+      "periodicity": "Quarterly, annual",
+      "sourcePage": 30,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0262",
+        "HMIS-DE-0577"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-018",
+      "objectType": "Derived indicator",
+      "name": "PNC (within 48hrs) rate",
+      "definition": "% of women who received post natal care checkup done within 48 hrs of delivery",
+      "numerator": "Number of women who received post partum check-ups within 48 hrs after deliver",
+      "denominator": "Reported deliveries (Institutional + Home)",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Delivery and intrapartum care",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State, District and Block",
+      "periodicity": "Quarterly, annual",
+      "sourcePage": 31,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0531",
+        "HMIS-DE-0010"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-019",
+      "objectType": "Derived indicator",
+      "name": "PNC (between 48hrs & 14 days)rate",
+      "definition": "% of women who received post natal care checkup done between 48 hrs and 14 days of delivery",
+      "numerator": "Number of women who received post partum check-ups between 48 hrs and 14 days of delivery",
+      "denominator": "Reported deliveries (Institutional + Home)",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Delivery and intrapartum care",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State, District and Block",
+      "periodicity": "Quarterly, annual",
+      "sourcePage": 31,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0531",
+        "HMIS-DE-0010"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-020",
+      "objectType": "Derived indicator",
+      "name": "Contraceptive prevalence Rate (all methods)",
+      "definition": "Proportion of eligible couples using family planningmethod.",
+      "numerator": "All FP Users {sterilization(m ale & female)+IUD Inserted +Condom/72+ OCP/13}",
+      "denominator": "Number of eligible couples",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Family planning",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State & District",
+      "periodicity": "Annually",
+      "sourcePage": 33,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0133"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-021",
+      "objectType": "Derived indicator",
+      "name": "Sterilization coverage rate",
+      "definition": "Coverage contribution of sterilization to overall family planningmethod",
+      "numerator": "",
+      "denominator": "",
+      "multiplyingFactor": "",
+      "formula": "Numerator ÷ denominator; multiplier not stated",
+      "unit": "Source-defined",
+      "component": "Family planning",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State & District",
+      "periodicity": "Annually",
+      "sourcePage": 33,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-022",
+      "objectType": "Derived indicator",
+      "name": "IUD",
+      "definition": "Coverage contribution of IUD to overall family planningmethod",
+      "numerator": "",
+      "denominator": "",
+      "multiplyingFactor": "",
+      "formula": "Numerator ÷ denominator; multiplier not stated",
+      "unit": "Source-defined",
+      "component": "Family planning",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State & District",
+      "periodicity": "Annually",
+      "sourcePage": 33,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-023",
+      "objectType": "Derived indicator",
+      "name": "OCP",
+      "definition": "Coverage contribution of OCP to overall family planningmethod -",
+      "numerator": "OCP USERS(OCP Cycles /13)",
+      "denominator": "eligible couples",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Family planning",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State & District",
+      "periodicity": "Annually",
+      "sourcePage": 34,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0328"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-024",
+      "objectType": "Derived indicator",
+      "name": "Condoms",
+      "definition": "Coverage contribution of OCP to overall family planningmethod -",
+      "numerator": "Condom users(condom pieces distributed /72)",
+      "denominator": "eligible couples",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Family planning",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State & District",
+      "periodicity": "Annually",
+      "sourcePage": 34,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0330"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-025",
+      "objectType": "Derived indicator",
+      "name": "Proportion of Limitingmethods",
+      "definition": "Coverage contribution of sterilization(all) to overall family planningmethod",
+      "numerator": "all sterilizations(male &Female)",
+      "denominator": "All FP Users",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Family planning",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State & District",
+      "periodicity": "Annually",
+      "sourcePage": 34,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0228",
+        "HMIS-DE-0355"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-026",
+      "objectType": "Derived indicator",
+      "name": "Proportion of Spacingmethods",
+      "definition": "Coverage contribution of spacing (all) to overall family planningmethod",
+      "numerator": "IUD Users++OCP Users+ Condom Users",
+      "denominator": "eligible couples",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Family planning",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State & District",
+      "periodicity": "Annually",
+      "sourcePage": 34,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0330"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-027",
+      "objectType": "Derived indicator",
+      "name": "% newborns breastfed < 1 hour",
+      "definition": "Percentage of new born babies breastfed within one hour of birth",
+      "numerator": "New born breastfed within one hour of birth",
+      "denominator": "Total live births (as recorded)",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Newborn and pregnancy outcomes",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "National, State and District",
+      "periodicity": "Quarterly, annual",
+      "sourcePage": 35,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0427",
+        "HMIS-DE-0399"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-028",
+      "objectType": "Derived indicator",
+      "name": "Sex ratio at birth",
+      "definition": "Number of females born per 1000 males born in a give time period",
+      "numerator": "Live Births females",
+      "denominator": "Live Births males",
+      "multiplyingFactor": "1000",
+      "formula": "(Numerator ÷ denominator) × 1000",
+      "unit": "Per 1,000",
+      "component": "Other HMIS reporting",
+      "domain": "Health services and systems",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "National, State and District",
+      "periodicity": "Quarterly, annual",
+      "sourcePage": 35,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0399"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-029",
+      "objectType": "Derived indicator",
+      "name": "Low birth weight rate",
+      "definition": "Percentage of live born infants with a Birth weight under 2,500 grams",
+      "numerator": "Live births with a birth weight < 2500g.",
+      "denominator": "Live births weighed",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Newborn and pregnancy outcomes",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "National, State and District",
+      "periodicity": "Quarterly, annual",
+      "sourcePage": 35,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0215",
+        "HMIS-DE-0399"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-030",
+      "objectType": "Derived indicator",
+      "name": "Neonatal mortality rate",
+      "definition": "Neonatal mortality rate (NNMR) measures the number of live-born babies dying within 28 completed days of life per 1,000 live births.",
+      "numerator": "Deaths in first 28 days",
+      "denominator": "Live births",
+      "multiplyingFactor": "1000",
+      "formula": "(Numerator ÷ denominator) × 1000",
+      "unit": "Per 1,000",
+      "component": "Newborn and pregnancy outcomes",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "",
+      "periodicity": "Annual, semiannual",
+      "sourcePage": 37,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0238",
+        "HMIS-DE-0249",
+        "HMIS-DE-0242"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-031",
+      "objectType": "Derived indicator",
+      "name": "Infant Death rate(IDR)",
+      "definition": "Infant Death rate (IDR) measures the number of deaths of infants under one year of age per 1,000 live births",
+      "numerator": "Deaths of infants less than one year old (Neonatal death plus deaths in 1-12 months)",
+      "denominator": "live births",
+      "multiplyingFactor": "1000",
+      "formula": "(Numerator ÷ denominator) × 1000",
+      "unit": "Per 1,000",
+      "component": "Newborn and pregnancy outcomes",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "National, state and district. Below district even the data element by itself provides actionable information",
+      "periodicity": "Annual, semiannual",
+      "sourcePage": 38,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0160"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-032",
+      "objectType": "Derived indicator",
+      "name": "Under 5 Mortality Rate",
+      "definition": "Under-five mortality rate measures the number of children who die before their fifth birthday per 1000 live births",
+      "numerator": "Deaths Neonatal + Deaths infant + Deaths 1-5 years",
+      "denominator": "live births",
+      "multiplyingFactor": "1000",
+      "formula": "(Numerator ÷ denominator) × 1000",
+      "unit": "Per 1,000",
+      "component": "Newborn and pregnancy outcomes",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "National, state and district. Below district even the data element by itself provides actionable information",
+      "periodicity": "Annual, semiannual",
+      "sourcePage": 40,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0154",
+        "HMIS-DE-0032",
+        "HMIS-DE-0306"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-033",
+      "objectType": "Derived indicator",
+      "name": "Peri Natal Mortality Rate (PNMR)",
+      "definition": "Peri-natal deaths comprise still births (gestation over 228 weeks / >1000 grams weight) plus early neonatal deaths (infants dying within 7 days).",
+      "numerator": "Deaths Peri- natal (still births plus early neonatal in first week)",
+      "denominator": "Live Births.",
+      "multiplyingFactor": "1000",
+      "formula": "(Numerator ÷ denominator) × 1000",
+      "unit": "Per 1,000",
+      "component": "Antenatal care and high-risk pregnancy",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "National and below. Calculate and make predictive trend analysis only when we have at least 3,000 births, otherwise fluctuations will be too high.",
+      "periodicity": "Annual, semiannual",
+      "sourcePage": 41,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0238"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-034",
+      "objectType": "Derived indicator",
+      "name": "Still birth rate",
+      "definition": "",
+      "numerator": "Total no. of still births",
+      "denominator": "Total births (Live birth + Still birth)",
+      "multiplyingFactor": "",
+      "formula": "Numerator ÷ denominator; multiplier not stated",
+      "unit": "Source-defined",
+      "component": "Newborn and pregnancy outcomes",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "",
+      "periodicity": "",
+      "sourcePage": 41,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0619"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-035",
+      "objectType": "Derived indicator",
+      "name": "Maternal Mortality Ratio",
+      "definition": "The death of a woman while pregnant or within 42 days of delivery or termination of pregnancy, irrespective of the duration and site of the pregnancy, from any cause related to or aggravated by the pregnancy or its management but not from accidental causes.",
+      "numerator": "Deaths Maternal",
+      "denominator": "Number of live births",
+      "multiplyingFactor": "1,00,000",
+      "formula": "(Numerator ÷ denominator) × 1,00,000",
+      "unit": "Per 100,000",
+      "component": "Delivery and intrapartum care",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "National, State and District. Below District even the data element by itself provides actionable information",
+      "periodicity": "Annual, semiannual",
+      "sourcePage": 43,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0230",
+        "HMIS-DE-0633",
+        "HMIS-DE-0009"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-036",
+      "objectType": "Derived indicator",
+      "name": "ANC Moderately anaemic rate(Hb<11gm)",
+      "definition": "Percentage of pregnant women tested to be moderately anaemic (Hb level <11g)",
+      "numerator": "Pregnant women having tested for anaemia ,Hb<11g",
+      "denominator": "Total ANC registered",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Antenatal care and high-risk pregnancy",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State, District, & Block",
+      "periodicity": "Quarterly, annual",
+      "sourcePage": 45,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0496",
+        "HMIS-DE-0681",
+        "HMIS-DE-0624",
+        "HMIS-DE-0573"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-037",
+      "objectType": "Derived indicator",
+      "name": "ANC hypertension new case detection rate",
+      "definition": "Percentage of pregnant women detected with hypertension/ high blood pressure (BP>140/90)",
+      "numerator": "Pregnant women detected BP>140/90",
+      "denominator": "Total ANC registered",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Antenatal care and high-risk pregnancy",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State, District, & Block",
+      "periodicity": "Quarterly, annual",
+      "sourcePage": 45,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0606",
+        "HMIS-DE-0681",
+        "HMIS-DE-0624",
+        "HMIS-DE-0573"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-038",
+      "objectType": "Derived indicator",
+      "name": "ANC severely anaemic treated rate",
+      "definition": "Percentage of severely anaemic pregnant women treated ( Hb level <7g)",
+      "numerator": "Severely anaemic pregnant women treated (Hb<7g)",
+      "denominator": "Total ANC registration",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Antenatal care and high-risk pregnancy",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State, District, & Block",
+      "periodicity": "Quarterly, annual",
+      "sourcePage": 45,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0504",
+        "HMIS-DE-0681",
+        "HMIS-DE-0624",
+        "HMIS-DE-0573"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-039",
+      "objectType": "Derived indicator",
+      "name": "Eclampsia management rate",
+      "definition": "% of eclampsia cases managed during delivery",
+      "numerator": "Number of eclampsia cases managed during delivery",
+      "denominator": "Total deliveries (home + institution)",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Delivery and intrapartum care",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State, District, & Block",
+      "periodicity": "Quarterly, annual",
+      "sourcePage": 46,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0352",
+        "HMIS-DE-0457",
+        "HMIS-DE-0104",
+        "HMIS-DE-0369"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-040",
+      "objectType": "Derived indicator",
+      "name": "JSY registration rate",
+      "definition": "% of pregnant women who were registered under JSY scheme.",
+      "numerator": "Total JSY registration",
+      "denominator": "Total ANC registered",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Antenatal care and high-risk pregnancy",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State, district/ block",
+      "periodicity": "Annual, semiannual",
+      "sourcePage": 47,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0028",
+        "HMIS-DE-0681",
+        "HMIS-DE-0624",
+        "HMIS-DE-0573"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-041",
+      "objectType": "Derived indicator",
+      "name": "% Institutional Delivery Receiving JSY Benefit",
+      "definition": "Proportion of women who had institutional delivery received JSY benefit",
+      "numerator": "Institutional Delivery women received JSY benefits",
+      "denominator": "No. of pregnant women registered for JSY",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Antenatal care and high-risk pregnancy",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State, district/ block",
+      "periodicity": "Annual, semiannual",
+      "sourcePage": 47,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0531",
+        "HMIS-DE-0681"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-042",
+      "objectType": "Derived indicator",
+      "name": "IPD as percentage of OPD",
+      "definition": "Proportion of IPD out of total OPD.",
+      "numerator": "Total IPD",
+      "denominator": "Total OPD",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Patient services and utilization",
+      "domain": "Health services and systems",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State and District",
+      "periodicity": "Quarterly, annual",
+      "sourcePage": 48,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0084",
+        "HMIS-DE-0187",
+        "HMIS-DE-0199",
+        "HMIS-DE-0659",
+        "HMIS-DE-0660",
+        "HMIS-DE-0626"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-043",
+      "objectType": "Derived indicator",
+      "name": "Operation major (General and spinal anaesthesia) as %of OPD",
+      "definition": "Percentage of major operations conducted against total OPD attendance",
+      "numerator": "Operation major (General and spinal anaesthesia)",
+      "denominator": "Total OPD",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Patient services and utilization",
+      "domain": "Health services and systems",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State, District and Block",
+      "periodicity": "Annual, semiannua l",
+      "sourcePage": 48,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0678",
+        "HMIS-DE-0659",
+        "HMIS-DE-0660",
+        "HMIS-DE-0626"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-044",
+      "objectType": "Derived indicator",
+      "name": "Operation minor (No or local anaesthesia) as % of OPD",
+      "definition": "Percentage of minor operations conducted against total OPD attendance",
+      "numerator": "Operation minor (No or local anaesthesia)",
+      "denominator": "Total OPD",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Patient services and utilization",
+      "domain": "Health services and systems",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State, District and Block",
+      "periodicity": "Annual, semiannual",
+      "sourcePage": 49,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0233",
+        "HMIS-DE-0659",
+        "HMIS-DE-0660",
+        "HMIS-DE-0626"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-045",
+      "objectType": "Derived indicator",
+      "name": "Dental utilization ratio",
+      "definition": "Dental Procedures as % of OPD",
+      "numerator": "Dental Procedures",
+      "denominator": "Total OPD",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Patient services and utilization",
+      "domain": "Health services and systems",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State, District and Block",
+      "periodicity": "Annual, semiannual",
+      "sourcePage": 49,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0109",
+        "HMIS-DE-0659",
+        "HMIS-DE-0660",
+        "HMIS-DE-0626"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-046",
+      "objectType": "Derived indicator",
+      "name": "Bed occupancy rate",
+      "definition": "Percentage of bed occupancy against total beds available in a facility in a given time period",
+      "numerator": "Sum of inpatient head count at midnight",
+      "denominator": "Total Bed days available (total number of days for which indicator is calculated x total number of beds)",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Patient services and utilization",
+      "domain": "Health services and systems",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "Facility",
+      "periodicity": "Annual, semiannual",
+      "sourcePage": 49,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0152",
+        "HMIS-DE-0453"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-047",
+      "objectType": "Derived indicator",
+      "name": "HIV positive as % of HIV tested",
+      "definition": "Proportion of HIV +ve cases(all)out of total tested for HIV.",
+      "numerator": "Total number of patients who were found HIV+ve after test",
+      "denominator": "Total HIV test conducted",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "STI/HIV services",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State, District and Block",
+      "periodicity": "Quarterly, annual",
+      "sourcePage": 50,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0556",
+        "HMIS-DE-0623",
+        "HMIS-DE-0621",
+        "HMIS-DE-0695"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-048",
+      "objectType": "Derived indicator",
+      "name": "Proportion of antenatal women tested for HIV",
+      "definition": "Proportion of pregnant women who were tested for HIV .",
+      "numerator": "ANC tested for HIV",
+      "denominator": "Total ANC Registration",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Antenatal care and high-risk pregnancy",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State, District and Block",
+      "periodicity": "Quarterly, annual",
+      "sourcePage": 50,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0558",
+        "HMIS-DE-0681",
+        "HMIS-DE-0624",
+        "HMIS-DE-0573"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-049",
+      "objectType": "Derived indicator",
+      "name": "HIV prevalence among antenatal (ANC) tested",
+      "definition": "Proportion of ANC who were found to be HIV +ve after test",
+      "numerator": "Antenatal women tested and found HIV positive",
+      "denominator": "Antenatal women tested for HIV",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Antenatal care and high-risk pregnancy",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State, District and Block",
+      "periodicity": "Quarterly, annual",
+      "sourcePage": 50,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0549",
+        "HMIS-DE-0550"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-050",
+      "objectType": "Derived indicator",
+      "name": "HIV prevalence among non ANC tested (excluding ANC women)",
+      "definition": "Proportion of non- ANC who were found to be HIV +ve after test",
+      "numerator": "HIV test positive (excluding antenatal)",
+      "denominator": "HIV tested (excluding antenatal)",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Antenatal care and high-risk pregnancy",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State, District and Block",
+      "periodicity": "Quarterly, annual",
+      "sourcePage": 50,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0225",
+        "HMIS-DE-0652"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-051",
+      "objectType": "Derived indicator",
+      "name": "HIV prevalence amongmales tested",
+      "definition": "Proportion of HIV+ cases among total number of males tested",
+      "numerator": "HIV test positive (males)",
+      "denominator": "No. of males tested for HIV",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "STI/HIV services",
+      "domain": "Maternal, newborn and reproductive health",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State, District and Block",
+      "periodicity": "Quarterly, annual",
+      "sourcePage": 50,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0555",
+        "HMIS-DE-0263",
+        "HMIS-DE-0556"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-052",
+      "objectType": "Derived indicator",
+      "name": "Annual parasite incidence",
+      "definition": "Confirmed cases during 1 year/populatio n under surveillance) x 1000.",
+      "numerator": "Total no. of blood smears +ve for Malarial Parasite in a year",
+      "denominator": "Total population",
+      "multiplyingFactor": "1000",
+      "formula": "(Numerator ÷ denominator) × 1000",
+      "unit": "Per 1,000",
+      "component": "Vector-borne diseases",
+      "domain": "Communicable diseases",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State, District and Block",
+      "periodicity": "Annual",
+      "sourcePage": 51,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0625"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-053",
+      "objectType": "Derived indicator",
+      "name": "Annual Blood Examination rate (ABER)",
+      "definition": "Number of slides examined",
+      "numerator": "No. of blood smears examined for Malarial Parasite in a year",
+      "denominator": "Total population",
+      "multiplyingFactor": "100",
+      "formula": "(Numerator ÷ denominator) × 100",
+      "unit": "Percentage",
+      "component": "Vector-borne diseases",
+      "domain": "Communicable diseases",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State, District and Block",
+      "periodicity": "Annual",
+      "sourcePage": 51,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0625"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    },
+    {
+      "id": "IND-HMIS-IND-054",
+      "objectType": "Derived indicator",
+      "name": "Diarrhoea incidence under 5 years (per 1,000)",
+      "definition": "The number of children under 5 years with diarrhoea per 1,000 population under 5 years per year.",
+      "numerator": "The number of children with diarrhea under 5years",
+      "denominator": "Total children under 5 years",
+      "multiplyingFactor": "1000",
+      "formula": "(Numerator ÷ denominator) × 1000",
+      "unit": "Per 1,000",
+      "component": "Childhood illness",
+      "domain": "Child, adolescent and nutrition services",
+      "recordClass": "Derived HMIS indicator",
+      "suggestedLevel": "State & District",
+      "periodicity": "Annual",
+      "sourcePage": 52,
+      "sourceVersion": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "versionStatus": "Historical technical definition",
+      "currentCrosswalkStatus": "Current April-2025 field crosswalk pending custodian validation",
+      "whoPillars": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "sourceUrl": "https://nhsrcindia.org/training-and-tools",
+      "sourceAuthority": "National Health Systems Resource Centre",
+      "aggregationRule": "Prefer ratio of aggregated numerators and denominators; do not average facility percentages unless explicitly specified.",
+      "zeroDenominatorRule": "Not stated in the historical source; treat as undefined and retain numerator/denominator for review.",
+      "relatedElementIds": [
+        "HMIS-DE-0085",
+        "HMIS-DE-0092",
+        "HMIS-DE-0091",
+        "HMIS-DE-0284"
+      ],
+      "uses": [
+        "Programme monitoring",
+        "Trend analysis",
+        "District/state comparison",
+        "Service-gap investigation"
+      ],
+      "caveats": "Historical technical definition. Older schedules and terminology must not be presented as the current national HMIS definition without version reconciliation."
+    }
+  ]
+}

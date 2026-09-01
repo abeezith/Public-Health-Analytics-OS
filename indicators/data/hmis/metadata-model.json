@@ -1,0 +1,105 @@
+{
+  "metadata": {
+    "release": "1.3.0-hmis-knowledge-structure",
+    "cutoff": "2026-09-01",
+    "title": "HMIS linked knowledge registry",
+    "statement": "Public-source-bounded research structure; not a complete live national HMIS dictionary.",
+    "counts": {
+      "Derived indicator": 54,
+      "Data element": 700,
+      "Published output": 202,
+      "Validation rule": 25
+    },
+    "totalObjects": 981,
+    "sourceCount": 12,
+    "openEvidenceGaps": 10,
+    "versionPolicy": "Current public forms, historical technical definitions and historical published outputs remain explicitly separated."
+  },
+  "fields": [
+    {
+      "group": "identity",
+      "field": "registry_id",
+      "requirement": "Stable local identifier; never reuse after retirement"
+    },
+    {
+      "group": "identity",
+      "field": "official_item_code",
+      "requirement": "All observed form/portal codes with source-version context"
+    },
+    {
+      "group": "identity",
+      "field": "label",
+      "requirement": "Exact official wording plus normalized preferred label"
+    },
+    {
+      "group": "semantics",
+      "field": "definition",
+      "requirement": "Official definition; distinguish quoted, paraphrased and analyst-inferred"
+    },
+    {
+      "group": "semantics",
+      "field": "record_class",
+      "requirement": "Raw data element, derived indicator, reporting-quality metric, target or contextual denominator"
+    },
+    {
+      "group": "calculation",
+      "field": "numerator_denominator_multiplier",
+      "requirement": "Only when explicitly sourced; store expression and zero-denominator rule"
+    },
+    {
+      "group": "calculation",
+      "field": "aggregation_rule",
+      "requirement": "Sum, average, ratio-of-sums, last-value, distinct count or non-additive"
+    },
+    {
+      "group": "time",
+      "field": "reporting_period",
+      "requirement": "Monthly source period and recommended analytical periodicity"
+    },
+    {
+      "group": "geography",
+      "field": "reporting_and_aggregation_levels",
+      "requirement": "Facility, outreach unit, block/subdistrict, district, state/UT, national"
+    },
+    {
+      "group": "facility",
+      "field": "applicable_facility_types",
+      "requirement": "SC/AAM, PHC/AAM, CHC, SDH, DH, medical college, BHQ, DHQ and other mapped types"
+    },
+    {
+      "group": "lineage",
+      "field": "primary_register_to_portal",
+      "requirement": "Register/source event, form field, portal field, aggregation and publication output"
+    },
+    {
+      "group": "quality",
+      "field": "validation_and_plausibility_rules",
+      "requirement": "Logical checks, temporal checks, outliers and reporting completeness"
+    },
+    {
+      "group": "quality",
+      "field": "zero_blank_not_applicable_semantics",
+      "requirement": "Do not collapse zero, blank, unavailable service and non-reporting"
+    },
+    {
+      "group": "governance",
+      "field": "source_version_currentness",
+      "requirement": "Effective date, supersession, custodian and verification date"
+    },
+    {
+      "group": "governance",
+      "field": "access_and_license",
+      "requirement": "Public, session-dependent, restricted; OGD licence where applicable"
+    },
+    {
+      "group": "use",
+      "field": "decision_use_and_caveats",
+      "requirement": "Operational use, interpretation constraints, denominator/catchment warning"
+    },
+    {
+      "group": "framework",
+      "field": "who_building_blocks",
+      "requirement": "Analyst mapping, clearly marked as non-custodian metadata"
+    }
+  ]
+}

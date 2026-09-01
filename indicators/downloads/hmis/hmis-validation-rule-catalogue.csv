@@ -1,0 +1,26 @@
+﻿rule_id,domain,left_element,operator,right_element,interpretation
+ANC-01,Antenatal care,ANC registration,>=,TT1,Legacy NHSRC training rule
+ANC-02,Antenatal care,Early ANC registration,<=,ANC registration,Logical subset
+BLIND-01,Blindness control,Eyes collected,>=,Eyes utilized,Logical stock/use relationship
+BLIND-02,Blindness control,Patients operated for cataract,>=,IOL implanted,Logical subset
+DEL-01,Deliveries,Caesarean deliveries,<=,Institutional deliveries,Logical subset
+DEL-02,Deliveries,Women discharged under 48 hours,<=,Deliveries at facility,Logical subset
+DEL-03,Deliveries,Institutional deliveries,<=,BCG given,"Plausibility query, not universal hard error"
+DEL-04,Deliveries,Institutional deliveries,<=,OPV0 given,"Plausibility query, not universal hard error"
+DEL-05,Deliveries,Total deliveries,=,Live births + still births,Accounting identity
+IMM-01,Immunization,BCG given,<=,Live births,Plausibility query; catchment/referral effects possible
+IMM-02,Immunization,Sessions planned,>=,Sessions held,Logical plan/achievement relationship
+IMM-03,Immunization,Measles doses,>=,Fully immunized children,Legacy schedule relationship
+IMM-04,Immunization,OPV booster,=,DPT booster,Legacy schedule relationship
+IMM-05,Immunization,OPV1,=,DPT1,Legacy schedule relationship
+IMM-06,Immunization,OPV2,=,DPT2,Legacy schedule relationship
+IMM-07,Immunization,OPV3,=,DPT3,Legacy schedule relationship
+IMM-08,Immunization,Vitamin A dose,=,Measles dose,Legacy schedule relationship
+JSY-01,JSY,ASHAs and ANMs/AWWs paid institutional-delivery incentive,<=,Mothers paid JSY institutional-delivery incentive,Logical subset
+JSY-02,JSY,JSY home-delivery incentives,<=,Home deliveries at Sub Centre,Logical subset
+JSY-03,JSY,Mothers receiving JSY incentive,<=,Deliveries,Logical subset
+JSY-04,JSY,JSY registrations,<=,New ANC registrations,Logical subset
+NB-01,Newborn,Newborns breastfed within one hour,<=,Live births,Logical subset
+NB-02,Newborn,Newborns weighed at birth,<=,Live births,Logical subset
+NB-03,Newborn,Newborns below 2.5 kg,<=,Newborns weighed,Logical subset
+PNC-01,Postnatal care,Women receiving first postpartum check within 48 hours,<=,Live births + still births,"Logical subset, subject to definition alignment"

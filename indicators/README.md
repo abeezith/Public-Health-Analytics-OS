@@ -20,4 +20,6 @@ The source project includes a build command that refreshes the packaged data and
 npm run build:github-pages
 ```
 
-This package is bounded-exhaustive Release 1: 3,108 records from four source-complete global catalogues plus the curated priority collection. Its source census also identifies authorities scheduled for later thematic, regional and national extensions. See the site's coverage section and downloadable source census for the exact inclusion rules and limitations.
+The current package is Release 1.3: 3,488 main-registry indicators, including 380 India-source-specific records. HMIS is represented through a linked, version-aware knowledge layer rather than by mixing all object types into the indicator table: 54 derived indicators, 700 April-2025 form data elements, 202 historical OGD outputs and 25 validation rules.
+
+The HMIS layer is exhaustive only for its declared public sources. It does not claim to reproduce the current live national HMIS data dictionary, validation configuration, local additions or restricted portal metadata. See the coverage section, source census and HMIS downloads for provenance and open evidence gaps.

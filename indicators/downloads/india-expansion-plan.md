@@ -1,11 +1,12 @@
 # India public-health indicator coverage audit and expansion plan
 
-**Audit date:** 25 August 2026  
-**Registry release:** 1.2 NTEP deep vertical, 3,446 records
+**Audit date:** 1 September 2026
+
+**Registry release:** 1.3 linked HMIS knowledge structure, 3,488 indicators
 
 ## Finding
 
-Release 1.2 contains **338 India-source-specific records** governed by MoHFW, NHM, DGHS, NHA, NACO, NCDC, NCVBDC, NHSRC, IIPS or CBHI. All 15 registered Indian source families are represented. NTEP now contributes 222 deep records within a declared public-source boundary; the other programme families remain verified subsets and are not yet source-complete extractions of every programme form, dashboard, table and historical edition.
+Release 1.3 contains **380 India-source-specific indicators** governed by MoHFW, NHM, DGHS, NHA, NACO, NCDC, NCVBDC, NHSRC, IIPS or CBHI. All 15 registered Indian source families are represented. NTEP contributes 222 deep records. HMIS contributes 54 formula-defined indicators to the main registry and a separate linked layer containing 700 April-2025 data elements, 202 historical published outputs and 25 validation rules.
 
 Indian source manifestations remain separate from similar global indicators until a reviewed crosswalk establishes equivalence. Every India record carries country, programme, reporting system, administrative level, record type, source version, official URL and WHO building-block tags.
 
@@ -35,16 +36,20 @@ Indian programmes often specify operational numerators, denominators, reporting 
 
 ## Implementation status and remaining plan
 
-### Completed through Release 1.2
+### Completed through Release 1.3
 
-1. Established `IND-*` identifier namespaces and added 338 official-source records.
+1. Established `IND-*` identifier namespaces and added 380 official-source indicators.
 2. Added country, India programme, reporting system, administrative level, facility type, record type, source version, target and source-location fields.
 3. Added geography and India programme filters alongside the six-pillar WHO building-block filter.
 4. Completed an NTEP deep vertical of 222 official-source records spanning KPIs, diagnostics, laboratory reporting, DR-TB and TB Mukt Panchayat verification.
 5. Added programme component, lowest and full reporting levels, reporting unit, responsible cadre, exact source location, lineage, calculation status, currentness and QA fields.
-6. Updated JSON, CSV, source census, coverage ledger and XLSX workbook.
+6. Implemented the HMIS linked knowledge model: indicators, atomic data elements, published outputs, validation rules, source ledger, research gaps and candidate crosswalks remain separately typed and versioned.
+7. Added HMIS object-type, programme-component, facility-applicability and version filters; bidirectional relation navigation; and JSON/CSV/XLSX downloads.
+8. Updated JSON, CSV, source census, coverage ledger and the 15-sheet XLSX workbook.
 
 **NTEP completion boundary:** deep public-source extraction is complete for the declared sources. The restricted live Ni-kshay data dictionary, validation rules and role-specific report catalogue remain pending authorised access and custodian confirmation.
+
+**HMIS completion boundary:** the declared public NHSRC definitions, revised April-2025 reporting formats, FY 2019-20 OGD output layer and historical validation guidance have been structured. The current live national dictionary, portal validation configuration, local additions and custodian-approved current-form crosswalk remain pending.
 
 ### Phase 0 — governance and version control
 
@@ -87,4 +92,4 @@ The mapping is deterministic and multi-label, using registry domains and metadat
 
 ## Recommended release claim
 
-Describe the registry as: **“Globally bounded-exhaustive for four Release 1 catalogues; India Release 1.1 is a verified official subset across 15 national source families and is not yet source-complete.”**
+Describe the registry as: **“Globally bounded-exhaustive for four Release 1 catalogues; India Release 1.3 contains verified official indicators across 15 national source families. NTEP and HMIS are deep, declared-source-bounded verticals; the wider India extension is not yet source-complete.”**

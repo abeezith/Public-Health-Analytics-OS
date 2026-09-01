@@ -1,0 +1,1517 @@
+{
+  "metadata": {
+    "release": "1.3.0-hmis-knowledge-structure",
+    "cutoff": "2026-09-01",
+    "title": "HMIS linked knowledge registry",
+    "statement": "Public-source-bounded research structure; not a complete live national HMIS dictionary.",
+    "counts": {
+      "Derived indicator": 54,
+      "Data element": 700,
+      "Published output": 202,
+      "Validation rule": 25
+    },
+    "totalObjects": 981,
+    "sourceCount": 12,
+    "openEvidenceGaps": 10,
+    "versionPolicy": "Current public forms, historical technical definitions and historical published outputs remain explicitly separated."
+  },
+  "indicatorElementCrosswalks": [
+    {
+      "indicatorId": "IND-HMIS-IND-001",
+      "numeratorText": "Total ANC registered",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0681",
+          "name": "Total number of NEW Pregnant Women registered for ANC",
+          "score": 0.762,
+          "matchStatus": "Probable successor",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0624",
+          "name": "Total ANC footfall/cases (Old cases + New Registration) attended",
+          "score": 0.635,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0573",
+          "name": "Out of the total NEW ANC registered, number registered within 1st trimester (within 12 weeks)",
+          "score": 0.594,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Estimated pregnancies",
+      "denominatorCandidates": [],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-002",
+      "numeratorText": "Total no. of ANC registered within first trimester (12weeks)",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0573",
+          "name": "Out of the total NEW ANC registered, number registered within 1st trimester (within 12 weeks)",
+          "score": 0.573,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Total ANC registered",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0681",
+          "name": "Total number of NEW Pregnant Women registered for ANC",
+          "score": 0.762,
+          "matchStatus": "Probable successor",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0624",
+          "name": "Total ANC footfall/cases (Old cases + New Registration) attended",
+          "score": 0.635,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0573",
+          "name": "Out of the total NEW ANC registered, number registered within 1st trimester (within 12 weeks)",
+          "score": 0.594,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-003",
+      "numeratorText": "Total no. pregnant women given TT2/booster",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0492",
+          "name": "Number of PW given Td Booster (Tetanus Diptheria dose booster)",
+          "score": 0.572,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Total ANC registered",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0681",
+          "name": "Total number of NEW Pregnant Women registered for ANC",
+          "score": 0.762,
+          "matchStatus": "Probable successor",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0624",
+          "name": "Total ANC footfall/cases (Old cases + New Registration) attended",
+          "score": 0.635,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0573",
+          "name": "Out of the total NEW ANC registered, number registered within 1st trimester (within 12 weeks)",
+          "score": 0.594,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-004",
+      "numeratorText": "Total ANC 3 check ups",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0499",
+          "name": "Number of PW received 4 or more ANC check ups",
+          "score": 0.565,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Total ANC registered",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0681",
+          "name": "Total number of NEW Pregnant Women registered for ANC",
+          "score": 0.762,
+          "matchStatus": "Probable successor",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0624",
+          "name": "Total ANC footfall/cases (Old cases + New Registration) attended",
+          "score": 0.635,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0573",
+          "name": "Out of the total NEW ANC registered, number registered within 1st trimester (within 12 weeks)",
+          "score": 0.594,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-005",
+      "numeratorText": "Total no. of ANC women given 100 IFA tablets",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0444",
+          "name": "Number of out of school children (5 -9 years) given 4-5 IFA Pink tablets at Anganwadi Centres",
+          "score": 0.378,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Total ANC registered",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0681",
+          "name": "Total number of NEW Pregnant Women registered for ANC",
+          "score": 0.762,
+          "matchStatus": "Probable successor",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0624",
+          "name": "Total ANC footfall/cases (Old cases + New Registration) attended",
+          "score": 0.635,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0573",
+          "name": "Out of the total NEW ANC registered, number registered within 1st trimester (within 12 weeks)",
+          "score": 0.594,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-006",
+      "numeratorText": "Total Number of children aged between 9 and 11 months who have been fully immunized",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0136",
+          "name": "FULLY IMMUNIZED children aged between 9 and <12 months- Male",
+          "score": 0.643,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0135",
+          "name": "FULLY IMMUNIZED children aged between 9 and <12 months- Female",
+          "score": 0.641,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0314",
+          "name": "Number of children aged between 9 and <12 months FULLY IMMUNIZED {BCG +OPV123+ Pentavalent123+ MR/ Measles Containing Vaccine (MCV)-1st Dose}",
+          "score": 0.54,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Estimated children below 1 year",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0154",
+          "name": "In-transit Deaths: 1 year and below 5 years",
+          "score": 0.49,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-007",
+      "numeratorText": "BCG dose under 1 year",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0062",
+          "name": "Child immunisation - Vitamin A Dose - 1",
+          "score": 0.327,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Estimated children below 1 year",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0154",
+          "name": "In-transit Deaths: 1 year and below 5 years",
+          "score": 0.49,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-008",
+      "numeratorText": "DPT 3 dose under 1 year",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0062",
+          "name": "Child immunisation - Vitamin A Dose - 1",
+          "score": 0.299,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Estimated children below 1 year",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0154",
+          "name": "In-transit Deaths: 1 year and below 5 years",
+          "score": 0.49,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-009",
+      "numeratorText": "OPV 3 dose under 1 year",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0062",
+          "name": "Child immunisation - Vitamin A Dose - 1",
+          "score": 0.292,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Estimated children below 1 year",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0154",
+          "name": "In-transit Deaths: 1 year and below 5 years",
+          "score": 0.49,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-010",
+      "numeratorText": "Measles dose under 1 year",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0062",
+          "name": "Child immunisation - Vitamin A Dose - 1",
+          "score": 0.33,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Estimated children below 1 year",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0154",
+          "name": "In-transit Deaths: 1 year and below 5 years",
+          "score": 0.49,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-011",
+      "numeratorText": "Total number of infants (0-11 months), given BCG immunization- number of children given measles",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0386",
+          "name": "Number of Infants 0 to 11 months old who received:",
+          "score": 0.548,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Number of children given BCG",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0313",
+          "name": "Number of Children 9-11 months who received:",
+          "score": 0.544,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-012",
+      "numeratorText": "Number of children given DPT 3 – number of children given measles",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0313",
+          "name": "Number of Children 9-11 months who received:",
+          "score": 0.372,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Number of children given DPT3",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0313",
+          "name": "Number of Children 9-11 months who received:",
+          "score": 0.541,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-013",
+      "numeratorText": "Deliveries at public institution/facility",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0350",
+          "name": "Number of delivery LAMA cases reported at the facility",
+          "score": 0.268,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Estimated deliveries",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0658",
+          "name": "Total number of C -Section deliveries performed",
+          "score": 0.407,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-014",
+      "numeratorText": "Deliveries at public and private institution/facility",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0601",
+          "name": "Post-abortion/MTP complications identified (where abortions were carried out in facilities other than public and accredited private health facilities)",
+          "score": 0.289,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Estimated deliveries",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0658",
+          "name": "Total number of C -Section deliveries performed",
+          "score": 0.407,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-015",
+      "numeratorText": "Number of home deliveries",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0104",
+          "name": "Deliveries conducted at Home",
+          "score": 0.783,
+          "matchStatus": "Probable successor",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0369",
+          "name": "Number of Home Deliveries attended by",
+          "score": 0.768,
+          "matchStatus": "Probable successor",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0370",
+          "name": "Number of Home Deliveries attended by Non SBA",
+          "score": 0.687,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Estimated deliveries",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0658",
+          "name": "Total number of C -Section deliveries performed",
+          "score": 0.407,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-016",
+      "numeratorText": "Deliveries by SBA (SBA Home + all Institutional deliveries)",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0370",
+          "name": "Number of Home Deliveries attended by Non SBA",
+          "score": 0.551,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Total reported deliveries",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0301",
+          "name": "Number of cases reported for Self Harm",
+          "score": 0.407,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-017",
+      "numeratorText": "Number. of caesarian section done",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0262",
+          "name": "No. of Major Surgeries done at night (8PM to 8 AM) (Excluding C section)",
+          "score": 0.436,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Total institutional deliveries (Caesarean section + Normal delivery)",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0577",
+          "name": "Out of total institutional deliveries(excluding C-section), number of women stayed for 48 hours or more after delivery",
+          "score": 0.528,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-018",
+      "numeratorText": "Number of women who received post partum check-ups within 48 hrs after deliver",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0531",
+          "name": "Number of women receiving Postpartum checkup between 48 hours and 14 days after Institutional delivery",
+          "score": 0.478,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Reported deliveries (Institutional + Home)",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0010",
+          "name": "Age wise total number of delivery (Home +Institutional) reported (2.3.1+2.3.2+2.3.3+2.3.4)",
+          "score": 0.538,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-019",
+      "numeratorText": "Number of women who received post partum check-ups between 48 hrs and 14 days of delivery",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0531",
+          "name": "Number of women receiving Postpartum checkup between 48 hours and 14 days after Institutional delivery",
+          "score": 0.682,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Reported deliveries (Institutional + Home)",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0010",
+          "name": "Age wise total number of delivery (Home +Institutional) reported (2.3.1+2.3.2+2.3.3+2.3.4)",
+          "score": 0.538,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-020",
+      "numeratorText": "All FP Users {sterilization(m ale & female)+IUD Inserted +Condom/72+ OCP/13}",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0133",
+          "name": "FEMALE STERILIZATION",
+          "score": 0.199,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Number of eligible couples",
+      "denominatorCandidates": [],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-021",
+      "numeratorText": "",
+      "numeratorCandidates": [],
+      "denominatorText": "",
+      "denominatorCandidates": [],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-022",
+      "numeratorText": "",
+      "numeratorCandidates": [],
+      "denominatorText": "",
+      "denominatorCandidates": [],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-023",
+      "numeratorText": "OCP USERS(OCP Cycles /13)",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0328",
+          "name": "Number of Combined Oral Pill cycles distributed to the beneficiary",
+          "score": 0.224,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "eligible couples",
+      "denominatorCandidates": [],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-024",
+      "numeratorText": "Condom users(condom pieces distributed /72)",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0330",
+          "name": "Number of Condom pieces distributed to the beneficiary",
+          "score": 0.578,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "eligible couples",
+      "denominatorCandidates": [],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-025",
+      "numeratorText": "all sterilizations(male &Female)",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0228",
+          "name": "MALE STERILIZATION",
+          "score": 0.316,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "All FP Users",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0355",
+          "name": "Number of females (all females) assessed for STI/RTI",
+          "score": 0.275,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-026",
+      "numeratorText": "IUD Users++OCP Users+ Condom Users",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0330",
+          "name": "Number of Condom pieces distributed to the beneficiary",
+          "score": 0.22,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "eligible couples",
+      "denominatorCandidates": [],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-027",
+      "numeratorText": "New born breastfed within one hour of birth",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0427",
+          "name": "Number of Newborns breast fed within 1 hour of birth",
+          "score": 0.515,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Total live births (as recorded)",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0399",
+          "name": "Number of live births among Syphilis seropositive Pregnant Women",
+          "score": 0.417,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-028",
+      "numeratorText": "Live Births females",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0399",
+          "name": "Number of live births among Syphilis seropositive Pregnant Women",
+          "score": 0.492,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Live Births males",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0399",
+          "name": "Number of live births among Syphilis seropositive Pregnant Women",
+          "score": 0.508,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-029",
+      "numeratorText": "Live births with a birth weight < 2500g.",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0215",
+          "name": "Live Birth",
+          "score": 0.356,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Live births weighed",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0399",
+          "name": "Number of live births among Syphilis seropositive Pregnant Women",
+          "score": 0.485,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-030",
+      "numeratorText": "Deaths in first 28 days",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0238",
+          "name": "Neonatal Deaths up to 4 weeks (0 to 28 days) due to",
+          "score": 0.549,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0249",
+          "name": "New born deaths within 8 to 28 days at Facility/Facility to facility in transit",
+          "score": 0.533,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0242",
+          "name": "Neonatal Deaths up to 4 weeks (0 to 28 days) due to Sepsis",
+          "score": 0.528,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Live births",
+      "denominatorCandidates": [],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-031",
+      "numeratorText": "Deaths of infants less than one year old (Neonatal death plus deaths in 1-12 months)",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0160",
+          "name": "Infant Deaths Between more than 28 days and below 12 months due to",
+          "score": 0.28,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "live births",
+      "denominatorCandidates": [],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-032",
+      "numeratorText": "Deaths Neonatal + Deaths infant + Deaths 1-5 years",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0154",
+          "name": "In-transit Deaths: 1 year and below 5 years",
+          "score": 0.559,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0032",
+          "name": "Child Deaths between 1 - below 5 years due to",
+          "score": 0.533,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0306",
+          "name": "Number of Child Deaths (1 -below 5 years) due to Others",
+          "score": 0.525,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "live births",
+      "denominatorCandidates": [],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-033",
+      "numeratorText": "Deaths Peri- natal (still births plus early neonatal in first week)",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0238",
+          "name": "Neonatal Deaths up to 4 weeks (0 to 28 days) due to",
+          "score": 0.191,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Live Births.",
+      "denominatorCandidates": [],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-034",
+      "numeratorText": "Total no. of still births",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0619",
+          "name": "Still Birth",
+          "score": 0.533,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Total births (Live birth + Still birth)",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0619",
+          "name": "Still Birth",
+          "score": 0.51,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-035",
+      "numeratorText": "Deaths Maternal",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0230",
+          "name": "Maternal Deaths at facility due to",
+          "score": 0.699,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0633",
+          "name": "Total In-transit Deaths :Excluding infant & maternal deaths",
+          "score": 0.687,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0009",
+          "name": "Age wise total Maternal Deaths, occurred at Facility",
+          "score": 0.644,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Number of live births",
+      "denominatorCandidates": [],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-036",
+      "numeratorText": "Pregnant women having tested for anaemia ,Hb<11g",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0496",
+          "name": "Number of PW having Hb level<=7 g/dl (Out of total tested cases)",
+          "score": 0.521,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Total ANC registered",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0681",
+          "name": "Total number of NEW Pregnant Women registered for ANC",
+          "score": 0.762,
+          "matchStatus": "Probable successor",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0624",
+          "name": "Total ANC footfall/cases (Old cases + New Registration) attended",
+          "score": 0.635,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0573",
+          "name": "Out of the total NEW ANC registered, number registered within 1st trimester (within 12 weeks)",
+          "score": 0.594,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-037",
+      "numeratorText": "Pregnant women detected BP>140/90",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0606",
+          "name": "Pregnant Women (PW) with Hypertension (BP>140/90)",
+          "score": 0.679,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Total ANC registered",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0681",
+          "name": "Total number of NEW Pregnant Women registered for ANC",
+          "score": 0.762,
+          "matchStatus": "Probable successor",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0624",
+          "name": "Total ANC footfall/cases (Old cases + New Registration) attended",
+          "score": 0.635,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0573",
+          "name": "Out of the total NEW ANC registered, number registered within 1st trimester (within 12 weeks)",
+          "score": 0.594,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-038",
+      "numeratorText": "Severely anaemic pregnant women treated (Hb<7g)",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0504",
+          "name": "Number of PW treated for severe anaemia (Hb<=7g/dl) (including referred-in cases)",
+          "score": 0.486,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Total ANC registration",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0681",
+          "name": "Total number of NEW Pregnant Women registered for ANC",
+          "score": 0.762,
+          "matchStatus": "Probable successor",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0624",
+          "name": "Total ANC footfall/cases (Old cases + New Registration) attended",
+          "score": 0.635,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0573",
+          "name": "Out of the total NEW ANC registered, number registered within 1st trimester (within 12 weeks)",
+          "score": 0.594,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-039",
+      "numeratorText": "Number of eclampsia cases managed during delivery",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0352",
+          "name": "Number of Eclampsia cases managed during delivery",
+          "score": 1.0,
+          "matchStatus": "Exact label match",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0457",
+          "name": "Number of Pre-Eclampsia/Eclampsia cases managed during ANC",
+          "score": 0.703,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Total deliveries (home + institution)",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0104",
+          "name": "Deliveries conducted at Home",
+          "score": 0.59,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0369",
+          "name": "Number of Home Deliveries attended by",
+          "score": 0.536,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-040",
+      "numeratorText": "Total JSY registration",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0028",
+          "name": "Boys registered in AFHC",
+          "score": 0.454,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Total ANC registered",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0681",
+          "name": "Total number of NEW Pregnant Women registered for ANC",
+          "score": 0.762,
+          "matchStatus": "Probable successor",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0624",
+          "name": "Total ANC footfall/cases (Old cases + New Registration) attended",
+          "score": 0.635,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0573",
+          "name": "Out of the total NEW ANC registered, number registered within 1st trimester (within 12 weeks)",
+          "score": 0.594,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-041",
+      "numeratorText": "Institutional Delivery women received JSY benefits",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0531",
+          "name": "Number of women receiving Postpartum checkup between 48 hours and 14 days after Institutional delivery",
+          "score": 0.467,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "No. of pregnant women registered for JSY",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0681",
+          "name": "Total number of NEW Pregnant Women registered for ANC",
+          "score": 0.587,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-042",
+      "numeratorText": "Total IPD",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0084",
+          "name": "Childhood IPD",
+          "score": 0.7,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0187",
+          "name": "IPD Admission",
+          "score": 0.7,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0199",
+          "name": "IPD Discharge",
+          "score": 0.7,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Total OPD",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0659",
+          "name": "Total Number of cases Referred out (OPD+Emergency)",
+          "score": 0.554,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0660",
+          "name": "Total Number of cases Referred out (OPD+IPD+Emergency)",
+          "score": 0.539,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0626",
+          "name": "Total cases Referred out (OPD+Emergency)-During Day",
+          "score": 0.526,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-043",
+      "numeratorText": "Operation major (General and spinal anaesthesia)",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0678",
+          "name": "Total number of Major Operations conducted excluding C-Section (General and spinal anaesthesia)",
+          "score": 0.651,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Total OPD",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0659",
+          "name": "Total Number of cases Referred out (OPD+Emergency)",
+          "score": 0.554,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0660",
+          "name": "Total Number of cases Referred out (OPD+IPD+Emergency)",
+          "score": 0.539,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0626",
+          "name": "Total cases Referred out (OPD+Emergency)-During Day",
+          "score": 0.526,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-044",
+      "numeratorText": "Operation minor (No or local anaesthesia)",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0233",
+          "name": "Minor Operations (No or local anaesthesia)",
+          "score": 0.758,
+          "matchStatus": "Probable successor",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Total OPD",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0659",
+          "name": "Total Number of cases Referred out (OPD+Emergency)",
+          "score": 0.554,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0660",
+          "name": "Total Number of cases Referred out (OPD+IPD+Emergency)",
+          "score": 0.539,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0626",
+          "name": "Total cases Referred out (OPD+Emergency)-During Day",
+          "score": 0.526,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-045",
+      "numeratorText": "Dental Procedures",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0109",
+          "name": "Details of Newborn children",
+          "score": 0.107,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Total OPD",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0659",
+          "name": "Total Number of cases Referred out (OPD+Emergency)",
+          "score": 0.554,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0660",
+          "name": "Total Number of cases Referred out (OPD+IPD+Emergency)",
+          "score": 0.539,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0626",
+          "name": "Total cases Referred out (OPD+Emergency)-During Day",
+          "score": 0.526,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-046",
+      "numeratorText": "Sum of inpatient head count at midnight",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0152",
+          "name": "In-Patient Head Count at midnight",
+          "score": 0.625,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Total Bed days available (total number of days for which indicator is calculated x total number of beds)",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0453",
+          "name": "Number of Post-abortion sterilizations (within 7 days of spontaneous or surgical abortion) conducted",
+          "score": 0.138,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-047",
+      "numeratorText": "Total number of patients who were found HIV+ve after test",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0556",
+          "name": "Out of the above, No. of males found reactive for HIV",
+          "score": 0.299,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Total HIV test conducted",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0623",
+          "name": "Thyroid test conducted for Pregnant Women",
+          "score": 0.598,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0621",
+          "name": "Syphilis test conducted for Pregnant Women",
+          "score": 0.595,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0695",
+          "name": "Tuberculosis test conducted for Pregnant Women",
+          "score": 0.573,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-048",
+      "numeratorText": "ANC tested for HIV",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0558",
+          "name": "Out of the above, No. of PW(ANC) found reactive for HIV",
+          "score": 0.469,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Total ANC Registration",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0681",
+          "name": "Total number of NEW Pregnant Women registered for ANC",
+          "score": 0.762,
+          "matchStatus": "Probable successor",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0624",
+          "name": "Total ANC footfall/cases (Old cases + New Registration) attended",
+          "score": 0.635,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0573",
+          "name": "Out of the total NEW ANC registered, number registered within 1st trimester (within 12 weeks)",
+          "score": 0.594,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-049",
+      "numeratorText": "Antenatal women tested and found HIV positive",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0549",
+          "name": "Out of the above, No. of DIL women confirmed as HIV Positive",
+          "score": 0.441,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Antenatal women tested for HIV",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0550",
+          "name": "Out of the above, No. of DIL women found reactive for HIV",
+          "score": 0.403,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-050",
+      "numeratorText": "HIV test positive (excluding antenatal)",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0225",
+          "name": "Malaria (RDT) - Mixed test positive",
+          "score": 0.356,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "HIV tested (excluding antenatal)",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0652",
+          "name": "Total number of blood samples tested positive by ELISA/ Rapid tests for Hepatitis B (out of those tested for HBsAg excluding pregnant women)",
+          "score": 0.322,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-051",
+      "numeratorText": "HIV test positive (males)",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0555",
+          "name": "Out of the above, No. of males confirmed as HIV Positive",
+          "score": 0.544,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0263",
+          "name": "No. of males subjected to HIV test at Confirmatory Centre/Stand Alone-ICTC",
+          "score": 0.523,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "No. of males tested for HIV",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0556",
+          "name": "Out of the above, No. of males found reactive for HIV",
+          "score": 0.496,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-052",
+      "numeratorText": "Total no. of blood smears +ve for Malarial Parasite in a year",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0625",
+          "name": "Total Blood Smears Examined for Malaria",
+          "score": 0.369,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Total population",
+      "denominatorCandidates": [],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-053",
+      "numeratorText": "No. of blood smears examined for Malarial Parasite in a year",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0625",
+          "name": "Total Blood Smears Examined for Malaria",
+          "score": 0.534,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Total population",
+      "denominatorCandidates": [],
+      "relationshipStatus": "Research crosswalk only"
+    },
+    {
+      "indicatorId": "IND-HMIS-IND-054",
+      "numeratorText": "The number of children with diarrhea under 5years",
+      "numeratorCandidates": [
+        {
+          "elementId": "HMIS-DE-0085",
+          "name": "Children admitted with Diarrhoea",
+          "score": 0.411,
+          "matchStatus": "Unresolved",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "denominatorText": "Total children under 5 years",
+      "denominatorCandidates": [
+        {
+          "elementId": "HMIS-DE-0092",
+          "name": "Children received Vitamin A Doses between 9 months and 5 years",
+          "score": 0.549,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0091",
+          "name": "Children more than 5 years received DPT5 (2nd Booster)",
+          "score": 0.544,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        },
+        {
+          "elementId": "HMIS-DE-0284",
+          "name": "Number of anaemic in-school Children (5-9 years) put on treatment",
+          "score": 0.531,
+          "matchStatus": "Candidate",
+          "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
+        }
+      ],
+      "relationshipStatus": "Research crosswalk only"
+    }
+  ]
+}

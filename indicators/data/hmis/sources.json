@@ -1,0 +1,128 @@
+{
+  "metadata": {
+    "release": "1.3.0-hmis-knowledge-structure",
+    "cutoff": "2026-09-01",
+    "title": "HMIS linked knowledge registry",
+    "statement": "Public-source-bounded research structure; not a complete live national HMIS dictionary.",
+    "counts": {
+      "Derived indicator": 54,
+      "Data element": 700,
+      "Published output": 202,
+      "Validation rule": 25
+    },
+    "totalObjects": 981,
+    "sourceCount": 12,
+    "openEvidenceGaps": 10,
+    "versionPolicy": "Current public forms, historical technical definitions and historical published outputs remain explicitly separated."
+  },
+  "sources": [
+    {
+      "source_id": "S01",
+      "title": "MoHFW Annual Report 2025-26",
+      "version_or_period": "2025-26",
+      "scope": "Current architecture, uses, training, definitions/validation discussion and physical verification",
+      "research_treatment": "Current official context",
+      "access": "Public PDF",
+      "url": "https://notto.mohfw.gov.in/WriteReadData/Portal/News/951_1_Annual_Report_of_the_MoH_FW__2025_-_2026.pdf"
+    },
+    {
+      "source_id": "S02",
+      "title": "HMIS standard reports portal",
+      "version_or_period": "Live; checked 2026-09-01",
+      "scope": "Dashboards, standard/live reports and KPIs",
+      "research_treatment": "Current operational system; metadata export not publicly resolved",
+      "access": "Public landing / session-dependent functions",
+      "url": "https://hmis.mohfw.gov.in/#!/standardReports"
+    },
+    {
+      "source_id": "S03",
+      "title": "Revised HMIS reporting formats",
+      "version_or_period": "Effective April 2025",
+      "scope": "Eight facility/headquarters monthly formats",
+      "research_treatment": "Current public form evidence; official state-hosted copy",
+      "access": "Public PDFs",
+      "url": "https://nhm.hp.gov.in/reporting-formats"
+    },
+    {
+      "source_id": "S04",
+      "title": "NHSRC HMIS programme-manager manual: Indicators",
+      "version_or_period": "Public PDF hosted 2021; content reflects older programme definitions",
+      "scope": "54 structured indicators, formulas, levels, periodicity, rationale",
+      "research_treatment": "Historical technical guidance; do not treat as current without crosswalk",
+      "access": "Public PDF",
+      "url": "https://nhsrcindia.org/training-and-tools"
+    },
+    {
+      "source_id": "S05",
+      "title": "NHSRC HMIS programme-manager manual: Data Quality",
+      "version_or_period": "Public PDF hosted 2021",
+      "scope": "Completeness, timeliness, accuracy, zero/blank rules, validation, outliers and correction workflow",
+      "research_treatment": "Historical technical guidance; validation rules require version review",
+      "access": "Public PDF",
+      "url": "https://nhsrcindia.org/training-and-tools"
+    },
+    {
+      "source_id": "S06",
+      "title": "NHSRC HMIS programme-manager manual: Use of Information",
+      "version_or_period": "Public PDF hosted 2021",
+      "scope": "District analysis, denominators, case-load patterns and service-gap interpretation",
+      "research_treatment": "Historical analytical guidance",
+      "access": "Public PDF",
+      "url": "https://nhsrcindia.org/training-and-tools"
+    },
+    {
+      "source_id": "S07",
+      "title": "Performance of key HMIS indicators up to district level",
+      "version_or_period": "FY 2019-20 All India resource in current public catalogue",
+      "scope": "202 named outputs numbered 1-203; number 164 absent",
+      "research_treatment": "Historical public output layer",
+      "access": "Public OGD catalogue/download",
+      "url": "https://www.data.gov.in/catalog/performance-key-hmis-indicators-upto-district-level-all-indicators"
+    },
+    {
+      "source_id": "S08",
+      "title": "Item-wise HMIS report: all states and districts across months",
+      "version_or_period": "FY 2019-20 All India resource",
+      "scope": "410 legacy item codes, monthly geography outputs",
+      "research_treatment": "Historical data-element/output crosswalk",
+      "access": "Public OGD catalogue/download",
+      "url": "https://www.data.gov.in/catalog/item-wise-hmis-report-all-states-and-districts-across-months"
+    },
+    {
+      "source_id": "S09",
+      "title": "HMIS User Guidelines",
+      "version_or_period": "Version 1.5; July 2010",
+      "scope": "Legacy reporting roles, forms, flow and field guidance",
+      "research_treatment": "Legacy only",
+      "access": "Public MoHFW PDF/indexed copy",
+      "url": "https://www.mohfw.gov.in/sites/default/files/7216231442HMISUserGuidelines.pdf"
+    },
+    {
+      "source_id": "S10",
+      "title": "17th Common Review Mission",
+      "version_or_period": "2025",
+      "scope": "Contemporary field findings on HMIS completeness, timeliness, training and register/portal discrepancies",
+      "research_treatment": "Current implementation evidence, not a national data dictionary",
+      "access": "Public NHM PDF",
+      "url": "https://nhm.gov.in/New-Update-2024-26/CRM/17th-CRM-2025.pdf"
+    },
+    {
+      "source_id": "S11",
+      "title": "MoHFW Annual Report 2024-25",
+      "version_or_period": "2024-25",
+      "scope": "LGD mapping, GIS, reports/APIs, uses, training and field verification",
+      "research_treatment": "Recent official context",
+      "access": "Public PDF",
+      "url": "https://www.mohfw.gov.in/sites/default/files/Final%20Printed%20English%20AR%202024-25.pdf"
+    },
+    {
+      "source_id": "S12",
+      "title": "Revised Comprehensive Reporting Format under NHM",
+      "version_or_period": "Posted with April 2025 formats",
+      "scope": "45 programme reporting sheets",
+      "research_treatment": "Adjacent NHM programme MIS; not identical to core facility HMIS",
+      "access": "Public XLSX",
+      "url": "https://nhm.hp.gov.in/reporting-formats"
+    }
+  ]
+}

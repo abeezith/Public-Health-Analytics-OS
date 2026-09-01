@@ -1,0 +1,411 @@
+﻿legacy_item_code_as_published,normalized_item_code,parameter_label,reported_types,geographies_observed,resource_rows,source_period,currentness
+'1.1',1.1,Total number of pregnant women registered for ANC,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'1.1.1',1.1.1,"Out of the total ANC registered, number registered within 1st trimester (within 12 weeks)",TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'1.2.1',1.2.1,Number of PW given�TT1,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'1.2.2',1.2.2,Number of PW given�TT2,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'1.2.3',1.2.3,Number of PW given�TT Booster,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'1.2.4',1.2.4,Number of PW given 180 Iron Folic Acid (IFA) tablets,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'1.2.5',1.2.5,Number of PW given 360 Calcium tablets,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'1.2.6',1.2.6,Number of PW given one Albendazole tablet after 1st trimester,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'1.2.7',1.2.7,Number of PW received 4 or more ANC check ups,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'1.2.8',1.2.8,Number of PW given ANC Corticosteroids in Pre Term Labour,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'1.3.1',1.3.1,New cases of PW with hypertension detected,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'1.3.1.a',1.3.1.a,"Out of the new cases of PW with hypertension detected, cases managed at institution",TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'1.3.2',1.3.2,Number of Eclampsia cases managed during delivery,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'1.4.1',1.4.1,Number of PW tested for Haemoglobin (Hb ) 4 or more than 4 times for respective ANCs,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'1.4.2',1.4.2,Number of PW having Hb level<11 (tested cases)(7.1 to 10.9),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'1.4.3',1.4.3,Number of PW having Hb level<7 (tested cases),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'1.4.4',1.4.4,Number of PW having severe anaemia (Hb<7) treated,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'1.5.1',1.5.1,Number of PW tested for blood sugar using OGTT (Oral Glucose Tolerance Test),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'1.5.2',1.5.2,Number of PW tested positive for GDM,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'1.5.3',1.5.3,Number of PW given insulin out of total tested positive for GDM,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'1.6.1.a',1.6.1.a,Number of PW tested using POC test for Syphilis,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'1.6.1.b',1.6.1.b,"Out of above, number of PW found sero positive for syphilis",TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'1.6.2.a',1.6.2.a,Number of pregnant women tested for Syphilis,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'1.6.2.b',1.6.2.b,Number of pregnant women tested found sero positive for Syphilis,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'1.6.2.c',1.6.2.c,Number of syphilis positive pregnant women treated for Syphilis,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'1.6.2.d',1.6.2.d,Number of babies diagnosed with Congenital Syphilis,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'1.6.2.e',1.6.2.e,Number of babies treated for congenital Syphilis,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'10.1',10.1,Childhood Diseases - Pneumonia,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'10.10',10.10,Childhood Diseases - Malaria,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'10.11',10.11,Childhood Diseases - Diarrhoea,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'10.12',10.12,Childhood Diseases - Diarrhoea treated in Inpatients,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'10.13',10.13,Children admitted with upper respiratory infections,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'10.14',10.14,Childhood Diseases - Severe Acute Malnutrition (SAM),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'10.2',10.2,Childhood Diseases - Asthma,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'10.3',10.3,Childhood Diseases - Sepsis,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'10.4',10.4,Childhood Diseases - Diphtheria,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'10.5',10.5,Childhood Diseases - Pertussis,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'10.6',10.6,Childhood Diseases - Tetanus Neonatorum,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'10.7',10.7,Childhood Diseases - Tuberculosis (TB),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'10.8',10.8,Childhood Diseases - Acute Flaccid Paralysis(AFP),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'10.9',10.9,Childhood Diseases - Measles,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'11.1.1.a',11.1.1.a,Total Blood Smears Examined for Malaria,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'11.1.1.b',11.1.1.b,Malaria (Microscopy Tests ) - Plasmodium Vivax test positive,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'11.1.1.c',11.1.1.c,Malaria (Microscopy Tests ) - Plasmodium Falciparum test positive,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'11.1.2.a',11.1.2.a,RDT conducted for Malaria,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'11.1.2.b',11.1.2.b,Malaria (RDT) - Plasmodium Vivax test positive,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'11.1.2.c',11.1.2.c,Malaria (RDT) - Plamodium Falciparum test positive,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'11.2.1',11.2.1,Kala Azar (RDT) - Tests Conducted,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'11.2.2',11.2.2,Kala Azar Positive Cases,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'11.2.3',11.2.3,Post-kala-azar dermal leishmaniasis (PKDL) cases,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'11.3.1',11.3.1,Dengue - RDT Test Positive,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'11.3.2',11.3.2,Dengue - Enzyme- Linked Immuno Sorbent Assay (ELISA) Test Positive,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'11.4.1',11.4.1,Tests Conducted for JE,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'11.4.2',11.4.2,Tests Positive for JE,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'12.1.1.a',12.1.1.a,Girls registered in AFHC,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'12.1.1.b',12.1.1.b,Boys registered in AFHC,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'12.1.2.a',12.1.2.a,"Out of registered, Girls received clinical services",TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'12.1.2.b',12.1.2.b,"Out of registered, Boys received clinical services",TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'12.1.3.a',12.1.3.a,"Out of registered, Girls received counselling",TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'12.1.3.b',12.1.3.b,"Out of registered, Boys received counselling",TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'13.1',13.1,Number of on-going DOTS patients registered,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'13.2',13.2,Number of DOTS cases completed successfully,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.1.1',14.1.1,Outpatient - Diabetes,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.1.2',14.1.2,Outpatient - Hypertension,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.1.3',14.1.3,Outpatient - Stroke (Paralysis),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.1.4',14.1.4,Outpatient - Acute Heart Diseases,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.1.5',14.1.5,Outpatient - Mental illness,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.1.6',14.1.6,Outpatient - Epilepsy,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.1.7',14.1.7,Outpatient - Ophthalmic Related,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.1.8',14.1.8,Outpatient - Dental,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.1.9',14.1.9,Outpatient - Oncology,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.10',14.10,In-Patient Head Count at midnight,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.11',14.11,Number of Admission in NBSU ( New Born Stabilisation Unit),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.12.1',14.12.1,Special Newborn Care Unit (SNCU Admissions) - Inborn Male,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.12.2',14.12.2,Special Newborn Care Unit (SNCU Admissions) - Inborn Female,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.12.3',14.12.3,Outborn � Male,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.12.4',14.12.4,Outborn - Female,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.12.5',14.12.5,Number of newborns admitted in SNCU - referred by ASHA,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.13',14.13,Number of deaths occurring at SNCU,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.14.1',14.14.1,Number of children admitted in NRC,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.14.2',14.14.2,Number of children discharged with target weight gain from the NRCs,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.15',14.15,Number of Rogi Kalyan Samiti (RKS) meetings held,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.16',14.16,Number of Anganwadi centres/ UPHCs reported to have conducted Village Health & Nutrition Day (VHNDs)/ Urban Health & Nutrition Day (UHNDs)/ Outreach / Special Outreach,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.17',14.17,Stock out rate of essential Drugs,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.18',14.18,Blood Units Issued on replacement (Family Donors to be considered as replacement donations),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.19',14.19,Total number of blood units issued in year,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.2.1',14.2.1,Allopathic- Outpatient attendance,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.2.2',14.2.2,Ayush - Outpatient attendance,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.20',14.20,Patient Satisfaction Score of the facility in percentage (from Mera Aspatal),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.3.1.a',14.3.1.a,Inpatient (Male)- Children<18yrs,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.3.1.b',14.3.1.b,Inpatient (Male)- Adults,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.3.2.a',14.3.2.a,Inpatient (Female)- Children<18yrs,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.3.2.b',14.3.2.b,Inpatient (Female)- Adults,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.3.3',14.3.3,Number of Left Against Medical Advice (LAMA) cases,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.4.1',14.4.1,Inpatient - Malaria,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.4.2',14.4.2,Inpatient - Dengue,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.4.3',14.4.3,Inpatient - Typhoid,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.4.4',14.4.4,"Inpatient - Asthma, Chronic Obstructive Pulmonary Disease (COPD), Respiratory infections",TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.4.5',14.4.5,Inpatient - Tuberculosis,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.4.6',14.4.6,Inpatient - Pyrexia of unknown origin (PUO),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.4.7',14.4.7,Inpatient - Diarrhea with dehydration,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.4.8',14.4.8,Inpatient - Hepatitis,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.5',14.5,Patients registered at Emergency Department,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.6.1',14.6.1,"Emergency - Trauma ( accident, injury, poisoning etc)",TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.6.2',14.6.2,Emergency - Burn,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.6.3',14.6.3,Emergency - Obstetrics complications,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.6.4',14.6.4,Emergency - Snake Bite,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.6.5',14.6.5,Emergency - Acute Caridiac Emergencies,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.6.7',14.6.7,Emergency - CVA ( Cerebovascular Disease),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.7',14.7,Number of deaths occurring at Emergency Department,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.8.1',14.8.1,Operation major (General and spinal anaesthesia),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.8.2',14.8.2,"Out of Operation major, Gynecology- Hysterectomy surgeries",TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.8.3',14.8.3,"Major Surgeries excluding Obstetrics, Gynaecology and Opthalmology etc.",TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.8.4',14.8.4,Operation minor (No or local anaesthesia),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.8.5',14.8.5,Number of post operative Surgical Site infection,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.8.6',14.8.6,Number of blood units issued,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.8.7',14.8.7,Number of blood transfusions done,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.9.1',14.9.1,Inpatient Deaths - Male,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'14.9.2',14.9.2,Inpatient Deaths - Female,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'15.1',15.1,Number of Lab Tests done,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'15.2.1',15.2.1,Number of Hb tests conducted,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'15.2.2',15.2.2,"Out of the total number of Hb tests done, Number having Hb < 7 mg",TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'15.3.1.a',15.3.1.a,Male HIV - Number Tested,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'15.3.1.b',15.3.1.b,Male HIV - Number Positive,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'15.3.2.a',15.3.2.a,Female Non ANC HIV - Number Tested,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'15.3.2.b',15.3.2.b,Female Non ANC HIV - Number Positive,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'15.3.3.a',15.3.3.a,Number of pregnant women screened for HIV,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'15.3.3.b',15.3.3.b,"Out of the above, number screened positive",TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'15.3.3.c',15.3.3.c,"Out of the above number screened positive, number confirmed with HIV infection at Integrated Counselling and Testing Centre (ICTC)",TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'15.3.4.a',15.3.4.a,Number of Male STI/RTI attendees tested for syphilis,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'15.3.4.b',15.3.4.b,Number of Male STI/RTI attendees found sero Positive for syphilis,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'15.3.4.c',15.3.4.c,Number of Female (Non ANC)STI/RTI attendees tested for syphilis,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'15.3.4.d',15.3.4.d,Number of Female (Non ANC) STI/RTI attendees found sero Positive for syphilis,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'15.4.1',15.4.1,Widal tests - Number Tested,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'15.4.2',15.4.2,Widal tests - Number Positive,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'15.5.1',15.5.1,Radiology - X-ray,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'15.5.2',15.5.2,Radiology - Ultrasonography (USG),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.1',16.1,Infant deaths within 24 hrs(1 to 23 Hrs) of birth,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.2.1',16.2.1,Infant Deaths up to 4 weeks due to Sepsis,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.2.2',16.2.2,Infant Deaths up to 4 weeks due to Asphyxia,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.2.3',16.2.3,Infant Deaths up to 4 weeks due to Other causes,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.3.1',16.3.1,Number of Infant Deaths (1 -12 months) due to Pneumonia,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.3.2',16.3.2,Number of Infant Deaths (1 -12 months) due to Diarrhoea,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.3.3',16.3.3,Number of Infant Deaths (1 -12 months) due to Fever related,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.3.4',16.3.4,Number of Infant Deaths (1 -12 months) due to Measles,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.3.5',16.3.5,Number of Infant Deaths (1 -12 months) due to Others,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.4.1',16.4.1,Number of Child Deaths (1 -5 years) due to Pneumonia,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.4.2',16.4.2,Number of Child Deaths (1 -5 years) due to Diarrhoea,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.4.3',16.4.3,Number of Child Deaths (1 -5 years) due to Fever related,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.4.4',16.4.4,Number of Child Deaths (1 -5 years) due to Measles,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.4.5',16.4.5,Number of Child Deaths (1 -5 years) due to Others,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.5.1',16.5.1,Number of Maternal Deaths due to Bleeding,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.5.2',16.5.2,Number of Maternal Deaths due to High fever,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.5.3',16.5.3,Number of Maternal Deaths due to Abortion,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.5.4',16.5.4,Number of Maternal Deaths due to Obstructed/prolonged labour,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.5.5',16.5.5,Number of Maternal Deaths due to Severe hypertesnion/fits,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.5.6',16.5.6,Number of Maternal Deaths due to Other Causes (including causes not known),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.6',16.6,Total Facility Based Maternal Death Reviews (FBMDR) done,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.7.1',16.7.1,Number of Adolscent / Adult deaths due to Diarrhoeal diseases,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.7.10',16.7.10,Number of Adolscent / Adult deaths due to Suicide,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.7.11',16.7.11,Number of Adolscent / Adult deaths due to Animal bites and stings,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.7.12',16.7.12,Number of Adolscent / Adult deaths due to Known Acute Disease,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.7.13',16.7.13,Number of Adolscent / Adult deaths due to Known Chronic Disease,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.7.14',16.7.14,Number of Adolscent / Adult deaths due to Causes not known,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.7.2',16.7.2,Number of Adolscent / Adult deaths due to Tuberculosis,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.7.3',16.7.3,Number of Adolscent / Adult deaths due to Respiratory diseases including infections (other than TB),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.7.4',16.7.4,Number of Adolscent / Adult deaths due to Other Fever Related,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.7.5',16.7.5,Number of Adolscent / Adult deaths due to HIV/AIDS,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.7.6',16.7.6,Number of Adolscent / Adult deaths due to Heart disease/Hypertension related,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.7.7',16.7.7,Number of Adolscent / Adult deaths due to Cancer,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.7.8',16.7.8,Number of Adolscent / Adult deaths due to Neurological disease including strokes,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.7.9',16.7.9,Number of Adolscent / Adult deaths due to Accidents/Burn cases,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.8.1',16.8.1,Number of Deaths due to Malaria- Plasmodium Vivax,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.8.2',16.8.2,Number of Deaths due to Malaria- Plasmodium Falciparum,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.8.3',16.8.3,Number of Deaths due to Kala Azar,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.8.4',16.8.4,Number of Deaths due to Dengue,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.8.5',16.8.5,Number of Deaths due to Acute Encephelitis Syndrome (AES),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'16.8.6',16.8.6,Number of Deaths due to Japanese Encephalitis (JE),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'17.1',17.1,Vaccine - DPT,1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'17.10',17.10,Vaccine - Typhoid,1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'17.11',17.11,Vaccine - Vitamin K,1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'17.12',17.12,Rotavirus,1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'17.13',17.13,Inactivated Polio Vaccine,1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'17.14',17.14,Measles Rubella (MR),1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'17.2',17.2,Vaccine - Pentavalent,1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'17.3',17.3,Vaccine - OPV,1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'17.4',17.4,Vaccine - TT,1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'17.5',17.5,Vaccine - DT,1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'17.6',17.6,Vaccine - BCG,1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'17.7',17.7,Vaccine - Measles,1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'17.8',17.8,Vaccine - JE,1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'17.9',17.9,Vaccine - Hepatitis B,1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'18.1',18.1,IUD 380 A,1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'18.2',18.2,IUD 375 A,1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'18.3',18.3,Condoms,1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'18.4',18.4,Oral Contraceptive,1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'18.5',18.5,Emergency Contraceptive Pills,1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'18.6',18.6,Centchroman weekly pills,1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'18.7',18.7,Injectable Contraceptive MPA (Vials),1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'18.8',18.8,Tubal rings,1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'18.9',18.9,Pregnancy testing Kits (Nischay Kits),1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'19.1',19.1,Gloves,1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'19.10',19.10,Paediatrics Antibiotics ( Amoxycillin and Injectable Gentamicin),1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'19.11',19.11,Vit A syrup,1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'19.12',19.12,ORS (New WHO),1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'19.13',19.13,RTI /STI colour coded syndromic kits ( I to VII),1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'19.14',19.14,Zinc 20 mg tablet,1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'19.15',19.15,Albendazole 400 mg tablet,1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'19.16',19.16,Calcium Tablets,1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'19.2',19.2,MVA Syringes,1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'19.3',19.3,Tab. Fluconazole,1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'19.4',19.4,Blood Transfusion sets,1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'19.5',19.5,Gluteraldehyde 2%,1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'19.6',19.6,IFA tablets ( Adult),1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'19.7',19.7,IFA - Blue ( Adolescent 10-19 yrs),1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'19.8',19.8,IFA- Pink ( Junior 6-10 yrs),1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'19.9',19.9,IFA Syrup (Paediatric),1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'2.1.1.a',2.1.1.a,Number of Home Deliveries attended by Skill Birth Attendant(SBA) (Doctor/Nurse/ANM),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'2.1.1.b',2.1.1.b,Number of Home Deliveries attended by Non SBA (Trained Birth Attendant(TBA) /Relatives/etc.),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'2.1.2',2.1.2,Number of PW given Tablet Misoprostol during home delivery,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'2.1.3',2.1.3,Number of newborns received 7 Home Based Newborn Care (HBNC) visits in case of Home delivery,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'2.2',2.2,Number of Institutional Deliveries conducted (Including C-Sections),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'2.2.1',2.2.1,Out of total institutional deliveries number of women discharged within 48 hours of delivery,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'2.2.2',2.2.2,Number of newborns received 6 HBNC� visits after Institutional Delivery,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'20.1',20.1,Syringes - 0.1 ml (AD),1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'20.2',20.2,Syringes - 0.5 ml (AD),1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'20.3',20.3,Syringes - 5.0 ml (Disposable),1. Balance From Previous Month,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'21.1',21.1,Number of newborn screened for defects at birth (as per RBSK),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'21.2',21.2,Number of children (6 month to 6 years) screened by RBSK mobile health teams at Anganwadi center,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'21.3',21.3,Number of children (6 years to 18 years) screened by RBSK mobile health teams at Govt and Govt aided schools,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'21.4.1.a',21.4.1.a,Number of Male children identified with Disease,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'21.4.1.b',21.4.1.b,Number of Female children identified with Disease,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'21.4.2.a',21.4.2.a,Number of Male children identified with Deficiency,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'21.4.2.b',21.4.2.b,Number of Female children identified with Deficiency,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'21.4.3.a',21.4.3.a,Number of Male children identified with Developmental delay,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'21.4.3.b',21.4.3.b,Number of Female children identified with Developmental delay,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'21.5.1',21.5.1,Number of Children Managed by Intervention - Medical,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'21.5.2',21.5.2,Number of Children Managed by Intervention - Surgical,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'21.5.3',21.5.3,Early intervention at DEIC ( District Early Intervention Centre),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'22.1.1.a',22.1.1.a,Girls (6th -12th class) provided 4 IFA tablets in schools,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'22.1.1.b',22.1.1.b,Boys (6th -12th class) provided 4 IFA tablets in schools,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'22.1.2.a',22.1.2.a,Girls (6th -12th class) provided albendazole in schools,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'22.1.2.b',22.1.2.b,Boys (6th -12th class) provided albendazole in schools,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'22.1.3',22.1.3,Number of out of school adolscent girls (10-19 years) provided 4 IFA tablets at Anganwadi Centres,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'22.1.4',22.1.4,Number of out of school adolscent girls (10-19 years) provided albendazole at Anganwadi Centres,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'22.2.1',22.2.1,Number of adolescent girls provided sanitary napkin packs,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'22.2.2',22.2.2,Number of sanitary napkin packs sold to adolescent girls,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'22.2.3',22.2.3,Number of sanitary napkin packs distributed free to ASHA,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'22.2.4',22.2.4,Number of adolescent girls attended monthly meeting,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'23.1',23.1,Number of children covered under WIFS JUNIOR (6 - 10 years ) provided 4-5 IFA tablets in schools,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'23.2',23.2,Number of children (6 - 10 years) provided albendazole in schools,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'23.3',23.3,Number of out of school children (6-10 years) given 4-5 IFA tablets at Anganwadi Centres,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'23.4',23.4,Number of out of school children (6-10 years) provided albendazole at Anganwadi Centres,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'24.1',24.1,Total Maternal Deaths Reviewed (MDR) by CMO,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'24.2',24.2,Total Maternal Deaths Reviewed (MDR) by DM,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'24.3',24.3,Number of maternal deaths reported through Community based Maternal Death Review (CBMDR),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'25.1.1',25.1.1,Number of Pregnant Women provided - Free Medicines under JSSK,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'25.1.2',25.1.2,Number of Pregnant Women provided - Free Diet under JSSK,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'25.1.3',25.1.3,Number of Pregnant Women provided - Free Diagnostics under JSSK,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'25.1.4',25.1.4,Number of Pregnant Women provided - Free Home to facility transport under JSSK,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'25.1.5',25.1.5,Number of Pregnant Women provided - Interfacility transfers when needed under JSSK,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'25.1.6',25.1.6,Number of Pregnant Women provided - Free Drop Back home under JSSK,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'25.2.1',25.2.1,Number of sick infants provided - Free Medicines under JSSK,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'25.2.2',25.2.2,Number of sick infants provided - Free Diagnostics under JSSK,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'25.2.3',25.2.3,Number of sick infants provided - Free Home to facility transport under JSSK,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'25.2.4',25.2.4,Number of sick infants provided - Interfacility transfers when needed under JSSK,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'25.2.5',25.2.5,Number of sick infants provided - Free Drop Back home under JSSK,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'3.1',3.1,Total C -Section deliveries performed,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'3.1.1',3.1.1,"C-sections, performed at night (8 PM- 8 AM)",TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'4.1.1.a',4.1.1.a,Live Birth - Male,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'4.1.1.b',4.1.1.b,Live Birth - Female,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'4.1.2',4.1.2,Number of Pre term newborns ( < 37 weeks of pregnancy),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'4.1.3',4.1.3,Still Birth,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'4.2',4.2,Abortion (spontaneous),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'4.3.1.a',4.3.1.a,MTP up to 12 weeks of pregnancy,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'4.3.1.b',4.3.1.b,MTP more than 12 weeks of pregnancy,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'4.3.2.a',4.3.2.a,Post Abortion/ MTP Complications Identified,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'4.3.2.b',4.3.2.b,Post Abortion/ MTP Complications Treated,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'4.3.3',4.3.3,Number of women provided with post abortion/ MTP contraception,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'4.4.1',4.4.1,Number of newborns weighed at birth,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'4.4.2',4.4.2,Number of newborns having weight less than 2.5 kg,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'4.4.3',4.4.3,Number of Newborns breast fed within 1 hour of birth�,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'5.1',5.1,"Number of cases of pregnant women with Obstetric Complications attended (Antepartum haemorrhage (APH), Post-Partum Hemorrhage (PPH), Sepsis, Eclampsia and others)",TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'5.2',5.2,Number of Complicated pregnancies treated with Blood Transfusion,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'6.1',6.1,Women receiving 1st post partum checkup within 48 hours of home delivery,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'6.2',6.2,Women receiving 1st post partum checkup between 48 hours and 14 days,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'6.3',6.3,Number of mothers provided full course of 180 IFA tablets after delivery,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'6.4',6.4,Number of mothers provided 360 Calcium tablets after delivery,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'7.1.1',7.1.1,New RTI/STI cases identified - Male,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'7.1.2',7.1.2,New RTI/STI cases identified - Female,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'7.2.1',7.2.1,RTI/STI for which treatment initiated - Male,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'7.2.2',7.2.2,RTI/STI for which treatment initiated -Female,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'8.1.1',8.1.1,Number of Non Scalpel Vasectomy (NSV) / Conventional Vasectomy conducted,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'8.10',8.10,Injectable Contraceptive-Antara Program- Third Dose,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'8.11',8.11,Injectable Contraceptive-Antara Program- Fourth or more than fourth,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'8.12',8.12,Number of Combined Oral Pill cycles distributed,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'8.13',8.13,Number of Condom pieces distributed,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'8.14',8.14,Number of Centchroman (weekly) pill strips distributed,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'8.15',8.15,Number of Emergency Contraceptive Pills (ECP) given,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'8.16',8.16,Number of Pregnancy Test Kits (PTK) used,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'8.17.1',8.17.1,Complications following male sterilization,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'8.17.2',8.17.2,Complications following female sterilization,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'8.17.3',8.17.3,Failures following male sterilization,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'8.17.4',8.17.4,Failures following female sterilization,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'8.17.5',8.17.5,Deaths following male sterilization,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'8.17.6',8.17.6,Deaths following female sterilization,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'8.2.1',8.2.1,Number of Laparoscopic sterilizations (excluding post abortion) conducted,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'8.2.2',8.2.2,Number of Interval Mini-lap (other than post-partum and post abortion) sterilizations conducted,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'8.2.3',8.2.3,Number of Postpartum sterilizations (within 7 days of delivery by minilap or concurrent with caesarean section) conducted,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'8.2.4',8.2.4,Number of Post Abortion sterilizations (within 7 days of spontaneous or surgical abortion) conducted,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'8.3',8.3,Number of Interval IUCD Insertions (excluding PPIUCD and PAIUCD),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'8.4',8.4,Number of Postpartum (within 48 hours of delivery) IUCD insertions,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'8.5',8.5,Number of Post Abortion (within 12 days of spontaneous or surgical abortion) IUCD insertions,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'8.6',8.6,Number of IUCD Removals,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'8.7',8.7,Number of complications following IUCD Insertion,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'8.8',8.8,Injectable Contraceptive-Antara Program- First Dose,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'8.9',8.9,Injectable Contraceptive-Antara Program- Second Dose,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.1.1',9.1.1,Child immunisation - Vitamin K1 (Birth Dose),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.1.10',9.1.10,Child immunisation - OPV1,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.1.11',9.1.11,Child immunisation - OPV2,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.1.12',9.1.12,Child immunisation - OPV3,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.1.13',9.1.13,Child immunisation - Hepatitis-B0 (Birth Dose),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.1.14',9.1.14,Child immunisation - Hepatitis-B1,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.1.15',9.1.15,Child immunisation - Hepatitis-B2,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.1.16',9.1.16,Child immunisation - Hepatitis-B3,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.1.17',9.1.17,Child immunisation - Inactivated Polio Vaccine 1 (IPV 1),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.1.18',9.1.18,Child immunisation - Inactivated Polio Vaccine 2 (IPV 2),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.1.19',9.1.19,Child immunisation - Rotavirus 1,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.1.2',9.1.2,Child immunisation - BCG,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.1.20',9.1.20,Child immunisation - Rotavirus 2,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.1.21',9.1.21,Child immunisation - Rotavirus 3,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.1.3',9.1.3,Child immunisation - DPT1,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.1.4',9.1.4,Child immunisation - DPT2,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.1.5',9.1.5,Child immunisation - DPT3,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.1.6',9.1.6,Child immunisation - Pentavalent 1,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.1.7',9.1.7,Child immunisation - Pentavalent 2,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.1.8',9.1.8,Child immunisation - Pentavalent 3,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.1.9',9.1.9,Child immunisation - OPV 0 (Birth Dose),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.10',9.10,Number of children (12-59 months) provided Albendazole,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.11',9.11,Number of severely underweight children provided Health Checkup (0-5 yrs),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.2.1',9.2.1,Child immunisation (9-11months) - Measles & Rubella (MR)- 1st Dose,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.2.2',9.2.2,Child immunisation (9-11months) - Measles 1st dose,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.2.3',9.2.3,Child immunisation (9-11months) - JE 1st dose,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.2.4.a',9.2.4.a,Children aged between 9 and 11 months fully immunized- Male,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.2.4.b',9.2.4.b,Children aged between 9 and 11 months fully immunized - Female,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.3.1',9.3.1,Child immunisation - Measles & Rubella (MR)- 1st Dose,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.3.2',9.3.2,Child immunisation - Measles-1st dose,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.3.3',9.3.3,Child immunisation - JE 1st dose,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.4.1',9.4.1,Child immunisation - Measles & Rubella (MR)- 2nd Dose (16-24 months),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.4.2',9.4.2,Child immunisation - Measles 2nd dose (More than 16 months),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.4.3',9.4.3,Child immunisation - DPT 1st Booster,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.4.4',9.4.4,Child immunisation - OPV Booster,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.4.5',9.4.5,"Child immunisation - Measles, Mumps, Rubella (MMR) Vaccine",TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.4.6',9.4.6,Number of children more than 16 months of age who received Japanese Encephalitis (JE) vaccine,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.5.1',9.5.1,Child immunisation - Typhoid,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.5.2',9.5.2,Children more than 5 years received DPT5 (2nd Booster),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.5.3',9.5.3,Children more than 10 years received TT10,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.5.4',9.5.4,Children more than 16 years received TT16,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.6.1',9.6.1,Number of cases of AEFI - Abscess,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.6.2',9.6.2,Number of cases of AEFI - Death,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.6.3',9.6.3,Number of cases of AEFI - Others,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.7.1',9.7.1,Immunisation sessions planned,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.7.2',9.7.2,Immunisation sessions held,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.7.3',9.7.3,Number of Immunisation sessions where ASHAs were present,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.8.1',9.8.1,Child immunisation - Vitamin A Dose - 1,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.8.2',9.8.2,Child immunisation - Vitamin A Dose - 5,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.8.3',9.8.3,Child immunisation - Vitamin A Dose - 9,TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+'9.9',9.9,Number of children (6-59 months) provided 8-10 doses (1ml) of IFA syrup (Bi weekly),TOTAL,38,38,FY 2019-20,Historical crosswalk only; published code-string variants retained
+17.1',17.1,Vaccine - DPT,2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+17.10',17.10,Vaccine - Typhoid,2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+17.11',17.11,Vaccine - Vitamin K,2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+17.12',17.12,Rotavirus,2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+17.13',17.13,Inactivated Polio Vaccine,2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+17.14',17.14,Measles Rubella (MR),2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+17.2',17.2,Vaccine - Pentavalent,2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+17.3',17.3,Vaccine - OPV,2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+17.4',17.4,Vaccine - TT,2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+17.5',17.5,Vaccine - DT,2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+17.6',17.6,Vaccine - BCG,2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+17.7',17.7,Vaccine - Measles,2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+17.8',17.8,Vaccine - JE,2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+17.9',17.9,Vaccine - Hepatitis B,2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+18.1',18.1,IUD 380 A,2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+18.2',18.2,IUD 375 A,2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+18.3',18.3,Condoms,2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+18.4',18.4,Oral Contraceptive,2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+18.5',18.5,Emergency Contraceptive Pills,2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+18.6',18.6,Centchroman weekly pills,2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+18.7',18.7,Injectable Contraceptive MPA (Vials),2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+18.8',18.8,Tubal rings,2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+18.9',18.9,Pregnancy testing Kits (Nischay Kits),2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+19.1',19.1,Gloves,2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+19.10',19.10,Paediatrics Antibiotics ( Amoxycillin and Injectable Gentamicin),2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+19.11',19.11,Vit A syrup,2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+19.12',19.12,ORS (New WHO),2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+19.13',19.13,RTI /STI colour coded syndromic kits ( I to VII),2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+19.14',19.14,Zinc 20 mg tablet,2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+19.15',19.15,Albendazole 400 mg tablet,2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+19.16',19.16,Calcium Tablets,2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+19.2',19.2,MVA Syringes,2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+19.3',19.3,Tab. Fluconazole,2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+19.4',19.4,Blood Transfusion sets,2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+19.5',19.5,Gluteraldehyde 2%,2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+19.6',19.6,IFA tablets ( Adult),2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+19.7',19.7,IFA - Blue ( Adolescent 10-19 yrs),2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+19.8',19.8,IFA- Pink ( Junior 6-10 yrs),2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+19.9',19.9,IFA Syrup (Paediatric),2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+20.1',20.1,Syringes - 0.1 ml (AD),2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+20.2',20.2,Syringes - 0.5 ml (AD),2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained
+20.3',20.3,Syringes - 5.0 ml (Disposable),2. Stocks Received; 3. Unusable Stock; 4. Stock Distributed; 5. Total Stock,38,152,FY 2019-20,Historical crosswalk only; published code-string variants retained

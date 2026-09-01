@@ -1,7 +1,8 @@
-# Master Public Health Indicator Registry — Release 1.2 NTEP deep vertical
+# Master Public Health Indicator Registry — Release 1.3 linked HMIS knowledge structure
 
-Cut-off date: 25 August 2026  
-Release: 1.2.0-ntep-deep
+Cut-off date: 1 September 2026
+
+Release: 1.3.0-hmis-knowledge-structure
 
 ## What “bounded-exhaustive” means
 
@@ -16,9 +17,22 @@ This release contains every eligible catalogue record found in four declared glo
 | UN Global SDG Indicator Framework | 251 | Every indicator currently returned by the official UNSD API |
 | UNICEF Indicator Data Warehouse | 799 | Every code in `CL_UNICEF_INDICATOR` for `GLOBAL_DATAFLOW` |
 | Curated priority collection | 80 | Previously validated, decision-oriented public-health indicators |
-| India national programme extension | 338 | Verified records from 15 official source families, including the NTEP deep vertical |
+| India national programme extension | 380 | Verified records from 15 official source families, including NTEP and the formula-defined HMIS indicator layer |
 | — NTEP deep vertical | 222 | All eligible records within the declared public KPI, laboratory, DR-TB and Panchayat source boundary |
-| **Total** | **3,446** | Source manifestations are retained rather than prematurely merged |
+| — HMIS derived indicators | 54 | Historical formula-defined NHSRC indicators promoted to the main registry |
+| **Total** | **3,488** | Source manifestations are retained rather than prematurely merged |
+
+## HMIS linked knowledge layer
+
+| Object class | Objects | Version treatment |
+|---|---:|---|
+| Derived indicators | 54 | Historical NHSRC technical definitions; retained in the main registry |
+| Reporting data elements | 700 | Revised facility/headquarters forms effective April 2025 |
+| Published outputs | 202 | Historical FY 2019-20 OGD publication layer |
+| Validation rules | 25 | Historical NHSRC data-quality guidance |
+| **Total** | **981** | Separate object classes joined by explicit IDs and review-status crosswalks |
+
+Numerator and denominator links to April-2025 data elements are analyst-generated candidates labelled as exact, probable, candidate or unresolved. They are not custodian-approved mappings. Data elements, published outputs and validation rules remain outside the main indicator count because their metadata semantics differ.
 
 ## Authoritative acquisition sources
 
@@ -32,7 +46,9 @@ This release contains every eligible catalogue record found in four declared glo
 - Many catalogue records provide discovery metadata but not full numerator, denominator, formula, frequency or disaggregation metadata.
 - Similar names across sources remain separate source manifestations until equivalence is methodologically reviewed.
 - Domain labels for harvested records are search-oriented rule-based classifications, not classifications asserted by the source authority.
-- Thirty-four source families are recorded in the Source Census. Four global catalogues are source-complete; all 15 authoritative Indian source families have a verified subset. NTEP is deep and source-bounded for the declared public sources, while its restricted live Ni-kshay dictionary and reports require authorised access.
+- Thirty-four source families are recorded in the Source Census. Four global catalogues are source-complete; all 15 authoritative Indian source families have a verified subset.
+- NTEP is deep and source-bounded for its declared sources; restricted Ni-kshay metadata remains outside the release.
+- HMIS is public-source-bounded for the declared NHSRC, April-2025 form and OGD sources. The live national dictionary, validation configuration, local/state additions and restricted metadata remain open evidence gaps.
 
 ## Maintenance rule
 
