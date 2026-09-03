@@ -3,7 +3,7 @@ const h$ = id => document.getElementById(id);
 const hmisFields = ['hmis-search','hmis-object-type','hmis-component','hmis-facility','hmis-version'];
 
 Promise.all([
-  fetch('./data/hmis/catalog.json?v=hmis-1.3.0', {cache:'no-store'}).then(r=>r.json()),
+  fetch('./data/hmis/catalog.json?v=measure-1.0.0', {cache:'no-store'}).then(r=>r.json()),
   fetch('./data/hmis/crosswalks.json?v=hmis-1.3.0', {cache:'no-store'}).then(r=>r.json())
 ]).then(([catalog,crosswalk])=>{
   hmisState.objects=catalog.objects||[];
@@ -43,7 +43,7 @@ function hmisFilter(){
   hmisState.visible=24;
   const q=h$('hmis-search').value.trim().toLowerCase(),type=h$('hmis-object-type').value,component=h$('hmis-component').value,facility=h$('hmis-facility').value,version=h$('hmis-version').value;
   hmisState.filtered=hmisState.objects.filter(x=>{
-    const text=[x.id,x.objectType,x.name,x.definition,x.component,x.domain,x.recordClass,x.formula,x.numerator,x.denominator,x.leftElement,x.rightElement,x.sourceVersion,x.versionStatus,(x.facilityTypes||[]).join(' '),(x.sourceCodes||[]).join(' ')].join(' ').toLowerCase();
+    const text=[x.id,x.objectType,x.name,x.definition,x.displayDefinition,x.component,x.domain,x.recordClass,x.formula,x.normalizedFormula,x.measureType,x.scaleDisplay,x.denominatorPopulation,x.numerator,x.denominator,x.leftElement,x.rightElement,x.sourceVersion,x.versionStatus,(x.facilityTypes||[]).join(' '),(x.sourceCodes||[]).join(' ')].join(' ').toLowerCase();
     return (!q||text.includes(q))&&(type==='All objects'||x.objectType===type)&&(component==='All components'||x.component===component)&&(facility==='All facilities'||(x.facilityTypes||[]).includes(facility))&&(version==='All versions'||x.versionStatus===version);
   }).sort((a,b)=>a.objectType.localeCompare(b.objectType)||a.name.localeCompare(b.name));
   h$('hmis-clear').hidden=!(q||type!=='All objects'||component!=='All components'||facility!=='All facilities'||version!=='All versions');
@@ -60,8 +60,9 @@ function hmisRender(){
 function hEsc(v=''){const div=document.createElement('div');div.textContent=String(v);return div.innerHTML;}
 function hmisCard(x){
   const status=x.versionStatus||'Version not stated';
-  const summary=x.objectType==='Derived indicator'?x.formula:x.objectType==='Validation rule'?x.name:x.definition;
-  return '<article class="hmis-card type-'+x.objectType.toLowerCase().replaceAll(' ','-')+'"><div class="card-top"><span>'+hEsc(x.id)+'</span><span>'+hEsc(x.objectType)+'</span></div><div class="card-tags"><span class="card-domain">'+hEsc(x.component||x.domain)+'</span></div><h3>'+hEsc(x.name)+'</h3><p>'+hEsc(summary)+'</p><dl><div><dt>Version status</dt><dd>'+hEsc(status)+'</dd></div><div><dt>WHO pillars</dt><dd>'+hEsc((x.whoPillars||[]).join('; '))+'</dd></div></dl><button data-hmis-open="'+hEsc(x.id)+'">View linked metadata <span>→</span></button></article>';
+  const summary=x.displayDefinition||x.definition||x.formula||x.name;
+  const measureTags=x.measureType?'<span class="measure-tag">'+hEsc(x.measureType)+'</span><span class="scale-tag">'+hEsc(x.scaleDisplay||'Not specified')+'</span>':'';
+  return '<article class="hmis-card type-'+x.objectType.toLowerCase().replaceAll(' ','-')+'"><div class="card-top"><span>'+hEsc(x.id)+'</span><span>'+hEsc(x.objectType)+'</span></div><div class="card-tags"><span class="card-domain">'+hEsc(x.component||x.domain)+'</span>'+measureTags+'</div><h3>'+hEsc(x.name)+'</h3><p>'+hEsc(summary)+'</p><dl><div><dt>Version status</dt><dd>'+hEsc(status)+'</dd></div><div><dt>WHO pillars</dt><dd>'+hEsc((x.whoPillars||[]).join('; '))+'</dd></div></dl><button data-hmis-open="'+hEsc(x.id)+'">View linked metadata <span>→</span></button></article>';
 }
 function hMeta(title,value,wide=false){
   const display=Array.isArray(value)?value.join('; '):value;
@@ -81,7 +82,7 @@ function openHmisModal(id){
   let body='';
   if(x.objectType==='Derived indicator'){
     const link=hmisState.crosswalks.get(x.id)||{};
-    body=hMeta('Definition',x.definition,true)+hMeta('Numerator',x.numerator)+hMeta('Denominator',x.denominator)+hMeta('Formula',x.formula)+hMeta('Unit',x.unit)+hMeta('Aggregation rule',x.aggregationRule,true)+hMeta('Zero-denominator rule',x.zeroDenominatorRule,true)+hMeta('Recommended level',x.suggestedLevel)+hMeta('Periodicity',x.periodicity)+relationButtons(link.numeratorCandidates,'Numerator data-element candidates')+relationButtons(link.denominatorCandidates,'Denominator data-element candidates');
+    body=hMeta('Display definition',x.displayDefinition||x.definition,true)+hMeta('Measure type',x.measureType)+hMeta('Scale',x.scaleDisplay)+hMeta('Normalized formula',x.normalizedFormula,true)+hMeta('Denominator population',x.denominatorPopulation,true)+hMeta('Official / source definition',x.definition,true)+hMeta('Numerator',x.numerator)+hMeta('Denominator',x.denominator)+hMeta('Official / source formula',x.formula)+hMeta('Unit',x.unit)+hMeta('Aggregation rule',x.aggregationRule,true)+hMeta('Zero-denominator rule',x.zeroDenominatorRule,true)+hMeta('Recommended level',x.suggestedLevel)+hMeta('Periodicity',x.periodicity)+relationButtons(link.numeratorCandidates,'Numerator data-element candidates')+relationButtons(link.denominatorCandidates,'Denominator data-element candidates');
   }else if(x.objectType==='Data element'){
     body=hMeta('Definition',x.definition,true)+hMeta('Applicable facilities',x.facilityTypes,true)+hMeta('Official module titles',x.moduleTitles,true)+hMeta('Observed source codes',x.sourceCodes,true)+hMeta('Source locations',x.sourceLocations,true)+hMeta('Reporting levels',x.reportingLevels,true)+hMeta('Aggregation behavior',x.aggregationRule,true)+hMeta('Zero / blank semantics',x.zeroBlankSemantics,true)+hMeta('Data lineage',x.lineage,true)+idRelations(x.relatedIndicatorIds,'Related indicator candidates')+idRelations(x.relatedValidationRuleIds,'Related validation rules');
   }else if(x.objectType==='Published output'){

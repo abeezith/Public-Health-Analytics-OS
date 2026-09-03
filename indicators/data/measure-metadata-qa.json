@@ -1,0 +1,23 @@
+{
+  "generated": "2026-09-03",
+  "normalizationVersion": "1.0",
+  "totalRecords": 3488,
+  "classifiedCounts": {
+    "Percentage/proportion": 221,
+    "Ratio": 25,
+    "Rate per population": 31,
+    "Count": 28,
+    "Index": 41
+  },
+  "unclassifiedPendingSourceMetadata": 3142,
+  "percentageRecords": 221,
+  "gates": {
+    "officialNamesPreserved": true,
+    "allowedMeasureTypesOnly": true,
+    "everyPercentageHasNormalizedFormula": true,
+    "everyRecordHasExplicitScaleDisplay": true,
+    "everyRecordHasDenominatorPopulation": true,
+    "everyDisplayedDefinitionStatesDenominatorPopulation": true
+  },
+  "interpretation": "Unclassified records lack enough source metadata for one of the five requested measure types; they are not guessed. Source formula/method and official indicator name remain unchanged."
+}

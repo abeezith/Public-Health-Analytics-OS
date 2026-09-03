@@ -9,9 +9,9 @@
   <meta property="og:description" content="Evidence-backed indicator metadata for public-health policy, research and programmes.">
   <meta property="og:image" content="og.png">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="stylesheet" href="styles.css?v=hmis-1.4-candidate">
-  <script src="app.js?v=hmis-1.3.0" defer></script>
-  <script src="hmis.js?v=hmis-1.3.0" defer></script>
+  <link rel="stylesheet" href="styles.css?v=measure-1.0.0">
+  <script src="app.js?v=measure-1.0.0" defer></script>
+  <script src="hmis.js?v=measure-1.0.0" defer></script>
   <script src="report-schemas.js?v=hmis-1.4-candidate" defer></script>
 </head>
 <body>
@@ -31,7 +31,7 @@
   <section class="explorer" id="registry">
     <div class="section-heading"><div><p class="eyebrow">Registry explorer</p><h2>Browse indicator metadata</h2></div><p class="section-intro">Search across names, definitions, domains, sources and uses. Open a record for calculation and interpretation details.</p></div>
     <div class="filter-panel"><label class="search-shell"><span>⌕</span><input id="search" aria-label="Search indicators" placeholder="Search indicator, domain, definition or code…"></label>
-      <div class="select-row"><label><span>Geography</span><select id="geography"><option>All geographies</option></select></label><label><span>India programme</span><select id="program"><option>All India programmes</option></select></label><label><span>Programme component</span><select id="component"><option>All programme components</option></select></label><label><span>Lowest reporting level</span><select id="level"><option>All lowest reporting levels</option></select></label><label><span>Domain</span><select id="domain"><option>All domains</option></select></label><label><span>Type</span><select id="type"><option>All types</option></select></label><label><span>Source</span><select id="source"><option>All sources</option></select></label><label><span>WHO pillar</span><select id="pillar"><option>All WHO pillars</option></select></label><label><span>Sort</span><select id="sort"><option value="name">Indicator name</option><option value="domain">Domain</option><option value="id">Registry ID</option></select></label></div>
+      <div class="select-row"><label><span>Geography</span><select id="geography"><option>All geographies</option></select></label><label><span>India programme</span><select id="program"><option>All India programmes</option></select></label><label><span>Programme component</span><select id="component"><option>All programme components</option></select></label><label><span>Lowest reporting level</span><select id="level"><option>All lowest reporting levels</option></select></label><label><span>Domain</span><select id="domain"><option>All domains</option></select></label><label><span>Type</span><select id="type"><option>All types</option></select></label><label><span>Measure type</span><select id="measure"><option>All measure types</option></select></label><label><span>Source</span><select id="source"><option>All sources</option></select></label><label><span>WHO pillar</span><select id="pillar"><option>All WHO pillars</option></select></label><label><span>Sort</span><select id="sort"><option value="name">Indicator name</option><option value="domain">Domain</option><option value="id">Registry ID</option></select></label></div>
     </div>
     <div class="results-bar"><p><strong id="result-count">0</strong> indicators found</p><button id="clear" hidden>Clear all filters</button></div>
     <div class="indicator-grid" id="indicator-grid" aria-live="polite"></div><button class="load-more" id="load-more" hidden>Load more indicators</button>

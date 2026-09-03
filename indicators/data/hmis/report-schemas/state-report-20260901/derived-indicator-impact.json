@@ -21,7 +21,12 @@
       "externalDenominatorRequired": true,
       "computabilityAssessment": "Numerator observed; external denominator required",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Estimated pregnancies",
+      "displayDefinition": "% of pregnant women who used ANC care provided by skilled health personnel. Denominator population: Estimated pregnancies."
     },
     {
       "indicatorId": "IND-HMIS-IND-002",
@@ -38,7 +43,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Potentially computable from observed schema; crosswalk validation pending",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Total ANC registered",
+      "displayDefinition": "Proportion of women who were registered within first trimester (12weeks) of pregnancy. Denominator population: Total ANC registered."
     },
     {
       "indicatorId": "IND-HMIS-IND-003",
@@ -55,7 +65,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Potentially computable from observed schema; crosswalk validation pending",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Total ANC registered",
+      "displayDefinition": "% of women who were given TT2/Booster dose during current pregnancy. Denominator population: Total ANC registered."
     },
     {
       "indicatorId": "IND-HMIS-IND-004",
@@ -72,7 +87,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Potentially computable from observed schema; crosswalk validation pending",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Total ANC registered",
+      "displayDefinition": "% of pregnant women who used antenatal care provided by skilled health personnel at least 3 times during pregnancy. Denominator population: Total ANC registered."
     },
     {
       "indicatorId": "IND-HMIS-IND-005",
@@ -89,7 +109,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Potentially computable from observed schema; crosswalk validation pending",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Total ANC registered",
+      "displayDefinition": "% of women who were given at least 100 IFA tablets. Denominator population: Total ANC registered."
     },
     {
       "indicatorId": "IND-HMIS-IND-006",
@@ -106,7 +131,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Potentially computable from observed schema; crosswalk validation pending",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Estimated children below 1 year",
+      "displayDefinition": "% of children aged between 9 and 11 months who have been fully immunized (Child given one dose of BCG, three dosages of DPT i.e. DPT 1,2,3; three dosages of polio i.e. OPV 1,2,3 and a dosage of Measles). Denominator population: Estimated children below 1 year."
     },
     {
       "indicatorId": "IND-HMIS-IND-007",
@@ -123,7 +153,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Potentially computable from observed schema; crosswalk validation pending",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Estimated children below 1 year",
+      "displayDefinition": "The percentage of live births that received BCG within one year. Denominator population: Estimated children below 1 year."
     },
     {
       "indicatorId": "IND-HMIS-IND-008",
@@ -140,7 +175,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Potentially computable from observed schema; crosswalk validation pending",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Estimated children below 1 year",
+      "displayDefinition": "The percentage of children who received their 3 doses of DTP-3. Denominator population: Estimated children below 1 year."
     },
     {
       "indicatorId": "IND-HMIS-IND-009",
@@ -157,7 +197,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Potentially computable from observed schema; crosswalk validation pending",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Estimated children below 1 year",
+      "displayDefinition": "The percentage of children under 1 immunised with OPV dose 3. Denominator population: Estimated children below 1 year."
     },
     {
       "indicatorId": "IND-HMIS-IND-010",
@@ -174,7 +219,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Potentially computable from observed schema; crosswalk validation pending",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Estimated children below 1 year",
+      "displayDefinition": "The percentage of children who received their measles dose (normally at 9 months). Denominator population: Estimated children below 1 year."
     },
     {
       "indicatorId": "IND-HMIS-IND-011",
@@ -191,7 +241,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Not supported by currently linked observed fields",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Number of children given BCG",
+      "displayDefinition": "% of children who dropped out of immunisation schedule between BCG dose measles dose. Denominator population: Number of children given BCG."
     },
     {
       "indicatorId": "IND-HMIS-IND-012",
@@ -208,7 +263,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Not supported by currently linked observed fields",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Number of children given DPT3",
+      "displayDefinition": "The percentage of children who dropped out of the immunisation schedule between the third doses (normally at 14 weeks) and the measles dose (normally at 9 months). Denominator population: Number of children given DPT3."
     },
     {
       "indicatorId": "IND-HMIS-IND-013",
@@ -225,7 +285,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Potentially computable from observed schema; crosswalk validation pending",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Estimated deliveries",
+      "displayDefinition": "% of deliveries conducted at public institution/facility. Denominator population: Estimated deliveries."
     },
     {
       "indicatorId": "IND-HMIS-IND-014",
@@ -242,7 +307,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Potentially computable from observed schema; crosswalk validation pending",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Estimated deliveries",
+      "displayDefinition": "% of deliveries conducted at public and private institution/facility. Denominator population: Estimated deliveries."
     },
     {
       "indicatorId": "IND-HMIS-IND-015",
@@ -259,7 +329,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Potentially computable from observed schema; crosswalk validation pending",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Estimated deliveries",
+      "displayDefinition": "% of deliveries conducted at home. Denominator population: Estimated deliveries."
     },
     {
       "indicatorId": "IND-HMIS-IND-016",
@@ -276,7 +351,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Potentially computable from observed schema; crosswalk validation pending",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Total reported deliveries",
+      "displayDefinition": "Proportion of total deliveries assisted by a Skilled Birth Attendant (at home and at institutions). Denominator population: Total reported deliveries."
     },
     {
       "indicatorId": "IND-HMIS-IND-017",
@@ -293,7 +373,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Potentially computable from observed schema; crosswalk validation pending",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Total institutional deliveries (Caesarean section + Normal delivery)",
+      "displayDefinition": "Proportion of C- section deliveries out of total reported institutional deliveries. Denominator population: Total institutional deliveries (Caesarean section + Normal delivery)."
     },
     {
       "indicatorId": "IND-HMIS-IND-018",
@@ -310,7 +395,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Partially supported by observed schema",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Reported deliveries (Institutional + Home)",
+      "displayDefinition": "% of women who received post natal care checkup done within 48 hrs of delivery. Denominator population: Reported deliveries (Institutional + Home)."
     },
     {
       "indicatorId": "IND-HMIS-IND-019",
@@ -327,7 +417,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Partially supported by observed schema",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Reported deliveries (Institutional + Home)",
+      "displayDefinition": "% of women who received post natal care checkup done between 48 hrs and 14 days of delivery. Denominator population: Reported deliveries (Institutional + Home)."
     },
     {
       "indicatorId": "IND-HMIS-IND-020",
@@ -344,7 +439,12 @@
       "externalDenominatorRequired": true,
       "computabilityAssessment": "Not supported by currently linked observed fields",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Number of eligible couples",
+      "displayDefinition": "Proportion of eligible couples using family planningmethod. Denominator population: Number of eligible couples."
     },
     {
       "indicatorId": "IND-HMIS-IND-021",
@@ -361,7 +461,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Not supported by currently linked observed fields",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": null,
+      "scaleDisplay": "Not specified",
+      "normalizedFormula": "Numerator ÷ denominator; multiplier not stated",
+      "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
+      "displayDefinition": "Coverage contribution of sterilization to overall family planningmethod. Denominator population: Not supplied in registry metadata; consult the authoritative source."
     },
     {
       "indicatorId": "IND-HMIS-IND-022",
@@ -378,7 +483,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Not supported by currently linked observed fields",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": null,
+      "scaleDisplay": "Not specified",
+      "normalizedFormula": "Numerator ÷ denominator; multiplier not stated",
+      "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
+      "displayDefinition": "Coverage contribution of IUD to overall family planningmethod. Denominator population: Not supplied in registry metadata; consult the authoritative source."
     },
     {
       "indicatorId": "IND-HMIS-IND-023",
@@ -395,7 +505,12 @@
       "externalDenominatorRequired": true,
       "computabilityAssessment": "Numerator observed; external denominator required",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "eligible couples",
+      "displayDefinition": "Coverage contribution of OCP to overall family planningmethod -. Denominator population: eligible couples."
     },
     {
       "indicatorId": "IND-HMIS-IND-024",
@@ -412,7 +527,12 @@
       "externalDenominatorRequired": true,
       "computabilityAssessment": "Numerator observed; external denominator required",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "eligible couples",
+      "displayDefinition": "Coverage contribution of OCP to overall family planningmethod -. Denominator population: eligible couples."
     },
     {
       "indicatorId": "IND-HMIS-IND-025",
@@ -429,7 +549,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Partially supported by observed schema",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "All FP Users",
+      "displayDefinition": "Coverage contribution of sterilization(all) to overall family planningmethod. Denominator population: All FP Users."
     },
     {
       "indicatorId": "IND-HMIS-IND-026",
@@ -446,7 +571,12 @@
       "externalDenominatorRequired": true,
       "computabilityAssessment": "Numerator observed; external denominator required",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "eligible couples",
+      "displayDefinition": "Coverage contribution of spacing (all) to overall family planningmethod. Denominator population: eligible couples."
     },
     {
       "indicatorId": "IND-HMIS-IND-027",
@@ -463,7 +593,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Potentially computable from observed schema; crosswalk validation pending",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Total live births (as recorded)",
+      "displayDefinition": "Percentage of new born babies breastfed within one hour of birth. Denominator population: Total live births (as recorded)."
     },
     {
       "indicatorId": "IND-HMIS-IND-028",
@@ -480,7 +615,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Potentially computable from observed schema; crosswalk validation pending",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Ratio",
+      "scaleDisplay": "per 1,000",
+      "normalizedFormula": "(Numerator ÷ denominator) × 1000",
+      "denominatorPopulation": "Live Births males",
+      "displayDefinition": "Number of females born per 1000 males born in a give time period. Denominator population: Live Births males."
     },
     {
       "indicatorId": "IND-HMIS-IND-029",
@@ -497,7 +637,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Partially supported by observed schema",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Live births weighed",
+      "displayDefinition": "Percentage of live born infants with a Birth weight under 2,500 grams. Denominator population: Live births weighed."
     },
     {
       "indicatorId": "IND-HMIS-IND-030",
@@ -514,7 +659,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Partially supported by observed schema",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Rate per population",
+      "scaleDisplay": "per 1,000",
+      "normalizedFormula": "(Numerator ÷ denominator) × 1000",
+      "denominatorPopulation": "Live births",
+      "displayDefinition": "Neonatal mortality rate (NNMR) measures the number of live-born babies dying within 28 completed days of life per 1,000 live births. Denominator population: Live births."
     },
     {
       "indicatorId": "IND-HMIS-IND-031",
@@ -531,7 +681,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Not supported by currently linked observed fields",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Rate per population",
+      "scaleDisplay": "per 1,000",
+      "normalizedFormula": "(Numerator ÷ denominator) × 1000",
+      "denominatorPopulation": "live births",
+      "displayDefinition": "Infant Death rate (IDR) measures the number of deaths of infants under one year of age per 1,000 live births. Denominator population: live births."
     },
     {
       "indicatorId": "IND-HMIS-IND-032",
@@ -548,7 +703,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Partially supported by observed schema",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Rate per population",
+      "scaleDisplay": "per 1,000",
+      "normalizedFormula": "(Numerator ÷ denominator) × 1000",
+      "denominatorPopulation": "live births",
+      "displayDefinition": "Under-five mortality rate measures the number of children who die before their fifth birthday per 1000 live births. Denominator population: live births."
     },
     {
       "indicatorId": "IND-HMIS-IND-033",
@@ -565,7 +725,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Not supported by currently linked observed fields",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Rate per population",
+      "scaleDisplay": "per 1,000",
+      "normalizedFormula": "(Numerator ÷ denominator) × 1000",
+      "denominatorPopulation": "Live Births.",
+      "displayDefinition": "Peri-natal deaths comprise still births (gestation over 228 weeks / >1000 grams weight) plus early neonatal deaths (infants dying within 7 days). Denominator population: Live Births.."
     },
     {
       "indicatorId": "IND-HMIS-IND-034",
@@ -582,7 +747,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Not supported by currently linked observed fields",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": null,
+      "scaleDisplay": "Not specified",
+      "normalizedFormula": "Numerator ÷ denominator; multiplier not stated",
+      "denominatorPopulation": "Total births (Live birth + Still birth)",
+      "displayDefinition": "Still birth rate. Denominator population: Total births (Live birth + Still birth)."
     },
     {
       "indicatorId": "IND-HMIS-IND-035",
@@ -599,7 +769,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Partially supported by observed schema",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Ratio",
+      "scaleDisplay": "per 100,000",
+      "normalizedFormula": "(Numerator ÷ denominator) × 1,00,000",
+      "denominatorPopulation": "Number of live births",
+      "displayDefinition": "The death of a woman while pregnant or within 42 days of delivery or termination of pregnancy, irrespective of the duration and site of the pregnancy, from any cause related to or aggravated by the pregnancy or its management but not from accidental causes. Denominator population: Number of live births."
     },
     {
       "indicatorId": "IND-HMIS-IND-036",
@@ -616,7 +791,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Potentially computable from observed schema; crosswalk validation pending",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Total ANC registered",
+      "displayDefinition": "Percentage of pregnant women tested to be moderately anaemic (Hb level <11g). Denominator population: Total ANC registered."
     },
     {
       "indicatorId": "IND-HMIS-IND-037",
@@ -633,7 +813,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Partially supported by observed schema",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Total ANC registered",
+      "displayDefinition": "Percentage of pregnant women detected with hypertension/ high blood pressure (BP>140/90). Denominator population: Total ANC registered."
     },
     {
       "indicatorId": "IND-HMIS-IND-038",
@@ -650,7 +835,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Potentially computable from observed schema; crosswalk validation pending",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Total ANC registration",
+      "displayDefinition": "Percentage of severely anaemic pregnant women treated ( Hb level <7g). Denominator population: Total ANC registration."
     },
     {
       "indicatorId": "IND-HMIS-IND-039",
@@ -667,7 +857,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Partially supported by observed schema",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Total deliveries (home + institution)",
+      "displayDefinition": "% of eclampsia cases managed during delivery. Denominator population: Total deliveries (home + institution)."
     },
     {
       "indicatorId": "IND-HMIS-IND-040",
@@ -684,7 +879,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Potentially computable from observed schema; crosswalk validation pending",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Total ANC registered",
+      "displayDefinition": "% of pregnant women who were registered under JSY scheme. Denominator population: Total ANC registered."
     },
     {
       "indicatorId": "IND-HMIS-IND-041",
@@ -701,7 +901,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Potentially computable from observed schema; crosswalk validation pending",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "No. of pregnant women registered for JSY",
+      "displayDefinition": "Proportion of women who had institutional delivery received JSY benefit. Denominator population: No. of pregnant women registered for JSY."
     },
     {
       "indicatorId": "IND-HMIS-IND-042",
@@ -718,7 +923,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Not supported by currently linked observed fields",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Total OPD",
+      "displayDefinition": "Proportion of IPD out of total OPD. Denominator population: Total OPD."
     },
     {
       "indicatorId": "IND-HMIS-IND-043",
@@ -735,7 +945,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Partially supported by observed schema",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Total OPD",
+      "displayDefinition": "Percentage of major operations conducted against total OPD attendance. Denominator population: Total OPD."
     },
     {
       "indicatorId": "IND-HMIS-IND-044",
@@ -752,7 +967,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Partially supported by observed schema",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Total OPD",
+      "displayDefinition": "Percentage of minor operations conducted against total OPD attendance. Denominator population: Total OPD."
     },
     {
       "indicatorId": "IND-HMIS-IND-045",
@@ -769,7 +989,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Not supported by currently linked observed fields",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Total OPD",
+      "displayDefinition": "Dental Procedures as % of OPD. Denominator population: Total OPD."
     },
     {
       "indicatorId": "IND-HMIS-IND-046",
@@ -786,7 +1011,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Potentially computable from observed schema; crosswalk validation pending",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Total Bed days available (total number of days for which indicator is calculated x total number of beds)",
+      "displayDefinition": "Percentage of bed occupancy against total beds available in a facility in a given time period. Denominator population: Total Bed days available (total number of days for which indicator is calculated x total number of beds)."
     },
     {
       "indicatorId": "IND-HMIS-IND-047",
@@ -803,7 +1033,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Partially supported by observed schema",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Total HIV test conducted",
+      "displayDefinition": "Proportion of HIV +ve cases(all)out of total tested for HIV. Denominator population: Total HIV test conducted."
     },
     {
       "indicatorId": "IND-HMIS-IND-048",
@@ -820,7 +1055,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Potentially computable from observed schema; crosswalk validation pending",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Total ANC Registration",
+      "displayDefinition": "Proportion of pregnant women who were tested for HIV . Denominator population: Total ANC Registration."
     },
     {
       "indicatorId": "IND-HMIS-IND-049",
@@ -837,7 +1077,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Potentially computable from observed schema; crosswalk validation pending",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Antenatal women tested for HIV",
+      "displayDefinition": "Proportion of ANC who were found to be HIV +ve after test. Denominator population: Antenatal women tested for HIV."
     },
     {
       "indicatorId": "IND-HMIS-IND-050",
@@ -854,7 +1099,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Potentially computable from observed schema; crosswalk validation pending",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "HIV tested (excluding antenatal)",
+      "displayDefinition": "Proportion of non- ANC who were found to be HIV +ve after test. Denominator population: HIV tested (excluding antenatal)."
     },
     {
       "indicatorId": "IND-HMIS-IND-051",
@@ -871,7 +1121,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Potentially computable from observed schema; crosswalk validation pending",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "No. of males tested for HIV",
+      "displayDefinition": "Proportion of HIV+ cases among total number of males tested. Denominator population: No. of males tested for HIV."
     },
     {
       "indicatorId": "IND-HMIS-IND-052",
@@ -888,7 +1143,12 @@
       "externalDenominatorRequired": true,
       "computabilityAssessment": "Numerator observed; external denominator required",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Rate per population",
+      "scaleDisplay": "per 1,000",
+      "normalizedFormula": "(Numerator ÷ denominator) × 1000",
+      "denominatorPopulation": "Total population",
+      "displayDefinition": "Confirmed cases during 1 year/populatio n under surveillance) x 1000. Denominator population: Total population."
     },
     {
       "indicatorId": "IND-HMIS-IND-053",
@@ -905,7 +1165,12 @@
       "externalDenominatorRequired": true,
       "computabilityAssessment": "Numerator observed; external denominator required",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "%",
+      "normalizedFormula": "(numerator ÷ denominator) × 100",
+      "denominatorPopulation": "Total population",
+      "displayDefinition": "Number of slides examined. Denominator population: Total population."
     },
     {
       "indicatorId": "IND-HMIS-IND-054",
@@ -922,7 +1187,12 @@
       "externalDenominatorRequired": false,
       "computabilityAssessment": "Potentially computable from observed schema; crosswalk validation pending",
       "lowestPotentialGeography": "Facility where numerator and denominator are valid at facility level; otherwise aggregate level defined by denominator",
-      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed"
+      "decision": "Do not alter formula or claim computability until candidate crosswalks and denominator provenance are reviewed",
+      "measureType": "Rate per population",
+      "scaleDisplay": "per 1,000",
+      "normalizedFormula": "(Numerator ÷ denominator) × 1000",
+      "denominatorPopulation": "Total children under 5 years",
+      "displayDefinition": "The number of children under 5 years with diarrhoea per 1,000 population under 5 years per year. Denominator population: Total children under 5 years."
     }
   ]
 }
