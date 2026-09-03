@@ -23,3 +23,7 @@ npm run build:github-pages
 The current package is Release 1.3: 3,488 main-registry indicators, including 380 India-source-specific records. HMIS is represented through a linked, version-aware knowledge layer rather than by mixing all object types into the indicator table: 54 derived indicators, 700 April-2025 form data elements, 202 historical OGD outputs and 25 validation rules.
 
 The HMIS layer is exhaustive only for its declared public sources. It does not claim to reproduce the current live national HMIS data dictionary, validation configuration, local additions or restricted portal metadata. See the coverage section, source census and HMIS downloads for provenance and open evidence gaps.
+
+## Release 1.4 candidate — observed report schemas
+
+The site contains a separately versioned HMIS Report Schemas layer. Its first package reconciles a 560-column default Jharkhand report header extract observed on 1 September 2026: 35 context dimensions, 525 measure occurrences, 508 canonical links and 17 unverified candidate fields. The canonical 700-element dictionary is unchanged. Public download controls are disabled; the evidence layer is presented for interactive review.

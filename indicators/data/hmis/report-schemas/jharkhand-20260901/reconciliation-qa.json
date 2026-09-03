@@ -1,0 +1,69 @@
+{
+  "schemaId": "HMIS-RPTSCHEMA-JHARKHAND-20260901-001",
+  "generated": "2026-09-02",
+  "inputCounts": {
+    "reportColumns": 560,
+    "dimensions": 35,
+    "measureOccurrences": 525,
+    "canonicalElements": 700,
+    "derivedIndicators": 54
+  },
+  "reconciliationCounts": {
+    "acceptedOrProvisionalCanonicalLinks": 508,
+    "uniqueCanonicalElementsObserved": 508,
+    "candidateNewOrVersionSpecificFields": 17,
+    "canonicalElementsNotObserved": 192,
+    "labelAliases": 37,
+    "schemaSpecificCodeOccurrences": 85
+  },
+  "statusCounts": {
+    "Accepted canonical link": 506,
+    "Candidate new element—verification required": 17,
+    "Provisional link—module review required": 2
+  },
+  "labelRelationCounts": {
+    "Exact source label": 471,
+    "Controlled normalized equivalent": 34,
+    "Reviewed alias": 3,
+    "Potential new or version-specific field": 17
+  },
+  "codeAlignmentCounts": {
+    "Existing observed code": 423,
+    "No canonical code lineage": 17,
+    "New report-schema code occurrence": 85
+  },
+  "moduleCompatibilityCounts": {
+    "Compatible": 506,
+    "Not applicable until canonical review": 17,
+    "Requires review": 2
+  },
+  "absenceCounts": {
+    "Not observed; applicability unresolved": 107,
+    "Potential facility/format-specific absence": 70,
+    "Outside observed module scope": 15
+  },
+  "derivedIndicatorComputabilityCounts": {
+    "Numerator observed; external denominator required": 6,
+    "Potentially computable from observed schema; crosswalk validation pending": 26,
+    "Not supported by currently linked observed fields": 10,
+    "Partially supported by observed schema": 12
+  },
+  "gates": {
+    "allMeasureOccurrencesHaveOneStatus": true,
+    "matchedPlusCandidatesEqualsMeasures": true,
+    "observedPlusAbsentEqualsCanonical": true,
+    "noCandidateAutomaticallyPromoted": true,
+    "allMatchedElementsExist": true,
+    "allCodeDifferencesPreservedAsLineage": true,
+    "allDimensionsAndMeasuresAccounted": true,
+    "allDerivedIndicatorsAssessed": true,
+    "allMeasuresHaveAggregationNullPolicy": true,
+    "noCanonicalElementDeleted": true
+  },
+  "limitations": [
+    "The original spreadsheet, data rows, portal path, report period and selected facility/format scope remain unavailable.",
+    "Candidate new fields are supported only by the checksum-preserved user-supplied header extract.",
+    "No candidate field is promoted to the canonical 700-element dictionary.",
+    "Deterministic links and code-lineage decisions remain subject to MoHFW/NHSRC/HMIS custodian validation."
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "changeSetId": "HMIS-CHANGESET-JH-20260902-001",
+    "schemaId": "HMIS-RPTSCHEMA-JHARKHAND-20260901-001",
+    "targetRelease": "1.4-candidate",
+    "created": "2026-09-02",
+    "deploymentStatus": "Approved for Task 21 GitHub Pages deployment",
+    "canonicalElementCountBefore": 700,
+    "canonicalElementCountAfterProposed": 700,
+    "reasonCanonicalCountUnchanged": "Seventeen candidate fields lack original-workbook and independent custodian verification."
+  },
+  "actions": [
+    {
+      "changeClass": "Add schema manifest",
+      "records": 1,
+      "targetLayer": "HMIS Report Schemas",
+      "decision": "Include in Release 1.4 candidate"
+    },
+    {
+      "changeClass": "Add report dimensions",
+      "records": 35,
+      "targetLayer": "HMIS Report Dimensions",
+      "decision": "Include as provisional metadata"
+    },
+    {
+      "changeClass": "Add measure occurrences",
+      "records": 525,
+      "targetLayer": "HMIS Report Schema Columns",
+      "decision": "Include as observed source occurrences"
+    },
+    {
+      "changeClass": "Link canonical elements",
+      "records": 508,
+      "targetLayer": "Column-to-element crosswalk",
+      "decision": "Include with analyst-review status"
+    },
+    {
+      "changeClass": "Add label aliases",
+      "records": 37,
+      "targetLayer": "Alias catalogue",
+      "decision": "Include without renaming canonical labels"
+    },
+    {
+      "changeClass": "Add schema-specific code lineage",
+      "records": 85,
+      "targetLayer": "Code lineage",
+      "decision": "Include without overwriting canonical codes"
+    },
+    {
+      "changeClass": "Hold candidate elements",
+      "records": 17,
+      "targetLayer": "Candidate queue",
+      "decision": "Do not add to canonical dictionary"
+    },
+    {
+      "changeClass": "Record absent canonical elements",
+      "records": 192,
+      "targetLayer": "Coverage ledger",
+      "decision": "Mark not observed; do not retire"
+    },
+    {
+      "changeClass": "Update derived-indicator evidence",
+      "records": 54,
+      "targetLayer": "Indicator impact assessment",
+      "decision": "Publish assessment; do not change formulas"
+    },
+    {
+      "changeClass": "Delete canonical elements",
+      "records": 0,
+      "targetLayer": "Canonical data elements",
+      "decision": "No deletions"
+    }
+  ],
+  "candidateElementIds": [
+    "HMIS-DE-CAND-JH-001",
+    "HMIS-DE-CAND-JH-002",
+    "HMIS-DE-CAND-JH-003",
+    "HMIS-DE-CAND-JH-004",
+    "HMIS-DE-CAND-JH-005",
+    "HMIS-DE-CAND-JH-006",
+    "HMIS-DE-CAND-JH-007",
+    "HMIS-DE-CAND-JH-008",
+    "HMIS-DE-CAND-JH-009",
+    "HMIS-DE-CAND-JH-010",
+    "HMIS-DE-CAND-JH-011",
+    "HMIS-DE-CAND-JH-012",
+    "HMIS-DE-CAND-JH-013",
+    "HMIS-DE-CAND-JH-014",
+    "HMIS-DE-CAND-JH-015",
+    "HMIS-DE-CAND-JH-016",
+    "HMIS-DE-CAND-JH-017"
+  ],
+  "qaGate": true
+}

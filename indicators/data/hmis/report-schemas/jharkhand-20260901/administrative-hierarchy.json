@@ -1,0 +1,118 @@
+{
+  "metadata": {
+    "schemaId": "HMIS-RPTSCHEMA-JHARKHAND-20260901-001",
+    "generated": "2026-09-02",
+    "recordCount": 12,
+    "status": "Analyst reconciliation; custodian validation pending"
+  },
+  "relationships": [
+    {
+      "edgeId": "HMIS-HIER-JH-01",
+      "schemaId": "HMIS-RPTSCHEMA-JHARKHAND-20260901-001",
+      "fromDimension": "State Code",
+      "toDimension": "District Code",
+      "relationship": "Administrative parent-child",
+      "validationRequirement": "Candidate LGD validation",
+      "status": "Provisional—no data rows supplied"
+    },
+    {
+      "edgeId": "HMIS-HIER-JH-02",
+      "schemaId": "HMIS-RPTSCHEMA-JHARKHAND-20260901-001",
+      "fromDimension": "District Code",
+      "toDimension": "Sub-District / ULB Code",
+      "relationship": "Conditional parent-child",
+      "validationRequirement": "Resolve sub-district versus ULB entity type",
+      "status": "Provisional—no data rows supplied"
+    },
+    {
+      "edgeId": "HMIS-HIER-JH-03",
+      "schemaId": "HMIS-RPTSCHEMA-JHARKHAND-20260901-001",
+      "fromDimension": "District Code",
+      "toDimension": "Block Code",
+      "relationship": "Administrative/development parent-child",
+      "validationRequirement": "Candidate LGD validation",
+      "status": "Provisional—no data rows supplied"
+    },
+    {
+      "edgeId": "HMIS-HIER-JH-04",
+      "schemaId": "HMIS-RPTSCHEMA-JHARKHAND-20260901-001",
+      "fromDimension": "Block Code",
+      "toDimension": "Facility Code",
+      "relationship": "Operational assignment candidate",
+      "validationRequirement": "Validate actual row relationships",
+      "status": "Provisional—no data rows supplied"
+    },
+    {
+      "edgeId": "HMIS-HIER-JH-05",
+      "schemaId": "HMIS-RPTSCHEMA-JHARKHAND-20260901-001",
+      "fromDimension": "Health Block Code",
+      "toDimension": "Facility Code",
+      "relationship": "Health-administration assignment",
+      "validationRequirement": "Keep separate from development block",
+      "status": "Provisional—no data rows supplied"
+    },
+    {
+      "edgeId": "HMIS-HIER-JH-06",
+      "schemaId": "HMIS-RPTSCHEMA-JHARKHAND-20260901-001",
+      "fromDimension": "ULB Code",
+      "toDimension": "Facility Code",
+      "relationship": "Urban-location assignment candidate",
+      "validationRequirement": "Validate actual row relationships",
+      "status": "Provisional—no data rows supplied"
+    },
+    {
+      "edgeId": "HMIS-HIER-JH-07",
+      "schemaId": "HMIS-RPTSCHEMA-JHARKHAND-20260901-001",
+      "fromDimension": "District Code",
+      "toDimension": "Local Assembly Constituency",
+      "relationship": "Cross-cutting geographic relationship",
+      "validationRequirement": "Not a strict administrative hierarchy",
+      "status": "Provisional—no data rows supplied"
+    },
+    {
+      "edgeId": "HMIS-HIER-JH-08",
+      "schemaId": "HMIS-RPTSCHEMA-JHARKHAND-20260901-001",
+      "fromDimension": "District Code",
+      "toDimension": "Parliament Constituency",
+      "relationship": "Cross-cutting geographic relationship",
+      "validationRequirement": "Not a strict administrative hierarchy",
+      "status": "Provisional—no data rows supplied"
+    },
+    {
+      "edgeId": "HMIS-HIER-JH-09",
+      "schemaId": "HMIS-RPTSCHEMA-JHARKHAND-20260901-001",
+      "fromDimension": "Facility Code",
+      "toDimension": "Facility NIN Number",
+      "relationship": "Identifier crosswalk",
+      "validationRequirement": "Never coalesce identifiers",
+      "status": "Provisional—no data rows supplied"
+    },
+    {
+      "edgeId": "HMIS-HIER-JH-10",
+      "schemaId": "HMIS-RPTSCHEMA-JHARKHAND-20260901-001",
+      "fromDimension": "Facility Code",
+      "toDimension": "HFR Id",
+      "relationship": "Identifier crosswalk",
+      "validationRequirement": "Never coalesce identifiers",
+      "status": "Provisional—no data rows supplied"
+    },
+    {
+      "edgeId": "HMIS-HIER-JH-11",
+      "schemaId": "HMIS-RPTSCHEMA-JHARKHAND-20260901-001",
+      "fromDimension": "Facility Code",
+      "toDimension": "Active from date",
+      "relationship": "Temporal validity attribute",
+      "validationRequirement": "Parse only with confirmed locale",
+      "status": "Provisional—no data rows supplied"
+    },
+    {
+      "edgeId": "HMIS-HIER-JH-12",
+      "schemaId": "HMIS-RPTSCHEMA-JHARKHAND-20260901-001",
+      "fromDimension": "Facility Code",
+      "toDimension": "Active to date",
+      "relationship": "Temporal validity attribute",
+      "validationRequirement": "Blank end date does not prove active status",
+      "status": "Provisional—no data rows supplied"
+    }
+  ]
+}

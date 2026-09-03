@@ -1,0 +1,120 @@
+{
+  "schemaId": "HMIS-RPTSCHEMA-JHARKHAND-20260901-001",
+  "title": "Jharkhand HMIS report schema",
+  "state": "Jharkhand",
+  "downloadDate": "2026-09-01",
+  "releaseStatus": "Release 1.4 candidate evidence layer; published on GitHub Pages",
+  "counts": {
+    "totalColumns": 560,
+    "dimensions": 35,
+    "measureOccurrences": 525,
+    "canonicalLinks": 508,
+    "candidateNewFields": 17,
+    "canonicalElementsNotObserved": 192,
+    "schemaSpecificCodeOccurrences": 85,
+    "derivedIndicatorsAssessed": 54
+  },
+  "statusCounts": {
+    "Accepted canonical link": 506,
+    "Candidate new element—verification required": 17,
+    "Provisional link—module review required": 2
+  },
+  "moduleSummary": [
+    {
+      "moduleCode": "M1",
+      "moduleTitle": "Ante Natal Care (ANC)",
+      "measureColumns": 50
+    },
+    {
+      "moduleCode": "M2",
+      "moduleTitle": "Deliveries",
+      "measureColumns": 14
+    },
+    {
+      "moduleCode": "M3",
+      "moduleTitle": "Number of Caesarean (C-Section) deliveries",
+      "measureColumns": 3
+    },
+    {
+      "moduleCode": "M4",
+      "moduleTitle": "Pregnancy outcome & details of new-born",
+      "measureColumns": 26
+    },
+    {
+      "moduleCode": "M5",
+      "moduleTitle": "Anaemia Mukt Bharat",
+      "measureColumns": 16
+    },
+    {
+      "moduleCode": "M6",
+      "moduleTitle": "Post Natal Care (PNC)",
+      "measureColumns": 6
+    },
+    {
+      "moduleCode": "M7",
+      "moduleTitle": "Sexually Transmitted Infections/Reproductive Tract Infections (STI/RTI) Cases",
+      "measureColumns": 9
+    },
+    {
+      "moduleCode": "M8",
+      "moduleTitle": "Family Planning",
+      "measureColumns": 33
+    },
+    {
+      "moduleCode": "M9",
+      "moduleTitle": "CHILD IMMUNISATION",
+      "measureColumns": 48
+    },
+    {
+      "moduleCode": "M10",
+      "moduleTitle": "Number of cases of Childhood Diseases",
+      "measureColumns": 18
+    },
+    {
+      "moduleCode": "M11",
+      "moduleTitle": "NVBDCP",
+      "measureColumns": 19
+    },
+    {
+      "moduleCode": "M12",
+      "moduleTitle": "Adolescent Health",
+      "measureColumns": 14
+    },
+    {
+      "moduleCode": "M13",
+      "moduleTitle": "National TB Elimination Programme (NTEP)",
+      "measureColumns": 4
+    },
+    {
+      "moduleCode": "M14",
+      "moduleTitle": "Patient Services",
+      "measureColumns": 147
+    },
+    {
+      "moduleCode": "M15",
+      "moduleTitle": "Laboratory Testing",
+      "measureColumns": 48
+    },
+    {
+      "moduleCode": "M16",
+      "moduleTitle": "Details of deaths reported",
+      "measureColumns": 61
+    },
+    {
+      "moduleCode": "M17",
+      "moduleTitle": "QA & BEMMP",
+      "measureColumns": 9
+    }
+  ],
+  "interpretationBoundary": "Observed default-column Jharkhand report schema. Not the national or complete state HMIS dictionary.",
+  "sourceChecksum": "3CE7ECB1702D0A54BF41DA4ED990C2D166EC5A82915434662CC9D17A5CE6F6EF",
+  "qaPassed": true,
+  "downloads": {
+    "crosswalk": "column-to-element-crosswalk.csv",
+    "candidateElements": "candidate-new-elements.csv",
+    "codeLineage": "code-lineage.csv",
+    "derivedIndicatorImpact": "derived-indicator-impact.csv",
+    "qa": "reconciliation-qa.json",
+    "changeSet": "proposed-change-set.json"
+  }
+}
