@@ -8,9 +8,9 @@
   },
   "schemas": [
     {
-      "schemaId": "HMIS-RPTSCHEMA-JHARKHAND-20260901-001",
-      "title": "Jharkhand HMIS report schema",
-      "state": "Jharkhand",
+      "schemaId": "HMIS-RPTSCHEMA-STATE-20260901-001",
+      "title": "State HMIS report schema",
+      "state": "State",
       "downloadDate": "2026-09-01",
       "scope": "User-supplied default-column header extract",
       "counts": {
@@ -25,8 +25,8 @@
         "derivedIndicatorsAssessed": 54
       },
       "qaPassed": true,
-      "interpretationBoundary": "Observed default-column Jharkhand report schema. It is not the national HMIS dictionary, the complete Jharkhand dictionary, or evidence that every displayed field applies to every reporting row.",
-      "data": "jharkhand-20260901/report-schema-release.json",
+      "interpretationBoundary": "Observed default-column State report schema. It is not the national HMIS dictionary, the complete State dictionary, or evidence that every displayed field applies to every reporting row.",
+      "data": "state-report-20260901/report-schema-release.json",
       "downloadOptions": "Disabled"
     }
   ]

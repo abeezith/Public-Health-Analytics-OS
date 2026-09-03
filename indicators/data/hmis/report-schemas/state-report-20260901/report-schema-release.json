@@ -1,7 +1,7 @@
 {
-  "schemaId": "HMIS-RPTSCHEMA-JHARKHAND-20260901-001",
-  "title": "Jharkhand HMIS report schema",
-  "state": "Jharkhand",
+  "schemaId": "HMIS-RPTSCHEMA-STATE-20260901-001",
+  "title": "State HMIS report schema",
+  "state": "State",
   "downloadDate": "2026-09-01",
   "releaseStatus": "Release 1.4 candidate evidence layer; published on GitHub Pages",
   "counts": {
@@ -106,7 +106,7 @@
       "measureColumns": 9
     }
   ],
-  "interpretationBoundary": "Observed default-column Jharkhand report schema. Not the national or complete state HMIS dictionary.",
+  "interpretationBoundary": "Observed default-column State report schema. Not the national or complete state HMIS dictionary.",
   "sourceChecksum": "3CE7ECB1702D0A54BF41DA4ED990C2D166EC5A82915434662CC9D17A5CE6F6EF",
   "qaPassed": true,
   "downloads": {

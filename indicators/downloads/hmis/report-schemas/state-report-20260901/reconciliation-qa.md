@@ -1,6 +1,6 @@
 # Tasks 6–18 reconciliation QA
 
-Schema: HMIS-RPTSCHEMA-JHARKHAND-20260901-001
+Schema: HMIS-RPTSCHEMA-STATE-20260901-001
 
 ## Counts
 

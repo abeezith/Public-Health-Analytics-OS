@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "schemaId": "HMIS-RPTSCHEMA-JHARKHAND-20260901-001",
+    "schemaId": "HMIS-RPTSCHEMA-STATE-20260901-001",
     "generated": "2026-09-02",
     "recordCount": 192,
     "status": "Analyst reconciliation; custodian validation pending"
@@ -15,7 +15,7 @@
       "sourceCodes": "11.4",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -27,7 +27,7 @@
       "sourceCodes": "12.1",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -39,7 +39,7 @@
       "sourceCodes": "8.6; 9.6",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -51,7 +51,7 @@
       "sourceCodes": "3.2",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -63,7 +63,7 @@
       "sourceCodes": "2.3",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -75,7 +75,7 @@
       "sourceCodes": "1.6",
       "absenceClassification": "Outside observed module scope",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -87,7 +87,7 @@
       "sourceCodes": "2.2; 4.2; 5.2",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -99,7 +99,7 @@
       "sourceCodes": "1.2",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -111,7 +111,7 @@
       "sourceCodes": "3.5",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -123,7 +123,7 @@
       "sourceCodes": "3.6",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -135,7 +135,7 @@
       "sourceCodes": "3.3",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -147,7 +147,7 @@
       "sourceCodes": "3.4",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -159,7 +159,7 @@
       "sourceCodes": "3.2",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -171,7 +171,7 @@
       "sourceCodes": "3.1",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -183,7 +183,7 @@
       "sourceCodes": "4.2.3; 5.2.3",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -195,7 +195,7 @@
       "sourceCodes": "5.2.4",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -207,7 +207,7 @@
       "sourceCodes": "2.2.1; 4.2.1; 5.2.1",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -219,7 +219,7 @@
       "sourceCodes": "2.2.2; 4.2.2; 5.2.2",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -231,7 +231,7 @@
       "sourceCodes": "16.2; 17.2",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -243,7 +243,7 @@
       "sourceCodes": "3.3",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -255,7 +255,7 @@
       "sourceCodes": "14.4; 15.4; 16.4",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -267,7 +267,7 @@
       "sourceCodes": "10.2",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -279,7 +279,7 @@
       "sourceCodes": "8.3; 9.3",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -291,7 +291,7 @@
       "sourceCodes": "8.8; 9.8",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -303,7 +303,7 @@
       "sourceCodes": "11.1; 12.2",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -315,7 +315,7 @@
       "sourceCodes": "2.3",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -327,7 +327,7 @@
       "sourceCodes": "14.7; 15.7; 16.8",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -339,7 +339,7 @@
       "sourceCodes": "1.2.4",
       "absenceClassification": "Outside observed module scope",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -351,7 +351,7 @@
       "sourceCodes": "1.2.2",
       "absenceClassification": "Outside observed module scope",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -363,7 +363,7 @@
       "sourceCodes": "2.1",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -375,7 +375,7 @@
       "sourceCodes": "11.3",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -387,7 +387,7 @@
       "sourceCodes": "3.1",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -399,7 +399,7 @@
       "sourceCodes": "3.4; 4.4",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -411,7 +411,7 @@
       "sourceCodes": "1.2.3",
       "absenceClassification": "Outside observed module scope",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -423,7 +423,7 @@
       "sourceCodes": "14.6; 15.6",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -435,7 +435,7 @@
       "sourceCodes": "1.2.1",
       "absenceClassification": "Outside observed module scope",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -447,7 +447,7 @@
       "sourceCodes": "12.6; 13.5; 14.5",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -459,7 +459,7 @@
       "sourceCodes": "13.6; 14.6",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -471,7 +471,7 @@
       "sourceCodes": "15.1; 16.1; 17.1",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -483,7 +483,7 @@
       "sourceCodes": "8.2",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -495,7 +495,7 @@
       "sourceCodes": "8.19",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -507,7 +507,7 @@
       "sourceCodes": "12.1.1; 13.1.1; 14.1.1",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -519,7 +519,7 @@
       "sourceCodes": "13.2; 14.2; 15.2",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -531,7 +531,7 @@
       "sourceCodes": "12.13.3; 13.18.3; 14.17.3; 14.19.3",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -543,7 +543,7 @@
       "sourceCodes": "1.9",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -555,7 +555,7 @@
       "sourceCodes": "13.3; 14.3; 15.3",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -567,7 +567,7 @@
       "sourceCodes": "1.2",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -579,7 +579,7 @@
       "sourceCodes": "2.1; 4.1; 5.1",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -591,7 +591,7 @@
       "sourceCodes": "1.4",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -603,7 +603,7 @@
       "sourceCodes": "1.1",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -615,7 +615,7 @@
       "sourceCodes": "1.3",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -627,7 +627,7 @@
       "sourceCodes": "14.3; 15.3; 16.3",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -639,7 +639,7 @@
       "sourceCodes": "7.5; 8.8",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -651,7 +651,7 @@
       "sourceCodes": "7.8; 8.11",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -663,7 +663,7 @@
       "sourceCodes": "7.6; 8.9",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -675,7 +675,7 @@
       "sourceCodes": "7.7; 8.10",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -687,7 +687,7 @@
       "sourceCodes": "13.4; 14.4",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -699,7 +699,7 @@
       "sourceCodes": "13.3; 14.3",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -711,7 +711,7 @@
       "sourceCodes": "13.3.1; 14.3.1",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -723,7 +723,7 @@
       "sourceCodes": "13.3.4; 14.3.4",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -735,7 +735,7 @@
       "sourceCodes": "13.3.2; 14.3.2",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -747,7 +747,7 @@
       "sourceCodes": "13.3.3; 14.3.3",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -759,7 +759,7 @@
       "sourceCodes": "12.7; 13.11; 14.12",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -771,7 +771,7 @@
       "sourceCodes": "11.2",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -783,7 +783,7 @@
       "sourceCodes": "3.1.1; 4.1.1",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -795,7 +795,7 @@
       "sourceCodes": "10.2; 11.5",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -807,7 +807,7 @@
       "sourceCodes": "14.8.1.c",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -819,7 +819,7 @@
       "sourceCodes": "10.1; 11.1",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -831,7 +831,7 @@
       "sourceCodes": "8.1",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -843,7 +843,7 @@
       "sourceCodes": "3.1.2",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -855,7 +855,7 @@
       "sourceCodes": "14.5; 15.5; 16.5",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -867,7 +867,7 @@
       "sourceCodes": "4.3",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -879,7 +879,7 @@
       "sourceCodes": "11.1.1",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -891,7 +891,7 @@
       "sourceCodes": "12.13; 13.18; 14.17; 14.19",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -903,7 +903,7 @@
       "sourceCodes": "14.2; 15.2; 16.2",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -915,7 +915,7 @@
       "sourceCodes": "15.1.1.a",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -927,7 +927,7 @@
       "sourceCodes": "10.1; 9.1",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -939,7 +939,7 @@
       "sourceCodes": "4.2",
       "absenceClassification": "Outside observed module scope",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -951,7 +951,7 @@
       "sourceCodes": "15.3.4.c",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -963,7 +963,7 @@
       "sourceCodes": "4.4",
       "absenceClassification": "Outside observed module scope",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -975,7 +975,7 @@
       "sourceCodes": "4.1",
       "absenceClassification": "Outside observed module scope",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -987,7 +987,7 @@
       "sourceCodes": "4.3",
       "absenceClassification": "Outside observed module scope",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -999,7 +999,7 @@
       "sourceCodes": "13.3.3.c",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1011,7 +1011,7 @@
       "sourceCodes": "7.14; 8.17",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1023,7 +1023,7 @@
       "sourceCodes": "12.1.1",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1035,7 +1035,7 @@
       "sourceCodes": "5.2.3.f",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1047,7 +1047,7 @@
       "sourceCodes": "2.3.1.b",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1059,7 +1059,7 @@
       "sourceCodes": "2.3.2.b",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1071,7 +1071,7 @@
       "sourceCodes": "2.2.1.c.i",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1083,7 +1083,7 @@
       "sourceCodes": "1.4.4.a",
       "absenceClassification": "Outside observed module scope",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1095,7 +1095,7 @@
       "sourceCodes": "1.1",
       "absenceClassification": "Outside observed module scope",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1107,7 +1107,7 @@
       "sourceCodes": "1.1.a",
       "absenceClassification": "Outside observed module scope",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1119,7 +1119,7 @@
       "sourceCodes": "2.1.1; 4.1.3; 5.1.3",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1131,7 +1131,7 @@
       "sourceCodes": "8.2; 9.2",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1143,7 +1143,7 @@
       "sourceCodes": "8.2.5; 9.2.5",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1155,7 +1155,7 @@
       "sourceCodes": "1.2.2.a",
       "absenceClassification": "Outside observed module scope",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1167,7 +1167,7 @@
       "sourceCodes": "1.2.3.a",
       "absenceClassification": "Outside observed module scope",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1179,7 +1179,7 @@
       "sourceCodes": "1.2.1.a",
       "absenceClassification": "Outside observed module scope",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1191,7 +1191,7 @@
       "sourceCodes": "1.2",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1203,7 +1203,7 @@
       "sourceCodes": "8.4; 9.4",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1215,7 +1215,7 @@
       "sourceCodes": "8.5; 9.5",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1227,7 +1227,7 @@
       "sourceCodes": "2.3.1.a",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1239,7 +1239,7 @@
       "sourceCodes": "2.3.2.a",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1251,7 +1251,7 @@
       "sourceCodes": "2.1.1",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1263,7 +1263,7 @@
       "sourceCodes": "8.7; 9.7",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1275,7 +1275,7 @@
       "sourceCodes": "2.2.1.c",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1287,7 +1287,7 @@
       "sourceCodes": "2.2.2.c",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1299,7 +1299,7 @@
       "sourceCodes": "2.2.1.b",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1311,7 +1311,7 @@
       "sourceCodes": "2.2.2.b",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1323,7 +1323,7 @@
       "sourceCodes": "2.1.1.a",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1335,7 +1335,7 @@
       "sourceCodes": "2.2.1.a",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1347,7 +1347,7 @@
       "sourceCodes": "2.2.2.a",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1359,7 +1359,7 @@
       "sourceCodes": "8.1; 9.1",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1371,7 +1371,7 @@
       "sourceCodes": "13.3.7; 14.3.7",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1383,7 +1383,7 @@
       "sourceCodes": "10.2.2",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1395,7 +1395,7 @@
       "sourceCodes": "3.3.4",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1407,7 +1407,7 @@
       "sourceCodes": "3.3.1",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1419,7 +1419,7 @@
       "sourceCodes": "3.3.5",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1431,7 +1431,7 @@
       "sourceCodes": "3.3.7",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1443,7 +1443,7 @@
       "sourceCodes": "3.3.2",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1455,7 +1455,7 @@
       "sourceCodes": "3.3.3",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1467,7 +1467,7 @@
       "sourceCodes": "3.3.6",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1479,7 +1479,7 @@
       "sourceCodes": "14.5.6; 15.5.6",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1491,7 +1491,7 @@
       "sourceCodes": "2.3",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1503,7 +1503,7 @@
       "sourceCodes": "4.3.1",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1515,7 +1515,7 @@
       "sourceCodes": "6.1; 7.1",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1527,7 +1527,7 @@
       "sourceCodes": "5.2",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1539,7 +1539,7 @@
       "sourceCodes": "5.5",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1551,7 +1551,7 @@
       "sourceCodes": "5.3",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1563,7 +1563,7 @@
       "sourceCodes": "5.6",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1575,7 +1575,7 @@
       "sourceCodes": "2.3.3",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1587,7 +1587,7 @@
       "sourceCodes": "2.3.4",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1599,7 +1599,7 @@
       "sourceCodes": "10.2.1",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1611,7 +1611,7 @@
       "sourceCodes": "14.8.3",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1623,7 +1623,7 @@
       "sourceCodes": "3.1.2",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1635,7 +1635,7 @@
       "sourceCodes": "12.13.3.b",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1647,7 +1647,7 @@
       "sourceCodes": "12.7.1; 13.11.1; 14.12.1",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1659,7 +1659,7 @@
       "sourceCodes": "12.7.1.c; 13.11.1.c; 14.12.1.c",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1671,7 +1671,7 @@
       "sourceCodes": "12.7.1.a; 13.11.1.a; 14.12.1.a",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1683,7 +1683,7 @@
       "sourceCodes": "12.7.2; 13.11.2; 14.12.2",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1695,7 +1695,7 @@
       "sourceCodes": "2.3.1",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1707,7 +1707,7 @@
       "sourceCodes": "2.3.2",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1719,7 +1719,7 @@
       "sourceCodes": "13.12; 14.13",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1731,7 +1731,7 @@
       "sourceCodes": "14.8",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1743,7 +1743,7 @@
       "sourceCodes": "14.6; 15.6; 16.7",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1755,7 +1755,7 @@
       "sourceCodes": "12.1.2; 13.1.2; 14.1.2",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1767,7 +1767,7 @@
       "sourceCodes": "12.1.2",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1779,7 +1779,7 @@
       "sourceCodes": "12.1.3",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1791,7 +1791,7 @@
       "sourceCodes": "3.2.3",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1803,7 +1803,7 @@
       "sourceCodes": "3.2.4",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1815,7 +1815,7 @@
       "sourceCodes": "3.2.2",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1827,7 +1827,7 @@
       "sourceCodes": "3.2.1",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1839,7 +1839,7 @@
       "sourceCodes": "12.2; 13.2; 14.2",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1851,7 +1851,7 @@
       "sourceCodes": "11.2; 12.3",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1863,7 +1863,7 @@
       "sourceCodes": "3.3; 4.3.2",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1875,7 +1875,7 @@
       "sourceCodes": "3.1; 4.1",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1887,7 +1887,7 @@
       "sourceCodes": "1.4",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1899,7 +1899,7 @@
       "sourceCodes": "1.5",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1911,7 +1911,7 @@
       "sourceCodes": "1.3",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1923,7 +1923,7 @@
       "sourceCodes": "1.6",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1935,7 +1935,7 @@
       "sourceCodes": "7.15; 8.18",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1947,7 +1947,7 @@
       "sourceCodes": "14.6.1; 15.6.1",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1959,7 +1959,7 @@
       "sourceCodes": "10.1.1; 11.1.2",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1971,7 +1971,7 @@
       "sourceCodes": "3.5; 4.5",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1983,7 +1983,7 @@
       "sourceCodes": "1.5",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -1995,7 +1995,7 @@
       "sourceCodes": "12.1; 13.1; 14.1",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -2007,7 +2007,7 @@
       "sourceCodes": "12.1.3; 13.1.3; 14.1.3",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -2019,7 +2019,7 @@
       "sourceCodes": "13.10; 14.10",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -2031,7 +2031,7 @@
       "sourceCodes": "14.11",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -2043,7 +2043,7 @@
       "sourceCodes": "13.4; 14.4; 15.4",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -2055,7 +2055,7 @@
       "sourceCodes": "3.1.3; 4.1.3",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -2067,7 +2067,7 @@
       "sourceCodes": "1.6.1",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -2079,7 +2079,7 @@
       "sourceCodes": "1.7",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -2091,7 +2091,7 @@
       "sourceCodes": "12.3.1",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -2103,7 +2103,7 @@
       "sourceCodes": "14.9; 15.9; 16.10",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -2115,7 +2115,7 @@
       "sourceCodes": "2.1",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -2127,7 +2127,7 @@
       "sourceCodes": "2.2",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -2139,7 +2139,7 @@
       "sourceCodes": "3.1.1",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -2151,7 +2151,7 @@
       "sourceCodes": "12.13.1; 13.18.1; 14.17.1; 14.19.1",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -2163,7 +2163,7 @@
       "sourceCodes": "12.13.1.b",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -2175,7 +2175,7 @@
       "sourceCodes": "14.17.1.d",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -2187,7 +2187,7 @@
       "sourceCodes": "12.13.2; 13.18.2; 14.17.2; 14.19.2",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -2199,7 +2199,7 @@
       "sourceCodes": "12.3",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -2211,7 +2211,7 @@
       "sourceCodes": "13.3.5; 14.3.5",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -2223,7 +2223,7 @@
       "sourceCodes": "2.4",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -2235,7 +2235,7 @@
       "sourceCodes": "2.5",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -2247,7 +2247,7 @@
       "sourceCodes": "13.1.3",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -2259,7 +2259,7 @@
       "sourceCodes": "13.1; 14.1; 15.1",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -2271,7 +2271,7 @@
       "sourceCodes": "5.1",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -2283,7 +2283,7 @@
       "sourceCodes": "5.4",
       "absenceClassification": "Potential facility/format-specific absence",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -2295,7 +2295,7 @@
       "sourceCodes": "1.8",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     },
     {
@@ -2307,7 +2307,7 @@
       "sourceCodes": "14.5; 15.5",
       "absenceClassification": "Not observed; applicability unresolved",
       "retirementStatus": "Not retired",
-      "interpretation": "Absent from this Jharkhand report schema only; no conclusion about national/current availability",
+      "interpretation": "Absent from this State report schema only; no conclusion about national/current availability",
       "reviewStatus": "Facility type, format type and report-period context required"
     }
   ]

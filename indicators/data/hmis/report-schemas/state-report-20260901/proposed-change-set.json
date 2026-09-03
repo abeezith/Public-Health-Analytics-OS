@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "changeSetId": "HMIS-CHANGESET-JH-20260902-001",
-    "schemaId": "HMIS-RPTSCHEMA-JHARKHAND-20260901-001",
+    "changeSetId": "HMIS-CHANGESET-STATE-20260902-001",
+    "schemaId": "HMIS-RPTSCHEMA-STATE-20260901-001",
     "targetRelease": "1.4-candidate",
     "created": "2026-09-02",
     "deploymentStatus": "Approved for Task 21 GitHub Pages deployment",
@@ -72,23 +72,23 @@
     }
   ],
   "candidateElementIds": [
-    "HMIS-DE-CAND-JH-001",
-    "HMIS-DE-CAND-JH-002",
-    "HMIS-DE-CAND-JH-003",
-    "HMIS-DE-CAND-JH-004",
-    "HMIS-DE-CAND-JH-005",
-    "HMIS-DE-CAND-JH-006",
-    "HMIS-DE-CAND-JH-007",
-    "HMIS-DE-CAND-JH-008",
-    "HMIS-DE-CAND-JH-009",
-    "HMIS-DE-CAND-JH-010",
-    "HMIS-DE-CAND-JH-011",
-    "HMIS-DE-CAND-JH-012",
-    "HMIS-DE-CAND-JH-013",
-    "HMIS-DE-CAND-JH-014",
-    "HMIS-DE-CAND-JH-015",
-    "HMIS-DE-CAND-JH-016",
-    "HMIS-DE-CAND-JH-017"
+    "HMIS-DE-CAND-STATE-001",
+    "HMIS-DE-CAND-STATE-002",
+    "HMIS-DE-CAND-STATE-003",
+    "HMIS-DE-CAND-STATE-004",
+    "HMIS-DE-CAND-STATE-005",
+    "HMIS-DE-CAND-STATE-006",
+    "HMIS-DE-CAND-STATE-007",
+    "HMIS-DE-CAND-STATE-008",
+    "HMIS-DE-CAND-STATE-009",
+    "HMIS-DE-CAND-STATE-010",
+    "HMIS-DE-CAND-STATE-011",
+    "HMIS-DE-CAND-STATE-012",
+    "HMIS-DE-CAND-STATE-013",
+    "HMIS-DE-CAND-STATE-014",
+    "HMIS-DE-CAND-STATE-015",
+    "HMIS-DE-CAND-STATE-016",
+    "HMIS-DE-CAND-STATE-017"
   ],
   "qaGate": true
 }

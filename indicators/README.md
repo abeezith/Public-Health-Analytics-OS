@@ -26,4 +26,4 @@ The HMIS layer is exhaustive only for its declared public sources. It does not c
 
 ## Release 1.4 candidate — observed report schemas
 
-The site contains a separately versioned HMIS Report Schemas layer. Its first package reconciles a 560-column default Jharkhand report header extract observed on 1 September 2026: 35 context dimensions, 525 measure occurrences, 508 canonical links and 17 unverified candidate fields. The canonical 700-element dictionary is unchanged. Public download controls are disabled; the evidence layer is presented for interactive review.
+The site contains a separately versioned HMIS Report Schemas layer. Its first package reconciles a 560-column default State report header extract observed on 1 September 2026: 35 context dimensions, 525 measure occurrences, 508 canonical links and 17 unverified candidate fields. The canonical 700-element dictionary is unchanged. Public download controls are disabled; the evidence layer is presented for interactive review.

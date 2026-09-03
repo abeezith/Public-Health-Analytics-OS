@@ -1,0 +1,13 @@
+edgeId,schemaId,fromDimension,toDimension,relationship,validationRequirement,status
+HMIS-HIER-STATE-01,HMIS-RPTSCHEMA-STATE-20260901-001,State Code,District Code,Administrative parent-child,Candidate LGD validation,Provisional—no data rows supplied
+HMIS-HIER-STATE-02,HMIS-RPTSCHEMA-STATE-20260901-001,District Code,Sub-District / ULB Code,Conditional parent-child,Resolve sub-district versus ULB entity type,Provisional—no data rows supplied
+HMIS-HIER-STATE-03,HMIS-RPTSCHEMA-STATE-20260901-001,District Code,Block Code,Administrative/development parent-child,Candidate LGD validation,Provisional—no data rows supplied
+HMIS-HIER-STATE-04,HMIS-RPTSCHEMA-STATE-20260901-001,Block Code,Facility Code,Operational assignment candidate,Validate actual row relationships,Provisional—no data rows supplied
+HMIS-HIER-STATE-05,HMIS-RPTSCHEMA-STATE-20260901-001,Health Block Code,Facility Code,Health-administration assignment,Keep separate from development block,Provisional—no data rows supplied
+HMIS-HIER-STATE-06,HMIS-RPTSCHEMA-STATE-20260901-001,ULB Code,Facility Code,Urban-location assignment candidate,Validate actual row relationships,Provisional—no data rows supplied
+HMIS-HIER-STATE-07,HMIS-RPTSCHEMA-STATE-20260901-001,District Code,Local Assembly Constituency,Cross-cutting geographic relationship,Not a strict administrative hierarchy,Provisional—no data rows supplied
+HMIS-HIER-STATE-08,HMIS-RPTSCHEMA-STATE-20260901-001,District Code,Parliament Constituency,Cross-cutting geographic relationship,Not a strict administrative hierarchy,Provisional—no data rows supplied
+HMIS-HIER-STATE-09,HMIS-RPTSCHEMA-STATE-20260901-001,Facility Code,Facility NIN Number,Identifier crosswalk,Never coalesce identifiers,Provisional—no data rows supplied
+HMIS-HIER-STATE-10,HMIS-RPTSCHEMA-STATE-20260901-001,Facility Code,HFR Id,Identifier crosswalk,Never coalesce identifiers,Provisional—no data rows supplied
+HMIS-HIER-STATE-11,HMIS-RPTSCHEMA-STATE-20260901-001,Facility Code,Active from date,Temporal validity attribute,Parse only with confirmed locale,Provisional—no data rows supplied
+HMIS-HIER-STATE-12,HMIS-RPTSCHEMA-STATE-20260901-001,Facility Code,Active to date,Temporal validity attribute,Blank end date does not prove active status,Provisional—no data rows supplied
