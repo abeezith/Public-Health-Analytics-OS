@@ -26,7 +26,7 @@
         "dcat:Dataset"
       ],
       "name": "India multi-programme public-health indicator knowledge graph",
-      "description": "Four programme layers, 513 distinct indicator manifestations, all 981 HMIS knowledge objects, 30 curated concepts and 77 domain-reviewed mappings.",
+      "description": "Four programme layers, 513 distinct indicator manifestations, all 1046 HMIS knowledge objects, 30 curated concepts and 77 domain-reviewed mappings.",
       "version": "0.3.0",
       "dateModified": "2026-09-04",
       "variableMeasured": [

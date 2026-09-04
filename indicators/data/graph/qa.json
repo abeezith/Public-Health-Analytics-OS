@@ -4,10 +4,10 @@
     "checked": "2026-09-04"
   },
   "counts": {
-    "nodes": 1614,
-    "edges": 6551,
+    "nodes": 1679,
+    "edges": 6727,
     "indicators": 513,
-    "hmisObjects": 981,
+    "hmisObjects": 1046,
     "concepts": 30,
     "reviewedMappings": 77,
     "sources": 13,
@@ -27,7 +27,7 @@
     "nodeTypes": {
       "DataSystem": 1,
       "EvidenceGap": 16,
-      "HmisObject": 935,
+      "HmisObject": 1000,
       "IndicatorConcept": 30,
       "IndicatorManifestation": 513,
       "MeasureType": 5,
@@ -39,9 +39,9 @@
       "WHOBuildingBlock": 6
     },
     "edgeTypes": {
-      "partOfProgramme": 1229,
-      "definedBy": 1448,
-      "reportedThrough": 981,
+      "partOfProgramme": 1275,
+      "definedBy": 1513,
+      "reportedThrough": 1046,
       "publishedBy": 13,
       "hasMeasureType": 359,
       "hasProgrammeComponent": 513,
@@ -66,8 +66,8 @@
       "pass": true
     },
     "fullHmisSpineRepresented": {
-      "expected": 981,
-      "actual": 981,
+      "expected": 1046,
+      "actual": 1046,
       "pass": true
     },
     "conceptsRepresented": {

@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "release": "1.4.0-facility-format-verification",
+    "cutoff": "2026-09-04",
+    "basis": "Page-by-page comparison of all six supplied facility PDFs against the April-2025 catalogue occurrences.",
+    "policy": "A code reused for a different label at another facility does not establish semantic identity. Incorrect facility occurrences are removed; verified alternate records are added without rewriting source wording."
+  },
+  "mutations": [
+    {"id":"HMIS-DE-0478","remove":[["HWC-SC","HWC-SC p.2"]]},
+    {"id":"HMIS-DE-0479","remove":[["HWC-SC","HWC-SC p.2"]]},
+    {"id":"HMIS-DE-0623","remove":[["HWC-SC","HWC-SC p.2"]]},
+    {"id":"HMIS-DE-0505","remove":[["HWC-SC","HWC-SC p.1"]]},
+    {"id":"HMIS-DE-0424","add":[["HWC-SC","HWC-SC p.1"]]},
+    {"id":"HMIS-DE-0105","remove":[["HWC-PHC","HWC-PHC p.10"],["CHC","CHC p.10"]]},
+    {"id":"HMIS-DE-0106","remove":[["HWC-PHC","HWC-PHC p.10"],["CHC","CHC p.10"]]},
+    {"id":"HMIS-DE-0107","remove":[["HWC-PHC","HWC-PHC p.10"],["CHC","CHC p.10"]]},
+    {"id":"HMIS-DE-0030","remove":[["CHC","CHC p.10"]]},
+    {"id":"HMIS-DE-0517","remove":[["HWC-PHC","HWC-PHC p.5"],["CHC","CHC p.5"]]},
+    {"id":"HMIS-DE-0325","add":[["HWC-PHC","HWC-PHC p.5"],["CHC","CHC p.5"]]},
+    {"id":"HMIS-DE-0218","add":[["HWC-PHC","HWC-PHC p.10"],["CHC","CHC p.10"]]},
+    {"id":"HMIS-DE-0448","add":[["HWC-PHC","HWC-PHC p.10"],["CHC","CHC p.10"]]},
+    {"id":"HMIS-DE-0401","add":[["HWC-PHC","HWC-PHC p.10"]]},
+    {"id":"HMIS-DE-0400","add":[["CHC","CHC p.10"]]},
+    {"id":"HMIS-DE-0372","add":[["CHC","CHC p.10"]]},
+    {"id":"HMIS-DE-0097","remove":[["CHC","CHC p.18"]]},
+    {"id":"HMIS-DE-0182","remove":[["CHC","CHC p.13"]]},
+    {"id":"HMIS-DE-0220","remove":[["CHC","CHC p.14"]]},
+    {"id":"HMIS-DE-0262","add":[["CHC","CHC p.14"]]},
+    {"id":"HMIS-DE-0254","remove":[["CHC","CHC p.17"]]},
+    {"id":"HMIS-DE-0461","add":[["CHC","CHC p.17"]]},
+    {"id":"HMIS-DE-0104","remove":[["Medical College","Medical College p.3"]]},
+    {"id":"HMIS-DE-0145","remove":[["Medical College","Medical College p.4"]]},
+    {"id":"HMIS-DE-0149","remove":[["Medical College","Medical College p.7"]]},
+    {"id":"HMIS-DE-0150","remove":[["Medical College","Medical College p.7"]]},
+    {"id":"HMIS-DE-0373","remove":[["Medical College","Medical College p.7"]]},
+    {"id":"HMIS-DE-0151","remove":[["Medical College","Medical College p.4"]]},
+    {"id":"HMIS-DE-0369","remove":[["Medical College","Medical College p.3"]]},
+    {"id":"HMIS-DE-0491","remove":[["Medical College","Medical College p.3"]]},
+    {"id":"HMIS-DE-0564","remove":[["Medical College","Medical College p.15"]]},
+    {"id":"HMIS-DE-0566","remove":[["Medical College","Medical College p.15"]]},
+    {"id":"HMIS-DE-0671","remove":[["Medical College","Medical College p.15"]]},
+    {"id":"HMIS-DE-0695","remove":[["Medical College","Medical College p.2"]]}
+  ],
+  "records": [
+    ["HMIS-FX-0001","Medical College","15.4.3.a","Total number of Hijra/Transgender people tested for syphilis (RPR/VDRL/PoC/ RDT/TPHA)","STI/RTI and HIV services","Communicable diseases",15],
+    ["HMIS-FX-0002","Medical College","15.4.3.b","Out of the above, number of Hijra/Transgender people tested reactive for syphilis (RPR/VDRL/PoC/ RDT/TPHA)","STI/RTI and HIV services","Communicable diseases",15],
+    ["HMIS-FX-0003","Medical College","15.4.3.c","Out of the above, number of Hijra/Transgender people treated for syphilis","STI/RTI and HIV services","Communicable diseases",15],
+    ["HMIS-FX-0004","Medical College","1.8","Tuberculosis test conducted for PW","Antenatal care and high-risk pregnancy","Maternal, newborn and reproductive health",2]
+  ]
+}

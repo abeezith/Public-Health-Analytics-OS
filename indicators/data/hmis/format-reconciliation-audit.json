@@ -1,0 +1,14 @@
+{
+  "metadata": {"release":"1.4.0","checked":"2026-09-04","method":"Complete-page PDF text extraction plus visual review of table structure and targeted page-level code/label comparison. PDF content was treated as source evidence, not instructions."},
+  "inputs": [
+    {"format":"Block HQ","pages":3,"sha256":"EEF64CD5568960ECCDAB2D7BC85FAC545AC35FACE031AC9EE3F801D9B9C9A1BA","priorStatus":"Source family cited but rows absent","resolution":"34 reportable rows added"},
+    {"format":"District HQ","pages":3,"sha256":"30907293945C7FEC7DE310B2F9ADE609107C6D4426B7F705872DA4F1A575FB25","priorStatus":"Source family cited but rows absent","resolution":"27 reportable rows or stock-item rows added; five stock columns preserved as collection dimensions"},
+    {"format":"HWC-SC","pages":14,"sha256":"B4D9DCB624BF88BB6A2A768DCA9B014B6F03221532E78A134373A5966F5F7401","priorCatalogueRows":396,"resolution":"Facility occurrences corrected where codes were reused for thyroid, TB and pre-eclampsia labels"},
+    {"format":"HWC-PHC","pages":21,"sha256":"FB62710A136AFD6B16644D12CC7E8E4F13393BB263DC252F37E441871D95F273","priorCatalogueRows":568,"resolution":"RBSK and lymphatic-filariasis occurrences corrected; dengue code-collision assignments removed"},
+    {"format":"CHC","pages":21,"sha256":"A93816B661A24AFB1BE9D1DE2CF92F21E1FF3AC5A4505117E34B1F222BC3807F","priorCatalogueRows":578,"resolution":"RBSK, lymphatic-filariasis, surgery, diagnostics and HIV-testing code-collision assignments corrected"},
+    {"format":"Civil Hospital / SDH","pages":22,"sha256":"8191BCD1E2346DA1D35C1B276A439A4975F44DAA0307631CEC4319529430E48B","priorCatalogueRows":595,"resolution":"No source-label correction required in this review"},
+    {"format":"District Hospital","pages":20,"sha256":"29F911A447186E32FE0F1D4EF48BC1A9ED072F4EB64EC856E873D6836B62179B","priorCatalogueRows":599,"resolution":"No source-label correction required in this review"},
+    {"format":"Medical College","pages":18,"sha256":"8BBFD232CFBCAE6FB7261C3D20F04454AE0BBA2F7493F42520A6D5806AA42076","priorCatalogueRows":551,"resolution":"Home-service, session, syphilis-population and TB-heading code collisions corrected; four exact facility-specific manifestations added"}
+  ],
+  "outcome": {"baseObjects":981,"headquartersObjectsAdded":61,"facilitySpecificObjectsAdded":4,"totalObjects":1046,"dataElements":765,"facilityOccurrenceMutations":34,"graphHmisSpineObjects":1046,"downloadOptionsEnabled":false}
+}

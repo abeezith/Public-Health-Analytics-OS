@@ -14,7 +14,7 @@ const modePredicates = {
   all: null
 };
 
-fetch('./data/graph/graph.json?v=kg-0.3.0', { cache: 'no-store' })
+fetch('./data/graph/graph.json?v=hmis-1.4.0', { cache: 'no-store' })
   .then(response => response.json())
   .then(graph => {
     kg.graph = graph;
