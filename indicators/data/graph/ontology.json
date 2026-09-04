@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "id": "PHAOS-KG-0.1",
+    "title": "Public Health Analytics-OS knowledge graph contract",
+    "version": "0.1.0",
+    "status": "Immunization pilot",
+    "namespace": "https://abeezith.github.io/Public-Health-Analytics-OS/id/",
+    "published": "2026-09-04",
+    "principle": "Official source manifestations remain distinct; graph links support discovery and lineage and never imply equivalence unless explicitly typed and evidenced."
+  },
+  "nodeTypes": {
+    "IndicatorConcept": "A source-neutral analytical concept used to organize distinct official indicator manifestations.",
+    "IndicatorManifestation": "A named, versioned indicator definition published by a source custodian.",
+    "HmisObject": "A derived HMIS indicator, data element, published output or validation rule.",
+    "SourceDocument": "A source publication or catalogue with an explicit version and coverage boundary.",
+    "Organization": "An organization responsible for publishing or maintaining a source.",
+    "Programme": "A public-health programme or programme family.",
+    "ProgrammeComponent": "An operational component within a programme.",
+    "WHOBuildingBlock": "One of the six canonical WHO health-system building blocks.",
+    "ReportingLevel": "A normalized lowest reporting level used for navigation.",
+    "MeasureType": "A normalized measurement class.",
+    "EvidenceGap": "A declared limitation preventing source completeness or crosswalk verification."
+  },
+  "edgeTypes": {
+    "manifestationOf": "Connects an official indicator manifestation to a source-neutral concept. Requires a mappingRelation and rationale.",
+    "definedBy": "Connects an indicator or HMIS object to its source document or catalogue.",
+    "publishedBy": "Connects a source document to its responsible organization.",
+    "partOfProgramme": "Connects an indicator, HMIS object or evidence gap to a programme.",
+    "hasProgrammeComponent": "Connects an indicator to a normalized programme component.",
+    "supportsBuildingBlock": "Analytical mapping to a WHO health-system building block; not a source-custodian assertion unless stated.",
+    "lowestReportingLevel": "Connects an indicator to a normalized lowest reporting level while preserving the source label on the edge.",
+    "hasMeasureType": "Connects an indicator to its normalized measure type.",
+    "usesDataElement": "Curated link from an indicator or derived HMIS measure to an HMIS data element.",
+    "relatedIndicator": "Curated discovery link between distinct indicator manifestations; does not imply mathematical comparability.",
+    "relatedHmisObject": "A typed HMIS relationship whose exact operational semantics remain source-governed.",
+    "limitsCompletenessOf": "Connects a declared evidence gap to the affected programme."
+  },
+  "mappingRelations": {
+    "exactMatch": "Definitions and operational semantics are judged equivalent within the stated version and context.",
+    "closeMatch": "Conceptually close but one or more operational details prevent an exact-equivalence assertion.",
+    "broadMatch": "The concept represented by the source manifestation is broader than the target concept.",
+    "narrowMatch": "The concept represented by the source manifestation is narrower than the target concept.",
+    "relatedMatch": "The records are useful to navigate together but do not have a hierarchical or equivalence relation."
+  },
+  "assertionStatuses": {
+    "official": "Explicitly asserted by the cited source.",
+    "curated": "Reviewed analytical assertion made by Public Health Analytics-OS.",
+    "normalized": "Deterministic mapping from a preserved source label to a controlled term.",
+    "candidate": "Provisional relationship requiring domain or custodian review."
+  },
+  "standardsProfile": {
+    "schemaOrg": {
+      "DataCatalog": "The Analytics-OS registry as a public metadata catalogue.",
+      "Dataset": "The Immunization graph release and its declared distributions.",
+      "StatisticalVariable": "An indicator definition; actual programme values are not represented in this pilot.",
+      "DefinedTermSet": "Controlled vocabularies such as programmes, building blocks, reporting levels and measure types.",
+      "DefinedTerm": "A controlled concept within a DefinedTermSet.",
+      "DigitalDocument": "Official source documents and manuals.",
+      "Organization": "Source custodians.",
+      "measurementDenominator": "A denominator-variable description for percentages and ratios.",
+      "measurementMethod": "The normalized formula or source-defined aggregation method.",
+      "isBasedOn": "The official source from which an indicator manifestation was derived."
+    },
+    "skos": "Concept hierarchy and mapping semantics.",
+    "provO": "Attribution and derivation provenance for graph assertions.",
+    "dcat": "Dataset, catalogue and distribution interoperability.",
+    "shacl": "Future RDF graph validation; the pilot enforces equivalent constraints in the build validator."
+  }
+}

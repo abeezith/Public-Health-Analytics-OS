@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "version": "0.1.0",
+    "status": "Curated Immunization proof of concept",
+    "reviewPolicy": "Concept nodes are analytical navigation aids. Mapping relations do not authorize aggregation across source manifestations."
+  },
+  "concepts": [
+    {
+      "id": "CONCEPT-UIP-FULL-IMMUNIZATION-COVERAGE",
+      "label": "Full immunization coverage",
+      "definition": "Coverage of a specified child population completing the vaccination schedule defined by the relevant source and period.",
+      "mappings": [
+        {"indicatorId": "IND-HMIS-IND-006", "mappingRelation": "closeMatch", "rationale": "Routine HMIS coverage definition uses an estimated child denominator and a source-specific age and antigen schedule."},
+        {"indicatorId": "IND-RMNCHA2-019", "mappingRelation": "closeMatch", "rationale": "Programme scorecard manifestation compares fully immunised children aged 9–11 months with children due for immunisation."},
+        {"indicatorId": "IND-RMNCHA2-033", "mappingRelation": "closeMatch", "rationale": "Programme scorecard label is conceptually aligned but uses children aged 12–23 months as its denominator population."},
+        {"indicatorId": "IND-NFHS-005", "mappingRelation": "closeMatch", "rationale": "Household-survey manifestation is conceptually aligned but differs from routine reporting in design, reference period and denominator construction."}
+      ]
+    },
+    {
+      "id": "CONCEPT-UIP-SESSION-PLAN-ADHERENCE",
+      "label": "Immunization session plan adherence",
+      "definition": "Whether planned immunization sessions were held in the specified geography and monitoring period.",
+      "mappings": [
+        {"indicatorId": "IND-UIP-004", "mappingRelation": "closeMatch", "rationale": "Earlier UIP programme record for planned sessions held."},
+        {"indicatorId": "IND-UIP3-001", "mappingRelation": "closeMatch", "rationale": "IMI monitoring count of sessions held as planned."},
+        {"indicatorId": "IND-UIP3-003", "mappingRelation": "narrowMatch", "rationale": "Percentage is restricted to monitored high-risk areas and planned monitored sessions."}
+      ]
+    },
+    {
+      "id": "CONCEPT-UIP-VACCINE-SESSION-AVAILABILITY",
+      "label": "Vaccine availability at immunization sessions",
+      "definition": "Availability or absence of required vaccines at planned or monitored immunization sessions.",
+      "mappings": [
+        {"indicatorId": "IND-UIP-005", "mappingRelation": "relatedMatch", "rationale": "Stock-out is the adverse complement of vaccine availability but source timing and vaccine scope may differ."},
+        {"indicatorId": "IND-UIP3-006", "mappingRelation": "closeMatch", "rationale": "IMI monitoring manifestation directly assesses vaccine availability at monitored sites."},
+        {"indicatorId": "IND-UIP3-007", "mappingRelation": "relatedMatch", "rationale": "Reason analysis explains non-availability and is not itself an availability rate."}
+      ]
+    },
+    {
+      "id": "CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE",
+      "label": "AEFI surveillance performance",
+      "definition": "Performance of adverse-event reporting, documentation, investigation, completion and causality-classification processes.",
+      "mappings": [
+        {"indicatorId": "IND-UIP-006", "mappingRelation": "broadMatch", "rationale": "Reported adverse events are an input to surveillance performance but do not measure timeliness or completeness."},
+        {"indicatorId": "IND-UIP3-047", "mappingRelation": "narrowMatch", "rationale": "Line-listing completeness is one component of AEFI surveillance performance."},
+        {"indicatorId": "IND-UIP3-049", "mappingRelation": "narrowMatch", "rationale": "Timely serious-AEFI reporting is one component of surveillance performance."},
+        {"indicatorId": "IND-UIP3-050", "mappingRelation": "narrowMatch", "rationale": "Timely sharing of the case reporting form is one component of surveillance performance."},
+        {"indicatorId": "IND-UIP3-051", "mappingRelation": "narrowMatch", "rationale": "Timely investigation is one component of surveillance performance."},
+        {"indicatorId": "IND-UIP3-052", "mappingRelation": "narrowMatch", "rationale": "Completed investigations are one component of surveillance performance."},
+        {"indicatorId": "IND-UIP3-053", "mappingRelation": "narrowMatch", "rationale": "Timely causality classification is one component of surveillance performance."}
+      ]
+    },
+    {
+      "id": "CONCEPT-UIP-IMMUNIZATION-DROPOUT",
+      "label": "Immunization dropout",
+      "definition": "Failure to complete a defined vaccination sequence among children who received an earlier dose or antigen.",
+      "mappings": [
+        {"indicatorId": "IND-HMIS-IND-011", "mappingRelation": "narrowMatch", "rationale": "Historical HMIS manifestation measures BCG-to-measles dropout."},
+        {"indicatorId": "IND-HMIS-IND-012", "mappingRelation": "narrowMatch", "rationale": "Historical HMIS manifestation measures DPT3-to-measles dropout."},
+        {"indicatorId": "IND-UIP3-055", "mappingRelation": "relatedMatch", "rationale": "Absolute dropout count supports but is not equivalent to a dropout percentage."},
+        {"indicatorId": "IND-UIP3-057", "mappingRelation": "narrowMatch", "rationale": "Handbook manifestation measures BCG-to-Pentavalent-3 dropout."},
+        {"indicatorId": "IND-UIP3-058", "mappingRelation": "narrowMatch", "rationale": "Handbook manifestation measures Pentavalent-1-to-Pentavalent-3 dropout."},
+        {"indicatorId": "IND-UIP3-059", "mappingRelation": "narrowMatch", "rationale": "Handbook manifestation measures BCG-to-MCV1 dropout."}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3499 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "ph": "https://abeezith.github.io/Public-Health-Analytics-OS/id/vocab/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "dcat": "http://www.w3.org/ns/dcat#"
+  },
+  "@graph": [
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/catalog/public-health-indicator-registry",
+      "@type": [
+        "DataCatalog",
+        "dcat:Catalog"
+      ],
+      "name": "Public Health Analytics-OS Indicator Registry",
+      "description": "Evidence-backed metadata catalogue of public-health indicator definitions and source manifestations.",
+      "url": "https://abeezith.github.io/Public-Health-Analytics-OS/indicators/",
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "dataset": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/dataset/immunization-knowledge-graph-0.1"
+      }
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/dataset/immunization-knowledge-graph-0.1",
+      "@type": [
+        "Dataset",
+        "dcat:Dataset"
+      ],
+      "name": "Immunization knowledge graph pilot",
+      "description": "All 76 Immunization-discoverable registry manifestations, 102 programme-tagged HMIS knowledge objects, their public sources, normalized discovery vocabularies, five curated concepts and seven declared evidence gaps.",
+      "version": "0.1.0",
+      "dateModified": "2026-09-04",
+      "includedInDataCatalog": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/catalog/public-health-indicator-registry"
+      },
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "variableMeasured": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-HMIS-IND-006"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-HMIS-IND-007"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-HMIS-IND-008"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-HMIS-IND-009"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-HMIS-IND-010"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-HMIS-IND-011"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-HMIS-IND-012"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NFHS-005"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP-001"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP-002"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP-003"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP-004"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP-005"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP-006"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-RMNCHA2-016"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-RMNCHA2-019"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-RMNCHA2-033"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-001"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-002"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-003"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-004"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-005"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-006"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-007"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-008"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-009"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-010"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-011"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-012"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-013"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-014"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-015"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-016"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-017"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-018"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-019"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-020"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-021"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-022"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-023"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-024"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-025"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-026"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-027"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-028"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-029"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-030"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-031"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-032"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-033"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-034"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-035"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-036"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-037"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-038"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-039"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-040"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-041"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-042"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-043"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-044"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-045"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-046"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-047"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-048"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-049"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-050"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-051"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-052"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-053"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-054"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-055"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-056"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-057"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-058"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-059"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/term-set/immunization-indicator-concepts",
+      "@type": [
+        "DefinedTermSet",
+        "skos:ConceptScheme"
+      ],
+      "name": "Immunization indicator concepts",
+      "hasDefinedTerm": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-FULL-IMMUNIZATION-COVERAGE"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-SESSION-PLAN-ADHERENCE"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-VACCINE-SESSION-AVAILABILITY"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/ORG-NATIONAL-HEALTH-SYSTEMS-RESOURCE-CENTRE-MINISTRY-OF-HEALTH-AND-FAMILY-WELFARE",
+      "@type": "Organization",
+      "name": "National Health Systems Resource Centre / Ministry of Health and Family Welfare"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/ORG-MOHFW-AND-INTERNATIONAL-INSTITUTE-FOR-POPULATION-SCIENCES",
+      "@type": "Organization",
+      "name": "MoHFW and International Institute for Population Sciences"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/ORG-NATIONAL-HEALTH-MISSION-MOHFW",
+      "@type": "Organization",
+      "name": "National Health Mission, MoHFW"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/ORG-NATIONAL-HEALTH-MISSION-MINISTRY-OF-HEALTH-AND-FAMILY-WELFARE-GOVERNMENT-OF-INDIA",
+      "@type": "Organization",
+      "name": "National Health Mission, Ministry of Health and Family Welfare, Government of India"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/ORG-MINISTRY-OF-HEALTH-AND-FAMILY-WELFARE-NATIONAL-HEALTH-MISSION-GOVERNMENT-OF-INDIA",
+      "@type": "Organization",
+      "name": "Ministry of Health and Family Welfare / National Health Mission, Government of India"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_HMIS_OGD",
+      "@type": "DigitalDocument",
+      "identifier": "IND_HMIS_OGD",
+      "name": "India Health Management Information System (HMIS)",
+      "description": "54 historical formula-defined indicators linked to a separate 700-element April-2025 form dictionary, 202 OGD outputs and 25 validation rules",
+      "url": "https://nhm.hp.gov.in/reporting-formats",
+      "version": "NHSRC HMIS programme-manager training manual, public PDF hosted 2021",
+      "publisher": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/ORG-NATIONAL-HEALTH-SYSTEMS-RESOURCE-CENTRE-MINISTRY-OF-HEALTH-AND-FAMILY-WELFARE"
+      }
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NFHS",
+      "@type": "DigitalDocument",
+      "identifier": "IND_NFHS",
+      "name": "National Family Health Survey",
+      "description": "All published national, state and district NFHS indicators with survey-wave provenance",
+      "url": "https://www.nfhsiips.in/nfhsuser/nfhs5.php",
+      "version": "Public source checked 25 August 2026",
+      "publisher": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/ORG-MOHFW-AND-INTERNATIONAL-INSTITUTE-FOR-POPULATION-SCIENCES"
+      }
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_UIP",
+      "@type": "DigitalDocument",
+      "identifier": "IND_NHM_UIP",
+      "name": "Universal Immunization Programme and Mission Indradhanush indicators",
+      "description": "Routine immunization, campaign, cold-chain and AEFI monitoring indicators",
+      "url": "https://nhm.gov.in/New_Updates_2018/NHM_Components/Immunization/Guildelines_for_immunization/Mission_Indradhanush_Guidelines.pdf",
+      "version": "Public source checked 25 August 2026",
+      "publisher": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/ORG-NATIONAL-HEALTH-MISSION-MOHFW"
+      }
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_RMNCHA_SCORECARD_2013",
+      "@type": "DigitalDocument",
+      "identifier": "IND_NHM_RMNCHA_SCORECARD_2013",
+      "name": "A Strategic Approach to Reproductive, Maternal, Newborn, Child and Adolescent Health (RMNCH+A) in India",
+      "description": "All 23 HMIS-based dashboard indicators and all 19 survey-based scorecard indicators listed in Annexure 2.",
+      "url": "https://nhm.gov.in/images/pdf/RMNCH%2BA/RMNCH%2BA_Strategy.pdf",
+      "version": "MoHFW/NHM strategy, 2013",
+      "publisher": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/ORG-NATIONAL-HEALTH-MISSION-MINISTRY-OF-HEALTH-AND-FAMILY-WELFARE-GOVERNMENT-OF-INDIA"
+      }
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI_2017_MONITORING",
+      "@type": "DigitalDocument",
+      "identifier": "IND_NHM_IMI_2017_MONITORING",
+      "name": "Intensified Mission Indradhanush: Identify, enlist, mobilize, vaccinate, monitor and report to achieve full immunization",
+      "description": "All 17 session-monitoring and all 4 house-to-house monitoring indicators listed in Chapter 13.",
+      "url": "https://nhm.gov.in/New_Updates_2018/NHM_Components/Immunization/Guildelines_for_immunization/Mission_Indradhanush_Guidelines.pdf",
+      "version": "MoHFW/NHM operational guidelines, 2017",
+      "publisher": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/ORG-MINISTRY-OF-HEALTH-AND-FAMILY-WELFARE-NATIONAL-HEALTH-MISSION-GOVERNMENT-OF-INDIA"
+      }
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI2_2019_DASHBOARD",
+      "@type": "DigitalDocument",
+      "identifier": "IND_NHM_IMI2_2019_DASHBOARD",
+      "name": "Intensified Mission Indradhanush 2.0 Operational Guidelines",
+      "description": "All 20 key dashboard indicators in Annexure 20 plus all 4 named data-quality measures in Section 1.8.2.",
+      "url": "https://nhm.gov.in/New_Updates_2018/NHM_Components/Immunization/Guildelines_for_immunization/IMI_2.0.pdf",
+      "version": "MoHFW/NHM operational guidelines, 2019",
+      "publisher": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/ORG-MINISTRY-OF-HEALTH-AND-FAMILY-WELFARE-NATIONAL-HEALTH-MISSION-GOVERNMENT-OF-INDIA"
+      }
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_MOHFW_AEFI_2024_INDICATORS",
+      "@type": "DigitalDocument",
+      "identifier": "IND_MOHFW_AEFI_2024_INDICATORS",
+      "name": "Adverse Event Following Immunization: Surveillance and Response Operational Guidelines 2024 — Executive Summary",
+      "description": "All 3 routine-AEFI and all 5 serious-AEFI performance indicators enumerated in the executive summary.",
+      "url": "https://cdsco.mohfw.gov.in/opencms/opencms/en/Post-Marketing-DSM/",
+      "version": "MoHFW operational guidelines, 2024",
+      "publisher": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/ORG-MINISTRY-OF-HEALTH-AND-FAMILY-WELFARE-NATIONAL-HEALTH-MISSION-GOVERNMENT-OF-INDIA"
+      }
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMMUNIZATION_MO_2017",
+      "@type": "DigitalDocument",
+      "identifier": "IND_NHM_IMMUNIZATION_MO_2017",
+      "name": "Immunization Handbook for Medical Officers",
+      "description": "All six explicitly named coverage, dropout and unimmunized-child measures in the coverage-monitoring instructions.",
+      "url": "https://www.nhm.gov.in/New_Updates_2018/NHM_Components/Immunization/Guildelines_for_immunization/Immunization_Handbook_for_Medical_Officers%202017.pdf",
+      "version": "MoHFW/NHM reprint, 2017",
+      "publisher": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/ORG-MINISTRY-OF-HEALTH-AND-FAMILY-WELFARE-NATIONAL-HEALTH-MISSION-GOVERNMENT-OF-INDIA"
+      }
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-FULL-IMMUNIZATION-COVERAGE",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "termCode": "CONCEPT-UIP-FULL-IMMUNIZATION-COVERAGE",
+      "name": "Full immunization coverage",
+      "description": "Coverage of a specified child population completing the vaccination schedule defined by the relevant source and period.",
+      "inDefinedTermSet": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/term-set/immunization-indicator-concepts"
+      }
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-SESSION-PLAN-ADHERENCE",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "termCode": "CONCEPT-UIP-SESSION-PLAN-ADHERENCE",
+      "name": "Immunization session plan adherence",
+      "description": "Whether planned immunization sessions were held in the specified geography and monitoring period.",
+      "inDefinedTermSet": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/term-set/immunization-indicator-concepts"
+      }
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-VACCINE-SESSION-AVAILABILITY",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "termCode": "CONCEPT-UIP-VACCINE-SESSION-AVAILABILITY",
+      "name": "Vaccine availability at immunization sessions",
+      "description": "Availability or absence of required vaccines at planned or monitored immunization sessions.",
+      "inDefinedTermSet": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/term-set/immunization-indicator-concepts"
+      }
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "termCode": "CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE",
+      "name": "AEFI surveillance performance",
+      "description": "Performance of adverse-event reporting, documentation, investigation, completion and causality-classification processes.",
+      "inDefinedTermSet": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/term-set/immunization-indicator-concepts"
+      }
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "termCode": "CONCEPT-UIP-IMMUNIZATION-DROPOUT",
+      "name": "Immunization dropout",
+      "description": "Failure to complete a defined vaccination sequence among children who received an earlier dose or antigen.",
+      "inDefinedTermSet": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/term-set/immunization-indicator-concepts"
+      }
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-HMIS-IND-006",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-HMIS-IND-006",
+      "name": "Full immunization coverage rate",
+      "description": "% of children aged between 9 and 11 months who have been fully immunized (Child given one dose of BCG, three dosages of DPT i.e. DPT 1,2,3; three dosages of polio i.e. OPV 1,2,3 and a dosage of Measles). Denominator population: Estimated children below 1 year.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-HMIS-IND-006",
+        "@type": "StatisticalVariable",
+        "name": "Estimated children below 1 year"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_HMIS_OGD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-FULL-IMMUNIZATION-COVERAGE"
+        }
+      ],
+      "keywords": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "dateModified": "2026-09-01",
+      "skos:closeMatch": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-FULL-IMMUNIZATION-COVERAGE"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-HMIS-IND-007",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-HMIS-IND-007",
+      "name": "BCG Coverage rate",
+      "description": "The percentage of live births that received BCG within one year. Denominator population: Estimated children below 1 year.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-HMIS-IND-007",
+        "@type": "StatisticalVariable",
+        "name": "Estimated children below 1 year"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_HMIS_OGD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "dateModified": "2026-09-01"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-HMIS-IND-008",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-HMIS-IND-008",
+      "name": "DPT3 Coverage rate",
+      "description": "The percentage of children who received their 3 doses of DTP-3. Denominator population: Estimated children below 1 year.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-HMIS-IND-008",
+        "@type": "StatisticalVariable",
+        "name": "Estimated children below 1 year"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_HMIS_OGD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "dateModified": "2026-09-01"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-HMIS-IND-009",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-HMIS-IND-009",
+      "name": "OPV3 Coverage rate",
+      "description": "The percentage of children under 1 immunised with OPV dose 3. Denominator population: Estimated children below 1 year.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-HMIS-IND-009",
+        "@type": "StatisticalVariable",
+        "name": "Estimated children below 1 year"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_HMIS_OGD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "dateModified": "2026-09-01"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-HMIS-IND-010",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-HMIS-IND-010",
+      "name": "Measles coverage rate",
+      "description": "The percentage of children who received their measles dose (normally at 9 months). Denominator population: Estimated children below 1 year.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-HMIS-IND-010",
+        "@type": "StatisticalVariable",
+        "name": "Estimated children below 1 year"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_HMIS_OGD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "dateModified": "2026-09-01"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-HMIS-IND-011",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-HMIS-IND-011",
+      "name": "BCG - measles dropout rates",
+      "description": "% of children who dropped out of immunisation schedule between BCG dose measles dose. Denominator population: Number of children given BCG.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-HMIS-IND-011",
+        "@type": "StatisticalVariable",
+        "name": "Number of children given BCG"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_HMIS_OGD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT"
+        }
+      ],
+      "keywords": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "dateModified": "2026-09-01",
+      "skos:narrowMatch": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-HMIS-IND-012",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-HMIS-IND-012",
+      "name": "DPT3 - Measles dropout rate",
+      "description": "The percentage of children who dropped out of the immunisation schedule between the third doses (normally at 14 weeks) and the measles dose (normally at 9 months). Denominator population: Number of children given DPT3.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-HMIS-IND-012",
+        "@type": "StatisticalVariable",
+        "name": "Number of children given DPT3"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_HMIS_OGD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT"
+        }
+      ],
+      "keywords": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "dateModified": "2026-09-01",
+      "skos:narrowMatch": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NFHS-005",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NFHS-005",
+      "name": "Children aged 12-23 months fully vaccinated",
+      "description": "Children aged 12-23 months who received the survey-defined basic vaccination series. Denominator population: Programme-defined eligible or reporting population.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-NFHS-005",
+        "@type": "StatisticalVariable",
+        "name": "Programme-defined eligible or reporting population"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NFHS"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-FULL-IMMUNIZATION-COVERAGE"
+        }
+      ],
+      "keywords": [
+        "Health information systems",
+        "Service delivery"
+      ],
+      "dateModified": "2026-08-25",
+      "skos:closeMatch": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-FULL-IMMUNIZATION-COVERAGE"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP-001",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP-001",
+      "name": "Children due for any vaccine during Mission Indradhanush",
+      "description": "Children listed as due for at least one scheduled vaccine during the campaign. Denominator population: Not applicable—absolute count, source reporting element, or source-defined value.",
+      "statType": "Count",
+      "unitText": "count",
+      "measurementMethod": "Source-defined aggregation or count",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP-001",
+        "@type": "StatisticalVariable",
+        "name": "Not applicable—absolute count, source reporting element, or source-defined value"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_UIP"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Medical products, vaccines and technologies",
+        "Health information systems"
+      ],
+      "dateModified": "2026-08-25"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP-002",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP-002",
+      "name": "Due children vaccinated during Mission Indradhanush",
+      "description": "Children vaccinated among children listed as due during the campaign. Denominator population: Programme-defined eligible or reporting population.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP-002",
+        "@type": "StatisticalVariable",
+        "name": "Programme-defined eligible or reporting population"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_UIP"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Medical products, vaccines and technologies",
+        "Health information systems"
+      ],
+      "dateModified": "2026-08-25"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP-003",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP-003",
+      "name": "Children vaccinated for the first time during Mission Indradhanush",
+      "description": "Vaccinated children receiving a vaccine for the first time during the campaign. Denominator population: Programme-defined eligible or reporting population.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP-003",
+        "@type": "StatisticalVariable",
+        "name": "Programme-defined eligible or reporting population"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_UIP"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Medical products, vaccines and technologies",
+        "Health information systems"
+      ],
+      "dateModified": "2026-08-25"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP-004",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP-004",
+      "name": "Planned immunization sessions held",
+      "description": "Immunization sessions conducted among sessions planned. Denominator population: Programme-defined eligible or reporting population.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP-004",
+        "@type": "StatisticalVariable",
+        "name": "Programme-defined eligible or reporting population"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_UIP"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-SESSION-PLAN-ADHERENCE"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Medical products, vaccines and technologies",
+        "Health information systems"
+      ],
+      "dateModified": "2026-08-25",
+      "skos:closeMatch": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-SESSION-PLAN-ADHERENCE"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP-005",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP-005",
+      "name": "Immunization sessions with vaccine stock-out",
+      "description": "Observed sessions with a stock-out of at least one required vaccine. Denominator population: Programme-defined eligible or reporting population.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP-005",
+        "@type": "StatisticalVariable",
+        "name": "Programme-defined eligible or reporting population"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_UIP"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-VACCINE-SESSION-AVAILABILITY"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Medical products, vaccines and technologies",
+        "Health information systems"
+      ],
+      "dateModified": "2026-08-25",
+      "skos:relatedMatch": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-VACCINE-SESSION-AVAILABILITY"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP-006",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP-006",
+      "name": "Adverse events following immunization reported",
+      "description": "AEFI cases notified through the programme reporting mechanism. Denominator population: Not applicable—absolute count, source reporting element, or source-defined value.",
+      "statType": "Count",
+      "unitText": "count",
+      "measurementMethod": "Source-defined aggregation or count",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP-006",
+        "@type": "StatisticalVariable",
+        "name": "Not applicable—absolute count, source reporting element, or source-defined value"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_UIP"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Medical products, vaccines and technologies",
+        "Health information systems"
+      ],
+      "dateModified": "2026-08-25",
+      "skos:broadMatch": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-RMNCHA2-016",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-RMNCHA2-016",
+      "name": "Infants 0 to 11 months old who received Measles vaccine to reported live births",
+      "description": "Official indicator: Infants 0 to 11 months old who received Measles vaccine to reported live births. Denominator population: Reported live births.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-RMNCHA2-016",
+        "@type": "StatisticalVariable",
+        "name": "Reported live births"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_RMNCHA_SCORECARD_2013"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems"
+      ],
+      "dateModified": "2026-09-03"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-RMNCHA2-019",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-RMNCHA2-019",
+      "name": "Children 9–11 months fully immunised to children 9–11 months due for immunisation",
+      "description": "Official indicator: Children 9–11 months fully immunised to children 9–11 months due for immunisation. Denominator population: Children aged 9–11 months due for immunisation.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-RMNCHA2-019",
+        "@type": "StatisticalVariable",
+        "name": "Children aged 9–11 months due for immunisation"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_RMNCHA_SCORECARD_2013"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-FULL-IMMUNIZATION-COVERAGE"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems"
+      ],
+      "dateModified": "2026-09-03",
+      "skos:closeMatch": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-FULL-IMMUNIZATION-COVERAGE"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-RMNCHA2-033",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-RMNCHA2-033",
+      "name": "Full Immunization",
+      "description": "Official indicator: Full Immunization. Denominator population: Children aged 12–23 months.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-RMNCHA2-033",
+        "@type": "StatisticalVariable",
+        "name": "Children aged 12–23 months"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_RMNCHA_SCORECARD_2013"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-FULL-IMMUNIZATION-COVERAGE"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems"
+      ],
+      "dateModified": "2026-09-03",
+      "skos:closeMatch": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-FULL-IMMUNIZATION-COVERAGE"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-001",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-001",
+      "name": "Sessions held as per plan",
+      "description": "Official indicator: Sessions held as per plan. Denominator population: Not applicable—absolute number of sessions held as planned.",
+      "statType": "Count",
+      "unitText": "count",
+      "measurementMethod": "Source-defined aggregation or count",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-001",
+        "@type": "StatisticalVariable",
+        "name": "Not applicable—absolute number of sessions held as planned"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI_2017_MONITORING"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-SESSION-PLAN-ADHERENCE"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems"
+      ],
+      "dateModified": "2026-09-04",
+      "skos:closeMatch": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-SESSION-PLAN-ADHERENCE"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-002",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-002",
+      "name": "Reasons for sessions not held",
+      "description": "Official indicator: Reasons for sessions not held. Denominator population: Sessions not held.",
+      "statType": "Index",
+      "unitText": "categorical distribution",
+      "measurementMethod": "Source-defined assessment or summary statistic",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-002",
+        "@type": "StatisticalVariable",
+        "name": "Sessions not held"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI_2017_MONITORING"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-003",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-003",
+      "name": "Percentage of sessions found held among monitored HRAs (can be generated by type of HRAs)",
+      "description": "Official indicator: Percentage of sessions found held among monitored HRAs (can be generated by type of HRAs). Denominator population: Planned sessions monitored in high-risk areas.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-003",
+        "@type": "StatisticalVariable",
+        "name": "Planned sessions monitored in high-risk areas"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI_2017_MONITORING"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-SESSION-PLAN-ADHERENCE"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems"
+      ],
+      "dateModified": "2026-09-04",
+      "skos:narrowMatch": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-SESSION-PLAN-ADHERENCE"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-004",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-004",
+      "name": "ANMs/ASHAs having due list",
+      "description": "Official indicator: ANMs/ASHAs having due list. Denominator population: ANMs/ASHAs observed at monitored sessions.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-004",
+        "@type": "StatisticalVariable",
+        "name": "ANMs/ASHAs observed at monitored sessions"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI_2017_MONITORING"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Health workforce"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-005",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-005",
+      "name": "IEC display status",
+      "description": "Official indicator: IEC display status. Denominator population: Monitored session sites.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-005",
+        "@type": "StatisticalVariable",
+        "name": "Monitored session sites"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI_2017_MONITORING"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-006",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-006",
+      "name": "Availability of vaccines",
+      "description": "Official indicator: Availability of vaccines. Denominator population: Monitored session sites.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-006",
+        "@type": "StatisticalVariable",
+        "name": "Monitored session sites"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI_2017_MONITORING"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-VACCINE-SESSION-AVAILABILITY"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Medical products, vaccines and technologies"
+      ],
+      "dateModified": "2026-09-04",
+      "skos:closeMatch": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-VACCINE-SESSION-AVAILABILITY"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-007",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-007",
+      "name": "Reason analysis on non-availability of any vaccine",
+      "description": "Official indicator: Reason analysis on non-availability of any vaccine. Denominator population: Monitored session sites where one or more vaccines were unavailable.",
+      "statType": "Index",
+      "unitText": "categorical distribution",
+      "measurementMethod": "Source-defined assessment or summary statistic",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-007",
+        "@type": "StatisticalVariable",
+        "name": "Monitored session sites where one or more vaccines were unavailable"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI_2017_MONITORING"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-VACCINE-SESSION-AVAILABILITY"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Medical products, vaccines and technologies"
+      ],
+      "dateModified": "2026-09-04",
+      "skos:relatedMatch": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-VACCINE-SESSION-AVAILABILITY"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-008",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-008",
+      "name": "Indicators on AEFI and implementation of OVP",
+      "description": "Official indicator: Indicators on AEFI and implementation of OVP. Denominator population: Monitored session sites.",
+      "statType": "Index",
+      "unitText": "assessment score/status",
+      "measurementMethod": "Source-defined assessment or summary statistic",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-008",
+        "@type": "StatisticalVariable",
+        "name": "Monitored session sites"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI_2017_MONITORING"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Medical products, vaccines and technologies"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-009",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-009",
+      "name": "Availability of logistics as per microplan",
+      "description": "Official indicator: Availability of logistics as per microplan. Denominator population: Monitored session sites.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-009",
+        "@type": "StatisticalVariable",
+        "name": "Monitored session sites"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI_2017_MONITORING"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Leadership and governance",
+        "Medical products, vaccines and technologies"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-010",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-010",
+      "name": "Indicators on safe injection practices",
+      "description": "Official indicator: Indicators on safe injection practices. Denominator population: Observed injection-practice items at monitored sessions.",
+      "statType": "Index",
+      "unitText": "assessment score/status",
+      "measurementMethod": "Source-defined assessment or summary statistic",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-010",
+        "@type": "StatisticalVariable",
+        "name": "Observed injection-practice items at monitored sessions"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI_2017_MONITORING"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Medical products, vaccines and technologies"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-011",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-011",
+      "name": "Sessions visited by supervisors",
+      "description": "Official indicator: Sessions visited by supervisors. Denominator population: Not applicable—absolute number of sessions visited by supervisors.",
+      "statType": "Count",
+      "unitText": "count",
+      "measurementMethod": "Source-defined aggregation or count",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-011",
+        "@type": "StatisticalVariable",
+        "name": "Not applicable—absolute number of sessions visited by supervisors"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI_2017_MONITORING"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Health workforce"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-012",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-012",
+      "name": "Caregiver responses regarding proactive mobilization efforts",
+      "description": "Official indicator: Caregiver responses regarding proactive mobilization efforts. Denominator population: Caregivers interviewed during monitoring.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-012",
+        "@type": "StatisticalVariable",
+        "name": "Caregivers interviewed during monitoring"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI_2017_MONITORING"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-013",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-013",
+      "name": "Reason analysis on non-availability of any vaccinator",
+      "description": "Official indicator: Reason analysis on non-availability of any vaccinator. Denominator population: Planned sessions without an available vaccinator.",
+      "statType": "Index",
+      "unitText": "categorical distribution",
+      "measurementMethod": "Source-defined assessment or summary statistic",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-013",
+        "@type": "StatisticalVariable",
+        "name": "Planned sessions without an available vaccinator"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI_2017_MONITORING"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Health workforce"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-014",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-014",
+      "name": "Dissemination of four key messages to caregivers.",
+      "description": "Official indicator: Dissemination of four key messages to caregivers.. Denominator population: Caregivers interviewed after vaccination.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-014",
+        "@type": "StatisticalVariable",
+        "name": "Caregivers interviewed after vaccination"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI_2017_MONITORING"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-015",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-015",
+      "name": "ANM days planned/ utilized",
+      "description": "Official indicator: ANM days planned/ utilized. Denominator population: ANM-days planned.",
+      "statType": "Ratio",
+      "unitText": "ratio",
+      "measurementMethod": "numerator ÷ denominator",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-015",
+        "@type": "StatisticalVariable",
+        "name": "ANM-days planned"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI_2017_MONITORING"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Health workforce"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-016",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-016",
+      "name": "Percentage of vacant sub centers with deployment of ANM",
+      "description": "Official indicator: Percentage of vacant sub centers with deployment of ANM. Denominator population: Vacant sub-centres requiring ANM deployment.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-016",
+        "@type": "StatisticalVariable",
+        "name": "Vacant sub-centres requiring ANM deployment"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI_2017_MONITORING"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Health workforce"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-017",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-017",
+      "name": "Number of Intensified Mission Indradhanush sessions held outside the ANM sub-center area/block",
+      "description": "Official indicator: Number of Intensified Mission Indradhanush sessions held outside the ANM sub-center area/block. Denominator population: Not applicable—absolute number of IMI sessions held outside the ANM sub-centre area/block.",
+      "statType": "Count",
+      "unitText": "count",
+      "measurementMethod": "Source-defined aggregation or count",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-017",
+        "@type": "StatisticalVariable",
+        "name": "Not applicable—absolute number of IMI sessions held outside the ANM sub-centre area/block"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI_2017_MONITORING"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Health workforce"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-018",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-018",
+      "name": "Percentage of children due for any vaccine during Intensified Mission Indradhanush",
+      "description": "Official indicator: Percentage of children due for any vaccine during Intensified Mission Indradhanush. Denominator population: Children assessed during house-to-house monitoring.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-018",
+        "@type": "StatisticalVariable",
+        "name": "Children assessed during house-to-house monitoring"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI_2017_MONITORING"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Medical products, vaccines and technologies"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-019",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-019",
+      "name": "Percentage of  children due in Indradhanush that got vaccinated with vaccine(s)",
+      "description": "Official indicator: Percentage of  children due in Indradhanush that got vaccinated with vaccine(s). Denominator population: Children due for vaccination during IMI.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-019",
+        "@type": "StatisticalVariable",
+        "name": "Children due for vaccination during IMI"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI_2017_MONITORING"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Medical products, vaccines and technologies"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-020",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-020",
+      "name": "Percentage of children who received vaccines for the first time in Intensified Mission Indradhanush",
+      "description": "Official indicator: Percentage of children who received vaccines for the first time in Intensified Mission Indradhanush. Denominator population: Children vaccinated during IMI.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-020",
+        "@type": "StatisticalVariable",
+        "name": "Children vaccinated during IMI"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI_2017_MONITORING"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Medical products, vaccines and technologies"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-021",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-021",
+      "name": "Mobilization efforts: percentage awareness by ASHAs/AWWs/ANMs/others.",
+      "description": "Official indicator: Mobilization efforts: percentage awareness by ASHAs/AWWs/ANMs/others.. Denominator population: Caregivers/households assessed during house-to-house monitoring.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-021",
+        "@type": "StatisticalVariable",
+        "name": "Caregivers/households assessed during house-to-house monitoring"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI_2017_MONITORING"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Health workforce"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-022",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-022",
+      "name": "Number of States where Steering Committees meeting held (Oct 2019 and Jan 2020)",
+      "description": "Official indicator: Number of States where Steering Committees meeting held (Oct 2019 and Jan 2020). Denominator population: Not applicable—absolute number of states where Steering Committee meetings were held.",
+      "statType": "Count",
+      "unitText": "count",
+      "measurementMethod": "Source-defined aggregation or count",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-022",
+        "@type": "StatisticalVariable",
+        "name": "Not applicable—absolute number of states where Steering Committee meetings were held"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI2_2019_DASHBOARD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Leadership and governance"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-023",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-023",
+      "name": "% of States where Task Force meeting held",
+      "description": "Official indicator: % of States where Task Force meeting held. Denominator population: States implementing IMI 2.0.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-023",
+        "@type": "StatisticalVariable",
+        "name": "States implementing IMI 2.0"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI2_2019_DASHBOARD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Leadership and governance"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-024",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-024",
+      "name": "% of districts where DTFI held",
+      "description": "Official indicator: % of districts where DTFI held. Denominator population: Districts implementing IMI 2.0.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-024",
+        "@type": "StatisticalVariable",
+        "name": "Districts implementing IMI 2.0"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI2_2019_DASHBOARD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-025",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-025",
+      "name": "% of districts where HRD Department official participated in the DTFI",
+      "description": "Official indicator: % of districts where HRD Department official participated in the DTFI. Denominator population: Districts implementing IMI 2.0.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-025",
+        "@type": "StatisticalVariable",
+        "name": "Districts implementing IMI 2.0"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI2_2019_DASHBOARD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Leadership and governance"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-026",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-026",
+      "name": "% of districts where Urban Development Authority official participated in the DTFI",
+      "description": "Official indicator: % of districts where Urban Development Authority official participated in the DTFI. Denominator population: Districts implementing IMI 2.0.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-026",
+        "@type": "StatisticalVariable",
+        "name": "Districts implementing IMI 2.0"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI2_2019_DASHBOARD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Leadership and governance"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-027",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-027",
+      "name": "% of districts where Tribal Affairs Department official participated in the DTFI",
+      "description": "Official indicator: % of districts where Tribal Affairs Department official participated in the DTFI. Denominator population: Districts implementing IMI 2.0.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-027",
+        "@type": "StatisticalVariable",
+        "name": "Districts implementing IMI 2.0"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI2_2019_DASHBOARD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Leadership and governance"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-028",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-028",
+      "name": "% of districts where Minority Affairs Department official participated in the DTFI",
+      "description": "Official indicator: % of districts where Minority Affairs Department official participated in the DTFI. Denominator population: Districts implementing IMI 2.0.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-028",
+        "@type": "StatisticalVariable",
+        "name": "Districts implementing IMI 2.0"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI2_2019_DASHBOARD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Leadership and governance"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-029",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-029",
+      "name": "% of districts where WCD Department official participated in the DTFI",
+      "description": "Official indicator: % of districts where WCD Department official participated in the DTFI. Denominator population: Districts implementing IMI 2.0.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-029",
+        "@type": "StatisticalVariable",
+        "name": "Districts implementing IMI 2.0"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI2_2019_DASHBOARD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Leadership and governance"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-030",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-030",
+      "name": "% of districts where PRI official participated in the DTFI",
+      "description": "Official indicator: % of districts where PRI official participated in the DTFI. Denominator population: Districts implementing IMI 2.0.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-030",
+        "@type": "StatisticalVariable",
+        "name": "Districts implementing IMI 2.0"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI2_2019_DASHBOARD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Leadership and governance"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-031",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-031",
+      "name": "% of districts where Youth Affairs and Sports Department official participated in the DTFI",
+      "description": "Official indicator: % of districts where Youth Affairs and Sports Department official participated in the DTFI. Denominator population: Districts implementing IMI 2.0.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-031",
+        "@type": "StatisticalVariable",
+        "name": "Districts implementing IMI 2.0"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI2_2019_DASHBOARD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Leadership and governance"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-032",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-032",
+      "name": "% of block/PUs submitted updated IMI 2.0 microplan at district",
+      "description": "Official indicator: % of block/PUs submitted updated IMI 2.0 microplan at district. Denominator population: Blocks/planning units where IMI 2.0 is planned.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-032",
+        "@type": "StatisticalVariable",
+        "name": "Blocks/planning units where IMI 2.0 is planned"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI2_2019_DASHBOARD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Leadership and governance"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-033",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-033",
+      "name": "% district completed self-assessment",
+      "description": "Official indicator: % district completed self-assessment. Denominator population: Districts where IMI 2.0 is planned.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-033",
+        "@type": "StatisticalVariable",
+        "name": "Districts where IMI 2.0 is planned"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI2_2019_DASHBOARD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Leadership and governance"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-034",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-034",
+      "name": "% district completed iCIP",
+      "description": "Official indicator: % district completed iCIP. Denominator population: Districts where IMI 2.0 is planned.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-034",
+        "@type": "StatisticalVariable",
+        "name": "Districts where IMI 2.0 is planned"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI2_2019_DASHBOARD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Leadership and governance"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-035",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-035",
+      "name": "% of states where State AEFI committee meeting held",
+      "description": "Official indicator: % of states where State AEFI committee meeting held. Denominator population: States where IMI 2.0 is planned.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-035",
+        "@type": "StatisticalVariable",
+        "name": "States where IMI 2.0 is planned"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI2_2019_DASHBOARD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Leadership and governance"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-036",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-036",
+      "name": "% of districts where District AEFI committee meeting held",
+      "description": "Official indicator: % of districts where District AEFI committee meeting held. Denominator population: Districts where IMI 2.0 is planned.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-036",
+        "@type": "StatisticalVariable",
+        "name": "Districts where IMI 2.0 is planned"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI2_2019_DASHBOARD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Leadership and governance"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-037",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-037",
+      "name": "% of IMI 2.0 districts with communication plans prepared",
+      "description": "Official indicator: % of IMI 2.0 districts with communication plans prepared. Denominator population: Districts where IMI 2.0 is planned.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-037",
+        "@type": "StatisticalVariable",
+        "name": "Districts where IMI 2.0 is planned"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI2_2019_DASHBOARD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Leadership and governance"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-038",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-038",
+      "name": "% block/planning units with communication plans prepared",
+      "description": "Official indicator: % block/planning units with communication plans prepared. Denominator population: Blocks/planning units where IMI 2.0 is planned.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-038",
+        "@type": "StatisticalVariable",
+        "name": "Blocks/planning units where IMI 2.0 is planned"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI2_2019_DASHBOARD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Leadership and governance"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-039",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-039",
+      "name": "% of IMI 2.0 districts completed BRIDGE trainings for FLW (ASHA, ANM and AWW)",
+      "description": "Official indicator: % of IMI 2.0 districts completed BRIDGE trainings for FLW (ASHA, ANM and AWW). Denominator population: Districts where IMI 2.0 is planned.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-039",
+        "@type": "StatisticalVariable",
+        "name": "Districts where IMI 2.0 is planned"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI2_2019_DASHBOARD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Health workforce"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-040",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-040",
+      "name": "% IMI 2.0 session sites with IEC material displayed",
+      "description": "Official indicator: % IMI 2.0 session sites with IEC material displayed. Denominator population: IMI 2.0 session sites visited by district officials.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-040",
+        "@type": "StatisticalVariable",
+        "name": "IMI 2.0 session sites visited by district officials"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI2_2019_DASHBOARD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-041",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-041",
+      "name": "% IMI 2.0 districts with media workshops organized",
+      "description": "Official indicator: % IMI 2.0 districts with media workshops organized. Denominator population: Districts where IMI 2.0 is planned.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-041",
+        "@type": "StatisticalVariable",
+        "name": "Districts where IMI 2.0 is planned"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI2_2019_DASHBOARD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Leadership and governance"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-042",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-042",
+      "name": "Availability",
+      "description": "Official indicator: Availability. Denominator population: Records and reports assessed for physical/electronic availability.",
+      "statType": "Index",
+      "unitText": "assessment score/status",
+      "measurementMethod": "Source-defined assessment or summary statistic",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-042",
+        "@type": "StatisticalVariable",
+        "name": "Records and reports assessed for physical/electronic availability"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI2_2019_DASHBOARD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-043",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-043",
+      "name": "Completeness",
+      "description": "Official indicator: Completeness. Denominator population: Required immunization-related data fields assessed.",
+      "statType": "Index",
+      "unitText": "assessment score/status",
+      "measurementMethod": "Source-defined assessment or summary statistic",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-043",
+        "@type": "StatisticalVariable",
+        "name": "Required immunization-related data fields assessed"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI2_2019_DASHBOARD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-044",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-044",
+      "name": "Agreement",
+      "description": "Official indicator: Agreement. Denominator population: Pairs of documents or reports expected to contain the same data.",
+      "statType": "Index",
+      "unitText": "assessment score/status",
+      "measurementMethod": "Source-defined assessment or summary statistic",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-044",
+        "@type": "StatisticalVariable",
+        "name": "Pairs of documents or reports expected to contain the same data"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI2_2019_DASHBOARD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-045",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-045",
+      "name": "Consistency",
+      "description": "Official indicator: Consistency. Denominator population: Immunization data checks assessed against expected system logic.",
+      "statType": "Index",
+      "unitText": "assessment score/status",
+      "measurementMethod": "Source-defined assessment or summary statistic",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-045",
+        "@type": "StatisticalVariable",
+        "name": "Immunization data checks assessed against expected system logic"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMI2_2019_DASHBOARD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-046",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-046",
+      "name": "Percent of routine reports (zero reports) received on time",
+      "description": "Official indicator: Percent of routine reports (zero reports) received on time. Denominator population: Expected routine zero reports.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-046",
+        "@type": "StatisticalVariable",
+        "name": "Expected routine zero reports"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_MOHFW_AEFI_2024_INDICATORS"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-047",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-047",
+      "name": "Percent of AEFI cases line listed",
+      "description": "Official indicator: Percent of AEFI cases line listed. Denominator population: Reported AEFI cases.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-047",
+        "@type": "StatisticalVariable",
+        "name": "Reported AEFI cases"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_MOHFW_AEFI_2024_INDICATORS"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems"
+      ],
+      "dateModified": "2026-09-04",
+      "skos:narrowMatch": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-048",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-048",
+      "name": "Percent of Serious AEFI cases",
+      "description": "Official indicator: Percent of Serious AEFI cases. Denominator population: All reported AEFI cases.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-048",
+        "@type": "StatisticalVariable",
+        "name": "All reported AEFI cases"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_MOHFW_AEFI_2024_INDICATORS"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-049",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-049",
+      "name": "Percent of Serious AEFI cases reported on time",
+      "description": "Official indicator: Percent of Serious AEFI cases reported on time. Denominator population: Serious AEFI cases identified.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-049",
+        "@type": "StatisticalVariable",
+        "name": "Serious AEFI cases identified"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_MOHFW_AEFI_2024_INDICATORS"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems"
+      ],
+      "dateModified": "2026-09-04",
+      "skos:narrowMatch": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-050",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-050",
+      "name": "Percent serious AEFI cases with Case Reporting Form (CRF) shared with the state and centre on time",
+      "description": "Official indicator: Percent serious AEFI cases with Case Reporting Form (CRF) shared with the state and centre on time. Denominator population: Serious AEFI cases requiring a Case Reporting Form.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-050",
+        "@type": "StatisticalVariable",
+        "name": "Serious AEFI cases requiring a Case Reporting Form"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_MOHFW_AEFI_2024_INDICATORS"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems"
+      ],
+      "dateModified": "2026-09-04",
+      "skos:narrowMatch": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-051",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-051",
+      "name": "Percent of Serious AEFI cases investigated on time",
+      "description": "Official indicator: Percent of Serious AEFI cases investigated on time. Denominator population: Serious AEFI cases requiring investigation.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-051",
+        "@type": "StatisticalVariable",
+        "name": "Serious AEFI cases requiring investigation"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_MOHFW_AEFI_2024_INDICATORS"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems"
+      ],
+      "dateModified": "2026-09-04",
+      "skos:narrowMatch": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-052",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-052",
+      "name": "Percent of Serious AEFI cases with completed investigation",
+      "description": "Official indicator: Percent of Serious AEFI cases with completed investigation. Denominator population: Serious AEFI cases requiring investigation.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-052",
+        "@type": "StatisticalVariable",
+        "name": "Serious AEFI cases requiring investigation"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_MOHFW_AEFI_2024_INDICATORS"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems"
+      ],
+      "dateModified": "2026-09-04",
+      "skos:narrowMatch": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-053",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-053",
+      "name": "Percent of Serious AEFI cases classified for causality by the state AEFI Committee on time",
+      "description": "Official indicator: Percent of Serious AEFI cases classified for causality by the state AEFI Committee on time. Denominator population: Serious AEFI cases eligible for causality classification.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-053",
+        "@type": "StatisticalVariable",
+        "name": "Serious AEFI cases eligible for causality classification"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_MOHFW_AEFI_2024_INDICATORS"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems",
+        "Leadership and governance"
+      ],
+      "dateModified": "2026-09-04",
+      "skos:narrowMatch": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-054",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-054",
+      "name": "Coverage for an antigen at any time",
+      "description": "Official indicator: Coverage for an antigen at any time. Denominator population: Yearly target population for the antigen.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-054",
+        "@type": "StatisticalVariable",
+        "name": "Yearly target population for the antigen"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMMUNIZATION_MO_2017"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-055",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-055",
+      "name": "Total number of dropouts",
+      "description": "Official indicator: Total number of dropouts. Denominator population: Not applicable—absolute difference between first-dose and later-dose cumulative totals.",
+      "statType": "Count",
+      "unitText": "count",
+      "measurementMethod": "Source-defined aggregation or count",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-055",
+        "@type": "StatisticalVariable",
+        "name": "Not applicable—absolute difference between first-dose and later-dose cumulative totals"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMMUNIZATION_MO_2017"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems"
+      ],
+      "dateModified": "2026-09-04",
+      "skos:relatedMatch": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-056",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-056",
+      "name": "Number of unimmunized with Penta 3",
+      "description": "Official indicator: Number of unimmunized with Penta 3. Denominator population: Not applicable—absolute target population minus children receiving Penta 3.",
+      "statType": "Count",
+      "unitText": "count",
+      "measurementMethod": "Source-defined aggregation or count",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-056",
+        "@type": "StatisticalVariable",
+        "name": "Not applicable—absolute target population minus children receiving Penta 3"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMMUNIZATION_MO_2017"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems"
+      ],
+      "dateModified": "2026-09-04"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-057",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-057",
+      "name": "BCG- Penta 3 dropout rate",
+      "description": "Official indicator: BCG- Penta 3 dropout rate. Denominator population: Children receiving BCG.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-057",
+        "@type": "StatisticalVariable",
+        "name": "Children receiving BCG"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMMUNIZATION_MO_2017"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems"
+      ],
+      "dateModified": "2026-09-04",
+      "skos:narrowMatch": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-058",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-058",
+      "name": "Penta 1- Penta 3 dropout rate",
+      "description": "Official indicator: Penta 1- Penta 3 dropout rate. Denominator population: Children receiving Penta 1.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-058",
+        "@type": "StatisticalVariable",
+        "name": "Children receiving Penta 1"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMMUNIZATION_MO_2017"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems"
+      ],
+      "dateModified": "2026-09-04",
+      "skos:narrowMatch": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-059",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-UIP3-059",
+      "name": "BCG-MCV1 dropout rate",
+      "description": "Official indicator: BCG-MCV1 dropout rate. Denominator population: Children receiving BCG.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/DENOMINATOR-IND-UIP3-059",
+        "@type": "StatisticalVariable",
+        "name": "Children receiving BCG"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NHM_IMMUNIZATION_MO_2017"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-UIP"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT"
+        }
+      ],
+      "keywords": [
+        "Service delivery",
+        "Health information systems"
+      ],
+      "dateModified": "2026-09-04",
+      "skos:narrowMatch": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/EDGE-IND-HMIS-IND-006-MANIFESTATION-CONCEPT-UIP-FULL-IMMUNIZATION-COVERAGE",
+      "@type": [
+        "ph:GraphAssertion",
+        "prov:Entity"
+      ],
+      "ph:subject": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-HMIS-IND-006"
+      },
+      "ph:predicate": "manifestationOf",
+      "ph:object": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-FULL-IMMUNIZATION-COVERAGE"
+      },
+      "ph:mappingRelation": "closeMatch",
+      "ph:assertionStatus": "curated",
+      "description": "Routine HMIS coverage definition uses an estimated child denominator and a source-specific age and antigen schedule.",
+      "dateModified": "2026-09-04",
+      "creator": "Public Health Analytics-OS"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/EDGE-IND-HMIS-IND-011-MANIFESTATION-CONCEPT-UIP-IMMUNIZATION-DROPOUT",
+      "@type": [
+        "ph:GraphAssertion",
+        "prov:Entity"
+      ],
+      "ph:subject": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-HMIS-IND-011"
+      },
+      "ph:predicate": "manifestationOf",
+      "ph:object": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT"
+      },
+      "ph:mappingRelation": "narrowMatch",
+      "ph:assertionStatus": "curated",
+      "description": "Historical HMIS manifestation measures BCG-to-measles dropout.",
+      "dateModified": "2026-09-04",
+      "creator": "Public Health Analytics-OS"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/EDGE-IND-HMIS-IND-012-MANIFESTATION-CONCEPT-UIP-IMMUNIZATION-DROPOUT",
+      "@type": [
+        "ph:GraphAssertion",
+        "prov:Entity"
+      ],
+      "ph:subject": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-HMIS-IND-012"
+      },
+      "ph:predicate": "manifestationOf",
+      "ph:object": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT"
+      },
+      "ph:mappingRelation": "narrowMatch",
+      "ph:assertionStatus": "curated",
+      "description": "Historical HMIS manifestation measures DPT3-to-measles dropout.",
+      "dateModified": "2026-09-04",
+      "creator": "Public Health Analytics-OS"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/EDGE-IND-NFHS-005-MANIFESTATION-CONCEPT-UIP-FULL-IMMUNIZATION-COVERAGE",
+      "@type": [
+        "ph:GraphAssertion",
+        "prov:Entity"
+      ],
+      "ph:subject": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NFHS-005"
+      },
+      "ph:predicate": "manifestationOf",
+      "ph:object": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-FULL-IMMUNIZATION-COVERAGE"
+      },
+      "ph:mappingRelation": "closeMatch",
+      "ph:assertionStatus": "curated",
+      "description": "Household-survey manifestation is conceptually aligned but differs from routine reporting in design, reference period and denominator construction.",
+      "dateModified": "2026-09-04",
+      "creator": "Public Health Analytics-OS"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/EDGE-IND-RMNCHA2-019-MANIFESTATION-CONCEPT-UIP-FULL-IMMUNIZATION-COVERAGE",
+      "@type": [
+        "ph:GraphAssertion",
+        "prov:Entity"
+      ],
+      "ph:subject": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-RMNCHA2-019"
+      },
+      "ph:predicate": "manifestationOf",
+      "ph:object": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-FULL-IMMUNIZATION-COVERAGE"
+      },
+      "ph:mappingRelation": "closeMatch",
+      "ph:assertionStatus": "curated",
+      "description": "Programme scorecard manifestation compares fully immunised children aged 9–11 months with children due for immunisation.",
+      "dateModified": "2026-09-04",
+      "creator": "Public Health Analytics-OS"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/EDGE-IND-RMNCHA2-033-MANIFESTATION-CONCEPT-UIP-FULL-IMMUNIZATION-COVERAGE",
+      "@type": [
+        "ph:GraphAssertion",
+        "prov:Entity"
+      ],
+      "ph:subject": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-RMNCHA2-033"
+      },
+      "ph:predicate": "manifestationOf",
+      "ph:object": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-FULL-IMMUNIZATION-COVERAGE"
+      },
+      "ph:mappingRelation": "closeMatch",
+      "ph:assertionStatus": "curated",
+      "description": "Programme scorecard label is conceptually aligned but uses children aged 12–23 months as its denominator population.",
+      "dateModified": "2026-09-04",
+      "creator": "Public Health Analytics-OS"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/EDGE-IND-UIP-004-MANIFESTATION-CONCEPT-UIP-SESSION-PLAN-ADHERENCE",
+      "@type": [
+        "ph:GraphAssertion",
+        "prov:Entity"
+      ],
+      "ph:subject": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP-004"
+      },
+      "ph:predicate": "manifestationOf",
+      "ph:object": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-SESSION-PLAN-ADHERENCE"
+      },
+      "ph:mappingRelation": "closeMatch",
+      "ph:assertionStatus": "curated",
+      "description": "Earlier UIP programme record for planned sessions held.",
+      "dateModified": "2026-09-04",
+      "creator": "Public Health Analytics-OS"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/EDGE-IND-UIP-005-MANIFESTATION-CONCEPT-UIP-VACCINE-SESSION-AVAILABILITY",
+      "@type": [
+        "ph:GraphAssertion",
+        "prov:Entity"
+      ],
+      "ph:subject": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP-005"
+      },
+      "ph:predicate": "manifestationOf",
+      "ph:object": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-VACCINE-SESSION-AVAILABILITY"
+      },
+      "ph:mappingRelation": "relatedMatch",
+      "ph:assertionStatus": "curated",
+      "description": "Stock-out is the adverse complement of vaccine availability but source timing and vaccine scope may differ.",
+      "dateModified": "2026-09-04",
+      "creator": "Public Health Analytics-OS"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/EDGE-IND-UIP-006-MANIFESTATION-CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE",
+      "@type": [
+        "ph:GraphAssertion",
+        "prov:Entity"
+      ],
+      "ph:subject": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP-006"
+      },
+      "ph:predicate": "manifestationOf",
+      "ph:object": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
+      },
+      "ph:mappingRelation": "broadMatch",
+      "ph:assertionStatus": "curated",
+      "description": "Reported adverse events are an input to surveillance performance but do not measure timeliness or completeness.",
+      "dateModified": "2026-09-04",
+      "creator": "Public Health Analytics-OS"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/EDGE-IND-UIP3-001-MANIFESTATION-CONCEPT-UIP-SESSION-PLAN-ADHERENCE",
+      "@type": [
+        "ph:GraphAssertion",
+        "prov:Entity"
+      ],
+      "ph:subject": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-001"
+      },
+      "ph:predicate": "manifestationOf",
+      "ph:object": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-SESSION-PLAN-ADHERENCE"
+      },
+      "ph:mappingRelation": "closeMatch",
+      "ph:assertionStatus": "curated",
+      "description": "IMI monitoring count of sessions held as planned.",
+      "dateModified": "2026-09-04",
+      "creator": "Public Health Analytics-OS"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/EDGE-IND-UIP3-003-MANIFESTATION-CONCEPT-UIP-SESSION-PLAN-ADHERENCE",
+      "@type": [
+        "ph:GraphAssertion",
+        "prov:Entity"
+      ],
+      "ph:subject": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-003"
+      },
+      "ph:predicate": "manifestationOf",
+      "ph:object": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-SESSION-PLAN-ADHERENCE"
+      },
+      "ph:mappingRelation": "narrowMatch",
+      "ph:assertionStatus": "curated",
+      "description": "Percentage is restricted to monitored high-risk areas and planned monitored sessions.",
+      "dateModified": "2026-09-04",
+      "creator": "Public Health Analytics-OS"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/EDGE-IND-UIP3-006-MANIFESTATION-CONCEPT-UIP-VACCINE-SESSION-AVAILABILITY",
+      "@type": [
+        "ph:GraphAssertion",
+        "prov:Entity"
+      ],
+      "ph:subject": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-006"
+      },
+      "ph:predicate": "manifestationOf",
+      "ph:object": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-VACCINE-SESSION-AVAILABILITY"
+      },
+      "ph:mappingRelation": "closeMatch",
+      "ph:assertionStatus": "curated",
+      "description": "IMI monitoring manifestation directly assesses vaccine availability at monitored sites.",
+      "dateModified": "2026-09-04",
+      "creator": "Public Health Analytics-OS"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/EDGE-IND-UIP3-007-MANIFESTATION-CONCEPT-UIP-VACCINE-SESSION-AVAILABILITY",
+      "@type": [
+        "ph:GraphAssertion",
+        "prov:Entity"
+      ],
+      "ph:subject": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-007"
+      },
+      "ph:predicate": "manifestationOf",
+      "ph:object": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-VACCINE-SESSION-AVAILABILITY"
+      },
+      "ph:mappingRelation": "relatedMatch",
+      "ph:assertionStatus": "curated",
+      "description": "Reason analysis explains non-availability and is not itself an availability rate.",
+      "dateModified": "2026-09-04",
+      "creator": "Public Health Analytics-OS"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/EDGE-IND-UIP3-047-MANIFESTATION-CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE",
+      "@type": [
+        "ph:GraphAssertion",
+        "prov:Entity"
+      ],
+      "ph:subject": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-047"
+      },
+      "ph:predicate": "manifestationOf",
+      "ph:object": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
+      },
+      "ph:mappingRelation": "narrowMatch",
+      "ph:assertionStatus": "curated",
+      "description": "Line-listing completeness is one component of AEFI surveillance performance.",
+      "dateModified": "2026-09-04",
+      "creator": "Public Health Analytics-OS"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/EDGE-IND-UIP3-049-MANIFESTATION-CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE",
+      "@type": [
+        "ph:GraphAssertion",
+        "prov:Entity"
+      ],
+      "ph:subject": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-049"
+      },
+      "ph:predicate": "manifestationOf",
+      "ph:object": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
+      },
+      "ph:mappingRelation": "narrowMatch",
+      "ph:assertionStatus": "curated",
+      "description": "Timely serious-AEFI reporting is one component of surveillance performance.",
+      "dateModified": "2026-09-04",
+      "creator": "Public Health Analytics-OS"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/EDGE-IND-UIP3-050-MANIFESTATION-CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE",
+      "@type": [
+        "ph:GraphAssertion",
+        "prov:Entity"
+      ],
+      "ph:subject": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-050"
+      },
+      "ph:predicate": "manifestationOf",
+      "ph:object": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
+      },
+      "ph:mappingRelation": "narrowMatch",
+      "ph:assertionStatus": "curated",
+      "description": "Timely sharing of the case reporting form is one component of surveillance performance.",
+      "dateModified": "2026-09-04",
+      "creator": "Public Health Analytics-OS"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/EDGE-IND-UIP3-051-MANIFESTATION-CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE",
+      "@type": [
+        "ph:GraphAssertion",
+        "prov:Entity"
+      ],
+      "ph:subject": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-051"
+      },
+      "ph:predicate": "manifestationOf",
+      "ph:object": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
+      },
+      "ph:mappingRelation": "narrowMatch",
+      "ph:assertionStatus": "curated",
+      "description": "Timely investigation is one component of surveillance performance.",
+      "dateModified": "2026-09-04",
+      "creator": "Public Health Analytics-OS"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/EDGE-IND-UIP3-052-MANIFESTATION-CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE",
+      "@type": [
+        "ph:GraphAssertion",
+        "prov:Entity"
+      ],
+      "ph:subject": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-052"
+      },
+      "ph:predicate": "manifestationOf",
+      "ph:object": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
+      },
+      "ph:mappingRelation": "narrowMatch",
+      "ph:assertionStatus": "curated",
+      "description": "Completed investigations are one component of surveillance performance.",
+      "dateModified": "2026-09-04",
+      "creator": "Public Health Analytics-OS"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/EDGE-IND-UIP3-053-MANIFESTATION-CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE",
+      "@type": [
+        "ph:GraphAssertion",
+        "prov:Entity"
+      ],
+      "ph:subject": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-053"
+      },
+      "ph:predicate": "manifestationOf",
+      "ph:object": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
+      },
+      "ph:mappingRelation": "narrowMatch",
+      "ph:assertionStatus": "curated",
+      "description": "Timely causality classification is one component of surveillance performance.",
+      "dateModified": "2026-09-04",
+      "creator": "Public Health Analytics-OS"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/EDGE-IND-UIP3-055-MANIFESTATION-CONCEPT-UIP-IMMUNIZATION-DROPOUT",
+      "@type": [
+        "ph:GraphAssertion",
+        "prov:Entity"
+      ],
+      "ph:subject": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-055"
+      },
+      "ph:predicate": "manifestationOf",
+      "ph:object": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT"
+      },
+      "ph:mappingRelation": "relatedMatch",
+      "ph:assertionStatus": "curated",
+      "description": "Absolute dropout count supports but is not equivalent to a dropout percentage.",
+      "dateModified": "2026-09-04",
+      "creator": "Public Health Analytics-OS"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/EDGE-IND-UIP3-057-MANIFESTATION-CONCEPT-UIP-IMMUNIZATION-DROPOUT",
+      "@type": [
+        "ph:GraphAssertion",
+        "prov:Entity"
+      ],
+      "ph:subject": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-057"
+      },
+      "ph:predicate": "manifestationOf",
+      "ph:object": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT"
+      },
+      "ph:mappingRelation": "narrowMatch",
+      "ph:assertionStatus": "curated",
+      "description": "Handbook manifestation measures BCG-to-Pentavalent-3 dropout.",
+      "dateModified": "2026-09-04",
+      "creator": "Public Health Analytics-OS"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/EDGE-IND-UIP3-058-MANIFESTATION-CONCEPT-UIP-IMMUNIZATION-DROPOUT",
+      "@type": [
+        "ph:GraphAssertion",
+        "prov:Entity"
+      ],
+      "ph:subject": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-058"
+      },
+      "ph:predicate": "manifestationOf",
+      "ph:object": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT"
+      },
+      "ph:mappingRelation": "narrowMatch",
+      "ph:assertionStatus": "curated",
+      "description": "Handbook manifestation measures Pentavalent-1-to-Pentavalent-3 dropout.",
+      "dateModified": "2026-09-04",
+      "creator": "Public Health Analytics-OS"
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/EDGE-IND-UIP3-059-MANIFESTATION-CONCEPT-UIP-IMMUNIZATION-DROPOUT",
+      "@type": [
+        "ph:GraphAssertion",
+        "prov:Entity"
+      ],
+      "ph:subject": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-059"
+      },
+      "ph:predicate": "manifestationOf",
+      "ph:object": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT"
+      },
+      "ph:mappingRelation": "narrowMatch",
+      "ph:assertionStatus": "curated",
+      "description": "Handbook manifestation measures BCG-to-MCV1 dropout.",
+      "dateModified": "2026-09-04",
+      "creator": "Public Health Analytics-OS"
+    }
+  ]
+}

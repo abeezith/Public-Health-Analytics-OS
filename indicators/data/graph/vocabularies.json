@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "version": "0.1.0",
+    "status": "Immunization pilot",
+    "policy": "Canonical values drive graph navigation. Original source wording remains available on nodes or relationship provenance."
+  },
+  "whoBuildingBlocks": [
+    {"id": "BB-SERVICE-DELIVERY", "label": "Service delivery", "alternateLabels": []},
+    {"id": "BB-HEALTH-WORKFORCE", "label": "Health workforce", "alternateLabels": []},
+    {"id": "BB-HEALTH-INFORMATION", "label": "Health information systems", "alternateLabels": []},
+    {"id": "BB-MEDICAL-PRODUCTS", "label": "Medical products, vaccines and technologies", "alternateLabels": ["Access to essential medicines and technologies"]},
+    {"id": "BB-HEALTH-FINANCING", "label": "Health financing", "alternateLabels": []},
+    {"id": "BB-LEADERSHIP-GOVERNANCE", "label": "Leadership and governance", "alternateLabels": []}
+  ],
+  "reportingLevels": [
+    {"id": "LEVEL-NATIONAL", "label": "National", "rank": 1},
+    {"id": "LEVEL-STATE", "label": "State/UT", "rank": 2},
+    {"id": "LEVEL-DISTRICT", "label": "District", "rank": 3},
+    {"id": "LEVEL-BLOCK", "label": "Block/planning unit", "rank": 4},
+    {"id": "LEVEL-FACILITY", "label": "Facility", "rank": 5},
+    {"id": "LEVEL-SESSION-COMMUNITY", "label": "Session/community", "rank": 6},
+    {"id": "LEVEL-COMMUNITY-HOUSEHOLD", "label": "Community/household", "rank": 7}
+  ],
+  "measureTypes": [
+    {"id": "MEASURE-PERCENTAGE", "label": "Percentage/proportion", "scalePolicy": "%"},
+    {"id": "MEASURE-RATIO", "label": "Ratio", "scalePolicy": "ratio"},
+    {"id": "MEASURE-RATE", "label": "Rate per population", "scalePolicy": "explicit population scale"},
+    {"id": "MEASURE-COUNT", "label": "Count", "scalePolicy": "count"},
+    {"id": "MEASURE-INDEX", "label": "Index", "scalePolicy": "index/score or source-defined categories"}
+  ],
+  "programmes": [
+    {
+      "id": "PROGRAMME-UIP",
+      "label": "Universal Immunization Programme / Mission Indradhanush",
+      "country": "India",
+      "alternateLabels": ["Routine Immunization", "Intensified Mission Indradhanush", "Intensified Mission Indradhanush 2.0"]
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "metadata": {
+    "graphId": "PHAOS-KG-UIP-0.1",
+    "checked": "2026-09-04"
+  },
+  "counts": {
+    "nodes": 223,
+    "edges": 758,
+    "indicators": 76,
+    "hmisObjects": 102,
+    "standaloneHmisNodes": 95,
+    "coTypedHmisIndicatorNodes": 7,
+    "concepts": 5,
+    "sources": 8,
+    "evidenceGaps": 7,
+    "nodeTypes": {
+      "EvidenceGap": 7,
+      "HmisObject": 95,
+      "IndicatorConcept": 5,
+      "IndicatorManifestation": 76,
+      "MeasureType": 5,
+      "Organization": 5,
+      "Programme": 1,
+      "ProgrammeComponent": 10,
+      "ReportingLevel": 5,
+      "SourceDocument": 8,
+      "WHOBuildingBlock": 6
+    },
+    "edgeTypes": {
+      "partOfProgramme": 171,
+      "publishedBy": 8,
+      "definedBy": 76,
+      "hasMeasureType": 76,
+      "hasProgrammeComponent": 76,
+      "lowestReportingLevel": 76,
+      "manifestationOf": 23,
+      "relatedHmisObject": 11,
+      "supportsBuildingBlock": 193,
+      "usesDataElement": 23,
+      "relatedIndicator": 18,
+      "limitsCompletenessOf": 7
+    }
+  },
+  "gates": {
+    "expectedImmunizationIndicators": {
+      "expected": 76,
+      "actual": 76,
+      "pass": true
+    },
+    "expectedHmisObjects": {
+      "expected": 102,
+      "actual": 102,
+      "pass": true
+    },
+    "allHmisIdentitiesRepresented": {
+      "expected": 102,
+      "actual": 102,
+      "pass": true
+    },
+    "expectedConcepts": {
+      "expected": 5,
+      "actual": 5,
+      "pass": true
+    },
+    "expectedEvidenceGaps": {
+      "expected": 7,
+      "actual": 7,
+      "pass": true
+    },
+    "uniqueNodeIds": {
+      "failures": 0,
+      "pass": true
+    },
+    "uniqueEdgeIds": {
+      "failures": 0,
+      "pass": true
+    },
+    "noDanglingEdges": {
+      "failures": 0,
+      "pass": true
+    },
+    "allEdgesHaveAssertionStatus": {
+      "failures": 0,
+      "pass": true
+    },
+    "conceptMappingsHaveRelationAndRationale": {
+      "failures": 0,
+      "pass": true
+    },
+    "officialNamesPreserved": {
+      "failures": 0,
+      "pass": true
+    },
+    "sixCanonicalBuildingBlocks": {
+      "expected": 6,
+      "actual": 6,
+      "pass": true
+    },
+    "noProhibitedStateReference": {
+      "failures": 0,
+      "pass": true
+    },
+    "schemaOrgUsesDefinitionsNotObservations": {
+      "observationNodes": 0,
+      "pass": true
+    }
+  }
+}
