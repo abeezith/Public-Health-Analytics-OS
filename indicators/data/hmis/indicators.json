@@ -14,7 +14,9 @@
     "sourceCount": 12,
     "openEvidenceGaps": 10,
     "versionPolicy": "Current public forms, historical technical definitions and historical published outputs remain explicitly separated.",
-    "measureMetadataNormalization": "v1.0 — official names preserved"
+    "measureMetadataNormalization": "v1.0 — official names preserved",
+    "rmnchaLinkedObjects": 46,
+    "rmnchaLinkageRule": "Objects in maternal/newborn/reproductive-health or child/adolescent/nutrition domains are discoverable in the RMNCH+A vertical without changing their HMIS identity."
   },
   "indicators": [
     {
@@ -60,7 +62,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Estimated pregnancies",
-      "displayDefinition": "% of pregnant women who used ANC care provided by skilled health personnel. Denominator population: Estimated pregnancies."
+      "displayDefinition": "% of pregnant women who used ANC care provided by skilled health personnel. Denominator population: Estimated pregnancies.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-002",
@@ -105,7 +110,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Total ANC registered",
-      "displayDefinition": "Proportion of women who were registered within first trimester (12weeks) of pregnancy. Denominator population: Total ANC registered."
+      "displayDefinition": "Proportion of women who were registered within first trimester (12weeks) of pregnancy. Denominator population: Total ANC registered.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-003",
@@ -151,7 +159,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Total ANC registered",
-      "displayDefinition": "% of women who were given TT2/Booster dose during current pregnancy. Denominator population: Total ANC registered."
+      "displayDefinition": "% of women who were given TT2/Booster dose during current pregnancy. Denominator population: Total ANC registered.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-004",
@@ -197,7 +208,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Total ANC registered",
-      "displayDefinition": "% of pregnant women who used antenatal care provided by skilled health personnel at least 3 times during pregnancy. Denominator population: Total ANC registered."
+      "displayDefinition": "% of pregnant women who used antenatal care provided by skilled health personnel at least 3 times during pregnancy. Denominator population: Total ANC registered.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-005",
@@ -243,7 +257,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Total ANC registered",
-      "displayDefinition": "% of women who were given at least 100 IFA tablets. Denominator population: Total ANC registered."
+      "displayDefinition": "% of women who were given at least 100 IFA tablets. Denominator population: Total ANC registered.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-006",
@@ -289,7 +306,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Estimated children below 1 year",
-      "displayDefinition": "% of children aged between 9 and 11 months who have been fully immunized (Child given one dose of BCG, three dosages of DPT i.e. DPT 1,2,3; three dosages of polio i.e. OPV 1,2,3 and a dosage of Measles). Denominator population: Estimated children below 1 year."
+      "displayDefinition": "% of children aged between 9 and 11 months who have been fully immunized (Child given one dose of BCG, three dosages of DPT i.e. DPT 1,2,3; three dosages of polio i.e. OPV 1,2,3 and a dosage of Measles). Denominator population: Estimated children below 1 year.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-007",
@@ -333,7 +353,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Estimated children below 1 year",
-      "displayDefinition": "The percentage of live births that received BCG within one year. Denominator population: Estimated children below 1 year."
+      "displayDefinition": "The percentage of live births that received BCG within one year. Denominator population: Estimated children below 1 year.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-008",
@@ -377,7 +400,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Estimated children below 1 year",
-      "displayDefinition": "The percentage of children who received their 3 doses of DTP-3. Denominator population: Estimated children below 1 year."
+      "displayDefinition": "The percentage of children who received their 3 doses of DTP-3. Denominator population: Estimated children below 1 year.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-009",
@@ -421,7 +447,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Estimated children below 1 year",
-      "displayDefinition": "The percentage of children under 1 immunised with OPV dose 3. Denominator population: Estimated children below 1 year."
+      "displayDefinition": "The percentage of children under 1 immunised with OPV dose 3. Denominator population: Estimated children below 1 year.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-010",
@@ -465,7 +494,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Estimated children below 1 year",
-      "displayDefinition": "The percentage of children who received their measles dose (normally at 9 months). Denominator population: Estimated children below 1 year."
+      "displayDefinition": "The percentage of children who received their measles dose (normally at 9 months). Denominator population: Estimated children below 1 year.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-011",
@@ -509,7 +541,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Number of children given BCG",
-      "displayDefinition": "% of children who dropped out of immunisation schedule between BCG dose measles dose. Denominator population: Number of children given BCG."
+      "displayDefinition": "% of children who dropped out of immunisation schedule between BCG dose measles dose. Denominator population: Number of children given BCG.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-012",
@@ -552,7 +587,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Number of children given DPT3",
-      "displayDefinition": "The percentage of children who dropped out of the immunisation schedule between the third doses (normally at 14 weeks) and the measles dose (normally at 9 months). Denominator population: Number of children given DPT3."
+      "displayDefinition": "The percentage of children who dropped out of the immunisation schedule between the third doses (normally at 14 weeks) and the measles dose (normally at 9 months). Denominator population: Number of children given DPT3.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-013",
@@ -596,7 +634,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Estimated deliveries",
-      "displayDefinition": "% of deliveries conducted at public institution/facility. Denominator population: Estimated deliveries."
+      "displayDefinition": "% of deliveries conducted at public institution/facility. Denominator population: Estimated deliveries.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-014",
@@ -640,7 +681,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Estimated deliveries",
-      "displayDefinition": "% of deliveries conducted at public and private institution/facility. Denominator population: Estimated deliveries."
+      "displayDefinition": "% of deliveries conducted at public and private institution/facility. Denominator population: Estimated deliveries.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-015",
@@ -686,7 +730,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Estimated deliveries",
-      "displayDefinition": "% of deliveries conducted at home. Denominator population: Estimated deliveries."
+      "displayDefinition": "% of deliveries conducted at home. Denominator population: Estimated deliveries.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-016",
@@ -730,7 +777,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Total reported deliveries",
-      "displayDefinition": "Proportion of total deliveries assisted by a Skilled Birth Attendant (at home and at institutions). Denominator population: Total reported deliveries."
+      "displayDefinition": "Proportion of total deliveries assisted by a Skilled Birth Attendant (at home and at institutions). Denominator population: Total reported deliveries.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-017",
@@ -774,7 +824,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Total institutional deliveries (Caesarean section + Normal delivery)",
-      "displayDefinition": "Proportion of C- section deliveries out of total reported institutional deliveries. Denominator population: Total institutional deliveries (Caesarean section + Normal delivery)."
+      "displayDefinition": "Proportion of C- section deliveries out of total reported institutional deliveries. Denominator population: Total institutional deliveries (Caesarean section + Normal delivery).",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-018",
@@ -818,7 +871,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Reported deliveries (Institutional + Home)",
-      "displayDefinition": "% of women who received post natal care checkup done within 48 hrs of delivery. Denominator population: Reported deliveries (Institutional + Home)."
+      "displayDefinition": "% of women who received post natal care checkup done within 48 hrs of delivery. Denominator population: Reported deliveries (Institutional + Home).",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-019",
@@ -862,7 +918,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Reported deliveries (Institutional + Home)",
-      "displayDefinition": "% of women who received post natal care checkup done between 48 hrs and 14 days of delivery. Denominator population: Reported deliveries (Institutional + Home)."
+      "displayDefinition": "% of women who received post natal care checkup done between 48 hrs and 14 days of delivery. Denominator population: Reported deliveries (Institutional + Home).",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-020",
@@ -905,7 +964,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Number of eligible couples",
-      "displayDefinition": "Proportion of eligible couples using family planningmethod. Denominator population: Number of eligible couples."
+      "displayDefinition": "Proportion of eligible couples using family planningmethod. Denominator population: Number of eligible couples.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-021",
@@ -946,7 +1008,10 @@
       "scaleDisplay": "Not specified",
       "normalizedFormula": "Numerator ÷ denominator; multiplier not stated",
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
-      "displayDefinition": "Coverage contribution of sterilization to overall family planningmethod. Denominator population: Not supplied in registry metadata; consult the authoritative source."
+      "displayDefinition": "Coverage contribution of sterilization to overall family planningmethod. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-022",
@@ -987,7 +1052,10 @@
       "scaleDisplay": "Not specified",
       "normalizedFormula": "Numerator ÷ denominator; multiplier not stated",
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
-      "displayDefinition": "Coverage contribution of IUD to overall family planningmethod. Denominator population: Not supplied in registry metadata; consult the authoritative source."
+      "displayDefinition": "Coverage contribution of IUD to overall family planningmethod. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-023",
@@ -1030,7 +1098,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "eligible couples",
-      "displayDefinition": "Coverage contribution of OCP to overall family planningmethod -. Denominator population: eligible couples."
+      "displayDefinition": "Coverage contribution of OCP to overall family planningmethod -. Denominator population: eligible couples.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-024",
@@ -1073,7 +1144,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "eligible couples",
-      "displayDefinition": "Coverage contribution of OCP to overall family planningmethod -. Denominator population: eligible couples."
+      "displayDefinition": "Coverage contribution of OCP to overall family planningmethod -. Denominator population: eligible couples.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-025",
@@ -1117,7 +1191,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "All FP Users",
-      "displayDefinition": "Coverage contribution of sterilization(all) to overall family planningmethod. Denominator population: All FP Users."
+      "displayDefinition": "Coverage contribution of sterilization(all) to overall family planningmethod. Denominator population: All FP Users.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-026",
@@ -1160,7 +1237,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "eligible couples",
-      "displayDefinition": "Coverage contribution of spacing (all) to overall family planningmethod. Denominator population: eligible couples."
+      "displayDefinition": "Coverage contribution of spacing (all) to overall family planningmethod. Denominator population: eligible couples.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-027",
@@ -1204,7 +1284,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Total live births (as recorded)",
-      "displayDefinition": "Percentage of new born babies breastfed within one hour of birth. Denominator population: Total live births (as recorded)."
+      "displayDefinition": "Percentage of new born babies breastfed within one hour of birth. Denominator population: Total live births (as recorded).",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-028",
@@ -1247,7 +1330,8 @@
       "scaleDisplay": "per 1,000",
       "normalizedFormula": "(Numerator ÷ denominator) × 1000",
       "denominatorPopulation": "Live Births males",
-      "displayDefinition": "Number of females born per 1000 males born in a give time period. Denominator population: Live Births males."
+      "displayDefinition": "Number of females born per 1000 males born in a give time period. Denominator population: Live Births males.",
+      "programmeTags": []
     },
     {
       "id": "IND-HMIS-IND-029",
@@ -1291,7 +1375,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Live births weighed",
-      "displayDefinition": "Percentage of live born infants with a Birth weight under 2,500 grams. Denominator population: Live births weighed."
+      "displayDefinition": "Percentage of live born infants with a Birth weight under 2,500 grams. Denominator population: Live births weighed.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-030",
@@ -1336,7 +1423,10 @@
       "scaleDisplay": "per 1,000",
       "normalizedFormula": "(Numerator ÷ denominator) × 1000",
       "denominatorPopulation": "Live births",
-      "displayDefinition": "Neonatal mortality rate (NNMR) measures the number of live-born babies dying within 28 completed days of life per 1,000 live births. Denominator population: Live births."
+      "displayDefinition": "Neonatal mortality rate (NNMR) measures the number of live-born babies dying within 28 completed days of life per 1,000 live births. Denominator population: Live births.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-031",
@@ -1379,7 +1469,10 @@
       "scaleDisplay": "per 1,000",
       "normalizedFormula": "(Numerator ÷ denominator) × 1000",
       "denominatorPopulation": "live births",
-      "displayDefinition": "Infant Death rate (IDR) measures the number of deaths of infants under one year of age per 1,000 live births. Denominator population: live births."
+      "displayDefinition": "Infant Death rate (IDR) measures the number of deaths of infants under one year of age per 1,000 live births. Denominator population: live births.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-032",
@@ -1424,7 +1517,10 @@
       "scaleDisplay": "per 1,000",
       "normalizedFormula": "(Numerator ÷ denominator) × 1000",
       "denominatorPopulation": "live births",
-      "displayDefinition": "Under-five mortality rate measures the number of children who die before their fifth birthday per 1000 live births. Denominator population: live births."
+      "displayDefinition": "Under-five mortality rate measures the number of children who die before their fifth birthday per 1000 live births. Denominator population: live births.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-033",
@@ -1467,7 +1563,10 @@
       "scaleDisplay": "per 1,000",
       "normalizedFormula": "(Numerator ÷ denominator) × 1000",
       "denominatorPopulation": "Live Births.",
-      "displayDefinition": "Peri-natal deaths comprise still births (gestation over 228 weeks / >1000 grams weight) plus early neonatal deaths (infants dying within 7 days). Denominator population: Live Births.."
+      "displayDefinition": "Peri-natal deaths comprise still births (gestation over 228 weeks / >1000 grams weight) plus early neonatal deaths (infants dying within 7 days). Denominator population: Live Births..",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-034",
@@ -1510,7 +1609,10 @@
       "scaleDisplay": "Not specified",
       "normalizedFormula": "Numerator ÷ denominator; multiplier not stated",
       "denominatorPopulation": "Total births (Live birth + Still birth)",
-      "displayDefinition": "Still birth rate. Denominator population: Total births (Live birth + Still birth)."
+      "displayDefinition": "Still birth rate. Denominator population: Total births (Live birth + Still birth).",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-035",
@@ -1555,7 +1657,10 @@
       "scaleDisplay": "per 100,000",
       "normalizedFormula": "(Numerator ÷ denominator) × 1,00,000",
       "denominatorPopulation": "Number of live births",
-      "displayDefinition": "The death of a woman while pregnant or within 42 days of delivery or termination of pregnancy, irrespective of the duration and site of the pregnancy, from any cause related to or aggravated by the pregnancy or its management but not from accidental causes. Denominator population: Number of live births."
+      "displayDefinition": "The death of a woman while pregnant or within 42 days of delivery or termination of pregnancy, irrespective of the duration and site of the pregnancy, from any cause related to or aggravated by the pregnancy or its management but not from accidental causes. Denominator population: Number of live births.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-036",
@@ -1601,7 +1706,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Total ANC registered",
-      "displayDefinition": "Percentage of pregnant women tested to be moderately anaemic (Hb level <11g). Denominator population: Total ANC registered."
+      "displayDefinition": "Percentage of pregnant women tested to be moderately anaemic (Hb level <11g). Denominator population: Total ANC registered.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-037",
@@ -1647,7 +1755,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Total ANC registered",
-      "displayDefinition": "Percentage of pregnant women detected with hypertension/ high blood pressure (BP>140/90). Denominator population: Total ANC registered."
+      "displayDefinition": "Percentage of pregnant women detected with hypertension/ high blood pressure (BP>140/90). Denominator population: Total ANC registered.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-038",
@@ -1693,7 +1804,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Total ANC registration",
-      "displayDefinition": "Percentage of severely anaemic pregnant women treated ( Hb level <7g). Denominator population: Total ANC registration."
+      "displayDefinition": "Percentage of severely anaemic pregnant women treated ( Hb level <7g). Denominator population: Total ANC registration.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-039",
@@ -1739,7 +1853,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Total deliveries (home + institution)",
-      "displayDefinition": "% of eclampsia cases managed during delivery. Denominator population: Total deliveries (home + institution)."
+      "displayDefinition": "% of eclampsia cases managed during delivery. Denominator population: Total deliveries (home + institution).",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-040",
@@ -1785,7 +1902,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Total ANC registered",
-      "displayDefinition": "% of pregnant women who were registered under JSY scheme. Denominator population: Total ANC registered."
+      "displayDefinition": "% of pregnant women who were registered under JSY scheme. Denominator population: Total ANC registered.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-041",
@@ -1829,7 +1949,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "No. of pregnant women registered for JSY",
-      "displayDefinition": "Proportion of women who had institutional delivery received JSY benefit. Denominator population: No. of pregnant women registered for JSY."
+      "displayDefinition": "Proportion of women who had institutional delivery received JSY benefit. Denominator population: No. of pregnant women registered for JSY.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-042",
@@ -1877,7 +2000,8 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Total OPD",
-      "displayDefinition": "Proportion of IPD out of total OPD. Denominator population: Total OPD."
+      "displayDefinition": "Proportion of IPD out of total OPD. Denominator population: Total OPD.",
+      "programmeTags": []
     },
     {
       "id": "IND-HMIS-IND-043",
@@ -1923,7 +2047,8 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Total OPD",
-      "displayDefinition": "Percentage of major operations conducted against total OPD attendance. Denominator population: Total OPD."
+      "displayDefinition": "Percentage of major operations conducted against total OPD attendance. Denominator population: Total OPD.",
+      "programmeTags": []
     },
     {
       "id": "IND-HMIS-IND-044",
@@ -1969,7 +2094,8 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Total OPD",
-      "displayDefinition": "Percentage of minor operations conducted against total OPD attendance. Denominator population: Total OPD."
+      "displayDefinition": "Percentage of minor operations conducted against total OPD attendance. Denominator population: Total OPD.",
+      "programmeTags": []
     },
     {
       "id": "IND-HMIS-IND-045",
@@ -2015,7 +2141,8 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Total OPD",
-      "displayDefinition": "Dental Procedures as % of OPD. Denominator population: Total OPD."
+      "displayDefinition": "Dental Procedures as % of OPD. Denominator population: Total OPD.",
+      "programmeTags": []
     },
     {
       "id": "IND-HMIS-IND-046",
@@ -2059,7 +2186,8 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Total Bed days available (total number of days for which indicator is calculated x total number of beds)",
-      "displayDefinition": "Percentage of bed occupancy against total beds available in a facility in a given time period. Denominator population: Total Bed days available (total number of days for which indicator is calculated x total number of beds)."
+      "displayDefinition": "Percentage of bed occupancy against total beds available in a facility in a given time period. Denominator population: Total Bed days available (total number of days for which indicator is calculated x total number of beds).",
+      "programmeTags": []
     },
     {
       "id": "IND-HMIS-IND-047",
@@ -2105,7 +2233,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Total HIV test conducted",
-      "displayDefinition": "Proportion of HIV +ve cases(all)out of total tested for HIV. Denominator population: Total HIV test conducted."
+      "displayDefinition": "Proportion of HIV +ve cases(all)out of total tested for HIV. Denominator population: Total HIV test conducted.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-048",
@@ -2151,7 +2282,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Total ANC Registration",
-      "displayDefinition": "Proportion of pregnant women who were tested for HIV . Denominator population: Total ANC Registration."
+      "displayDefinition": "Proportion of pregnant women who were tested for HIV . Denominator population: Total ANC Registration.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-049",
@@ -2195,7 +2329,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Antenatal women tested for HIV",
-      "displayDefinition": "Proportion of ANC who were found to be HIV +ve after test. Denominator population: Antenatal women tested for HIV."
+      "displayDefinition": "Proportion of ANC who were found to be HIV +ve after test. Denominator population: Antenatal women tested for HIV.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-050",
@@ -2239,7 +2376,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "HIV tested (excluding antenatal)",
-      "displayDefinition": "Proportion of non- ANC who were found to be HIV +ve after test. Denominator population: HIV tested (excluding antenatal)."
+      "displayDefinition": "Proportion of non- ANC who were found to be HIV +ve after test. Denominator population: HIV tested (excluding antenatal).",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-051",
@@ -2284,7 +2424,10 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "No. of males tested for HIV",
-      "displayDefinition": "Proportion of HIV+ cases among total number of males tested. Denominator population: No. of males tested for HIV."
+      "displayDefinition": "Proportion of HIV+ cases among total number of males tested. Denominator population: No. of males tested for HIV.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     },
     {
       "id": "IND-HMIS-IND-052",
@@ -2327,7 +2470,8 @@
       "scaleDisplay": "per 1,000",
       "normalizedFormula": "(Numerator ÷ denominator) × 1000",
       "denominatorPopulation": "Total population",
-      "displayDefinition": "Confirmed cases during 1 year/populatio n under surveillance) x 1000. Denominator population: Total population."
+      "displayDefinition": "Confirmed cases during 1 year/populatio n under surveillance) x 1000. Denominator population: Total population.",
+      "programmeTags": []
     },
     {
       "id": "IND-HMIS-IND-053",
@@ -2370,7 +2514,8 @@
       "scaleDisplay": "%",
       "normalizedFormula": "(numerator ÷ denominator) × 100",
       "denominatorPopulation": "Total population",
-      "displayDefinition": "Number of slides examined. Denominator population: Total population."
+      "displayDefinition": "Number of slides examined. Denominator population: Total population.",
+      "programmeTags": []
     },
     {
       "id": "IND-HMIS-IND-054",
@@ -2416,7 +2561,10 @@
       "scaleDisplay": "per 1,000",
       "normalizedFormula": "(Numerator ÷ denominator) × 1000",
       "denominatorPopulation": "Total children under 5 years",
-      "displayDefinition": "The number of children under 5 years with diarrhoea per 1,000 population under 5 years per year. Denominator population: Total children under 5 years."
+      "displayDefinition": "The number of children under 5 years with diarrhoea per 1,000 population under 5 years per year. Denominator population: Total children under 5 years.",
+      "programmeTags": [
+        "NHM RMNCH+A"
+      ]
     }
   ]
 }

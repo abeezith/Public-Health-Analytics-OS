@@ -246,10 +246,10 @@
     "url": "https://nhm.gov.in/",
     "access": "Guidelines, reports and programme MIS",
     "boundary": "Official maternal, newborn, child, adolescent, reproductive-health and nutrition programme indicators",
-    "release": "India extension — Release 1",
-    "status": "Included — verified official subset; source-complete extraction pending",
-    "observedRecords": 8,
-    "lastChecked": "2026-08-25"
+    "release": "India Programme 2 — RMNCH+A",
+    "status": "Expanded — three source tables complete; portal and newer-manual gaps declared",
+    "observedRecords": 169,
+    "lastChecked": "2026-09-03"
   },
   {
     "id": "IND_NHM_UIP",
@@ -406,5 +406,41 @@
     "status": "Included — verified official subset; source-complete extraction pending",
     "observedRecords": 6,
     "lastChecked": "2026-08-25"
+  },
+  {
+    "id": "IND_NHM_RMNCHA_SCORECARD_2013",
+    "name": "A Strategic Approach to Reproductive, Maternal, Newborn, Child and Adolescent Health (RMNCH+A) in India",
+    "org": "National Health Mission, Ministry of Health and Family Welfare, Government of India",
+    "url": "https://nhm.gov.in/images/pdf/RMNCH%2BA/RMNCH%2BA_Strategy.pdf",
+    "access": "Public official PDF",
+    "boundary": "All 23 HMIS-based dashboard indicators and all 19 survey-based scorecard indicators listed in Annexure 2.",
+    "release": "India Programme 2 — RMNCH+A",
+    "status": "Included — source-table complete",
+    "observedRecords": 42,
+    "lastChecked": "2026-09-03"
+  },
+  {
+    "id": "IND_NHM_LAQSHYA_2017",
+    "name": "LaQshya — Labour Room Quality Improvement Initiative",
+    "org": "National Health Mission, Ministry of Health and Family Welfare, Government of India",
+    "url": "https://www.nhm.gov.in/New_Updates_2018/NHM_Components/RMNCH_MH_Guidelines/LaQshya-Guidelines.pdf",
+    "access": "Public official PDF",
+    "boundary": "All 20 facility-level target indicators in Annexure C.",
+    "release": "India Programme 2 — RMNCH+A",
+    "status": "Included — source-table complete",
+    "observedRecords": 20,
+    "lastChecked": "2026-09-03"
+  },
+  {
+    "id": "IND_NHM_RKSK_FRAMEWORK_2014",
+    "name": "Operational Framework for Rashtriya Kishor Swasthya Karyakram (RKSK)",
+    "org": "National Health Mission, Ministry of Health and Family Welfare, Government of India",
+    "url": "https://nhm.gov.in/images/pdf/programmes/RKSK/RKSK_Operational_Framework.pdf",
+    "access": "Public official PDF",
+    "boundary": "All 9 goal indicators, 63 numbered outcome/output indicators and 27 listed service-delivery indicator rows.",
+    "release": "India Programme 2 — RMNCH+A",
+    "status": "Included — source-table complete",
+    "observedRecords": 99,
+    "lastChecked": "2026-09-03"
   }
 ]

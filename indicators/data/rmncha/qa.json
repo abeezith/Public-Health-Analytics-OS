@@ -1,0 +1,32 @@
+{
+  "generated": "2026-09-03",
+  "release": "2.0.0-rmncha-deep-vertical",
+  "totalRecords": 3649,
+  "rmnchaNewRecords": 161,
+  "officialNamesPreserved": true,
+  "duplicateGeneratedIds": 0,
+  "percentageFormulaFailures": 0,
+  "missingDenominatorPopulation": 0,
+  "missingScaleDisplay": 0,
+  "classifiedCounts": {
+    "Count": 38,
+    "Percentage/proportion": 347,
+    "Unclassified": 3142,
+    "Ratio": 27,
+    "Rate per population": 36,
+    "Index": 59
+  },
+  "sourceBoundaryCounts": {
+    "IND_NHM_RMNCHA_SCORECARD_2013": 42,
+    "IND_NHM_LAQSHYA_2017": 20,
+    "IND_NHM_RKSK_FRAMEWORK_2014": 99
+  },
+  "gates": {
+    "expectedNewRecordCount": true,
+    "officialNamesPreserved": true,
+    "uniqueGeneratedIds": true,
+    "percentageFormulaStandardized": true,
+    "denominatorsExplicit": true,
+    "scalesExplicit": true
+  }
+}

@@ -22,6 +22,8 @@ npm run build:github-pages
 
 The current package is Release 1.3: 3,488 main-registry indicators, including 380 India-source-specific records. HMIS is represented through a linked, version-aware knowledge layer rather than by mixing all object types into the indicator table: 54 derived indicators, 700 April-2025 form data elements, 202 historical OGD outputs and 25 validation rules.
 
+Programme 2 expands the package to Release 2.0 with 3,649 main-registry records, including 541 India-specific records. The RMNCH+A filter exposes 215 records: 161 newly extracted official source-table indicators, 46 linked HMIS-derived indicators, and 8 earlier programme records. The completed source boundary covers all 42 RMNCH+A Strategy scorecard indicators, all 20 LaQshya Annexure C facility targets, and all 99 RKSK indicator-table rows. Restricted/current portal dictionaries and newer child-health manuals remain declared evidence gaps.
+
 Official/source indicator names, definitions and formulas are preserved. Separate normalized metadata fields classify measure type, show the calculation scale explicitly, standardize percentage expressions as `(numerator ÷ denominator) × 100`, and state the denominator population. Records without sufficient source metadata remain visibly unclassified rather than being guessed.
 
 The HMIS layer is exhaustive only for its declared public sources. It does not claim to reproduce the current live national HMIS data dictionary, validation configuration, local additions or restricted portal metadata. See the coverage section, source census and HMIS downloads for provenance and open evidence gaps.

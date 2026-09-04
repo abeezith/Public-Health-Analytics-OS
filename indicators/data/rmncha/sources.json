@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "release": "2.0.0-rmncha-deep-vertical",
+    "cutoff": "2026-09-03",
+    "title": "RMNCH+A deep vertical",
+    "newOfficialIndicatorRecords": 161,
+    "sourceDocuments": 3,
+    "boundary": "Bounded-exhaustive for the RMNCH+A Strategy scorecard (42), LaQshya Annexure C (20), and RKSK framework indicator tables (99); current restricted portal dictionaries and newer child-health manuals remain in the evidence-gap register.",
+    "officialNamePolicy": "The name and officialIndicatorName fields preserve the source-table wording, including historical terminology and typographical irregularities.",
+    "normalizationPolicy": "Normalized measure, scale, formula and denominator fields are separate analytical metadata and do not overwrite the official/source expression."
+  },
+  "sources": [
+    {
+      "id": "IND_NHM_RMNCHA_SCORECARD_2013",
+      "source": "India — RMNCH+A Strategy scorecards",
+      "document": "A Strategic Approach to Reproductive, Maternal, Newborn, Child and Adolescent Health (RMNCH+A) in India",
+      "version": "MoHFW/NHM strategy, 2013",
+      "url": "https://nhm.gov.in/images/pdf/RMNCH%2BA/RMNCH%2BA_Strategy.pdf",
+      "section": "Annexure 2: Score Card",
+      "pages": "PDF pages 75–76",
+      "boundary": "All 23 HMIS-based dashboard indicators and all 19 survey-based scorecard indicators listed in Annexure 2.",
+      "status": "Included — source-table complete"
+    },
+    {
+      "id": "IND_NHM_LAQSHYA_2017",
+      "source": "India — LaQshya",
+      "document": "LaQshya — Labour Room Quality Improvement Initiative",
+      "version": "MoHFW/NHM operational guidelines, 2017",
+      "url": "https://www.nhm.gov.in/New_Updates_2018/NHM_Components/RMNCH_MH_Guidelines/LaQshya-Guidelines.pdf",
+      "section": "Annexure C: Facility Level Targets for Incentives",
+      "pages": "PDF pages 41–42",
+      "boundary": "All 20 facility-level target indicators in Annexure C.",
+      "status": "Included — source-table complete"
+    },
+    {
+      "id": "IND_NHM_RKSK_FRAMEWORK_2014",
+      "source": "India — Rashtriya Kishor Swasthya Karyakram",
+      "document": "Operational Framework for Rashtriya Kishor Swasthya Karyakram (RKSK)",
+      "version": "MoHFW/NHM operational framework, 2014",
+      "url": "https://nhm.gov.in/images/pdf/programmes/RKSK/RKSK_Operational_Framework.pdf",
+      "section": "Exhibits 2.02 and 2.03: Goal, outcome, output and programme/service-delivery indicators",
+      "pages": "PDF pages 22–26",
+      "boundary": "All 9 goal indicators, 63 numbered outcome/output indicators and 27 listed service-delivery indicator rows.",
+      "status": "Included — source-table complete"
+    }
+  ],
+  "evidenceGaps": [
+    {
+      "id": "RMNCHA-GAP-001",
+      "source": "RCH portal live indicator dictionary",
+      "status": "Restricted/not publicly enumerated",
+      "nextAction": "Obtain custodian export of KPI, critical-indicator and beneficiary-tracking definitions; validate denominator and level metadata.",
+      "priority": "Critical"
+    },
+    {
+      "id": "RMNCHA-GAP-002",
+      "source": "RBSK 2.0 Operational Guidelines, 2026 / Samagra Shishu Bal Swasthya Karyakram materials",
+      "status": "Current official manuals identified; indicator tables not yet extracted into this source-bounded release",
+      "nextAction": "Extract current child-screening, referral, treatment-completion and DEIC indicators as a child-health subrelease.",
+      "priority": "High"
+    },
+    {
+      "id": "RMNCHA-GAP-003",
+      "source": "SUMAN facility assessment and readiness checklists",
+      "status": "Official checklist located; checklist items not treated as indicators in this release",
+      "nextAction": "Model checklist criteria as assessment knowledge objects, separate from rate/count indicators.",
+      "priority": "High"
+    },
+    {
+      "id": "RMNCHA-GAP-004",
+      "source": "PMSMA reporting and portal dictionary",
+      "status": "Public programme guidance located; complete live metric dictionary not publicly enumerated",
+      "nextAction": "Obtain or extract portal/report definitions and crosswalk with HMIS high-risk pregnancy elements.",
+      "priority": "High"
+    },
+    {
+      "id": "RMNCHA-GAP-005",
+      "source": "Family Planning FP-LMIS and quarterly reporting format",
+      "status": "Public monitoring mechanisms documented; full metric/form dictionary pending",
+      "nextAction": "Build the family-planning and commodity-logistics subrelease after source-form acquisition.",
+      "priority": "High"
+    },
+    {
+      "id": "RMNCHA-GAP-006",
+      "source": "SNCU Online / FBNC quality-of-care indicator dictionary",
+      "status": "Source system referenced by LaQshya; complete public dictionary not found",
+      "nextAction": "Acquire current SNCU indicator export and reconcile outcome, infection, asphyxia and survival measures.",
+      "priority": "High"
+    }
+  ]
+}

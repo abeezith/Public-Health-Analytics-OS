@@ -1,11 +1,11 @@
 {
-  "release": "1.3.0-hmis-knowledge-structure",
-  "cutoff": "2026-09-01",
+  "release": "2.0.0-rmncha-deep-vertical",
+  "cutoff": "2026-09-03",
   "definition": "All catalogue records satisfying the published inclusion rule for each Release 1 source, plus the curated priority collection.",
-  "totalRecords": 3488,
+  "totalRecords": 3649,
   "priorityRecords": 80,
   "sourceManifestations": 3028,
-  "declaredSources": 34,
+  "declaredSources": 37,
   "includedSources": 5,
   "sourceCompleteCatalogues": 4,
   "counts": {
@@ -42,19 +42,23 @@
     "IND_ABDM": 4,
     "IND_PMJAY": 7,
     "IND_NFHS": 12,
-    "IND_CBHI_NHP": 6
+    "IND_CBHI_NHP": 6,
+    "IND_NHM_RMNCHA_SCORECARD_2013": 42,
+    "IND_NHM_LAQSHYA_2017": 20,
+    "IND_NHM_RKSK_FRAMEWORK_2014": 99
   },
   "metadataLevels": {
+    "B": 1563,
+    "C": 126,
     "E": 80,
-    "A": 1880,
-    "B": 1276
+    "A": 1880
   },
-  "averageCompleteness": 53,
+  "averageCompleteness": 55,
   "unresolvedMappings": 3028,
   "statement": "Bounded-exhaustive for four declared global machine-readable catalogues at the cut-off date. The India extension is a verified official subset across all registered source families, not yet source-complete.",
-  "indiaSpecificRecords": 380,
+  "indiaSpecificRecords": 541,
   "indiaSourceCensus": 15,
-  "indiaStatus": "380 India-specific indicator records; HMIS adds a linked 981-object knowledge structure.",
+  "indiaStatus": "541 India-specific indicator records; 215 are discoverable under the RMNCH+A programme filter.",
   "indiaSourcesWithVerifiedRecords": 15,
   "ntepRecords": 222,
   "ntepSourceDocuments": 10,
@@ -66,5 +70,10 @@
   "hmisValidationRules": 25,
   "hmisSources": 12,
   "hmisEvidenceGaps": 10,
-  "hmisStatus": "Public-source-bounded research structure; not a complete live national HMIS dictionary."
+  "hmisStatus": "Public-source-bounded research structure; not a complete live national HMIS dictionary.",
+  "rmnchaNewRecords": 161,
+  "rmnchaLinkedExistingHmisRecords": 46,
+  "rmnchaTotalDiscoverableRecords": 215,
+  "rmnchaSourceDocuments": 3,
+  "rmnchaStatus": "Bounded-exhaustive for the RMNCH+A Strategy scorecard (42), LaQshya Annexure C (20), and RKSK framework indicator tables (99); current restricted portal dictionaries and newer child-health manuals remain in the evidence-gap register."
 }

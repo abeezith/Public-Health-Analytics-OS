@@ -1,16 +1,16 @@
 {
   "generated": "2026-09-03",
   "normalizationVersion": "1.0",
-  "totalRecords": 3488,
+  "totalRecords": 3649,
   "classifiedCounts": {
-    "Percentage/proportion": 221,
-    "Ratio": 25,
-    "Rate per population": 31,
-    "Count": 28,
-    "Index": 41
+    "Count": 38,
+    "Percentage/proportion": 347,
+    "Ratio": 27,
+    "Rate per population": 36,
+    "Index": 59
   },
   "unclassifiedPendingSourceMetadata": 3142,
-  "percentageRecords": 221,
+  "percentageRecords": 347,
   "gates": {
     "officialNamesPreserved": true,
     "allowedMeasureTypesOnly": true,
@@ -19,5 +19,5 @@
     "everyRecordHasDenominatorPopulation": true,
     "everyDisplayedDefinitionStatesDenominatorPopulation": true
   },
-  "interpretation": "Unclassified records lack enough source metadata for one of the five requested measure types; they are not guessed. Source formula/method and official indicator name remain unchanged."
+  "interpretation": "Official/source indicator names remain unchanged. Normalized fields are separate analytical metadata; unsupported classifications are not guessed."
 }
