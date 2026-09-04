@@ -79,3 +79,8 @@ footer { display:grid; grid-template-columns:auto 1fr auto; gap:28px; align-item
 /* Knowledge graph 0.2 responsive shortcut treatment. */
 .kg-concept-shortcuts{flex-wrap:wrap;overflow-x:visible;scrollbar-width:auto}
 @media(max-width:700px){.kg-concept-shortcuts{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin}}
+
+/* Expanded graph workspace. */
+body.kg-graph-open{overflow:hidden}.graph-explorer.kg-expanded{position:fixed;inset:0;z-index:1000;overflow:auto;padding:16px 22px;background:#f3f7f2}.kg-expanded .section-heading,.kg-expanded .kg-boundary,.kg-expanded .kg-metrics,.kg-expanded .kg-review-summary,.kg-expanded .kg-concept-shortcuts,.kg-expanded .kg-legend{display:none}.kg-expanded .kg-controls{position:sticky;top:0;z-index:2;margin:0 0 12px;box-shadow:0 8px 24px rgba(18,48,48,.12)}.kg-expanded .kg-workspace{height:calc(100vh - 116px);min-height:540px;grid-template-columns:minmax(0,1fr) minmax(320px,380px)}.kg-expanded #kg-canvas{height:calc(100vh - 157px)}.kg-expanded .kg-workspace aside{max-height:calc(100vh - 116px)}#kg-expand{white-space:nowrap}#kg-expand span{font-size:16px;line-height:0}
+@media(max-width:1000px){.kg-expanded .kg-workspace{grid-template-columns:minmax(0,1fr) minmax(290px,340px)}.kg-expanded .kg-workspace aside{border-top:0;border-left:1px solid #bfd0ca}}
+@media(max-width:700px){.graph-explorer.kg-expanded{padding:10px}.kg-expanded .kg-controls{position:relative}.kg-expanded .kg-workspace{height:auto;grid-template-columns:1fr}.kg-expanded #kg-canvas{height:calc(100vh - 245px);min-height:430px}.kg-expanded .kg-workspace aside{max-height:none;border-top:1px solid #bfd0ca;border-left:0}#kg-expand{flex:1}}

@@ -243,9 +243,26 @@ function updateConceptShortcuts() {
   kg$('kg-concept-shortcuts').querySelectorAll('button').forEach(button => button.classList.toggle('active', button.dataset.nodeId === kg.focusId));
 }
 
+function setExpanded(expanded) {
+  const section = kg$('knowledge-graph');
+  const button = kg$('kg-expand');
+  section.classList.toggle('kg-expanded', expanded);
+  document.body.classList.toggle('kg-graph-open', expanded);
+  button.setAttribute('aria-pressed', String(expanded));
+  button.innerHTML = expanded ? '<span aria-hidden="true">×</span> Exit expanded view' : '<span aria-hidden="true">⛶</span> Expand graph';
+  window.setTimeout(() => {
+    kg.cy?.resize();
+    kg.cy?.fit(undefined, expanded ? 70 : 50);
+  }, 80);
+}
+
 kg$('kg-focus').addEventListener('change', event => setFocus(event.target.value));
 kg$('kg-mode').addEventListener('change', renderNeighborhood);
 kg$('kg-fit').addEventListener('click', () => kg.cy?.fit(undefined, 50));
+kg$('kg-expand').addEventListener('click', () => setExpanded(!kg$('knowledge-graph').classList.contains('kg-expanded')));
 kg$('kg-back').addEventListener('click', () => navigateHistory(-1));
 kg$('kg-forward').addEventListener('click', () => navigateHistory(1));
 kg$('kg-edge-labels').addEventListener('change', event => kg.cy?.edges().toggleClass('kg-label-visible', event.target.checked));
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && kg$('knowledge-graph').classList.contains('kg-expanded')) setExpanded(false);
+});

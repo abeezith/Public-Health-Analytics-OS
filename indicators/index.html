@@ -10,11 +10,11 @@
   <meta property="og:image" content="og.png">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="alternate" type="application/ld+json" href="data/graph/schemaorg.jsonld" title="Immunization knowledge graph Schema.org profile">
-  <link rel="stylesheet" href="styles.css?v=kg-0.2.0">
+  <link rel="stylesheet" href="styles.css?v=kg-0.2.1">
   <script src="https://cdn.jsdelivr.net/npm/cytoscape@3.34.2/dist/cytoscape.min.js" defer></script>
-  <script src="app.js?v=kg-0.2.0" defer></script>
-  <script src="hmis.js?v=kg-0.2.0" defer></script>
-  <script src="graph.js?v=kg-0.2.0" defer></script>
+  <script src="app.js?v=kg-0.2.1" defer></script>
+  <script src="hmis.js?v=kg-0.2.1" defer></script>
+  <script src="graph.js?v=kg-0.2.1" defer></script>
   <script src="report-schemas.js?v=hmis-1.4-candidate" defer></script>
 </head>
 <body>
@@ -62,7 +62,7 @@
     <div class="kg-controls">
       <label><span>Start from</span><select id="kg-focus" aria-label="Knowledge graph focus"></select></label>
       <label><span>Relationship lens</span><select id="kg-mode" aria-label="Knowledge graph relationship view"><option value="computation">Concept and computation</option><option value="lineage">Source lineage</option><option value="programme">Programme context</option><option value="all">All linked evidence</option></select></label>
-      <div class="kg-control-actions"><button id="kg-back" class="kg-icon-button" aria-label="Previous graph focus" title="Previous focus">←</button><button id="kg-forward" class="kg-icon-button" aria-label="Next graph focus" title="Next focus">→</button><button id="kg-fit" class="kg-secondary">Fit graph</button></div>
+      <div class="kg-control-actions"><button id="kg-back" class="kg-icon-button" aria-label="Previous graph focus" title="Previous focus">←</button><button id="kg-forward" class="kg-icon-button" aria-label="Next graph focus" title="Next focus">→</button><button id="kg-fit" class="kg-secondary">Fit graph</button><button id="kg-expand" class="kg-secondary" aria-pressed="false"><span aria-hidden="true">⛶</span> Expand graph</button></div>
       <label class="kg-toggle"><input id="kg-edge-labels" type="checkbox"><span>Show all relationship labels</span></label>
     </div>
     <div class="kg-workspace">
