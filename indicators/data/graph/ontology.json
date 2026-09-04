@@ -2,8 +2,8 @@
   "metadata": {
     "id": "PHAOS-KG-0.1",
     "title": "Public Health Analytics-OS knowledge graph contract",
-    "version": "0.3.0",
-    "status": "Four-programme graph release",
+    "version": "0.4.0",
+    "status": "Five-programme graph release",
     "namespace": "https://abeezith.github.io/Public-Health-Analytics-OS/id/",
     "published": "2026-09-04",
     "principle": "Official source manifestations remain distinct; graph links support discovery and lineage and never imply equivalence unless explicitly typed and evidenced."

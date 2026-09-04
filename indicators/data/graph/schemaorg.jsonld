@@ -16,19 +16,19 @@
       "name": "Public Health Analytics-OS Indicator Registry",
       "url": "https://abeezith.github.io/Public-Health-Analytics-OS/indicators/",
       "dataset": {
-        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/dataset/india-programme-knowledge-graph-0.3"
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/dataset/india-programme-knowledge-graph-0.4"
       }
     },
     {
-      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/dataset/india-programme-knowledge-graph-0.3",
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/dataset/india-programme-knowledge-graph-0.4",
       "@type": [
         "Dataset",
         "dcat:Dataset"
       ],
       "name": "India multi-programme public-health indicator knowledge graph",
-      "description": "Four programme layers, 513 distinct indicator manifestations, all 1046 HMIS knowledge objects, 30 curated concepts and 77 domain-reviewed mappings.",
-      "version": "0.3.0",
-      "dateModified": "2026-09-04",
+      "description": "5 programme layers, 564 distinct indicator manifestations, all 1046 HMIS knowledge objects, 43 curated concepts and 128 domain-reviewed mappings.",
+      "version": "0.4.0",
+      "dateModified": "2026-09-05",
       "variableMeasured": [
         {
           "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-HMIS-IND-001"
@@ -200,6 +200,30 @@
         },
         {
           "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NFHS-005"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD-001"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD-002"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD-003"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD-004"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD-005"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD-006"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD-007"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD-008"
         },
         {
           "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NTEP-001"
@@ -1568,6 +1592,135 @@
         },
         {
           "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-UIP3-059"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-001"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-002"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-003"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-004"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-005"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-006"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-007"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-008"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-009"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-010"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-011"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-012"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-013"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-014"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-015"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-016"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-017"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-018"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-019"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-020"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-021"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-022"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-023"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-024"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-025"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-026"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-027"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-028"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-029"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-030"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-031"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-032"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-033"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-034"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-035"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-036"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-037"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-038"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-039"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-040"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-041"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-042"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-043"
         }
       ]
     },
@@ -1590,6 +1743,16 @@
       "termCode": "CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE",
       "name": "AEFI surveillance performance",
       "description": "Performance of adverse-event reporting, documentation, investigation, completion and causality-classification processes."
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-INCIDENCE-CHANGE",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "termCode": "CONCEPT-NCD-INCIDENCE-CHANGE",
+      "name": "Change in hypertension and diabetes incidence",
+      "description": "Source-defined change in new hypertension and diabetes occurrence in a population over time."
     },
     {
       "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-RMNCHA-CONTRACEPTIVE-USE",
@@ -1620,6 +1783,16 @@
       "termCode": "CONCEPT-RMNCHA-POSTNATAL-CARE",
       "name": "Early postnatal care",
       "description": "Postnatal contact within the source-defined early period after delivery among eligible mothers or births."
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-MEDICINE-AVAILABILITY",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "termCode": "CONCEPT-NCD-MEDICINE-AVAILABILITY",
+      "name": "Essential NCD medicine availability",
+      "description": "Availability of source-defined essential NCD medicines without a stock-out during a specified period."
     },
     {
       "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-FULL-IMMUNIZATION-COVERAGE",
@@ -1752,6 +1925,116 @@
       "description": "Presumptive TB patients receiving a nucleic-acid amplification test as their initial diagnostic test."
     },
     {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-DISEASE-CONTROL",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "termCode": "CONCEPT-NCD-DISEASE-CONTROL",
+      "name": "NCD clinical control among people in care",
+      "description": "Achievement of disease-specific clinical control criteria among a defined treatment or cumulative-care cohort."
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-COHORT-REPORTING",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "termCode": "CONCEPT-NCD-COHORT-REPORTING",
+      "name": "NCD cohort reporting completeness",
+      "description": "Inclusion of registered NCD patients in source-defined cohort and control reporting."
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-DIAGNOSTIC-FOLLOWUP",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "termCode": "CONCEPT-NCD-DIAGNOSTIC-FOLLOWUP",
+      "name": "NCD diagnostic follow-up completion",
+      "description": "Completion of diagnostic work-up among people who screened positive for an NCD."
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-DIGITAL-REPORTING",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "termCode": "CONCEPT-NCD-DIGITAL-REPORTING",
+      "name": "NCD digital reporting adoption",
+      "description": "Use of the programme information system by expected facilities and users within a stated period."
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-MULTISECTORAL-COMMUNICATION",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "termCode": "CONCEPT-NCD-MULTISECTORAL-COMMUNICATION",
+      "name": "NCD multisectoral action and communication",
+      "description": "Programme action that coordinates sectors or communicates NCD prevention and control messages."
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-POPULATION-ENROLMENT",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "termCode": "CONCEPT-NCD-POPULATION-ENROLMENT",
+      "name": "NCD population enrolment and identity linkage",
+      "description": "Registration of eligible people in the NCD information system and creation of their source-defined digital health identity."
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-PROGRAMME-INFRASTRUCTURE",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "termCode": "CONCEPT-NCD-PROGRAMME-INFRASTRUCTURE",
+      "name": "NCD programme infrastructure readiness",
+      "description": "Availability or operational status of the source-defined organizational units, clinics and clinical services required for NCD care."
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-SCREENING-DIAGNOSIS",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "termCode": "CONCEPT-NCD-SCREENING-DIAGNOSIS",
+      "name": "NCD screening and diagnosis coverage",
+      "description": "Reach of source-defined NCD screening or diagnosis among an explicitly eligible population."
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-SCREENING-SESSION-DELIVERY",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "termCode": "CONCEPT-NCD-SCREENING-SESSION-DELIVERY",
+      "name": "NCD screening session delivery",
+      "description": "Delivery of planned population-based NCD screening sessions in the source-defined place and period."
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-TREATMENT-INITIATION",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "termCode": "CONCEPT-NCD-TREATMENT-INITIATION",
+      "name": "NCD treatment initiation and current treatment",
+      "description": "Entry into or current receipt of source-defined NCD treatment or standard care among diagnosed people."
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-WORKFORCE-CAPACITY",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "termCode": "CONCEPT-NCD-WORKFORCE-CAPACITY",
+      "name": "NCD workforce capacity",
+      "description": "Availability and programme-specific preparation of the workforce required to deliver NCD services."
+    },
+    {
       "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-RMNCHA-NEONATAL-MORTALITY",
       "@type": [
         "DefinedTerm",
@@ -1879,6 +2162,16 @@
       ],
       "termCode": "PROGRAMME-VBD",
       "name": "National Centre for Vector Borne Diseases Control programmes",
+      "description": "India public-health programme family used for source-aware discovery."
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD",
+      "@type": [
+        "DefinedTerm",
+        "skos:Concept"
+      ],
+      "termCode": "PROGRAMME-NCD",
+      "name": "National Programme for Prevention and Control of Non-Communicable Diseases",
       "description": "India public-health programme family used for source-aware discovery."
     },
     {
@@ -3420,6 +3713,230 @@
         },
         {
           "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-FULL-IMMUNIZATION-COVERAGE"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD-001",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD-001",
+      "name": "Population-based NCD screening coverage",
+      "description": "Eligible people screened for the programme-defined common noncommunicable diseases. Denominator population: Programme-defined eligible or reporting population.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "Programme-defined eligible or reporting population"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NP_NCD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-SCREENING-DIAGNOSIS"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD-002",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD-002",
+      "name": "Screen-positive clients completing diagnostic work-up",
+      "description": "People screening positive who completed confirmatory diagnostic assessment. Denominator population: Programme-defined eligible or reporting population.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "Programme-defined eligible or reporting population"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NP_NCD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-DIAGNOSTIC-FOLLOWUP"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD-003",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD-003",
+      "name": "Treatment initiation among diagnosed NCD clients",
+      "description": "People diagnosed through the programme who initiated treatment. Denominator population: Programme-defined eligible or reporting population.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "Programme-defined eligible or reporting population"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NP_NCD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-TREATMENT-INITIATION"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD-004",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD-004",
+      "name": "NCD control rate among clients in care",
+      "description": "Clients in care meeting the programme disease-control criterion. Denominator population: Programme-defined eligible or reporting population.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "Programme-defined eligible or reporting population"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NP_NCD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-DISEASE-CONTROL"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD-005",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD-005",
+      "name": "Screen-positive clients completing follow-up",
+      "description": "Screen-positive clients with a documented follow-up encounter. Denominator population: Programme-defined eligible or reporting population.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "Programme-defined eligible or reporting population"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NP_NCD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-DIAGNOSTIC-FOLLOWUP"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD-006",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD-006",
+      "name": "Facilities with stock-out of essential NCD medicines",
+      "description": "Reporting facilities with a stock-out of a programme-listed essential NCD medicine. Denominator population: Programme-defined eligible or reporting population.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "Programme-defined eligible or reporting population"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NP_NCD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-MEDICINE-AVAILABILITY"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD-007",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD-007",
+      "name": "Planned population screening sessions held",
+      "description": "Population screening sessions conducted among those planned. Denominator population: Programme-defined eligible or reporting population.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "Programme-defined eligible or reporting population"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NP_NCD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-SCREENING-SESSION-DELIVERY"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD-008",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD-008",
+      "name": "Health personnel trained for population-based NCD screening",
+      "description": "Health personnel completing the programme training package. Denominator population: Not applicable—absolute count, source reporting element, or source-defined value.",
+      "statType": "Count",
+      "unitText": "count",
+      "measurementMethod": "Source-defined aggregation or count",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "Not applicable—absolute count, source reporting element, or source-defined value"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NP_NCD"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-WORKFORCE-CAPACITY"
         }
       ]
     },
@@ -14994,6 +15511,1210 @@
         },
         {
           "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-001",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-001",
+      "name": "Status of State NCD Division",
+      "description": "Status of the State NCD Division using the source-defined reporting categories. Denominator population: State NCD divisions.",
+      "statType": "Index",
+      "unitText": "source-defined index/status",
+      "measurementMethod": "Source-defined; not computable from the cited table alone",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "State NCD divisions"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-PROGRAMME-INFRASTRUCTURE"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-002",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-002",
+      "name": "Status of District NCD Division",
+      "description": "Status of District NCD Divisions using the source-defined reporting categories. Denominator population: District NCD divisions.",
+      "statType": "Index",
+      "unitText": "source-defined index/status",
+      "measurementMethod": "Source-defined; not computable from the cited table alone",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "District NCD divisions"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-PROGRAMME-INFRASTRUCTURE"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-003",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-003",
+      "name": "Status of District NCD Clinics",
+      "description": "Status of District NCD Clinics using the source-defined reporting categories. Denominator population: District NCD clinics.",
+      "statType": "Index",
+      "unitText": "source-defined index/status",
+      "measurementMethod": "Source-defined; not computable from the cited table alone",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "District NCD clinics"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-PROGRAMME-INFRASTRUCTURE"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-004",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-004",
+      "name": "Status of CHC NCD Clinics",
+      "description": "Status of CHC NCD Clinics using the source-defined reporting categories. Denominator population: CHC NCD clinics.",
+      "statType": "Index",
+      "unitText": "source-defined index/status",
+      "measurementMethod": "Source-defined; not computable from the cited table alone",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "CHC NCD clinics"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-PROGRAMME-INFRASTRUCTURE"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-005",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-005",
+      "name": "HR approved posts at State Level",
+      "description": "Number of NP-NCD human-resource posts approved at State level. Denominator population: Not applicable to a count.",
+      "statType": "Count",
+      "unitText": "count",
+      "measurementMethod": "Count of source-defined events or units",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "Not applicable to a count"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-WORKFORCE-CAPACITY"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-006",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-006",
+      "name": "HR sanctioned posts at State Level",
+      "description": "Number of NP-NCD human-resource posts sanctioned at State level. Denominator population: Not applicable to a count.",
+      "statType": "Count",
+      "unitText": "count",
+      "measurementMethod": "Count of source-defined events or units",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "Not applicable to a count"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-WORKFORCE-CAPACITY"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-007",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-007",
+      "name": "HR filled posts at State Level",
+      "description": "Number of NP-NCD human-resource posts filled at State level. Denominator population: Not applicable to a count.",
+      "statType": "Count",
+      "unitText": "count",
+      "measurementMethod": "Count of source-defined events or units",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "Not applicable to a count"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-WORKFORCE-CAPACITY"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-008",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-008",
+      "name": "HR approved posts at District Level",
+      "description": "Number of NP-NCD human-resource posts approved at District level. Denominator population: Not applicable to a count.",
+      "statType": "Count",
+      "unitText": "count",
+      "measurementMethod": "Count of source-defined events or units",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "Not applicable to a count"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-WORKFORCE-CAPACITY"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-009",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-009",
+      "name": "HR sanctioned posts at District Level",
+      "description": "Number of NP-NCD human-resource posts sanctioned at District level. Denominator population: Not applicable to a count.",
+      "statType": "Count",
+      "unitText": "count",
+      "measurementMethod": "Count of source-defined events or units",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "Not applicable to a count"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-WORKFORCE-CAPACITY"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-010",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-010",
+      "name": "HR filled posts at District Level",
+      "description": "Number of NP-NCD human-resource posts filled at District level. Denominator population: Not applicable to a count.",
+      "statType": "Count",
+      "unitText": "count",
+      "measurementMethod": "Count of source-defined events or units",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "Not applicable to a count"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-WORKFORCE-CAPACITY"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-011",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-011",
+      "name": "HR approved posts at Block Level",
+      "description": "Number of NP-NCD human-resource posts approved at Block level. Denominator population: Not applicable to a count.",
+      "statType": "Count",
+      "unitText": "count",
+      "measurementMethod": "Count of source-defined events or units",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "Not applicable to a count"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-WORKFORCE-CAPACITY"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-012",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-012",
+      "name": "HR sanctioned posts at Block Level",
+      "description": "Number of NP-NCD human-resource posts sanctioned at Block level. Denominator population: Not applicable to a count.",
+      "statType": "Count",
+      "unitText": "count",
+      "measurementMethod": "Count of source-defined events or units",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "Not applicable to a count"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-WORKFORCE-CAPACITY"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-013",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-013",
+      "name": "HR filled posts at Block Level",
+      "description": "Number of NP-NCD human-resource posts filled at Block level. Denominator population: Not applicable to a count.",
+      "statType": "Count",
+      "unitText": "count",
+      "measurementMethod": "Count of source-defined events or units",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "Not applicable to a count"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-WORKFORCE-CAPACITY"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-014",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-014",
+      "name": "Saturation of all districts having Standard Treatment Protocols for Hypertension and Diabetes",
+      "description": "Percentage of districts having Standard Treatment Protocols for hypertension and diabetes. Denominator population: All districts.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "All districts"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-PROGRAMME-INFRASTRUCTURE"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-015",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-015",
+      "name": "Saturation of all districts having NCD Clinics",
+      "description": "Percentage of districts having NCD clinics. Denominator population: All districts.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "All districts"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-PROGRAMME-INFRASTRUCTURE"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-016",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-016",
+      "name": "Saturation of all CHCs having NCD Clinics",
+      "description": "Percentage of CHCs having NCD clinics. Denominator population: All CHCs.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "All CHCs"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-PROGRAMME-INFRASTRUCTURE"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-017",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-017",
+      "name": "Saturation of all districts having Chemotherapy related services",
+      "description": "Percentage of districts having chemotherapy-related services. Denominator population: All districts.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "All districts"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-PROGRAMME-INFRASTRUCTURE"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-018",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-018",
+      "name": "Saturation of all districts having COPD and asthma services",
+      "description": "Percentage of districts having COPD and asthma services. Denominator population: All districts.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "All districts"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-PROGRAMME-INFRASTRUCTURE"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-019",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-019",
+      "name": "Saturation of all districts having STEMI services",
+      "description": "Percentage of districts having STEMI services. Denominator population: All districts.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "All districts"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-PROGRAMME-INFRASTRUCTURE"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-020",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-020",
+      "name": "Saturation of all districts having Stroke services",
+      "description": "Percentage of districts having stroke services. Denominator population: All districts.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "All districts"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-PROGRAMME-INFRASTRUCTURE"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-021",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-021",
+      "name": "Saturation of all districts having Hemodialysis services",
+      "description": "Percentage of districts having haemodialysis services. Denominator population: All districts.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "All districts"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-PROGRAMME-INFRASTRUCTURE"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-022",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-022",
+      "name": "Percentage of Programme Officers/Medical Officers trained for NP-NCD Trainings",
+      "description": "Percentage of Programme Officers and Medical Officers trained for NP-NCD. Denominator population: Programme Officers and Medical Officers requiring NP-NCD training.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "Programme Officers and Medical Officers requiring NP-NCD training"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-WORKFORCE-CAPACITY"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-023",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-023",
+      "name": "Percentage of Staff Nurse/CHO trained for NP-NCD Trainings",
+      "description": "Percentage of Staff Nurses and CHOs trained for NP-NCD. Denominator population: Staff Nurses and CHOs requiring NP-NCD training.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "Staff Nurses and CHOs requiring NP-NCD training"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-WORKFORCE-CAPACITY"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-024",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-024",
+      "name": "Percentage of ANM/MPW/ASHA trained for NP-NCD Trainings",
+      "description": "Percentage of ANMs, MPWs and ASHAs trained for NP-NCD. Denominator population: ANMs, MPWs and ASHAs requiring NP-NCD training.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "ANMs, MPWs and ASHAs requiring NP-NCD training"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-WORKFORCE-CAPACITY"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-025",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-025",
+      "name": "For NMAP – Number of meetings conducted with different ministries",
+      "description": "Number of NMAP meetings conducted with different ministries. Denominator population: Not applicable to a count.",
+      "statType": "Count",
+      "unitText": "count",
+      "measurementMethod": "Count of source-defined events or units",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "Not applicable to a count"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-MULTISECTORAL-COMMUNICATION"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-026",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-026",
+      "name": "Number of IEC activities including report (health days and campaigns) conducted at block, district, state and national level related to NCD",
+      "description": "Number of NCD-related IEC activities, including health days and campaigns, conducted at the specified administrative levels. Denominator population: Not applicable to a count.",
+      "statType": "Count",
+      "unitText": "count",
+      "measurementMethod": "Count of source-defined events or units",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "Not applicable to a count"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-MULTISECTORAL-COMMUNICATION"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-027",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-027",
+      "name": "Proportion of Health Facilities reporting through IT system (incl. SHC, PHC, NCD Clinics at CHC/DH)",
+      "description": "Proportion of programme health facilities reporting through the IT system. Denominator population: All programme health facilities, including SHC, PHC and NCD clinics at CHC/DH.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "All programme health facilities, including SHC, PHC and NCD clinics at CHC/DH"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-DIGITAL-REPORTING"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-028",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-028",
+      "name": "Proportion of active MOs in National NCD Portal in last 30 days",
+      "description": "Proportion of Medical Officers active in the National NCD Portal in the last 30 days. Denominator population: All Medical Officers expected to use the National NCD Portal.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "All Medical Officers expected to use the National NCD Portal"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-DIGITAL-REPORTING"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-029",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-029",
+      "name": "Saturation enrolment of all eligible populations aged 30 years and above on National NCD Portal",
+      "description": "Percentage of the eligible population aged 30 years and above enrolled on the National NCD Portal. Denominator population: All eligible people aged 30 years and above.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "All eligible people aged 30 years and above"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-POPULATION-ENROLMENT"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-030",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-030",
+      "name": "Saturation of creating ABHA-ID of all enrolled populations",
+      "description": "Percentage of the enrolled population for whom an ABHA-ID was created. Denominator population: All people enrolled on the National NCD Portal.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "All people enrolled on the National NCD Portal"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-POPULATION-ENROLMENT"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-031",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-031",
+      "name": "Saturation screening of eligible population aged 30 years and above for common NCDs",
+      "description": "Percentage of the eligible population aged 30 years and above screened for common NCDs. Denominator population: All eligible people aged 30 years and above.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "All eligible people aged 30 years and above"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-SCREENING-DIAGNOSIS"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-032",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-032",
+      "name": "Percentage of eligible population (target population needs to be decided based on prevalence as per NFHS-5) aged 30+ diagnosed for common NCDs",
+      "description": "Percentage of the source-defined eligible population aged 30 years and above diagnosed with common NCDs. Denominator population: Source-defined eligible target population aged 30 years and above, based on NFHS-5 prevalence.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "Source-defined eligible target population aged 30 years and above, based on NFHS-5 prevalence"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-SCREENING-DIAGNOSIS"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-033",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-033",
+      "name": "Percentage of eligible population aged 30+ put on standard of care (lifestyle modifications and treatment) for common NCDs",
+      "description": "Percentage of eligible people aged 30 years and above put on standard of care for common NCDs. Denominator population: Eligible population aged 30 years and above diagnosed with common NCDs.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "Eligible population aged 30 years and above diagnosed with common NCDs"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-TREATMENT-INITIATION"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-034",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-034",
+      "name": "Percentage of eligible population diagnosed with COPD and asthma, Stroke, STEMI, NAFLD and CKD",
+      "description": "Percentage of the source-defined eligible population diagnosed with the listed NCD conditions. Denominator population: Source-defined eligible population for COPD and asthma, stroke, STEMI, NAFLD and CKD.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "Source-defined eligible population for COPD and asthma, stroke, STEMI, NAFLD and CKD"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-SCREENING-DIAGNOSIS"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-035",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-035",
+      "name": "Percentage of eligible population who initiated treatment for COPD and asthma, Stroke, STEMI, NAFLD and CKD",
+      "description": "Percentage of diagnosed eligible people who initiated treatment for the listed NCD conditions. Denominator population: Eligible population diagnosed with COPD and asthma, stroke, STEMI, NAFLD and CKD.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "Eligible population diagnosed with COPD and asthma, stroke, STEMI, NAFLD and CKD"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-TREATMENT-INITIATION"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-036",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-036",
+      "name": "Percentage of patients on control and cohort reporting for hypertension, diabetes",
+      "description": "Percentage of registered hypertension and diabetes patients included in control and cohort reporting. Denominator population: Patients registered for hypertension and diabetes care in the source-defined cohort.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "Patients registered for hypertension and diabetes care in the source-defined cohort"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-COHORT-REPORTING"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-037",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-037",
+      "name": "Proportion of individuals with hypertension having blood pressure under control in previous 3 months",
+      "description": "Proportion of individuals with hypertension whose blood pressure was under control in the previous three months. Denominator population: Individuals with hypertension in the source-defined cumulative cohort.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "Individuals with hypertension in the source-defined cumulative cohort"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-DISEASE-CONTROL"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-038",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-038",
+      "name": "Proportion of individuals with diabetes having blood pressure under control in previous 3 months",
+      "description": "Proportion of individuals with diabetes meeting the source-stated control criterion in the previous three months. The official wording says blood pressure and requires custodian verification before analytical use. Denominator population: Individuals with diabetes in the source-defined cumulative cohort.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "Individuals with diabetes in the source-defined cumulative cohort"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-DISEASE-CONTROL"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-039",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-039",
+      "name": "Reduced Incidence of Hypertension and Diabetes",
+      "description": "Change in hypertension and diabetes incidence assessed through the source-defined research or study method. Denominator population: Source-defined population under study.",
+      "statType": "Index",
+      "unitText": "source-defined index/status",
+      "measurementMethod": "Source-defined; not computable from the cited table alone",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "Source-defined population under study"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_2023_GUIDELINES"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-INCIDENCE-CHANGE"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-040",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-040",
+      "name": "Coverage with NCD screening",
+      "description": "Coverage of the population aged more than 30 years with NCD screening in the previous year. Denominator population: Total population aged more than 30 years.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "Total population aged more than 30 years"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_TRAINING_2025"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-SCREENING-DIAGNOSIS"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-041",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-041",
+      "name": "Follow-up for care",
+      "description": "Completion of diagnostic work-up among people screening positive for an NCD. Denominator population: People screening positive for an NCD.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "People screening positive for an NCD"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_TRAINING_2025"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-DIAGNOSTIC-FOLLOWUP"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-042",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-042",
+      "name": "Treatment rate",
+      "description": "Current treatment among people diagnosed with an NCD during the year. Denominator population: People diagnosed with an NCD during the year.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "People diagnosed with an NCD during the year"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_TRAINING_2025"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-TREATMENT-INITIATION"
+        }
+      ]
+    },
+    {
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-NPNCD2-043",
+      "@type": [
+        "StatisticalVariable",
+        "ph:IndicatorManifestation"
+      ],
+      "identifier": "IND-NPNCD2-043",
+      "name": "Control rate",
+      "description": "Achievement of source-defined control values among people currently on NCD medication during the year. Denominator population: People currently on NCD medication during the year.",
+      "statType": "Percentage/proportion",
+      "unitText": "%",
+      "measurementMethod": "(numerator ÷ denominator) × 100",
+      "measurementDenominator": {
+        "@type": "StatisticalVariable",
+        "name": "People currently on NCD medication during the year"
+      },
+      "isBasedOn": {
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND_NPNCD_TRAINING_2025"
+      },
+      "about": [
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/PROGRAMME-NCD"
+        },
+        {
+          "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-NCD-DISEASE-CONTROL"
         }
       ]
     }

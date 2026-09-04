@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "0.3.0",
-    "status": "Four-programme graph release",
+    "version": "0.4.0",
+    "status": "Five-programme graph release",
     "policy": "Canonical values drive graph navigation. Original source wording remains available on nodes or relationship provenance."
   },
   "whoBuildingBlocks": [
@@ -52,6 +52,12 @@
       "label": "National Centre for Vector Borne Diseases Control programmes",
       "country": "India",
       "alternateLabels": ["NCVBDC", "Vector-borne disease control programmes"]
+    },
+    {
+      "id": "PROGRAMME-NCD",
+      "label": "National Programme for Prevention and Control of Non-Communicable Diseases",
+      "country": "India",
+      "alternateLabels": ["NP-NCD", "NPCDCS", "National Programme for Prevention and Control of Cancer, Diabetes, Cardiovascular Diseases and Stroke"]
     }
   ]
 }

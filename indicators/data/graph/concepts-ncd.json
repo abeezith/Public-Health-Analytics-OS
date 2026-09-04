@@ -1,0 +1,156 @@
+{
+  "metadata": {
+    "version": "0.4.0",
+    "programmeId": "PROGRAMME-NCD",
+    "status": "Domain-reviewed — source-bounded",
+    "reviewedOn": "2026-09-05",
+    "mappingDirection": "Indicator manifestation to source-neutral concept",
+    "directionPolicy": "For manifestation -> concept, broadMatch means the target concept is broader; narrowMatch means the target concept is narrower.",
+    "reviewPolicy": "Discovery mappings do not authorize aggregation. Disease, eligibility, diagnostic or control criterion, denominator, cohort, reporting period, portal version and facility level must be verified.",
+    "reviewDimensions": ["construct","condition","eligible population","numerator","denominator","measure type","period","reporting level","source version"]
+  },
+  "concepts": [
+    {
+      "id": "CONCEPT-NCD-PROGRAMME-INFRASTRUCTURE",
+      "label": "NCD programme infrastructure readiness",
+      "definition": "Availability or operational status of the source-defined organizational units, clinics and clinical services required for NCD care.",
+      "mappingRows": [
+        ["IND-NPNCD2-001","broadMatch","State programme-unit status","Source manifestation represents one administrative layer of programme readiness.",["State NCD division","source-defined status categories"]],
+        ["IND-NPNCD2-002","broadMatch","District programme-unit status","Source manifestation represents one administrative layer of programme readiness.",["District NCD division","source-defined status categories"]],
+        ["IND-NPNCD2-003","broadMatch","District clinic status","Source manifestation is facility-specific and status-based.",["District NCD clinic","source-defined status categories"]],
+        ["IND-NPNCD2-004","broadMatch","CHC clinic status","Source manifestation is facility-specific and status-based.",["CHC NCD clinic","source-defined status categories"]],
+        ["IND-NPNCD2-014","narrowMatch","District protocol readiness","Manifestation covers hypertension and diabetes treatment protocols only.",["hypertension and diabetes","district denominator"]],
+        ["IND-NPNCD2-015","narrowMatch","District NCD-clinic readiness","Manifestation is restricted to districts with an NCD clinic.",["district denominator","NCD clinic"]],
+        ["IND-NPNCD2-016","narrowMatch","CHC NCD-clinic readiness","Manifestation is restricted to CHCs with an NCD clinic.",["CHC denominator","NCD clinic"]],
+        ["IND-NPNCD2-017","narrowMatch","Chemotherapy service readiness","Manifestation is restricted to chemotherapy-related services.",["chemotherapy services","district denominator"]],
+        ["IND-NPNCD2-018","narrowMatch","Respiratory NCD service readiness","Manifestation is restricted to COPD and asthma services.",["COPD and asthma","district denominator"]],
+        ["IND-NPNCD2-019","narrowMatch","STEMI service readiness","Manifestation is restricted to STEMI services.",["STEMI services","district denominator"]],
+        ["IND-NPNCD2-020","narrowMatch","Stroke service readiness","Manifestation is restricted to stroke services.",["stroke services","district denominator"]],
+        ["IND-NPNCD2-021","narrowMatch","Haemodialysis service readiness","Manifestation is restricted to haemodialysis services.",["haemodialysis services","district denominator"]]
+      ]
+    },
+    {
+      "id": "CONCEPT-NCD-WORKFORCE-CAPACITY",
+      "label": "NCD workforce capacity",
+      "definition": "Availability and programme-specific preparation of the workforce required to deliver NCD services.",
+      "mappingRows": [
+        ["IND-NPNCD2-005","narrowMatch","State approved-post count","Approved posts are one input to workforce capacity.",["State level","approved posts","count"]],
+        ["IND-NPNCD2-006","narrowMatch","State sanctioned-post count","Sanctioned posts are one input to workforce capacity.",["State level","sanctioned posts","count"]],
+        ["IND-NPNCD2-007","narrowMatch","State filled-post count","Filled posts are one input to workforce capacity.",["State level","filled posts","count"]],
+        ["IND-NPNCD2-008","narrowMatch","District approved-post count","Approved posts are one input to workforce capacity.",["District level","approved posts","count"]],
+        ["IND-NPNCD2-009","narrowMatch","District sanctioned-post count","Sanctioned posts are one input to workforce capacity.",["District level","sanctioned posts","count"]],
+        ["IND-NPNCD2-010","narrowMatch","District filled-post count","Filled posts are one input to workforce capacity.",["District level","filled posts","count"]],
+        ["IND-NPNCD2-011","narrowMatch","Block approved-post count","Approved posts are one input to workforce capacity.",["Block level","approved posts","count"]],
+        ["IND-NPNCD2-012","narrowMatch","Block sanctioned-post count","Sanctioned posts are one input to workforce capacity.",["Block level","sanctioned posts","count"]],
+        ["IND-NPNCD2-013","narrowMatch","Block filled-post count","Filled posts are one input to workforce capacity.",["Block level","filled posts","count"]],
+        ["IND-NPNCD2-022","narrowMatch","Officer training coverage","Manifestation is cadre-specific training coverage.",["Programme Officers and Medical Officers","training denominator"]],
+        ["IND-NPNCD2-023","narrowMatch","Nurse and CHO training coverage","Manifestation is cadre-specific training coverage.",["Staff Nurses and CHOs","training denominator"]],
+        ["IND-NPNCD2-024","narrowMatch","Frontline-worker training coverage","Manifestation is cadre-specific training coverage.",["ANMs, MPWs and ASHAs","community workforce"]],
+        ["IND-NPNCD-008","broadMatch","Population-screening training","Existing registry manifestation does not specify the cadre denominator.",["programme-defined personnel","discovery paraphrase"]]
+      ]
+    },
+    {
+      "id": "CONCEPT-NCD-MULTISECTORAL-COMMUNICATION",
+      "label": "NCD multisectoral action and communication",
+      "definition": "Programme action that coordinates sectors or communicates NCD prevention and control messages.",
+      "mappingRows": [
+        ["IND-NPNCD2-025","narrowMatch","Inter-ministerial meeting activity","The activity measures meetings and not their reach or outcomes.",["NMAP meetings","national level","count"]],
+        ["IND-NPNCD2-026","narrowMatch","NCD IEC activity","The activity measures events and not communication reach or effect.",["IEC activities","multiple administrative levels","count"]]
+      ]
+    },
+    {
+      "id": "CONCEPT-NCD-DIGITAL-REPORTING",
+      "label": "NCD digital reporting adoption",
+      "definition": "Use of the programme information system by expected facilities and users within a stated period.",
+      "mappingRows": [
+        ["IND-NPNCD2-027","narrowMatch","Facility reporting adoption","Manifestation uses expected programme health facilities as denominator.",["facility denominator","IT reporting"]],
+        ["IND-NPNCD2-028","narrowMatch","Medical Officer portal activity","Manifestation uses expected Medical Officers and a 30-day activity window.",["Medical Officer denominator","last 30 days"]]
+      ]
+    },
+    {
+      "id": "CONCEPT-NCD-POPULATION-ENROLMENT",
+      "label": "NCD population enrolment and identity linkage",
+      "definition": "Registration of eligible people in the NCD information system and creation of their source-defined digital health identity.",
+      "mappingRows": [
+        ["IND-NPNCD2-029","narrowMatch","Population portal enrolment","Manifestation covers eligible people aged 30 years and above.",["age 30 years and above","National NCD Portal"]],
+        ["IND-NPNCD2-030","narrowMatch","ABHA identity creation","Manifestation uses enrolled people, rather than all eligible people, as denominator.",["enrolled-population denominator","ABHA-ID"]]
+      ]
+    },
+    {
+      "id": "CONCEPT-NCD-SCREENING-DIAGNOSIS",
+      "label": "NCD screening and diagnosis coverage",
+      "definition": "Reach of source-defined NCD screening or diagnosis among an explicitly eligible population.",
+      "mappingRows": [
+        ["IND-NPNCD2-031","narrowMatch","Common-NCD screening coverage","Manifestation covers eligible people aged 30 years and above and source-defined common NCDs.",["age 30 years and above","common NCD screening"]],
+        ["IND-NPNCD2-032","narrowMatch","Common-NCD diagnosis coverage","Target population is source-defined using prevalence and is not interchangeable with all people screened.",["NFHS-5-informed target population","diagnosis"]],
+        ["IND-NPNCD2-034","narrowMatch","Expanded-NCD diagnosis coverage","Manifestation covers a specified set of respiratory, cardiovascular, liver and kidney conditions.",["COPD/asthma, stroke, STEMI, NAFLD and CKD","source-defined eligible population"]],
+        ["IND-NPNCD2-040","closeMatch","Annual population NCD-screening coverage","The module supplies an explicit annual numerator and population-over-30 denominator.",["previous-year screening","population aged more than 30 years"]],
+        ["IND-NPNCD-001","broadMatch","Programme-defined NCD screening coverage","Existing registry manifestation does not preserve disease set, period or exact age convention.",["programme-defined diseases","discovery paraphrase"]]
+      ]
+    },
+    {
+      "id": "CONCEPT-NCD-DIAGNOSTIC-FOLLOWUP",
+      "label": "NCD diagnostic follow-up completion",
+      "definition": "Completion of diagnostic work-up among people who screened positive for an NCD.",
+      "mappingRows": [
+        ["IND-NPNCD2-041","closeMatch","Screen-positive diagnostic completion","The training module explicitly defines both numerator and denominator.",["screen-positive denominator","diagnostic work-up"]],
+        ["IND-NPNCD-002","closeMatch","Screen-positive diagnostic completion","Existing manifestation aligns conceptually but retains programme-defined metadata.",["programme-defined period","discovery paraphrase"]],
+        ["IND-NPNCD-005","relatedMatch","Follow-up completion","Existing manifestation may include follow-up beyond diagnostic work-up.",["follow-up scope","programme-defined period"]]
+      ]
+    },
+    {
+      "id": "CONCEPT-NCD-TREATMENT-INITIATION",
+      "label": "NCD treatment initiation and current treatment",
+      "definition": "Entry into or current receipt of source-defined NCD treatment or standard care among diagnosed people.",
+      "mappingRows": [
+        ["IND-NPNCD2-033","narrowMatch","Common-NCD standard care","Manifestation includes lifestyle modification and treatment for diagnosed people aged 30 years and above.",["standard of care","common NCDs"]],
+        ["IND-NPNCD2-035","narrowMatch","Expanded-NCD treatment initiation","Manifestation is restricted to a specified set of NCD conditions.",["COPD/asthma, stroke, STEMI, NAFLD and CKD","treatment initiation"]],
+        ["IND-NPNCD2-042","closeMatch","Annual treatment rate","The training-module manifestation uses people diagnosed during the year as denominator and current treatment as numerator.",["diagnosed during year","currently on treatment"]],
+        ["IND-NPNCD-003","broadMatch","Programme-defined treatment initiation","Existing registry manifestation lacks the exact diagnosed cohort and period.",["programme-defined cohort","discovery paraphrase"]]
+      ]
+    },
+    {
+      "id": "CONCEPT-NCD-COHORT-REPORTING",
+      "label": "NCD cohort reporting completeness",
+      "definition": "Inclusion of registered NCD patients in source-defined cohort and control reporting.",
+      "mappingRows": [
+        ["IND-NPNCD2-036","closeMatch","Hypertension and diabetes cohort reporting","Manifestation jointly covers hypertension and diabetes and requires the registered cohort denominator.",["combined disease scope","registered cohort"]]
+      ]
+    },
+    {
+      "id": "CONCEPT-NCD-DISEASE-CONTROL",
+      "label": "NCD clinical control among people in care",
+      "definition": "Achievement of disease-specific clinical control criteria among a defined treatment or cumulative-care cohort.",
+      "mappingRows": [
+        ["IND-NPNCD2-037","narrowMatch","Hypertension blood-pressure control","Manifestation is hypertension-specific and uses a previous-three-month control window.",["hypertension","blood-pressure criterion","previous three months"]],
+        ["IND-NPNCD2-038","relatedMatch","Source-stated diabetes control","Official wording says blood-pressure control for people with diabetes; semantic equivalence is not asserted.",["source wording requires clarification","diabetes cohort","blood-pressure criterion"]],
+        ["IND-NPNCD2-043","broadMatch","Annual source-defined NCD control rate","Manifestation combines source-defined control values across unspecified NCDs.",["current-medication denominator","annual period","source-defined control values"]],
+        ["IND-NPNCD-004","broadMatch","Programme-defined NCD control rate","Existing registry manifestation does not specify disease, clinical criterion or cohort.",["programme-defined control","discovery paraphrase"]]
+      ]
+    },
+    {
+      "id": "CONCEPT-NCD-INCIDENCE-CHANGE",
+      "label": "Change in hypertension and diabetes incidence",
+      "definition": "Source-defined change in new hypertension and diabetes occurrence in a population over time.",
+      "mappingRows": [
+        ["IND-NPNCD2-039","closeMatch","Research-assessed incidence reduction","The source does not supply a computable operational formula and requires study-method metadata.",["hypertension and diabetes","annual study","source-defined method"]]
+      ]
+    },
+    {
+      "id": "CONCEPT-NCD-MEDICINE-AVAILABILITY",
+      "label": "Essential NCD medicine availability",
+      "definition": "Availability of source-defined essential NCD medicines without a stock-out during a specified period.",
+      "mappingRows": [
+        ["IND-NPNCD-006","broadMatch","Facility NCD medicine stock-out","Existing manifestation requires medicine list, facility denominator and stock-out period from the operational dictionary.",["facility denominator","medicine list","stock-out period"]]
+      ]
+    },
+    {
+      "id": "CONCEPT-NCD-SCREENING-SESSION-DELIVERY",
+      "label": "NCD screening session delivery",
+      "definition": "Delivery of planned population-based NCD screening sessions in the source-defined place and period.",
+      "mappingRows": [
+        ["IND-NPNCD-007","closeMatch","Planned screening-session completion","Existing manifestation needs the exact session plan and cancellation rules.",["planned-session denominator","programme-defined period"]]
+      ]
+    }
+  ]
+}

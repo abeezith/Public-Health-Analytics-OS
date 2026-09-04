@@ -1,68 +1,70 @@
 {
   "metadata": {
-    "graphId": "PHAOS-KG-INDIA-0.3",
-    "checked": "2026-09-04"
+    "graphId": "PHAOS-KG-INDIA-0.4",
+    "checked": "2026-09-05"
   },
   "counts": {
-    "nodes": 1679,
-    "edges": 6727,
-    "indicators": 513,
+    "nodes": 1766,
+    "edges": 7169,
+    "indicators": 564,
     "hmisObjects": 1046,
-    "concepts": 30,
-    "reviewedMappings": 77,
-    "sources": 13,
-    "evidenceGaps": 16,
+    "concepts": 43,
+    "reviewedMappings": 128,
+    "sources": 16,
+    "evidenceGaps": 21,
     "programmes": {
       "PROGRAMME-UIP": 76,
       "PROGRAMME-RMNCHA": 215,
       "PROGRAMME-NTEP": 222,
-      "PROGRAMME-VBD": 10
+      "PROGRAMME-VBD": 10,
+      "PROGRAMME-NCD": 51
     },
     "conceptsByProgramme": {
       "PROGRAMME-UIP": 5,
       "PROGRAMME-RMNCHA": 9,
       "PROGRAMME-NTEP": 8,
-      "PROGRAMME-VBD": 8
+      "PROGRAMME-VBD": 8,
+      "PROGRAMME-NCD": 13
     },
     "nodeTypes": {
       "DataSystem": 1,
-      "EvidenceGap": 16,
+      "EvidenceGap": 21,
       "HmisObject": 1000,
-      "IndicatorConcept": 30,
-      "IndicatorManifestation": 513,
+      "IndicatorConcept": 43,
+      "IndicatorManifestation": 564,
       "MeasureType": 5,
-      "Organization": 7,
-      "Programme": 4,
-      "ProgrammeComponent": 77,
+      "Organization": 8,
+      "Programme": 5,
+      "ProgrammeComponent": 90,
       "ReportingLevel": 7,
-      "SourceDocument": 13,
+      "SourceDocument": 16,
       "WHOBuildingBlock": 6
     },
     "edgeTypes": {
-      "partOfProgramme": 1275,
-      "definedBy": 1513,
+      "partOfProgramme": 1339,
+      "definedBy": 1564,
       "reportedThrough": 1046,
-      "publishedBy": 13,
-      "hasMeasureType": 359,
-      "hasProgrammeComponent": 513,
-      "lowestReportingLevel": 513,
+      "publishedBy": 16,
+      "hasMeasureType": 410,
+      "hasProgrammeComponent": 564,
+      "lowestReportingLevel": 564,
       "relatedHmisObject": 136,
-      "supportsBuildingBlock": 1104,
+      "supportsBuildingBlock": 1214,
       "usesDataElement": 125,
-      "manifestationOf": 77,
-      "relatedIndicator": 37,
-      "limitsCompletenessOf": 16
+      "manifestationOf": 128,
+      "relatedIndicator": 42,
+      "limitsCompletenessOf": 21
     }
   },
   "gates": {
-    "fourProgrammeLayers": {
-      "expected": 4,
-      "actual": 4,
+    "programmeLayers": {
+      "expected": 5,
+      "actual": 5,
       "pass": true
     },
     "allProgrammeIndicatorsRepresented": {
-      "expected": 513,
-      "actual": 513,
+      "expected": 564,
+      "actual": 564,
       "pass": true
     },
     "fullHmisSpineRepresented": {
@@ -71,8 +73,8 @@
       "pass": true
     },
     "conceptsRepresented": {
-      "expected": 30,
-      "actual": 30,
+      "expected": 43,
+      "actual": 43,
       "pass": true
     },
     "noDanglingEdges": {
@@ -88,7 +90,7 @@
       "pass": true
     },
     "allMappingsDomainReviewed": {
-      "expected": 77,
+      "expected": 128,
       "failures": 0,
       "pass": true
     },

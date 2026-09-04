@@ -24,7 +24,7 @@ Promise.all([
   hmisFill('hmis-facility',hmisState.objects.flatMap(x=>x.facilityTypes||[]));
   hmisFill('hmis-version',hmisState.objects.map(x=>x.versionStatus).filter(Boolean));
   hmisFilter();
-}).catch(()=>{h$('hmis-grid').innerHTML='<div class="empty-state"><h3>HMIS data could not be loaded</h3><p>Reload the page or download the structured catalogue.</p></div>';});
+}).catch(()=>{h$('hmis-grid').innerHTML='<div class="empty-state"><h3>HMIS data could not be loaded</h3><p>Reload the page to retry the structured catalogue.</p></div>';});
 
 function expandHeadquarters(doc){
   return (doc.records||[]).map(([id,reportingUnit,code,name,component,domain,page])=>{

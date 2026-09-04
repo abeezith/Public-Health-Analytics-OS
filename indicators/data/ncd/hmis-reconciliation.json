@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "release": "1.0.0-ncd",
+    "reviewedOn": "2026-09-05",
+    "scope": "Crosswalk review between the 43 new NP-NCD source manifestations and the 1,046 HMIS knowledge objects in the current registry.",
+    "policy": "A thematic match is not treated as a computable crosswalk. Exact linkage requires compatible construct, numerator, denominator, period, population and reporting level."
+  },
+  "result": {
+    "newNcdManifestationsReviewed": 43,
+    "hmisObjectsReviewed": 1046,
+    "exactComputableCrosswalks": 0,
+    "relatedHmisObjects": [
+      {"id":"HMIS-DE-0292","name":"Number of beneficiaries who are registered at the NCD clinic","relationship":"Related to NCD registration, but not sufficient to compute population enrolment, screening, diagnosis, treatment or control coverage.","decision":"Do not assert usesDataElement"},
+      {"id":"HMIS-DE-0334","name":"Number of deaths due to Cancer","relationship":"Disease-specific mortality count outside the cited NP-NCD monitoring manifestations.","decision":"Retain as a distinct related outcome object"},
+      {"id":"HMIS-DE-0337","name":"Number of deaths due to Heart disease/Hypertension related","relationship":"Mortality count is not equivalent to hypertension incidence or clinical control.","decision":"Retain as a distinct related outcome object"},
+      {"id":"HMIS-DE-0344","name":"Number of deaths due to Neurological disease including strokes","relationship":"Mortality count is not equivalent to stroke-service readiness, diagnosis or treatment initiation.","decision":"Retain as a distinct related outcome object"}
+    ],
+    "excludedFromCrosswalk": [
+      "Pregnancy-specific hypertension and gestational-diabetes elements because their population and clinical pathway are RMNCH+A-specific.",
+      "Childhood-asthma and mixed inpatient respiratory elements because their age group, construct and condition set differ from the NP-NCD manifestations.",
+      "Raw mortality counts because none supplies the denominators or cohorts required by the NP-NCD coverage and control measures."
+    ]
+  },
+  "nextEvidenceRequired": "Current custodian-approved National NCD Portal field and indicator dictionary, including field codes, numerator/denominator specifications, validation rules and reporting hierarchy."
+}
