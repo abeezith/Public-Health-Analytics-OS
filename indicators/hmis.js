@@ -3,7 +3,7 @@ const h$ = id => document.getElementById(id);
 const hmisFields = ['hmis-search','hmis-object-type','hmis-component','hmis-facility','hmis-version'];
 
 Promise.all([
-  fetch('./data/hmis/catalog.json?v=rmncha-2.0.0', {cache:'no-store'}).then(r=>r.json()),
+  fetch('./data/hmis/catalog.json?v=immunization-3.0.0', {cache:'no-store'}).then(r=>r.json()),
   fetch('./data/hmis/crosswalks.json?v=hmis-1.3.0', {cache:'no-store'}).then(r=>r.json())
 ]).then(([catalog,crosswalk])=>{
   hmisState.objects=catalog.objects||[];

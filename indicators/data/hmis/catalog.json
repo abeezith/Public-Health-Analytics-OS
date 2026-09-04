@@ -16,7 +16,9 @@
     "versionPolicy": "Current public forms, historical technical definitions and historical published outputs remain explicitly separated.",
     "measureMetadataNormalization": "v1.0 — official names preserved",
     "rmnchaLinkedObjects": 627,
-    "rmnchaLinkageRule": "Objects in maternal/newborn/reproductive-health or child/adolescent/nutrition domains are discoverable in the RMNCH+A vertical without changing their HMIS identity."
+    "rmnchaLinkageRule": "Objects in maternal/newborn/reproductive-health or child/adolescent/nutrition domains are discoverable in the RMNCH+A vertical without changing their HMIS identity.",
+    "immunizationLinkedObjects": 102,
+    "immunizationLinkageRule": "HMIS objects classified to Immunization or explicitly referring to immunization, vaccination, AEFI or cold chain are tagged for Programme 3 discovery without changing HMIS identity."
   },
   "objects": [
     {
@@ -308,7 +310,8 @@
       "denominatorPopulation": "Estimated children below 1 year",
       "displayDefinition": "% of children aged between 9 and 11 months who have been fully immunized (Child given one dose of BCG, three dosages of DPT i.e. DPT 1,2,3; three dosages of polio i.e. OPV 1,2,3 and a dosage of Measles). Denominator population: Estimated children below 1 year.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -355,7 +358,8 @@
       "denominatorPopulation": "Estimated children below 1 year",
       "displayDefinition": "The percentage of live births that received BCG within one year. Denominator population: Estimated children below 1 year.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -402,7 +406,8 @@
       "denominatorPopulation": "Estimated children below 1 year",
       "displayDefinition": "The percentage of children who received their 3 doses of DTP-3. Denominator population: Estimated children below 1 year.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -449,7 +454,8 @@
       "denominatorPopulation": "Estimated children below 1 year",
       "displayDefinition": "The percentage of children under 1 immunised with OPV dose 3. Denominator population: Estimated children below 1 year.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -496,7 +502,8 @@
       "denominatorPopulation": "Estimated children below 1 year",
       "displayDefinition": "The percentage of children who received their measles dose (normally at 9 months). Denominator population: Estimated children below 1 year.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -543,7 +550,8 @@
       "denominatorPopulation": "Number of children given BCG",
       "displayDefinition": "% of children who dropped out of immunisation schedule between BCG dose measles dose. Denominator population: Number of children given BCG.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -589,7 +597,8 @@
       "denominatorPopulation": "Number of children given DPT3",
       "displayDefinition": "The percentage of children who dropped out of the immunisation schedule between the third doses (normally at 14 weeks) and the measles dose (normally at 9 months). Denominator population: Number of children given DPT3.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -3045,7 +3054,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Adverse Event Following Immunisation (AEFI). Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -4544,7 +4554,9 @@
       "normalizedFormula": "",
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Chikungunya Enzyme- Linked Immuno Sorbent Assay (ELISA) test conducted. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
-      "programmeTags": []
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-DE-0031",
@@ -4606,7 +4618,9 @@
       "normalizedFormula": "",
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Chikungunya Enzyme- Linked Immuno Sorbent Assay (ELISA) test found positive. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
-      "programmeTags": []
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-DE-0032",
@@ -4748,7 +4762,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation (9-11months) - JE 1st dose. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -4821,7 +4836,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation (9-11months) - Measles & Rubella (MR)/Measles containing vaccine(MCV) - 1st Dose. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -4892,7 +4908,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation (after 12 months-delayed vaccination) - JE 1st dose. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -4963,7 +4980,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation - BCG. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -5034,7 +5052,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation - DPT 1 after 12 months of age (delayed vaccination). Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -5107,7 +5126,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation - DPT 1st Booster. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -5178,7 +5198,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation - DPT 2 after 12 months of age (delayed vaccination). Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -5249,7 +5270,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation - DPT 3 after 12 months of age (delayed vaccination). Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -5322,7 +5344,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation - DPT Booster after 24 months of age (delayed vaccination). Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -5393,7 +5416,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation - Hepatitis-B0 (Birth Dose). Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -5464,7 +5488,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation - Inactivated Injectable Polio Vaccine 1 (IPV 1). Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -5535,7 +5560,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation - Inactivated Injectable Polio Vaccine 2 (IPV 2). Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -5606,7 +5632,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation - JE Booster after 24 months of age (delayed vaccination). Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -5679,7 +5706,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation - Measles & Rubella (MR)/ Measles containing vaccine(MCV)- 2nd Dose (16-24 months). Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -5750,7 +5778,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation - OPV 0 (Birth Dose). Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -5823,7 +5852,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation - OPV Booster. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -5896,7 +5926,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation - OPV Booster after 24 months of age (delayed vaccination). Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -5969,7 +6000,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation - OPV1. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -6042,7 +6074,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation - OPV2. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -6115,7 +6148,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation - OPV3. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -6186,7 +6220,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation - PCV Booster. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -6257,7 +6292,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation - PCV1. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -6328,7 +6364,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation - PCV2. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -6399,7 +6436,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation - Pentavalent 1. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -6470,7 +6508,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation - Pentavalent 2. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -6541,7 +6580,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation - Pentavalent 3. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -6612,7 +6652,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation - Rotavirus 1. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -6683,7 +6724,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation - Rotavirus 2. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -6754,7 +6796,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation - Rotavirus 3. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -6825,7 +6868,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation - Vitamin A Dose - 1. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -6896,7 +6940,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation - Vitamin A Dose - 5. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -6970,7 +7015,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation - Vitamin A Dose - 9. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -7041,7 +7087,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation - Vitamin K (Birth Dose). Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -7112,7 +7159,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation(9 - 11 months) - Inactivated Injectable Polio Vaccine 3 (IPV 3). Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -7185,7 +7233,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child immunisation(after 12 months-delayed vaccination) - Measles & Rubella (MR)/Measles containing vaccine(MCV)- 1st Dose. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -7256,7 +7305,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Child Immunization- Typhoid. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -7810,7 +7860,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Childhood Diseases - Measles. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -8625,7 +8676,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Children given following vaccination after 12 months (delayed vaccinations). Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -8696,7 +8748,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Children more than 10 years received Td10 (Tetanus Diptheria10). Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -8767,7 +8820,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Children more than 16 years received Td16 (Tetanus Diptheria16). Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -8840,7 +8894,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Children more than 5 years received DPT5 (2nd Booster). Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -8911,7 +8966,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Children received Vitamin A Doses between 9 months and 5 years. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -9850,7 +9906,9 @@
       "normalizedFormula": "",
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Dengue - Enzyme- Linked Immuno Sorbent Assay (ELISA) test conducted. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
-      "programmeTags": []
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-DE-0107",
@@ -9916,7 +9974,9 @@
       "normalizedFormula": "",
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Dengue - Enzyme- Linked Immuno Sorbent Assay (ELISA) test found positive. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
-      "programmeTags": []
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-DE-0108",
@@ -11805,7 +11865,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: FULLY IMMUNIZED children aged between 9 and <12 months- Female. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -11880,7 +11941,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: FULLY IMMUNIZED children aged between 9 and <12 months- Male. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -12763,7 +12825,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Immunisation sessions held. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -12836,7 +12899,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Immunisation sessions planned. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -22757,7 +22821,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Number of cases of AEFI - Serious (eg.- hospitalization, death, disability , cluster etc.). Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -22828,7 +22893,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Number of cases of AEFI - Severe (eg.- anaphylaxis, fever>102 degrees, not requiring hospitalization etc.). Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -22899,7 +22965,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Number of cases of AEFI -Minor (eg.- fever, rash, pain etc). Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -23392,7 +23459,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Number of Child Deaths (1 -below 5 years) due to Measles. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -23925,7 +23993,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Number of Children 9-11 months who received:. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -24000,7 +24069,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Number of children aged between 9 and <12 months FULLY IMMUNIZED {BCG +OPV123+ Pentavalent123+ MR/ Measles Containing Vaccine (MCV)-1st Dose}. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -24373,7 +24443,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Number of Children more than 12 months who received:. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -24444,7 +24515,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Number of children more than 16 months of age who received Japanese Encephalitis (JE) vaccine- 2nd dose (16-24 months). Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -24515,7 +24587,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Number of Children more than 23 months who received:. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -28013,7 +28086,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Number of Immunisation sessions. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -28719,7 +28793,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Number of Infant Deaths (>28 days -below 12 months) due to Measles. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -28862,7 +28937,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Number of Infants 0 to 11 months old who received:. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -31327,7 +31403,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Number of New Borns to Pregnant Women (found positive for HBsAg) received Hepatitis B Immunoglobulin (HBIG) (within 24 hours of birth). Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -31540,7 +31617,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Number of newborn who received birth dose of Hepatitis B vaccine born to HBsAg positive pregnant women. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -39733,7 +39811,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Monthly HMIS reporting element: Out of Number of cases of AEFI - Serious , total number of AEFI deaths. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -55360,7 +55439,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "HMIS output published in the OGD district-level key-indicator catalogue: Number of Infants given OPV 0 (Birth Dose). Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -55400,7 +55480,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "HMIS output published in the OGD district-level key-indicator catalogue: Number of Infants given BCG. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -55598,7 +55679,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "HMIS output published in the OGD district-level key-indicator catalogue: Number of Infants given DPT1. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -55638,7 +55720,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "HMIS output published in the OGD district-level key-indicator catalogue: Number of Infants given DPT2. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -55678,7 +55761,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "HMIS output published in the OGD district-level key-indicator catalogue: Number of Infants given DPT3. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -55832,7 +55916,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "HMIS output published in the OGD district-level key-indicator catalogue: Number of Infants given Measles. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -55910,7 +55995,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "HMIS output published in the OGD district-level key-indicator catalogue: % Infants 0 to 11 months old who received Measles+ MR vaccine to reported live births. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -55950,7 +56036,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "HMIS output published in the OGD district-level key-indicator catalogue: Number of fully immunized children (9-11 months). Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -55990,7 +56077,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "HMIS output published in the OGD district-level key-indicator catalogue: % Drop Out between BCG & Measles/ MR. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -56068,7 +56156,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "HMIS output published in the OGD district-level key-indicator catalogue: % Children given Vitamin A Dose 9 to Children given Vit A dose1. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -56222,7 +56311,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "HMIS output published in the OGD district-level key-indicator catalogue: % immunisation Sessions Held to Immunisation Sessions Planned. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -56262,7 +56352,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "HMIS output published in the OGD district-level key-indicator catalogue: % Immunisation Sessions where ASHAs were present to Immunisation Sessions Planned. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -56608,7 +56699,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "HMIS output published in the OGD district-level key-indicator catalogue: Measles in Children 0-5 Years of Age. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -56766,7 +56858,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "HMIS output published in the OGD district-level key-indicator catalogue: No. of infants given Measles Rubella vaccine 1st dose. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -56806,7 +56899,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "HMIS output published in the OGD district-level key-indicator catalogue: No. of infants received Rotavirus Vaccine 1st dose. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -56846,7 +56940,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "HMIS output published in the OGD district-level key-indicator catalogue: No. of infants received Rotavirus Vaccine 2nd dose. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -56886,7 +56981,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "HMIS output published in the OGD district-level key-indicator catalogue: No. of infants received Rotavirus Vaccine 3nd dose. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -56926,7 +57022,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "HMIS output published in the OGD district-level key-indicator catalogue: No of children 16-24 months age given Measles 2nd dose. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -56966,7 +57063,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "HMIS output published in the OGD district-level key-indicator catalogue: No of children 16-24 months age given Measles Rubella Vaccine 2nd dose. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -58158,7 +58256,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "HMIS output published in the OGD district-level key-indicator catalogue: % Deaths due to Measles to Total Reported Infant Deaths. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -58278,7 +58377,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "HMIS output published in the OGD district-level key-indicator catalogue: Measles immunization at urban Health facilities i.e SC+PHC+CHC+SDH+DH. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -58890,7 +58990,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Plausibility query; catchment/referral effects possible. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -58944,7 +59045,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Logical plan/achievement relationship. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -59012,7 +59114,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Legacy schedule relationship. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -59080,7 +59183,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Legacy schedule relationship. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -59134,7 +59238,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Legacy schedule relationship. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -59188,7 +59293,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Legacy schedule relationship. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -59242,7 +59348,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Legacy schedule relationship. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -59324,7 +59431,8 @@
       "denominatorPopulation": "Not supplied in registry metadata; consult the authoritative source",
       "displayDefinition": "Legacy schedule relationship. Denominator population: Not supplied in registry metadata; consult the authoritative source.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {

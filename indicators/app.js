@@ -2,7 +2,7 @@ const state = { indicators: [], filtered: [], visible: 24 };
 const $ = (id) => document.getElementById(id);
 const fields = ['search','geography','program','component','level','domain','type','measure','source','pillar','sort'];
 
-fetch('./data/indicators.json?v=rmncha-2.0.0', { cache: 'no-store' }).then(r => r.json()).then(data => {
+fetch('./data/indicators.json?v=immunization-3.0.0', { cache: 'no-store' }).then(r => r.json()).then(data => {
   state.indicators = data.indicators || [];
   $('metric-indicators').textContent = state.indicators.length;
   $('metric-domains').textContent = new Set(state.indicators.map(x => x.domain)).size;
@@ -13,6 +13,10 @@ fetch('./data/indicators.json?v=rmncha-2.0.0', { cache: 'no-store' }).then(r => 
   if (data.coverage && $('metric-rmncha')) $('metric-rmncha').textContent = data.coverage.rmnchaTotalDiscoverableRecords || 0;
   if (data.coverage && $('metric-rmncha-new')) $('metric-rmncha-new').textContent = data.coverage.rmnchaNewRecords || 0;
   if (data.coverage && $('metric-rmncha-sources')) $('metric-rmncha-sources').textContent = data.coverage.rmnchaSourceDocuments || 0;
+  if (data.coverage && $('metric-immunization')) $('metric-immunization').textContent = data.coverage.immunizationTotalDiscoverableRecords || 0;
+  if (data.coverage && $('metric-immunization-new')) $('metric-immunization-new').textContent = data.coverage.immunizationNewRecords || 0;
+  if (data.coverage && $('metric-immunization-hmis')) $('metric-immunization-hmis').textContent = data.coverage.immunizationLinkedHmisObjects || 0;
+  if (data.coverage && $('metric-immunization-sources')) $('metric-immunization-sources').textContent = data.coverage.immunizationSourceDocuments || 0;
   fillSelect('geography', state.indicators.map(x => x.country || 'Global / multi-country'));
   fillSelect('program', state.indicators.flatMap(x => x.programmeTags?.length ? x.programmeTags : [x.indiaProgram]).filter(Boolean));
   fillSelect('component', state.indicators.map(x => x.programmeComponent).filter(Boolean));

@@ -13,7 +13,9 @@
     "totalObjects": 981,
     "sourceCount": 12,
     "openEvidenceGaps": 10,
-    "versionPolicy": "Current public forms, historical technical definitions and historical published outputs remain explicitly separated."
+    "versionPolicy": "Current public forms, historical technical definitions and historical published outputs remain explicitly separated.",
+    "immunizationLinkedObjects": 21,
+    "immunizationLinkageRule": "HMIS objects classified to Immunization or explicitly referring to immunization, vaccination, AEFI or cold chain are tagged for Programme 3 discovery without changing HMIS identity."
   },
   "publishedOutputs": [
     {
@@ -46,7 +48,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-002",
@@ -78,7 +81,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-003",
@@ -110,7 +114,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-004",
@@ -142,7 +147,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-005",
@@ -174,7 +180,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-006",
@@ -206,7 +213,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-007",
@@ -238,7 +246,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-008",
@@ -270,7 +279,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-009",
@@ -302,7 +312,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-010",
@@ -334,7 +345,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-011",
@@ -366,7 +378,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-012",
@@ -398,7 +411,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-013",
@@ -430,7 +444,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-014",
@@ -462,7 +477,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-015",
@@ -494,7 +510,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-016",
@@ -526,7 +543,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-017",
@@ -558,7 +576,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-018",
@@ -590,7 +609,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-019",
@@ -622,7 +642,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-020",
@@ -654,7 +675,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-021",
@@ -686,7 +708,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-022",
@@ -718,7 +741,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-023",
@@ -750,7 +774,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-024",
@@ -782,7 +807,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-025",
@@ -814,7 +840,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-026",
@@ -846,7 +873,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-027",
@@ -878,7 +906,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-028",
@@ -910,7 +939,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-029",
@@ -942,7 +972,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-030",
@@ -974,7 +1005,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-031",
@@ -1006,7 +1038,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-032",
@@ -1038,7 +1071,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-033",
@@ -1070,7 +1104,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-034",
@@ -1102,7 +1137,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-035",
@@ -1134,7 +1170,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-036",
@@ -1166,7 +1203,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-037",
@@ -1198,7 +1236,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-038",
@@ -1230,7 +1269,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-039",
@@ -1262,7 +1302,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-040",
@@ -1294,7 +1335,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-041",
@@ -1326,7 +1368,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-042",
@@ -1358,7 +1401,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-043",
@@ -1390,7 +1434,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-044",
@@ -1422,7 +1467,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-045",
@@ -1454,7 +1500,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-046",
@@ -1486,7 +1533,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-047",
@@ -1518,7 +1566,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-048",
@@ -1550,7 +1599,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-049",
@@ -1582,7 +1632,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-050",
@@ -1614,7 +1665,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-051",
@@ -1646,7 +1698,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-052",
@@ -1678,7 +1731,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-053",
@@ -1710,7 +1764,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-054",
@@ -1742,7 +1797,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-055",
@@ -1774,7 +1830,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-056",
@@ -1806,7 +1863,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-057",
@@ -1838,7 +1896,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-058",
@@ -1870,7 +1929,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-059",
@@ -1902,7 +1962,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-060",
@@ -1934,7 +1995,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-061",
@@ -1966,7 +2028,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-062",
@@ -1998,7 +2061,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-063",
@@ -2030,7 +2094,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-064",
@@ -2062,7 +2127,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-065",
@@ -2094,7 +2160,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-066",
@@ -2126,7 +2193,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-067",
@@ -2158,7 +2226,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-068",
@@ -2190,7 +2259,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-069",
@@ -2222,7 +2292,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-070",
@@ -2254,7 +2325,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-071",
@@ -2286,7 +2358,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-072",
@@ -2318,7 +2391,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-073",
@@ -2350,7 +2424,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-074",
@@ -2382,7 +2457,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-075",
@@ -2414,7 +2490,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-076",
@@ -2446,7 +2523,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-077",
@@ -2478,7 +2556,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-078",
@@ -2510,7 +2589,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-079",
@@ -2542,7 +2622,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-080",
@@ -2574,7 +2655,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-081",
@@ -2606,7 +2688,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-082",
@@ -2638,7 +2721,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-083",
@@ -2670,7 +2754,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-084",
@@ -2702,7 +2787,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-085",
@@ -2734,7 +2820,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-086",
@@ -2766,7 +2853,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-087",
@@ -2798,7 +2886,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-088",
@@ -2830,7 +2919,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-089",
@@ -2862,7 +2952,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-090",
@@ -2894,7 +2985,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-091",
@@ -2926,7 +3018,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-092",
@@ -2958,7 +3051,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-093",
@@ -2990,7 +3084,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-094",
@@ -3022,7 +3117,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-095",
@@ -3054,7 +3150,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-096",
@@ -3086,7 +3183,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-097",
@@ -3118,7 +3216,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-098",
@@ -3150,7 +3249,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-099",
@@ -3182,7 +3282,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-100",
@@ -3214,7 +3315,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-101",
@@ -3246,7 +3348,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-102",
@@ -3278,7 +3381,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-103",
@@ -3310,7 +3414,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-104",
@@ -3342,7 +3447,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-105",
@@ -3374,7 +3480,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-106",
@@ -3406,7 +3513,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-107",
@@ -3438,7 +3546,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-108",
@@ -3470,7 +3579,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-109",
@@ -3502,7 +3612,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-110",
@@ -3534,7 +3645,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-111",
@@ -3566,7 +3678,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-112",
@@ -3598,7 +3711,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-113",
@@ -3630,7 +3744,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-114",
@@ -3662,7 +3777,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-115",
@@ -3694,7 +3810,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-116",
@@ -3726,7 +3843,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-117",
@@ -3758,7 +3876,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-118",
@@ -3790,7 +3909,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-119",
@@ -3822,7 +3942,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-120",
@@ -3854,7 +3975,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-121",
@@ -3886,7 +4008,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-122",
@@ -3918,7 +4041,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-123",
@@ -3950,7 +4074,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-124",
@@ -3982,7 +4107,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-125",
@@ -4014,7 +4140,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-126",
@@ -4046,7 +4173,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-127",
@@ -4078,7 +4206,10 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-OUT-128",
@@ -4110,7 +4241,10 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-OUT-129",
@@ -4142,7 +4276,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-130",
@@ -4174,7 +4309,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-131",
@@ -4206,7 +4342,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-132",
@@ -4238,7 +4375,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-133",
@@ -4270,7 +4408,10 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-OUT-134",
@@ -4302,7 +4443,10 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-OUT-135",
@@ -4334,7 +4478,10 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-OUT-136",
@@ -4366,7 +4513,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-137",
@@ -4398,7 +4546,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-138",
@@ -4430,7 +4579,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-139",
@@ -4462,7 +4612,10 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-OUT-140",
@@ -4494,7 +4647,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-141",
@@ -4526,7 +4680,10 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-OUT-142",
@@ -4558,7 +4715,10 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-OUT-143",
@@ -4590,7 +4750,10 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-OUT-144",
@@ -4622,7 +4785,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-145",
@@ -4654,7 +4818,10 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-OUT-146",
@@ -4686,7 +4853,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-147",
@@ -4718,7 +4886,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-148",
@@ -4750,7 +4919,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-149",
@@ -4782,7 +4952,10 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-OUT-150",
@@ -4814,7 +4987,10 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-OUT-151",
@@ -4846,7 +5022,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-152",
@@ -4878,7 +5055,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-153",
@@ -4910,7 +5088,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-154",
@@ -4942,7 +5121,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-155",
@@ -4974,7 +5154,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-156",
@@ -5006,7 +5187,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-157",
@@ -5038,7 +5220,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-158",
@@ -5070,7 +5253,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-159",
@@ -5102,7 +5286,10 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-OUT-160",
@@ -5134,7 +5321,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-161",
@@ -5166,7 +5354,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-162",
@@ -5198,7 +5387,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-163",
@@ -5230,7 +5420,10 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-OUT-164",
@@ -5262,7 +5455,10 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-OUT-165",
@@ -5294,7 +5490,10 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-OUT-166",
@@ -5326,7 +5525,10 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-OUT-167",
@@ -5358,7 +5560,10 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-OUT-168",
@@ -5390,7 +5595,10 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-OUT-169",
@@ -5422,7 +5630,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-170",
@@ -5454,7 +5663,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-171",
@@ -5486,7 +5696,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-172",
@@ -5518,7 +5729,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-173",
@@ -5550,7 +5762,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-174",
@@ -5582,7 +5795,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-175",
@@ -5614,7 +5828,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-176",
@@ -5646,7 +5861,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-177",
@@ -5678,7 +5894,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-178",
@@ -5710,7 +5927,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-179",
@@ -5742,7 +5960,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-180",
@@ -5774,7 +5993,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-181",
@@ -5806,7 +6026,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-182",
@@ -5838,7 +6059,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-183",
@@ -5870,7 +6092,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-184",
@@ -5902,7 +6125,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-185",
@@ -5934,7 +6158,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-186",
@@ -5966,7 +6191,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-187",
@@ -5998,7 +6224,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-188",
@@ -6030,7 +6257,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-189",
@@ -6062,7 +6290,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-190",
@@ -6094,7 +6323,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-191",
@@ -6126,7 +6356,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-192",
@@ -6158,7 +6389,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-193",
@@ -6190,7 +6422,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-194",
@@ -6222,7 +6455,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-195",
@@ -6254,7 +6488,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-196",
@@ -6286,7 +6521,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-197",
@@ -6318,7 +6554,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-198",
@@ -6350,7 +6587,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-199",
@@ -6382,7 +6620,10 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-OUT-200",
@@ -6414,7 +6655,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-201",
@@ -6446,7 +6688,8 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-OUT-202",
@@ -6478,7 +6721,10 @@
         "Published-output audit",
         "Legacy-to-current crosswalk"
       ],
-      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification."
+      "caveats": "FY 2019-20 published output. Do not present as a current value or current formula without live HMIS verification.",
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     }
   ]
 }

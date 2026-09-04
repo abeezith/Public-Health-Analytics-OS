@@ -1,12 +1,12 @@
 {
-  "release": "2.0.0-rmncha-deep-vertical",
-  "cutoff": "2026-09-03",
+  "release": "3.0.0-immunization-deep-vertical",
+  "cutoff": "2026-09-04",
   "definition": "All catalogue records satisfying the published inclusion rule for each Release 1 source, plus the curated priority collection.",
-  "totalRecords": 3649,
+  "totalRecords": 3708,
   "priorityRecords": 80,
   "sourceManifestations": 3028,
-  "declaredSources": 37,
-  "includedSources": 5,
+  "declaredSources": 41,
+  "includedSources": 9,
   "sourceCompleteCatalogues": 4,
   "counts": {
     "WHO_IMR": 1320,
@@ -45,20 +45,24 @@
     "IND_CBHI_NHP": 6,
     "IND_NHM_RMNCHA_SCORECARD_2013": 42,
     "IND_NHM_LAQSHYA_2017": 20,
-    "IND_NHM_RKSK_FRAMEWORK_2014": 99
+    "IND_NHM_RKSK_FRAMEWORK_2014": 99,
+    "IND_NHM_IMI_2017_MONITORING": 21,
+    "IND_NHM_IMI2_2019_DASHBOARD": 24,
+    "IND_MOHFW_AEFI_2024_INDICATORS": 8,
+    "IND_NHM_IMMUNIZATION_MO_2017": 6
   },
   "metadataLevels": {
-    "B": 1563,
+    "B": 1622,
     "C": 126,
     "E": 80,
     "A": 1880
   },
-  "averageCompleteness": 55,
+  "averageCompleteness": 56,
   "unresolvedMappings": 3028,
   "statement": "Bounded-exhaustive for four declared global machine-readable catalogues at the cut-off date. The India extension is a verified official subset across all registered source families, not yet source-complete.",
-  "indiaSpecificRecords": 541,
+  "indiaSpecificRecords": 600,
   "indiaSourceCensus": 15,
-  "indiaStatus": "541 India-specific indicator records; 215 are discoverable under the RMNCH+A programme filter.",
+  "indiaStatus": "600 India-specific indicator records; 76 are discoverable under the Immunization programme filter.",
   "indiaSourcesWithVerifiedRecords": 15,
   "ntepRecords": 222,
   "ntepSourceDocuments": 10,
@@ -75,5 +79,10 @@
   "rmnchaLinkedExistingHmisRecords": 46,
   "rmnchaTotalDiscoverableRecords": 215,
   "rmnchaSourceDocuments": 3,
-  "rmnchaStatus": "Bounded-exhaustive for the RMNCH+A Strategy scorecard (42), LaQshya Annexure C (20), and RKSK framework indicator tables (99); current restricted portal dictionaries and newer child-health manuals remain in the evidence-gap register."
+  "rmnchaStatus": "Bounded-exhaustive for the RMNCH+A Strategy scorecard (42), LaQshya Annexure C (20), and RKSK framework indicator tables (99); current restricted portal dictionaries and newer child-health manuals remain in the evidence-gap register.",
+  "immunizationNewRecords": 59,
+  "immunizationTotalDiscoverableRecords": 76,
+  "immunizationLinkedHmisObjects": 102,
+  "immunizationSourceDocuments": 4,
+  "immunizationStatus": "Bounded-exhaustive for the declared IMI 2017 monitoring lists (21), IMI 2.0 dashboard and DQA tables (24), AEFI 2024 monitoring list (8), and medical-officer handbook coverage/dropout measures (6); authenticated live portal dictionaries remain explicit evidence gaps."
 }

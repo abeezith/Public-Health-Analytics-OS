@@ -13,7 +13,9 @@
     "totalObjects": 981,
     "sourceCount": 12,
     "openEvidenceGaps": 10,
-    "versionPolicy": "Current public forms, historical technical definitions and historical published outputs remain explicitly separated."
+    "versionPolicy": "Current public forms, historical technical definitions and historical published outputs remain explicitly separated.",
+    "immunizationLinkedObjects": 8,
+    "immunizationLinkageRule": "HMIS objects classified to Immunization or explicitly referring to immunization, vaccination, AEFI or cold chain are tagged for Programme 3 discovery without changing HMIS identity."
   },
   "validationRules": [
     {
@@ -74,7 +76,8 @@
         "Data-entry query generation",
         "Register-to-report verification"
       ],
-      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions."
+      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-VAL-002",
@@ -134,7 +137,8 @@
         "Data-entry query generation",
         "Register-to-report verification"
       ],
-      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions."
+      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-VAL-003",
@@ -180,7 +184,8 @@
         "Data-entry query generation",
         "Register-to-report verification"
       ],
-      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions."
+      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-VAL-004",
@@ -226,7 +231,8 @@
         "Data-entry query generation",
         "Register-to-report verification"
       ],
-      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions."
+      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-VAL-005",
@@ -286,7 +292,8 @@
         "Data-entry query generation",
         "Register-to-report verification"
       ],
-      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions."
+      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-VAL-006",
@@ -332,7 +339,8 @@
         "Data-entry query generation",
         "Register-to-report verification"
       ],
-      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions."
+      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-VAL-007",
@@ -392,7 +400,8 @@
         "Data-entry query generation",
         "Register-to-report verification"
       ],
-      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions."
+      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-VAL-008",
@@ -452,7 +461,8 @@
         "Data-entry query generation",
         "Register-to-report verification"
       ],
-      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions."
+      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-VAL-009",
@@ -512,7 +522,8 @@
         "Data-entry query generation",
         "Register-to-report verification"
       ],
-      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions."
+      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-VAL-010",
@@ -550,7 +561,10 @@
         "Data-entry query generation",
         "Register-to-report verification"
       ],
-      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions."
+      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions.",
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-VAL-011",
@@ -596,7 +610,10 @@
         "Data-entry query generation",
         "Register-to-report verification"
       ],
-      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions."
+      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions.",
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-VAL-012",
@@ -656,7 +673,10 @@
         "Data-entry query generation",
         "Register-to-report verification"
       ],
-      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions."
+      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions.",
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-VAL-013",
@@ -716,7 +736,10 @@
         "Data-entry query generation",
         "Register-to-report verification"
       ],
-      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions."
+      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions.",
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-VAL-014",
@@ -762,7 +785,10 @@
         "Data-entry query generation",
         "Register-to-report verification"
       ],
-      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions."
+      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions.",
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-VAL-015",
@@ -808,7 +834,10 @@
         "Data-entry query generation",
         "Register-to-report verification"
       ],
-      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions."
+      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions.",
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-VAL-016",
@@ -854,7 +883,10 @@
         "Data-entry query generation",
         "Register-to-report verification"
       ],
-      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions."
+      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions.",
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-VAL-017",
@@ -928,7 +960,10 @@
         "Data-entry query generation",
         "Register-to-report verification"
       ],
-      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions."
+      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions.",
+      "programmeTags": [
+        "Universal Immunization Programme / Mission Indradhanush"
+      ]
     },
     {
       "id": "HMIS-VAL-018",
@@ -974,7 +1009,8 @@
         "Data-entry query generation",
         "Register-to-report verification"
       ],
-      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions."
+      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-VAL-019",
@@ -1020,7 +1056,8 @@
         "Data-entry query generation",
         "Register-to-report verification"
       ],
-      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions."
+      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-VAL-020",
@@ -1080,7 +1117,8 @@
         "Data-entry query generation",
         "Register-to-report verification"
       ],
-      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions."
+      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-VAL-021",
@@ -1126,7 +1164,8 @@
         "Data-entry query generation",
         "Register-to-report verification"
       ],
-      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions."
+      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-VAL-022",
@@ -1164,7 +1203,8 @@
         "Data-entry query generation",
         "Register-to-report verification"
       ],
-      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions."
+      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-VAL-023",
@@ -1187,7 +1227,7 @@
         {
           "elementId": "HMIS-DE-0434",
           "name": "Number of Newborns weighed at birth",
-          "score": 1.0,
+          "score": 1,
           "matchStatus": "Exact label match",
           "reviewStatus": "Analyst-generated crosswalk; custodian validation pending"
         }
@@ -1202,7 +1242,8 @@
         "Data-entry query generation",
         "Register-to-report verification"
       ],
-      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions."
+      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-VAL-024",
@@ -1248,7 +1289,8 @@
         "Data-entry query generation",
         "Register-to-report verification"
       ],
-      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions."
+      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions.",
+      "programmeTags": []
     },
     {
       "id": "HMIS-VAL-025",
@@ -1294,7 +1336,8 @@
         "Data-entry query generation",
         "Register-to-report verification"
       ],
-      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions."
+      "caveats": "Current HMIS validation severity and implementation must be confirmed. Context, referral flows, stock-outs and programme changes can produce legitimate exceptions.",
+      "programmeTags": []
     }
   ]
 }

@@ -1,0 +1,23 @@
+{
+  "generated": "2026-09-04",
+  "release": "3.0.0-immunization-deep-vertical",
+  "totalRecords": 3708,
+  "immunizationNewRecords": 59,
+  "immunizationDiscoverable": 76,
+  "linkedHmisObjects": 102,
+  "sourceBoundaryCounts": {
+    "IND_NHM_IMI_2017_MONITORING": 21,
+    "IND_NHM_IMI2_2019_DASHBOARD": 24,
+    "IND_MOHFW_AEFI_2024_INDICATORS": 8,
+    "IND_NHM_IMMUNIZATION_MO_2017": 6
+  },
+  "gates": {
+    "expectedNewRecordCount": true,
+    "officialNamesPreserved": true,
+    "uniqueGeneratedIds": true,
+    "percentageFormulaStandardized": true,
+    "denominatorsExplicit": true,
+    "scalesExplicit": true,
+    "allowedMeasureTypesOnly": true
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "metadata": {
+    "release": "3.0.0-immunization-deep-vertical",
+    "cutoff": "2026-09-04",
+    "title": "Programme 3 — Immunization deep vertical",
+    "newOfficialIndicatorRecords": 59,
+    "sourceDocuments": 4,
+    "boundary": "Bounded-exhaustive for the declared IMI 2017 monitoring lists (21), IMI 2.0 dashboard and DQA tables (24), AEFI 2024 monitoring list (8), and medical-officer handbook coverage/dropout measures (6); authenticated live portal dictionaries remain explicit evidence gaps.",
+    "officialNamePolicy": "Official source-table/text labels are preserved; normalized calculation metadata is separate.",
+    "normalizationPolicy": "Every percentage uses (numerator ÷ denominator) × 100 and every record states scale and denominator population."
+  },
+  "sources": [
+    {
+      "id": "IND_NHM_IMI_2017_MONITORING",
+      "source": "India — Intensified Mission Indradhanush monitoring",
+      "document": "Intensified Mission Indradhanush: Identify, enlist, mobilize, vaccinate, monitor and report to achieve full immunization",
+      "version": "MoHFW/NHM operational guidelines, 2017",
+      "url": "https://nhm.gov.in/New_Updates_2018/NHM_Components/Immunization/Guildelines_for_immunization/Mission_Indradhanush_Guidelines.pdf",
+      "section": "Chapter 13: Monitoring & Evaluation",
+      "pages": "PDF pages 58–59 (printed pages 40–41)",
+      "boundary": "All 17 session-monitoring and all 4 house-to-house monitoring indicators listed in Chapter 13.",
+      "status": "Included — source-list complete"
+    },
+    {
+      "id": "IND_NHM_IMI2_2019_DASHBOARD",
+      "source": "India — Intensified Mission Indradhanush 2.0",
+      "document": "Intensified Mission Indradhanush 2.0 Operational Guidelines",
+      "version": "MoHFW/NHM operational guidelines, 2019",
+      "url": "https://nhm.gov.in/New_Updates_2018/NHM_Components/Immunization/Guildelines_for_immunization/IMI_2.0.pdf",
+      "section": "Annexure 20: Key dashboard indicators on Immunization and Section 1.8.2 Data Quality Assessment",
+      "pages": "PDF pages 55 and 168–171 (printed pages 32 and 144–147)",
+      "boundary": "All 20 key dashboard indicators in Annexure 20 plus all 4 named data-quality measures in Section 1.8.2.",
+      "status": "Included — source-table complete"
+    },
+    {
+      "id": "IND_MOHFW_AEFI_2024_INDICATORS",
+      "source": "India — National AEFI surveillance",
+      "document": "Adverse Event Following Immunization: Surveillance and Response Operational Guidelines 2024 — Executive Summary",
+      "version": "MoHFW operational guidelines, 2024",
+      "url": "https://cdsco.mohfw.gov.in/opencms/opencms/en/Post-Marketing-DSM/",
+      "section": "Monitoring of AEFI surveillance",
+      "pages": "Executive summary PDF pages 5–6",
+      "boundary": "All 3 routine-AEFI and all 5 serious-AEFI performance indicators enumerated in the executive summary.",
+      "status": "Included — source-list complete"
+    },
+    {
+      "id": "IND_NHM_IMMUNIZATION_MO_2017",
+      "source": "India — Routine Immunization handbook for medical officers",
+      "document": "Immunization Handbook for Medical Officers",
+      "version": "MoHFW/NHM reprint, 2017",
+      "url": "https://www.nhm.gov.in/New_Updates_2018/NHM_Components/Immunization/Guildelines_for_immunization/Immunization_Handbook_for_Medical_Officers%202017.pdf",
+      "section": "Unit 7: Sources and use of data — Coverage Monitoring Chart",
+      "pages": "PDF pages 203–205 (printed pages 171–173)",
+      "boundary": "All six explicitly named coverage, dropout and unimmunized-child measures in the coverage-monitoring instructions.",
+      "status": "Included — declared text boundary complete"
+    }
+  ],
+  "evidenceGaps": [
+    {
+      "id": "UIP-GAP-001",
+      "source": "U-WIN live beneficiary and vaccination indicator/export dictionary",
+      "status": "Authenticated/live dictionary not publicly enumerated",
+      "nextAction": "Obtain custodian export covering beneficiary registration, due, vaccinated, zero-dose, dropout, timeliness and certificate indicators.",
+      "priority": "Critical"
+    },
+    {
+      "id": "UIP-GAP-002",
+      "source": "eVIN live inventory, consumption, wastage and temperature report dictionary",
+      "status": "Authenticated portal exposes report families but not a public field dictionary",
+      "nextAction": "Obtain report export/schema and validate stock-out, availability, wastage, replenishment and temperature-excursion definitions.",
+      "priority": "Critical"
+    },
+    {
+      "id": "UIP-GAP-003",
+      "source": "NCCMIS supportive-supervision and cold-chain checklists",
+      "status": "Official application lists checklist families; full indicator definitions are not bulk public",
+      "nextAction": "Acquire checklist exports for session, house-to-house, cold-chain point and equipment preventive-maintenance monitoring.",
+      "priority": "High"
+    },
+    {
+      "id": "UIP-GAP-004",
+      "source": "Current HMIS/RCH/U-WIN immunization crosswalk and validation configuration",
+      "status": "Public HMIS artifacts are versioned; the complete current production crosswalk is unavailable",
+      "nextAction": "Validate antigen/dose codes, age windows, delayed vaccination, numerator/denominator logic and aggregation with custodians.",
+      "priority": "Critical"
+    },
+    {
+      "id": "UIP-GAP-005",
+      "source": "National Effective Vaccine Management assessment and current EVM improvement indicators",
+      "status": "Assessment report identified; complete current operational indicator dictionary not extracted",
+      "nextAction": "Create a dedicated vaccine-supply-chain subrelease with EVM criteria, thresholds and evidence sources.",
+      "priority": "High"
+    },
+    {
+      "id": "UIP-GAP-006",
+      "source": "Vaccine-preventable disease surveillance indicators",
+      "status": "AFP, measles-rubella, diphtheria and other surveillance systems span separate programme sources",
+      "nextAction": "Reconcile with Programme 6 communicable-disease surveillance to avoid duplicate source identities.",
+      "priority": "High"
+    },
+    {
+      "id": "UIP-GAP-007",
+      "source": "State/UT immunization registers, dashboards and local programme additions",
+      "status": "Jurisdiction-specific and not nationally source-complete",
+      "nextAction": "Add state manifestations only when official dictionaries/forms and version dates are available.",
+      "priority": "Medium"
+    }
+  ]
+}

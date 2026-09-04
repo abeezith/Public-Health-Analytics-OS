@@ -1,16 +1,16 @@
 {
-  "generated": "2026-09-03",
+  "generated": "2026-09-04",
   "normalizationVersion": "1.0",
-  "totalRecords": 3649,
+  "totalRecords": 3708,
   "classifiedCounts": {
-    "Count": 38,
-    "Percentage/proportion": 347,
-    "Ratio": 27,
+    "Count": 44,
+    "Percentage/proportion": 390,
+    "Ratio": 28,
     "Rate per population": 36,
-    "Index": 59
+    "Index": 68
   },
   "unclassifiedPendingSourceMetadata": 3142,
-  "percentageRecords": 347,
+  "percentageRecords": 390,
   "gates": {
     "officialNamesPreserved": true,
     "allowedMeasureTypesOnly": true,

@@ -16,7 +16,9 @@
     "versionPolicy": "Current public forms, historical technical definitions and historical published outputs remain explicitly separated.",
     "measureMetadataNormalization": "v1.0 — official names preserved",
     "rmnchaLinkedObjects": 46,
-    "rmnchaLinkageRule": "Objects in maternal/newborn/reproductive-health or child/adolescent/nutrition domains are discoverable in the RMNCH+A vertical without changing their HMIS identity."
+    "rmnchaLinkageRule": "Objects in maternal/newborn/reproductive-health or child/adolescent/nutrition domains are discoverable in the RMNCH+A vertical without changing their HMIS identity.",
+    "immunizationLinkedObjects": 7,
+    "immunizationLinkageRule": "HMIS objects classified to Immunization or explicitly referring to immunization, vaccination, AEFI or cold chain are tagged for Programme 3 discovery without changing HMIS identity."
   },
   "indicators": [
     {
@@ -308,7 +310,8 @@
       "denominatorPopulation": "Estimated children below 1 year",
       "displayDefinition": "% of children aged between 9 and 11 months who have been fully immunized (Child given one dose of BCG, three dosages of DPT i.e. DPT 1,2,3; three dosages of polio i.e. OPV 1,2,3 and a dosage of Measles). Denominator population: Estimated children below 1 year.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -355,7 +358,8 @@
       "denominatorPopulation": "Estimated children below 1 year",
       "displayDefinition": "The percentage of live births that received BCG within one year. Denominator population: Estimated children below 1 year.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -402,7 +406,8 @@
       "denominatorPopulation": "Estimated children below 1 year",
       "displayDefinition": "The percentage of children who received their 3 doses of DTP-3. Denominator population: Estimated children below 1 year.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -449,7 +454,8 @@
       "denominatorPopulation": "Estimated children below 1 year",
       "displayDefinition": "The percentage of children under 1 immunised with OPV dose 3. Denominator population: Estimated children below 1 year.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -496,7 +502,8 @@
       "denominatorPopulation": "Estimated children below 1 year",
       "displayDefinition": "The percentage of children who received their measles dose (normally at 9 months). Denominator population: Estimated children below 1 year.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -543,7 +550,8 @@
       "denominatorPopulation": "Number of children given BCG",
       "displayDefinition": "% of children who dropped out of immunisation schedule between BCG dose measles dose. Denominator population: Number of children given BCG.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
@@ -589,7 +597,8 @@
       "denominatorPopulation": "Number of children given DPT3",
       "displayDefinition": "The percentage of children who dropped out of the immunisation schedule between the third doses (normally at 14 weeks) and the measles dose (normally at 9 months). Denominator population: Number of children given DPT3.",
       "programmeTags": [
-        "NHM RMNCH+A"
+        "NHM RMNCH+A",
+        "Universal Immunization Programme / Mission Indradhanush"
       ]
     },
     {
