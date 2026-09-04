@@ -1,71 +1,82 @@
 {
   "metadata": {
-    "graphId": "PHAOS-KG-UIP-0.2",
+    "graphId": "PHAOS-KG-INDIA-0.3",
     "checked": "2026-09-04"
   },
   "counts": {
-    "nodes": 223,
-    "edges": 758,
-    "indicators": 76,
-    "hmisObjects": 102,
-    "standaloneHmisNodes": 95,
-    "coTypedHmisIndicatorNodes": 7,
-    "concepts": 5,
-    "reviewedMappings": 23,
-    "sources": 8,
-    "evidenceGaps": 7,
+    "nodes": 1614,
+    "edges": 6551,
+    "indicators": 513,
+    "hmisObjects": 981,
+    "concepts": 30,
+    "reviewedMappings": 77,
+    "sources": 13,
+    "evidenceGaps": 16,
+    "programmes": {
+      "PROGRAMME-UIP": 76,
+      "PROGRAMME-RMNCHA": 215,
+      "PROGRAMME-NTEP": 222,
+      "PROGRAMME-VBD": 10
+    },
+    "conceptsByProgramme": {
+      "PROGRAMME-UIP": 5,
+      "PROGRAMME-RMNCHA": 9,
+      "PROGRAMME-NTEP": 8,
+      "PROGRAMME-VBD": 8
+    },
     "nodeTypes": {
-      "EvidenceGap": 7,
-      "HmisObject": 95,
-      "IndicatorConcept": 5,
-      "IndicatorManifestation": 76,
+      "DataSystem": 1,
+      "EvidenceGap": 16,
+      "HmisObject": 935,
+      "IndicatorConcept": 30,
+      "IndicatorManifestation": 513,
       "MeasureType": 5,
-      "Organization": 5,
-      "Programme": 1,
-      "ProgrammeComponent": 10,
-      "ReportingLevel": 5,
-      "SourceDocument": 8,
+      "Organization": 7,
+      "Programme": 4,
+      "ProgrammeComponent": 77,
+      "ReportingLevel": 7,
+      "SourceDocument": 13,
       "WHOBuildingBlock": 6
     },
     "edgeTypes": {
-      "partOfProgramme": 171,
-      "publishedBy": 8,
-      "definedBy": 76,
-      "hasMeasureType": 76,
-      "hasProgrammeComponent": 76,
-      "lowestReportingLevel": 76,
-      "manifestationOf": 23,
-      "relatedHmisObject": 11,
-      "supportsBuildingBlock": 193,
-      "usesDataElement": 23,
-      "relatedIndicator": 18,
-      "limitsCompletenessOf": 7
+      "partOfProgramme": 1229,
+      "definedBy": 1448,
+      "reportedThrough": 981,
+      "publishedBy": 13,
+      "hasMeasureType": 359,
+      "hasProgrammeComponent": 513,
+      "lowestReportingLevel": 513,
+      "relatedHmisObject": 136,
+      "supportsBuildingBlock": 1104,
+      "usesDataElement": 125,
+      "manifestationOf": 77,
+      "relatedIndicator": 37,
+      "limitsCompletenessOf": 16
     }
   },
   "gates": {
-    "expectedImmunizationIndicators": {
-      "expected": 76,
-      "actual": 76,
+    "fourProgrammeLayers": {
+      "expected": 4,
+      "actual": 4,
       "pass": true
     },
-    "expectedHmisObjects": {
-      "expected": 102,
-      "actual": 102,
+    "allProgrammeIndicatorsRepresented": {
+      "expected": 513,
+      "actual": 513,
       "pass": true
     },
-    "allHmisIdentitiesRepresented": {
-      "expected": 102,
-      "actual": 102,
+    "fullHmisSpineRepresented": {
+      "expected": 981,
+      "actual": 981,
       "pass": true
     },
-    "expectedConcepts": {
-      "expected": 5,
-      "actual": 5,
+    "conceptsRepresented": {
+      "expected": 30,
+      "actual": 30,
       "pass": true
     },
-    "expectedEvidenceGaps": {
-      "expected": 7,
-      "actual": 7,
+    "noDanglingEdges": {
+      "failures": 0,
       "pass": true
     },
     "uniqueNodeIds": {
@@ -76,42 +87,9 @@
       "failures": 0,
       "pass": true
     },
-    "noDanglingEdges": {
+    "allMappingsDomainReviewed": {
+      "expected": 77,
       "failures": 0,
-      "pass": true
-    },
-    "allEdgesHaveAssertionStatus": {
-      "failures": 0,
-      "pass": true
-    },
-    "conceptMappingsHaveRelationAndRationale": {
-      "failures": 0,
-      "pass": true
-    },
-    "allInitialMappingsDomainReviewed": {
-      "expected": 23,
-      "actual": 23,
-      "failures": 0,
-      "pass": true
-    },
-    "reviewDecisionAudit": {
-      "expectedChanged": 14,
-      "changed": 14,
-      "expectedRetained": 9,
-      "retained": 9,
-      "pass": true
-    },
-    "reviewedRelationDistribution": {
-      "expected": {
-        "closeMatch": 6,
-        "broadMatch": 12,
-        "relatedMatch": 5
-      },
-      "actual": {
-        "closeMatch": 6,
-        "relatedMatch": 5,
-        "broadMatch": 12
-      },
       "pass": true
     },
     "noAggregationPermissionGranted": {
@@ -125,10 +103,6 @@
     "sixCanonicalBuildingBlocks": {
       "expected": 6,
       "actual": 6,
-      "pass": true
-    },
-    "schemaOrgUsesDefinitionsNotObservations": {
-      "observationNodes": 0,
       "pass": true
     }
   }

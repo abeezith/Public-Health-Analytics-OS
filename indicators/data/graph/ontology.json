@@ -2,8 +2,8 @@
   "metadata": {
     "id": "PHAOS-KG-0.1",
     "title": "Public Health Analytics-OS knowledge graph contract",
-    "version": "0.1.0",
-    "status": "Immunization pilot",
+    "version": "0.3.0",
+    "status": "Four-programme graph release",
     "namespace": "https://abeezith.github.io/Public-Health-Analytics-OS/id/",
     "published": "2026-09-04",
     "principle": "Official source manifestations remain distinct; graph links support discovery and lineage and never imply equivalence unless explicitly typed and evidenced."
@@ -15,6 +15,7 @@
     "SourceDocument": "A source publication or catalogue with an explicit version and coverage boundary.",
     "Organization": "An organization responsible for publishing or maintaining a source.",
     "Programme": "A public-health programme or programme family.",
+    "DataSystem": "A reporting or information system that acts as a cross-programme data spine.",
     "ProgrammeComponent": "An operational component within a programme.",
     "WHOBuildingBlock": "One of the six canonical WHO health-system building blocks.",
     "ReportingLevel": "A normalized lowest reporting level used for navigation.",
@@ -33,6 +34,7 @@
     "usesDataElement": "Curated link from an indicator or derived HMIS measure to an HMIS data element.",
     "relatedIndicator": "Curated discovery link between distinct indicator manifestations; does not imply mathematical comparability.",
     "relatedHmisObject": "A typed HMIS relationship whose exact operational semantics remain source-governed.",
+    "reportedThrough": "Connects an indicator or HMIS knowledge object to the reporting system through which it is represented.",
     "limitsCompletenessOf": "Connects a declared evidence gap to the affected programme."
   },
   "mappingRelations": {
@@ -51,7 +53,7 @@
   "standardsProfile": {
     "schemaOrg": {
       "DataCatalog": "The Analytics-OS registry as a public metadata catalogue.",
-      "Dataset": "The Immunization graph release and its declared distributions.",
+      "Dataset": "The multi-programme graph release and its declared distributions.",
       "StatisticalVariable": "An indicator definition; actual programme values are not represented in this pilot.",
       "DefinedTermSet": "Controlled vocabularies such as programmes, building blocks, reporting levels and measure types.",
       "DefinedTerm": "A controlled concept within a DefinedTermSet.",

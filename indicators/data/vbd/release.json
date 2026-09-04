@@ -1,0 +1,15 @@
+{
+  "metadata":{"release":"0.1.0-vbd-graph-layer","cutoff":"2026-09-04","title":"Vector-borne disease graph foundation","existingIndicatorRecords":10,"boundary":"The graph layer covers the ten existing NCVBDC registry indicators and official malaria, kala-azar and lymphatic-filariasis interpretation sources. It is not a complete current programme dictionary."},
+  "sources":[
+    {"id":"NCVBDC-MALARIA-OPERATIONAL-MANUAL","source":"NCVBDC malaria elimination programme","document":"Operational Manual for Malaria Elimination in India","version":"Official manual","url":"https://www.ncvbdc.mohfw.gov.in/WriteReadData/l892s/5232542721532941542.pdf","boundary":"Surveillance, epidemiological, vector-control and programme-management indicator framework."},
+    {"id":"NCVBDC-MALARIA-TRENDS","source":"NCVBDC malaria programme","document":"Malaria situation and trends","version":"Official web page accessed 2026-09-04","url":"https://ncvbdc.mohfw.gov.in/index4.php?Background=Dark&font=Normal&lang=1&level=0&lid=3699&linkid=420&theme=Green","boundary":"Official interpretation of API, ABER and test positivity."},
+    {"id":"NCVBDC-KALA-AZAR","source":"NCVBDC kala-azar programme","document":"Kala-azar elimination programme information","version":"Official web page accessed 2026-09-04","url":"https://ncvbdc.mohfw.gov.in/index1.php?font=Increase&lang=1&level=2&lid=3752&sublinkid=5946&theme=Blue","boundary":"Block-level elimination threshold."},
+    {"id":"NCVBDC-LF-ELIMINATION","source":"NCVBDC lymphatic-filariasis programme","document":"Lymphatic filariasis elimination information","version":"Official web page accessed 2026-09-04","url":"https://ncvbdc.mohfw.gov.in/index4.php?lang=1&level=0&lid=3739&linkid=461","boundary":"Microfilaria-rate public-health threshold."},
+    {"id":"NCVBDC-LF-MDA","source":"NCVBDC lymphatic-filariasis programme","document":"Mass drug administration coverage reporting","version":"Official web page accessed 2026-09-04","url":"https://ncvbdc.mohfw.gov.in/index1.php?font=Normal&lang=1&level=2&lid=3947&sublinkid=5869","boundary":"Total population, eligible population, drug consumption and alternate coverage denominators."}
+  ],
+  "evidenceGaps":[
+    {"id":"VBD-GAP-001","source":"Current disease-wise NCVBDC indicator dictionaries","status":"No single public machine-readable dictionary identified","nextAction":"Extract and reconcile current disease-specific surveillance, entomology, treatment and programme-management tables.","priority":"Critical"},
+    {"id":"VBD-GAP-002","source":"Integrated Health Information Platform VBD workflows","status":"Authenticated operational dictionary not available in this release","nextAction":"Obtain custodian-approved field and indicator exports with version and reporting-level metadata.","priority":"Critical"},
+    {"id":"VBD-GAP-003","source":"State and local VBD reporting additions","status":"Outside the current national-source boundary","nextAction":"Ingest as separately versioned source manifestations after national dictionary reconciliation.","priority":"High"}
+  ]
+}

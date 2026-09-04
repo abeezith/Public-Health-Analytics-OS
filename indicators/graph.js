@@ -1,4 +1,4 @@
-const kg = { graph: null, cy: null, focusId: 'CONCEPT-UIP-FULL-IMMUNIZATION-COVERAGE', selectedId: null, history: [], historyIndex: -1 };
+const kg = { graph: null, cy: null, focusId: 'CONCEPT-RMNCHA-EARLY-ANC', programmeId: 'PROGRAMME-RMNCHA', selectedId: null, history: [], historyIndex: -1, reducedMotion: window.matchMedia('(prefers-reduced-motion: reduce)').matches };
 const kg$ = id => document.getElementById(id);
 const kgEsc = (value = '') => {
   const div = document.createElement('div');
@@ -10,11 +10,11 @@ const kgShort = (value = '', limit = 46) => value.length > limit ? `${value.slic
 const modePredicates = {
   lineage: new Set(['definedBy', 'publishedBy', 'manifestationOf']),
   computation: new Set(['manifestationOf', 'hasMeasureType', 'usesDataElement', 'relatedHmisObject', 'relatedIndicator']),
-  programme: new Set(['partOfProgramme', 'hasProgrammeComponent', 'supportsBuildingBlock', 'lowestReportingLevel', 'limitsCompletenessOf']),
+  programme: new Set(['partOfProgramme', 'hasProgrammeComponent', 'supportsBuildingBlock', 'lowestReportingLevel', 'limitsCompletenessOf', 'reportedThrough']),
   all: null
 };
 
-fetch('./data/graph/graph.json?v=kg-0.2.0', { cache: 'no-store' })
+fetch('./data/graph/graph.json?v=kg-0.3.0', { cache: 'no-store' })
   .then(response => response.json())
   .then(graph => {
     kg.graph = graph;
@@ -22,8 +22,12 @@ fetch('./data/graph/graph.json?v=kg-0.2.0', { cache: 'no-store' })
     kg$('kg-edge-count').textContent = graph.metadata.counts.edges;
     kg$('kg-concept-count').textContent = graph.metadata.counts.concepts;
     kg$('kg-review-count').textContent = graph.metadata.counts.reviewedMappings;
+    kg$('kg-close-count').textContent = graph.metadata.mappingRelations?.closeMatch || 0;
+    kg$('kg-broad-count').textContent = graph.metadata.mappingRelations?.broadMatch || 0;
+    kg$('kg-related-count').textContent = graph.metadata.mappingRelations?.relatedMatch || 0;
+    populateProgrammes(graph.metadata.programmes || []);
     populateFocus(graph.nodes);
-    populateConceptShortcuts(graph.nodes);
+    populateConceptShortcuts();
     initializeGraph();
     setFocus(kg.focusId);
   })
@@ -31,10 +35,18 @@ fetch('./data/graph/graph.json?v=kg-0.2.0', { cache: 'no-store' })
     kg$('kg-canvas').innerHTML = '<div class="empty-state"><h3>Knowledge graph could not be loaded</h3><p>The registry remains available above. Reload the page or verify the graph release files.</p></div>';
   });
 
+function populateProgrammes(programmes) {
+  const select = kg$('kg-programme');
+  for (const programme of programmes) select.append(new Option(`${programme.label} · ${programme.indicatorCount} indicators`, programme.id));
+  select.value = kg.programmeId;
+}
+
 function populateFocus(nodes) {
   const select = kg$('kg-focus');
   const groups = [
     ['IndicatorConcept', 'Domain-reviewed concepts'],
+    ['Programme', 'Programme layers'],
+    ['DataSystem', 'Cross-programme systems'],
     ['IndicatorManifestation', 'Indicator manifestations'],
     ['HmisObject', 'HMIS knowledge objects'],
     ['SourceDocument', 'Sources'],
@@ -51,9 +63,10 @@ function populateFocus(nodes) {
   select.value = kg.focusId;
 }
 
-function populateConceptShortcuts(nodes) {
+function populateConceptShortcuts() {
   const shell = kg$('kg-concept-shortcuts');
-  for (const node of nodes.filter(item => item.type === 'IndicatorConcept')) {
+  shell.innerHTML = '';
+  for (const node of kg.graph.nodes.filter(item => item.type === 'IndicatorConcept' && item.data?.programmeId === kg.programmeId)) {
     const button = document.createElement('button');
     button.type = 'button';
     button.dataset.nodeId = node.id;
@@ -142,11 +155,15 @@ function renderNeighborhood() {
   const focusNode = kg.graph.nodes.find(node => node.id === kg.focusId);
   const isConceptHub = focusNode?.type === 'IndicatorConcept' && mode === 'computation';
   const layout = isConceptHub
-    ? { name: 'concentric', concentric: node => node.id() === kg.focusId ? 100 : (node.data('type') === 'IndicatorManifestation' ? 50 : 10), levelWidth: () => 35, minNodeSpacing: 55, avoidOverlap: true, animate: false, fit: true, padding: 70 }
+    ? { name: 'concentric', concentric: node => node.id() === kg.focusId ? 100 : (node.data('type') === 'IndicatorManifestation' ? 50 : 10), levelWidth: () => 35, minNodeSpacing: 55, avoidOverlap: true, animate: !kg.reducedMotion, animationDuration: 420, animationEasing: 'ease-out-cubic', fit: true, padding: 70 }
     : visibleNodes.length <= 28
-      ? { name: 'breadthfirst', roots: kg.cy.$id(kg.focusId), directed: false, circle: false, spacingFactor: 1.35, animate: false, fit: true, padding: 60 }
-      : { name: 'cose', animate: false, fit: true, padding: 50, nodeRepulsion: 9200, idealEdgeLength: 110, gravity: 0.5 };
+      ? { name: 'breadthfirst', roots: kg.cy.$id(kg.focusId), directed: false, circle: false, spacingFactor: 1.35, animate: !kg.reducedMotion, animationDuration: 420, animationEasing: 'ease-out-cubic', fit: true, padding: 60 }
+      : { name: 'cose', animate: !kg.reducedMotion && visibleNodes.length <= 45, animationDuration: 460, animationEasing: 'ease-out-cubic', fit: true, padding: 50, nodeRepulsion: 9200, idealEdgeLength: 110, gravity: 0.5 };
   kg.cy.layout(layout).run();
+  if (!kg.reducedMotion) {
+    const focus = kg.cy.$id(kg.focusId);
+    focus.delay(430).animate({ style: { 'border-color': '#f0bd52', 'border-width': 9 } }, { duration: 180 }).animate({ style: { 'border-color': '#092f31', 'border-width': 6 } }, { duration: 260 });
+  }
   kg$('kg-status').textContent = `${visibleNodes.length} nodes · ${visibleEdges.length} typed relationships · select a line for evidence · double-click a node to refocus`;
   showNodeDetail(kg.focusId);
   updateNavigation();
@@ -193,6 +210,7 @@ function showNodeDetail(id) {
     return `<button type="button" data-kg-node="${kgEsc(neighborId)}"><b>${kgEsc(kgShort(neighbor?.label || neighborId, 72))}</b><small>${kgEsc(edge.label)} · ${kgEsc(edge.assertionStatus)}</small></button>`;
   }).join('');
   kg$('kg-detail').innerHTML = `<p class="eyebrow">Selected node</p><div class="kg-type-chip">${kgEsc(node.type.replace(/([a-z])([A-Z])/g, '$1 $2'))}</div><h3>${kgEsc(node.label)}</h3><p>${kgEsc(node.description || 'No additional description supplied.')}</p><dl>${preferredFacts.map(([label, value]) => `<div><dt>${kgEsc(label)}</dt><dd>${kgEsc(value)}</dd></div>`).join('')}</dl>${neighbors ? `<div class="kg-relations"><strong>Visible connections</strong><div class="kg-neighbor-list">${neighbors}</div></div>` : ''}${id !== kg.focusId ? '<button id="kg-refocus" class="kg-secondary">Explore from this node</button>' : ''}${node.url ? `<a class="kg-source-link" href="${kgEsc(node.url)}" target="_blank" rel="noreferrer">Open official source ↗</a>` : ''}`;
+  animateDetail();
   kg$('kg-refocus')?.addEventListener('click', () => setFocus(id));
   kg$('kg-detail').querySelectorAll('[data-kg-node]').forEach(button => button.addEventListener('click', () => showNodeDetail(button.dataset.kgNode)));
 }
@@ -212,7 +230,15 @@ function showEdgeDetail(id) {
   ].filter(([, value]) => value !== undefined && value !== null && value !== '');
   const differences = (edge.differences || []).map(item => `<li>${kgEsc(item)}</li>`).join('');
   kg$('kg-detail').innerHTML = `<p class="eyebrow">Selected relationship</p><div class="kg-type-chip ${kgEsc(edge.assertionStatus)}">${kgEsc(edge.assertionStatus)}</div><h3>${kgEsc(edge.label)}</h3><div class="kg-edge-route"><button type="button" data-kg-node="${kgEsc(edge.source)}">${kgEsc(source?.label || edge.source)}</button><span>→</span><button type="button" data-kg-node="${kgEsc(edge.target)}">${kgEsc(target?.label || edge.target)}</button></div>${edge.rationale ? `<div class="kg-review-callout"><strong>${reviewed ? 'Domain-review judgment' : 'Relationship basis'}</strong><p>${kgEsc(edge.rationale)}</p></div>` : ''}<dl>${facts.map(([label, value]) => `<div><dt>${kgEsc(label)}</dt><dd>${kgEsc(value)}</dd></div>`).join('')}</dl>${differences ? `<div class="kg-differences"><strong>Why it cannot be pooled</strong><ul>${differences}</ul></div>` : ''}${edge.sourceUrl ? `<a class="kg-source-link" href="${kgEsc(edge.sourceUrl)}" target="_blank" rel="noreferrer">Open official source ↗</a>` : ''}`;
+  animateDetail();
   kg$('kg-detail').querySelectorAll('[data-kg-node]').forEach(button => button.addEventListener('click', () => showNodeDetail(button.dataset.kgNode)));
+}
+
+function animateDetail() {
+  if (kg.reducedMotion) return;
+  const detail = kg$('kg-detail');
+  detail.classList.remove('kg-detail-enter');
+  requestAnimationFrame(() => detail.classList.add('kg-detail-enter'));
 }
 
 function setFocus(id, historyAction = 'push') {
@@ -257,6 +283,12 @@ function setExpanded(expanded) {
 }
 
 kg$('kg-focus').addEventListener('change', event => setFocus(event.target.value));
+kg$('kg-programme').addEventListener('change', event => {
+  kg.programmeId = event.target.value;
+  populateConceptShortcuts();
+  const first = kg.graph.nodes.find(node => node.type === 'IndicatorConcept' && node.data?.programmeId === kg.programmeId);
+  setFocus(first?.id || kg.programmeId);
+});
 kg$('kg-mode').addEventListener('change', renderNeighborhood);
 kg$('kg-fit').addEventListener('click', () => kg.cy?.fit(undefined, 50));
 kg$('kg-expand').addEventListener('click', () => setExpanded(!kg$('knowledge-graph').classList.contains('kg-expanded')));

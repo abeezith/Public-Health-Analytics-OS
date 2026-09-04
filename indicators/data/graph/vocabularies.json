@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "version": "0.1.0",
-    "status": "Immunization pilot",
+    "version": "0.3.0",
+    "status": "Four-programme graph release",
     "policy": "Canonical values drive graph navigation. Original source wording remains available on nodes or relationship provenance."
   },
   "whoBuildingBlocks": [
@@ -34,6 +34,24 @@
       "label": "Universal Immunization Programme / Mission Indradhanush",
       "country": "India",
       "alternateLabels": ["Routine Immunization", "Intensified Mission Indradhanush", "Intensified Mission Indradhanush 2.0"]
+    },
+    {
+      "id": "PROGRAMME-RMNCHA",
+      "label": "NHM RMNCH+A",
+      "country": "India",
+      "alternateLabels": ["RMNCH+A", "Reproductive, Maternal, Newborn, Child and Adolescent Health"]
+    },
+    {
+      "id": "PROGRAMME-NTEP",
+      "label": "National Tuberculosis Elimination Programme",
+      "country": "India",
+      "alternateLabels": ["NTEP", "Revised National Tuberculosis Control Programme"]
+    },
+    {
+      "id": "PROGRAMME-VBD",
+      "label": "National Centre for Vector Borne Diseases Control programmes",
+      "country": "India",
+      "alternateLabels": ["NCVBDC", "Vector-borne disease control programmes"]
     }
   ]
 }

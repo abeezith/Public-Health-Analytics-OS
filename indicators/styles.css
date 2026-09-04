@@ -84,3 +84,15 @@ footer { display:grid; grid-template-columns:auto 1fr auto; gap:28px; align-item
 body.kg-graph-open{overflow:hidden}.graph-explorer.kg-expanded{position:fixed;inset:0;z-index:1000;overflow:auto;padding:16px 22px;background:#f3f7f2}.kg-expanded .section-heading,.kg-expanded .kg-boundary,.kg-expanded .kg-metrics,.kg-expanded .kg-review-summary,.kg-expanded .kg-concept-shortcuts,.kg-expanded .kg-legend{display:none}.kg-expanded .kg-controls{position:sticky;top:0;z-index:2;margin:0 0 12px;box-shadow:0 8px 24px rgba(18,48,48,.12)}.kg-expanded .kg-workspace{height:calc(100vh - 116px);min-height:540px;grid-template-columns:minmax(0,1fr) minmax(320px,380px)}.kg-expanded #kg-canvas{height:calc(100vh - 157px)}.kg-expanded .kg-workspace aside{max-height:calc(100vh - 116px)}#kg-expand{white-space:nowrap}#kg-expand span{font-size:16px;line-height:0}
 @media(max-width:1000px){.kg-expanded .kg-workspace{grid-template-columns:minmax(0,1fr) minmax(290px,340px)}.kg-expanded .kg-workspace aside{border-top:0;border-left:1px solid #bfd0ca}}
 @media(max-width:700px){.graph-explorer.kg-expanded{padding:10px}.kg-expanded .kg-controls{position:relative}.kg-expanded .kg-workspace{height:auto;grid-template-columns:1fr}.kg-expanded #kg-canvas{height:calc(100vh - 245px);min-height:430px}.kg-expanded .kg-workspace aside{max-height:none;border-top:1px solid #bfd0ca;border-left:0}#kg-expand{flex:1}}
+
+/* Knowledge graph 0.3 multi-programme controls and restrained motion. */
+.kg-controls{grid-template-columns:minmax(190px,.7fr) minmax(250px,1.25fr) minmax(205px,.68fr) auto}
+.kg-detail-enter{animation:kg-detail-in .22s ease-out}
+.graph-explorer.kg-expanded{animation:kg-expand-in .2s ease-out}
+.kg-concept-shortcuts button,.kg-secondary,.kg-icon-button{transition:transform .16s ease,box-shadow .16s ease,background-color .16s ease,border-color .16s ease}
+.kg-concept-shortcuts button:hover,.kg-secondary:hover:not(:disabled),.kg-icon-button:hover:not(:disabled){transform:translateY(-1px);box-shadow:0 5px 12px rgba(18,48,48,.1)}
+@keyframes kg-detail-in{from{opacity:.35;transform:translateY(6px)}to{opacity:1;transform:none}}
+@keyframes kg-expand-in{from{opacity:.72;transform:scale(.995)}to{opacity:1;transform:none}}
+@media(max-width:1100px){.kg-controls{grid-template-columns:1fr 1fr}.kg-control-actions{grid-column:1/-1}.kg-toggle{grid-column:1/-1}}
+@media(max-width:700px){.kg-controls{grid-template-columns:1fr}.kg-control-actions{grid-column:auto}}
+@media(prefers-reduced-motion:reduce){.kg-detail-enter,.graph-explorer.kg-expanded{animation:none}.kg-concept-shortcuts button,.kg-secondary,.kg-icon-button{transition:none}}
