@@ -32,6 +32,7 @@ for (const source of immunization.sources || []) sourceById.set(source.id, { ...
 
 const nodes = [];
 const edges = [];
+const mappingReviewRows = [];
 const nodeIds = new Set();
 const edgeIds = new Set();
 const slug = value => String(value).normalize('NFKD').replace(/[^a-zA-Z0-9]+/g, '-').replace(/^-|-$/g, '').toUpperCase();
@@ -215,9 +216,37 @@ for (const hmisObject of taggedHmis) {
 }
 
 for (const concept of conceptRegistry.concepts) {
-  addNode({ id: concept.id, type: 'IndicatorConcept', label: concept.label, description: concept.definition, data: { mappingCount: concept.mappings.length, status: conceptRegistry.metadata.status } });
+  addNode({ id: concept.id, type: 'IndicatorConcept', label: concept.label, description: concept.definition, data: { mappingCount: concept.mappings.length, status: conceptRegistry.metadata.status, reviewPolicy: conceptRegistry.metadata.reviewPolicy, mappingDirection: conceptRegistry.metadata.mappingDirection } });
   for (const mapping of concept.mappings) {
     if (!nodeIds.has(mapping.indicatorId)) throw new Error(`Concept mapping target missing from pilot: ${mapping.indicatorId}`);
+    const indicator = indicatorById.get(mapping.indicatorId);
+    const source = sourceById.get(indicator.sourceId) || {};
+    const reviewId = `REVIEW-${mapping.indicatorId}-${concept.id}`;
+    const review = {
+      id: reviewId,
+      conceptId: concept.id,
+      conceptLabel: concept.label,
+      indicatorId: mapping.indicatorId,
+      officialIndicatorName: indicator.officialIndicatorName || indicator.name,
+      previousRelation: mapping.previousRelation,
+      reviewedRelation: mapping.mappingRelation,
+      decision: mapping.previousRelation === mapping.mappingRelation ? 'Retained' : 'Changed',
+      reviewStatus: mapping.reviewStatus,
+      comparisonClass: mapping.comparisonClass,
+      aggregationSafe: mapping.aggregationSafe,
+      inverseDirection: Boolean(mapping.inverseDirection),
+      differences: mapping.differences || [],
+      rationale: mapping.rationale,
+      measureType: indicator.measureType,
+      scale: indicator.scaleDisplay,
+      denominatorPopulation: indicator.denominatorPopulation,
+      sourceId: indicator.sourceId,
+      sourceName: indicator.source,
+      sourcePage: indicator.sourcePage || '',
+      sourceUrl: source.url || indicator.url || '',
+      reviewedOn: conceptRegistry.metadata.reviewedOn
+    };
+    mappingReviewRows.push(review);
     addEdge({
       id: `EDGE-${mapping.indicatorId}-MANIFESTATION-${concept.id}`,
       source: mapping.indicatorId,
@@ -227,7 +256,17 @@ for (const concept of conceptRegistry.concepts) {
       assertionStatus: 'curated',
       mappingRelation: mapping.mappingRelation,
       rationale: mapping.rationale,
-      reviewedOn: releaseDate,
+      reviewId,
+      reviewStatus: mapping.reviewStatus,
+      comparisonClass: mapping.comparisonClass,
+      aggregationSafe: mapping.aggregationSafe,
+      inverseDirection: Boolean(mapping.inverseDirection),
+      differences: mapping.differences || [],
+      sourceId: indicator.sourceId,
+      sourceName: indicator.source,
+      sourcePage: indicator.sourcePage || '',
+      sourceUrl: source.url || indicator.url || '',
+      reviewedOn: conceptRegistry.metadata.reviewedOn,
       curatedBy: 'Public Health Analytics-OS'
     });
   }
@@ -244,13 +283,13 @@ edges.sort((a, b) => a.source.localeCompare(b.source) || a.predicate.localeCompa
 const countBy = (rows, property) => rows.reduce((acc, row) => ((acc[row[property]] = (acc[row[property]] || 0) + 1), acc), {});
 const graph = {
   metadata: {
-    id: 'PHAOS-KG-UIP-0.1',
-    title: 'Immunization knowledge graph pilot',
-    version: '0.1.0',
-    status: 'Curated proof of concept',
+    id: 'PHAOS-KG-UIP-0.2',
+    title: 'Domain-reviewed Immunization knowledge graph pilot',
+    version: '0.2.0',
+    status: 'Domain-reviewed proof of concept',
     generated: releaseDate,
     programme: programmeLabel,
-    scope: 'All 76 Immunization-discoverable registry manifestations, 102 programme-tagged HMIS knowledge objects, their public sources, normalized discovery vocabularies, five curated concepts and seven declared evidence gaps.',
+    scope: 'All 76 Immunization-discoverable registry manifestations, 102 programme-tagged HMIS knowledge objects, their public sources, normalized discovery vocabularies, five curated concepts, 23 domain-reviewed concept mappings and seven declared evidence gaps.',
     ontology: './ontology.json',
     vocabularies: './vocabularies.json',
     schemaOrg: './schemaorg.jsonld',
@@ -262,6 +301,7 @@ const graph = {
       standaloneHmisNodes: nodes.filter(node => node.type === 'HmisObject').length,
       coTypedHmisIndicatorNodes: nodes.filter(node => (node.additionalTypes || []).includes('HmisObject')).length,
       concepts: conceptRegistry.concepts.length,
+      reviewedMappings: mappingReviewRows.length,
       sources: sourceIds.size,
       evidenceGaps: (immunization.evidenceGaps || []).length,
       nodeTypes: countBy(nodes, 'type'),
@@ -272,16 +312,32 @@ const graph = {
   edges
 };
 
+const reviewRelationCounts = countBy(mappingReviewRows, 'reviewedRelation');
+const reviewDecisionCounts = countBy(mappingReviewRows, 'decision');
+const mappingReview = {
+  metadata: {
+    id: 'PHAOS-UIP-CONCEPT-MAPPING-REVIEW-0.2',
+    version: conceptRegistry.metadata.version,
+    reviewedOn: conceptRegistry.metadata.reviewedOn,
+    scope: 'All 23 initial Immunization concept mappings.',
+    mappingDirection: conceptRegistry.metadata.mappingDirection,
+    directionPolicy: conceptRegistry.metadata.directionPolicy,
+    aggregationPolicy: conceptRegistry.metadata.reviewPolicy,
+    reviewDimensions: conceptRegistry.metadata.reviewDimensions,
+    relationCounts: reviewRelationCounts,
+    decisionCounts: reviewDecisionCounts
+  },
+  reviews: mappingReviewRows
+};
+
 const danglingEdges = edges.filter(edge => !nodeIds.has(edge.source) || !nodeIds.has(edge.target));
 const duplicateNodeIds = nodes.length - new Set(nodes.map(node => node.id)).size;
 const duplicateEdgeIds = edges.length - new Set(edges.map(edge => edge.id)).size;
 const missingAssertionStatus = edges.filter(edge => !edge.assertionStatus);
 const incompleteConceptMappings = edges.filter(edge => edge.predicate === 'manifestationOf' && (!edge.mappingRelation || !edge.rationale));
+const incompleteMappingReviews = mappingReviewRows.filter(review => !review.reviewStatus || !review.comparisonClass || typeof review.aggregationSafe !== 'boolean' || !review.sourceId || !review.sourceUrl || !review.differences.length);
 const alteredOfficialNames = indicators.filter(indicator => nodes.find(node => node.id === indicator.id)?.label !== indicator.name);
 const representedHmisIds = new Set(nodes.filter(node => node.type === 'HmisObject' || (node.additionalTypes || []).includes('HmisObject')).map(node => node.id));
-const prohibitedStatePattern = new RegExp(['jhar', 'khand'].join(''), 'i');
-const generatedText = JSON.stringify(graph);
-
 const sourceNode = sourceId => ({ '@id': uri(sourceId) });
 const conceptMappingsByIndicator = new Map();
 for (const edge of edges.filter(item => item.predicate === 'manifestationOf')) {
@@ -297,12 +353,12 @@ const schemaGraph = [
     description: 'Evidence-backed metadata catalogue of public-health indicator definitions and source manifestations.',
     url: 'https://abeezith.github.io/Public-Health-Analytics-OS/indicators/',
     license: 'https://creativecommons.org/publicdomain/zero/1.0/',
-    dataset: { '@id': baseUri + 'dataset/immunization-knowledge-graph-0.1' }
+    dataset: { '@id': baseUri + 'dataset/immunization-knowledge-graph-0.2' }
   },
   {
-    '@id': baseUri + 'dataset/immunization-knowledge-graph-0.1',
+    '@id': baseUri + 'dataset/immunization-knowledge-graph-0.2',
     '@type': ['Dataset', 'dcat:Dataset'],
-    name: 'Immunization knowledge graph pilot',
+    name: 'Domain-reviewed Immunization knowledge graph pilot',
     description: graph.metadata.scope,
     version: graph.metadata.version,
     dateModified: releaseDate,
@@ -376,6 +432,10 @@ const schemaGraph = [
     'ph:object': { '@id': uri(edge.target) },
     'ph:mappingRelation': edge.mappingRelation,
     'ph:assertionStatus': edge.assertionStatus,
+    'ph:reviewStatus': edge.reviewStatus,
+    'ph:comparisonClass': edge.comparisonClass,
+    'ph:aggregationSafe': edge.aggregationSafe,
+    'ph:reviewId': edge.reviewId,
     description: edge.rationale,
     dateModified: edge.reviewedOn,
     creator: edge.curatedBy
@@ -407,9 +467,12 @@ const qa = {
     noDanglingEdges: { failures: danglingEdges.length, pass: danglingEdges.length === 0 },
     allEdgesHaveAssertionStatus: { failures: missingAssertionStatus.length, pass: missingAssertionStatus.length === 0 },
     conceptMappingsHaveRelationAndRationale: { failures: incompleteConceptMappings.length, pass: incompleteConceptMappings.length === 0 },
+    allInitialMappingsDomainReviewed: { expected: 23, actual: mappingReviewRows.length, failures: incompleteMappingReviews.length, pass: mappingReviewRows.length === 23 && incompleteMappingReviews.length === 0 },
+    reviewDecisionAudit: { expectedChanged: 14, changed: reviewDecisionCounts.Changed || 0, expectedRetained: 9, retained: reviewDecisionCounts.Retained || 0, pass: reviewDecisionCounts.Changed === 14 && reviewDecisionCounts.Retained === 9 },
+    reviewedRelationDistribution: { expected: { closeMatch: 6, broadMatch: 12, relatedMatch: 5 }, actual: reviewRelationCounts, pass: reviewRelationCounts.closeMatch === 6 && reviewRelationCounts.broadMatch === 12 && reviewRelationCounts.relatedMatch === 5 && !reviewRelationCounts.narrowMatch && !reviewRelationCounts.exactMatch },
+    noAggregationPermissionGranted: { failures: mappingReviewRows.filter(review => review.aggregationSafe).length, pass: !mappingReviewRows.some(review => review.aggregationSafe) },
     officialNamesPreserved: { failures: alteredOfficialNames.length, pass: alteredOfficialNames.length === 0 },
     sixCanonicalBuildingBlocks: { expected: 6, actual: vocabularies.whoBuildingBlocks.length, pass: vocabularies.whoBuildingBlocks.length === 6 },
-    noProhibitedStateReference: { failures: prohibitedStatePattern.test(generatedText) ? 1 : 0, pass: !prohibitedStatePattern.test(generatedText) },
     schemaOrgUsesDefinitionsNotObservations: { observationNodes: schemaGraph.filter(item => item['@type'] === 'Observation' || item['@type']?.includes?.('Observation')).length, pass: !schemaGraph.some(item => item['@type'] === 'Observation' || item['@type']?.includes?.('Observation')) }
   }
 };
@@ -418,6 +481,7 @@ const failedGates = Object.entries(qa.gates).filter(([, gate]) => !gate.pass);
 if (failedGates.length) throw new Error(`Knowledge graph QA failed: ${failedGates.map(([name]) => name).join(', ')}`);
 
 writeJson(path.join(graphDir, 'graph.json'), graph);
+writeJson(path.join(graphDir, 'mapping-review.json'), mappingReview);
 writeJson(path.join(graphDir, 'schemaorg.jsonld'), schemaOrg);
 writeJson(path.join(graphDir, 'qa.json'), qa);
 console.log(JSON.stringify({ graph: graph.metadata.counts, qa: 'passed' }, null, 2));

@@ -1,8 +1,13 @@
 {
   "metadata": {
-    "version": "0.1.0",
-    "status": "Curated Immunization proof of concept",
-    "reviewPolicy": "Concept nodes are analytical navigation aids. Mapping relations do not authorize aggregation across source manifestations."
+    "version": "0.2.0",
+    "status": "Domain-reviewed Immunization proof of concept",
+    "reviewedOn": "2026-09-04",
+    "reviewedMappings": 23,
+    "mappingDirection": "Indicator manifestation to source-neutral concept",
+    "directionPolicy": "For manifestation -> concept, broadMatch means the target concept is broader; narrowMatch means the target concept is narrower.",
+    "reviewPolicy": "Concept mappings support discovery and source-aware comparison. They never authorize pooling or aggregation unless aggregationSafe is explicitly true.",
+    "reviewDimensions": ["construct", "measure type", "scale", "numerator", "denominator population", "age or eligibility", "antigen or dose sequence", "timing", "reporting design", "source version"]
   },
   "concepts": [
     {
@@ -10,10 +15,10 @@
       "label": "Full immunization coverage",
       "definition": "Coverage of a specified child population completing the vaccination schedule defined by the relevant source and period.",
       "mappings": [
-        {"indicatorId": "IND-HMIS-IND-006", "mappingRelation": "closeMatch", "rationale": "Routine HMIS coverage definition uses an estimated child denominator and a source-specific age and antigen schedule."},
-        {"indicatorId": "IND-RMNCHA2-019", "mappingRelation": "closeMatch", "rationale": "Programme scorecard manifestation compares fully immunised children aged 9–11 months with children due for immunisation."},
-        {"indicatorId": "IND-RMNCHA2-033", "mappingRelation": "closeMatch", "rationale": "Programme scorecard label is conceptually aligned but uses children aged 12–23 months as its denominator population."},
-        {"indicatorId": "IND-NFHS-005", "mappingRelation": "closeMatch", "rationale": "Household-survey manifestation is conceptually aligned but differs from routine reporting in design, reference period and denominator construction."}
+        {"indicatorId": "IND-HMIS-IND-006", "mappingRelation": "closeMatch", "previousRelation": "closeMatch", "aggregationSafe": false, "comparisonClass": "Concept comparison only", "reviewStatus": "Domain-reviewed — source-bounded", "rationale": "The routine HMIS manifestation measures the same broad construct, but uses estimated children below one year, children aged 9–11 months in the numerator and a historical antigen schedule.", "differences": ["routine reporting", "estimated denominator", "9–11-month numerator", "historical antigen schedule"]},
+        {"indicatorId": "IND-RMNCHA2-019", "mappingRelation": "closeMatch", "previousRelation": "closeMatch", "aggregationSafe": false, "comparisonClass": "Concept comparison only", "reviewStatus": "Domain-reviewed — source-bounded", "rationale": "The programme scorecard manifestation compares fully immunised children aged 9–11 months with children of the same age due for immunisation, but the cited table does not publish a complete operational formula.", "differences": ["programme scorecard", "9–11-month denominator", "source formula not stated"]},
+        {"indicatorId": "IND-RMNCHA2-033", "mappingRelation": "closeMatch", "previousRelation": "closeMatch", "aggregationSafe": false, "comparisonClass": "Concept comparison only", "reviewStatus": "Domain-reviewed — source-bounded", "rationale": "The survey-based scorecard label represents the same broad construct but applies to children aged 12–23 months and does not publish a computation in the cited table.", "differences": ["survey-based", "12–23-month denominator", "source formula not stated"]},
+        {"indicatorId": "IND-NFHS-005", "mappingRelation": "closeMatch", "previousRelation": "closeMatch", "aggregationSafe": false, "comparisonClass": "Concept comparison only", "reviewStatus": "Domain-reviewed — source-bounded", "rationale": "The household-survey manifestation is conceptually aligned, but differs from routine reporting in sampling, recall or card evidence, survey reference period and the survey-defined vaccination series.", "differences": ["household survey", "12–23-month population", "survey-defined series", "sampling and recall/card evidence"]}
       ]
     },
     {
@@ -21,9 +26,9 @@
       "label": "Immunization session plan adherence",
       "definition": "Whether planned immunization sessions were held in the specified geography and monitoring period.",
       "mappings": [
-        {"indicatorId": "IND-UIP-004", "mappingRelation": "closeMatch", "rationale": "Earlier UIP programme record for planned sessions held."},
-        {"indicatorId": "IND-UIP3-001", "mappingRelation": "closeMatch", "rationale": "IMI monitoring count of sessions held as planned."},
-        {"indicatorId": "IND-UIP3-003", "mappingRelation": "narrowMatch", "rationale": "Percentage is restricted to monitored high-risk areas and planned monitored sessions."}
+        {"indicatorId": "IND-UIP-004", "mappingRelation": "closeMatch", "previousRelation": "closeMatch", "aggregationSafe": false, "comparisonClass": "Comparable after denominator verification", "reviewStatus": "Domain-reviewed — source-bounded", "rationale": "This is the closest percentage manifestation of sessions conducted among sessions planned, but the registry record does not preserve the operational form, exclusions or monitoring period needed for pooling.", "differences": ["operational form unavailable", "exclusions not preserved", "monitoring period not preserved"]},
+        {"indicatorId": "IND-UIP3-001", "mappingRelation": "relatedMatch", "previousRelation": "closeMatch", "aggregationSafe": false, "comparisonClass": "Supporting count", "reviewStatus": "Domain-reviewed — source-bounded", "rationale": "The official IMI item is a count of sessions held as planned. It supports adherence analysis but is not itself an adherence proportion without a planned-session denominator.", "differences": ["count rather than proportion", "planned-session denominator absent", "IMI monitoring context"]},
+        {"indicatorId": "IND-UIP3-003", "mappingRelation": "broadMatch", "previousRelation": "narrowMatch", "aggregationSafe": false, "comparisonClass": "Restricted-population manifestation", "reviewStatus": "Domain-reviewed — source-bounded", "rationale": "This is a narrower manifestation restricted to monitored high-risk areas and planned sessions actually selected for monitoring; the target concept is broader.", "differences": ["monitored high-risk areas only", "monitoring sample", "HRA-type stratification"]}
       ]
     },
     {
@@ -31,9 +36,9 @@
       "label": "Vaccine availability at immunization sessions",
       "definition": "Availability or absence of required vaccines at planned or monitored immunization sessions.",
       "mappings": [
-        {"indicatorId": "IND-UIP-005", "mappingRelation": "relatedMatch", "rationale": "Stock-out is the adverse complement of vaccine availability but source timing and vaccine scope may differ."},
-        {"indicatorId": "IND-UIP3-006", "mappingRelation": "closeMatch", "rationale": "IMI monitoring manifestation directly assesses vaccine availability at monitored sites."},
-        {"indicatorId": "IND-UIP3-007", "mappingRelation": "relatedMatch", "rationale": "Reason analysis explains non-availability and is not itself an availability rate."}
+        {"indicatorId": "IND-UIP-005", "mappingRelation": "relatedMatch", "previousRelation": "relatedMatch", "aggregationSafe": false, "comparisonClass": "Inverse companion measure", "reviewStatus": "Domain-reviewed — source-bounded", "rationale": "Stock-out is directionally inverse to availability and may use a different vaccine basket, observation window and session denominator; it should not be treated as a direct synonym.", "inverseDirection": true, "differences": ["inverse direction", "vaccine basket not preserved", "observation window not preserved"]},
+        {"indicatorId": "IND-UIP3-006", "mappingRelation": "closeMatch", "previousRelation": "closeMatch", "aggregationSafe": false, "comparisonClass": "Comparable after operational-definition verification", "reviewStatus": "Domain-reviewed — source-bounded", "rationale": "The IMI monitoring item directly assesses vaccine availability, but the source list does not specify the numerator rule, required vaccine basket or treatment of partial availability.", "differences": ["numerator rule not stated", "required vaccine basket not stated", "partial availability handling not stated"]},
+        {"indicatorId": "IND-UIP3-007", "mappingRelation": "relatedMatch", "previousRelation": "relatedMatch", "aggregationSafe": false, "comparisonClass": "Explanatory categorical distribution", "reviewStatus": "Domain-reviewed — source-bounded", "rationale": "Reason analysis explains non-availability among affected sessions; it is a categorical diagnostic, not an availability measure.", "differences": ["categorical reasons", "conditioned on non-availability", "not a coverage measure"]}
       ]
     },
     {
@@ -41,13 +46,13 @@
       "label": "AEFI surveillance performance",
       "definition": "Performance of adverse-event reporting, documentation, investigation, completion and causality-classification processes.",
       "mappings": [
-        {"indicatorId": "IND-UIP-006", "mappingRelation": "broadMatch", "rationale": "Reported adverse events are an input to surveillance performance but do not measure timeliness or completeness."},
-        {"indicatorId": "IND-UIP3-047", "mappingRelation": "narrowMatch", "rationale": "Line-listing completeness is one component of AEFI surveillance performance."},
-        {"indicatorId": "IND-UIP3-049", "mappingRelation": "narrowMatch", "rationale": "Timely serious-AEFI reporting is one component of surveillance performance."},
-        {"indicatorId": "IND-UIP3-050", "mappingRelation": "narrowMatch", "rationale": "Timely sharing of the case reporting form is one component of surveillance performance."},
-        {"indicatorId": "IND-UIP3-051", "mappingRelation": "narrowMatch", "rationale": "Timely investigation is one component of surveillance performance."},
-        {"indicatorId": "IND-UIP3-052", "mappingRelation": "narrowMatch", "rationale": "Completed investigations are one component of surveillance performance."},
-        {"indicatorId": "IND-UIP3-053", "mappingRelation": "narrowMatch", "rationale": "Timely causality classification is one component of surveillance performance."}
+        {"indicatorId": "IND-UIP-006", "mappingRelation": "relatedMatch", "previousRelation": "broadMatch", "aggregationSafe": false, "comparisonClass": "Surveillance-volume context", "reviewStatus": "Domain-reviewed — source-bounded", "rationale": "Reported AEFI case count reflects surveillance output and event occurrence, not performance by itself; a higher count is not unambiguously better or worse.", "differences": ["absolute count", "no eligible-case denominator", "direction is not performance-interpretable"]},
+        {"indicatorId": "IND-UIP3-047", "mappingRelation": "broadMatch", "previousRelation": "narrowMatch", "aggregationSafe": false, "comparisonClass": "Performance component", "reviewStatus": "Domain-reviewed — source-bounded", "rationale": "Line-listing completeness is one narrower documentation component of the broader AEFI surveillance-performance concept.", "differences": ["all reported AEFI cases", "documentation component", "timeliness not measured"]},
+        {"indicatorId": "IND-UIP3-049", "mappingRelation": "broadMatch", "previousRelation": "narrowMatch", "aggregationSafe": false, "comparisonClass": "Performance component", "reviewStatus": "Domain-reviewed — source-bounded", "rationale": "Timely reporting of serious AEFI cases is one narrower timeliness component of the broader performance concept.", "differences": ["serious cases only", "reporting-timeliness component", "source time threshold required"]},
+        {"indicatorId": "IND-UIP3-050", "mappingRelation": "broadMatch", "previousRelation": "narrowMatch", "aggregationSafe": false, "comparisonClass": "Performance component", "reviewStatus": "Domain-reviewed — source-bounded", "rationale": "Timely sharing of the Case Reporting Form is one narrower documentation-flow component of the broader performance concept.", "differences": ["serious cases requiring CRF", "document-sharing component", "source time threshold required"]},
+        {"indicatorId": "IND-UIP3-051", "mappingRelation": "broadMatch", "previousRelation": "narrowMatch", "aggregationSafe": false, "comparisonClass": "Performance component", "reviewStatus": "Domain-reviewed — source-bounded", "rationale": "Timely investigation of serious cases is one narrower investigation-timeliness component of the broader performance concept.", "differences": ["serious cases requiring investigation", "investigation-timeliness component", "source time threshold required"]},
+        {"indicatorId": "IND-UIP3-052", "mappingRelation": "broadMatch", "previousRelation": "narrowMatch", "aggregationSafe": false, "comparisonClass": "Performance component", "reviewStatus": "Domain-reviewed — source-bounded", "rationale": "Completed investigation is one narrower completeness component of the broader performance concept and is distinct from investigation timeliness.", "differences": ["serious cases requiring investigation", "completion component", "timeliness not necessarily measured"]},
+        {"indicatorId": "IND-UIP3-053", "mappingRelation": "broadMatch", "previousRelation": "narrowMatch", "aggregationSafe": false, "comparisonClass": "Performance component", "reviewStatus": "Domain-reviewed — source-bounded", "rationale": "Timely causality classification by the relevant committee is one narrower endpoint component of the broader surveillance-performance concept.", "differences": ["cases eligible for causality classification", "committee-classification component", "source time threshold required"]}
       ]
     },
     {
@@ -55,12 +60,12 @@
       "label": "Immunization dropout",
       "definition": "Failure to complete a defined vaccination sequence among children who received an earlier dose or antigen.",
       "mappings": [
-        {"indicatorId": "IND-HMIS-IND-011", "mappingRelation": "narrowMatch", "rationale": "Historical HMIS manifestation measures BCG-to-measles dropout."},
-        {"indicatorId": "IND-HMIS-IND-012", "mappingRelation": "narrowMatch", "rationale": "Historical HMIS manifestation measures DPT3-to-measles dropout."},
-        {"indicatorId": "IND-UIP3-055", "mappingRelation": "relatedMatch", "rationale": "Absolute dropout count supports but is not equivalent to a dropout percentage."},
-        {"indicatorId": "IND-UIP3-057", "mappingRelation": "narrowMatch", "rationale": "Handbook manifestation measures BCG-to-Pentavalent-3 dropout."},
-        {"indicatorId": "IND-UIP3-058", "mappingRelation": "narrowMatch", "rationale": "Handbook manifestation measures Pentavalent-1-to-Pentavalent-3 dropout."},
-        {"indicatorId": "IND-UIP3-059", "mappingRelation": "narrowMatch", "rationale": "Handbook manifestation measures BCG-to-MCV1 dropout."}
+        {"indicatorId": "IND-HMIS-IND-011", "mappingRelation": "broadMatch", "previousRelation": "narrowMatch", "aggregationSafe": false, "comparisonClass": "Antigen-pair-specific manifestation", "reviewStatus": "Domain-reviewed — source-bounded", "rationale": "The historical HMIS BCG-to-measles dropout percentage is a narrower antigen-pair manifestation; the target dropout concept is broader.", "differences": ["BCG-to-measles sequence", "historical schedule terminology", "routine HMIS"]},
+        {"indicatorId": "IND-HMIS-IND-012", "mappingRelation": "broadMatch", "previousRelation": "narrowMatch", "aggregationSafe": false, "comparisonClass": "Antigen-pair-specific manifestation", "reviewStatus": "Domain-reviewed — source-bounded", "rationale": "The historical HMIS DPT3-to-measles dropout percentage is a narrower antigen-pair manifestation; the target dropout concept is broader.", "differences": ["DPT3-to-measles sequence", "historical schedule terminology", "routine HMIS"]},
+        {"indicatorId": "IND-UIP3-055", "mappingRelation": "relatedMatch", "previousRelation": "relatedMatch", "aggregationSafe": false, "comparisonClass": "Supporting count", "reviewStatus": "Domain-reviewed — source-bounded", "rationale": "Absolute dropout count supports programme action but is not equivalent to a percentage and cannot be compared without the first-dose cohort size.", "differences": ["absolute difference", "no scale denominator", "cohort size required for comparison"]},
+        {"indicatorId": "IND-UIP3-057", "mappingRelation": "broadMatch", "previousRelation": "narrowMatch", "aggregationSafe": false, "comparisonClass": "Antigen-pair-specific manifestation", "reviewStatus": "Domain-reviewed — source-bounded", "rationale": "BCG-to-Penta-3 dropout is a narrower antigen-pair manifestation of the broader dropout concept.", "differences": ["BCG-to-Penta-3 sequence", "BCG denominator", "routine cumulative totals"]},
+        {"indicatorId": "IND-UIP3-058", "mappingRelation": "broadMatch", "previousRelation": "narrowMatch", "aggregationSafe": false, "comparisonClass": "Dose-series-specific manifestation", "reviewStatus": "Domain-reviewed — source-bounded", "rationale": "Penta-1-to-Penta-3 dropout is a narrower within-series manifestation of the broader dropout concept.", "differences": ["Penta-1-to-Penta-3 sequence", "Penta-1 denominator", "routine cumulative totals"]},
+        {"indicatorId": "IND-UIP3-059", "mappingRelation": "broadMatch", "previousRelation": "narrowMatch", "aggregationSafe": false, "comparisonClass": "Antigen-pair-specific manifestation", "reviewStatus": "Domain-reviewed — source-bounded", "rationale": "BCG-to-MCV1 dropout is a narrower antigen-pair manifestation of the broader dropout concept.", "differences": ["BCG-to-MCV1 sequence", "BCG denominator", "routine cumulative totals"]}
       ]
     }
   ]

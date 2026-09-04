@@ -10,11 +10,11 @@
   <meta property="og:image" content="og.png">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="alternate" type="application/ld+json" href="data/graph/schemaorg.jsonld" title="Immunization knowledge graph Schema.org profile">
-  <link rel="stylesheet" href="styles.css?v=kg-0.1.1">
+  <link rel="stylesheet" href="styles.css?v=kg-0.2.0">
   <script src="https://cdn.jsdelivr.net/npm/cytoscape@3.34.2/dist/cytoscape.min.js" defer></script>
-  <script src="app.js?v=kg-0.1.1" defer></script>
-  <script src="hmis.js?v=kg-0.1.1" defer></script>
-  <script src="graph.js?v=kg-0.1.1" defer></script>
+  <script src="app.js?v=kg-0.2.0" defer></script>
+  <script src="hmis.js?v=kg-0.2.0" defer></script>
+  <script src="graph.js?v=kg-0.2.0" defer></script>
   <script src="report-schemas.js?v=hmis-1.4-candidate" defer></script>
 </head>
 <body>
@@ -54,19 +54,22 @@
     <div class="results-bar"><p><strong id="hmis-result-count">0</strong> HMIS knowledge objects found</p><button id="hmis-clear" hidden>Clear HMIS filters</button></div><div class="hmis-grid" id="hmis-grid" aria-live="polite"></div><button class="load-more" id="hmis-load-more" hidden>Load more HMIS objects</button>
   </section>
   <section class="graph-explorer" id="knowledge-graph">
-    <div class="section-heading"><div><p class="eyebrow">Knowledge graph · Immunization pilot</p><h2>Trace an indicator through concepts, sources and systems.</h2></div><p class="section-intro">Explore focused neighbourhoods rather than an unreadable whole-registry network. Official, curated and normalized relationships remain visibly distinct.</p></div>
-    <div class="kg-boundary"><strong>Semantic boundary</strong><p>This proof of concept covers all 76 Immunization-discoverable indicators and all 102 programme-linked HMIS identities. Five source-neutral concepts are curated for comparison; graph links do not authorize aggregation across definitions.</p></div>
-    <div class="kg-metrics"><span><strong id="kg-node-count">223</strong> nodes</span><span><strong id="kg-edge-count">758</strong> typed relationships</span><span><strong id="kg-concept-count">5</strong> curated concepts</span></div>
+    <div class="section-heading"><div><p class="eyebrow">Knowledge graph · Domain-reviewed Immunization pilot</p><h2>See meaning, provenance and comparability—not just connections.</h2></div><p class="section-intro">Explore focused neighbourhoods, select a relationship to inspect its evidence, and see why related indicators must remain analytically distinct.</p></div>
+    <div class="kg-boundary"><strong>Semantic boundary</strong><p>All 23 initial mappings across full immunization, session adherence, vaccine availability, AEFI performance and dropout have been domain-reviewed. Relationships support discovery and source-aware comparison; none currently authorizes aggregation.</p></div>
+    <div class="kg-metrics"><span><strong id="kg-node-count">223</strong> nodes</span><span><strong id="kg-edge-count">758</strong> typed relationships</span><span><strong id="kg-concept-count">5</strong> concepts</span><span><strong id="kg-review-count">23</strong> reviewed mappings</span></div>
+    <div class="kg-review-summary" aria-label="Domain review summary"><span><b>6</b> close matches</span><span><b>12</b> broad matches</span><span><b>5</b> related matches</span><span class="kg-no-pool"><b>0</b> aggregation permissions</span></div>
+    <div id="kg-concept-shortcuts" class="kg-concept-shortcuts" aria-label="Reviewed concept shortcuts"></div>
     <div class="kg-controls">
       <label><span>Start from</span><select id="kg-focus" aria-label="Knowledge graph focus"></select></label>
-      <label><span>Relationship view</span><select id="kg-mode" aria-label="Knowledge graph relationship view"><option value="all">All linked evidence</option><option value="lineage">Source lineage</option><option value="computation">Concept and computation</option><option value="programme">Programme context</option></select></label>
-      <button id="kg-fit" class="kg-secondary">Fit graph</button>
+      <label><span>Relationship lens</span><select id="kg-mode" aria-label="Knowledge graph relationship view"><option value="computation">Concept and computation</option><option value="lineage">Source lineage</option><option value="programme">Programme context</option><option value="all">All linked evidence</option></select></label>
+      <div class="kg-control-actions"><button id="kg-back" class="kg-icon-button" aria-label="Previous graph focus" title="Previous focus">←</button><button id="kg-forward" class="kg-icon-button" aria-label="Next graph focus" title="Next focus">→</button><button id="kg-fit" class="kg-secondary">Fit graph</button></div>
+      <label class="kg-toggle"><input id="kg-edge-labels" type="checkbox"><span>Show all relationship labels</span></label>
     </div>
     <div class="kg-workspace">
       <div><div id="kg-canvas" role="img" aria-label="Interactive Immunization indicator knowledge graph"></div><p id="kg-status" aria-live="polite">Loading knowledge graph…</p></div>
       <aside id="kg-detail" aria-live="polite"><p class="eyebrow">Selected node</p><h3>Loading…</h3></aside>
     </div>
-    <div class="kg-legend" aria-label="Knowledge graph legend"><span><i class="kg-dot indicator"></i>Indicator</span><span><i class="kg-dot concept"></i>Concept</span><span><i class="kg-dot hmis"></i>HMIS object</span><span><i class="kg-dot source"></i>Source</span><span><i class="kg-dot context"></i>Programme/context</span><span><i class="kg-dot gap"></i>Evidence gap</span></div>
+    <div class="kg-legend" aria-label="Knowledge graph legend"><span><i class="kg-dot indicator"></i>Indicator</span><span><i class="kg-dot concept"></i>Concept</span><span><i class="kg-dot hmis"></i>HMIS object</span><span><i class="kg-dot source"></i>Source</span><span><i class="kg-dot context"></i>Programme/context</span><span><i class="kg-dot gap"></i>Evidence gap</span><span><i class="kg-line official"></i>Official</span><span><i class="kg-line curated"></i>Curated</span><span><i class="kg-line normalized"></i>Normalized</span></div>
   </section>
   <section class="report-schema-release" id="hmis-report-schemas">
     <div class="section-heading"><div><p class="eyebrow">HMIS report schemas · Release 1.4 candidate</p><h2>Observed columns, reconciled without rewriting source history.</h2></div><p class="section-intro">This separate layer records what appeared in a specific downloaded report, links those occurrences to the canonical HMIS dictionary, and keeps unverified fields in a review queue.</p></div>
@@ -75,7 +78,7 @@
   </section>
   <section class="india-audit" id="india"><div><p class="eyebrow">India programme release</p><h2>Indian public-health indicators are becoming traceable systems.</h2><p>The registry now includes deep NTEP, RMNCH+A and Immunization programme verticals plus the linked HMIS knowledge model. Source-specific variants remain distinct, while curated crosswalks connect programme records to related HMIS definitions without claiming false equivalence.</p><a class="primary-action" href="#registry" onclick="setTimeout(()=>{document.getElementById('geography').value='India';document.getElementById('geography').dispatchEvent(new Event('change'))},0)">Browse India indicators <span>→</span></a></div><div class="audit-metrics"><article><strong id="metric-india">600</strong><span>India-specific indicator records</span></article><article><strong id="metric-india-sources">15</strong><span>official source families represented</span></article><article><strong>6</strong><span>WHO building blocks available as filters</span></article></div></section>
   <section class="architecture-section" id="method"><div><p class="eyebrow">Federated architecture</p><h2>One registry, multiple custodians</h2></div><div class="architecture-grid"><article><span>01</span><h3>Source manifestations</h3><p>Every authority’s record, code and link is retained without premature merging.</p></article><article><span>02</span><h3>Transparent completeness</h3><p>Each record carries a metadata level and a nine-field completeness score.</p></article><article><span>03</span><h3>Coverage ledger</h3><p>Forty-one source families are declared; Release 3 reports which catalogues and programme source tables are complete or pending.</p></article><article><span>04</span><h3>Versioned expansion</h3><p>Specialist, regional and national sources can be added without rewriting source history.</p></article></div><div class="version-alert"><strong>Interpretation alert</strong><p>WHO building-block tags and discovery domains are analytical mappings, not source-custodian classifications. Official computation remains controlled by each linked authority.</p></div></section>
-  <footer><div class="brand"><span class="brand-mark">PH</span><span>Indicator Registry</span></div><p>Release 3.1 · Immunization knowledge-graph pilot · cut-off 4 September 2026. Primary source metadata controls official computation.</p><a href="#top">Back to top ↑</a></footer>
+  <footer><div class="brand"><span class="brand-mark">PH</span><span>Indicator Registry</span></div><p>Release 3.2 · Domain-reviewed Immunization knowledge graph · cut-off 4 September 2026. Primary source metadata controls official computation.</p><a href="#top">Back to top ↑</a></footer>
 </main>
 <div class="modal-backdrop" id="modal-backdrop" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" id="modal-close" aria-label="Close metadata">×</button><div id="modal-content"></div></section></div>
 </body>

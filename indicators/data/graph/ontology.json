@@ -38,8 +38,8 @@
   "mappingRelations": {
     "exactMatch": "Definitions and operational semantics are judged equivalent within the stated version and context.",
     "closeMatch": "Conceptually close but one or more operational details prevent an exact-equivalence assertion.",
-    "broadMatch": "The concept represented by the source manifestation is broader than the target concept.",
-    "narrowMatch": "The concept represented by the source manifestation is narrower than the target concept.",
+    "broadMatch": "The target concept is broader than the concept represented by the source manifestation.",
+    "narrowMatch": "The target concept is narrower than the concept represented by the source manifestation.",
     "relatedMatch": "The records are useful to navigate together but do not have a hierarchical or equivalence relation."
   },
   "assertionStatuses": {

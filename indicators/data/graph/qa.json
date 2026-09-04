@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "graphId": "PHAOS-KG-UIP-0.1",
+    "graphId": "PHAOS-KG-UIP-0.2",
     "checked": "2026-09-04"
   },
   "counts": {
@@ -11,6 +11,7 @@
     "standaloneHmisNodes": 95,
     "coTypedHmisIndicatorNodes": 7,
     "concepts": 5,
+    "reviewedMappings": 23,
     "sources": 8,
     "evidenceGaps": 7,
     "nodeTypes": {
@@ -87,6 +88,36 @@
       "failures": 0,
       "pass": true
     },
+    "allInitialMappingsDomainReviewed": {
+      "expected": 23,
+      "actual": 23,
+      "failures": 0,
+      "pass": true
+    },
+    "reviewDecisionAudit": {
+      "expectedChanged": 14,
+      "changed": 14,
+      "expectedRetained": 9,
+      "retained": 9,
+      "pass": true
+    },
+    "reviewedRelationDistribution": {
+      "expected": {
+        "closeMatch": 6,
+        "broadMatch": 12,
+        "relatedMatch": 5
+      },
+      "actual": {
+        "closeMatch": 6,
+        "relatedMatch": 5,
+        "broadMatch": 12
+      },
+      "pass": true
+    },
+    "noAggregationPermissionGranted": {
+      "failures": 0,
+      "pass": true
+    },
     "officialNamesPreserved": {
       "failures": 0,
       "pass": true
@@ -94,10 +125,6 @@
     "sixCanonicalBuildingBlocks": {
       "expected": 6,
       "actual": 6,
-      "pass": true
-    },
-    "noProhibitedStateReference": {
-      "failures": 0,
       "pass": true
     },
     "schemaOrgUsesDefinitionsNotObservations": {

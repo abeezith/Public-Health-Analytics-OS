@@ -18,18 +18,18 @@
       "url": "https://abeezith.github.io/Public-Health-Analytics-OS/indicators/",
       "license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "dataset": {
-        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/dataset/immunization-knowledge-graph-0.1"
+        "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/dataset/immunization-knowledge-graph-0.2"
       }
     },
     {
-      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/dataset/immunization-knowledge-graph-0.1",
+      "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/dataset/immunization-knowledge-graph-0.2",
       "@type": [
         "Dataset",
         "dcat:Dataset"
       ],
-      "name": "Immunization knowledge graph pilot",
-      "description": "All 76 Immunization-discoverable registry manifestations, 102 programme-tagged HMIS knowledge objects, their public sources, normalized discovery vocabularies, five curated concepts and seven declared evidence gaps.",
-      "version": "0.1.0",
+      "name": "Domain-reviewed Immunization knowledge graph pilot",
+      "description": "All 76 Immunization-discoverable registry manifestations, 102 programme-tagged HMIS knowledge objects, their public sources, normalized discovery vocabularies, five curated concepts, 23 domain-reviewed concept mappings and seven declared evidence gaps.",
+      "version": "0.2.0",
       "dateModified": "2026-09-04",
       "includedInDataCatalog": {
         "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/catalog/public-health-indicator-registry"
@@ -673,7 +673,7 @@
         "Service delivery"
       ],
       "dateModified": "2026-09-01",
-      "skos:narrowMatch": [
+      "skos:broadMatch": [
         {
           "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT"
         }
@@ -712,7 +712,7 @@
         "Service delivery"
       ],
       "dateModified": "2026-09-01",
-      "skos:narrowMatch": [
+      "skos:broadMatch": [
         {
           "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT"
         }
@@ -967,7 +967,7 @@
         "Health information systems"
       ],
       "dateModified": "2026-08-25",
-      "skos:broadMatch": [
+      "skos:relatedMatch": [
         {
           "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
         }
@@ -1115,7 +1115,7 @@
         "Health information systems"
       ],
       "dateModified": "2026-09-04",
-      "skos:closeMatch": [
+      "skos:relatedMatch": [
         {
           "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-SESSION-PLAN-ADHERENCE"
         }
@@ -1185,7 +1185,7 @@
         "Health information systems"
       ],
       "dateModified": "2026-09-04",
-      "skos:narrowMatch": [
+      "skos:broadMatch": [
         {
           "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-SESSION-PLAN-ADHERENCE"
         }
@@ -2607,7 +2607,7 @@
         "Health information systems"
       ],
       "dateModified": "2026-09-04",
-      "skos:narrowMatch": [
+      "skos:broadMatch": [
         {
           "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
         }
@@ -2677,7 +2677,7 @@
         "Health information systems"
       ],
       "dateModified": "2026-09-04",
-      "skos:narrowMatch": [
+      "skos:broadMatch": [
         {
           "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
         }
@@ -2716,7 +2716,7 @@
         "Health information systems"
       ],
       "dateModified": "2026-09-04",
-      "skos:narrowMatch": [
+      "skos:broadMatch": [
         {
           "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
         }
@@ -2755,7 +2755,7 @@
         "Health information systems"
       ],
       "dateModified": "2026-09-04",
-      "skos:narrowMatch": [
+      "skos:broadMatch": [
         {
           "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
         }
@@ -2794,7 +2794,7 @@
         "Health information systems"
       ],
       "dateModified": "2026-09-04",
-      "skos:narrowMatch": [
+      "skos:broadMatch": [
         {
           "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
         }
@@ -2834,7 +2834,7 @@
         "Leadership and governance"
       ],
       "dateModified": "2026-09-04",
-      "skos:narrowMatch": [
+      "skos:broadMatch": [
         {
           "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
         }
@@ -2974,7 +2974,7 @@
         "Health information systems"
       ],
       "dateModified": "2026-09-04",
-      "skos:narrowMatch": [
+      "skos:broadMatch": [
         {
           "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT"
         }
@@ -3013,7 +3013,7 @@
         "Health information systems"
       ],
       "dateModified": "2026-09-04",
-      "skos:narrowMatch": [
+      "skos:broadMatch": [
         {
           "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT"
         }
@@ -3052,7 +3052,7 @@
         "Health information systems"
       ],
       "dateModified": "2026-09-04",
-      "skos:narrowMatch": [
+      "skos:broadMatch": [
         {
           "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT"
         }
@@ -3073,7 +3073,11 @@
       },
       "ph:mappingRelation": "closeMatch",
       "ph:assertionStatus": "curated",
-      "description": "Routine HMIS coverage definition uses an estimated child denominator and a source-specific age and antigen schedule.",
+      "ph:reviewStatus": "Domain-reviewed — source-bounded",
+      "ph:comparisonClass": "Concept comparison only",
+      "ph:aggregationSafe": false,
+      "ph:reviewId": "REVIEW-IND-HMIS-IND-006-CONCEPT-UIP-FULL-IMMUNIZATION-COVERAGE",
+      "description": "The routine HMIS manifestation measures the same broad construct, but uses estimated children below one year, children aged 9–11 months in the numerator and a historical antigen schedule.",
       "dateModified": "2026-09-04",
       "creator": "Public Health Analytics-OS"
     },
@@ -3090,9 +3094,13 @@
       "ph:object": {
         "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT"
       },
-      "ph:mappingRelation": "narrowMatch",
+      "ph:mappingRelation": "broadMatch",
       "ph:assertionStatus": "curated",
-      "description": "Historical HMIS manifestation measures BCG-to-measles dropout.",
+      "ph:reviewStatus": "Domain-reviewed — source-bounded",
+      "ph:comparisonClass": "Antigen-pair-specific manifestation",
+      "ph:aggregationSafe": false,
+      "ph:reviewId": "REVIEW-IND-HMIS-IND-011-CONCEPT-UIP-IMMUNIZATION-DROPOUT",
+      "description": "The historical HMIS BCG-to-measles dropout percentage is a narrower antigen-pair manifestation; the target dropout concept is broader.",
       "dateModified": "2026-09-04",
       "creator": "Public Health Analytics-OS"
     },
@@ -3109,9 +3117,13 @@
       "ph:object": {
         "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT"
       },
-      "ph:mappingRelation": "narrowMatch",
+      "ph:mappingRelation": "broadMatch",
       "ph:assertionStatus": "curated",
-      "description": "Historical HMIS manifestation measures DPT3-to-measles dropout.",
+      "ph:reviewStatus": "Domain-reviewed — source-bounded",
+      "ph:comparisonClass": "Antigen-pair-specific manifestation",
+      "ph:aggregationSafe": false,
+      "ph:reviewId": "REVIEW-IND-HMIS-IND-012-CONCEPT-UIP-IMMUNIZATION-DROPOUT",
+      "description": "The historical HMIS DPT3-to-measles dropout percentage is a narrower antigen-pair manifestation; the target dropout concept is broader.",
       "dateModified": "2026-09-04",
       "creator": "Public Health Analytics-OS"
     },
@@ -3130,7 +3142,11 @@
       },
       "ph:mappingRelation": "closeMatch",
       "ph:assertionStatus": "curated",
-      "description": "Household-survey manifestation is conceptually aligned but differs from routine reporting in design, reference period and denominator construction.",
+      "ph:reviewStatus": "Domain-reviewed — source-bounded",
+      "ph:comparisonClass": "Concept comparison only",
+      "ph:aggregationSafe": false,
+      "ph:reviewId": "REVIEW-IND-NFHS-005-CONCEPT-UIP-FULL-IMMUNIZATION-COVERAGE",
+      "description": "The household-survey manifestation is conceptually aligned, but differs from routine reporting in sampling, recall or card evidence, survey reference period and the survey-defined vaccination series.",
       "dateModified": "2026-09-04",
       "creator": "Public Health Analytics-OS"
     },
@@ -3149,7 +3165,11 @@
       },
       "ph:mappingRelation": "closeMatch",
       "ph:assertionStatus": "curated",
-      "description": "Programme scorecard manifestation compares fully immunised children aged 9–11 months with children due for immunisation.",
+      "ph:reviewStatus": "Domain-reviewed — source-bounded",
+      "ph:comparisonClass": "Concept comparison only",
+      "ph:aggregationSafe": false,
+      "ph:reviewId": "REVIEW-IND-RMNCHA2-019-CONCEPT-UIP-FULL-IMMUNIZATION-COVERAGE",
+      "description": "The programme scorecard manifestation compares fully immunised children aged 9–11 months with children of the same age due for immunisation, but the cited table does not publish a complete operational formula.",
       "dateModified": "2026-09-04",
       "creator": "Public Health Analytics-OS"
     },
@@ -3168,7 +3188,11 @@
       },
       "ph:mappingRelation": "closeMatch",
       "ph:assertionStatus": "curated",
-      "description": "Programme scorecard label is conceptually aligned but uses children aged 12–23 months as its denominator population.",
+      "ph:reviewStatus": "Domain-reviewed — source-bounded",
+      "ph:comparisonClass": "Concept comparison only",
+      "ph:aggregationSafe": false,
+      "ph:reviewId": "REVIEW-IND-RMNCHA2-033-CONCEPT-UIP-FULL-IMMUNIZATION-COVERAGE",
+      "description": "The survey-based scorecard label represents the same broad construct but applies to children aged 12–23 months and does not publish a computation in the cited table.",
       "dateModified": "2026-09-04",
       "creator": "Public Health Analytics-OS"
     },
@@ -3187,7 +3211,11 @@
       },
       "ph:mappingRelation": "closeMatch",
       "ph:assertionStatus": "curated",
-      "description": "Earlier UIP programme record for planned sessions held.",
+      "ph:reviewStatus": "Domain-reviewed — source-bounded",
+      "ph:comparisonClass": "Comparable after denominator verification",
+      "ph:aggregationSafe": false,
+      "ph:reviewId": "REVIEW-IND-UIP-004-CONCEPT-UIP-SESSION-PLAN-ADHERENCE",
+      "description": "This is the closest percentage manifestation of sessions conducted among sessions planned, but the registry record does not preserve the operational form, exclusions or monitoring period needed for pooling.",
       "dateModified": "2026-09-04",
       "creator": "Public Health Analytics-OS"
     },
@@ -3206,7 +3234,11 @@
       },
       "ph:mappingRelation": "relatedMatch",
       "ph:assertionStatus": "curated",
-      "description": "Stock-out is the adverse complement of vaccine availability but source timing and vaccine scope may differ.",
+      "ph:reviewStatus": "Domain-reviewed — source-bounded",
+      "ph:comparisonClass": "Inverse companion measure",
+      "ph:aggregationSafe": false,
+      "ph:reviewId": "REVIEW-IND-UIP-005-CONCEPT-UIP-VACCINE-SESSION-AVAILABILITY",
+      "description": "Stock-out is directionally inverse to availability and may use a different vaccine basket, observation window and session denominator; it should not be treated as a direct synonym.",
       "dateModified": "2026-09-04",
       "creator": "Public Health Analytics-OS"
     },
@@ -3223,9 +3255,13 @@
       "ph:object": {
         "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
       },
-      "ph:mappingRelation": "broadMatch",
+      "ph:mappingRelation": "relatedMatch",
       "ph:assertionStatus": "curated",
-      "description": "Reported adverse events are an input to surveillance performance but do not measure timeliness or completeness.",
+      "ph:reviewStatus": "Domain-reviewed — source-bounded",
+      "ph:comparisonClass": "Surveillance-volume context",
+      "ph:aggregationSafe": false,
+      "ph:reviewId": "REVIEW-IND-UIP-006-CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE",
+      "description": "Reported AEFI case count reflects surveillance output and event occurrence, not performance by itself; a higher count is not unambiguously better or worse.",
       "dateModified": "2026-09-04",
       "creator": "Public Health Analytics-OS"
     },
@@ -3242,9 +3278,13 @@
       "ph:object": {
         "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-SESSION-PLAN-ADHERENCE"
       },
-      "ph:mappingRelation": "closeMatch",
+      "ph:mappingRelation": "relatedMatch",
       "ph:assertionStatus": "curated",
-      "description": "IMI monitoring count of sessions held as planned.",
+      "ph:reviewStatus": "Domain-reviewed — source-bounded",
+      "ph:comparisonClass": "Supporting count",
+      "ph:aggregationSafe": false,
+      "ph:reviewId": "REVIEW-IND-UIP3-001-CONCEPT-UIP-SESSION-PLAN-ADHERENCE",
+      "description": "The official IMI item is a count of sessions held as planned. It supports adherence analysis but is not itself an adherence proportion without a planned-session denominator.",
       "dateModified": "2026-09-04",
       "creator": "Public Health Analytics-OS"
     },
@@ -3261,9 +3301,13 @@
       "ph:object": {
         "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-SESSION-PLAN-ADHERENCE"
       },
-      "ph:mappingRelation": "narrowMatch",
+      "ph:mappingRelation": "broadMatch",
       "ph:assertionStatus": "curated",
-      "description": "Percentage is restricted to monitored high-risk areas and planned monitored sessions.",
+      "ph:reviewStatus": "Domain-reviewed — source-bounded",
+      "ph:comparisonClass": "Restricted-population manifestation",
+      "ph:aggregationSafe": false,
+      "ph:reviewId": "REVIEW-IND-UIP3-003-CONCEPT-UIP-SESSION-PLAN-ADHERENCE",
+      "description": "This is a narrower manifestation restricted to monitored high-risk areas and planned sessions actually selected for monitoring; the target concept is broader.",
       "dateModified": "2026-09-04",
       "creator": "Public Health Analytics-OS"
     },
@@ -3282,7 +3326,11 @@
       },
       "ph:mappingRelation": "closeMatch",
       "ph:assertionStatus": "curated",
-      "description": "IMI monitoring manifestation directly assesses vaccine availability at monitored sites.",
+      "ph:reviewStatus": "Domain-reviewed — source-bounded",
+      "ph:comparisonClass": "Comparable after operational-definition verification",
+      "ph:aggregationSafe": false,
+      "ph:reviewId": "REVIEW-IND-UIP3-006-CONCEPT-UIP-VACCINE-SESSION-AVAILABILITY",
+      "description": "The IMI monitoring item directly assesses vaccine availability, but the source list does not specify the numerator rule, required vaccine basket or treatment of partial availability.",
       "dateModified": "2026-09-04",
       "creator": "Public Health Analytics-OS"
     },
@@ -3301,7 +3349,11 @@
       },
       "ph:mappingRelation": "relatedMatch",
       "ph:assertionStatus": "curated",
-      "description": "Reason analysis explains non-availability and is not itself an availability rate.",
+      "ph:reviewStatus": "Domain-reviewed — source-bounded",
+      "ph:comparisonClass": "Explanatory categorical distribution",
+      "ph:aggregationSafe": false,
+      "ph:reviewId": "REVIEW-IND-UIP3-007-CONCEPT-UIP-VACCINE-SESSION-AVAILABILITY",
+      "description": "Reason analysis explains non-availability among affected sessions; it is a categorical diagnostic, not an availability measure.",
       "dateModified": "2026-09-04",
       "creator": "Public Health Analytics-OS"
     },
@@ -3318,9 +3370,13 @@
       "ph:object": {
         "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
       },
-      "ph:mappingRelation": "narrowMatch",
+      "ph:mappingRelation": "broadMatch",
       "ph:assertionStatus": "curated",
-      "description": "Line-listing completeness is one component of AEFI surveillance performance.",
+      "ph:reviewStatus": "Domain-reviewed — source-bounded",
+      "ph:comparisonClass": "Performance component",
+      "ph:aggregationSafe": false,
+      "ph:reviewId": "REVIEW-IND-UIP3-047-CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE",
+      "description": "Line-listing completeness is one narrower documentation component of the broader AEFI surveillance-performance concept.",
       "dateModified": "2026-09-04",
       "creator": "Public Health Analytics-OS"
     },
@@ -3337,9 +3393,13 @@
       "ph:object": {
         "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
       },
-      "ph:mappingRelation": "narrowMatch",
+      "ph:mappingRelation": "broadMatch",
       "ph:assertionStatus": "curated",
-      "description": "Timely serious-AEFI reporting is one component of surveillance performance.",
+      "ph:reviewStatus": "Domain-reviewed — source-bounded",
+      "ph:comparisonClass": "Performance component",
+      "ph:aggregationSafe": false,
+      "ph:reviewId": "REVIEW-IND-UIP3-049-CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE",
+      "description": "Timely reporting of serious AEFI cases is one narrower timeliness component of the broader performance concept.",
       "dateModified": "2026-09-04",
       "creator": "Public Health Analytics-OS"
     },
@@ -3356,9 +3416,13 @@
       "ph:object": {
         "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
       },
-      "ph:mappingRelation": "narrowMatch",
+      "ph:mappingRelation": "broadMatch",
       "ph:assertionStatus": "curated",
-      "description": "Timely sharing of the case reporting form is one component of surveillance performance.",
+      "ph:reviewStatus": "Domain-reviewed — source-bounded",
+      "ph:comparisonClass": "Performance component",
+      "ph:aggregationSafe": false,
+      "ph:reviewId": "REVIEW-IND-UIP3-050-CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE",
+      "description": "Timely sharing of the Case Reporting Form is one narrower documentation-flow component of the broader performance concept.",
       "dateModified": "2026-09-04",
       "creator": "Public Health Analytics-OS"
     },
@@ -3375,9 +3439,13 @@
       "ph:object": {
         "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
       },
-      "ph:mappingRelation": "narrowMatch",
+      "ph:mappingRelation": "broadMatch",
       "ph:assertionStatus": "curated",
-      "description": "Timely investigation is one component of surveillance performance.",
+      "ph:reviewStatus": "Domain-reviewed — source-bounded",
+      "ph:comparisonClass": "Performance component",
+      "ph:aggregationSafe": false,
+      "ph:reviewId": "REVIEW-IND-UIP3-051-CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE",
+      "description": "Timely investigation of serious cases is one narrower investigation-timeliness component of the broader performance concept.",
       "dateModified": "2026-09-04",
       "creator": "Public Health Analytics-OS"
     },
@@ -3394,9 +3462,13 @@
       "ph:object": {
         "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
       },
-      "ph:mappingRelation": "narrowMatch",
+      "ph:mappingRelation": "broadMatch",
       "ph:assertionStatus": "curated",
-      "description": "Completed investigations are one component of surveillance performance.",
+      "ph:reviewStatus": "Domain-reviewed — source-bounded",
+      "ph:comparisonClass": "Performance component",
+      "ph:aggregationSafe": false,
+      "ph:reviewId": "REVIEW-IND-UIP3-052-CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE",
+      "description": "Completed investigation is one narrower completeness component of the broader performance concept and is distinct from investigation timeliness.",
       "dateModified": "2026-09-04",
       "creator": "Public Health Analytics-OS"
     },
@@ -3413,9 +3485,13 @@
       "ph:object": {
         "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE"
       },
-      "ph:mappingRelation": "narrowMatch",
+      "ph:mappingRelation": "broadMatch",
       "ph:assertionStatus": "curated",
-      "description": "Timely causality classification is one component of surveillance performance.",
+      "ph:reviewStatus": "Domain-reviewed — source-bounded",
+      "ph:comparisonClass": "Performance component",
+      "ph:aggregationSafe": false,
+      "ph:reviewId": "REVIEW-IND-UIP3-053-CONCEPT-UIP-AEFI-SURVEILLANCE-PERFORMANCE",
+      "description": "Timely causality classification by the relevant committee is one narrower endpoint component of the broader surveillance-performance concept.",
       "dateModified": "2026-09-04",
       "creator": "Public Health Analytics-OS"
     },
@@ -3434,7 +3510,11 @@
       },
       "ph:mappingRelation": "relatedMatch",
       "ph:assertionStatus": "curated",
-      "description": "Absolute dropout count supports but is not equivalent to a dropout percentage.",
+      "ph:reviewStatus": "Domain-reviewed — source-bounded",
+      "ph:comparisonClass": "Supporting count",
+      "ph:aggregationSafe": false,
+      "ph:reviewId": "REVIEW-IND-UIP3-055-CONCEPT-UIP-IMMUNIZATION-DROPOUT",
+      "description": "Absolute dropout count supports programme action but is not equivalent to a percentage and cannot be compared without the first-dose cohort size.",
       "dateModified": "2026-09-04",
       "creator": "Public Health Analytics-OS"
     },
@@ -3451,9 +3531,13 @@
       "ph:object": {
         "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT"
       },
-      "ph:mappingRelation": "narrowMatch",
+      "ph:mappingRelation": "broadMatch",
       "ph:assertionStatus": "curated",
-      "description": "Handbook manifestation measures BCG-to-Pentavalent-3 dropout.",
+      "ph:reviewStatus": "Domain-reviewed — source-bounded",
+      "ph:comparisonClass": "Antigen-pair-specific manifestation",
+      "ph:aggregationSafe": false,
+      "ph:reviewId": "REVIEW-IND-UIP3-057-CONCEPT-UIP-IMMUNIZATION-DROPOUT",
+      "description": "BCG-to-Penta-3 dropout is a narrower antigen-pair manifestation of the broader dropout concept.",
       "dateModified": "2026-09-04",
       "creator": "Public Health Analytics-OS"
     },
@@ -3470,9 +3554,13 @@
       "ph:object": {
         "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT"
       },
-      "ph:mappingRelation": "narrowMatch",
+      "ph:mappingRelation": "broadMatch",
       "ph:assertionStatus": "curated",
-      "description": "Handbook manifestation measures Pentavalent-1-to-Pentavalent-3 dropout.",
+      "ph:reviewStatus": "Domain-reviewed — source-bounded",
+      "ph:comparisonClass": "Dose-series-specific manifestation",
+      "ph:aggregationSafe": false,
+      "ph:reviewId": "REVIEW-IND-UIP3-058-CONCEPT-UIP-IMMUNIZATION-DROPOUT",
+      "description": "Penta-1-to-Penta-3 dropout is a narrower within-series manifestation of the broader dropout concept.",
       "dateModified": "2026-09-04",
       "creator": "Public Health Analytics-OS"
     },
@@ -3489,9 +3577,13 @@
       "ph:object": {
         "@id": "https://abeezith.github.io/Public-Health-Analytics-OS/id/CONCEPT-UIP-IMMUNIZATION-DROPOUT"
       },
-      "ph:mappingRelation": "narrowMatch",
+      "ph:mappingRelation": "broadMatch",
       "ph:assertionStatus": "curated",
-      "description": "Handbook manifestation measures BCG-to-MCV1 dropout.",
+      "ph:reviewStatus": "Domain-reviewed — source-bounded",
+      "ph:comparisonClass": "Antigen-pair-specific manifestation",
+      "ph:aggregationSafe": false,
+      "ph:reviewId": "REVIEW-IND-UIP3-059-CONCEPT-UIP-IMMUNIZATION-DROPOUT",
+      "description": "BCG-to-MCV1 dropout is a narrower antigen-pair manifestation of the broader dropout concept.",
       "dateModified": "2026-09-04",
       "creator": "Public Health Analytics-OS"
     }
