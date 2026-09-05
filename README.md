@@ -8,7 +8,7 @@ An open, modular GitHub Pages workspace for public-health roles, indicators and 
 - `/roles/` — Public Health Roles in India, preserved as an interactive module
 - `/indicators/` — bounded-exhaustive Master Public Health Indicator Registry
 
-The registry currently includes 3,108 records from four source-complete global catalogues plus the curated priority collection.
+The registry currently publishes 3,751 indicator manifestations: a 3,108-record global core and 643 India-specific records. It also links 1,046 HMIS knowledge objects and a five-programme knowledge graph. Completeness is asserted only within each declared source boundary; the registry is not yet exhaustive across all public-health authorities or live programme portals. Public download controls are disabled.
 
 ## Recommended GitHub Pages address
 
