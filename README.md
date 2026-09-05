@@ -23,3 +23,7 @@ The existing `Public-Health-Roles-in-India` repository can remain online during 
 ## Updating modules
 
 Each module is self-contained and uses relative links, so it can be replaced independently without changing the shared home page.
+
+## Programme and standards workstreams
+
+Programme expansion, knowledge-graph work, FHIR interoperability and the deferred terminology evaluations are tracked in [the programme workstream tracker](docs/PROGRAMME-WORKSTREAM-TRACKER.md). Its machine-readable status ledger is stored at `indicators/data/governance/workstreams.json` so every future programme can receive the same repeatable interoperability checklist.

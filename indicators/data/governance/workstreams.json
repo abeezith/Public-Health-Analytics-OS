@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "id": "PHAOS-WORKSTREAM-TRACKER-1",
+    "version": "1.0.0",
+    "updated": "2026-09-05",
+    "humanReadableTracker": "../../../docs/PROGRAMME-WORKSTREAM-TRACKER.md",
+    "policy": "Programme research and FHIR interoperability are parallel workstreams. Technical validation never implies computability or custodian approval."
+  },
+  "statusVocabulary": [
+    "Not started",
+    "In progress",
+    "Source-bounded",
+    "Foundation",
+    "Metadata mapped",
+    "Validated",
+    "Domain reviewed",
+    "Computable",
+    "Custodian approved",
+    "Blocked by evidence"
+  ],
+  "fhirGates": [
+    {"id":"G0","label":"Registered"},
+    {"id":"G1","label":"Scoped"},
+    {"id":"G2","label":"Classified"},
+    {"id":"G3","label":"Metadata mapped"},
+    {"id":"G4","label":"Validated"},
+    {"id":"G5","label":"Domain reviewed"},
+    {"id":"G6","label":"Computable"},
+    {"id":"G7","label":"Custodian approved"}
+  ],
+  "programmes": [
+    {"sequence":1,"id":"PROGRAMME-NTEP","label":"National Tuberculosis Elimination Programme","registryStatus":"Source-bounded","graphStatus":"Domain reviewed","fhirGate":"G0","fhirStatus":"Not started","nextTask":"FHIR foundation then PF-01"},
+    {"sequence":2,"id":"PROGRAMME-RMNCHA","label":"NHM RMNCH+A","registryStatus":"Source-bounded","graphStatus":"Domain reviewed","fhirGate":"G0","fhirStatus":"Not started","nextTask":"FHIR foundation then PF-01"},
+    {"sequence":3,"id":"PROGRAMME-UIP","label":"Universal Immunization Programme / Mission Indradhanush","registryStatus":"Source-bounded","graphStatus":"Domain reviewed","fhirGate":"G0","fhirStatus":"Not started","nextTask":"FHIR foundation then PF-01"},
+    {"sequence":4,"id":"PROGRAMME-VBD","label":"National Centre for Vector Borne Diseases Control programmes","registryStatus":"Foundation","graphStatus":"Domain-reviewed foundation","fhirGate":"G0","fhirStatus":"Not started","nextTask":"Select governed source subset, then PF-01"},
+    {"sequence":5,"id":"PROGRAMME-NCD","label":"National Programme for Prevention and Control of Non-Communicable Diseases","registryStatus":"Source-bounded","graphStatus":"Domain reviewed","fhirGate":"G0","fhirStatus":"Not started","nextTask":"FHIR foundation then PF-01"},
+    {"sequence":6,"id":"PROGRAMME-CD","label":"Communicable diseases / IDSP-IHIP","registryStatus":"Not started","graphStatus":"Not started","fhirGate":"G0","fhirStatus":"Not started","nextTask":"Establish programme source boundary"}
+  ],
+  "parallelWorkstreams": [
+    {"id":"FHIR","label":"FHIR interoperability","status":"Planned","completedTasks":["FHIR-00"],"nextTask":"FHIR-01","repeatableChecklist":"PF-01 through PF-13"},
+    {"id":"HMIS","label":"Cross-programme HMIS information-system modelling","status":"In progress","nextTask":"FHIR-09"},
+    {"id":"TERMINOLOGY","label":"SNOMED CT, ICD, LOINC and related terminology evaluation","status":"Not started","nextTask":"Begin only after FHIR profile terminology slots are defined"}
+  ],
+  "onboardingRule": "Whenever a programme is added, append a programme row at FHIR gate G0 and instantiate PF-01 through PF-13. A programme registry release may advance independently of its FHIR gate."
+}
