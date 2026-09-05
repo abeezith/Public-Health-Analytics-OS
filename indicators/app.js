@@ -1,6 +1,10 @@
 const state = { indicators: [], filtered: [], visible: 24 };
 const $ = (id) => document.getElementById(id);
 const fields = ['search','geography','program','component','level','domain','type','measure','source','pillar','sort'];
+const programsMenu=$('programs-menu');
+programsMenu?.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>programsMenu.removeAttribute('open')));
+document.addEventListener('click',event=>{if(programsMenu?.open&&!programsMenu.contains(event.target))programsMenu.removeAttribute('open');});
+document.addEventListener('keydown',event=>{if(event.key==='Escape'&&programsMenu?.open){programsMenu.removeAttribute('open');programsMenu.querySelector('summary')?.focus();}});
 
 function expandNcdRelease(release) {
   const programme='National Programme for Prevention and Control of Non-Communicable Diseases';
@@ -44,6 +48,9 @@ Promise.all([
   fillSelect('source', state.indicators.map(x => x.source));
   fillSelect('pillar', state.indicators.flatMap(x => x.whoPillars || []));
   filter();
+  const applyGlobalRegistry=source=>{ $('search').value=''; ['program','component','level','domain','type','measure','pillar'].forEach(id=>$(id).selectedIndex=0); $('geography').value='Global / multi-country'; source?$('source').value=source:$('source').selectedIndex=0; filter(); };
+  document.querySelectorAll('[data-global-filter="all"]').forEach(link=>link.addEventListener('click',()=>applyGlobalRegistry('')));
+  document.querySelectorAll('[data-global-source]').forEach(link=>link.addEventListener('click',()=>applyGlobalRegistry(link.dataset.globalSource)));
 }).catch(() => { $('indicator-grid').innerHTML = '<div class="empty-state"><h3>Registry data could not be loaded</h3><p>Serve this folder through a web server or GitHub Pages; browsers block local JSON requests from file:// pages.</p></div>'; });
 
 function fillSelect(id, values) { [...new Set(values)].sort().forEach(value => $(id).add(new Option(value, value))); }

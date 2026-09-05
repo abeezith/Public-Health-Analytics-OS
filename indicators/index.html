@@ -10,9 +10,9 @@
   <meta property="og:image" content="og.png">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="alternate" type="application/ld+json" href="data/graph/schemaorg.jsonld" title="India programme knowledge graph Schema.org profile">
-  <link rel="stylesheet" href="styles.css?v=ncd-1.0.0">
+  <link rel="stylesheet" href="styles.css?v=nav-1.0.0">
   <script src="https://cdn.jsdelivr.net/npm/cytoscape@3.34.2/dist/cytoscape.min.js" defer></script>
-  <script src="app.js?v=ncd-1.0.0" defer></script>
+  <script src="app.js?v=nav-1.0.0" defer></script>
   <script src="hmis.js?v=ncd-1.0.0" defer></script>
   <script src="graph.js?v=ncd-1.0.0" defer></script>
   <script src="report-schemas.js?v=hmis-1.4-candidate" defer></script>
@@ -21,7 +21,36 @@
 <main id="top">
   <header class="site-header">
     <a class="brand" href="../"><span class="brand-mark">PH</span><span>Analytics-OS · Indicator Registry</span></a>
-    <nav><a href="#registry">Registry</a><a href="#knowledge-graph">Graph</a><a href="#immunization">Immunization</a><a href="#rmncha">RMNCH+A</a><a href="#ncd">NCD</a><a href="#hmis">HMIS</a><a href="#hmis-report-schemas">Report schema</a><a href="#ntep">NTEP</a><a href="#vbd">VBD</a><a href="#india">India</a><a href="#coverage">Coverage</a><a href="#method">Method</a></nav>
+    <nav class="header-nav" aria-label="Primary navigation">
+      <a href="#registry">Registry</a>
+      <a href="#knowledge-graph">Graph</a>
+      <details class="programs-menu" id="programs-menu">
+        <summary>Programs <span aria-hidden="true">⌄</span></summary>
+        <div class="programs-panel">
+          <div class="programs-group">
+            <p>India</p>
+            <a href="#india"><strong>India overview</strong><span>All India-specific records</span></a>
+            <a href="#ntep"><strong>NTEP</strong><span>Tuberculosis elimination</span></a>
+            <a href="#rmncha"><strong>RMNCH+A</strong><span>Reproductive, maternal, newborn, child and adolescent health</span></a>
+            <a href="#immunization"><strong>Immunization</strong><span>UIP, Mission Indradhanush and AEFI</span></a>
+            <a href="#vbd"><strong>Vector-borne diseases</strong><span>NCVBDC programme foundation</span></a>
+            <a href="#ncd"><strong>NP-NCD</strong><span>Noncommunicable disease pathway</span></a>
+            <a href="#hmis"><strong>HMIS</strong><span>National routine information-system model</span></a>
+            <a href="#hmis-report-schemas"><strong>HMIS report schema</strong><span>Observed reporting structure</span></a>
+          </div>
+          <div class="programs-group">
+            <p>Global</p>
+            <a href="#registry" data-global-filter="all"><strong>Global overview</strong><span>All global and multi-country records</span></a>
+            <a href="#registry" data-global-source="WHO Indicator Metadata Registry"><strong>WHO</strong><span>Indicator Metadata Registry</span></a>
+            <a href="#registry" data-global-source="World Bank Health Indicators"><strong>World Bank</strong><span>Health indicators</span></a>
+            <a href="#registry" data-global-source="UN Global SDG Indicator Framework"><strong>United Nations SDGs</strong><span>Global SDG indicator framework</span></a>
+            <a href="#registry" data-global-source="UNICEF Indicator Data Warehouse"><strong>UNICEF</strong><span>Indicator Data Warehouse</span></a>
+          </div>
+        </div>
+      </details>
+      <a href="#method">Method</a>
+      <a href="#coverage">Coverage</a>
+    </nav>
   </header>
   <section class="hero">
     <div><p class="eyebrow">Evidence-backed public-health metadata</p><h1>Find the right indicator.<br>Know what it can tell you.</h1>
@@ -81,7 +110,7 @@
   </section>
   <section class="india-audit" id="india"><div><p class="eyebrow">India programme release</p><h2>Indian public-health indicators are becoming traceable systems.</h2><p>The registry now includes deep NTEP, RMNCH+A, Immunization and NP-NCD programme verticals, the vector-borne disease graph foundation, and the linked HMIS knowledge model. Source-specific variants remain distinct, while curated crosswalks support discovery without claiming false equivalence.</p><a class="primary-action" href="#registry" onclick="setTimeout(()=>{document.getElementById('geography').value='India';document.getElementById('geography').dispatchEvent(new Event('change'))},0)">Browse India indicators <span>→</span></a></div><div class="audit-metrics"><article><strong id="metric-india">643</strong><span>India-specific indicator records</span></article><article><strong id="metric-india-sources">17</strong><span>official source families represented</span></article><article><strong>6</strong><span>WHO building blocks available as filters</span></article></div></section>
   <section class="architecture-section" id="method"><div><p class="eyebrow">Federated architecture</p><h2>One registry, multiple custodians</h2></div><div class="architecture-grid"><article><span>01</span><h3>Source manifestations</h3><p>Every authority’s record, code and link is retained without premature merging.</p></article><article><span>02</span><h3>Transparent completeness</h3><p>Each record carries a metadata level and a nine-field completeness score.</p></article><article><span>03</span><h3>Coverage ledger</h3><p>Forty-one source families are declared; Release 3 reports which catalogues and programme source tables are complete or pending.</p></article><article><span>04</span><h3>Versioned expansion</h3><p>Specialist, regional and national sources can be added without rewriting source history.</p></article></div><div class="version-alert"><strong>Interpretation alert</strong><p>WHO building-block tags and discovery domains are analytical mappings, not source-custodian classifications. Official computation remains controlled by each linked authority.</p></div></section>
-  <footer><div class="brand"><span class="brand-mark">PH</span><span>Indicator Registry</span></div><p>Release 3.5 · Five-programme graph with NP-NCD and reconciled facility/headquarters HMIS data spine · cut-off 5 September 2026. Primary source metadata controls official computation.</p><a href="#top">Back to top ↑</a></footer>
+  <footer><div class="brand"><span class="brand-mark">PH</span><span>Indicator Registry</span></div><p>Release 3.6 · India/Global programme navigation, five-programme graph and reconciled HMIS data spine · cut-off 5 September 2026. Primary source metadata controls official computation.</p><a href="#top">Back to top ↑</a></footer>
 </main>
 <div class="modal-backdrop" id="modal-backdrop" hidden><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" id="modal-close" aria-label="Close metadata">×</button><div id="modal-content"></div></section></div>
 </body>
