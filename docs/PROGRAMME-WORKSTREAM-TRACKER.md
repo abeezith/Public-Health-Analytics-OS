@@ -1,8 +1,8 @@
 # Analytics-OS programme and standards workstream tracker
 
-Last updated: 5 September 2026
+Last updated: 6 September 2026
 
-This document is the persistent task list for programme expansion and its parallel interoperability work. Programme research remains the authority for official names, definitions, denominators, formulas, source versions and evidence boundaries. The FHIR workstream consumes those governed records but does not silently change them or delay their publication.
+This document is the persistent task list for programme expansion and all parallel trust, analytical-utility and interoperability work. It reconciles the September 2026 multi-expert evaluation with the work already completed in Analytics-OS Release 3.7. Programme research remains the authority for official names, definitions, denominators, formulas, source versions and evidence boundaries. Graph, FHIR, terminology and analytical-product workstreams consume governed records but do not silently change them or delay source-bounded registry publication.
 
 ## Status vocabulary
 
@@ -19,6 +19,37 @@ This document is the persistent task list for programme expansion and its parall
 
 FHIR status must always be reported with its achieved stage. `Validated` does not imply `Computable`, and neither implies `Custodian approved`.
 
+## Expert-evaluation reconciliation
+
+The evaluation is treated as review evidence, not as an instruction set. Recommendations are accepted only after comparison with the current repository.
+
+| Evaluation area | Reconciled position | Disposition |
+|---|---|---|
+| Machine-readable publication | JSON, JSON-LD, graph contract and controlled vocabularies exist; formal JSON Schema, RDF distributions and query services remain pending | Adapted |
+| Persistent identity | Stable record IDs and a canonical namespace exist; resolvable entry representations and lifecycle rules remain pending | Adapted |
+| Graph semantics | Relationship vocabulary exists; formal SKOS predicates, direction tests and SHACL validation remain pending | Adapted |
+| Per-entry provenance | Verification date and India source version are present; named reviewer, method and change-event history remain pending | Adapted |
+| Disaggregation and responsible cadre | Present across most India programme records; controlled source-versus-recommended dimensions and remaining cadre gaps require remediation | Adapted |
+| PM-JAY and ABDM | Small verified subsets exist; HWC/CPHC and deep programme extraction remain pending | Adapted |
+| Clinical terminology | Map only terminology-eligible clinical concepts or observations with licensing, version and mapping evidence; never map every indicator by assumption | Adapted |
+| Static FHIR API | GitHub Pages may publish static resources and packages but cannot provide `$lookup`, `$expand` or `$validate-code`; executable operations require a terminology server | Adapted |
+| Governance, formal schemas, lifecycle, data-quality guidance and change monitoring | Genuine gaps | Accepted |
+
+## Integrated execution sequence
+
+This is the master order for future task-by-task execution. A later task may start early only when its listed dependencies are satisfied.
+
+1. **RECON-00 — Expert-evaluation reconciliation ledger — Complete.** Record each recommendation as already implemented, accepted, adapted, deferred or rejected and connect it to an existing or new workstream.
+2. **TRUST-01–TRUST-07 — Trust foundation — Pending.** Establish governance, schemas, quality rubric, persistent identity, lifecycle, provenance, release validation and source-change monitoring.
+3. **UTILITY-01–UTILITY-06 — Analyst and programme utility — Pending.** Improve discovery, controlled disaggregation, data-quality and comparability guidance, versioned targets, source-backed response guidance and tested calculations.
+4. **OPMAP-01–OPMAP-04 — Operational-system mappings — Pending.** Define an instance/version-aware mapping policy, then pilot HMIS/DHIS2, NTEP and NP-NCD operational mappings without inventing restricted identifiers.
+5. **SEM-01–SEM-04 — Semantic Web publication — Pending.** Formalize SKOS mapping semantics, publish RDF, validate with SHACL and make canonical identities resolvable.
+6. **FHIR-01–FHIR-21 — FHIR foundation and pilot — Pending after the relevant TRUST and SEM policies.** Publish the correct resource type for each object and distinguish metadata mapping, validation, computability and custodian approval.
+7. **TERM-01–TERM-05 — Terminology evaluation and pilot — Deferred until FHIR terminology slots and licensing policy exist.** Assess ICD, SNOMED CT, LOINC and other standards separately; map only eligible concepts.
+8. **Programme 4 deepening and Programme 6 execution — Pending.** Complete VBD disease-wise sources, then execute communicable diseases/IDSP-IHIP using the repeatable programme enrichment checklist.
+9. **Programme expansion queue — Pending after the current six-programme sequence.** Add Ayushman Bharat family, POSHAN 2.0/ICDS and the National Mental Health Programme as separately bounded verticals.
+10. **PRODUCT-01–PRODUCT-04 — Derived analytical products — Deferred until their metadata prerequisites pass.** Build programme briefs, dashboard audit, calculation assistance and a source-change review queue.
+
 ## Programme sequence and parallel-work status
 
 | No. | Programme | Registry workstream | Knowledge graph | FHIR workstream | Next controlled action |
@@ -32,21 +63,64 @@ FHIR status must always be reported with its achieved stage. `Validated` does no
 
 HMIS is tracked as a cross-programme information-system spine, not as a numbered disease programme. Its raw elements, forms, outputs and validation rules require their own FHIR modelling policy and must not all be represented as `Measure`.
 
+## Programme expansion queue after the current six
+
+| Queue | Programme family | Current evidence | Required next action |
+|---:|---|---|---|
+| 7 | Ayushman Bharat | Seven PM-JAY and four ABDM registry records exist; HWC/CPHC is not a deep vertical | Scope PM-JAY, ABDM and HWC/CPHC as connected but non-interchangeable components |
+| 8 | POSHAN 2.0 / ICDS | Programme-specific source boundary not established | Identify public indicator tables, Poshan Tracker metadata availability and restricted-system gaps |
+| 9 | National Mental Health Programme | Programme-specific source boundary not established | Inventory NMHP/DMHP and applicable HWC mental-health sources before extraction |
+
+## Cross-cutting trust foundation
+
+1. **TRUST-01 — Governance charter — Pending.** Publish curator roles, domain-review responsibilities, contribution workflow, decision authority, conflict resolution, correction process, release cadence and succession policy. Do not imply institutional stewardship without agreement.
+2. **TRUST-02 — Versioned JSON Schemas — Pending.** Define schemas for indicator manifestations, source documents, HMIS objects, graph nodes and edges, evidence gaps, programme releases and review/change events.
+3. **TRUST-03 — Metadata-quality specification — Pending.** Publish the nine-field completeness rubric, weights, missing-value treatment, metadata-level rules and relationship vocabulary; generate scores through validation.
+4. **TRUST-04 — Persistent identity and lifecycle policy — Pending.** Define record ID, source ID, canonical URI, business version and source-version rules plus `effectiveDate`, `retirementDate`, `replaces` and `replacedBy` semantics.
+5. **TRUST-05 — Entry-level provenance and change events — Pending.** Add reviewer identity or role, review method, review date, source-access date, changed fields, change reason and review status while preserving prior versions.
+6. **TRUST-06 — Automated release validation — Pending.** Validate schemas, unique IDs, source links, formula/scale/denominator consistency, graph integrity, lifecycle rules and release counts in CI.
+7. **TRUST-07 — Source-change monitoring — Pending.** Combine link checks, source-version/content fingerprints and a human review queue; a successful HTTP response alone must not imply unchanged meaning.
+
+## Analyst and programme-utility workstream
+
+1. **UTILITY-01 — Discovery fields — Pending.** Surface reporting frequency, responsible cadre, data availability, review status, lifecycle and computability maturity as filters or prominent metadata.
+2. **UTILITY-02 — Controlled disaggregation model — Pending.** Separate source-required, system-available and analyst-recommended dimensions for age, sex, geography, social category, facility type, disease and programme-specific stratifiers.
+3. **UTILITY-03 — Data-quality and comparability pilot — Pending.** Add known issues, expected reporting lag, common misinterpretations, validation checks, minimum data requirements and source-aware comparability notes for 30–50 priority India indicators.
+4. **UTILITY-04 — Targets and reference values — Pending.** Model target and observed values as separate versioned entities carrying geography, period, authority and source; do not overwrite the indicator definition with a single current value.
+5. **UTILITY-05 — Response guidance — Pending.** Link actions and thresholds only to an explicit official SOP or guideline; otherwise mark guidance unavailable or advisory.
+6. **UTILITY-06 — Tested calculation templates — Pending.** Create pseudocode and SQL examples with inputs, exclusions, period, aggregation, zero-denominator rules and test cases for 20–30 priority computable indicators.
+
+## Operational-system mapping workstream
+
+1. **OPMAP-01 — Mapping policy — Pending.** Require system/instance namespace, metadata version, field or UID, category combination, mapping direction, confidence, evidence and validity period. Treat DHIS2 identifiers as instance-specific unless authority proves otherwise.
+2. **OPMAP-02 — HMIS/DHIS2 pilot — Blocked by evidence.** Apply the policy to an authorized current metadata export; retain public-source labels where operational UIDs are unavailable.
+3. **OPMAP-03 — NTEP operational mapping — Blocked by evidence.** Map Ni-kshay fields only from an authorized versioned dictionary or export.
+4. **OPMAP-04 — NP-NCD operational mapping — Blocked by evidence.** Map National NCD Portal, AMRIT and CBAC fields only from authoritative versioned evidence.
+
+## Semantic Web workstream
+
+**SEM-00 — Existing semantic asset inventory — Complete.** The registry already publishes JSON-LD, a Schema.org profile, a canonical namespace, a graph contract and controlled vocabularies.
+
+1. **SEM-01 — SKOS mapping policy — Pending.** Bind exact, close, broad, narrow and related mappings to formal SKOS predicates with direction and no-false-equivalence tests.
+2. **SEM-02 — RDF distributions — Pending.** Publish versioned JSON-LD/Turtle distributions using Schema.org, SKOS, PROV-O and DCAT while preserving Analytics-OS evidence and aggregation-safety assertions.
+3. **SEM-03 — SHACL validation — Pending.** Define and execute shapes for required identities, source provenance, mapping direction, evidence status and controlled vocabularies.
+4. **SEM-04 — Resolvable canonical representations — Pending.** Make each canonical URI return or link to human-readable HTML and versioned machine-readable representations.
+
 ## Parallel FHIR foundation workstream
 
 FHIR-00 is the completed evaluation. The remaining tasks are intentionally separate from programme extraction.
 
 1. **FHIR-00 — Feasibility and role assessment — Complete.** Establish FHIR as an operational interoperability layer alongside the existing Schema.org discovery layer.
 2. **FHIR-01 — Version policy — Pending.** Adopt FHIR R4 as the initial India-facing export aligned with the ABDM implementation guide; document the R4-to-R5 transformation policy.
-3. **FHIR-02 — Canonical identity policy — Pending.** Define stable canonical URLs, resource identifiers, business versions and rules for source revisions versus Analytics-OS revisions.
+3. **FHIR-02 — Canonical identity implementation — Pending; depends on TRUST-04.** Apply the shared canonical URL, resource identifier, business-version and source-revision policy to FHIR artifacts.
 4. **FHIR-03 — Source-authority policy — Pending.** Distinguish the original custodian from Analytics-OS as the publisher of a derived FHIR representation; prohibit implied custodian endorsement.
 5. **FHIR-04 — Computability maturity model — Pending.** Implement the stages `metadata mapped`, `structurally specified`, `computable`, `tested` and `custodian approved`.
 6. **FHIR-05 — Core Measure profile — Pending.** Define the minimum required metadata, official-name preservation, population descriptions, scoring, scale, direction, source reference and aggregation guidance.
 7. **FHIR-06 — Registry extensions — Pending.** Minimize and govern extensions for official-name status, metadata completeness, evidence boundary, zero-denominator rule, lowest reporting level and review status.
 8. **FHIR-07 — Local vocabularies — Pending.** Define provisional CodeSystems and ValueSets for programme, component, reporting level, WHO building block, measure type, computability stage and review status.
-9. **FHIR-08 — ConceptMap policy — Pending.** Translate close, broad, narrow and related mappings with direction tests; reserve equivalence for formally proven cases.
+9. **FHIR-08 — ConceptMap policy — Pending; depends on SEM-01.** Translate reviewed close, broad, narrow and related mappings with direction tests; reserve equivalence for formally proven cases.
 10. **FHIR-09 — HMIS modelling policy — Pending.** Decide when a raw HMIS object becomes Questionnaire content, Observation/ObservationDefinition, StructureDefinition, Library validation logic or Measure.
-11. **FHIR-10 — Provenance and source-document pattern — Pending.** Define Organization, RelatedArtifact/DocumentReference, Provenance and optional R5 Citation usage.
+11. **FHIR-10 — Provenance and source-document pattern — Pending; depends on TRUST-05.** Reuse the shared provenance model in Organization, RelatedArtifact/DocumentReference, Provenance and optional R5 Citation representations.
 12. **FHIR-11 — Security and publication boundary — Pending.** Keep the public implementation guide definition-only and aggregate-only; exclude identifiable patient data from GitHub Pages.
 13. **FHIR-12 — Ten-indicator pilot selection — Pending.** Select percentage, population-rate, ratio, count and index examples across NTEP, RMNCH+A, Immunization, NP-NCD and HMIS.
 14. **FHIR-13 — Pilot Measure resources — Pending.** Generate metadata-level R4 Measure instances without inventing executable criteria.
@@ -55,8 +129,8 @@ FHIR-00 is the completed evaluation. The remaining tasks are intentionally separ
 17. **FHIR-16 — Profiles and validation pipeline — Pending.** Add FHIR Shorthand, SUSHI/IG Publisher inputs and automated base/profile validation.
 18. **FHIR-17 — Computable subset — Pending.** Implement CQL/Library logic only for pilot indicators with sufficient authoritative criteria and test data.
 19. **FHIR-18 — Domain review — Pending.** Review population logic, denominator exclusions, period, unit, direction, aggregation and stratifiers with public-health experts.
-20. **FHIR-19 — Implementation Guide publication — Pending.** Publish the versioned Analytics-OS FHIR R4 implementation guide and machine-readable package.
-21. **FHIR-20 — Website integration — Pending.** Link HTML, Schema.org and FHIR representations using the same stable registry identity; do not add public bulk-download controls unless separately authorized.
+20. **FHIR-19 — Implementation Guide publication — Pending.** Publish the versioned Analytics-OS FHIR R4 implementation guide and static machine-readable package. Static publication is not described as a FHIR REST or terminology service.
+21. **FHIR-20 — Website integration — Pending.** Link HTML, Schema.org, RDF and FHIR representations using the same stable registry identity; do not add public bulk-download controls unless separately authorized.
 22. **FHIR-21 — Pilot release gate — Pending.** Release only after identifier, validation, provenance, official-name, no-false-equivalence and privacy gates pass.
 
 ## Repeatable FHIR checklist for every programme
@@ -77,6 +151,23 @@ Create a programme-specific instance of every task below when a programme is fir
 12. **PF-12 — Domain and custodian review.** Record public-health review separately from custodian approval; neither may be inferred from technical validation.
 13. **PF-13 — Publish and update this tracker.** Release versioned artifacts, update programme counts and evidence gaps, and retain the previous version for provenance.
 
+## Repeatable enrichment checklist for every programme
+
+Instantiate this checklist for each new programme and repeat affected tasks when its source boundary changes. PF-01–PF-13 remains the nested FHIR checklist.
+
+1. **PR-01 — Freeze the source boundary.** Record documents, tables, portals, versions, cut-off date, inclusion rule, exclusions and restricted evidence gaps.
+2. **PR-02 — Inventory and classify objects.** Separate official indicator manifestations, raw elements, forms, outputs, validation rules, concepts, targets and source documents.
+3. **PR-03 — Preserve official metadata.** Retain official name, definition, code, source organization, source location and version without silent rewriting.
+4. **PR-04 — Add normalized measure metadata.** Classify measure type, scale, numerator, denominator population, formula, aggregation and zero-denominator rule only when supported.
+5. **PR-05 — Map operational context.** Record reporting frequency and levels, reporting unit, responsible cadre, facility/community applicability and controlled disaggregations.
+6. **PR-06 — Document analytical cautions.** Add source-aware data-quality issues, comparability notes, expected lag, minimum data requirements and common misinterpretations.
+7. **PR-07 — Model targets and response guidance separately.** Attach versioned targets, reference values and official response protocols without changing indicator identity.
+8. **PR-08 — Map operational systems when evidenced.** Apply OPMAP-01 and retain unavailable or restricted identifiers as explicit gaps.
+9. **PR-09 — Extend and review the knowledge graph.** Add concepts and typed mappings with rationale, direction, evidence, review status and aggregation safety.
+10. **PR-10 — Execute the programme FHIR checklist.** Instantiate PF-01–PF-13 after the programme source boundary is governed.
+11. **PR-11 — Attach provenance and lifecycle.** Apply TRUST-04 and TRUST-05, including supersession and entry-level change events.
+12. **PR-12 — Validate, release and update trackers.** Run programme, registry and graph QA; publish only the achieved maturity and preserve previous versions.
+
 ## Programme FHIR completion gates
 
 A programme may advance independently through these gates:
@@ -96,5 +187,19 @@ The programme registry can be source-bounded and published while its FHIR gate r
 
 ## Deferred terminology standards workstream
 
-SNOMED CT, ICD, LOINC and related standards are deliberately `Not started`. FHIR profiles will reserve properly versioned terminology fields, but no external terminology mapping will be accepted until each standard's role, licensing, release/version policy, mapping direction and validation process are reviewed separately.
+SNOMED CT, ICD, LOINC and related standards remain deliberately deferred. FHIR profiles will reserve properly versioned terminology fields, but no external terminology mapping will be accepted until each standard's role, licensing, release/version policy, mapping direction and validation process are reviewed separately. Financing, governance, service-coverage and programme-performance indicators must not be forced into clinical terminology systems.
 
+1. **TERM-01 — Standards role and licence assessment — Deferred.** Evaluate each terminology independently and document permitted use and publication.
+2. **TERM-02 — Terminology eligibility model — Deferred.** Decide which clinical conditions, procedures, observations or specimens are eligible and explicitly allow `no appropriate mapping`.
+3. **TERM-03 — Small programme pilot — Deferred.** Map a reviewed NTEP/RMNCH+A subset with terminology version, mapping relation and evidence.
+4. **TERM-04 — Validation and domain review — Deferred.** Test codes against the declared edition or licensed service and obtain clinical/informatics review.
+5. **TERM-05 — Publication policy — Deferred.** Publish only licence-compliant mappings with provenance and validity dates.
+
+## Derived analytical-products workstream
+
+1. **PRODUCT-01 — Programme Officer's Brief pilot — Deferred; depends on UTILITY-03–UTILITY-05.** Generate a source-aware brief for one programme without implying access to current values that are not in Analytics-OS.
+2. **PRODUCT-02 — Dashboard configuration audit — Deferred; depends on OPMAP-02 and UTILITY-06.** Compare an authorized DHIS2 configuration export with registry identities, formulas and disaggregations.
+3. **PRODUCT-03 — Indicator calculation assistant — Deferred; depends on TRUST-02 and UTILITY-06.** Provide tested computation guidance with explicit evidence and computability status.
+4. **PRODUCT-04 — Source-change review queue — Deferred; depends on TRUST-07.** Present detected upstream changes for human review and controlled release decisions.
+
+A future terminology server is an infrastructure decision after TERM-01–TERM-05 and the FHIR pilot. GitHub Pages may host static artifacts but cannot execute FHIR terminology operations such as `$lookup`, `$expand` or `$validate-code`.

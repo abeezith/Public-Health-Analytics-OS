@@ -26,4 +26,4 @@ Each module is self-contained and uses relative links, so it can be replaced ind
 
 ## Programme and standards workstreams
 
-Programme expansion, knowledge-graph work, FHIR interoperability and the deferred terminology evaluations are tracked in [the programme workstream tracker](docs/PROGRAMME-WORKSTREAM-TRACKER.md). Its machine-readable status ledger is stored at `indicators/data/governance/workstreams.json` so every future programme can receive the same repeatable interoperability checklist.
+Programme expansion, governance, schemas, provenance, analyst utility, operational mappings, Semantic Web publication, FHIR interoperability, terminology evaluation and derived-product work are coordinated in [the programme workstream tracker](docs/PROGRAMME-WORKSTREAM-TRACKER.md). Its machine-readable status ledger is stored at `indicators/data/governance/workstreams.json`; every future programme receives the same repeatable enrichment checklist, with FHIR retained as a separately gated nested workstream.

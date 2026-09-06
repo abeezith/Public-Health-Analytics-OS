@@ -1,45 +1,136 @@
 {
   "metadata": {
     "id": "PHAOS-WORKSTREAM-TRACKER-1",
-    "version": "1.0.0",
-    "updated": "2026-09-05",
+    "version": "2.0.0",
+    "updated": "2026-09-06",
+    "analyticsOsRelease": "3.7",
     "humanReadableTracker": "../../../docs/PROGRAMME-WORKSTREAM-TRACKER.md",
-    "policy": "Programme research and FHIR interoperability are parallel workstreams. Technical validation never implies computability or custodian approval."
+    "evaluationSource": "PHAnalyticsOS_Expert_Evaluation.md — September 2026 multi-expert review of Release 3.6",
+    "policy": "Programme research, trust infrastructure, analytical utility and interoperability are coordinated but independently gated. Technical validation never implies computability, semantic equivalence or custodian approval."
   },
-  "statusVocabulary": [
-    "Not started",
-    "In progress",
-    "Source-bounded",
-    "Foundation",
-    "Metadata mapped",
-    "Validated",
-    "Domain reviewed",
-    "Computable",
-    "Custodian approved",
-    "Blocked by evidence"
+  "statusVocabulary": ["Not started", "Pending", "In progress", "Source-bounded", "Foundation", "Metadata mapped", "Validated", "Domain reviewed", "Computable", "Custodian approved", "Deferred", "Blocked by evidence", "Complete"],
+  "recommendationDispositionVocabulary": ["Already implemented", "Accepted", "Adapted", "Deferred", "Rejected"],
+  "reconciliation": {
+    "status": "Complete",
+    "task": "RECON-00",
+    "principle": "The expert evaluation is review evidence, not an instruction set.",
+    "adaptedRecommendations": [
+      "Extend existing JSON, JSON-LD, graph-contract and vocabulary assets with formal schemas and RDF rather than describing the registry as human-readable only.",
+      "Make the existing canonical namespace resolvable and lifecycle-aware rather than replacing stable record IDs.",
+      "Bind reviewed relationship semantics to SKOS with direction tests and SHACL validation.",
+      "Complete entry-level provenance beyond existing verification dates and source versions.",
+      "Deepen existing PM-JAY and ABDM subsets and add HWC/CPHC as connected but non-interchangeable components.",
+      "Map only terminology-eligible clinical concepts; allow no appropriate mapping.",
+      "Use GitHub Pages for static FHIR artifacts only; reserve terminology operations for a future server."
+    ]
+  },
+  "executionOrder": [
+    {"sequence":1,"taskRange":"RECON-00","label":"Evaluation reconciliation","status":"Complete"},
+    {"sequence":2,"taskRange":"TRUST-01..TRUST-07","label":"Trust foundation","status":"Pending"},
+    {"sequence":3,"taskRange":"UTILITY-01..UTILITY-06","label":"Analyst and programme utility","status":"Pending"},
+    {"sequence":4,"taskRange":"OPMAP-01..OPMAP-04","label":"Operational-system mappings","status":"Pending"},
+    {"sequence":5,"taskRange":"SEM-01..SEM-04","label":"Semantic Web publication","status":"Pending"},
+    {"sequence":6,"taskRange":"FHIR-01..FHIR-21","label":"FHIR foundation and pilot","status":"Pending"},
+    {"sequence":7,"taskRange":"TERM-01..TERM-05","label":"Terminology evaluation and pilot","status":"Deferred"},
+    {"sequence":8,"taskRange":"PROGRAMME-4-DEEP, PROGRAMME-6","label":"Complete current programme sequence","status":"Pending"},
+    {"sequence":9,"taskRange":"PROGRAMME-7..PROGRAMME-9","label":"Additional programme queue","status":"Pending"},
+    {"sequence":10,"taskRange":"PRODUCT-01..PRODUCT-04","label":"Derived analytical products","status":"Deferred"}
   ],
   "fhirGates": [
-    {"id":"G0","label":"Registered"},
-    {"id":"G1","label":"Scoped"},
-    {"id":"G2","label":"Classified"},
-    {"id":"G3","label":"Metadata mapped"},
-    {"id":"G4","label":"Validated"},
-    {"id":"G5","label":"Domain reviewed"},
-    {"id":"G6","label":"Computable"},
-    {"id":"G7","label":"Custodian approved"}
+    {"id":"G0","label":"Registered"}, {"id":"G1","label":"Scoped"}, {"id":"G2","label":"Classified"}, {"id":"G3","label":"Metadata mapped"},
+    {"id":"G4","label":"Validated"}, {"id":"G5","label":"Domain reviewed"}, {"id":"G6","label":"Computable"}, {"id":"G7","label":"Custodian approved"}
   ],
   "programmes": [
-    {"sequence":1,"id":"PROGRAMME-NTEP","label":"National Tuberculosis Elimination Programme","registryStatus":"Source-bounded","graphStatus":"Domain reviewed","fhirGate":"G0","fhirStatus":"Not started","nextTask":"FHIR foundation then PF-01"},
-    {"sequence":2,"id":"PROGRAMME-RMNCHA","label":"NHM RMNCH+A","registryStatus":"Source-bounded","graphStatus":"Domain reviewed","fhirGate":"G0","fhirStatus":"Not started","nextTask":"FHIR foundation then PF-01"},
-    {"sequence":3,"id":"PROGRAMME-UIP","label":"Universal Immunization Programme / Mission Indradhanush","registryStatus":"Source-bounded","graphStatus":"Domain reviewed","fhirGate":"G0","fhirStatus":"Not started","nextTask":"FHIR foundation then PF-01"},
-    {"sequence":4,"id":"PROGRAMME-VBD","label":"National Centre for Vector Borne Diseases Control programmes","registryStatus":"Foundation","graphStatus":"Domain-reviewed foundation","fhirGate":"G0","fhirStatus":"Not started","nextTask":"Select governed source subset, then PF-01"},
-    {"sequence":5,"id":"PROGRAMME-NCD","label":"National Programme for Prevention and Control of Non-Communicable Diseases","registryStatus":"Source-bounded","graphStatus":"Domain reviewed","fhirGate":"G0","fhirStatus":"Not started","nextTask":"FHIR foundation then PF-01"},
-    {"sequence":6,"id":"PROGRAMME-CD","label":"Communicable diseases / IDSP-IHIP","registryStatus":"Not started","graphStatus":"Not started","fhirGate":"G0","fhirStatus":"Not started","nextTask":"Establish programme source boundary"}
+    {"sequence":1,"id":"PROGRAMME-NTEP","label":"National Tuberculosis Elimination Programme","registryStatus":"Source-bounded","graphStatus":"Domain reviewed","fhirGate":"G0","fhirStatus":"Not started","enrichmentChecklist":"PR-01..PR-12","nextTask":"TRUST foundation, then PF-01"},
+    {"sequence":2,"id":"PROGRAMME-RMNCHA","label":"NHM RMNCH+A","registryStatus":"Source-bounded","graphStatus":"Domain reviewed","fhirGate":"G0","fhirStatus":"Not started","enrichmentChecklist":"PR-01..PR-12","nextTask":"TRUST foundation, then balanced FHIR pilot"},
+    {"sequence":3,"id":"PROGRAMME-UIP","label":"Universal Immunization Programme / Mission Indradhanush","registryStatus":"Source-bounded","graphStatus":"Domain reviewed","fhirGate":"G0","fhirStatus":"Not started","enrichmentChecklist":"PR-01..PR-12","nextTask":"TRUST foundation, then coverage/dropout/session/stock/AEFI FHIR pilot"},
+    {"sequence":4,"id":"PROGRAMME-VBD","label":"National Centre for Vector Borne Diseases Control programmes","registryStatus":"Foundation","graphStatus":"Domain-reviewed foundation","fhirGate":"G0","fhirStatus":"Not started","enrichmentChecklist":"PR-01..PR-12","nextTask":"Deep disease-wise source extraction, then PF-01"},
+    {"sequence":5,"id":"PROGRAMME-NCD","label":"National Programme for Prevention and Control of Non-Communicable Diseases","registryStatus":"Source-bounded","graphStatus":"Domain reviewed","fhirGate":"G0","fhirStatus":"Not started","enrichmentChecklist":"PR-01..PR-12","nextTask":"TRUST foundation, then screening-to-control FHIR pilot"},
+    {"sequence":6,"id":"PROGRAMME-CD","label":"Communicable diseases / IDSP-IHIP","registryStatus":"Not started","graphStatus":"Not started","fhirGate":"G0","fhirStatus":"Not started","enrichmentChecklist":"PR-01..PR-12","nextTask":"Establish programme source boundary"}
+  ],
+  "programmeExpansionQueue": [
+    {"sequence":7,"id":"PROGRAMME-AYUSHMAN-BHARAT","label":"Ayushman Bharat family","currentEvidence":"7 PM-JAY and 4 ABDM registry records; no deep HWC/CPHC vertical","nextTask":"Scope PM-JAY, ABDM and HWC/CPHC as connected, non-interchangeable components"},
+    {"sequence":8,"id":"PROGRAMME-POSHAN","label":"POSHAN 2.0 / ICDS","currentEvidence":"No programme-specific source boundary","nextTask":"Inventory public indicator tables, metadata availability and restricted-system gaps"},
+    {"sequence":9,"id":"PROGRAMME-NMHP","label":"National Mental Health Programme","currentEvidence":"No programme-specific source boundary","nextTask":"Inventory NMHP/DMHP and applicable HWC mental-health sources"}
   ],
   "parallelWorkstreams": [
-    {"id":"FHIR","label":"FHIR interoperability","status":"Planned","completedTasks":["FHIR-00"],"nextTask":"FHIR-01","repeatableChecklist":"PF-01 through PF-13"},
-    {"id":"HMIS","label":"Cross-programme HMIS information-system modelling","status":"In progress","nextTask":"FHIR-09"},
-    {"id":"TERMINOLOGY","label":"SNOMED CT, ICD, LOINC and related terminology evaluation","status":"Not started","nextTask":"Begin only after FHIR profile terminology slots are defined"}
+    {"id":"TRUST","label":"Governance, schema, identity, provenance and lifecycle","status":"Pending","completedTasks":[],"nextTask":"TRUST-01"},
+    {"id":"UTILITY","label":"Analyst and programme utility","status":"Pending","completedTasks":[],"nextTask":"UTILITY-01","dependency":"TRUST-02 and TRUST-03 for structured fields"},
+    {"id":"OPMAP","label":"Operational-system mapping","status":"Pending","completedTasks":[],"nextTask":"OPMAP-01","blockedTasks":["OPMAP-02","OPMAP-03","OPMAP-04"]},
+    {"id":"SEM","label":"Semantic Web and resolvable identity","status":"In progress","completedTasks":["SEM-00"],"nextTask":"SEM-01"},
+    {"id":"FHIR","label":"FHIR interoperability","status":"Pending","completedTasks":["FHIR-00"],"nextTask":"FHIR-01","repeatableChecklist":"PF-01..PF-13","dependencies":["TRUST-02","TRUST-04","TRUST-05","SEM-01"]},
+    {"id":"HMIS","label":"Cross-programme HMIS information-system modelling","status":"In progress","nextTask":"OPMAP-01 and FHIR-09"},
+    {"id":"TERMINOLOGY","label":"SNOMED CT, ICD, LOINC and related terminology evaluation","status":"Deferred","nextTask":"TERM-01 after FHIR terminology slots are defined"},
+    {"id":"PRODUCT","label":"Derived analytical products","status":"Deferred","nextTask":"PRODUCT-01 after UTILITY-03..UTILITY-05"}
   ],
-  "onboardingRule": "Whenever a programme is added, append a programme row at FHIR gate G0 and instantiate PF-01 through PF-13. A programme registry release may advance independently of its FHIR gate."
+  "tasks": {
+    "trust": [
+      {"id":"TRUST-01","label":"Governance charter","status":"Pending"}, {"id":"TRUST-02","label":"Versioned JSON Schemas","status":"Pending"},
+      {"id":"TRUST-03","label":"Metadata-quality specification","status":"Pending"}, {"id":"TRUST-04","label":"Persistent identity and lifecycle policy","status":"Pending"},
+      {"id":"TRUST-05","label":"Entry-level provenance and change events","status":"Pending"}, {"id":"TRUST-06","label":"Automated release validation","status":"Pending"},
+      {"id":"TRUST-07","label":"Source-change monitoring and review queue","status":"Pending"}
+    ],
+    "utility": [
+      {"id":"UTILITY-01","label":"Discovery fields and filters","status":"Pending"}, {"id":"UTILITY-02","label":"Controlled disaggregation model","status":"Pending"},
+      {"id":"UTILITY-03","label":"Data-quality and comparability pilot","status":"Pending"}, {"id":"UTILITY-04","label":"Versioned targets and reference-value model","status":"Pending"},
+      {"id":"UTILITY-05","label":"Source-backed response guidance","status":"Pending"}, {"id":"UTILITY-06","label":"Tested calculation templates","status":"Pending"}
+    ],
+    "operationalMapping": [
+      {"id":"OPMAP-01","label":"Operational mapping policy","status":"Pending"},
+      {"id":"OPMAP-02","label":"HMIS/DHIS2 pilot","status":"Blocked by evidence","requires":"Authorized current metadata export"},
+      {"id":"OPMAP-03","label":"NTEP operational mapping","status":"Blocked by evidence","requires":"Authorized versioned Ni-kshay dictionary or export"},
+      {"id":"OPMAP-04","label":"NP-NCD operational mapping","status":"Blocked by evidence","requires":"Authoritative versioned National NCD Portal, AMRIT or CBAC evidence"}
+    ],
+    "semanticWeb": [
+      {"id":"SEM-00","label":"Existing semantic asset inventory","status":"Complete"}, {"id":"SEM-01","label":"SKOS mapping policy","status":"Pending"},
+      {"id":"SEM-02","label":"RDF distributions","status":"Pending"}, {"id":"SEM-03","label":"SHACL validation","status":"Pending"},
+      {"id":"SEM-04","label":"Resolvable canonical representations","status":"Pending"}
+    ],
+    "fhirFoundation": [
+      {"id":"FHIR-00","label":"Feasibility and role assessment","status":"Complete"},
+      {"id":"FHIR-01","label":"FHIR version policy","status":"Pending"},
+      {"id":"FHIR-02","label":"Canonical identity implementation","status":"Pending","dependsOn":["TRUST-04"]},
+      {"id":"FHIR-03","label":"Source-authority policy","status":"Pending"},
+      {"id":"FHIR-04","label":"Computability maturity model","status":"Pending"},
+      {"id":"FHIR-05","label":"Core Measure profile","status":"Pending","dependsOn":["TRUST-02","TRUST-03"]},
+      {"id":"FHIR-06","label":"Registry extensions","status":"Pending","dependsOn":["TRUST-02"]},
+      {"id":"FHIR-07","label":"Local CodeSystems and ValueSets","status":"Pending","dependsOn":["TRUST-02"]},
+      {"id":"FHIR-08","label":"ConceptMap policy","status":"Pending","dependsOn":["SEM-01"]},
+      {"id":"FHIR-09","label":"HMIS modelling policy","status":"Pending"},
+      {"id":"FHIR-10","label":"Provenance and source-document pattern","status":"Pending","dependsOn":["TRUST-05"]},
+      {"id":"FHIR-11","label":"Security and publication boundary","status":"Pending"},
+      {"id":"FHIR-12","label":"Ten-indicator pilot selection","status":"Pending","dependsOn":["FHIR-01","FHIR-02","FHIR-03","FHIR-04","FHIR-05","FHIR-06","FHIR-07","FHIR-08","FHIR-09","FHIR-10","FHIR-11"]},
+      {"id":"FHIR-13","label":"Pilot Measure resources","status":"Pending","dependsOn":["FHIR-12"]},
+      {"id":"FHIR-14","label":"Pilot ConceptMap and provenance resources","status":"Pending","dependsOn":["FHIR-12"]},
+      {"id":"FHIR-15","label":"Synthetic aggregate MeasureReport examples","status":"Pending","dependsOn":["FHIR-13"]},
+      {"id":"FHIR-16","label":"Profiles and validation pipeline","status":"Pending","dependsOn":["FHIR-13","FHIR-14"]},
+      {"id":"FHIR-17","label":"Computable subset","status":"Pending","dependsOn":["FHIR-16","UTILITY-06"]},
+      {"id":"FHIR-18","label":"Domain review","status":"Pending","dependsOn":["FHIR-13","FHIR-14","FHIR-15"]},
+      {"id":"FHIR-19","label":"Static Implementation Guide publication","status":"Pending","dependsOn":["FHIR-16","FHIR-18"]},
+      {"id":"FHIR-20","label":"Website representation links","status":"Pending","dependsOn":["FHIR-19","SEM-04"]},
+      {"id":"FHIR-21","label":"Pilot release gate","status":"Pending","dependsOn":["FHIR-19","FHIR-20"]}
+    ],
+    "terminology": [
+      {"id":"TERM-01","label":"Standards role and licence assessment","status":"Deferred"}, {"id":"TERM-02","label":"Terminology eligibility model","status":"Deferred"},
+      {"id":"TERM-03","label":"Small programme mapping pilot","status":"Deferred"}, {"id":"TERM-04","label":"Validation and domain review","status":"Deferred"},
+      {"id":"TERM-05","label":"Licence-compliant publication policy","status":"Deferred"}
+    ],
+    "products": [
+      {"id":"PRODUCT-01","label":"Programme Officer's Brief pilot","status":"Deferred","dependsOn":["UTILITY-03","UTILITY-04","UTILITY-05"]},
+      {"id":"PRODUCT-02","label":"Dashboard configuration audit","status":"Deferred","dependsOn":["OPMAP-02","UTILITY-06"]},
+      {"id":"PRODUCT-03","label":"Indicator calculation assistant","status":"Deferred","dependsOn":["TRUST-02","UTILITY-06"]},
+      {"id":"PRODUCT-04","label":"Source-change review queue","status":"Deferred","dependsOn":["TRUST-07"]}
+    ]
+  },
+  "repeatableProgrammeChecklist": [
+    {"id":"PR-01","label":"Freeze source boundary"}, {"id":"PR-02","label":"Inventory and classify objects"},
+    {"id":"PR-03","label":"Preserve official metadata"}, {"id":"PR-04","label":"Add normalized measure metadata"},
+    {"id":"PR-05","label":"Map operational context"}, {"id":"PR-06","label":"Document analytical cautions"},
+    {"id":"PR-07","label":"Model targets and response guidance separately"}, {"id":"PR-08","label":"Map operational systems when evidenced"},
+    {"id":"PR-09","label":"Extend and review knowledge graph"}, {"id":"PR-10","label":"Execute PF-01..PF-13"},
+    {"id":"PR-11","label":"Attach provenance and lifecycle"}, {"id":"PR-12","label":"Validate, release and update trackers"}
+  ],
+  "repeatableFhirChecklist": ["PF-01", "PF-02", "PF-03", "PF-04", "PF-05", "PF-06", "PF-07", "PF-08", "PF-09", "PF-10", "PF-11", "PF-12", "PF-13"],
+  "publicationBoundary": "GitHub Pages may publish static HTML, JSON, JSON-LD, RDF and FHIR artifacts. It does not provide FHIR REST or terminology operations. Public bulk-download controls remain disabled unless separately authorized.",
+  "onboardingRule": "Whenever a programme is added, append a programme row at FHIR gate G0, instantiate PR-01..PR-12, and nest PF-01..PF-13 under PR-10. Registry, graph, utility and FHIR maturity are reported independently."
 }
