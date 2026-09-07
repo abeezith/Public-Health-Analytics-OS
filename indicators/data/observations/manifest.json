@@ -1,0 +1,38 @@
+{
+  "id": "PHAOS-OBSERVATION-LAYER",
+  "title": "Public Health Analytics-OS observation and reference-value layer",
+  "version": "1.0.0",
+  "updated": "2026-09-07",
+  "status": "Contract-ready; no values published",
+  "schemaPackage": "../schemas/1.1.0/manifest.json",
+  "contracts": {
+    "aggregateObservation": "../schemas/1.1.0/aggregate-observation.schema.json",
+    "referenceValue": "../schemas/1.1.0/reference-value.schema.json"
+  },
+  "counts": {
+    "aggregateObservations": 0,
+    "referenceValues": 0,
+    "publicDistributions": 0
+  },
+  "publicationState": "metadata-only",
+  "ingestionGate": [
+    "Canonical indicator or data-element identity resolves in the unified registry",
+    "Geographic or reporting-unit identity and reporting period are explicit",
+    "Source version, retrieval date, acquisition method and lineage are recorded",
+    "Unit and scale agree with the governed definition",
+    "Disaggregations retain source labels and codes where available",
+    "Revision and replacement history are explicit",
+    "Privacy, disclosure and suppression rules pass before public publication",
+    "Licensing and redistribution rights permit the intended access class"
+  ],
+  "prohibitedContent": [
+    "Person-level records",
+    "Direct personal identifiers",
+    "Unreviewed small-cell values",
+    "Values without a resolvable subject definition",
+    "Targets stored as observed results",
+    "Observed results embedded into indicator definitions"
+  ],
+  "interpretationBoundary": "This manifest publishes an ingestion contract, not health data. Zero aggregate observations and zero reference values are included. Structural conformance will not by itself establish source authority, comparability, data quality, privacy clearance or fitness for analysis.",
+  "publicDownloadControls": "disabled"
+}

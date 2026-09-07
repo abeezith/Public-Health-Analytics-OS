@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abeezith.github.io/Public-Health-Analytics-OS/indicators/data/schemas/1.1.0/reference-value.schema.json",
+  "title": "Public Health Analytics-OS reference value",
+  "description": "A versioned target, benchmark, threshold or reference range linked to an indicator definition. It is not an observed result and never overwrites the indicator definition.",
+  "type": "object",
+  "required": ["id", "recordType", "schemaVersion", "businessVersion", "lifecycleStatus", "indicatorCanonicalObjectId", "referenceType", "applicability", "effectivePeriod", "authority", "interpretation", "publication"],
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/recordId" },
+    "recordType": { "const": "Reference value" },
+    "schemaVersion": { "const": "1.1.0" },
+    "businessVersion": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "lifecycleStatus": { "enum": ["draft", "active", "retired", "superseded"] },
+    "indicatorCanonicalObjectId": { "$ref": "common.schema.json#/$defs/recordId" },
+    "indicatorCanonicalUri": { "type": "string", "format": "uri" },
+    "definitionBusinessVersion": { "type": "string" },
+    "referenceType": { "enum": ["target", "benchmark", "alert threshold", "reference range"] },
+    "valueQuantity": {
+      "type": "object",
+      "required": ["value", "unit"],
+      "properties": { "value": { "type": "number" }, "unit": { "$ref": "common.schema.json#/$defs/nonEmptyString" }, "comparator": { "enum": ["=", "<", "<=", ">", ">="] } },
+      "additionalProperties": false
+    },
+    "valueRange": {
+      "type": "object",
+      "required": ["low", "high", "unit"],
+      "properties": { "low": { "type": "number" }, "high": { "type": "number" }, "unit": { "$ref": "common.schema.json#/$defs/nonEmptyString" } },
+      "additionalProperties": false
+    },
+    "applicability": {
+      "type": "object",
+      "required": ["geography", "population"],
+      "properties": {
+        "geography": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+        "geographyCode": { "type": "string" },
+        "geographyLevel": { "type": "string" },
+        "population": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+        "programme": { "type": "string" },
+        "disaggregations": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true }
+      },
+      "additionalProperties": false
+    },
+    "effectivePeriod": {
+      "type": "object",
+      "required": ["startDate"],
+      "properties": { "startDate": { "$ref": "common.schema.json#/$defs/date" }, "endDate": { "$ref": "common.schema.json#/$defs/date" }, "label": { "type": "string" } },
+      "additionalProperties": false
+    },
+    "authority": {
+      "type": "object",
+      "required": ["source", "sourceVersion", "accessedOn"],
+      "properties": {
+        "source": { "$ref": "common.schema.json#/$defs/evidenceReference" },
+        "sourceVersion": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+        "accessedOn": { "$ref": "common.schema.json#/$defs/date" },
+        "issuingOrganization": { "type": "string" },
+        "reviewEventIds": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/recordId" }, "uniqueItems": true }
+      },
+      "additionalProperties": false
+    },
+    "interpretation": {
+      "type": "object",
+      "required": ["direction", "scopeNote"],
+      "properties": {
+        "direction": { "enum": ["at least", "at most", "equal to", "within range", "context-specific"] },
+        "scopeNote": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+        "responseGuidance": { "type": "string" },
+        "responseGuidanceSource": { "$ref": "common.schema.json#/$defs/evidenceReference" }
+      },
+      "additionalProperties": false
+    },
+    "publication": {
+      "type": "object",
+      "required": ["accessClass", "redistributionStatus"],
+      "properties": {
+        "accessClass": { "enum": ["public", "restricted", "internal"] },
+        "redistributionStatus": { "enum": ["permitted", "restricted", "unknown"] },
+        "license": { "type": "string" },
+        "termsUrl": { "type": "string", "format": "uri" }
+      },
+      "additionalProperties": false
+    },
+    "replacesReferenceValueId": { "$ref": "common.schema.json#/$defs/recordId" },
+    "replacedByReferenceValueId": { "$ref": "common.schema.json#/$defs/recordId" }
+  },
+  "oneOf": [{ "required": ["valueQuantity"] }, { "required": ["valueRange"] }],
+  "additionalProperties": false
+}

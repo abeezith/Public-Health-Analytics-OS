@@ -1,15 +1,15 @@
 {
   "metadata": {
     "id": "PHAOS-UNIFIED-READ-MODEL-MANIFEST",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "generated": "2026-09-07",
-    "task": "UNIFY-07"
+    "task": "UNIFY-09"
   },
   "distribution": {
     "path": "unified-read-model.json",
     "mediaType": "application/json",
     "bytes": 25733385,
-    "sha256": "68a10a625a88a1846a784c635099f131269bb64cbfc64a443ea085b4d5f932df"
+    "sha256": "bf9cbd4e9486d616db38c0b999c6957f6f58a3b426c9c36b2fa7d63bcdfbad10"
   },
   "counts": {
     "canonicalObjects": 4743,

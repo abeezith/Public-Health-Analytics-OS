@@ -2,9 +2,10 @@
   "metadata": {
     "id": "PHAOS-OBJECT-TAXONOMY-001",
     "title": "Public Health Analytics-OS unified registry object taxonomy",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "adopted": "2026-09-07",
     "task": "UNIFY-01",
+    "extendedBy": "UNIFY-09 / GOV-DEC-011",
     "status": "Adopted",
     "authorityBoundary": "These are Analytics-OS discovery classes. They do not replace source-custodian classifications or make unlike objects semantically equivalent."
   },
@@ -69,11 +70,19 @@
     },
     {
       "code": "Observation/aggregate value",
-      "definition": "A value for a defined indicator or data element at a stated geography, reporting unit, period and version. Reserved until governed aggregate datasets are ingested.",
+      "definition": "A privacy-reviewed aggregate value for a defined indicator or data element at a stated geography or reporting unit, period, disaggregation grain, source version and revision.",
       "sourceLabels": [],
-      "status": "Reserved",
+      "status": "Contract-ready; no instances published",
       "isMeasureDefinition": false,
       "mayCarryObservedValues": true
+    },
+    {
+      "code": "Reference value",
+      "definition": "A versioned target, benchmark, alert threshold or reference range linked to an indicator, authority, applicability scope and effective period. It is not an observed result.",
+      "sourceLabels": ["Target", "Benchmark", "Threshold", "Reference range"],
+      "status": "Contract-ready; no instances published",
+      "isMeasureDefinition": false,
+      "mayCarryObservedValues": false
     }
   ],
   "facets": {
@@ -90,6 +99,7 @@
     "Do not promote a form field, output or validation rule to Indicator because it is analytically useful.",
     "Do not treat a report-column occurrence as a new canonical data element when it resolves to an existing element.",
     "Do not label metadata definitions as observed data points or values.",
-    "Keep candidate and unresolved records visible without silently promoting them to canonical status."
+    "Keep candidate and unresolved records visible without silently promoting them to canonical status.",
+    "Keep targets, benchmarks and thresholds in Reference value records rather than storing them as observations or overwriting indicator definitions."
   ]
 }

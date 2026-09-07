@@ -11,7 +11,7 @@ const model = read(modelPath);
 const manifest = read('indicators/data/registry/manifest.json');
 const identities = read('indicators/data/governance/unified-identity-index.json');
 
-if (model.metadata.version !== '1.2.0') fail('Unexpected read-model version.');
+if (model.metadata.version !== '1.2.1') fail('Unexpected read-model version.');
 if (model.records.length !== 4743) fail(`Expected 4743 records, got ${model.records.length}.`);
 const ids = model.records.map(item => item.canonicalObjectId);
 const uris = model.records.map(item => item.canonicalUri);

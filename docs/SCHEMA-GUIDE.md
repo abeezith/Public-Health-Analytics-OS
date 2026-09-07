@@ -1,11 +1,11 @@
 # Analytics-OS versioned JSON Schema guide
 
-**Schema package:** `1.0.0`  
+**Active schema package:** `1.1.0`
 **JSON Schema dialect:** Draft 2020-12  
 **Adopted:** 7 September 2026  
 **Governance task:** TRUST-02
 
-The package under [`indicators/data/schemas/1.0.0`](../indicators/data/schemas/1.0.0/) defines the first explicit structural contracts for Analytics-OS. The unversioned [`manifest.json`](../indicators/data/schemas/manifest.json) is only a discovery pointer. Production consumers must pin the versioned manifest or a versioned schema `$id`.
+Package [`1.1.0`](../indicators/data/schemas/1.1.0/) retains the definition, graph, evidence and event contracts introduced in immutable package 1.0.0 and adds aggregate-observation and reference-value contracts under UNIFY-09. The unversioned [`manifest.json`](../indicators/data/schemas/manifest.json) is only a discovery pointer. Production consumers must pin the versioned manifest or a versioned schema `$id`.
 
 ## Contract inventory
 
@@ -21,6 +21,8 @@ The package under [`indicators/data/schemas/1.0.0`](../indicators/data/schemas/1
 | `programme-release.schema.json` | Programme source boundary, source list, evidence gaps and programme payloads |
 | `review-event.schema.json` | Independent source, technical, domain, semantic, computability, governance and custodian reviews |
 | `change-event.schema.json` | Append-only, field-level change descriptions and version transitions |
+| `aggregate-observation.schema.json` | Privacy-aware aggregate values linked to a definition, place/reporting unit, period, grain, source and revision |
+| `reference-value.schema.json` | Targets, benchmarks, thresholds and ranges kept separate from definitions and observed results |
 
 ## Design rules
 
@@ -31,10 +33,15 @@ The package under [`indicators/data/schemas/1.0.0`](../indicators/data/schemas/1
 5. **HMIS objects retain their class.** A data element, output or validation rule does not become an indicator merely because it is useful for indicator computation.
 6. **Evidence gaps are first-class records.** Missing dictionaries, restricted portals and unresolved definitions remain visible and carry a resolution action.
 7. **Events are append-only.** Review and change events refer to the subject and its version. They do not silently mutate or erase earlier released evidence.
+8. **Results have independent identity.** Observation versions use immutable IDs and a stable grain key; they link to but never modify indicator or data-element definitions.
+9. **Privacy precedes publication.** Person-level fields are outside the aggregate contract. Public records require an allowed disclosure-review state, and suppressed records cannot carry a numeric value.
+10. **Targets are not results.** Reference values have their own authority, applicability and effective period.
 
-## Compatibility boundary in 1.0.0
+## Compatibility boundary in 1.1.0
 
-The first package is deliberately compatible with Release 3.7. `additionalProperties` is allowed so programme- and source-specific metadata can be retained without data loss. A null `measureType` means normalized classification is pending, not that the source supplied a null measure. Older WHO building-block labels beginning `Access to essential medicines` are retained as compatibility aliases, while new mappings use `Medical products, vaccines and technologies`. Empty source strings remain distinguishable from absent required fields and will be scored by TRUST-03 rather than invented during structural validation. Existing NP-NCD tuple records are accepted as a documented legacy payload; new programme records should use named indicator objects. The legacy graph review label beginning `Domain-reviewed` remains accepted until TRUST-05 migrates entry-level review history.
+Package 1.1.0 is a backward-compatible minor release. Existing definition contracts retain the Release 3.7 compatibility rules from 1.0.0. The two new value contracts use `additionalProperties: false` so unidentified or person-level fields cannot enter through an extension point. No observed values or reference values are included in the release.
+
+A null `measureType` still means normalized classification is pending, not that the source supplied a null measure. Older WHO building-block labels beginning `Access to essential medicines` remain compatibility aliases, while new mappings use `Medical products, vaccines and technologies`. Existing NP-NCD tuple records remain accepted as documented legacy payloads; new programme records should use named indicator objects.
 
 This compatibility policy is not permission to add arbitrary fields indefinitely. TRUST-03 publishes the separate [`PHAOS-MDQ-001`](METADATA-QUALITY-SPECIFICATION.md) computed quality profile without rewriting legacy fields. TRUST-04 has adopted [`PHAOS-IDENTITY-001`](IDENTITY-LIFECYCLE-POLICY.md) for canonical, manifestation, representation and occurrence identity plus lifecycle semantics. TRUST-05 will populate entry-level quality/review/change properties, and TRUST-06 will make release validation an automated gate.
 

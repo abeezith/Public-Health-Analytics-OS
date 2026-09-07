@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abeezith.github.io/Public-Health-Analytics-OS/indicators/data/schemas/1.1.0/aggregate-observation.schema.json",
+  "title": "Public Health Analytics-OS aggregate observation",
+  "description": "A privacy-aware aggregate value linked to a governed indicator or data-element definition. This contract excludes person-level records and does not make a value comparable merely because it is structurally valid.",
+  "type": "object",
+  "required": ["id", "observationKey", "recordType", "schemaVersion", "businessVersion", "lifecycleStatus", "subject", "period", "valueStatus", "dataStatus", "revision", "provenance", "privacy"],
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/recordId" },
+    "observationKey": { "$ref": "common.schema.json#/$defs/recordId", "description": "Stable key for one subject, place/reporting unit, period, disaggregation set and source. Corrected versions retain this key but receive a new id and revision number." },
+    "recordType": { "const": "Observation/aggregate value" },
+    "schemaVersion": { "const": "1.1.0" },
+    "businessVersion": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "lifecycleStatus": { "enum": ["draft", "active", "retired", "superseded"] },
+    "subject": {
+      "type": "object",
+      "required": ["canonicalObjectId", "canonicalObjectType"],
+      "properties": {
+        "canonicalObjectId": { "$ref": "common.schema.json#/$defs/recordId" },
+        "canonicalUri": { "type": "string", "format": "uri" },
+        "canonicalObjectType": { "enum": ["Indicator", "Data element"] },
+        "definitionBusinessVersion": { "type": "string" },
+        "sourceManifestationId": { "$ref": "common.schema.json#/$defs/recordId" }
+      },
+      "additionalProperties": false
+    },
+    "geographicUnit": { "$ref": "#/$defs/contextUnit" },
+    "reportingUnit": { "$ref": "#/$defs/contextUnit" },
+    "period": {
+      "type": "object",
+      "required": ["periodType"],
+      "properties": {
+        "periodType": { "enum": ["point", "interval"] },
+        "pointDate": { "$ref": "common.schema.json#/$defs/date" },
+        "startDate": { "$ref": "common.schema.json#/$defs/date" },
+        "endDate": { "$ref": "common.schema.json#/$defs/date" },
+        "label": { "type": "string" },
+        "frequency": { "type": "string" }
+      },
+      "allOf": [
+        { "if": { "properties": { "periodType": { "const": "point" } } }, "then": { "required": ["pointDate"] } },
+        { "if": { "properties": { "periodType": { "const": "interval" } } }, "then": { "required": ["startDate", "endDate"] } }
+      ],
+      "additionalProperties": false
+    },
+    "disaggregations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["dimension", "value"],
+        "properties": {
+          "dimension": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+          "value": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+          "code": { "type": "string" },
+          "codeSystem": { "type": "string" },
+          "sourceLabel": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "valueStatus": { "enum": ["present", "suppressed", "unavailable", "not-applicable"] },
+    "valueQuantity": {
+      "type": "object",
+      "required": ["value", "unit"],
+      "properties": {
+        "value": { "type": "number" },
+        "unit": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+        "scale": { "enum": ["count", "%", "per 1,000", "per 10,000", "per 100,000", "ratio", "index", "other"] }
+      },
+      "additionalProperties": false
+    },
+    "componentValues": {
+      "type": "object",
+      "properties": {
+        "numerator": { "type": "number" },
+        "denominator": { "type": "number", "minimum": 0 },
+        "denominatorPopulation": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "suppressionReason": { "type": "string", "minLength": 1 },
+    "dataStatus": { "enum": ["provisional", "final", "revised", "corrected"] },
+    "revision": {
+      "type": "object",
+      "required": ["revisionNumber", "releasedOn"],
+      "properties": {
+        "revisionNumber": { "type": "integer", "minimum": 0 },
+        "replacesObservationId": { "$ref": "common.schema.json#/$defs/recordId" },
+        "reason": { "type": "string" },
+        "releasedOn": { "$ref": "common.schema.json#/$defs/date" }
+      },
+      "additionalProperties": false
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["source", "sourceVersion", "retrievedOn", "acquisitionMethod", "lineage"],
+      "properties": {
+        "source": { "$ref": "common.schema.json#/$defs/evidenceReference" },
+        "sourceVersion": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+        "retrievedOn": { "$ref": "common.schema.json#/$defs/date" },
+        "acquisitionMethod": { "enum": ["authoritative API", "authoritative file", "published table", "manual transcription", "derived calculation"] },
+        "lineage": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+        "checksum": { "type": "string" },
+        "importBatchId": { "$ref": "common.schema.json#/$defs/recordId" },
+        "reviewEventIds": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/recordId" }, "uniqueItems": true }
+      },
+      "additionalProperties": false
+    },
+    "privacy": {
+      "type": "object",
+      "required": ["aggregationClass", "accessClass", "disclosureReviewStatus"],
+      "properties": {
+        "aggregationClass": { "enum": ["public aggregate", "restricted aggregate", "sensitive aggregate"] },
+        "accessClass": { "enum": ["public", "restricted", "internal"] },
+        "disclosureReviewStatus": { "enum": ["not-required", "pending", "passed", "failed"] },
+        "minimumCellSizeRule": { "type": "string" },
+        "reviewedOn": { "$ref": "common.schema.json#/$defs/date" },
+        "reviewer": { "$ref": "common.schema.json#/$defs/actor" }
+      },
+      "additionalProperties": false
+    },
+    "quality": {
+      "type": "object",
+      "properties": {
+        "flags": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+        "completenessStatus": { "enum": ["complete", "partial", "unknown"] },
+        "validationRuleIds": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/recordId" }, "uniqueItems": true },
+        "notes": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "$defs": {
+    "contextUnit": {
+      "type": "object",
+      "required": ["id", "name", "level"],
+      "properties": {
+        "id": { "$ref": "common.schema.json#/$defs/recordId" },
+        "name": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+        "level": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+        "parentId": { "$ref": "common.schema.json#/$defs/recordId" },
+        "code": { "type": "string" },
+        "codeSystem": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "allOf": [
+    { "anyOf": [{ "required": ["geographicUnit"] }, { "required": ["reportingUnit"] }] },
+    { "if": { "properties": { "valueStatus": { "const": "present" } } }, "then": { "required": ["valueQuantity"] }, "else": { "not": { "anyOf": [{ "required": ["valueQuantity"] }, { "required": ["componentValues"] }] } } },
+    { "if": { "properties": { "valueStatus": { "const": "suppressed" } } }, "then": { "required": ["suppressionReason"] } },
+    { "if": { "properties": { "privacy": { "type": "object", "properties": { "accessClass": { "const": "public" } } } } }, "then": { "properties": { "privacy": { "type": "object", "properties": { "aggregationClass": { "const": "public aggregate" }, "disclosureReviewStatus": { "enum": ["not-required", "passed"] } } } } } }
+  ],
+  "additionalProperties": false
+}

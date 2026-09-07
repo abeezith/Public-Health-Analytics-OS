@@ -1,7 +1,7 @@
 {
   "metadata": {
     "id": "PHAOS-WORKSTREAM-TRACKER-1",
-    "version": "3.0.0",
+    "version": "3.1.0",
     "updated": "2026-09-07",
     "analyticsOsRelease": "3.7",
     "humanReadableTracker": "../../../docs/PROGRAMME-WORKSTREAM-TRACKER.md",
@@ -27,7 +27,7 @@
   "executionOrder": [
     {"sequence":1,"taskRange":"RECON-00","label":"Evaluation reconciliation","status":"Complete"},
     {"sequence":2,"taskRange":"TRUST-01..TRUST-07","label":"Trust foundation","status":"In progress","completedTasks":["TRUST-01","TRUST-02","TRUST-03","TRUST-04"],"nextTask":"TRUST-05"},
-    {"sequence":3,"taskRange":"UNIFY-01..UNIFY-10","label":"Unified registry","status":"In progress","completedTasks":["UNIFY-01","UNIFY-02","UNIFY-03","UNIFY-04","UNIFY-05","UNIFY-06","UNIFY-07","UNIFY-08"],"nextTask":"UNIFY-09"},
+    {"sequence":3,"taskRange":"UNIFY-01..UNIFY-10","label":"Unified registry","status":"In progress","completedTasks":["UNIFY-01","UNIFY-02","UNIFY-03","UNIFY-04","UNIFY-05","UNIFY-06","UNIFY-07","UNIFY-08","UNIFY-09"],"nextTask":"UNIFY-10"},
     {"sequence":4,"taskRange":"UTILITY-01..UTILITY-06","label":"Analyst and programme utility","status":"Pending"},
     {"sequence":5,"taskRange":"OPMAP-01..OPMAP-04","label":"Operational-system mappings","status":"Pending"},
     {"sequence":6,"taskRange":"SEM-01..SEM-04","label":"Semantic Web publication","status":"Pending"},
@@ -56,7 +56,7 @@
   ],
   "parallelWorkstreams": [
     {"id":"TRUST","label":"Governance, schema, identity, provenance and lifecycle","status":"In progress","completedTasks":["TRUST-01","TRUST-02","TRUST-03","TRUST-04"],"nextTask":"TRUST-05"},
-    {"id":"UNIFIED_REGISTRY","label":"Unified object discovery, deduplication and navigation","status":"In progress","completedTasks":["UNIFY-01","UNIFY-02","UNIFY-03","UNIFY-04","UNIFY-05","UNIFY-06","UNIFY-07","UNIFY-08"],"nextTask":"UNIFY-09","dependencies":["TRUST-02","TRUST-04"]},
+    {"id":"UNIFIED_REGISTRY","label":"Unified object discovery, deduplication and navigation","status":"In progress","completedTasks":["UNIFY-01","UNIFY-02","UNIFY-03","UNIFY-04","UNIFY-05","UNIFY-06","UNIFY-07","UNIFY-08","UNIFY-09"],"nextTask":"UNIFY-10","dependencies":["TRUST-02","TRUST-04"]},
     {"id":"UTILITY","label":"Analyst and programme utility","status":"Pending","completedTasks":[],"nextTask":"UTILITY-01","dependency":"TRUST-02 and TRUST-03 for structured fields"},
     {"id":"OPMAP","label":"Operational-system mapping","status":"Pending","completedTasks":[],"nextTask":"OPMAP-01","blockedTasks":["OPMAP-02","OPMAP-03","OPMAP-04"]},
     {"id":"SEM","label":"Semantic Web and resolvable identity","status":"In progress","completedTasks":["SEM-00"],"nextTask":"SEM-01"},
@@ -74,7 +74,7 @@
       {"id":"TRUST-07","label":"Source-change monitoring and review queue","status":"Pending"}
     ],
     "unifiedRegistry": [
-      {"id":"UNIFY-01","label":"Unified object taxonomy","status":"Complete","taxonomyId":"PHAOS-OBJECT-TAXONOMY-001","taxonomyVersion":"1.0.0","decisionId":"GOV-DEC-004","artifacts":["docs/UNIFIED-REGISTRY-TAXONOMY.md","indicators/data/governance/object-taxonomy.json"]},
+      {"id":"UNIFY-01","label":"Unified object taxonomy","status":"Complete","taxonomyId":"PHAOS-OBJECT-TAXONOMY-001","taxonomyVersion":"1.1.0","decisionId":"GOV-DEC-004","extendedBy":"UNIFY-09 / GOV-DEC-011","artifacts":["docs/UNIFIED-REGISTRY-TAXONOMY.md","indicators/data/governance/object-taxonomy.json"]},
       {"id":"UNIFY-02","label":"Persistent cross-registry identity","status":"Complete","policyId":"PHAOS-IDENTITY-001","policyVersion":"1.0.0","decisionId":"GOV-DEC-004","canonicalObjects":4743,"representations":4797,"sharedRegistryHmisIdentities":54,"reportColumnOccurrences":560,"canonicalOccurrenceLinks":508,"candidateOccurrences":17,"artifacts":["docs/IDENTITY-LIFECYCLE-POLICY.md","indicators/data/governance/identity-policy.json","indicators/data/governance/unified-identity-index.json","scripts/build-unified-identity-index.mjs","scripts/validate-unified-identities.mjs"]},
       {"id":"UNIFY-03","label":"Programme versus system/portal facets","status":"Complete","vocabularyId":"PHAOS-DISCOVERY-FACETS-001","vocabularyVersion":"1.0.0","decisionId":"GOV-DEC-005","hmisSystemIndicatorCount":130,"artifacts":["indicators/data/governance/discovery-facets.json","indicators/index.html","indicators/app.js","indicators/styles.css","docs/UNIFIED-REGISTRY-TAXONOMY.md"]},
       {"id":"UNIFY-04","label":"Single discovery interface","status":"Complete","decisionId":"GOV-DEC-006","interfaceModel":"Browser-federated Registry subviews","counts":{"canonicalObjects":4743,"indicatorManifestations":3751,"hmisKnowledgeObjects":1046,"reportColumnOccurrences":560},"features":["Unified content overview","Indicator card and table views","HMIS card and table views","Class-specific filters","Report-schema view","Knowledge-graph hand-off","Legacy HMIS anchor compatibility"],"nextTask":"UNIFY-05 consolidated read model","artifacts":["indicators/index.html","indicators/app.js","indicators/hmis.js","indicators/styles.css"]},
@@ -82,7 +82,7 @@
       {"id":"UNIFY-06","label":"Report-schema occurrence layer","status":"Complete","decisionId":"GOV-DEC-008","readModelVersion":"1.1.0","counts":{"reportOccurrences":560,"measureOccurrences":525,"dimensionOccurrences":35,"canonicalLinks":508,"heldCandidates":17,"canonicalObjects":4743,"hmisDataElements":765},"features":["Occurrence card and table views","Full-text occurrence search","Class filter","Module and dimension-category filter","Linkage-status filter","Occurrence metadata detail","Canonical-count boundary"],"artifacts":["indicators/report-schemas.js","indicators/index.html","indicators/styles.css","indicators/data/registry/unified-read-model.json","scripts/build-unified-read-model.mjs","scripts/validate-unified-read-model.mjs"]},
       {"id":"UNIFY-07","label":"Relationship navigation","status":"Complete","decisionId":"GOV-DEC-009","readModelVersion":"1.2.0","counts":{"relationshipAssertions":536,"reciprocalRelationshipEntries":1072,"canonicalOccurrenceLinks":508,"sourceEvidenceLinks":4797,"graphNodeLinks":1564,"unresolvedTargets":0},"features":["Indicator-to-HMIS navigation","Canonical-object-to-occurrence navigation","Occurrence-to-canonical navigation","Source-evidence paths","Registry-to-graph focus","Graph-to-Registry metadata","Candidate no-target boundary"],"artifacts":["indicators/data/registry/unified-read-model.json","scripts/build-unified-read-model.mjs","scripts/validate-unified-read-model.mjs","indicators/app.js","indicators/hmis.js","indicators/report-schemas.js","indicators/graph.js","indicators/styles.css"]},
       {"id":"UNIFY-08","label":"Result summaries","status":"Complete","decisionId":"GOV-DEC-010","features":["Filter-aware indicator summary","Filter-aware HMIS object-class summary","Filter-aware report-occurrence summary","Active-filter disclosure","Leading-category breakdowns","Explicit counting boundaries"],"counts":{"indicatorManifestations":3751,"hmisKnowledgeObjects":1046,"hmisDerivedIndicators":54,"hmisDataElements":765,"reportOccurrences":560},"artifacts":["indicators/index.html","indicators/app.js","indicators/hmis.js","indicators/report-schemas.js","indicators/styles.css","docs/GOVERNANCE-DECISION-LOG.md"]},
-      {"id":"UNIFY-09","label":"Observation-ready model","status":"Pending"},
+      {"id":"UNIFY-09","label":"Observation-ready model","status":"Complete","modelId":"PHAOS-OBSERVATION-001","modelVersion":"1.0.0","schemaPackageVersion":"1.1.0","identityIndexVersion":"1.0.1","readModelVersion":"1.2.1","decisionId":"GOV-DEC-011","counts":{"aggregateObservations":0,"referenceValues":0,"publicDistributions":0},"features":["Independent immutable observation-version identity","Stable observation grain key","Canonical definition linkage","Geography or reporting-unit context","Point or interval period","Source disaggregation preservation","Provenance and acquisition lineage","Revision and replacement chain","Privacy and disclosure gate","Suppression without value leakage","Separate target and reference-value contract","Person-level data prohibition"],"artifacts":["docs/OBSERVATION-READY-MODEL.md","indicators/data/observations/manifest.json","indicators/data/schemas/1.1.0/aggregate-observation.schema.json","indicators/data/schemas/1.1.0/reference-value.schema.json","scripts/validate-observation-model.mjs","indicators/index.html","indicators/styles.css"]},
       {"id":"UNIFY-10","label":"Validation and release","status":"Pending"}
     ],
     "utility": [
@@ -177,7 +177,7 @@
   },
   "unifiedRegistry": {
     "taxonomyId": "PHAOS-OBJECT-TAXONOMY-001",
-    "taxonomyVersion": "1.0.0",
+    "taxonomyVersion": "1.1.0",
     "identityPolicyId": "PHAOS-IDENTITY-001",
     "identityPolicyVersion": "1.0.0",
     "canonicalObjects": 4743,
@@ -186,15 +186,16 @@
     "reportColumnOccurrences": 560,
     "canonicalOccurrenceLinks": 508,
     "candidateOccurrences": 17,
-    "completedTasks": ["UNIFY-01", "UNIFY-02", "UNIFY-03", "UNIFY-04", "UNIFY-05", "UNIFY-06", "UNIFY-07", "UNIFY-08"],
+    "completedTasks": ["UNIFY-01", "UNIFY-02", "UNIFY-03", "UNIFY-04", "UNIFY-05", "UNIFY-06", "UNIFY-07", "UNIFY-08", "UNIFY-09"],
     "hmisSystemIndicatorCount": 130,
     "interfaceModel": "Generated consolidated discovery read model",
     "readModelId": "PHAOS-UNIFIED-READ-MODEL",
-    "readModelVersion": "1.2.0",
+    "readModelVersion": "1.2.1",
     "occurrenceLayer": {"records":560,"measures":525,"dimensions":35,"canonicalLinks":508,"heldCandidates":17},
     "navigation": {"relationshipAssertions":536,"reciprocalEntries":1072,"canonicalOccurrenceLinks":508,"sourceEvidenceLinks":4797,"graphNodeLinks":1564,"unresolvedTargets":0},
     "resultSummaries": {"views":["Indicators","HMIS knowledge objects","Report occurrences"],"filterAware":true,"activeFiltersVisible":true,"countingBoundariesVisible":true,"decisionId":"GOV-DEC-010"},
-    "nextTask": "UNIFY-09"
+    "observationReadyModel": {"modelId":"PHAOS-OBSERVATION-001","modelVersion":"1.0.0","schemaPackageVersion":"1.1.0","aggregateObservations":0,"referenceValues":0,"publicDistributions":0,"personLevelRecordsAllowed":false,"decisionId":"GOV-DEC-011"},
+    "nextTask": "UNIFY-10"
   },
   "publicationBoundary": "GitHub Pages may publish static HTML, JSON, JSON-LD, RDF and FHIR artifacts. It does not provide FHIR REST or terminology operations. Public bulk-download controls remain disabled unless separately authorized.",
   "onboardingRule": "Whenever a programme is added, append a programme row at FHIR gate G0, instantiate PR-01..PR-12, and nest PF-01..PF-13 under PR-10. Registry, graph, utility and FHIR maturity are reported independently."

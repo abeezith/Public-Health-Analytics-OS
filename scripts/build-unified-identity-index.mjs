@@ -208,9 +208,9 @@ const result = {
   metadata: {
     id: 'PHAOS-UNIFIED-IDENTITY-INDEX',
     title: 'Public Health Analytics-OS unified object identity index',
-    version: '1.0.0',
+    version: '1.0.1',
     generated: effectiveDate,
-    taxonomyVersion: '1.0.0',
+    taxonomyVersion: '1.1.0',
     identityPolicyVersion: '1.0.0',
     analyticsOsRelease: '3.7',
     canonicalBase,

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abeezith.github.io/Public-Health-Analytics-OS/indicators/data/schemas/1.1.0/graph-node.schema.json",
+  "title": "Public Health Analytics-OS knowledge-graph node",
+  "type": "object",
+  "required": ["id", "type", "label", "uri"],
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/recordId" },
+    "type": {
+      "type": "string",
+      "enum": [
+        "IndicatorManifestation",
+        "IndicatorConcept",
+        "SourceDocument",
+        "Organization",
+        "Programme",
+        "ProgrammeComponent",
+        "DataSystem",
+        "ReportingLevel",
+        "WHOBuildingBlock",
+        "MeasureType",
+        "HmisObject",
+        "EvidenceGap"
+      ]
+    },
+    "label": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "description": { "type": "string" },
+    "uri": { "type": "string", "format": "uri" },
+    "data": { "type": "object", "additionalProperties": true }
+  },
+  "additionalProperties": true
+}

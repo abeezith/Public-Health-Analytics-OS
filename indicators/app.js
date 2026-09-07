@@ -124,7 +124,7 @@ window.phaosResultSummaries={
   }
 };
 
-window.phaosUnifiedModelPromise=fetch('./data/registry/unified-read-model.json?v=unify-07-1.2.0',{cache:'no-store'}).then(response=>{
+window.phaosUnifiedModelPromise=fetch('./data/registry/unified-read-model.json?v=unify-09-1.2.1',{cache:'no-store'}).then(response=>{
   if(!response.ok)throw new Error(`Unified read model request failed: ${response.status}`);
   return response.json();
 });

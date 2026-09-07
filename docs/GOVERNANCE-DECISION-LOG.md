@@ -136,6 +136,18 @@ This log records material governance decisions separately from indicator and sof
 - **Migration and review date:** Add automated result-summary count and accessibility gates under UNIFY-10. Review no later than 7 September 2027.
 - **Supersedes:** Ambiguous view-local result counts through UNIFY-07.
 
+## GOV-DEC-011 — Separate definitions, aggregate observations and reference values
+
+- **Date:** 7 September 2026
+- **Status:** Adopted
+- **Decision owner:** Analytics-OS maintainer
+- **Decision:** Adopt `PHAOS-OBSERVATION-001` and schema package 1.1.0. Aggregate observations receive independent immutable version IDs and stable grain keys; they link to a governed indicator or data element and require context, period, provenance, revision, privacy and suppression metadata. Targets and thresholds use a separate reference-value contract. Person-level records are prohibited.
+- **Reason and evidence:** Indicator definitions describe what to measure, while observations report a value and reference values describe an expected or decision threshold. Combining them would obscure provenance, period, applicability, revision and privacy boundaries.
+- **Alternatives considered:** Embedding latest values or targets into indicator records was rejected because it rewrites history and collapses distinct authorities. Publishing an empty generic value field was rejected because it lacks grain, lineage, revision and disclosure controls.
+- **Affected artifacts or decision rights:** Object taxonomy 1.1.0, schema package 1.1.0, observation manifest, validator, Registry method display and workstream tracker. Data ingestion still requires source, privacy, licensing, domain and analytical review.
+- **Migration and review date:** No value migration is needed because zero observations and zero reference values are published. Reassess at the first authorized ingestion and no later than 7 September 2027.
+- **Supersedes:** The reserved but undefined observation class in taxonomy 1.0.0.
+
 ## Decision record template
 
 - **ID and title:**

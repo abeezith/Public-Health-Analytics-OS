@@ -218,7 +218,7 @@ const model = {
   metadata: {
     id: 'PHAOS-UNIFIED-READ-MODEL',
     title: 'Public Health Analytics-OS consolidated discovery read model',
-    version: '1.2.0',
+    version: '1.2.1',
     generated: releaseDate,
     task: 'UNIFY-05',
     identityIndexVersion: identities.metadata.version,
@@ -236,7 +236,7 @@ const model = {
 write(modelPath, model);
 const bytes = fs.readFileSync(path.join(root, modelPath));
 const manifest = {
-  metadata: {id:'PHAOS-UNIFIED-READ-MODEL-MANIFEST',version:'1.2.0',generated:releaseDate,task:'UNIFY-07'},
+  metadata: {id:'PHAOS-UNIFIED-READ-MODEL-MANIFEST',version:'1.2.1',generated:releaseDate,task:'UNIFY-09'},
   distribution: {path:'unified-read-model.json',mediaType:'application/json',bytes:bytes.length,sha256:crypto.createHash('sha256').update(bytes).digest('hex')},
   counts: model.counts,
   sources: [
