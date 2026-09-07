@@ -1,7 +1,7 @@
 {
   "metadata": {
     "id": "PHAOS-WORKSTREAM-TRACKER-1",
-    "version": "2.3.0",
+    "version": "2.4.0",
     "updated": "2026-09-07",
     "analyticsOsRelease": "3.7",
     "humanReadableTracker": "../../../docs/PROGRAMME-WORKSTREAM-TRACKER.md",
@@ -26,15 +26,16 @@
   },
   "executionOrder": [
     {"sequence":1,"taskRange":"RECON-00","label":"Evaluation reconciliation","status":"Complete"},
-    {"sequence":2,"taskRange":"TRUST-01..TRUST-07","label":"Trust foundation","status":"In progress","completedTasks":["TRUST-01","TRUST-02","TRUST-03"],"nextTask":"TRUST-04"},
-    {"sequence":3,"taskRange":"UTILITY-01..UTILITY-06","label":"Analyst and programme utility","status":"Pending"},
-    {"sequence":4,"taskRange":"OPMAP-01..OPMAP-04","label":"Operational-system mappings","status":"Pending"},
-    {"sequence":5,"taskRange":"SEM-01..SEM-04","label":"Semantic Web publication","status":"Pending"},
-    {"sequence":6,"taskRange":"FHIR-01..FHIR-21","label":"FHIR foundation and pilot","status":"Pending"},
-    {"sequence":7,"taskRange":"TERM-01..TERM-05","label":"Terminology evaluation and pilot","status":"Deferred"},
-    {"sequence":8,"taskRange":"PROGRAMME-4-DEEP, PROGRAMME-6","label":"Complete current programme sequence","status":"Pending"},
-    {"sequence":9,"taskRange":"PROGRAMME-7..PROGRAMME-9","label":"Additional programme queue","status":"Pending"},
-    {"sequence":10,"taskRange":"PRODUCT-01..PRODUCT-04","label":"Derived analytical products","status":"Deferred"}
+    {"sequence":2,"taskRange":"TRUST-01..TRUST-07","label":"Trust foundation","status":"In progress","completedTasks":["TRUST-01","TRUST-02","TRUST-03","TRUST-04"],"nextTask":"TRUST-05"},
+    {"sequence":3,"taskRange":"UNIFY-01..UNIFY-10","label":"Unified registry","status":"In progress","completedTasks":["UNIFY-01","UNIFY-02"],"nextTask":"UNIFY-03"},
+    {"sequence":4,"taskRange":"UTILITY-01..UTILITY-06","label":"Analyst and programme utility","status":"Pending"},
+    {"sequence":5,"taskRange":"OPMAP-01..OPMAP-04","label":"Operational-system mappings","status":"Pending"},
+    {"sequence":6,"taskRange":"SEM-01..SEM-04","label":"Semantic Web publication","status":"Pending"},
+    {"sequence":7,"taskRange":"FHIR-01..FHIR-21","label":"FHIR foundation and pilot","status":"Pending"},
+    {"sequence":8,"taskRange":"TERM-01..TERM-05","label":"Terminology evaluation and pilot","status":"Deferred"},
+    {"sequence":9,"taskRange":"PROGRAMME-4-DEEP, PROGRAMME-6","label":"Complete current programme sequence","status":"Pending"},
+    {"sequence":10,"taskRange":"PROGRAMME-7..PROGRAMME-9","label":"Additional programme queue","status":"Pending"},
+    {"sequence":11,"taskRange":"PRODUCT-01..PRODUCT-04","label":"Derived analytical products","status":"Deferred"}
   ],
   "fhirGates": [
     {"id":"G0","label":"Registered"}, {"id":"G1","label":"Scoped"}, {"id":"G2","label":"Classified"}, {"id":"G3","label":"Metadata mapped"},
@@ -54,7 +55,8 @@
     {"sequence":9,"id":"PROGRAMME-NMHP","label":"National Mental Health Programme","currentEvidence":"No programme-specific source boundary","nextTask":"Inventory NMHP/DMHP and applicable HWC mental-health sources"}
   ],
   "parallelWorkstreams": [
-    {"id":"TRUST","label":"Governance, schema, identity, provenance and lifecycle","status":"In progress","completedTasks":["TRUST-01","TRUST-02","TRUST-03"],"nextTask":"TRUST-04"},
+    {"id":"TRUST","label":"Governance, schema, identity, provenance and lifecycle","status":"In progress","completedTasks":["TRUST-01","TRUST-02","TRUST-03","TRUST-04"],"nextTask":"TRUST-05"},
+    {"id":"UNIFIED_REGISTRY","label":"Unified object discovery, deduplication and navigation","status":"In progress","completedTasks":["UNIFY-01","UNIFY-02"],"nextTask":"UNIFY-03","dependencies":["TRUST-02","TRUST-04"]},
     {"id":"UTILITY","label":"Analyst and programme utility","status":"Pending","completedTasks":[],"nextTask":"UTILITY-01","dependency":"TRUST-02 and TRUST-03 for structured fields"},
     {"id":"OPMAP","label":"Operational-system mapping","status":"Pending","completedTasks":[],"nextTask":"OPMAP-01","blockedTasks":["OPMAP-02","OPMAP-03","OPMAP-04"]},
     {"id":"SEM","label":"Semantic Web and resolvable identity","status":"In progress","completedTasks":["SEM-00"],"nextTask":"SEM-01"},
@@ -66,9 +68,22 @@
   "tasks": {
     "trust": [
       {"id":"TRUST-01","label":"Governance charter","status":"Complete","artifacts":["docs/GOVERNANCE-CHARTER.md","CONTRIBUTING.md","docs/GOVERNANCE-DECISION-LOG.md",".github/ISSUE_TEMPLATE/indicator-or-source-change.md",".github/ISSUE_TEMPLATE/governance-proposal.md"]}, {"id":"TRUST-02","label":"Versioned JSON Schemas","status":"Complete","schemaVersion":"1.0.0","schemaDraft":"2020-12","artifacts":["indicators/data/schemas/manifest.json","indicators/data/schemas/1.0.0/manifest.json","indicators/data/schemas/1.0.0/common.schema.json","indicators/data/schemas/1.0.0/indicator-manifestation.schema.json","indicators/data/schemas/1.0.0/source-document.schema.json","indicators/data/schemas/1.0.0/hmis-object.schema.json","indicators/data/schemas/1.0.0/graph-node.schema.json","indicators/data/schemas/1.0.0/graph-edge.schema.json","indicators/data/schemas/1.0.0/evidence-gap.schema.json","indicators/data/schemas/1.0.0/programme-release.schema.json","indicators/data/schemas/1.0.0/review-event.schema.json","indicators/data/schemas/1.0.0/change-event.schema.json","docs/SCHEMA-GUIDE.md"],"decisionId":"GOV-DEC-002","validationBoundary":"Structural validity does not imply source verification, semantic equivalence, aggregation safety, computability, domain review or custodian approval."},
-      {"id":"TRUST-03","label":"Metadata-quality specification","status":"Complete","profileId":"PHAOS-MDQ-001","profileVersion":"1.0.0","decisionId":"GOV-DEC-003","recordsScored":3708,"criticalValidationErrors":0,"unscoredLegacyProgrammeTuples":43,"nextRemediation":"Migrate named entry-level quality properties under TRUST-05 and enforce the validator under TRUST-06.","artifacts":["docs/METADATA-QUALITY-SPECIFICATION.md","indicators/data/governance/metadata-quality-profile.json","indicators/data/governance/metadata-quality-report.json","indicators/data/governance/relationship-vocabulary.json","scripts/validate-metadata-quality.mjs"]}, {"id":"TRUST-04","label":"Persistent identity and lifecycle policy","status":"Pending"},
+      {"id":"TRUST-03","label":"Metadata-quality specification","status":"Complete","profileId":"PHAOS-MDQ-001","profileVersion":"1.0.0","decisionId":"GOV-DEC-003","recordsScored":3708,"criticalValidationErrors":0,"unscoredLegacyProgrammeTuples":43,"nextRemediation":"Migrate named entry-level quality properties under TRUST-05 and enforce the validator under TRUST-06.","artifacts":["docs/METADATA-QUALITY-SPECIFICATION.md","indicators/data/governance/metadata-quality-profile.json","indicators/data/governance/metadata-quality-report.json","indicators/data/governance/relationship-vocabulary.json","scripts/validate-metadata-quality.mjs"]},
+      {"id":"TRUST-04","label":"Persistent identity and lifecycle policy","status":"Complete","policyId":"PHAOS-IDENTITY-001","policyVersion":"1.0.0","decisionId":"GOV-DEC-004","canonicalObjects":4743,"representations":4797,"multiRepresentationObjects":54,"reportColumnOccurrences":560,"artifacts":["docs/IDENTITY-LIFECYCLE-POLICY.md","indicators/data/governance/identity-policy.json","indicators/data/governance/unified-identity-index.json","scripts/build-unified-identity-index.mjs","scripts/validate-unified-identities.mjs"]},
       {"id":"TRUST-05","label":"Entry-level provenance and change events","status":"Pending"}, {"id":"TRUST-06","label":"Automated release validation","status":"Pending"},
       {"id":"TRUST-07","label":"Source-change monitoring and review queue","status":"Pending"}
+    ],
+    "unifiedRegistry": [
+      {"id":"UNIFY-01","label":"Unified object taxonomy","status":"Complete","taxonomyId":"PHAOS-OBJECT-TAXONOMY-001","taxonomyVersion":"1.0.0","decisionId":"GOV-DEC-004","artifacts":["docs/UNIFIED-REGISTRY-TAXONOMY.md","indicators/data/governance/object-taxonomy.json"]},
+      {"id":"UNIFY-02","label":"Persistent cross-registry identity","status":"Complete","policyId":"PHAOS-IDENTITY-001","policyVersion":"1.0.0","decisionId":"GOV-DEC-004","canonicalObjects":4743,"representations":4797,"sharedRegistryHmisIdentities":54,"reportColumnOccurrences":560,"canonicalOccurrenceLinks":508,"candidateOccurrences":17,"artifacts":["docs/IDENTITY-LIFECYCLE-POLICY.md","indicators/data/governance/identity-policy.json","indicators/data/governance/unified-identity-index.json","scripts/build-unified-identity-index.mjs","scripts/validate-unified-identities.mjs"]},
+      {"id":"UNIFY-03","label":"Programme versus system/portal facets","status":"Pending"},
+      {"id":"UNIFY-04","label":"Single discovery interface","status":"Pending"},
+      {"id":"UNIFY-05","label":"Consolidated read model","status":"Pending"},
+      {"id":"UNIFY-06","label":"Report-schema occurrence layer","status":"Pending"},
+      {"id":"UNIFY-07","label":"Relationship navigation","status":"Pending"},
+      {"id":"UNIFY-08","label":"Result summaries","status":"Pending"},
+      {"id":"UNIFY-09","label":"Observation-ready model","status":"Pending"},
+      {"id":"UNIFY-10","label":"Validation and release","status":"Pending"}
     ],
     "utility": [
       {"id":"UTILITY-01","label":"Discovery fields and filters","status":"Pending"}, {"id":"UTILITY-02","label":"Controlled disaggregation model","status":"Pending"},
@@ -89,7 +104,7 @@
     "fhirFoundation": [
       {"id":"FHIR-00","label":"Feasibility and role assessment","status":"Complete"},
       {"id":"FHIR-01","label":"FHIR version policy","status":"Pending"},
-      {"id":"FHIR-02","label":"Canonical identity implementation","status":"Pending","dependsOn":["TRUST-04"]},
+      {"id":"FHIR-02","label":"Canonical identity implementation","status":"Pending","dependsOn":["TRUST-04"],"dependencyStatus":"Satisfied"},
       {"id":"FHIR-03","label":"Source-authority policy","status":"Pending"},
       {"id":"FHIR-04","label":"Computability maturity model","status":"Pending"},
       {"id":"FHIR-05","label":"Core Measure profile","status":"Pending","dependsOn":["TRUST-02","TRUST-03"]},
@@ -159,6 +174,19 @@
     "qualityIssues": {"percentageDenominator": 19},
     "unscoredProgrammeTupleRecords": 43,
     "legacyFieldPolicy": "metadataLevel and completeness are retained for provenance and must not be interpreted as computed metadata-quality grades."
+  },
+  "unifiedRegistry": {
+    "taxonomyId": "PHAOS-OBJECT-TAXONOMY-001",
+    "taxonomyVersion": "1.0.0",
+    "identityPolicyId": "PHAOS-IDENTITY-001",
+    "identityPolicyVersion": "1.0.0",
+    "canonicalObjects": 4743,
+    "representations": 4797,
+    "sharedRegistryHmisIdentities": 54,
+    "reportColumnOccurrences": 560,
+    "canonicalOccurrenceLinks": 508,
+    "candidateOccurrences": 17,
+    "nextTask": "UNIFY-03"
   },
   "publicationBoundary": "GitHub Pages may publish static HTML, JSON, JSON-LD, RDF and FHIR artifacts. It does not provide FHIR REST or terminology operations. Public bulk-download controls remain disabled unless separately authorized.",
   "onboardingRule": "Whenever a programme is added, append a programme row at FHIR gate G0, instantiate PR-01..PR-12, and nest PF-01..PF-13 under PR-10. Registry, graph, utility and FHIR maturity are reported independently."

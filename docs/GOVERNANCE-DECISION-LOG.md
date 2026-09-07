@@ -42,6 +42,20 @@ This log records material governance decisions separately from indicator and sof
 - **Migration and review date:** Entry-level computed properties and change events are governed under TRUST-05; automated release enforcement is governed under TRUST-06. Review no later than 7 September 2027.
 - **Supersedes:** Legacy `metadataLevel` and `completeness` as interpreted quality grades, but not as retained historical fields.
 
+## GOV-DEC-004 — Adopt unified object taxonomy and persistent identity policy
+
+- **Date:** 7 September 2026
+- **Status:** Adopted
+- **Decision owner:** Project Owner, acting under the interim single-maintainer model
+- **Decision:** Adopt `PHAOS-OBJECT-TAXONOMY-001` version `1.0.0` and `PHAOS-IDENTITY-001` version `1.0.0`. Existing released IDs become initial canonical object IDs; source manifestations, serialized representations and report-schema occurrences receive separate identities.
+- **Reason:** The main indicator registry and HMIS knowledge layer expose different object classes. A common taxonomy and persistent identity layer are required to combine discovery without calling every object an indicator or displaying shared HMIS indicators twice.
+- **Evidence:** The generated baseline reconciles 3,751 indicators, 765 HMIS data elements, 202 published outputs and 25 validation rules into 4,743 canonical objects. It retains 4,797 representations, resolves 54 shared registry/HMIS identities, and records 560 report-column occurrences with 508 canonical links and 17 non-canonical candidates.
+- **Boundary:** Identity reconciliation does not establish semantic equivalence, aggregation safety, computability, source currency, observed-value availability or source-custodian approval.
+- **Alternatives considered:** Flatten every HMIS object into the indicator registry; assign new IDs to all historical records; merge records by label similarity. These were rejected because they would create type confusion, break stable links or assert unsupported equivalence.
+- **Affected artifacts:** `docs/UNIFIED-REGISTRY-TAXONOMY.md`, `docs/IDENTITY-LIFECYCLE-POLICY.md`, `indicators/data/governance/object-taxonomy.json`, `identity-policy.json`, `unified-identity-index.json`, generation and validation scripts, and both workstream trackers.
+- **Migration and review date:** UI consolidation proceeds under UNIFY-03–UNIFY-10. Resolvable entry representations remain governed by SEM-04. Review no later than 7 September 2027.
+- **Supersedes:** The interim persistent-identity gap recorded after GOV-DEC-002; it does not supersede existing source IDs.
+
 ## Decision record template
 
 - **ID and title:**

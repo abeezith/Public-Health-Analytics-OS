@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "id": "PHAOS-IDENTITY-001",
+    "title": "Public Health Analytics-OS persistent identity and lifecycle policy",
+    "version": "1.0.0",
+    "adopted": "2026-09-07",
+    "tasks": ["UNIFY-02", "TRUST-04"],
+    "status": "Adopted"
+  },
+  "canonicalNamespace": "https://abeezith.github.io/Public-Health-Analytics-OS/id/",
+  "identityFields": {
+    "canonicalObjectId": "Stable Analytics-OS identifier for one governed object. Existing released record IDs are retained as the initial canonical IDs.",
+    "canonicalUri": "Persistent URI formed by appending the percent-encoded canonicalObjectId to the canonical namespace.",
+    "sourceManifestationId": "Identifier carried by the source-layer record or retained from the source manifestation.",
+    "representationId": "Unique identifier for a particular registry, HMIS, graph, report-schema or interoperability representation of a canonical object.",
+    "occurrenceId": "Unique identifier for a field appearance in a particular report schema; it does not replace the canonical data-element identity.",
+    "businessVersion": "Semantic version of the governed Analytics-OS object meaning, independent of source, schema and software releases.",
+    "sourceVersion": "Version or period asserted by the source representation.",
+    "schemaVersion": "Version of the structural contract used to serialize a representation."
+  },
+  "lifecycleStatuses": ["draft", "active", "retired", "superseded"],
+  "lifecycleRules": [
+    "An identifier is never reassigned to a different meaning.",
+    "Editorial corrections that do not change meaning retain canonicalObjectId and increment the patch business version.",
+    "Backward-compatible metadata enrichment retains canonicalObjectId and increments the minor business version when material to consumers.",
+    "A material change to population, event, numerator, denominator, scale, time window or intended interpretation creates a new canonicalObjectId and a major-version or replacement relationship.",
+    "retirementDate is present only for retired or superseded identities.",
+    "replaces and replacedBy are reciprocal and do not assert semantic equivalence by themselves.",
+    "Source withdrawal or obsolescence does not delete an identity; it changes lifecycle or source-version status with provenance.",
+    "The current baseline businessVersion 1.0.0 records first governed identity assignment, not the first version ever issued by the source custodian."
+  ],
+  "deduplicationRules": [
+    "An identical released ID with the same normalized name and compatible canonical type is one canonical object with multiple representations.",
+    "Matching labels without a shared stable identity are not automatically merged.",
+    "The 54 HMIS derived-indicator records that share released registry IDs are represented once canonically and retain both source representations.",
+    "Report occurrences link to a canonical element when a reviewed crosswalk exists; candidate occurrences remain non-canonical until governed promotion."
+  ],
+  "publicationBoundary": "The identity index supports discovery and deduplication. It does not assert semantic equivalence, aggregation safety, computability, source-custodian approval or the availability of observed values."
+}

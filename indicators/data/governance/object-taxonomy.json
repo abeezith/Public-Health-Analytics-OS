@@ -1,0 +1,95 @@
+{
+  "metadata": {
+    "id": "PHAOS-OBJECT-TAXONOMY-001",
+    "title": "Public Health Analytics-OS unified registry object taxonomy",
+    "version": "1.0.0",
+    "adopted": "2026-09-07",
+    "task": "UNIFY-01",
+    "status": "Adopted",
+    "authorityBoundary": "These are Analytics-OS discovery classes. They do not replace source-custodian classifications or make unlike objects semantically equivalent."
+  },
+  "canonicalObjectTypes": [
+    {
+      "code": "Indicator",
+      "definition": "A source-specific or curated measure manifestation intended to quantify health status, determinants, inputs, processes, outputs, outcomes or performance.",
+      "sourceLabels": ["Indicator manifestation", "Derived indicator"],
+      "isMeasureDefinition": true,
+      "mayCarryObservedValues": false
+    },
+    {
+      "code": "Data element",
+      "definition": "A field or item captured by a form or information system; it may contribute to an indicator but is not automatically an indicator.",
+      "sourceLabels": ["Data element"],
+      "isMeasureDefinition": false,
+      "mayCarryObservedValues": false
+    },
+    {
+      "code": "Published output",
+      "definition": "A source-published table, report, dashboard output or aggregate product whose computation may not be fully specified in the registry.",
+      "sourceLabels": ["Published output"],
+      "isMeasureDefinition": false,
+      "mayCarryObservedValues": false
+    },
+    {
+      "code": "Validation rule",
+      "definition": "A constraint, consistency rule or quality check applied to reported fields or calculated measures.",
+      "sourceLabels": ["Validation rule"],
+      "isMeasureDefinition": false,
+      "mayCarryObservedValues": false
+    },
+    {
+      "code": "Report field occurrence",
+      "definition": "A version-specific appearance of a measure field in a report schema. It is an occurrence, not a new canonical data element.",
+      "sourceLabels": ["HMIS measure occurrence"],
+      "identityClass": "occurrence",
+      "isMeasureDefinition": false,
+      "mayCarryObservedValues": false
+    },
+    {
+      "code": "Reporting dimension",
+      "definition": "A report column used to identify, locate, stratify or interpret measure values, such as geography, facility, period or reporting unit.",
+      "sourceLabels": ["HMIS reporting dimension"],
+      "identityClass": "occurrence",
+      "isMeasureDefinition": false,
+      "mayCarryObservedValues": false
+    },
+    {
+      "code": "Source document",
+      "definition": "An authoritative or evidentiary document, catalogue, portal page, dataset description or release artifact cited by a registry object.",
+      "sourceLabels": ["Source document"],
+      "isMeasureDefinition": false,
+      "mayCarryObservedValues": false
+    },
+    {
+      "code": "Evidence gap",
+      "definition": "A governed record of missing, inaccessible, outdated, conflicting or unresolved evidence and the action needed to resolve it.",
+      "sourceLabels": ["Evidence gap"],
+      "isMeasureDefinition": false,
+      "mayCarryObservedValues": false
+    },
+    {
+      "code": "Observation/aggregate value",
+      "definition": "A value for a defined indicator or data element at a stated geography, reporting unit, period and version. Reserved until governed aggregate datasets are ingested.",
+      "sourceLabels": [],
+      "status": "Reserved",
+      "isMeasureDefinition": false,
+      "mayCarryObservedValues": true
+    }
+  ],
+  "facets": {
+    "programme": "A health programme or programme family responsible for policy or delivery context.",
+    "systemPortal": "An information system, reporting platform or portal. HMIS belongs here rather than being treated as a health programme.",
+    "sourceObjectType": "The object label retained from the source representation.",
+    "canonicalObjectType": "The Analytics-OS discovery class assigned by this taxonomy.",
+    "lifecycleStatus": "The publication state of the Analytics-OS identity, separate from the source-version status.",
+    "representation": "A serialized appearance of one canonical object in a registry, catalogue, graph or interoperability artifact."
+  },
+  "classificationRules": [
+    "Preserve the source object label on every representation.",
+    "Classify an object as an Indicator only when the source or a documented Analytics-OS review treats it as a measure definition.",
+    "Do not promote a form field, output or validation rule to Indicator because it is analytically useful.",
+    "Do not treat a report-column occurrence as a new canonical data element when it resolves to an existing element.",
+    "Do not label metadata definitions as observed data points or values.",
+    "Keep candidate and unresolved records visible without silently promoting them to canonical status."
+  ]
+}

@@ -36,7 +36,7 @@ The package under [`indicators/data/schemas/1.0.0`](../indicators/data/schemas/1
 
 The first package is deliberately compatible with Release 3.7. `additionalProperties` is allowed so programme- and source-specific metadata can be retained without data loss. A null `measureType` means normalized classification is pending, not that the source supplied a null measure. Older WHO building-block labels beginning `Access to essential medicines` are retained as compatibility aliases, while new mappings use `Medical products, vaccines and technologies`. Empty source strings remain distinguishable from absent required fields and will be scored by TRUST-03 rather than invented during structural validation. Existing NP-NCD tuple records are accepted as a documented legacy payload; new programme records should use named indicator objects. The legacy graph review label beginning `Domain-reviewed` remains accepted until TRUST-05 migrates entry-level review history.
 
-This compatibility policy is not permission to add arbitrary fields indefinitely. TRUST-03 now publishes the separate [`PHAOS-MDQ-001`](METADATA-QUALITY-SPECIFICATION.md) computed quality profile without rewriting legacy fields. TRUST-04 will settle identity and lifecycle rules, TRUST-05 will populate entry-level quality/review/change properties, and TRUST-06 will make release validation an automated gate.
+This compatibility policy is not permission to add arbitrary fields indefinitely. TRUST-03 publishes the separate [`PHAOS-MDQ-001`](METADATA-QUALITY-SPECIFICATION.md) computed quality profile without rewriting legacy fields. TRUST-04 has adopted [`PHAOS-IDENTITY-001`](IDENTITY-LIFECYCLE-POLICY.md) for canonical, manifestation, representation and occurrence identity plus lifecycle semantics. TRUST-05 will populate entry-level quality/review/change properties, and TRUST-06 will make release validation an automated gate.
 
 ## Versioning policy
 
@@ -46,7 +46,7 @@ This compatibility policy is not permission to add arbitrary fields indefinitely
 - Released version directories are immutable. A change is published in a new version and the catalogue pointer is updated only after governance review.
 - Data release versions, upstream source versions and schema package versions are independent and must not be substituted for one another.
 
-Until TRUST-04 is complete, this is an interim schema-version policy rather than the full persistent-identity and lifecycle policy.
+Schema-package versioning and object business versioning are now explicitly separate under `PHAOS-IDENTITY-001`; neither may be substituted for an upstream source version.
 
 ## Validation profiles
 

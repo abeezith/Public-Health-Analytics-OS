@@ -26,29 +26,30 @@ The evaluation is treated as review evidence, not as an instruction set. Recomme
 | Evaluation area | Reconciled position | Disposition |
 |---|---|---|
 | Machine-readable publication | JSON, JSON-LD, graph contract and controlled vocabularies exist; formal JSON Schema, RDF distributions and query services remain pending | Adapted |
-| Persistent identity | Stable record IDs and a canonical namespace exist; resolvable entry representations and lifecycle rules remain pending | Adapted |
+| Persistent identity | `PHAOS-IDENTITY-001` now governs canonical, manifestation, representation and occurrence identities plus lifecycle and version separation; resolvable entry pages remain pending under SEM-04 | Adapted |
 | Graph semantics | Relationship vocabulary exists; formal SKOS predicates, direction tests and SHACL validation remain pending | Adapted |
 | Per-entry provenance | Verification date and India source version are present; named reviewer, method and change-event history remain pending | Adapted |
 | Disaggregation and responsible cadre | Present across most India programme records; controlled source-versus-recommended dimensions and remaining cadre gaps require remediation | Adapted |
 | PM-JAY and ABDM | Small verified subsets exist; HWC/CPHC and deep programme extraction remain pending | Adapted |
 | Clinical terminology | Map only terminology-eligible clinical concepts or observations with licensing, version and mapping evidence; never map every indicator by assumption | Adapted |
 | Static FHIR API | GitHub Pages may publish static resources and packages but cannot provide `$lookup`, `$expand` or `$validate-code`; executable operations require a terminology server | Adapted |
-| Governance, formal schemas, lifecycle, data-quality guidance and change monitoring | Genuine gaps | Accepted |
+| Governance, formal schemas, lifecycle, data-quality guidance and change monitoring | Governance, schemas, lifecycle and metadata-quality rules are complete; entry-level provenance, release automation and source-change monitoring remain | Adapted |
 
 ## Integrated execution sequence
 
 This is the master order for future task-by-task execution. A later task may start early only when its listed dependencies are satisfied.
 
 1. **RECON-00 — Expert-evaluation reconciliation ledger — Complete.** Record each recommendation as already implemented, accepted, adapted, deferred or rejected and connect it to an existing or new workstream.
-2. **TRUST-01–TRUST-07 — Trust foundation — In progress.** TRUST-01 governance, TRUST-02 schemas and TRUST-03 metadata-quality rules are complete. Next establish persistent identity and lifecycle under TRUST-04, followed by entry-level provenance, automated release validation and source-change monitoring.
-3. **UTILITY-01–UTILITY-06 — Analyst and programme utility — Pending.** Improve discovery, controlled disaggregation, data-quality and comparability guidance, versioned targets, source-backed response guidance and tested calculations.
-4. **OPMAP-01–OPMAP-04 — Operational-system mappings — Pending.** Define an instance/version-aware mapping policy, then pilot HMIS/DHIS2, NTEP and NP-NCD operational mappings without inventing restricted identifiers.
-5. **SEM-01–SEM-04 — Semantic Web publication — Pending.** Formalize SKOS mapping semantics, publish RDF, validate with SHACL and make canonical identities resolvable.
-6. **FHIR-01–FHIR-21 — FHIR foundation and pilot — Pending after the relevant TRUST and SEM policies.** Publish the correct resource type for each object and distinguish metadata mapping, validation, computability and custodian approval.
-7. **TERM-01–TERM-05 — Terminology evaluation and pilot — Deferred until FHIR terminology slots and licensing policy exist.** Assess ICD, SNOMED CT, LOINC and other standards separately; map only eligible concepts.
-8. **Programme 4 deepening and Programme 6 execution — Pending.** Complete VBD disease-wise sources, then execute communicable diseases/IDSP-IHIP using the repeatable programme enrichment checklist.
-9. **Programme expansion queue — Pending after the current six-programme sequence.** Add Ayushman Bharat family, POSHAN 2.0/ICDS and the National Mental Health Programme as separately bounded verticals.
-10. **PRODUCT-01–PRODUCT-04 — Derived analytical products — Deferred until their metadata prerequisites pass.** Build programme briefs, dashboard audit, calculation assistance and a source-change review queue.
+2. **TRUST-01–TRUST-07 — Trust foundation — In progress.** TRUST-01 governance, TRUST-02 schemas, TRUST-03 metadata-quality rules and TRUST-04 persistent identity/lifecycle are complete. Next add entry-level provenance under TRUST-05, followed by automated release validation and source-change monitoring.
+3. **UNIFY-01–UNIFY-10 — Unified registry — In progress.** UNIFY-01 object taxonomy and UNIFY-02 persistent identity are complete. Next correct programme versus system/portal filtering under UNIFY-03 before assembling the consolidated read model and interface.
+4. **UTILITY-01–UTILITY-06 — Analyst and programme utility — Pending.** Improve discovery, controlled disaggregation, data-quality and comparability guidance, versioned targets, source-backed response guidance and tested calculations.
+5. **OPMAP-01–OPMAP-04 — Operational-system mappings — Pending.** Define an instance/version-aware mapping policy, then pilot HMIS/DHIS2, NTEP and NP-NCD operational mappings without inventing restricted identifiers.
+6. **SEM-01–SEM-04 — Semantic Web publication — Pending.** Formalize SKOS mapping semantics, publish RDF, validate with SHACL and make canonical identities resolvable.
+7. **FHIR-01–FHIR-21 — FHIR foundation and pilot — Pending after the relevant TRUST and SEM policies.** Publish the correct resource type for each object and distinguish metadata mapping, validation, computability and custodian approval.
+8. **TERM-01–TERM-05 — Terminology evaluation and pilot — Deferred until FHIR terminology slots and licensing policy exist.** Assess ICD, SNOMED CT, LOINC and other standards separately; map only eligible concepts.
+9. **Programme 4 deepening and Programme 6 execution — Pending.** Complete VBD disease-wise sources, then execute communicable diseases/IDSP-IHIP using the repeatable programme enrichment checklist.
+10. **Programme expansion queue — Pending after the current six-programme sequence.** Add Ayushman Bharat family, POSHAN 2.0/ICDS and the National Mental Health Programme as separately bounded verticals.
+11. **PRODUCT-01–PRODUCT-04 — Derived analytical products — Deferred until their metadata prerequisites pass.** Build programme briefs, dashboard audit, calculation assistance and a source-change review queue.
 
 ## Programme sequence and parallel-work status
 
@@ -76,10 +77,23 @@ HMIS is tracked as a cross-programme information-system spine, not as a numbered
 1. **TRUST-01 — Governance charter — Complete.** Published the [Governance Charter](GOVERNANCE-CHARTER.md), [contribution workflow](../CONTRIBUTING.md), [decision log](GOVERNANCE-DECISION-LOG.md) and issue templates. The adopted interim model documents single-maintainer dependency, role-based decision rights, review states, corrections, conflicts, cadence and succession without implying institutional stewardship or custodian approval.
 2. **TRUST-02 — Versioned JSON Schemas — Complete.** Published Draft 2020-12 package `1.0.0` with contracts for indicator manifestations, source documents, HMIS objects, graph nodes and edges, evidence gaps, programme releases and review/change events. The [schema guide](SCHEMA-GUIDE.md) documents compatibility, versioning and the boundary between structural validation, semantic review, computability and custodian approval. Legacy tuple and graph-review compatibility paths are explicit and temporary rather than silent normalization.
 3. **TRUST-03 — Metadata-quality specification — Complete.** Adopted `PHAOS-MDQ-001` version `1.0.0`: nine weighted dimensions, criterion states, missing-value rules and A–E computed quality levels. The validator scored 3,708 named records with zero critical identity errors and published an aggregate report; 43 positional NP-NCD tuples remain deliberately unscored pending named-object migration. The governed relationship vocabulary publishes direction, allowed node types, evidence requirements and no-automatic-aggregation rules. Legacy `metadataLevel` and `completeness` values are retained as historical release metadata rather than silently relabelled as computed quality.
-4. **TRUST-04 — Persistent identity and lifecycle policy — Pending.** Define record ID, source ID, canonical URI, business version and source-version rules plus `effectiveDate`, `retirementDate`, `replaces` and `replacedBy` semantics.
+4. **TRUST-04 — Persistent identity and lifecycle policy — Complete.** Adopted [`PHAOS-IDENTITY-001`](IDENTITY-LIFECYCLE-POLICY.md), retaining existing released IDs, separating canonical, manifestation, representation and report-occurrence identity, and governing business/source/schema versions plus `effectiveDate`, `retirementDate`, `replaces` and `replacedBy`. The generated baseline validates 4,743 canonical objects, 4,797 representations and 560 report-column occurrences.
 5. **TRUST-05 — Entry-level provenance and change events — Pending.** Add reviewer identity or role, review method, review date, source-access date, changed fields, change reason and review status while preserving prior versions.
 6. **TRUST-06 — Automated release validation — Pending.** Validate schemas, unique IDs, source links, formula/scale/denominator consistency, graph integrity, lifecycle rules and release counts in CI.
 7. **TRUST-07 — Source-change monitoring — Pending.** Combine link checks, source-version/content fingerprints and a human review queue; a successful HTTP response alone must not imply unchanged meaning.
+
+## Unified registry workstream
+
+1. **UNIFY-01 — Unified object taxonomy — Complete.** Adopted [`PHAOS-OBJECT-TAXONOMY-001`](UNIFIED-REGISTRY-TAXONOMY.md) for indicators, data elements, published outputs, validation rules, report-field occurrences, reporting dimensions, source documents, evidence gaps and a reserved observation/aggregate-value class. Source labels remain separate from Analytics-OS discovery classes.
+2. **UNIFY-02 — Persistent cross-registry identity — Complete.** Published the [identity and lifecycle policy](IDENTITY-LIFECYCLE-POLICY.md), machine-readable policy and generated identity index. Fifty-four shared HMIS indicator IDs resolve to one canonical object with two representations rather than duplicate objects.
+3. **UNIFY-03 — Programme versus system/portal facets — Pending.** Move HMIS into a system/portal filter while retaining programme filters for service-delivery programmes.
+4. **UNIFY-04 — Single discovery interface — Pending.** Expose all governed object classes through the Registry with card and table views and graph hand-off.
+5. **UNIFY-05 — Consolidated read model — Pending.** Build the UI-facing record index from canonical identities and source representations without copying or overwriting source metadata.
+6. **UNIFY-06 — Report-schema occurrence layer — Pending.** Surface 560 version-specific report columns, their canonical links, dimensions and candidate status without inflating canonical data-element counts.
+7. **UNIFY-07 — Relationship navigation — Pending.** Add reciprocal navigation among indicators, data elements, outputs, rules, occurrences, sources and graph nodes.
+8. **UNIFY-08 — Result summaries — Pending.** Show object-type and system counts clearly so “54 HMIS indicators” is not mistaken for the complete HMIS knowledge layer.
+9. **UNIFY-09 — Observation-ready model — Pending.** Define a separate privacy- and provenance-aware structure for future aggregate values; do not imply that metadata definitions contain observed values.
+10. **UNIFY-10 — Validation and release — Pending.** Add automated count, identity, linkage, filter, accessibility and regression gates while keeping public bulk-download controls disabled.
 
 ## Analyst and programme-utility workstream
 
@@ -112,7 +126,7 @@ FHIR-00 is the completed evaluation. The remaining tasks are intentionally separ
 
 1. **FHIR-00 — Feasibility and role assessment — Complete.** Establish FHIR as an operational interoperability layer alongside the existing Schema.org discovery layer.
 2. **FHIR-01 — Version policy — Pending.** Adopt FHIR R4 as the initial India-facing export aligned with the ABDM implementation guide; document the R4-to-R5 transformation policy.
-3. **FHIR-02 — Canonical identity implementation — Pending; depends on TRUST-04.** Apply the shared canonical URL, resource identifier, business-version and source-revision policy to FHIR artifacts.
+3. **FHIR-02 — Canonical identity implementation — Pending; TRUST-04 dependency satisfied.** Apply the shared canonical URL, resource identifier, business-version and source-revision policy to FHIR artifacts.
 4. **FHIR-03 — Source-authority policy — Pending.** Distinguish the original custodian from Analytics-OS as the publisher of a derived FHIR representation; prohibit implied custodian endorsement.
 5. **FHIR-04 — Computability maturity model — Pending.** Implement the stages `metadata mapped`, `structurally specified`, `computable`, `tested` and `custodian approved`.
 6. **FHIR-05 — Core Measure profile — Pending.** Define the minimum required metadata, official-name preservation, population descriptions, scoring, scale, direction, source reference and aggregation guidance.
