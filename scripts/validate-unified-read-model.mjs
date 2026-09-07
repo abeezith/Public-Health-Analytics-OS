@@ -11,7 +11,7 @@ const model = read(modelPath);
 const manifest = read('indicators/data/registry/manifest.json');
 const identities = read('indicators/data/governance/unified-identity-index.json');
 
-if (model.metadata.version !== '1.0.0') fail('Unexpected read-model version.');
+if (model.metadata.version !== '1.1.0') fail('Unexpected read-model version.');
 if (model.records.length !== 4743) fail(`Expected 4743 records, got ${model.records.length}.`);
 const ids = model.records.map(item => item.canonicalObjectId);
 const uris = model.records.map(item => item.canonicalUri);
@@ -45,6 +45,10 @@ if (measures.filter(item => item.candidateObjectId).length !== 17) fail('Candida
 if (measures.filter(item => item.canonicalObjectId).some(item => !expectedIds.has(item.canonicalObjectId))) fail('An occurrence link does not resolve.');
 if (measures.some(item => !item.reportMetadata || !item.reconciliation)) fail('A measure occurrence is missing discovery metadata.');
 if (dimensions.some(item => !item.reportMetadata)) fail('A dimension occurrence is missing discovery metadata.');
+if (model.occurrences.some(item => !item.discovery?.displayName || !item.discovery?.occurrenceClass || !item.discovery?.group || !item.discovery?.linkageStatus)) fail('An occurrence is missing its normalized discovery envelope.');
+if (measures.filter(item => item.discovery.linkageStatus === 'Canonical link').length !== 508) fail('Discovery canonical-link status count is not 508.');
+if (measures.filter(item => item.discovery.linkageStatus === 'Candidate—verification required').length !== 17) fail('Discovery candidate status count is not 17.');
+if (dimensions.some(item => item.discovery.linkageStatus !== 'Reporting dimension')) fail('A dimension has an invalid discovery linkage status.');
 if (indicatorRecords.some(item => item.programmeTags.includes('Health Management Information System'))) fail('HMIS leaked into the programme facet.');
 const hmisTaggedIndicators = indicatorRecords.filter(item => item.systemPortalTags.includes('HMIS')).length;
 if (hmisTaggedIndicators !== 130) fail(`Expected 130 HMIS-tagged indicators, got ${hmisTaggedIndicators}.`);

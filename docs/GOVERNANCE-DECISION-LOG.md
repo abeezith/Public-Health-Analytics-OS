@@ -96,6 +96,20 @@ This log records material governance decisions separately from indicator and sof
 - **Migration and review date:** Expose occurrence-level discovery under UNIFY-06 and include the model validator in automated release gates under UNIFY-10. Review no later than 7 September 2027.
 - **Supersedes:** The browser-federated implementation boundary recorded in GOV-DEC-006; it does not supersede the canonical identity index or source artifacts.
 
+## GOV-DEC-008 — Surface report columns as first-class occurrences
+
+- **Date:** 7 September 2026
+- **Status:** Adopted
+- **Decision owner:** Project Owner, acting under the interim single-maintainer model
+- **Decision:** Expose every version-specific report column as a searchable occurrence record within Registry, separately classifying measures and reporting dimensions and retaining canonical-link, candidate and review evidence.
+- **Reason:** A schema-level summary disclosed counts but did not let users discover the individual data points, dimension keys or reconciliation decisions represented by the observed report.
+- **Evidence:** Browser and model validation return 560 occurrences: 525 measures, 35 dimensions, 508 accepted canonical links and 17 held candidates. Card and table views, filters and occurrence details work without changing the 4,743 canonical-object or 765 HMIS data-element counts.
+- **Boundary:** An occurrence is a field appearance in one observed schema, not another canonical object. Candidate fields remain unpromoted, reporting applicability remains row-dependent where source data are unavailable, and publication does not imply national/current applicability or custodian approval.
+- **Alternatives considered:** Promote all unmatched fields; mix occurrences into canonical HMIS search results; retain only schema-level counts. These were rejected because they would inflate identities, obscure version context or leave individual report data points undiscoverable.
+- **Affected artifacts:** Consolidated read model 1.1.0, report-schema Registry interface, validation script, styles, documentation and workstream trackers.
+- **Migration and review date:** Add reciprocal canonical-object and occurrence navigation under UNIFY-07. Review no later than 7 September 2027.
+- **Supersedes:** The occurrence-summary-only boundary recorded in GOV-DEC-006 and GOV-DEC-007.
+
 ## Decision record template
 
 - **ID and title:**

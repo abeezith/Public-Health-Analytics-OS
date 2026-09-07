@@ -77,7 +77,7 @@ function initializeRegistryHub(){
 }
 initializeRegistryHub();
 
-window.phaosUnifiedModelPromise=fetch('./data/registry/unified-read-model.json?v=unify-05-1.0.0',{cache:'no-store'}).then(response=>{
+window.phaosUnifiedModelPromise=fetch('./data/registry/unified-read-model.json?v=unify-06-1.1.0',{cache:'no-store'}).then(response=>{
   if(!response.ok)throw new Error(`Unified read model request failed: ${response.status}`);
   return response.json();
 });

@@ -136,12 +136,17 @@ const candidateByOccurrence = new Map((candidateFields.candidateElements || []).
 const measureByOccurrence = new Map((reportManifest.measureOccurrences || []).map(item => [item.occurrenceId,item]));
 const dimensionById = new Map((dimensionDictionary.dimensions || dimensionDictionary.dimensionDefinitions || []).map(item => [item.dimensionId,item]));
 const dimensionRefByOrdinal = new Map((reportManifest.dimensionReferences || []).map(item => [item.columnOrdinal,item]));
+const canonicalNameById = new Map(records.map(item => [item.canonicalObjectId,item.displayName]));
 const occurrences = identities.occurrences.map(identity => {
   if (identity.occurrenceType === 'Report field occurrence') {
-    return {...identity, reportMetadata:measureByOccurrence.get(identity.occurrenceId) || null, reconciliation:crosswalkByOccurrence.get(identity.occurrenceId) || null, candidateMetadata:candidateByOccurrence.get(identity.occurrenceId) || null};
+    const reportMetadata = measureByOccurrence.get(identity.occurrenceId) || null;
+    const reconciliation = crosswalkByOccurrence.get(identity.occurrenceId) || null;
+    const candidateMetadata = candidateByOccurrence.get(identity.occurrenceId) || null;
+    return {...identity,discovery:{displayName:reportMetadata?.exactSourceLabel||identity.occurrenceId,occurrenceClass:'Measure',group:reportMetadata?.moduleTitle||'Unclassified module',groupCode:reportMetadata?.moduleCode||null,sourceCode:reportMetadata?.sourceCode||null,linkageStatus:identity.canonicalObjectId?'Canonical link':'Candidate—verification required',linkedObjectId:identity.canonicalObjectId||identity.candidateObjectId||null,linkedObjectName:identity.canonicalObjectId?canonicalNameById.get(identity.canonicalObjectId)||null:candidateMetadata?.exactSourceLabel||null},reportMetadata,reconciliation,candidateMetadata};
   }
   const reference = dimensionRefByOrdinal.get(identity.columnOrdinal) || null;
-  return {...identity, reportMetadata:reference, dimensionMetadata:reference ? dimensionById.get(reference.dimensionId) || null : null};
+  const dimensionMetadata = reference ? dimensionById.get(reference.dimensionId) || null : null;
+  return {...identity,discovery:{displayName:reference?.sourceHeader||identity.sourceManifestationId,occurrenceClass:'Dimension',group:reference?.category||'Reporting dimension',groupCode:null,sourceCode:reference?.canonicalName||null,linkageStatus:'Reporting dimension',linkedObjectId:null,linkedObjectName:null},reportMetadata:reference,dimensionMetadata};
 });
 
 const membershipCounts = {
@@ -153,7 +158,7 @@ const model = {
   metadata: {
     id: 'PHAOS-UNIFIED-READ-MODEL',
     title: 'Public Health Analytics-OS consolidated discovery read model',
-    version: '1.0.0',
+    version: '1.1.0',
     generated: releaseDate,
     task: 'UNIFY-05',
     identityIndexVersion: identities.metadata.version,
@@ -171,7 +176,7 @@ const model = {
 write(modelPath, model);
 const bytes = fs.readFileSync(path.join(root, modelPath));
 const manifest = {
-  metadata: {id:'PHAOS-UNIFIED-READ-MODEL-MANIFEST',version:'1.0.0',generated:releaseDate,task:'UNIFY-05'},
+  metadata: {id:'PHAOS-UNIFIED-READ-MODEL-MANIFEST',version:'1.1.0',generated:releaseDate,task:'UNIFY-06'},
   distribution: {path:'unified-read-model.json',mediaType:'application/json',bytes:bytes.length,sha256:crypto.createHash('sha256').update(bytes).digest('hex')},
   counts: model.counts,
   sources: [
