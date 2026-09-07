@@ -29,3 +29,9 @@ The unified registry uses one discovery taxonomy without flattening unlike publi
 7. Keep metadata definitions separate from future observed values.
 
 The machine-readable vocabulary is published at [`object-taxonomy.json`](../indicators/data/governance/object-taxonomy.json).
+
+## Programme and system/portal facets
+
+UNIFY-03 implements Programme and System / portal as separate facets. HMIS is excluded from Programme and mapped to System / portal. An indicator can consequently appear under a service-delivery programme and HMIS at the same time. This broader system filter is not the same as the 54-record HMIS-derived-indicator subset.
+
+The controlled definitions, exclusions and evidence patterns are published in [`discovery-facets.json`](../indicators/data/governance/discovery-facets.json). A system mapping supports discovery only; it does not assert an operational UID, current portal dictionary mapping or interoperability.

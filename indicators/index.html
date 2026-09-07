@@ -12,9 +12,9 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://abeezith.github.io/Public-Health-Analytics-OS/indicators/">
   <link rel="alternate" type="application/ld+json" href="data/graph/schemaorg.jsonld" title="India programme knowledge graph Schema.org profile">
-  <link rel="stylesheet" href="styles.css?v=trust-03-1.0.0">
+  <link rel="stylesheet" href="styles.css?v=unify-03-1.0.0">
   <script src="https://cdn.jsdelivr.net/npm/cytoscape@3.34.2/dist/cytoscape.min.js" defer></script>
-  <script src="app.js?v=trust-03-1.0.0" defer></script>
+  <script src="app.js?v=unify-03-1.0.0" defer></script>
   <script src="hmis.js?v=ncd-1.0.0" defer></script>
   <script src="graph.js?v=ncd-1.0.0" defer></script>
   <script src="report-schemas.js?v=hmis-1.4-candidate" defer></script>
@@ -65,7 +65,8 @@
   <section class="explorer" id="registry">
     <div class="section-heading"><div><p class="eyebrow">Registry explorer</p><h2>Browse indicator metadata</h2></div><p class="section-intro">Search across names, definitions, domains, sources and uses. Open a record for calculation and interpretation details.</p></div>
     <div class="filter-panel"><label class="search-shell"><span>⌕</span><input id="search" aria-label="Search indicators" placeholder="Search indicator, domain, definition or code…"></label>
-      <div class="select-row"><label><span>Geography</span><select id="geography"><option>All geographies</option></select></label><label><span>India programme</span><select id="program"><option>All India programmes</option></select></label><label><span>Programme component</span><select id="component"><option>All programme components</option></select></label><label><span>Lowest reporting level</span><select id="level"><option>All lowest reporting levels</option></select></label><label><span>Domain</span><select id="domain"><option>All domains</option></select></label><label><span>Type</span><select id="type"><option>All types</option></select></label><label><span>Measure type</span><select id="measure"><option>All measure types</option></select></label><label><span>Source</span><select id="source"><option>All sources</option></select></label><label><span>WHO pillar</span><select id="pillar"><option>All WHO pillars</option></select></label><label><span>Sort</span><select id="sort"><option value="name">Indicator name</option><option value="domain">Domain</option><option value="id">Registry ID</option></select></label></div>
+      <div class="select-row"><label><span>Geography</span><select id="geography"><option>All geographies</option></select></label><label><span>India programme</span><select id="program"><option>All India programmes</option></select></label><label><span>System / portal</span><select id="system"><option>All systems / portals</option></select></label><label><span>Programme component</span><select id="component"><option>All programme components</option></select></label><label><span>Lowest reporting level</span><select id="level"><option>All lowest reporting levels</option></select></label><label><span>Domain</span><select id="domain"><option>All domains</option></select></label><label><span>Type</span><select id="type"><option>All types</option></select></label><label><span>Measure type</span><select id="measure"><option>All measure types</option></select></label><label><span>Source</span><select id="source"><option>All sources</option></select></label><label><span>WHO pillar</span><select id="pillar"><option>All WHO pillars</option></select></label><label><span>Sort</span><select id="sort"><option value="name">Indicator name</option><option value="domain">Domain</option><option value="id">Registry ID</option></select></label></div>
+      <p class="filter-semantics"><strong>Facet guide:</strong> Programme identifies a policy or service-delivery vertical; System / portal identifies the reporting platform. HMIS therefore appears only under System / portal and can retrieve indicators from several programmes that explicitly use HMIS.</p>
     </div>
     <div class="results-bar">
       <p><strong id="result-count">0</strong> indicators found</p>

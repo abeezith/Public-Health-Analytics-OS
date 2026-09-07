@@ -56,6 +56,19 @@ This log records material governance decisions separately from indicator and sof
 - **Migration and review date:** UI consolidation proceeds under UNIFY-03–UNIFY-10. Resolvable entry representations remain governed by SEM-04. Review no later than 7 September 2027.
 - **Supersedes:** The interim persistent-identity gap recorded after GOV-DEC-002; it does not supersede existing source IDs.
 
+## GOV-DEC-005 — Separate programme and system/portal discovery facets
+
+- **Date:** 7 September 2026
+- **Status:** Adopted
+- **Decision owner:** Project Owner, acting under the interim single-maintainer model
+- **Decision:** Adopt `PHAOS-DISCOVERY-FACETS-001` version `1.0.0`. Programme represents a policy or service-delivery vertical; System / portal represents an information or reporting platform. HMIS is excluded from Programme and included under System / portal.
+- **Reason:** The prior Programme → HMIS option returned only the 54 HMIS-derived indicators and implied that HMIS was a programme and that the result was the whole HMIS knowledge layer.
+- **Evidence:** Browser validation confirms that Programme no longer contains HMIS, System / portal does, the unfiltered registry retains 3,751 indicators and the HMIS system facet retrieves 130 indicators whose governed metadata explicitly references HMIS.
+- **Boundary:** System/portal tagging is for discovery. It does not establish an operational field mapping, platform UID, current authenticated dictionary, semantic equivalence or data availability.
+- **Affected artifacts:** Registry filters, card/table/detail metadata, `indicators/data/governance/discovery-facets.json`, the unified taxonomy documentation and both workstream trackers.
+- **Migration and review date:** The consolidated object read model under UNIFY-05 will consume the machine-readable facet vocabulary and add automated drift checks under UNIFY-10. Review no later than 7 September 2027.
+- **Supersedes:** The former UI treatment of Health Management Information System as an India programme facet.
+
 ## Decision record template
 
 - **ID and title:**

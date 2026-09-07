@@ -2,7 +2,7 @@ let savedRegistryView = 'cards';
 try { if (localStorage.getItem('phaos-registry-view') === 'table') savedRegistryView = 'table'; } catch (_) {}
 const state = { indicators: [], filtered: [], visible: 24, view: savedRegistryView };
 const $ = (id) => document.getElementById(id);
-const fields = ['search','geography','program','component','level','domain','type','measure','source','pillar','sort'];
+const fields = ['search','geography','program','system','component','level','domain','type','measure','source','pillar','sort'];
 const programsMenu=$('programs-menu');
 const programmeSections=new Set(['india','ntep','rmncha','immunization','vbd','ncd','hmis','hmis-report-schemas']);
 const pageUrl=new URL(window.location.href);
@@ -35,6 +35,31 @@ function normalizeLowestReportingLevel(value=''){
   return 'Source-defined / unresolved';
 }
 
+const nonProgrammeLabels=new Set(['Health Management Information System','National Family Health Survey','National Health Profile']);
+function programmeTagsFor(item){
+  return [...new Set([...(item.programmeTags||[]),item.indiaProgram].filter(value=>value&&!nonProgrammeLabels.has(value)))];
+}
+const systemPortalRules=[
+  ['HMIS',/\bhmis\b/i],
+  ['RCH Portal',/\brch\b/i],
+  ['Ni-kshay',/ni-?kshay/i],
+  ['National NCD Portal',/national ncd portal|np-ncd portal|\bamrit\b|\bcbac\b/i],
+  ['U-WIN',/\bu-win\b/i],
+  ['eVIN',/\bevin\b/i],
+  ['IHIP',/\bihip\b/i],
+  ['SAFE-VAC',/safe-vac/i],
+  ['DVDMS',/\bdvdms\b/i],
+  ['Sankalak / SIMS',/sankalak|\bsims\b/i],
+  ['RKSK programme MIS',/rksk programme mis/i],
+  ['Mission Indradhanush reporting',/mission indradhanush monitoring and reporting/i],
+  ['PM-JAY transaction and dashboard systems',/pm-jay insights|pm-jay.*transaction/i],
+  ['ABDM registries and dashboard',/abdm registries|abdm.*dashboard/i]
+];
+function systemPortalTagsFor(item){
+  const evidence=[item.indiaReportingSystem,item.dataSource,item.source].filter(Boolean).join(' ');
+  return systemPortalRules.filter(([,pattern])=>pattern.test(evidence)).map(([label])=>label);
+}
+
 function expandNcdRelease(release) {
   const programme='National Programme for Prevention and Control of Non-Communicable Diseases';
   const guidelines=release.sources.find(x=>x.id==='IND_NPNCD_2023_GUIDELINES'), training=release.sources.find(x=>x.id==='IND_NPNCD_TRAINING_2025');
@@ -48,7 +73,7 @@ Promise.all([
   fetch('./data/indicators.json?v=ncd-1.0.0', { cache: 'no-store' }).then(r => r.json()),
   fetch('./data/ncd/release.json?v=ncd-1.0.0', { cache: 'no-store' }).then(r => r.json())
 ]).then(([data,ncd]) => {
-  state.indicators = [...(data.indicators || []),...expandNcdRelease(ncd)].map(x=>({...x,normalizedLowestReportingLevel:normalizeLowestReportingLevel(x.lowestReportingLevel)}));
+  state.indicators = [...(data.indicators || []),...expandNcdRelease(ncd)].map(x=>({...x,normalizedLowestReportingLevel:normalizeLowestReportingLevel(x.lowestReportingLevel),normalizedProgrammeTags:programmeTagsFor(x),systemPortalTags:systemPortalTagsFor(x)}));
   $('metric-indicators').textContent = state.indicators.length;
   $('metric-domains').textContent = new Set(state.indicators.map(x => x.domain)).size;
   if (data.coverage && $('metric-sources')) $('metric-sources').textContent = data.coverage.sourceCompleteCatalogues;
@@ -68,7 +93,8 @@ Promise.all([
   if ($('metric-india')) $('metric-india').textContent = state.indicators.filter(x=>x.country==='India').length;
   if ($('metric-india-sources')) $('metric-india-sources').textContent = (data.coverage?.indiaSourcesWithVerifiedRecords||0)+ncd.sources.length;
   fillSelect('geography', state.indicators.map(x => x.country || 'Global / multi-country'));
-  fillSelect('program', state.indicators.flatMap(x => x.programmeTags?.length ? x.programmeTags : [x.indiaProgram]).filter(Boolean));
+  fillSelect('program', state.indicators.flatMap(x => x.normalizedProgrammeTags));
+  fillSelect('system', state.indicators.flatMap(x => x.systemPortalTags));
   fillSelect('component', state.indicators.map(x => x.programmeComponent).filter(Boolean));
   fillSelect('level', state.indicators.map(x => x.normalizedLowestReportingLevel));
   fillSelect('domain', state.indicators.map(x => x.domain));
@@ -77,14 +103,14 @@ Promise.all([
   fillSelect('source', state.indicators.map(x => x.source));
   fillSelect('pillar', state.indicators.flatMap(x => x.whoPillars || []));
   filter();
-  const applyGlobalRegistry=source=>{ $('search').value=''; ['program','component','level','domain','type','measure','pillar'].forEach(id=>$(id).selectedIndex=0); $('geography').value='Global / multi-country'; source?$('source').value=source:$('source').selectedIndex=0; filter(); };
+  const applyGlobalRegistry=source=>{ $('search').value=''; ['program','system','component','level','domain','type','measure','pillar'].forEach(id=>$(id).selectedIndex=0); $('geography').value='Global / multi-country'; source?$('source').value=source:$('source').selectedIndex=0; filter(); };
   document.querySelectorAll('[data-global-filter="all"]').forEach(link=>link.addEventListener('click',()=>applyGlobalRegistry('')));
   document.querySelectorAll('[data-global-source]').forEach(link=>link.addEventListener('click',()=>applyGlobalRegistry(link.dataset.globalSource)));
 }).catch(() => { $('indicator-grid').innerHTML = '<div class="empty-state"><h3>Registry data could not be loaded</h3><p>Serve this folder through a web server or GitHub Pages; browsers block local JSON requests from file:// pages.</p></div>'; });
 
 function fillSelect(id, values) { [...new Set(values)].sort().forEach(value => $(id).add(new Option(value, value))); }
 fields.forEach(id => $(id).addEventListener(id === 'search' ? 'input' : 'change', filter));
-$('clear').addEventListener('click', () => { $('search').value=''; ['geography','program','component','level','domain','type','measure','source','pillar'].forEach(id => $(id).selectedIndex=0); filter(); });
+$('clear').addEventListener('click', () => { $('search').value=''; ['geography','program','system','component','level','domain','type','measure','source','pillar'].forEach(id => $(id).selectedIndex=0); filter(); });
 $('load-more').addEventListener('click', () => { state.visible += 24; render(); });
 document.querySelectorAll('[data-registry-view]').forEach(button=>button.addEventListener('click',()=>setRegistryView(button.dataset.registryView)));
 syncViewButtons();
@@ -94,14 +120,14 @@ document.addEventListener('keydown', e => { if(e.key === 'Escape') closeModal();
 
 function filter() {
   state.visible = 24;
-  const q = $('search').value.trim().toLowerCase(), geography=$('geography').value, program=$('program').value, component=$('component').value, level=$('level').value, domain=$('domain').value, type=$('type').value, measure=$('measure').value, source=$('source').value, pillar=$('pillar').value, sort=$('sort').value;
+  const q = $('search').value.trim().toLowerCase(), geography=$('geography').value, program=$('program').value, system=$('system').value, component=$('component').value, level=$('level').value, domain=$('domain').value, type=$('type').value, measure=$('measure').value, source=$('source').value, pillar=$('pillar').value, sort=$('sort').value;
   state.filtered = state.indicators.filter(x => {
     const geo=x.country || 'Global / multi-country';
     const normalizedMeasure=x.measureType||'Unclassified / source metadata pending';
-    const text=[x.id,x.name,x.officialIndicatorName,x.domain,x.subdomain,x.code,x.definition,x.displayDefinition,x.source,x.org,x.uses,x.country,x.indiaProgram,(x.programmeTags||[]).join(' '),x.indiaReportingSystem,x.programmeComponent,x.reportingLevel,x.lowestReportingLevel,x.normalizedLowestReportingLevel,x.reportingUnit,x.responsibleCadre,x.measureType,x.scaleDisplay,x.normalizedFormula,x.denominatorPopulation].join(' ').toLowerCase();
-    return (!q || text.includes(q)) && (geography==='All geographies'||geo===geography) && (program==='All India programmes'||(x.programmeTags?.length?x.programmeTags:[x.indiaProgram]).includes(program)) && (component==='All programme components'||x.programmeComponent===component) && (level==='All lowest reporting levels'||x.normalizedLowestReportingLevel===level) && (domain==='All domains'||x.domain===domain) && (type==='All types'||x.type===type) && (measure==='All measure types'||normalizedMeasure===measure) && (source==='All sources'||x.source===source) && (pillar==='All WHO pillars'||(x.whoPillars||[]).includes(pillar));
+    const text=[x.id,x.name,x.officialIndicatorName,x.domain,x.subdomain,x.code,x.definition,x.displayDefinition,x.source,x.org,x.uses,x.country,x.normalizedProgrammeTags.join(' '),x.systemPortalTags.join(' '),x.indiaReportingSystem,x.programmeComponent,x.reportingLevel,x.lowestReportingLevel,x.normalizedLowestReportingLevel,x.reportingUnit,x.responsibleCadre,x.measureType,x.scaleDisplay,x.normalizedFormula,x.denominatorPopulation].join(' ').toLowerCase();
+    return (!q || text.includes(q)) && (geography==='All geographies'||geo===geography) && (program==='All India programmes'||x.normalizedProgrammeTags.includes(program)) && (system==='All systems / portals'||x.systemPortalTags.includes(system)) && (component==='All programme components'||x.programmeComponent===component) && (level==='All lowest reporting levels'||x.normalizedLowestReportingLevel===level) && (domain==='All domains'||x.domain===domain) && (type==='All types'||x.type===type) && (measure==='All measure types'||normalizedMeasure===measure) && (source==='All sources'||x.source===source) && (pillar==='All WHO pillars'||(x.whoPillars||[]).includes(pillar));
   }).sort((a,b)=>sort==='domain'?a.domain.localeCompare(b.domain)||a.name.localeCompare(b.name):sort==='id'?a.id.localeCompare(b.id):a.name.localeCompare(b.name));
-  $('clear').hidden = !(q || geography!=='All geographies' || program!=='All India programmes' || component!=='All programme components' || level!=='All lowest reporting levels' || domain!=='All domains' || type!=='All types' || measure!=='All measure types' || source!=='All sources' || pillar!=='All WHO pillars');
+  $('clear').hidden = !(q || geography!=='All geographies' || program!=='All India programmes' || system!=='All systems / portals' || component!=='All programme components' || level!=='All lowest reporting levels' || domain!=='All domains' || type!=='All types' || measure!=='All measure types' || source!=='All sources' || pillar!=='All WHO pillars');
   render();
 }
 function render() {
@@ -128,20 +154,21 @@ function syncViewButtons(){
   });
 }
 function esc(v=''){ const div=document.createElement('div'); div.textContent=String(v); return div.innerHTML; }
-function card(x){ return '<article class="indicator-card"><div class="card-top"><span>'+esc(x.id)+'</span>'+(x.country?'<span class="india-badge">'+esc(x.country)+'</span>':x.code?'<span>'+esc(x.code)+'</span>':'')+'</div><div class="card-tags"><span class="card-domain">'+esc(x.domain)+'</span><span class="pillar-tag">'+esc(x.whoPillarPrimary||'Unclassified')+'</span><span class="measure-tag">'+esc(x.measureType||'Unclassified')+'</span><span class="scale-tag">'+esc(x.scaleDisplay||'Not specified')+'</span></div><h3>'+esc(x.name)+'</h3><p>'+esc(x.displayDefinition||x.definition)+'</p><dl><div><dt>'+(x.indiaProgram?'India programme':'Collection')+'</dt><dd>'+esc(x.indiaProgram||x.collection)+'</dd></div><div><dt>WHO pillars</dt><dd>'+esc((x.whoPillars||[]).join('; ')||'Not classified')+'</dd></div></dl><button data-open="'+esc(x.id)+'">View full metadata <span>→</span></button></article>'; }
+function card(x){ const programmes=x.normalizedProgrammeTags.join('; '); const systems=x.systemPortalTags.join('; '); const context=programmes?'<div><dt>India programme</dt><dd>'+esc(programmes)+'</dd></div>':!systems?'<div><dt>Collection</dt><dd>'+esc(x.collection)+'</dd></div>':''; const system=systems?'<div><dt>System / portal</dt><dd>'+esc(systems)+'</dd></div>':''; return '<article class="indicator-card"><div class="card-top"><span>'+esc(x.id)+'</span>'+(x.country?'<span class="india-badge">'+esc(x.country)+'</span>':x.code?'<span>'+esc(x.code)+'</span>':'')+'</div><div class="card-tags"><span class="card-domain">'+esc(x.domain)+'</span><span class="pillar-tag">'+esc(x.whoPillarPrimary||'Unclassified')+'</span><span class="measure-tag">'+esc(x.measureType||'Unclassified')+'</span><span class="scale-tag">'+esc(x.scaleDisplay||'Not specified')+'</span></div><h3>'+esc(x.name)+'</h3><p>'+esc(x.displayDefinition||x.definition)+'</p><dl>'+context+system+'<div><dt>WHO pillars</dt><dd>'+esc((x.whoPillars||[]).join('; ')||'Not classified')+'</dd></div></dl><button data-open="'+esc(x.id)+'">View full metadata <span>→</span></button></article>'; }
 function table(rows){
   const body=rows.map(x=>{
-    const programme=(x.programmeTags||[]).join('; ')||x.indiaProgram||x.country||'Global / multi-country';
-    return '<tr><td class="registry-id">'+esc(x.id)+'</td><td class="registry-name"><strong>'+esc(x.name)+'</strong><span>'+esc(x.displayDefinition||x.definition)+'</span></td><td>'+esc(x.domain||'Not classified')+'</td><td><span class="table-measure">'+esc(x.measureType||'Unclassified')+'</span><small>'+esc(x.scaleDisplay||'Not specified')+'</small></td><td>'+esc(x.normalizedLowestReportingLevel||x.lowestReportingLevel||'Not specified')+'</td><td>'+esc(programme)+'</td><td>'+esc(x.source||'Not reported')+'</td><td><button class="table-open" data-open="'+esc(x.id)+'" aria-label="View full metadata for '+esc(x.name)+'">View <span aria-hidden="true">→</span></button></td></tr>';
+    const programme=x.normalizedProgrammeTags.join('; ')||x.country||'Global / multi-country';
+    const systems=x.systemPortalTags.join('; ')||'Not specified';
+    return '<tr><td class="registry-id">'+esc(x.id)+'</td><td class="registry-name"><strong>'+esc(x.name)+'</strong><span>'+esc(x.displayDefinition||x.definition)+'</span></td><td>'+esc(x.domain||'Not classified')+'</td><td><span class="table-measure">'+esc(x.measureType||'Unclassified')+'</span><small>'+esc(x.scaleDisplay||'Not specified')+'</small></td><td>'+esc(x.normalizedLowestReportingLevel||x.lowestReportingLevel||'Not specified')+'</td><td>'+esc(programme)+'</td><td>'+esc(systems)+'</td><td>'+esc(x.source||'Not reported')+'</td><td><button class="table-open" data-open="'+esc(x.id)+'" aria-label="View full metadata for '+esc(x.name)+'">View <span aria-hidden="true">→</span></button></td></tr>';
   }).join('');
-  return '<table class="registry-table"><caption>Filtered public-health indicator registry results</caption><thead><tr><th scope="col">Registry ID</th><th scope="col">Indicator</th><th scope="col">Domain</th><th scope="col">Measure</th><th scope="col">Lowest level</th><th scope="col">Programme / scope</th><th scope="col">Source</th><th scope="col"><span class="visually-hidden">Actions</span></th></tr></thead><tbody>'+body+'</tbody></table>';
+  return '<table class="registry-table"><caption>Filtered public-health indicator registry results</caption><thead><tr><th scope="col">Registry ID</th><th scope="col">Indicator</th><th scope="col">Domain</th><th scope="col">Measure</th><th scope="col">Lowest level</th><th scope="col">Programme / scope</th><th scope="col">System / portal</th><th scope="col">Source</th><th scope="col"><span class="visually-hidden">Actions</span></th></tr></thead><tbody>'+body+'</tbody></table>';
 }
 function meta(title,value,wide=false){ return '<div class="meta-item'+(wide?' wide':'')+'"><span>'+title+'</span><p>'+esc(value||'Not reported')+'</p></div>'; }
 function openModal(id){
   const x=state.indicators.find(item=>item.id===id); if(!x)return;
   const graphSelect=$('kg-focus');
   const graphAvailable=graphSelect&&[...graphSelect.options].some(option=>option.value===id);
-  const indiaMeta=x.country?meta('Country / scope',x.country)+meta('India programme',x.indiaProgram)+meta('Programme tags',x.programmeTags,true)+meta('Programme component',x.programmeComponent)+meta('Object type',x.objectType||x.recordType)+meta('Official-name status',x.officialNameStatus)+meta('Reporting system',x.indiaReportingSystem)+meta('Normalized lowest reporting level',x.normalizedLowestReportingLevel)+meta('Source-reported lowest level',x.lowestReportingLevel)+meta('Full reporting levels',x.reportingLevel)+meta('Reporting unit',x.reportingUnit)+meta('Responsible cadre',x.responsibleCadre)+meta('Administrative level',x.administrativeLevel)+meta('Facility type',x.facilityType)+meta('Record type',x.recordType)+meta('Source document',x.sourceDocument)+meta('Source section',x.sourceSection)+meta('Source item code',x.sourceItemCode)+meta('Source version',x.sourceVersion)+meta('Aggregation rule',x.aggregationRule,true)+meta('Zero-denominator rule',x.zeroDenominatorRule,true)+meta('Linked HMIS data elements',x.relatedElementIds,true)+meta('Related registry indicators',x.relatedIndicatorIds,true)+meta('Crosswalk status',x.crosswalkStatus,true)+meta('Data lineage',x.lineage,true)+meta('Currentness',x.currentness,true)+meta('Source location',x.sourcePage,true):'';
+  const indiaMeta=x.country?meta('Country / scope',x.country)+meta('India programme',x.normalizedProgrammeTags.join('; ')||'Not assigned')+meta('System / portal',x.systemPortalTags.join('; ')||'Not specified')+meta('Source programme labels',x.programmeTags,true)+meta('Programme component',x.programmeComponent)+meta('Object type',x.objectType||x.recordType)+meta('Official-name status',x.officialNameStatus)+meta('Source-reported system',x.indiaReportingSystem)+meta('Normalized lowest reporting level',x.normalizedLowestReportingLevel)+meta('Source-reported lowest level',x.lowestReportingLevel)+meta('Full reporting levels',x.reportingLevel)+meta('Reporting unit',x.reportingUnit)+meta('Responsible cadre',x.responsibleCadre)+meta('Administrative level',x.administrativeLevel)+meta('Facility type',x.facilityType)+meta('Record type',x.recordType)+meta('Source document',x.sourceDocument)+meta('Source section',x.sourceSection)+meta('Source item code',x.sourceItemCode)+meta('Source version',x.sourceVersion)+meta('Aggregation rule',x.aggregationRule,true)+meta('Zero-denominator rule',x.zeroDenominatorRule,true)+meta('Linked HMIS data elements',x.relatedElementIds,true)+meta('Related registry indicators',x.relatedIndicatorIds,true)+meta('Crosswalk status',x.crosswalkStatus,true)+meta('Data lineage',x.lineage,true)+meta('Currentness',x.currentness,true)+meta('Source location',x.sourcePage,true):'';
   $('modal-content').innerHTML='<div class="modal-kicker"><span>'+esc(x.id)+'</span><span>'+esc(x.status)+'</span><span>Verified '+esc(x.verified)+'</span></div><p class="eyebrow">'+esc(x.domain)+' · '+esc(x.subdomain)+'</p><h2 id="modal-title">'+esc(x.name)+'</h2><div class="modal-lead"><p>'+esc(x.displayDefinition||x.definition)+'</p><div><span>Collection</span><strong>'+esc(x.collection)+'</strong></div><div><span>Framework</span><strong>'+esc(x.code||'Not assigned')+'</strong></div></div><div class="metadata-grid">'+meta('Measure type',x.measureType)+meta('Scale',x.scaleDisplay)+meta('Normalized formula',x.normalizedFormula,true)+meta('Denominator population',x.denominatorPopulation,true)+indiaMeta+meta('WHO health-system pillars',(x.whoPillars||[]).join('; '),true)+meta('Numerator',x.numerator)+meta('Denominator',x.denominator)+meta('Official / source formula or method',x.formula)+meta('Unit',x.unit)+meta('Reference population',x.population)+meta('Frequency',x.frequency)+meta('Preferred data source',x.dataSource)+meta('Recommended disaggregation',x.disaggregation)+meta('Direction',x.direction)+meta('Potential uses',x.uses)+meta('Key limitations',x.caveats,true)+meta('Pillar classification note',x.whoPillarBasis,true)+meta('Legacy metadata marker','Historical '+x.metadataLevel+' · '+x.completeness+'%; retained for provenance and not a PHAOS-MDQ-001 computed grade',true)+'</div><div class="source-panel"><div><span>Primary registry</span><strong>'+esc(x.source)+'</strong><small>'+esc(x.org)+'</small></div><div><span>Source identity</span><strong>'+esc(x.sourceId)+'</strong><small>'+(x.sourceVariant?'Unresolved source variant':esc(x.indiaReleaseStatus||'Curated record'))+'</small></div>'+(graphAvailable?'<button type="button" id="modal-graph-link" class="modal-graph-link">Explore in graph →</button>':'')+'<a href="'+esc(x.url)+'" target="_blank" rel="noreferrer">Open authoritative metadata ↗</a></div>';
   $('modal-graph-link')?.addEventListener('click',()=>{ closeModal(); location.hash='knowledge-graph'; graphSelect.value=id; graphSelect.dispatchEvent(new Event('change')); });
   $('modal-backdrop').hidden=false; document.body.style.overflow='hidden'; $('modal-close').focus();

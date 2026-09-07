@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "id": "PHAOS-DISCOVERY-FACETS-001",
+    "title": "Public Health Analytics-OS programme and system/portal discovery facets",
+    "version": "1.0.0",
+    "adopted": "2026-09-07",
+    "task": "UNIFY-03",
+    "status": "Adopted"
+  },
+  "definitions": {
+    "programme": "A policy, service-delivery or disease-control programme or programme family.",
+    "systemPortal": "An information system, reporting platform, registry or portal used to capture, exchange or publish programme information.",
+    "source": "The cited authority, publication, catalogue or dataset from which the record metadata is derived."
+  },
+  "programmeExclusions": [
+    "Health Management Information System",
+    "National Family Health Survey",
+    "National Health Profile"
+  ],
+  "systemPortalMappings": [
+    {"label":"HMIS","evidencePatterns":["HMIS"]},
+    {"label":"RCH Portal","evidencePatterns":["RCH"]},
+    {"label":"Ni-kshay","evidencePatterns":["Ni-kshay","Nikshay"]},
+    {"label":"National NCD Portal","evidencePatterns":["National NCD Portal","NP-NCD portal","AMRIT","CBAC"]},
+    {"label":"U-WIN","evidencePatterns":["U-WIN"]},
+    {"label":"eVIN","evidencePatterns":["eVIN"]},
+    {"label":"IHIP","evidencePatterns":["IHIP"]},
+    {"label":"SAFE-VAC","evidencePatterns":["SAFE-VAC"]},
+    {"label":"DVDMS","evidencePatterns":["DVDMS"]},
+    {"label":"Sankalak / SIMS","evidencePatterns":["Sankalak","SIMS"]},
+    {"label":"RKSK programme MIS","evidencePatterns":["RKSK programme MIS"]},
+    {"label":"Mission Indradhanush reporting","evidencePatterns":["Mission Indradhanush monitoring and reporting"]},
+    {"label":"PM-JAY transaction and dashboard systems","evidencePatterns":["PM-JAY Insights","PM-JAY transaction"]},
+    {"label":"ABDM registries and dashboard","evidencePatterns":["ABDM registries","ABDM dashboard"]}
+  ],
+  "evidenceFields": ["indiaReportingSystem", "dataSource", "source"],
+  "rules": [
+    "A source label is not automatically a programme label.",
+    "HMIS is classified as a system/portal facet and excluded from the programme facet.",
+    "Survey and publication families remain discoverable through Source rather than being presented as programmes.",
+    "One indicator may belong to several programmes and use several systems or portals.",
+    "System/portal mappings require an explicit textual reference in a governed evidence field.",
+    "Absence of a system/portal tag means not specified in the currently mapped metadata, not that no system exists.",
+    "The system/portal facet does not assert operational field-level interoperability."
+  ]
+}
