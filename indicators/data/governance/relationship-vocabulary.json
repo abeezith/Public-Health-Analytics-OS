@@ -1,0 +1,37 @@
+{
+  "id": "PHAOS-REL-001",
+  "title": "Public Health Analytics-OS relationship vocabulary",
+  "version": "1.0.0",
+  "effectiveDate": "2026-09-07",
+  "status": "Adopted",
+  "directionRule": "Every relationship is read from source to target. An inverse must be explicitly defined; consumers must not reverse an edge by assumption.",
+  "aggregationRule": "No relationship authorizes numerical aggregation unless aggregationSafe is explicitly true and the cited evidence supports compatible populations, periods, definitions and units.",
+  "predicates": [
+    { "id": "definedBy", "sourceTypes": ["IndicatorManifestation", "HmisObject"], "targetTypes": ["SourceDocument"], "meaning": "The source document defines or enumerates the source object.", "requiredEvidence": ["source or source-document identity"] },
+    { "id": "publishedBy", "sourceTypes": ["SourceDocument"], "targetTypes": ["Organization"], "meaning": "The organization publishes or maintains the source document.", "requiredEvidence": ["publisher or maintainer statement"] },
+    { "id": "partOfProgramme", "sourceTypes": ["IndicatorManifestation", "IndicatorConcept", "HmisObject", "EvidenceGap"], "targetTypes": ["Programme"], "meaning": "The source object is governed, used or scoped within the programme.", "requiredEvidence": ["programme source or documented analytical rationale"] },
+    { "id": "hasProgrammeComponent", "sourceTypes": ["IndicatorManifestation"], "targetTypes": ["ProgrammeComponent"], "meaning": "The manifestation is assigned to a normalized programme component.", "requiredEvidence": ["preserved source label or documented normalization"] },
+    { "id": "supportsBuildingBlock", "sourceTypes": ["IndicatorManifestation"], "targetTypes": ["WHOBuildingBlock"], "meaning": "Analytics-OS maps the manifestation to a WHO health-system building block.", "requiredEvidence": ["analytical rationale and assertion status"], "doesNotMean": "Source-custodian classification unless assertionStatus is official." },
+    { "id": "lowestReportingLevel", "sourceTypes": ["IndicatorManifestation"], "targetTypes": ["ReportingLevel"], "meaning": "The normalized lowest level at which the manifestation is reported or generated.", "requiredEvidence": ["source level label retained in provenance"] },
+    { "id": "hasMeasureType", "sourceTypes": ["IndicatorManifestation"], "targetTypes": ["MeasureType"], "meaning": "The manifestation has a normalized measurement class.", "requiredEvidence": ["formula, unit, scale or source method"] },
+    { "id": "reportedThrough", "sourceTypes": ["IndicatorManifestation", "HmisObject"], "targetTypes": ["DataSystem"], "meaning": "The source object is represented or reported through the named information system.", "requiredEvidence": ["source-system statement or versioned mapping"] },
+    { "id": "manifestationOf", "sourceTypes": ["IndicatorManifestation"], "targetTypes": ["IndicatorConcept"], "meaning": "The source-specific manifestation maps directionally to an analytical concept.", "requiredEvidence": ["mappingRelation", "rationale", "reviewStatus", "aggregationSafe"] },
+    { "id": "usesDataElement", "sourceTypes": ["IndicatorManifestation", "HmisObject"], "targetTypes": ["HmisObject"], "meaning": "The source measure uses the target HMIS data element as an input.", "requiredEvidence": ["formula, form, dictionary or documented crosswalk"] },
+    { "id": "relatedIndicator", "sourceTypes": ["IndicatorManifestation"], "targetTypes": ["IndicatorManifestation", "HmisObject"], "meaning": "The records are useful to navigate together but no equivalence or computability is asserted.", "requiredEvidence": ["relationship rationale"] },
+    { "id": "relatedHmisObject", "sourceTypes": ["IndicatorManifestation", "HmisObject"], "targetTypes": ["HmisObject"], "meaning": "A typed HMIS association whose operational semantics remain source-governed.", "requiredEvidence": ["relationship type, direction and crosswalk status"] },
+    { "id": "limitsCompletenessOf", "sourceTypes": ["EvidenceGap"], "targetTypes": ["Programme"], "meaning": "The evidence gap limits the declared completeness of the programme release.", "requiredEvidence": ["gap status and resolution route"] }
+  ],
+  "mappingRelations": [
+    { "id": "exactMatch", "meaning": "Equivalent construct and operational semantics within the declared versions and context.", "aggregationPermission": "Not automatic; aggregationSafe and compatibility evidence are still required." },
+    { "id": "closeMatch", "meaning": "Conceptually close, but at least one operational detail prevents exact equivalence.", "aggregationPermission": "No by default." },
+    { "id": "broadMatch", "meaning": "The target concept is broader than the source manifestation.", "aggregationPermission": "No by default." },
+    { "id": "narrowMatch", "meaning": "The target concept is narrower than the source manifestation.", "aggregationPermission": "No by default." },
+    { "id": "relatedMatch", "meaning": "Useful association without equivalence or hierarchy.", "aggregationPermission": "No." }
+  ],
+  "assertionStatuses": [
+    { "id": "official", "meaning": "Explicitly asserted by the cited source." },
+    { "id": "curated", "meaning": "Reviewed analytical assertion made by Analytics-OS." },
+    { "id": "normalized", "meaning": "Deterministic mapping from a preserved source label to a controlled term." },
+    { "id": "candidate", "meaning": "Provisional assertion requiring domain or custodian review." }
+  ]
+}

@@ -30,6 +30,8 @@ Programme expansion, governance, schemas, provenance, analyst utility, operation
 
 The machine-readable contracts are published as a [versioned JSON Schema catalogue](indicators/data/schemas/manifest.json). Consumers should pin [schema package 1.0.0](indicators/data/schemas/1.0.0/manifest.json) and follow the [schema guide](docs/SCHEMA-GUIDE.md); a successful structural validation does not imply source verification, semantic equivalence, computability, domain review or custodian approval.
 
+Computed metadata completeness is governed by [metadata-quality profile `PHAOS-MDQ-001`](docs/METADATA-QUALITY-SPECIFICATION.md). Its [machine-readable profile](indicators/data/governance/metadata-quality-profile.json), [aggregate validation report](indicators/data/governance/metadata-quality-report.json) and [relationship vocabulary](indicators/data/governance/relationship-vocabulary.json) remain separate from historical hand-assigned metadata fields.
+
 ## Governance and contributions
 
 Analytics-OS is governed by the [Public Health Analytics-OS Governance Charter](docs/GOVERNANCE-CHARTER.md). It defines authority boundaries, review states, decision rights, correction handling, release cadence and continuity. Contribution requirements are documented in [CONTRIBUTING.md](CONTRIBUTING.md), and material governance decisions are retained in the [governance decision log](docs/GOVERNANCE-DECISION-LOG.md).

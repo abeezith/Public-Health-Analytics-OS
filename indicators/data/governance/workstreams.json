@@ -1,7 +1,7 @@
 {
   "metadata": {
     "id": "PHAOS-WORKSTREAM-TRACKER-1",
-    "version": "2.2.0",
+    "version": "2.3.0",
     "updated": "2026-09-07",
     "analyticsOsRelease": "3.7",
     "humanReadableTracker": "../../../docs/PROGRAMME-WORKSTREAM-TRACKER.md",
@@ -26,7 +26,7 @@
   },
   "executionOrder": [
     {"sequence":1,"taskRange":"RECON-00","label":"Evaluation reconciliation","status":"Complete"},
-    {"sequence":2,"taskRange":"TRUST-01..TRUST-07","label":"Trust foundation","status":"In progress","completedTasks":["TRUST-01","TRUST-02"],"nextTask":"TRUST-03"},
+    {"sequence":2,"taskRange":"TRUST-01..TRUST-07","label":"Trust foundation","status":"In progress","completedTasks":["TRUST-01","TRUST-02","TRUST-03"],"nextTask":"TRUST-04"},
     {"sequence":3,"taskRange":"UTILITY-01..UTILITY-06","label":"Analyst and programme utility","status":"Pending"},
     {"sequence":4,"taskRange":"OPMAP-01..OPMAP-04","label":"Operational-system mappings","status":"Pending"},
     {"sequence":5,"taskRange":"SEM-01..SEM-04","label":"Semantic Web publication","status":"Pending"},
@@ -54,7 +54,7 @@
     {"sequence":9,"id":"PROGRAMME-NMHP","label":"National Mental Health Programme","currentEvidence":"No programme-specific source boundary","nextTask":"Inventory NMHP/DMHP and applicable HWC mental-health sources"}
   ],
   "parallelWorkstreams": [
-    {"id":"TRUST","label":"Governance, schema, identity, provenance and lifecycle","status":"In progress","completedTasks":["TRUST-01","TRUST-02"],"nextTask":"TRUST-03"},
+    {"id":"TRUST","label":"Governance, schema, identity, provenance and lifecycle","status":"In progress","completedTasks":["TRUST-01","TRUST-02","TRUST-03"],"nextTask":"TRUST-04"},
     {"id":"UTILITY","label":"Analyst and programme utility","status":"Pending","completedTasks":[],"nextTask":"UTILITY-01","dependency":"TRUST-02 and TRUST-03 for structured fields"},
     {"id":"OPMAP","label":"Operational-system mapping","status":"Pending","completedTasks":[],"nextTask":"OPMAP-01","blockedTasks":["OPMAP-02","OPMAP-03","OPMAP-04"]},
     {"id":"SEM","label":"Semantic Web and resolvable identity","status":"In progress","completedTasks":["SEM-00"],"nextTask":"SEM-01"},
@@ -66,7 +66,7 @@
   "tasks": {
     "trust": [
       {"id":"TRUST-01","label":"Governance charter","status":"Complete","artifacts":["docs/GOVERNANCE-CHARTER.md","CONTRIBUTING.md","docs/GOVERNANCE-DECISION-LOG.md",".github/ISSUE_TEMPLATE/indicator-or-source-change.md",".github/ISSUE_TEMPLATE/governance-proposal.md"]}, {"id":"TRUST-02","label":"Versioned JSON Schemas","status":"Complete","schemaVersion":"1.0.0","schemaDraft":"2020-12","artifacts":["indicators/data/schemas/manifest.json","indicators/data/schemas/1.0.0/manifest.json","indicators/data/schemas/1.0.0/common.schema.json","indicators/data/schemas/1.0.0/indicator-manifestation.schema.json","indicators/data/schemas/1.0.0/source-document.schema.json","indicators/data/schemas/1.0.0/hmis-object.schema.json","indicators/data/schemas/1.0.0/graph-node.schema.json","indicators/data/schemas/1.0.0/graph-edge.schema.json","indicators/data/schemas/1.0.0/evidence-gap.schema.json","indicators/data/schemas/1.0.0/programme-release.schema.json","indicators/data/schemas/1.0.0/review-event.schema.json","indicators/data/schemas/1.0.0/change-event.schema.json","docs/SCHEMA-GUIDE.md"],"decisionId":"GOV-DEC-002","validationBoundary":"Structural validity does not imply source verification, semantic equivalence, aggregation safety, computability, domain review or custodian approval."},
-      {"id":"TRUST-03","label":"Metadata-quality specification","status":"Pending"}, {"id":"TRUST-04","label":"Persistent identity and lifecycle policy","status":"Pending"},
+      {"id":"TRUST-03","label":"Metadata-quality specification","status":"Complete","profileId":"PHAOS-MDQ-001","profileVersion":"1.0.0","decisionId":"GOV-DEC-003","recordsScored":3708,"criticalValidationErrors":0,"unscoredLegacyProgrammeTuples":43,"nextRemediation":"Migrate named entry-level quality properties under TRUST-05 and enforce the validator under TRUST-06.","artifacts":["docs/METADATA-QUALITY-SPECIFICATION.md","indicators/data/governance/metadata-quality-profile.json","indicators/data/governance/metadata-quality-report.json","indicators/data/governance/relationship-vocabulary.json","scripts/validate-metadata-quality.mjs"]}, {"id":"TRUST-04","label":"Persistent identity and lifecycle policy","status":"Pending"},
       {"id":"TRUST-05","label":"Entry-level provenance and change events","status":"Pending"}, {"id":"TRUST-06","label":"Automated release validation","status":"Pending"},
       {"id":"TRUST-07","label":"Source-change monitoring and review queue","status":"Pending"}
     ],
@@ -146,6 +146,19 @@
     "operatingModel": "Interim single-maintainer project governance; role separation and additional qualified maintainers are maturity objectives.",
     "authorityBoundary": "Analytics-OS is the publisher and curator of derived metadata. Source custodians retain authority over official definitions. Domain review, technical validation, computability and custodian approval are independent states.",
     "nextReview": "2027-09-07 or earlier if ownership, decision rights, privacy boundary or publication architecture changes"
+  },
+  "metadataQuality": {
+    "profileId": "PHAOS-MDQ-001",
+    "profileVersion": "1.0.0",
+    "relationshipVocabularyId": "PHAOS-REL-001",
+    "relationshipVocabularyVersion": "1.0.0",
+    "validationReport": "metadata-quality-report.json",
+    "recordsScored": 3708,
+    "averageScore": 70.8,
+    "criticalValidationErrors": 0,
+    "qualityIssues": {"percentageDenominator": 19},
+    "unscoredProgrammeTupleRecords": 43,
+    "legacyFieldPolicy": "metadataLevel and completeness are retained for provenance and must not be interpreted as computed metadata-quality grades."
   },
   "publicationBoundary": "GitHub Pages may publish static HTML, JSON, JSON-LD, RDF and FHIR artifacts. It does not provide FHIR REST or terminology operations. Public bulk-download controls remain disabled unless separately authorized.",
   "onboardingRule": "Whenever a programme is added, append a programme row at FHIR gate G0, instantiate PR-01..PR-12, and nest PF-01..PF-13 under PR-10. Registry, graph, utility and FHIR maturity are reported independently."

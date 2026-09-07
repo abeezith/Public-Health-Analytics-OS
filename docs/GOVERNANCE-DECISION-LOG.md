@@ -28,6 +28,20 @@ This log records material governance decisions separately from indicator and sof
 - **Migration and review date:** Temporary legacy tuple and graph-review compatibility paths are reviewed under TRUST-05 and TRUST-06; the package is reviewed no later than 7 September 2027.
 - **Supersedes:** None.
 
+## GOV-DEC-003 — Adopt metadata-quality profile and relationship vocabulary 1.0.0
+
+- **Date:** 7 September 2026
+- **Status:** Adopted
+- **Decision owner:** Project Owner, acting under the interim single-maintainer model
+- **Decision:** Adopt `PHAOS-MDQ-001` version `1.0.0` as the computed indicator-metadata completeness profile and `PHAOS-REL-001` version `1.0.0` as the graph relationship vocabulary.
+- **Reason:** Existing `metadataLevel` and `completeness` fields were assigned across historical releases without one published, reproducible scoring rule. Graph predicates and mapping terms existed but required a consumer-facing direction, evidence and aggregation-safety contract.
+- **Evidence:** The validator scored all 3,708 named indicator records, found zero duplicate or critical identity errors, and reproduced the committed aggregate report exactly. The audit found 19 percentage-denominator quality issues and left 43 positional programme tuples unscored because their field meaning is not represented as named object properties.
+- **Boundary:** The computed score measures metadata completeness and explicitness only. It does not rate validity, source authority, observed-data quality, comparability, computability, fitness for purpose, domain review or custodian approval.
+- **Alternatives considered:** Reinterpret legacy levels as quality grades; overwrite all historical scores; award no credit for explicitly declared gaps; score positional tuples by inferred column position. These were rejected because they would erase provenance, hide uncertainty or create false precision.
+- **Affected artifacts:** `docs/METADATA-QUALITY-SPECIFICATION.md`, `indicators/data/governance/metadata-quality-profile.json`, `metadata-quality-report.json`, `relationship-vocabulary.json`, `scripts/validate-metadata-quality.mjs`, the Method page and both workstream trackers.
+- **Migration and review date:** Entry-level computed properties and change events are governed under TRUST-05; automated release enforcement is governed under TRUST-06. Review no later than 7 September 2027.
+- **Supersedes:** Legacy `metadataLevel` and `completeness` as interpreted quality grades, but not as retained historical fields.
+
 ## Decision record template
 
 - **ID and title:**
