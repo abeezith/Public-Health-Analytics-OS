@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abeezith.github.io/Public-Health-Analytics-OS/indicators/data/schemas/1.0.0/common.schema.json",
+  "title": "Public Health Analytics-OS common schema vocabulary",
+  "description": "Reusable structural definitions for Analytics-OS schema package 1.0.0. Structural validation does not imply source verification, computability, semantic equivalence or custodian approval.",
+  "$defs": {
+    "nonEmptyString": {
+      "type": "string",
+      "minLength": 1
+    },
+    "recordId": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "dateOrDateTime": {
+      "type": "string",
+      "anyOf": [
+        { "format": "date" },
+        { "format": "date-time" }
+      ]
+    },
+    "sourceLocator": {
+      "type": "string",
+      "minLength": 1,
+      "description": "An absolute HTTP(S) URL or a repository-relative artifact path."
+    },
+    "stringOrStringArray": {
+      "oneOf": [
+        { "type": "string" },
+        {
+          "type": "array",
+          "items": { "$ref": "#/$defs/nonEmptyString" },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      ]
+    },
+    "whoBuildingBlock": {
+      "type": "string",
+      "enum": [
+        "Service delivery",
+        "Health workforce",
+        "Health information systems",
+        "Medical products, vaccines and technologies",
+        "Access to essential medicines and technologies",
+        "Access to essential medicines",
+        "Health financing",
+        "Leadership and governance"
+      ]
+    },
+    "measureType": {
+      "description": "A normalized measure classification, or null when classification is explicitly pending.",
+      "type": ["string", "null"],
+      "enum": [
+        "Percentage/proportion",
+        "Ratio",
+        "Rate per population",
+        "Count",
+        "Index",
+        null
+      ]
+    },
+    "metadataLevel": {
+      "type": "string",
+      "enum": ["A", "B", "C", "D", "E"]
+    },
+    "assertionStatus": {
+      "type": "string",
+      "enum": ["official", "curated", "normalized", "candidate"]
+    },
+    "mappingRelation": {
+      "type": "string",
+      "enum": ["exactMatch", "closeMatch", "broadMatch", "narrowMatch", "relatedMatch"]
+    },
+    "reviewStatus": {
+      "type": "string",
+      "anyOf": [
+        {
+          "enum": [
+            "not-reviewed",
+            "pending",
+            "in-review",
+            "technically-validated",
+            "domain-reviewed",
+            "computable",
+            "custodian-approved",
+            "rejected",
+            "superseded"
+          ]
+        },
+        {
+          "pattern": "^Domain-reviewed . source-bounded$",
+          "description": "Compatibility value used by graph release 3.7; migrate to domain-reviewed under TRUST-05."
+        }
+      ]
+    },
+    "actor": {
+      "type": "object",
+      "description": "A person or role. A role is sufficient where a public personal identity is unnecessary.",
+      "properties": {
+        "name": { "$ref": "#/$defs/nonEmptyString" },
+        "role": { "$ref": "#/$defs/nonEmptyString" },
+        "organization": { "$ref": "#/$defs/nonEmptyString" },
+        "identifier": { "$ref": "#/$defs/nonEmptyString" }
+      },
+      "anyOf": [
+        { "required": ["name"] },
+        { "required": ["role"] }
+      ],
+      "additionalProperties": true
+    },
+    "evidenceReference": {
+      "type": "object",
+      "properties": {
+        "sourceId": { "$ref": "#/$defs/recordId" },
+        "title": { "$ref": "#/$defs/nonEmptyString" },
+        "url": { "$ref": "#/$defs/sourceLocator" },
+        "version": { "$ref": "#/$defs/nonEmptyString" },
+        "page": { "oneOf": [{ "type": "integer", "minimum": 1 }, { "$ref": "#/$defs/nonEmptyString" }] },
+        "section": { "$ref": "#/$defs/nonEmptyString" },
+        "accessedOn": { "$ref": "#/$defs/date" }
+      },
+      "anyOf": [
+        { "required": ["sourceId"] },
+        { "required": ["url"] },
+        { "required": ["title"] }
+      ],
+      "additionalProperties": true
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "PHAOS-SCHEMA-PACKAGE-1.0.0",
+  "title": "Public Health Analytics-OS JSON Schema package",
+  "version": "1.0.0",
+  "released": "2026-09-07",
+  "status": "Adopted",
+  "schemaDraft": "https://json-schema.org/draft/2020-12/schema",
+  "documentation": "../../../../docs/SCHEMA-GUIDE.md",
+  "compatibility": {
+    "analyticsOsRelease": "3.7",
+    "additionalProperties": "Allowed in 1.0.0 to preserve source- and programme-specific metadata.",
+    "legacyProgrammeTuples": "Accepted for existing programme releases; new programme records should use named objects.",
+    "validationBoundary": "Structural validity does not imply source verification, semantic equivalence, computability, domain review or custodian approval."
+  },
+  "schemas": [
+    { "name": "Common vocabulary", "file": "common.schema.json", "kind": "definitions" },
+    { "name": "Indicator manifestation", "file": "indicator-manifestation.schema.json", "kind": "record" },
+    { "name": "Source document", "file": "source-document.schema.json", "kind": "record" },
+    { "name": "HMIS object", "file": "hmis-object.schema.json", "kind": "record" },
+    { "name": "Graph node", "file": "graph-node.schema.json", "kind": "record" },
+    { "name": "Graph edge", "file": "graph-edge.schema.json", "kind": "record" },
+    { "name": "Evidence gap", "file": "evidence-gap.schema.json", "kind": "record" },
+    { "name": "Programme release", "file": "programme-release.schema.json", "kind": "release" },
+    { "name": "Review event", "file": "review-event.schema.json", "kind": "event" },
+    { "name": "Change event", "file": "change-event.schema.json", "kind": "event" }
+  ]
+}

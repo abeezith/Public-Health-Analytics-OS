@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abeezith.github.io/Public-Health-Analytics-OS/indicators/data/schemas/1.0.0/graph-edge.schema.json",
+  "title": "Public Health Analytics-OS knowledge-graph edge",
+  "description": "A directed, typed relationship. Mapping direction is always source to target; relationship similarity does not imply aggregation safety.",
+  "type": "object",
+  "required": ["id", "source", "target", "predicate", "label", "assertionStatus"],
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/recordId" },
+    "source": { "$ref": "common.schema.json#/$defs/recordId" },
+    "target": { "$ref": "common.schema.json#/$defs/recordId" },
+    "predicate": {
+      "type": "string",
+      "enum": [
+        "definedBy",
+        "partOfProgramme",
+        "supportsBuildingBlock",
+        "reportedThrough",
+        "hasProgrammeComponent",
+        "lowestReportingLevel",
+        "hasMeasureType",
+        "relatedHmisObject",
+        "manifestationOf",
+        "usesDataElement",
+        "relatedIndicator",
+        "limitsCompletenessOf",
+        "publishedBy"
+      ]
+    },
+    "label": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "assertionStatus": { "$ref": "common.schema.json#/$defs/assertionStatus" },
+    "rationale": { "type": "string" },
+    "evidence": { "type": "string" },
+    "sourceId": { "$ref": "common.schema.json#/$defs/recordId" },
+    "sourceName": { "type": "string" },
+    "sourceUrl": { "$ref": "common.schema.json#/$defs/sourceLocator" },
+    "sourcePage": { "oneOf": [{ "type": "integer", "minimum": 1 }, { "type": "string" }] },
+    "mappingRelation": { "$ref": "common.schema.json#/$defs/mappingRelation" },
+    "aggregationSafe": { "type": "boolean" },
+    "comparisonClass": { "type": "string" },
+    "differences": { "$ref": "common.schema.json#/$defs/stringOrStringArray" },
+    "inverseDirection": { "type": "boolean" },
+    "reviewId": { "$ref": "common.schema.json#/$defs/recordId" },
+    "reviewStatus": { "$ref": "common.schema.json#/$defs/reviewStatus" },
+    "reviewedOn": { "$ref": "common.schema.json#/$defs/date" },
+    "curatedBy": { "type": "string" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "predicate": { "const": "manifestationOf" } }, "required": ["predicate"] },
+      "then": {
+        "required": ["mappingRelation", "rationale", "aggregationSafe", "reviewStatus"]
+      }
+    }
+  ],
+  "additionalProperties": true
+}

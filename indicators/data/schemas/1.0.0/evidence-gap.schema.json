@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abeezith.github.io/Public-Health-Analytics-OS/indicators/data/schemas/1.0.0/evidence-gap.schema.json",
+  "title": "Public Health Analytics-OS evidence gap",
+  "description": "A machine-readable absence, uncertainty or access limitation. Both canonical fields and documented legacy programme/HMIS field names are accepted in schema 1.0.0.",
+  "type": "object",
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/recordId" },
+    "gap_id": { "$ref": "common.schema.json#/$defs/recordId" },
+    "gap": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "description": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "source": { "type": "string" },
+    "status": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "priority": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "nextAction": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "resolution_route": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "affectedRecordIds": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/recordId" }, "uniqueItems": true },
+    "identifiedOn": { "$ref": "common.schema.json#/$defs/date" },
+    "evidence": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/evidenceReference" } }
+  },
+  "allOf": [
+    { "anyOf": [{ "required": ["id"] }, { "required": ["gap_id"] }] },
+    { "anyOf": [{ "required": ["gap"] }, { "required": ["description"] }, { "required": ["source"] }] },
+    { "anyOf": [{ "required": ["nextAction"] }, { "required": ["resolution_route"] }] }
+  ],
+  "additionalProperties": true
+}

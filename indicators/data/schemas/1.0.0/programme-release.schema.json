@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abeezith.github.io/Public-Health-Analytics-OS/indicators/data/schemas/1.0.0/programme-release.schema.json",
+  "title": "Public Health Analytics-OS programme release",
+  "description": "A source-bounded programme research release. Optional payload collections reflect programme-specific maturity; their presence does not imply exhaustiveness beyond metadata.boundary.",
+  "type": "object",
+  "required": ["metadata", "sources", "evidenceGaps"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["release", "cutoff", "title", "boundary"],
+      "properties": {
+        "release": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+        "cutoff": { "$ref": "common.schema.json#/$defs/date" },
+        "title": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+        "boundary": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+        "programmeId": { "$ref": "common.schema.json#/$defs/recordId" },
+        "schemaVersion": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" }
+      },
+      "additionalProperties": true
+    },
+    "sources": {
+      "type": "array",
+      "items": { "$ref": "source-document.schema.json" },
+      "minItems": 1
+    },
+    "evidenceGaps": {
+      "type": "array",
+      "items": { "$ref": "evidence-gap.schema.json" }
+    },
+    "indicators": {
+      "type": "array",
+      "items": { "$ref": "indicator-manifestation.schema.json" }
+    },
+    "records": {
+      "type": "array",
+      "description": "Legacy 1.0 programme payload. Tuple records remain readable in schema 1.0.0 but new releases should use named indicator objects.",
+      "items": {
+        "oneOf": [
+          { "$ref": "indicator-manifestation.schema.json" },
+          {
+            "type": "array",
+            "prefixItems": [
+              { "$ref": "common.schema.json#/$defs/recordId" },
+              { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+              { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+              { "$ref": "common.schema.json#/$defs/measureType" },
+              { "type": "string" },
+              { "type": "string" },
+              { "type": "string" },
+              { "type": "string" },
+              { "type": "string" },
+              { "type": "string" },
+              { "type": "array", "items": { "$ref": "common.schema.json#/$defs/whoBuildingBlock" }, "uniqueItems": true },
+              { "type": "string" }
+            ],
+            "minItems": 12
+          }
+        ]
+      }
+    },
+    "crosswalk": { "type": ["array", "object"] },
+    "concepts": { "type": "array", "items": { "type": "object" } }
+  },
+  "anyOf": [
+    { "required": ["indicators"] },
+    { "required": ["records"] },
+    {
+      "properties": {
+        "metadata": {
+          "properties": { "boundary": { "minLength": 1 } }
+        }
+      }
+    }
+  ],
+  "additionalProperties": true
+}

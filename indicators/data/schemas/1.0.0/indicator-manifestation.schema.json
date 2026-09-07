@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abeezith.github.io/Public-Health-Analytics-OS/indicators/data/schemas/1.0.0/indicator-manifestation.schema.json",
+  "title": "Public Health Analytics-OS indicator manifestation",
+  "description": "A source-specific manifestation of a public-health indicator. The official/source name is preserved in name or officialIndicatorName; normalized analytical fields remain separate.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "definition",
+    "source",
+    "sourceId",
+    "status",
+    "verified",
+    "collection",
+    "metadataLevel",
+    "completeness"
+  ],
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/recordId" },
+    "name": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "officialIndicatorName": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "officialNameStatus": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "definition": { "type": "string", "description": "May be empty only where the source definition remains an explicit evidence gap." },
+    "displayDefinition": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "domain": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "subdomain": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "type": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "code": { "type": "string" },
+    "numerator": { "type": "string" },
+    "denominator": { "type": "string" },
+    "denominatorPopulation": { "type": "string" },
+    "formula": { "type": "string" },
+    "normalizedFormula": { "type": "string" },
+    "unit": { "type": "string" },
+    "measureType": { "$ref": "common.schema.json#/$defs/measureType" },
+    "scaleDisplay": { "type": "string", "minLength": 1 },
+    "population": { "type": "string" },
+    "frequency": { "type": "string" },
+    "dataSource": { "type": "string" },
+    "disaggregation": { "$ref": "common.schema.json#/$defs/stringOrStringArray" },
+    "direction": { "type": "string" },
+    "uses": { "$ref": "common.schema.json#/$defs/stringOrStringArray" },
+    "caveats": { "$ref": "common.schema.json#/$defs/stringOrStringArray" },
+    "source": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "sourceId": { "$ref": "common.schema.json#/$defs/recordId" },
+    "sourceDocument": { "type": "string" },
+    "sourceVersion": { "type": "string" },
+    "sourcePage": { "oneOf": [{ "type": "integer", "minimum": 1 }, { "type": "string" }] },
+    "sourceSection": { "type": "string" },
+    "sourceItemCode": { "type": "string" },
+    "sourceAccess": { "type": "string" },
+    "org": { "type": "string" },
+    "url": { "$ref": "common.schema.json#/$defs/sourceLocator" },
+    "status": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "verified": { "$ref": "common.schema.json#/$defs/date" },
+    "collection": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "metadataLevel": { "$ref": "common.schema.json#/$defs/metadataLevel" },
+    "completeness": { "type": "number", "minimum": 0, "maximum": 100 },
+    "whoPillars": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/whoBuildingBlock" },
+      "uniqueItems": true,
+      "maxItems": 6
+    },
+    "whoPillarPrimary": { "$ref": "common.schema.json#/$defs/whoBuildingBlock" },
+    "programmeTags": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+      "uniqueItems": true
+    },
+    "country": { "type": "string" },
+    "reportingLevel": { "type": "string" },
+    "lowestReportingLevel": { "type": "string" },
+    "reportingUnit": { "type": "string" },
+    "responsibleCadre": { "type": "string" },
+    "aggregationRule": { "type": "string" },
+    "zeroDenominatorRule": { "type": "string" },
+    "qaStatus": { "type": "string" },
+    "calculationStatus": { "type": "string" },
+    "currentness": { "type": "string" },
+    "lineage": { "type": "string" },
+    "relatedElementIds": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/recordId" }, "uniqueItems": true },
+    "relatedIndicatorIds": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/recordId" }, "uniqueItems": true }
+  },
+  "allOf": [
+    {
+      "if": {
+        "required": ["measureType"],
+        "properties": { "measureType": { "const": "Percentage/proportion" } }
+      },
+      "then": {
+        "required": ["scaleDisplay", "normalizedFormula", "denominatorPopulation"],
+        "properties": {
+          "scaleDisplay": { "const": "%" },
+          "normalizedFormula": { "pattern": "100" },
+          "denominatorPopulation": { "minLength": 1 }
+        }
+      }
+    },
+    {
+      "if": { "required": ["whoPillarPrimary"] },
+      "then": { "required": ["whoPillars"] }
+    }
+  ],
+  "additionalProperties": true
+}

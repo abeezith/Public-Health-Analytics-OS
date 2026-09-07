@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abeezith.github.io/Public-Health-Analytics-OS/indicators/data/schemas/1.0.0/change-event.schema.json",
+  "title": "Public Health Analytics-OS change event",
+  "description": "An append-only description of a governed change. It records what changed and why without replacing the underlying source authority or prior released artifact.",
+  "type": "object",
+  "required": ["id", "subjectId", "changedOn", "changeType", "actor", "reason", "changedFields", "versionBefore", "versionAfter"],
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/recordId" },
+    "subjectId": { "$ref": "common.schema.json#/$defs/recordId" },
+    "changedOn": { "$ref": "common.schema.json#/$defs/dateOrDateTime" },
+    "changeType": {
+      "type": "string",
+      "enum": ["create", "correct", "enrich", "reclassify", "supersede", "retire", "restore"]
+    },
+    "actor": { "$ref": "common.schema.json#/$defs/actor" },
+    "reason": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "changedFields": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "versionBefore": { "type": ["string", "null"] },
+    "versionAfter": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "sourceVersionBefore": { "type": ["string", "null"] },
+    "sourceVersionAfter": { "type": ["string", "null"] },
+    "decisionId": { "$ref": "common.schema.json#/$defs/recordId" },
+    "issueUrl": { "$ref": "common.schema.json#/$defs/sourceLocator" },
+    "evidence": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/evidenceReference" } },
+    "replaces": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/recordId" }, "uniqueItems": true },
+    "replacedBy": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/recordId" }, "uniqueItems": true }
+  },
+  "additionalProperties": true
+}

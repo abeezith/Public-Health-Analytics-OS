@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abeezith.github.io/Public-Health-Analytics-OS/indicators/data/schemas/1.0.0/source-document.schema.json",
+  "title": "Public Health Analytics-OS source document",
+  "description": "A source catalogue entry or programme-release source reference. Source authority and Analytics-OS publication responsibility remain distinct.",
+  "type": "object",
+  "required": ["id", "url", "boundary"],
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/recordId" },
+    "name": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "source": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "document": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "org": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "url": { "$ref": "common.schema.json#/$defs/sourceLocator" },
+    "access": { "type": "string" },
+    "boundary": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "release": { "type": "string" },
+    "version": { "type": "string" },
+    "status": { "type": "string" },
+    "lastChecked": { "$ref": "common.schema.json#/$defs/date" },
+    "observedRecords": { "type": "integer", "minimum": 0 },
+    "section": { "type": "string" },
+    "pages": { "oneOf": [{ "type": "integer", "minimum": 1 }, { "type": "string" }] }
+  },
+  "anyOf": [
+    { "required": ["name"] },
+    { "required": ["document"] },
+    { "required": ["source"] }
+  ],
+  "additionalProperties": true
+}

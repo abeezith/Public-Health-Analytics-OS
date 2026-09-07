@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abeezith.github.io/Public-Health-Analytics-OS/indicators/data/schemas/1.0.0/hmis-object.schema.json",
+  "title": "Public Health Analytics-OS HMIS knowledge object",
+  "description": "A version-bounded HMIS data element, derived indicator, published output or validation rule. An HMIS object is not automatically a public-health indicator or a FHIR Measure.",
+  "type": "object",
+  "required": ["id", "objectType", "name", "versionStatus", "sourceAuthority"],
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/recordId" },
+    "objectType": {
+      "type": "string",
+      "enum": ["Data element", "Derived indicator", "Published output", "Validation rule"]
+    },
+    "name": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "definition": { "type": "string" },
+    "numerator": { "type": "string" },
+    "denominator": { "type": "string" },
+    "multiplyingFactor": { "oneOf": [{ "type": "number" }, { "type": "string" }] },
+    "formula": { "type": "string" },
+    "normalizedFormula": { "type": "string" },
+    "unit": { "type": "string" },
+    "measureType": { "$ref": "common.schema.json#/$defs/measureType" },
+    "scaleDisplay": { "type": "string" },
+    "denominatorPopulation": { "type": "string" },
+    "displayDefinition": { "type": "string" },
+    "component": { "type": "string" },
+    "domain": { "type": "string" },
+    "recordClass": { "type": "string" },
+    "suggestedLevel": { "type": "string" },
+    "periodicity": { "type": "string" },
+    "sourcePage": { "oneOf": [{ "type": "integer", "minimum": 1 }, { "type": "string" }] },
+    "sourceVersion": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "sourcePeriod": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "sourceResource": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "versionStatus": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "currentCrosswalkStatus": { "type": "string" },
+    "sourceUrl": { "$ref": "common.schema.json#/$defs/sourceLocator" },
+    "sourceAuthority": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "whoPillars": {
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/whoBuildingBlock" },
+      "uniqueItems": true,
+      "maxItems": 6
+    },
+    "aggregationRule": { "type": "string" },
+    "zeroDenominatorRule": { "type": "string" },
+    "relatedElementIds": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/recordId" }, "uniqueItems": true },
+    "uses": { "$ref": "common.schema.json#/$defs/stringOrStringArray" },
+    "caveats": { "$ref": "common.schema.json#/$defs/stringOrStringArray" },
+    "programmeTags": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/nonEmptyString" }, "uniqueItems": true }
+  },
+  "allOf": [
+    {
+      "if": {
+        "required": ["objectType"],
+        "properties": { "objectType": { "enum": ["Data element", "Derived indicator", "Validation rule"] } }
+      },
+      "then": { "required": ["sourceVersion"] },
+      "else": { "required": ["sourcePeriod", "sourceResource"] }
+    },
+    {
+      "if": {
+        "required": ["measureType"],
+        "properties": { "measureType": { "const": "Percentage/proportion" } }
+      },
+      "then": {
+        "required": ["scaleDisplay", "normalizedFormula", "denominatorPopulation"],
+        "properties": {
+          "scaleDisplay": { "const": "%" },
+          "normalizedFormula": { "pattern": "100" }
+        }
+      }
+    }
+  ],
+  "additionalProperties": true
+}

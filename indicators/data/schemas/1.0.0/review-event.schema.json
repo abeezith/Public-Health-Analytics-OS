@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abeezith.github.io/Public-Health-Analytics-OS/indicators/data/schemas/1.0.0/review-event.schema.json",
+  "title": "Public Health Analytics-OS review event",
+  "description": "A review assertion about a versioned subject. Review dimensions are independent: technical validation does not imply domain review, computability or custodian approval.",
+  "type": "object",
+  "required": ["id", "subjectId", "subjectVersion", "reviewType", "status", "reviewedOn", "reviewer", "method"],
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/recordId" },
+    "subjectId": { "$ref": "common.schema.json#/$defs/recordId" },
+    "subjectVersion": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "reviewType": {
+      "type": "string",
+      "enum": [
+        "source-verification",
+        "technical-validation",
+        "domain-review",
+        "computability-review",
+        "semantic-mapping-review",
+        "custodian-approval",
+        "governance-review"
+      ]
+    },
+    "status": { "$ref": "common.schema.json#/$defs/reviewStatus" },
+    "reviewedOn": { "$ref": "common.schema.json#/$defs/date" },
+    "reviewer": { "$ref": "common.schema.json#/$defs/actor" },
+    "method": { "$ref": "common.schema.json#/$defs/nonEmptyString" },
+    "scope": { "type": "string" },
+    "findings": { "$ref": "common.schema.json#/$defs/stringOrStringArray" },
+    "evidence": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/evidenceReference" } },
+    "decisionId": { "$ref": "common.schema.json#/$defs/recordId" },
+    "conflictOfInterest": { "type": "string" },
+    "supersedesReviewId": { "$ref": "common.schema.json#/$defs/recordId" }
+  },
+  "additionalProperties": true
+}
