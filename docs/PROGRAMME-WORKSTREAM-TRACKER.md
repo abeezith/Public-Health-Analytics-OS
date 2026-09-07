@@ -1,6 +1,6 @@
 # Analytics-OS programme and standards workstream tracker
 
-Last updated: 6 September 2026
+Last updated: 7 September 2026
 
 This document is the persistent task list for programme expansion and all parallel trust, analytical-utility and interoperability work. It reconciles the September 2026 multi-expert evaluation with the work already completed in Analytics-OS Release 3.7. Programme research remains the authority for official names, definitions, denominators, formulas, source versions and evidence boundaries. Graph, FHIR, terminology and analytical-product workstreams consume governed records but do not silently change them or delay source-bounded registry publication.
 
@@ -40,7 +40,7 @@ The evaluation is treated as review evidence, not as an instruction set. Recomme
 This is the master order for future task-by-task execution. A later task may start early only when its listed dependencies are satisfied.
 
 1. **RECON-00 — Expert-evaluation reconciliation ledger — Complete.** Record each recommendation as already implemented, accepted, adapted, deferred or rejected and connect it to an existing or new workstream.
-2. **TRUST-01–TRUST-07 — Trust foundation — Pending.** Establish governance, schemas, quality rubric, persistent identity, lifecycle, provenance, release validation and source-change monitoring.
+2. **TRUST-01–TRUST-07 — Trust foundation — In progress.** TRUST-01 governance is complete. Next establish schemas, quality rubric, persistent identity, lifecycle, provenance, release validation and source-change monitoring.
 3. **UTILITY-01–UTILITY-06 — Analyst and programme utility — Pending.** Improve discovery, controlled disaggregation, data-quality and comparability guidance, versioned targets, source-backed response guidance and tested calculations.
 4. **OPMAP-01–OPMAP-04 — Operational-system mappings — Pending.** Define an instance/version-aware mapping policy, then pilot HMIS/DHIS2, NTEP and NP-NCD operational mappings without inventing restricted identifiers.
 5. **SEM-01–SEM-04 — Semantic Web publication — Pending.** Formalize SKOS mapping semantics, publish RDF, validate with SHACL and make canonical identities resolvable.
@@ -73,7 +73,7 @@ HMIS is tracked as a cross-programme information-system spine, not as a numbered
 
 ## Cross-cutting trust foundation
 
-1. **TRUST-01 — Governance charter — Pending.** Publish curator roles, domain-review responsibilities, contribution workflow, decision authority, conflict resolution, correction process, release cadence and succession policy. Do not imply institutional stewardship without agreement.
+1. **TRUST-01 — Governance charter — Complete.** Published the [Governance Charter](GOVERNANCE-CHARTER.md), [contribution workflow](../CONTRIBUTING.md), [decision log](GOVERNANCE-DECISION-LOG.md) and issue templates. The adopted interim model documents single-maintainer dependency, role-based decision rights, review states, corrections, conflicts, cadence and succession without implying institutional stewardship or custodian approval.
 2. **TRUST-02 — Versioned JSON Schemas — Pending.** Define schemas for indicator manifestations, source documents, HMIS objects, graph nodes and edges, evidence gaps, programme releases and review/change events.
 3. **TRUST-03 — Metadata-quality specification — Pending.** Publish the nine-field completeness rubric, weights, missing-value treatment, metadata-level rules and relationship vocabulary; generate scores through validation.
 4. **TRUST-04 — Persistent identity and lifecycle policy — Pending.** Define record ID, source ID, canonical URI, business version and source-version rules plus `effectiveDate`, `retirementDate`, `replaces` and `replacedBy` semantics.
