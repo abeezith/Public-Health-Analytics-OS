@@ -124,6 +124,18 @@ This log records material governance decisions separately from indicator and sof
 - **Migration and review date:** Add result-level relationship summaries under UNIFY-08 and automated navigation gates under UNIFY-10. Review no later than 7 September 2027.
 - **Supersedes:** One-way and view-local navigation behavior through UNIFY-06.
 
+## GOV-DEC-010 — Publish class-aware, filter-aware result summaries
+
+- **Date:** 7 September 2026
+- **Status:** Adopted
+- **Decision owner:** Analytics-OS maintainer
+- **Decision:** Every primary Registry discovery view must summarize its current filtered result with the applicable object classes, active filters and leading categories. Each summary must state its counting boundary; the HMIS view must distinguish its 54 derived indicators from all 1,046 HMIS knowledge objects.
+- **Reason and evidence:** A result count without its object class can make a filtered indicator subset appear to be the complete knowledge layer. Dynamic summaries make the existing taxonomy and identity model visible at the point of interpretation.
+- **Alternatives considered:** Static explanatory copy alone was rejected because it does not reflect active filters. Combining indicators, HMIS objects and report occurrences into one undifferentiated count was rejected because their identities and analytical roles differ.
+- **Affected artifacts or decision rights:** Registry interface, styles, result-count language, workstream tracker and documentation. No source record, canonical identity, evidence status or quality score is changed.
+- **Migration and review date:** Add automated result-summary count and accessibility gates under UNIFY-10. Review no later than 7 September 2027.
+- **Supersedes:** Ambiguous view-local result counts through UNIFY-07.
+
 ## Decision record template
 
 - **ID and title:**

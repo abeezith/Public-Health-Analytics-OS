@@ -8,7 +8,7 @@ Promise.all([
   window.phaosUnifiedModelPromise,
   fetch('./data/hmis/crosswalks.json?v=unify-07-1.0.0', {cache:'no-store'}).then(r=>r.json())
 ]).then(([model,crosswalk])=>{
-  hmisState.objects=model.records.filter(record=>record.registryMemberships.includes('hmis')).map(record=>({...record.hmisMetadata,canonicalObjectId:record.canonicalObjectId,canonicalUri:record.canonicalUri,canonicalObjectType:record.canonicalObjectType,representations:record.representations,systemPortalTags:record.systemPortalTags}));
+  hmisState.objects=model.records.filter(record=>record.registryMemberships.includes('hmis')).map(record=>({...record.hmisMetadata,canonicalObjectId:record.canonicalObjectId,canonicalUri:record.canonicalUri,canonicalObjectType:record.canonicalObjectType,representations:record.representations,navigation:record.navigation,systemPortalTags:record.systemPortalTags}));
   hmisState.index=new Map(hmisState.objects.map(x=>[x.id,x]));
   hmisState.crosswalks=new Map((crosswalk.indicatorElementCrosswalks||[]).map(x=>[x.indicatorId,x]));
   const counts=hmisState.objects.reduce((acc,item)=>((acc[item.objectType]=(acc[item.objectType]||0)+1),acc),{});
@@ -59,6 +59,14 @@ function hmisFilter(){
     return (!q||text.includes(q))&&(type==='All objects'||x.objectType===type)&&(component==='All components'||x.component===component)&&(facility==='All facilities'||(x.facilityTypes||[]).includes(facility))&&(version==='All versions'||x.versionStatus===version);
   }).sort((a,b)=>a.objectType.localeCompare(b.objectType)||a.name.localeCompare(b.name));
   h$('hmis-clear').hidden=!(q||type!=='All objects'||component!=='All components'||facility!=='All facilities'||version!=='All versions');
+  const summaries=window.phaosResultSummaries,counts=Object.fromEntries(summaries.counts(hmisState.filtered,x=>x.objectType)),occurrenceLinked=hmisState.filtered.filter(x=>(x.navigation?.occurrences||[]).length).length,graphLinked=hmisState.filtered.filter(x=>x.navigation?.graphNode).length;
+  summaries.render('hmis-result-summary',{
+    eyebrow:'Result summary · HMIS knowledge layer',title:`${hmisState.filtered.length.toLocaleString()} HMIS knowledge objects in this result`,
+    metrics:[{value:counts['Derived indicator']||0,label:'derived indicators'},{value:counts['Data element']||0,label:'data elements'},{value:counts['Published output']||0,label:'published outputs'},{value:counts['Validation rule']||0,label:'validation rules'},{value:occurrenceLinked,label:'linked to report occurrences'},{value:graphLinked,label:'linked to graph nodes'}],
+    groups:[{label:'Programme components',values:summaries.counts(hmisState.filtered,x=>x.component||x.domain||'Not classified')},{label:'Version status',values:summaries.counts(hmisState.filtered,x=>x.versionStatus||'Not stated')},{label:'Facility / reporting applicability',values:summaries.counts(hmisState.filtered,x=>x.facilityTypes)}],
+    filters:summaries.activeFilters([['Search',h$('hmis-search').value.trim(),''],['Object type',type,'All objects'],['Component',component,'All components'],['Facility',facility,'All facilities'],['Version',version,'All versions']]),
+    boundary:'Derived indicators are one HMIS object class. The 54 derived indicators do not equal the full HMIS layer of 1,046 knowledge objects.'
+  });
   hmisRender();
 }
 function hmisRender(){

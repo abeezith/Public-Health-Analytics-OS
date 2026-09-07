@@ -108,6 +108,22 @@ window.phaosNavigation={
 };
 function closeActiveModal(){if(!$('modal-backdrop').hidden)$('modal-close').click();}
 
+window.phaosResultSummaries={
+  counts(items,accessor){
+    const counts=new Map();
+    items.forEach(item=>{const raw=accessor(item),values=Array.isArray(raw)?raw:[raw];values.filter(Boolean).forEach(value=>counts.set(String(value),(counts.get(String(value))||0)+1));});
+    return [...counts].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0]));
+  },
+  activeFilters(entries){return entries.filter(([,value,defaultValue])=>value&&value!==defaultValue).map(([label,value])=>({label,value}));},
+  render(id,{eyebrow,title,metrics,groups=[],filters=[],boundary}){
+    const target=$(id);if(!target)return;
+    const metricHtml=metrics.map(metric=>`<div><strong>${esc(metric.value)}</strong><span>${esc(metric.label)}</span></div>`).join('');
+    const filterHtml=filters.length?`<div class="summary-filters"><b>Active filters</b>${filters.map(item=>`<span>${esc(item.label)}: ${esc(item.value)}</span>`).join('')}</div>`:'<div class="summary-filters"><b>Active filters</b><span>None · showing the full view</span></div>';
+    const groupHtml=groups.filter(group=>group.values.length).map(group=>`<div class="summary-group"><b>${esc(group.label)}</b><ul>${group.values.slice(0,4).map(([label,count])=>`<li><span>${esc(label)}</span><strong>${esc(count)}</strong></li>`).join('')}</ul></div>`).join('');
+    target.innerHTML=`<section class="result-summary-card"><div class="result-summary-head"><div><p class="eyebrow">${esc(eyebrow)}</p><h3>${esc(title)}</h3></div>${filterHtml}</div><div class="summary-metrics">${metricHtml}</div>${groupHtml?`<div class="summary-groups">${groupHtml}</div>`:''}<p class="summary-boundary"><strong>Counting boundary:</strong> ${esc(boundary)}</p></section>`;
+  }
+};
+
 window.phaosUnifiedModelPromise=fetch('./data/registry/unified-read-model.json?v=unify-07-1.2.0',{cache:'no-store'}).then(response=>{
   if(!response.ok)throw new Error(`Unified read model request failed: ${response.status}`);
   return response.json();
@@ -117,7 +133,7 @@ window.phaosUnifiedModelPromise.then(model => {
   window.phaosNavigation.initialize(model);
   window.dispatchEvent(new Event('phaos:navigation-ready'));
   const data={coverage:model.coverage||{}};
-  state.indicators=model.records.filter(record=>record.registryMemberships.includes('indicator')).map(record=>({...record.indicatorMetadata,canonicalObjectId:record.canonicalObjectId,canonicalUri:record.canonicalUri,canonicalObjectType:record.canonicalObjectType,representations:record.representations,normalizedLowestReportingLevel:record.normalizedLowestReportingLevel,normalizedProgrammeTags:record.programmeTags,systemPortalTags:record.systemPortalTags}));
+  state.indicators=model.records.filter(record=>record.registryMemberships.includes('indicator')).map(record=>({...record.indicatorMetadata,canonicalObjectId:record.canonicalObjectId,canonicalUri:record.canonicalUri,canonicalObjectType:record.canonicalObjectType,representations:record.representations,navigation:record.navigation,normalizedLowestReportingLevel:record.normalizedLowestReportingLevel,normalizedProgrammeTags:record.programmeTags,systemPortalTags:record.systemPortalTags}));
   $('metric-indicators').textContent = state.indicators.length;
   $('metric-domains').textContent = new Set(state.indicators.map(x => x.domain)).size;
   if (data.coverage && $('metric-sources')) $('metric-sources').textContent = data.coverage.sourceCompleteCatalogues;
@@ -172,6 +188,14 @@ function filter() {
     return (!q || text.includes(q)) && (geography==='All geographies'||geo===geography) && (program==='All India programmes'||x.normalizedProgrammeTags.includes(program)) && (system==='All systems / portals'||x.systemPortalTags.includes(system)) && (component==='All programme components'||x.programmeComponent===component) && (level==='All lowest reporting levels'||x.normalizedLowestReportingLevel===level) && (domain==='All domains'||x.domain===domain) && (type==='All types'||x.type===type) && (measure==='All measure types'||normalizedMeasure===measure) && (source==='All sources'||x.source===source) && (pillar==='All WHO pillars'||(x.whoPillars||[]).includes(pillar));
   }).sort((a,b)=>sort==='domain'?a.domain.localeCompare(b.domain)||a.name.localeCompare(b.name):sort==='id'?a.id.localeCompare(b.id):a.name.localeCompare(b.name));
   $('clear').hidden = !(q || geography!=='All geographies' || program!=='All India programmes' || system!=='All systems / portals' || component!=='All programme components' || level!=='All lowest reporting levels' || domain!=='All domains' || type!=='All types' || measure!=='All measure types' || source!=='All sources' || pillar!=='All WHO pillars');
+  const summaries=window.phaosResultSummaries,linked=state.filtered.filter(x=>(x.navigation?.occurrences||[]).length).length;
+  summaries.render('indicator-result-summary',{
+    eyebrow:'Result summary · indicator manifestations',title:`${state.filtered.length.toLocaleString()} indicators in this result`,
+    metrics:[{value:new Set(state.filtered.map(x=>x.domain).filter(Boolean)).size,label:'domains'},{value:new Set(state.filtered.map(x=>x.source).filter(Boolean)).size,label:'source labels'},{value:new Set(state.filtered.map(x=>x.measureType).filter(Boolean)).size,label:'measure types'},{value:linked,label:'linked to report occurrences'}],
+    groups:[{label:'Leading domains',values:summaries.counts(state.filtered,x=>x.domain)},{label:'Measure types',values:summaries.counts(state.filtered,x=>x.measureType||'Unclassified')},{label:'Systems / portals',values:summaries.counts(state.filtered,x=>x.systemPortalTags)}],
+    filters:summaries.activeFilters([['Search',$('search').value.trim(),''],['Geography',geography,'All geographies'],['Programme',program,'All India programmes'],['System / portal',system,'All systems / portals'],['Component',component,'All programme components'],['Lowest level',level,'All lowest reporting levels'],['Domain',domain,'All domains'],['Type',type,'All types'],['Measure',measure,'All measure types'],['Source',source,'All sources'],['WHO pillar',pillar,'All WHO pillars']]),
+    boundary:system==='HMIS'?'These are indicator manifestations tagged to HMIS. They are not the complete 1,046-object HMIS knowledge layer; open HMIS objects to see all object classes.':'This view counts indicator manifestations. HMIS data elements, outputs, validation rules and report-column occurrences are separate object classes.'
+  });
   render();
 }
 function render() {

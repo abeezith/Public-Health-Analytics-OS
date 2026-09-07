@@ -12,12 +12,12 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://abeezith.github.io/Public-Health-Analytics-OS/indicators/">
   <link rel="alternate" type="application/ld+json" href="data/graph/schemaorg.jsonld" title="India programme knowledge graph Schema.org profile">
-  <link rel="stylesheet" href="styles.css?v=unify-07-1.0.0">
+  <link rel="stylesheet" href="styles.css?v=unify-08-1.0.0">
   <script src="https://cdn.jsdelivr.net/npm/cytoscape@3.34.2/dist/cytoscape.min.js" defer></script>
-  <script src="app.js?v=unify-07-1.2.0" defer></script>
-  <script src="hmis.js?v=unify-07-1.0.0" defer></script>
+  <script src="app.js?v=unify-08-1.0.0" defer></script>
+  <script src="hmis.js?v=unify-08-1.0.0" defer></script>
   <script src="graph.js?v=unify-07-1.0.0" defer></script>
-  <script src="report-schemas.js?v=unify-07-1.0.0" defer></script>
+  <script src="report-schemas.js?v=unify-08-1.0.0" defer></script>
 </head>
 <body>
 <main id="top">
@@ -96,7 +96,7 @@
         </div>
       </div>
     </div>
-    <div class="indicator-grid" id="indicator-grid" aria-live="polite"></div><button class="load-more" id="load-more" hidden>Load more indicators</button>
+    <div id="indicator-result-summary" class="result-summary" aria-live="polite"></div><div class="indicator-grid" id="indicator-grid" aria-live="polite"></div><button class="load-more" id="load-more" hidden>Load more indicators</button>
     </div>
     <div id="registry-dynamic-panels"></div>
   </section>
@@ -114,7 +114,7 @@
     <div class="hmis-alert"><strong>Public-source-bounded</strong><p>The six April-2025 facility formats and both May-2025 headquarters formats are now represented. Historical NHSRC definitions and FY 2019-20 OGD outputs remain explicitly versioned; this is not presented as the complete live national HMIS dictionary.</p></div>
     <div class="hmis-tabs" role="tablist" aria-label="HMIS object type"><button class="active" data-hmis-type="All objects">All objects</button><button data-hmis-type="Derived indicator">Indicators</button><button data-hmis-type="Data element">Data elements</button><button data-hmis-type="Published output">Published outputs</button><button data-hmis-type="Validation rule">Validation rules</button></div>
     <div class="hmis-filter-panel"><label class="search-shell"><span>⌕</span><input id="hmis-search" aria-label="Search HMIS knowledge registry" placeholder="Search HMIS field, indicator, formula, facility or rule…"></label><div class="select-row"><label><span>Object type</span><select id="hmis-object-type"><option>All objects</option></select></label><label><span>Programme component</span><select id="hmis-component"><option>All components</option></select></label><label><span>Facility applicability</span><select id="hmis-facility"><option>All facilities</option></select></label><label><span>Version status</span><select id="hmis-version"><option>All versions</option></select></label></div></div>
-    <div class="results-bar"><p><strong id="hmis-result-count">0</strong> HMIS knowledge objects found</p><div class="results-actions"><button id="hmis-clear" hidden>Clear HMIS filters</button><div class="view-switch" role="group" aria-label="HMIS result view"><button type="button" data-hmis-view="cards" aria-pressed="true"><span aria-hidden="true">▦</span> Cards</button><button type="button" data-hmis-view="table" aria-pressed="false"><span aria-hidden="true">☷</span> Table</button></div></div></div><div class="hmis-grid" id="hmis-grid" aria-live="polite"></div><button class="load-more" id="hmis-load-more" hidden>Load more HMIS objects</button>
+    <div class="results-bar"><p><strong id="hmis-result-count">0</strong> HMIS knowledge objects found</p><div class="results-actions"><button id="hmis-clear" hidden>Clear HMIS filters</button><div class="view-switch" role="group" aria-label="HMIS result view"><button type="button" data-hmis-view="cards" aria-pressed="true"><span aria-hidden="true">▦</span> Cards</button><button type="button" data-hmis-view="table" aria-pressed="false"><span aria-hidden="true">☷</span> Table</button></div></div></div><div id="hmis-result-summary" class="result-summary" aria-live="polite"></div><div class="hmis-grid" id="hmis-grid" aria-live="polite"></div><button class="load-more" id="hmis-load-more" hidden>Load more HMIS objects</button>
   </section>
   <section class="graph-explorer" id="knowledge-graph">
     <div class="section-heading"><div><p class="eyebrow">Knowledge graph · Five-programme release</p><h2>See meaning, provenance and comparability—not just connections.</h2></div><p class="section-intro">Move between RMNCH+A, NTEP, Immunization, vector-borne disease and NP-NCD concepts, with HMIS as a shared data spine. Select any relationship to inspect its evidence.</p></div>
@@ -144,7 +144,7 @@
       <div class="occurrence-summary" aria-label="Report occurrence summary"><article><strong id="occurrence-total">560</strong><span>all occurrences</span></article><article><strong id="occurrence-measures">525</strong><span>measure fields</span></article><article><strong id="occurrence-links">508</strong><span>canonical links</span></article><article><strong id="occurrence-candidates">17</strong><span>held candidates</span></article><article><strong id="occurrence-dimensions">35</strong><span>dimensions</span></article></div>
       <div class="occurrence-filter-panel"><label class="search-shell"><span>⌕</span><input id="occurrence-search" aria-label="Search report-column occurrences" placeholder="Search source label, code, module, dimension or linked object…"></label><div class="select-row"><label><span>Occurrence class</span><select id="occurrence-class"><option>All occurrence classes</option></select></label><label><span>Module / category</span><select id="occurrence-group"><option>All modules / categories</option></select></label><label><span>Linkage status</span><select id="occurrence-linkage"><option>All linkage statuses</option></select></label><label><span>Sort</span><select id="occurrence-sort"><option value="ordinal">Column ordinal</option><option value="name">Source label</option><option value="group">Module / category</option></select></label></div></div>
       <div class="results-bar"><p><strong id="occurrence-result-count">0</strong> report-column occurrences found</p><div class="results-actions"><button id="occurrence-clear" hidden>Clear occurrence filters</button><div class="view-switch" role="group" aria-label="Report occurrence result view"><button type="button" data-occurrence-view="cards" aria-pressed="true"><span aria-hidden="true">▦</span> Cards</button><button type="button" data-occurrence-view="table" aria-pressed="false"><span aria-hidden="true">☷</span> Table</button></div></div></div>
-      <div id="occurrence-grid" class="occurrence-grid" aria-live="polite"></div><button class="load-more" id="occurrence-load-more" hidden>Load more occurrences</button>
+      <div id="occurrence-result-summary" class="result-summary" aria-live="polite"></div><div id="occurrence-grid" class="occurrence-grid" aria-live="polite"></div><button class="load-more" id="occurrence-load-more" hidden>Load more occurrences</button>
     </div>
   </section>
   <section class="india-audit" id="india"><div><p class="eyebrow">India programme release</p><h2>Indian public-health indicators are becoming traceable systems.</h2><p>The registry now includes deep NTEP, RMNCH+A, Immunization and NP-NCD programme verticals, the vector-borne disease graph foundation, and the linked HMIS knowledge model. Source-specific variants remain distinct, while curated crosswalks support discovery without claiming false equivalence.</p><a class="primary-action" href="#registry" onclick="setTimeout(()=>{document.getElementById('geography').value='India';document.getElementById('geography').dispatchEvent(new Event('change'))},0)">Browse India indicators <span>→</span></a></div><div class="audit-metrics"><article><strong id="metric-india">643</strong><span>India-specific indicator records</span></article><article><strong id="metric-india-sources">17</strong><span>official source families represented</span></article><article><strong>6</strong><span>WHO building blocks available as filters</span></article></div></section>

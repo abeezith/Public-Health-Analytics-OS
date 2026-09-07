@@ -64,6 +64,14 @@ function occurrenceFilter(){
   });
   occurrenceState.filtered.sort(sort==='name'?(a,b)=>a.discovery.displayName.localeCompare(b.discovery.displayName):sort==='group'?(a,b)=>a.discovery.group.localeCompare(b.discovery.group)||a.columnOrdinal-b.columnOrdinal:(a,b)=>a.columnOrdinal-b.columnOrdinal);
   o$('occurrence-clear').hidden=!(query||occurrenceClass!=='All occurrence classes'||group!=='All modules / categories'||linkage!=='All linkage statuses'||sort!=='ordinal');
+  const summaries=window.phaosResultSummaries,measures=occurrenceState.filtered.filter(item=>item.discovery.occurrenceClass==='Measure').length,dimensions=occurrenceState.filtered.filter(item=>item.discovery.occurrenceClass==='Dimension').length,canonical=occurrenceState.filtered.filter(item=>item.canonicalObjectId).length,candidates=occurrenceState.filtered.filter(item=>item.candidateObjectId).length;
+  summaries.render('occurrence-result-summary',{
+    eyebrow:'Result summary · report-schema occurrences',title:`${occurrenceState.filtered.length.toLocaleString()} observed columns in this result`,
+    metrics:[{value:measures,label:'measure fields'},{value:dimensions,label:'dimensions'},{value:canonical,label:'canonical links'},{value:candidates,label:'held candidates'},{value:new Set(occurrenceState.filtered.map(item=>item.discovery.group).filter(Boolean)).size,label:'modules / categories'}],
+    groups:[{label:'Occurrence classes',values:summaries.counts(occurrenceState.filtered,item=>item.discovery.occurrenceClass)},{label:'Linkage status',values:summaries.counts(occurrenceState.filtered,item=>item.discovery.linkageStatus)},{label:'Leading modules / categories',values:summaries.counts(occurrenceState.filtered,item=>item.discovery.group)}],
+    filters:summaries.activeFilters([['Search',o$('occurrence-search').value.trim(),''],['Class',occurrenceClass,'All occurrence classes'],['Module / category',group,'All modules / categories'],['Linkage',linkage,'All linkage statuses']]),
+    boundary:'Occurrences record version-specific report-column appearances. They do not increase the 4,743 canonical-object count or the 765 canonical HMIS data-element count.'
+  });
   occurrenceRender();
 }
 
