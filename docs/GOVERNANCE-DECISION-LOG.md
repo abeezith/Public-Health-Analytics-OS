@@ -82,6 +82,20 @@ This log records material governance decisions separately from indicator and sof
 - **Migration and review date:** Build and validate the consolidated read model under UNIFY-05, then expose occurrence-level discovery under UNIFY-06. Review no later than 7 September 2027.
 - **Supersedes:** The separate HMIS and report-schema discovery sections as primary navigation destinations; their anchors remain compatibility routes.
 
+## GOV-DEC-007 — Publish a consolidated discovery read model
+
+- **Date:** 7 September 2026
+- **Status:** Adopted
+- **Decision owner:** Project Owner, acting under the interim single-maintainer model
+- **Decision:** Generate and publish `PHAOS-UNIFIED-READ-MODEL` version `1.0.0` from the canonical identity index and governed source artifacts. Use it as the sole browser source for indicator and HMIS record arrays while preserving source-specific indicator and HMIS metadata in separate namespaces.
+- **Reason:** Browser-side expansion and federation duplicated build rules, allowed discovery facets to drift from their governed vocabulary, and made it difficult to verify that all interface views used the same identity baseline.
+- **Evidence:** The validator resolves 4,743 canonical objects, 4,797 representations, 3,751 indicator memberships, 1,046 HMIS memberships, 54 shared identities and 560 occurrences; all 508 canonical occurrence links resolve, all 17 candidates remain non-canonical, and the HMIS system facet retains 130 indicator manifestations.
+- **Boundary:** The read model is a static discovery projection, not a new source of truth or observed-value dataset. Consolidation does not assert semantic equivalence, aggregation safety, computability, source currency or custodian approval. Public bulk-download controls remain disabled.
+- **Alternatives considered:** Continue assembling five record sources in each browser; flatten shared indicator/HMIS records into one generic object. These were rejected because they preserve runtime drift or erase source-specific meaning.
+- **Affected artifacts:** `indicators/data/registry`, the read-model build and validation scripts, `app.js`, `hmis.js`, documentation and workstream trackers.
+- **Migration and review date:** Expose occurrence-level discovery under UNIFY-06 and include the model validator in automated release gates under UNIFY-10. Review no later than 7 September 2027.
+- **Supersedes:** The browser-federated implementation boundary recorded in GOV-DEC-006; it does not supersede the canonical identity index or source artifacts.
+
 ## Decision record template
 
 - **ID and title:**

@@ -1,7 +1,7 @@
 {
   "metadata": {
     "id": "PHAOS-WORKSTREAM-TRACKER-1",
-    "version": "2.6.0",
+    "version": "2.7.0",
     "updated": "2026-09-07",
     "analyticsOsRelease": "3.7",
     "humanReadableTracker": "../../../docs/PROGRAMME-WORKSTREAM-TRACKER.md",
@@ -27,7 +27,7 @@
   "executionOrder": [
     {"sequence":1,"taskRange":"RECON-00","label":"Evaluation reconciliation","status":"Complete"},
     {"sequence":2,"taskRange":"TRUST-01..TRUST-07","label":"Trust foundation","status":"In progress","completedTasks":["TRUST-01","TRUST-02","TRUST-03","TRUST-04"],"nextTask":"TRUST-05"},
-    {"sequence":3,"taskRange":"UNIFY-01..UNIFY-10","label":"Unified registry","status":"In progress","completedTasks":["UNIFY-01","UNIFY-02","UNIFY-03","UNIFY-04"],"nextTask":"UNIFY-05"},
+    {"sequence":3,"taskRange":"UNIFY-01..UNIFY-10","label":"Unified registry","status":"In progress","completedTasks":["UNIFY-01","UNIFY-02","UNIFY-03","UNIFY-04","UNIFY-05"],"nextTask":"UNIFY-06"},
     {"sequence":4,"taskRange":"UTILITY-01..UTILITY-06","label":"Analyst and programme utility","status":"Pending"},
     {"sequence":5,"taskRange":"OPMAP-01..OPMAP-04","label":"Operational-system mappings","status":"Pending"},
     {"sequence":6,"taskRange":"SEM-01..SEM-04","label":"Semantic Web publication","status":"Pending"},
@@ -56,7 +56,7 @@
   ],
   "parallelWorkstreams": [
     {"id":"TRUST","label":"Governance, schema, identity, provenance and lifecycle","status":"In progress","completedTasks":["TRUST-01","TRUST-02","TRUST-03","TRUST-04"],"nextTask":"TRUST-05"},
-    {"id":"UNIFIED_REGISTRY","label":"Unified object discovery, deduplication and navigation","status":"In progress","completedTasks":["UNIFY-01","UNIFY-02","UNIFY-03","UNIFY-04"],"nextTask":"UNIFY-05","dependencies":["TRUST-02","TRUST-04"]},
+    {"id":"UNIFIED_REGISTRY","label":"Unified object discovery, deduplication and navigation","status":"In progress","completedTasks":["UNIFY-01","UNIFY-02","UNIFY-03","UNIFY-04","UNIFY-05"],"nextTask":"UNIFY-06","dependencies":["TRUST-02","TRUST-04"]},
     {"id":"UTILITY","label":"Analyst and programme utility","status":"Pending","completedTasks":[],"nextTask":"UTILITY-01","dependency":"TRUST-02 and TRUST-03 for structured fields"},
     {"id":"OPMAP","label":"Operational-system mapping","status":"Pending","completedTasks":[],"nextTask":"OPMAP-01","blockedTasks":["OPMAP-02","OPMAP-03","OPMAP-04"]},
     {"id":"SEM","label":"Semantic Web and resolvable identity","status":"In progress","completedTasks":["SEM-00"],"nextTask":"SEM-01"},
@@ -78,7 +78,7 @@
       {"id":"UNIFY-02","label":"Persistent cross-registry identity","status":"Complete","policyId":"PHAOS-IDENTITY-001","policyVersion":"1.0.0","decisionId":"GOV-DEC-004","canonicalObjects":4743,"representations":4797,"sharedRegistryHmisIdentities":54,"reportColumnOccurrences":560,"canonicalOccurrenceLinks":508,"candidateOccurrences":17,"artifacts":["docs/IDENTITY-LIFECYCLE-POLICY.md","indicators/data/governance/identity-policy.json","indicators/data/governance/unified-identity-index.json","scripts/build-unified-identity-index.mjs","scripts/validate-unified-identities.mjs"]},
       {"id":"UNIFY-03","label":"Programme versus system/portal facets","status":"Complete","vocabularyId":"PHAOS-DISCOVERY-FACETS-001","vocabularyVersion":"1.0.0","decisionId":"GOV-DEC-005","hmisSystemIndicatorCount":130,"artifacts":["indicators/data/governance/discovery-facets.json","indicators/index.html","indicators/app.js","indicators/styles.css","docs/UNIFIED-REGISTRY-TAXONOMY.md"]},
       {"id":"UNIFY-04","label":"Single discovery interface","status":"Complete","decisionId":"GOV-DEC-006","interfaceModel":"Browser-federated Registry subviews","counts":{"canonicalObjects":4743,"indicatorManifestations":3751,"hmisKnowledgeObjects":1046,"reportColumnOccurrences":560},"features":["Unified content overview","Indicator card and table views","HMIS card and table views","Class-specific filters","Report-schema view","Knowledge-graph hand-off","Legacy HMIS anchor compatibility"],"nextTask":"UNIFY-05 consolidated read model","artifacts":["indicators/index.html","indicators/app.js","indicators/hmis.js","indicators/styles.css"]},
-      {"id":"UNIFY-05","label":"Consolidated read model","status":"Pending"},
+      {"id":"UNIFY-05","label":"Consolidated read model","status":"Complete","decisionId":"GOV-DEC-007","readModelId":"PHAOS-UNIFIED-READ-MODEL","readModelVersion":"1.0.0","counts":{"canonicalObjects":4743,"representations":4797,"indicatorMemberships":3751,"hmisMemberships":1046,"sharedIdentities":54,"reportOccurrences":560},"interfaceModel":"Generated consolidated discovery read model","artifacts":["indicators/data/registry/unified-read-model.json","indicators/data/registry/manifest.json","scripts/build-unified-read-model.mjs","scripts/validate-unified-read-model.mjs","indicators/app.js","indicators/hmis.js"]},
       {"id":"UNIFY-06","label":"Report-schema occurrence layer","status":"Pending"},
       {"id":"UNIFY-07","label":"Relationship navigation","status":"Pending"},
       {"id":"UNIFY-08","label":"Result summaries","status":"Pending"},
@@ -186,10 +186,12 @@
     "reportColumnOccurrences": 560,
     "canonicalOccurrenceLinks": 508,
     "candidateOccurrences": 17,
-    "completedTasks": ["UNIFY-01", "UNIFY-02", "UNIFY-03", "UNIFY-04"],
+    "completedTasks": ["UNIFY-01", "UNIFY-02", "UNIFY-03", "UNIFY-04", "UNIFY-05"],
     "hmisSystemIndicatorCount": 130,
-    "interfaceModel": "Browser-federated Registry subviews",
-    "nextTask": "UNIFY-05"
+    "interfaceModel": "Generated consolidated discovery read model",
+    "readModelId": "PHAOS-UNIFIED-READ-MODEL",
+    "readModelVersion": "1.0.0",
+    "nextTask": "UNIFY-06"
   },
   "publicationBoundary": "GitHub Pages may publish static HTML, JSON, JSON-LD, RDF and FHIR artifacts. It does not provide FHIR REST or terminology operations. Public bulk-download controls remain disabled unless separately authorized.",
   "onboardingRule": "Whenever a programme is added, append a programme row at FHIR gate G0, instantiate PR-01..PR-12, and nest PF-01..PF-13 under PR-10. Registry, graph, utility and FHIR maturity are reported independently."

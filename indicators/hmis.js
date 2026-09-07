@@ -5,14 +5,10 @@ const h$ = id => document.getElementById(id);
 const hmisFields = ['hmis-search','hmis-object-type','hmis-component','hmis-facility','hmis-version'];
 
 Promise.all([
-  fetch('./data/hmis/catalog.json?v=hmis-1.4.0', {cache:'no-store'}).then(r=>r.json()),
-  fetch('./data/hmis/crosswalks.json?v=hmis-1.4.0', {cache:'no-store'}).then(r=>r.json()),
-  fetch('./data/hmis/headquarters-elements.json?v=hmis-1.4.0', {cache:'no-store'}).then(r=>r.json()),
-  fetch('./data/hmis/facility-format-corrections.json?v=hmis-1.4.0', {cache:'no-store'}).then(r=>r.json())
-]).then(([catalog,crosswalk,headquarters,facilityCorrections])=>{
-  const headquartersObjects=expandHeadquarters(headquarters);
-  const correctedCatalog=applyFacilityCorrections(catalog.objects||[],facilityCorrections);
-  hmisState.objects=[...correctedCatalog,...expandFacilityCorrections(facilityCorrections),...headquartersObjects];
+  window.phaosUnifiedModelPromise,
+  fetch('./data/hmis/crosswalks.json?v=unify-05-1.0.0', {cache:'no-store'}).then(r=>r.json())
+]).then(([model,crosswalk])=>{
+  hmisState.objects=model.records.filter(record=>record.registryMemberships.includes('hmis')).map(record=>({...record.hmisMetadata,canonicalObjectId:record.canonicalObjectId,canonicalUri:record.canonicalUri,canonicalObjectType:record.canonicalObjectType,representations:record.representations,systemPortalTags:record.systemPortalTags}));
   hmisState.index=new Map(hmisState.objects.map(x=>[x.id,x]));
   hmisState.crosswalks=new Map((crosswalk.indicatorElementCrosswalks||[]).map(x=>[x.indicatorId,x]));
   const counts=hmisState.objects.reduce((acc,item)=>((acc[item.objectType]=(acc[item.objectType]||0)+1),acc),{});
@@ -31,23 +27,6 @@ Promise.all([
   syncHmisTabs();syncHmisViewButtons();
   hmisFilter();
 }).catch(()=>{h$('hmis-grid').innerHTML='<div class="empty-state"><h3>HMIS data could not be loaded</h3><p>Reload the page to retry the structured catalogue.</p></div>';});
-
-function expandHeadquarters(doc){
-  return (doc.records||[]).map(([id,reportingUnit,code,name,component,domain,page])=>{
-    const stock=component==='District stock position',average=name.startsWith('Average '),rmncha=!['Emergency and referral services','Communicable diseases','Oral health'].includes(domain);
-    return {id,objectType:'Data element',name,definition:`Monthly HMIS ${reportingUnit} reporting element: ${name}.`,displayDefinition:`Monthly HMIS ${reportingUnit} reporting element: ${name}.`,component,domain,facilityTypes:[reportingUnit],moduleTitles:[component],sourceCodes:[code],sourceLocations:[`${reportingUnit} p.${page}`],collectionDimensions:stock?['Balance from previous month','Stock received','Unusable stock','Stock distributed','Total stock']:['Numbers reported during the month'],recordClass:'Raw headquarters reporting data element',reportingPeriod:'Monthly',reportingLevels:reportingUnit==='Block HQ'?['Block/planning unit','District','State/UT','National']:['District','State/UT','National'],lowestReportingLevel:reportingUnit==='Block HQ'?'Block/planning unit':'District',aggregationRule:stock?'Stock-flow vector; preserve all five columns and validate the balance equation':average?'Non-additive average; aggregate from numerator and denominator':'Generally additive count subject to source-defined subgroup and duplicate rules',zeroBlankSemantics:'Do not collapse zero, blank, not applicable and non-reporting.',whoPillars:['Health information systems','Service delivery',...(stock?['Medical products, vaccines and technologies']:[])],sourceVersion:doc.metadata.sourceVersion,versionStatus:'Current public headquarters form candidate',sourceUrl:doc.metadata.sourceUrl,sourceAuthority:doc.metadata.sourceAuthority,provenanceStatus:'Exact form label and code retained; section headings excluded',lineage:`Programme or district activity → ${reportingUnit} monthly format → HMIS aggregation → analytical output`,uses:['Programme monitoring','Administrative-unit review','Data-quality review'],caveats:'A form field is not automatically a calculated indicator. Preserve reporting unit, code, collection dimensions and source version.',relatedIndicatorIds:[],relatedValidationRuleIds:[],measureType:null,scaleDisplay:'Not specified',normalizedFormula:'',denominatorPopulation:'Not applicable to a raw reporting field',programmeTags:rmncha?['NHM RMNCH+A']:[]};
-  });
-}
-
-function applyFacilityCorrections(objects,doc){
-  const rows=objects.map(x=>({...x,facilityTypes:[...(x.facilityTypes||[])],sourceLocations:[...(x.sourceLocations||[])]})),index=new Map(rows.map(x=>[x.id,x]));
-  for(const mutation of doc.mutations||[]){const item=index.get(mutation.id);if(!item)continue;for(const [facility,location] of mutation.remove||[]){item.facilityTypes=item.facilityTypes.filter(value=>value!==facility);item.sourceLocations=item.sourceLocations.filter(value=>value!==location);}for(const [facility,location] of mutation.add||[]){if(!item.facilityTypes.includes(facility))item.facilityTypes.push(facility);if(!item.sourceLocations.includes(location))item.sourceLocations.push(location);}}
-  return rows;
-}
-
-function expandFacilityCorrections(doc){
-  return (doc.records||[]).map(([id,facility,code,name,component,domain,page])=>({id,objectType:'Data element',name,definition:`Monthly HMIS ${facility} reporting element: ${name}.`,displayDefinition:`Monthly HMIS ${facility} reporting element: ${name}.`,component,domain,facilityTypes:[facility],moduleTitles:[component],sourceCodes:[code],sourceLocations:[`${facility} p.${page}`],collectionDimensions:['Numbers reported during the month'],recordClass:'Raw facility reporting data element',reportingPeriod:'Monthly',reportingLevels:['Facility/reporting unit','Block/subdistrict','District','State/UT','National'],lowestReportingLevel:'Facility/reporting unit',aggregationRule:'Generally additive count subject to source-defined subgroup and duplicate rules',zeroBlankSemantics:'Do not collapse zero, blank, not applicable and non-reporting.',whoPillars:['Health information systems','Service delivery'],sourceVersion:'Revised HMIS formats effective April 2025',versionStatus:'Current public form candidate - verified correction',sourceUrl:'https://nhm.hp.gov.in/reporting-formats',sourceAuthority:'HMIS / National Health Mission',provenanceStatus:'Exact facility-specific form label retained after code-collision review',lineage:`Primary service event → ${facility} monthly format → HMIS aggregation → analytical output`,uses:['Routine service monitoring','Facility and district planning','Data-quality review'],caveats:'A form field is not automatically a calculated indicator. Facility-specific wording remains distinct.',relatedIndicatorIds:[],relatedValidationRuleIds:[],measureType:null,scaleDisplay:'Not specified',normalizedFormula:'',denominatorPopulation:'Not applicable to a raw reporting field',programmeTags:domain==='Maternal, newborn and reproductive health'?['NHM RMNCH+A']:[]}));
-}
 
 function hmisFill(id,values){[...new Set(values)].sort().forEach(value=>h$(id).add(new Option(value,value)));}
 hmisFields.forEach(id=>h$(id).addEventListener(id==='hmis-search'?'input':'change',()=>{

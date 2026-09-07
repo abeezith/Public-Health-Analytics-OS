@@ -77,58 +77,14 @@ function initializeRegistryHub(){
 }
 initializeRegistryHub();
 
-function normalizeLowestReportingLevel(value=''){
-  const level=String(value).toLowerCase();
-  if(!level)return 'Not specified';
-  if(level.includes('community')||level.includes('household')||level.includes('village')||level.includes('gram panchayat')||level.includes('session'))return 'Community';
-  if(level.includes('sub-centre')||level.includes('sub-cent'))return 'Sub-centre';
-  if(level.includes('facility')||level.includes('laboratory')||level.includes('dmc')||level.includes('phi')||level.includes('specimen collection'))return 'Facility / laboratory';
-  if(level.includes('block')||level.includes('planning unit'))return 'Block / planning unit';
-  if(level.includes('district'))return 'District';
-  if(level.includes('state'))return 'State / UT';
-  if(level.includes('national')&&!level.includes('below'))return 'National';
-  return 'Source-defined / unresolved';
-}
+window.phaosUnifiedModelPromise=fetch('./data/registry/unified-read-model.json?v=unify-05-1.0.0',{cache:'no-store'}).then(response=>{
+  if(!response.ok)throw new Error(`Unified read model request failed: ${response.status}`);
+  return response.json();
+});
 
-const nonProgrammeLabels=new Set(['Health Management Information System','National Family Health Survey','National Health Profile']);
-function programmeTagsFor(item){
-  return [...new Set([...(item.programmeTags||[]),item.indiaProgram].filter(value=>value&&!nonProgrammeLabels.has(value)))];
-}
-const systemPortalRules=[
-  ['HMIS',/\bhmis\b/i],
-  ['RCH Portal',/\brch\b/i],
-  ['Ni-kshay',/ni-?kshay/i],
-  ['National NCD Portal',/national ncd portal|np-ncd portal|\bamrit\b|\bcbac\b/i],
-  ['U-WIN',/\bu-win\b/i],
-  ['eVIN',/\bevin\b/i],
-  ['IHIP',/\bihip\b/i],
-  ['SAFE-VAC',/safe-vac/i],
-  ['DVDMS',/\bdvdms\b/i],
-  ['Sankalak / SIMS',/sankalak|\bsims\b/i],
-  ['RKSK programme MIS',/rksk programme mis/i],
-  ['Mission Indradhanush reporting',/mission indradhanush monitoring and reporting/i],
-  ['PM-JAY transaction and dashboard systems',/pm-jay insights|pm-jay.*transaction/i],
-  ['ABDM registries and dashboard',/abdm registries|abdm.*dashboard/i]
-];
-function systemPortalTagsFor(item){
-  const evidence=[item.indiaReportingSystem,item.dataSource,item.source].filter(Boolean).join(' ');
-  return systemPortalRules.filter(([,pattern])=>pattern.test(evidence)).map(([label])=>label);
-}
-
-function expandNcdRelease(release) {
-  const programme='National Programme for Prevention and Control of Non-Communicable Diseases';
-  const guidelines=release.sources.find(x=>x.id==='IND_NPNCD_2023_GUIDELINES'), training=release.sources.find(x=>x.id==='IND_NPNCD_TRAINING_2025');
-  return (release.records||[]).map(([id,name,component,measureType,denominator,numerator,definition,reportingLevel,lowestReportingLevel,frequency,whoPillars,sourcePage])=>{
-    const source=id>='IND-NPNCD2-040'?training:guidelines, percentage=measureType==='Percentage/proportion', count=measureType==='Count';
-    return {id,name,officialIndicatorName:name,officialNameStatus:'Official/source wording preserved',domain:'Noncommunicable diseases',subdomain:component,type:count?'Output / activity':component==='Control and outcomes'||component==='Incidence'?'Outcome / performance':'Process / performance',code:'',definition,displayDefinition:`${definition} Denominator population: ${denominator}.`,numerator,denominator,formula:percentage?'(Numerator / denominator) × 100':count?'Count':'Source-defined status, change or categorical method',unit:percentage?'Percentage':count?'Number':'Source-defined index/status',population:denominator,frequency,dataSource:'National NCD Portal and NP-NCD programme reporting',disaggregation:'Geography; sex; age; disease; facility type and cadre where collected',direction:'Interpret against the official programme target and source-defined method',uses:'Programme monitoring; service-cascade analysis; readiness assessment; local planning; data-quality review',caveats:id==='IND-NPNCD2-038'?'The official label is preserved but appears internally inconsistent: it specifies blood-pressure control for people with diabetes. Custodian clarification is required before computation or comparison.':'Source-table manifestation. Confirm current portal field codes, exclusions, reporting period and validation rules before operational computation.',source:`India — ${source.source}`,org:'Ministry of Health and Family Welfare, Government of India',url:source.url,authority:5,utility:9,group:id.replaceAll('-','_'),confidence:id==='IND-NPNCD2-038'?'Moderate':'High',status:'Active / published',verified:'2026-09-05',collection:'India national programme extension — official source-table release',sourceId:source.id,language:'English',metadataLevel:'A',sourceVariant:false,completeness:94,whoPillars,whoPillarPrimary:whoPillars[0],whoPillarBasis:'Analytical mapping by the Public Health Analytics-OS registry to the WHO health-system building-block framework; not assigned by the source custodian.',country:'India',indiaProgram:programme,programmeTags:[programme],programmeComponent:component,indiaReportingSystem:'National NCD Portal and NP-NCD programme reporting',administrativeLevel:reportingLevel,reportingLevel,lowestReportingLevel,facilityType:lowestReportingLevel==='Facility'?'Programme facility, including AAM/SHC, PHC, CHC or DH as source-defined':lowestReportingLevel==='Community/household'?'Community/household and linked primary-care facility':'Administrative programme unit',reportingUnit:lowestReportingLevel,responsibleCadre:'Source-defined NP-NCD programme team and reporting facility',recordType:'Official programme monitoring manifestation',objectType:'Indicator manifestation',sourceDocument:source.document,sourceSection:sourcePage,sourceItemCode:'',sourceVersion:source.version,sourcePage,indiaReleaseStatus:'Included — source-complete within declared NP-NCD boundary',measureType,scaleDisplay:percentage?'%':count?'count':'source-defined index/status',normalizedFormula:percentage?'(numerator ÷ denominator) × 100':count?'Count of source-defined events or units':'Source-defined; not computable from the cited table alone',denominatorPopulation:denominator,aggregationRule:percentage?'Aggregate by summing compatible numerators and denominators, then recomputing; do not average reported percentages.':count?'Sum only across mutually exclusive reporting units and compatible periods.':'Do not aggregate until the source-defined scoring or change method is obtained.',zeroDenominatorRule:percentage?'If the denominator is zero, report not applicable/undefined; do not report 0%.':'Not applicable unless defined by the source.',relatedElementIds:[],relatedIndicatorIds:id==='IND-NPNCD2-040'?['IND-NPNCD-001']:id==='IND-NPNCD2-041'?['IND-NPNCD-002','IND-NPNCD-005']:id==='IND-NPNCD2-042'?['IND-NPNCD-003']:id==='IND-NPNCD2-043'?['IND-NPNCD-004']:[],crosswalkStatus:'No exact computable HMIS crosswalk asserted; source and HMIS manifestations remain distinct.',lineage:`Community or programme service event → ${lowestReportingLevel} reporting → National NCD Portal / programme aggregation → analytical output`,currentness:'Official source checked 5 September 2026'};
-  });
-}
-
-Promise.all([
-  fetch('./data/indicators.json?v=ncd-1.0.0', { cache: 'no-store' }).then(r => r.json()),
-  fetch('./data/ncd/release.json?v=ncd-1.0.0', { cache: 'no-store' }).then(r => r.json())
-]).then(([data,ncd]) => {
-  state.indicators = [...(data.indicators || []),...expandNcdRelease(ncd)].map(x=>({...x,normalizedLowestReportingLevel:normalizeLowestReportingLevel(x.lowestReportingLevel),normalizedProgrammeTags:programmeTagsFor(x),systemPortalTags:systemPortalTagsFor(x)}));
+window.phaosUnifiedModelPromise.then(model => {
+  const data={coverage:model.coverage||{}};
+  state.indicators=model.records.filter(record=>record.registryMemberships.includes('indicator')).map(record=>({...record.indicatorMetadata,canonicalObjectId:record.canonicalObjectId,canonicalUri:record.canonicalUri,canonicalObjectType:record.canonicalObjectType,representations:record.representations,normalizedLowestReportingLevel:record.normalizedLowestReportingLevel,normalizedProgrammeTags:record.programmeTags,systemPortalTags:record.systemPortalTags}));
   $('metric-indicators').textContent = state.indicators.length;
   $('metric-domains').textContent = new Set(state.indicators.map(x => x.domain)).size;
   if (data.coverage && $('metric-sources')) $('metric-sources').textContent = data.coverage.sourceCompleteCatalogues;
@@ -143,10 +99,10 @@ Promise.all([
   if (data.coverage && $('metric-immunization-hmis')) $('metric-immunization-hmis').textContent = data.coverage.immunizationLinkedHmisObjects || 0;
   if (data.coverage && $('metric-immunization-sources')) $('metric-immunization-sources').textContent = data.coverage.immunizationSourceDocuments || 0;
   if ($('metric-ncd')) $('metric-ncd').textContent = state.indicators.filter(x=>(x.programmeTags||[]).includes('National Programme for Prevention and Control of Non-Communicable Diseases')).length;
-  if ($('metric-ncd-new')) $('metric-ncd-new').textContent = ncd.records.length;
-  if ($('metric-ncd-sources')) $('metric-ncd-sources').textContent = ncd.sources.length;
+  if ($('metric-ncd-new')) $('metric-ncd-new').textContent = model.metrics.ncdReleaseRecords;
+  if ($('metric-ncd-sources')) $('metric-ncd-sources').textContent = model.metrics.ncdSourceDocuments;
   if ($('metric-india')) $('metric-india').textContent = state.indicators.filter(x=>x.country==='India').length;
-  if ($('metric-india-sources')) $('metric-india-sources').textContent = (data.coverage?.indiaSourcesWithVerifiedRecords||0)+ncd.sources.length;
+  if ($('metric-india-sources')) $('metric-india-sources').textContent = (data.coverage?.indiaSourcesWithVerifiedRecords||0)+model.metrics.ncdSourceDocuments;
   fillSelect('geography', state.indicators.map(x => x.country || 'Global / multi-country'));
   fillSelect('program', state.indicators.flatMap(x => x.normalizedProgrammeTags));
   fillSelect('system', state.indicators.flatMap(x => x.systemPortalTags));

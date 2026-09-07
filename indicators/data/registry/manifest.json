@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "id": "PHAOS-UNIFIED-READ-MODEL-MANIFEST",
+    "version": "1.0.0",
+    "generated": "2026-09-07",
+    "task": "UNIFY-05"
+  },
+  "distribution": {
+    "path": "unified-read-model.json",
+    "mediaType": "application/json",
+    "bytes": 21998540,
+    "sha256": "f4622d22d5041755da99d4fdb4100ee6d6eec8bddb58174bcb1c48d5ae9c9016"
+  },
+  "counts": {
+    "canonicalObjects": 4743,
+    "canonicalObjectTypes": {
+      "Data element": 765,
+      "Published output": 202,
+      "Validation rule": 25,
+      "Indicator": 3751
+    },
+    "representations": 4797,
+    "multiRepresentationObjects": 54,
+    "reportColumnOccurrences": 560,
+    "reportMeasureOccurrences": 525,
+    "reportDimensionOccurrences": 35,
+    "linkedMeasureOccurrences": 508,
+    "candidateMeasureOccurrences": 17,
+    "registryMemberships": {
+      "indicator": 3751,
+      "hmis": 1046,
+      "shared": 54
+    }
+  },
+  "sources": [
+    "indicators/data/governance/unified-identity-index.json",
+    "indicators/data/governance/discovery-facets.json",
+    "indicators/data/indicators.json",
+    "indicators/data/ncd/release.json",
+    "indicators/data/hmis/catalog.json",
+    "indicators/data/hmis/headquarters-elements.json",
+    "indicators/data/hmis/facility-format-corrections.json",
+    "indicators/data/hmis/report-schemas/state-report-20260901/HMIS-RPTSCHEMA-STATE-20260901-001.report-schema-manifest.json",
+    "indicators/data/hmis/report-schemas/state-report-20260901/HMIS-RPTSCHEMA-STATE-20260901-001.dimension-dictionary.json",
+    "indicators/data/hmis/report-schemas/state-report-20260901/column-to-element-crosswalk.json",
+    "indicators/data/hmis/report-schemas/state-report-20260901/candidate-new-elements.json"
+  ],
+  "build": "node scripts/build-unified-read-model.mjs",
+  "validate": "node scripts/validate-unified-read-model.mjs",
+  "publicationBoundary": "Static discovery metadata only. Public bulk-download controls remain disabled."
+}
