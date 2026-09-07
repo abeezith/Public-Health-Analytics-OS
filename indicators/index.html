@@ -12,9 +12,9 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://abeezith.github.io/Public-Health-Analytics-OS/indicators/">
   <link rel="alternate" type="application/ld+json" href="data/graph/schemaorg.jsonld" title="India programme knowledge graph Schema.org profile">
-  <link rel="stylesheet" href="styles.css?v=maintenance-3.7.0">
+  <link rel="stylesheet" href="styles.css?v=registry-table-3.8.0">
   <script src="https://cdn.jsdelivr.net/npm/cytoscape@3.34.2/dist/cytoscape.min.js" defer></script>
-  <script src="app.js?v=maintenance-3.7.0" defer></script>
+  <script src="app.js?v=registry-table-3.8.0" defer></script>
   <script src="hmis.js?v=ncd-1.0.0" defer></script>
   <script src="graph.js?v=ncd-1.0.0" defer></script>
   <script src="report-schemas.js?v=hmis-1.4-candidate" defer></script>
@@ -67,7 +67,16 @@
     <div class="filter-panel"><label class="search-shell"><span>⌕</span><input id="search" aria-label="Search indicators" placeholder="Search indicator, domain, definition or code…"></label>
       <div class="select-row"><label><span>Geography</span><select id="geography"><option>All geographies</option></select></label><label><span>India programme</span><select id="program"><option>All India programmes</option></select></label><label><span>Programme component</span><select id="component"><option>All programme components</option></select></label><label><span>Lowest reporting level</span><select id="level"><option>All lowest reporting levels</option></select></label><label><span>Domain</span><select id="domain"><option>All domains</option></select></label><label><span>Type</span><select id="type"><option>All types</option></select></label><label><span>Measure type</span><select id="measure"><option>All measure types</option></select></label><label><span>Source</span><select id="source"><option>All sources</option></select></label><label><span>WHO pillar</span><select id="pillar"><option>All WHO pillars</option></select></label><label><span>Sort</span><select id="sort"><option value="name">Indicator name</option><option value="domain">Domain</option><option value="id">Registry ID</option></select></label></div>
     </div>
-    <div class="results-bar"><p><strong id="result-count">0</strong> indicators found</p><button id="clear" hidden>Clear all filters</button></div>
+    <div class="results-bar">
+      <p><strong id="result-count">0</strong> indicators found</p>
+      <div class="results-actions">
+        <button id="clear" hidden>Clear all filters</button>
+        <div class="view-switch" role="group" aria-label="Registry result view">
+          <button type="button" data-registry-view="cards" aria-pressed="true"><span aria-hidden="true">▦</span> Cards</button>
+          <button type="button" data-registry-view="table" aria-pressed="false"><span aria-hidden="true">☷</span> Table</button>
+        </div>
+      </div>
+    </div>
     <div class="indicator-grid" id="indicator-grid" aria-live="polite"></div><button class="load-more" id="load-more" hidden>Load more indicators</button>
   </section>
   <section class="coverage-section" id="coverage"><div class="coverage-copy"><p class="eyebrow">Coverage statement</p><h2>Complete only within declared source boundaries.</h2><p>The registry contains 3,751 indicator manifestations: a 3,108-record global core and 643 India-specific records. The four global machine-readable catalogues are source-complete at their cut-off; India programme releases are complete only for the source tables named in each programme boundary. This is not an exhaustive inventory of every public-health indicator or every live programme portal.</p></div>

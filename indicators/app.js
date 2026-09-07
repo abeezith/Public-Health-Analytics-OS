@@ -1,4 +1,6 @@
-const state = { indicators: [], filtered: [], visible: 24 };
+let savedRegistryView = 'cards';
+try { if (localStorage.getItem('phaos-registry-view') === 'table') savedRegistryView = 'table'; } catch (_) {}
+const state = { indicators: [], filtered: [], visible: 24, view: savedRegistryView };
 const $ = (id) => document.getElementById(id);
 const fields = ['search','geography','program','component','level','domain','type','measure','source','pillar','sort'];
 const programsMenu=$('programs-menu');
@@ -84,6 +86,8 @@ function fillSelect(id, values) { [...new Set(values)].sort().forEach(value => $
 fields.forEach(id => $(id).addEventListener(id === 'search' ? 'input' : 'change', filter));
 $('clear').addEventListener('click', () => { $('search').value=''; ['geography','program','component','level','domain','type','measure','source','pillar'].forEach(id => $(id).selectedIndex=0); filter(); });
 $('load-more').addEventListener('click', () => { state.visible += 24; render(); });
+document.querySelectorAll('[data-registry-view]').forEach(button=>button.addEventListener('click',()=>setRegistryView(button.dataset.registryView)));
+syncViewButtons();
 $('modal-close').addEventListener('click', closeModal);
 $('modal-backdrop').addEventListener('mousedown', e => { if(e.target === $('modal-backdrop')) closeModal(); });
 document.addEventListener('keydown', e => { if(e.key === 'Escape') closeModal(); });
@@ -103,13 +107,35 @@ function filter() {
 function render() {
   $('result-count').textContent=state.filtered.length;
   const rows=state.filtered.slice(0,state.visible);
-  $('indicator-grid').innerHTML=rows.length?rows.map(card).join(''):'<div class="empty-state"><h3>No matching indicators</h3><p>Try a broader term or clear one of the filters.</p></div>';
+  const results=$('indicator-grid');
+  results.classList.toggle('table-view',state.view==='table');
+  results.innerHTML=rows.length?(state.view==='table'?table(rows):rows.map(card).join('')):'<div class="empty-state"><h3>No matching indicators</h3><p>Try a broader term or clear one of the filters.</p></div>';
   document.querySelectorAll('[data-open]').forEach(button=>button.addEventListener('click',()=>openModal(button.dataset.open)));
   $('load-more').hidden=state.visible>=state.filtered.length;
   if(!$('load-more').hidden) $('load-more').textContent='Load '+Math.min(24,state.filtered.length-state.visible)+' more indicators';
 }
+function setRegistryView(view){
+  if(view!=='cards'&&view!=='table')return;
+  state.view=view;
+  try { localStorage.setItem('phaos-registry-view',view); } catch (_) {}
+  syncViewButtons();
+  render();
+}
+function syncViewButtons(){
+  document.querySelectorAll('[data-registry-view]').forEach(button=>{
+    const active=button.dataset.registryView===state.view;
+    button.setAttribute('aria-pressed',String(active));
+  });
+}
 function esc(v=''){ const div=document.createElement('div'); div.textContent=String(v); return div.innerHTML; }
 function card(x){ return '<article class="indicator-card"><div class="card-top"><span>'+esc(x.id)+'</span>'+(x.country?'<span class="india-badge">'+esc(x.country)+'</span>':x.code?'<span>'+esc(x.code)+'</span>':'')+'</div><div class="card-tags"><span class="card-domain">'+esc(x.domain)+'</span><span class="pillar-tag">'+esc(x.whoPillarPrimary||'Unclassified')+'</span><span class="measure-tag">'+esc(x.measureType||'Unclassified')+'</span><span class="scale-tag">'+esc(x.scaleDisplay||'Not specified')+'</span></div><h3>'+esc(x.name)+'</h3><p>'+esc(x.displayDefinition||x.definition)+'</p><dl><div><dt>'+(x.indiaProgram?'India programme':'Collection')+'</dt><dd>'+esc(x.indiaProgram||x.collection)+'</dd></div><div><dt>WHO pillars</dt><dd>'+esc((x.whoPillars||[]).join('; ')||'Not classified')+'</dd></div></dl><button data-open="'+esc(x.id)+'">View full metadata <span>→</span></button></article>'; }
+function table(rows){
+  const body=rows.map(x=>{
+    const programme=(x.programmeTags||[]).join('; ')||x.indiaProgram||x.country||'Global / multi-country';
+    return '<tr><td class="registry-id">'+esc(x.id)+'</td><td class="registry-name"><strong>'+esc(x.name)+'</strong><span>'+esc(x.displayDefinition||x.definition)+'</span></td><td>'+esc(x.domain||'Not classified')+'</td><td><span class="table-measure">'+esc(x.measureType||'Unclassified')+'</span><small>'+esc(x.scaleDisplay||'Not specified')+'</small></td><td>'+esc(x.normalizedLowestReportingLevel||x.lowestReportingLevel||'Not specified')+'</td><td>'+esc(programme)+'</td><td>'+esc(x.source||'Not reported')+'</td><td><button class="table-open" data-open="'+esc(x.id)+'" aria-label="View full metadata for '+esc(x.name)+'">View <span aria-hidden="true">→</span></button></td></tr>';
+  }).join('');
+  return '<table class="registry-table"><caption>Filtered public-health indicator registry results</caption><thead><tr><th scope="col">Registry ID</th><th scope="col">Indicator</th><th scope="col">Domain</th><th scope="col">Measure</th><th scope="col">Lowest level</th><th scope="col">Programme / scope</th><th scope="col">Source</th><th scope="col"><span class="visually-hidden">Actions</span></th></tr></thead><tbody>'+body+'</tbody></table>';
+}
 function meta(title,value,wide=false){ return '<div class="meta-item'+(wide?' wide':'')+'"><span>'+title+'</span><p>'+esc(value||'Not reported')+'</p></div>'; }
 function openModal(id){
   const x=state.indicators.find(item=>item.id===id); if(!x)return;
