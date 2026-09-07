@@ -69,6 +69,19 @@ This log records material governance decisions separately from indicator and sof
 - **Migration and review date:** The consolidated object read model under UNIFY-05 will consume the machine-readable facet vocabulary and add automated drift checks under UNIFY-10. Review no later than 7 September 2027.
 - **Supersedes:** The former UI treatment of Health Management Information System as an India programme facet.
 
+## GOV-DEC-006 — Make Registry the common discovery interface
+
+- **Date:** 7 September 2026
+- **Status:** Adopted
+- **Decision owner:** Project Owner, acting under the interim single-maintainer model
+- **Decision:** Make `#registry` the common entry point for the canonical overview, indicator explorer, HMIS knowledge-object explorer and observed report-schema view. Preserve type-specific filters and metadata rather than flattening records into one generic card.
+- **Reason:** Separate page sections obscured the relationship between 3,751 indicators, 1,046 HMIS objects and 560 report-column occurrences and made the 54 shared indicator identities appear to represent the whole HMIS layer.
+- **Evidence:** Browser tests verify the 4,743-object overview, 3,751-indicator view, 1,046-object HMIS view, 765-element filter, card/table modes, report-schema view, legacy anchors, Registry navigation state and zero page errors.
+- **Boundary:** UNIFY-04 federates the existing source arrays in one interface. It does not yet replace them with a published consolidated read model; that is UNIFY-05. Report occurrences remain summarized until UNIFY-06.
+- **Affected artifacts:** `indicators/index.html`, `app.js`, `hmis.js`, `styles.css`, and both workstream trackers.
+- **Migration and review date:** Build and validate the consolidated read model under UNIFY-05, then expose occurrence-level discovery under UNIFY-06. Review no later than 7 September 2027.
+- **Supersedes:** The separate HMIS and report-schema discovery sections as primary navigation destinations; their anchors remain compatibility routes.
+
 ## Decision record template
 
 - **ID and title:**

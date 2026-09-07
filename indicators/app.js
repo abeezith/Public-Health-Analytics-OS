@@ -4,7 +4,8 @@ const state = { indicators: [], filtered: [], visible: 24, view: savedRegistryVi
 const $ = (id) => document.getElementById(id);
 const fields = ['search','geography','program','system','component','level','domain','type','measure','source','pillar','sort'];
 const programsMenu=$('programs-menu');
-const programmeSections=new Set(['india','ntep','rmncha','immunization','vbd','ncd','hmis','hmis-report-schemas']);
+const programmeSections=new Set(['india','ntep','rmncha','immunization','vbd','ncd']);
+const registryHashViews=new Map([['registry','overview'],['registry-overview','overview'],['registry-indicators','indicators'],['hmis','hmis'],['hmis-report-schemas','report']]);
 const pageUrl=new URL(window.location.href);
 if(pageUrl.searchParams.has('v')){pageUrl.searchParams.delete('v');history.replaceState(null,'',pageUrl.pathname+pageUrl.search+pageUrl.hash);}
 programsMenu?.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>programsMenu.removeAttribute('open')));
@@ -17,10 +18,64 @@ function updateNavigationState(){
   const summary=programsMenu?.querySelector('summary');
   summary?.removeAttribute('aria-current');
   if(programmeSections.has(hash)) summary?.setAttribute('aria-current','location');
+  else if(registryHashViews.has(hash)) document.querySelector('.header-nav>a[href="#registry"]')?.setAttribute('aria-current','location');
   else document.querySelector(`.header-nav>a[href="#${CSS.escape(hash)}"]`)?.setAttribute('aria-current','location');
 }
-window.addEventListener('hashchange',updateNavigationState);
+window.addEventListener('hashchange',()=>{updateNavigationState();activateRegistrySection(registryHashViews.get(location.hash.slice(1)));});
 updateNavigationState();
+
+function setHmisViewTarget(target='All objects'){
+  const select=$('hmis-object-type');
+  if(!select)return;
+  select.dataset.pendingValue=target;
+  if([...select.options].some(option=>option.value===target)){
+    select.value=target;
+    select.dispatchEvent(new Event('change'));
+  }
+}
+
+function activateRegistrySection(section='overview',options={}){
+  if(!section)return;
+  const panels={overview:$('registry-overview'),indicators:$('registry-indicators'),hmis:$('hmis'),report:$('hmis-report-schemas')};
+  if(!panels[section])return;
+  Object.entries(panels).forEach(([key,panel])=>{panel.hidden=key!==section;});
+  document.querySelectorAll('.registry-object-switch [data-registry-section]').forEach(button=>{
+    const active=button.dataset.registrySection===section;
+    button.classList.toggle('active',active);
+    button.setAttribute('aria-selected',String(active));
+    button.tabIndex=active?0:-1;
+  });
+  if(section==='hmis')setHmisViewTarget(options.hmisTarget||'All objects');
+  if(options.updateHash){
+    const hash=section==='overview'?'registry':section==='indicators'?'registry-indicators':section==='hmis'?'hmis':'hmis-report-schemas';
+    if(location.hash!==`#${hash}`)history.pushState(null,'',`${location.pathname}${location.search}#${hash}`);
+    updateNavigationState();
+    $('registry')?.scrollIntoView({behavior:'smooth',block:'start'});
+  }
+}
+
+function initializeRegistryHub(){
+  const mount=$('registry-dynamic-panels');
+  const hmis=$('hmis'),report=$('hmis-report-schemas');
+  for(const panel of [hmis,report])if(panel&&mount){panel.classList.add('registry-panel');panel.dataset.registryPanel=panel===hmis?'hmis':'report';mount.append(panel);}
+  document.querySelectorAll('[data-registry-section]').forEach(control=>control.addEventListener('click',event=>{
+    event.preventDefault();
+    activateRegistrySection(control.dataset.registrySection,{updateHash:true,hmisTarget:control.dataset.hmisTarget});
+  }));
+  const tabs=[...document.querySelectorAll('.registry-object-switch [role="tab"]')];
+  tabs.forEach((tab,index)=>tab.addEventListener('keydown',event=>{
+    if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;
+    event.preventDefault();
+    const targetIndex=event.key==='Home'?0:event.key==='End'?tabs.length-1:(index+(event.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;
+    tabs[targetIndex].focus();tabs[targetIndex].click();
+  }));
+  document.querySelectorAll('a.primary-action[href="#registry"][onclick]').forEach(link=>link.addEventListener('click',event=>{
+    event.preventDefault();
+    activateRegistrySection('indicators',{updateHash:true});
+  },true));
+  activateRegistrySection(registryHashViews.get(location.hash.slice(1))||'overview');
+}
+initializeRegistryHub();
 
 function normalizeLowestReportingLevel(value=''){
   const level=String(value).toLowerCase();

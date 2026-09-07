@@ -1,4 +1,6 @@
-const hmisState = { objects: [], filtered: [], visible: 24, index: new Map(), crosswalks: new Map(), activeType: 'All objects' };
+let savedHmisView='cards';
+try{if(localStorage.getItem('phaos-hmis-view')==='table')savedHmisView='table';}catch(_){}
+const hmisState = { objects: [], filtered: [], visible: 24, index: new Map(), crosswalks: new Map(), activeType: 'All objects', view:savedHmisView };
 const h$ = id => document.getElementById(id);
 const hmisFields = ['hmis-search','hmis-object-type','hmis-component','hmis-facility','hmis-version'];
 
@@ -23,6 +25,10 @@ Promise.all([
   hmisFill('hmis-component',hmisState.objects.map(x=>x.component).filter(Boolean));
   hmisFill('hmis-facility',hmisState.objects.flatMap(x=>x.facilityTypes||[]));
   hmisFill('hmis-version',hmisState.objects.map(x=>x.versionStatus).filter(Boolean));
+  const pendingType=h$('hmis-object-type').dataset.pendingValue;
+  if(pendingType&&[...h$('hmis-object-type').options].some(option=>option.value===pendingType))h$('hmis-object-type').value=pendingType;
+  hmisState.activeType=h$('hmis-object-type').value;
+  syncHmisTabs();syncHmisViewButtons();
   hmisFilter();
 }).catch(()=>{h$('hmis-grid').innerHTML='<div class="empty-state"><h3>HMIS data could not be loaded</h3><p>Reload the page to retry the structured catalogue.</p></div>';});
 
@@ -58,8 +64,14 @@ h$('hmis-clear').addEventListener('click',()=>{
   hmisState.activeType='All objects';syncHmisTabs();hmisFilter();
 });
 h$('hmis-load-more').addEventListener('click',()=>{hmisState.visible+=24;hmisRender();});
+document.querySelectorAll('[data-hmis-view]').forEach(button=>button.addEventListener('click',()=>{
+  hmisState.view=button.dataset.hmisView;
+  try{localStorage.setItem('phaos-hmis-view',hmisState.view);}catch(_){}
+  syncHmisViewButtons();hmisRender();
+}));
 
 function syncHmisTabs(){document.querySelectorAll('[data-hmis-type]').forEach(x=>x.classList.toggle('active',x.dataset.hmisType===hmisState.activeType));}
+function syncHmisViewButtons(){document.querySelectorAll('[data-hmis-view]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.hmisView===hmisState.view)));}
 function hmisFilter(){
   hmisState.visible=24;
   const q=h$('hmis-search').value.trim().toLowerCase(),type=h$('hmis-object-type').value,component=h$('hmis-component').value,facility=h$('hmis-facility').value,version=h$('hmis-version').value;
@@ -73,10 +85,15 @@ function hmisFilter(){
 function hmisRender(){
   h$('hmis-result-count').textContent=hmisState.filtered.length;
   const rows=hmisState.filtered.slice(0,hmisState.visible);
-  h$('hmis-grid').innerHTML=rows.length?rows.map(hmisCard).join(''):'<div class="empty-state"><h3>No matching HMIS objects</h3><p>Try a broader term or clear the current filters.</p></div>';
+  h$('hmis-grid').classList.toggle('table-view',hmisState.view==='table');
+  h$('hmis-grid').innerHTML=rows.length?(hmisState.view==='table'?hmisTable(rows):rows.map(hmisCard).join('')):'<div class="empty-state"><h3>No matching HMIS objects</h3><p>Try a broader term or clear the current filters.</p></div>';
   document.querySelectorAll('[data-hmis-open]').forEach(button=>button.addEventListener('click',()=>openHmisModal(button.dataset.hmisOpen)));
   h$('hmis-load-more').hidden=hmisState.visible>=hmisState.filtered.length;
   if(!h$('hmis-load-more').hidden)h$('hmis-load-more').textContent='Load '+Math.min(24,hmisState.filtered.length-hmisState.visible)+' more HMIS objects';
+}
+function hmisTable(rows){
+  const body=rows.map(x=>'<tr><td class="registry-id">'+hEsc(x.id)+'</td><td>'+hEsc(x.objectType)+'</td><td class="registry-name"><strong>'+hEsc(x.name)+'</strong><span>'+hEsc(x.displayDefinition||x.definition||x.formula||'No definition reported')+'</span></td><td>'+hEsc(x.component||x.domain||'Not classified')+'</td><td>'+hEsc(x.lowestReportingLevel||(x.facilityTypes||[]).join('; ')||'Not specified')+'</td><td>'+hEsc(x.versionStatus||'Not specified')+'</td><td><button class="table-open" data-hmis-open="'+hEsc(x.id)+'" aria-label="View linked metadata for '+hEsc(x.name)+'">View <span aria-hidden="true">→</span></button></td></tr>').join('');
+  return '<table class="registry-table hmis-table"><caption>Filtered HMIS knowledge objects</caption><thead><tr><th scope="col">Object ID</th><th scope="col">Object type</th><th scope="col">Name and definition</th><th scope="col">Component</th><th scope="col">Lowest level / facility</th><th scope="col">Version status</th><th scope="col"><span class="visually-hidden">Actions</span></th></tr></thead><tbody>'+body+'</tbody></table>';
 }
 function hEsc(v=''){const div=document.createElement('div');div.textContent=String(v);return div.innerHTML;}
 function hmisCard(x){
@@ -100,6 +117,8 @@ function idRelations(ids,label){
 }
 function openHmisModal(id){
   const x=hmisState.index.get(id);if(!x)return;
+  const graphSelect=h$('kg-focus');
+  const graphAvailable=graphSelect&&[...graphSelect.options].some(option=>option.value===id);
   let body='';
   if(x.objectType==='Derived indicator'){
     const link=hmisState.crosswalks.get(x.id)||{};
@@ -111,7 +130,8 @@ function openHmisModal(id){
   }else{
     body=hMeta('Rule expression',x.name,true)+hMeta('Left element',x.leftElement)+hMeta('Operator',x.operator)+hMeta('Right element',x.rightElement)+hMeta('Rule class',x.ruleClass)+hMeta('Interpretation',x.definition)+hMeta('Severity',x.severity,true)+relationButtons(x.leftCandidates,'Left-side data-element candidates')+relationButtons(x.rightCandidates,'Right-side data-element candidates');
   }
-  h$('modal-content').innerHTML='<div class="modal-kicker"><span>'+hEsc(x.id)+'</span><span>'+hEsc(x.objectType)+'</span><span>'+hEsc(x.versionStatus)+'</span></div><p class="eyebrow">HMIS · '+hEsc(x.component||x.domain)+'</p><h2 id="modal-title">'+hEsc(x.name)+'</h2><div class="metadata-grid hmis-modal-grid">'+body+hMeta('WHO health-system pillars',x.whoPillars,true)+hMeta('Potential uses',x.uses,true)+hMeta('Key limitations',x.caveats,true)+hMeta('Source version',x.sourceVersion,true)+'</div><div class="source-panel"><div><span>Source authority</span><strong>'+hEsc(x.sourceAuthority)+'</strong><small>'+hEsc(x.sourceVersion||x.sourcePeriod)+'</small></div><div><span>Version treatment</span><strong>'+hEsc(x.versionStatus)+'</strong><small>Analytics-OS Release 1.4</small></div><a href="'+hEsc(x.sourceUrl)+'" target="_blank" rel="noreferrer">Open source ↗</a></div>';
+  h$('modal-content').innerHTML='<div class="modal-kicker"><span>'+hEsc(x.id)+'</span><span>'+hEsc(x.objectType)+'</span><span>'+hEsc(x.versionStatus)+'</span></div><p class="eyebrow">HMIS · '+hEsc(x.component||x.domain)+'</p><h2 id="modal-title">'+hEsc(x.name)+'</h2><div class="metadata-grid hmis-modal-grid">'+body+hMeta('WHO health-system pillars',x.whoPillars,true)+hMeta('Potential uses',x.uses,true)+hMeta('Key limitations',x.caveats,true)+hMeta('Source version',x.sourceVersion,true)+'</div><div class="source-panel"><div><span>Source authority</span><strong>'+hEsc(x.sourceAuthority)+'</strong><small>'+hEsc(x.sourceVersion||x.sourcePeriod)+'</small></div><div><span>Version treatment</span><strong>'+hEsc(x.versionStatus)+'</strong><small>Analytics-OS Release 1.4</small></div>'+(graphAvailable?'<button type="button" id="hmis-open-graph" class="modal-graph-link">Explore in graph →</button>':'')+'<a href="'+hEsc(x.sourceUrl)+'" target="_blank" rel="noreferrer">Open source ↗</a></div>';
   h$('modal-backdrop').hidden=false;document.body.style.overflow='hidden';h$('modal-close').focus();
+  h$('hmis-open-graph')?.addEventListener('click',()=>{h$('modal-close').click();location.hash='knowledge-graph';graphSelect.value=id;graphSelect.dispatchEvent(new Event('change'));});
   document.querySelectorAll('#modal-content [data-hmis-open]').forEach(button=>button.addEventListener('click',()=>openHmisModal(button.dataset.hmisOpen)));
 }
