@@ -11,7 +11,7 @@ const model = read(modelPath);
 const manifest = read('indicators/data/registry/manifest.json');
 const identities = read('indicators/data/governance/unified-identity-index.json');
 
-if (model.metadata.version !== '1.1.0') fail('Unexpected read-model version.');
+if (model.metadata.version !== '1.2.0') fail('Unexpected read-model version.');
 if (model.records.length !== 4743) fail(`Expected 4743 records, got ${model.records.length}.`);
 const ids = model.records.map(item => item.canonicalObjectId);
 const uris = model.records.map(item => item.canonicalUri);
@@ -49,6 +49,19 @@ if (model.occurrences.some(item => !item.discovery?.displayName || !item.discove
 if (measures.filter(item => item.discovery.linkageStatus === 'Canonical link').length !== 508) fail('Discovery canonical-link status count is not 508.');
 if (measures.filter(item => item.discovery.linkageStatus === 'Candidate—verification required').length !== 17) fail('Discovery candidate status count is not 17.');
 if (dimensions.some(item => item.discovery.linkageStatus !== 'Reporting dimension')) fail('A dimension has an invalid discovery linkage status.');
+if (model.records.some(item => !item.navigation || !Array.isArray(item.navigation.relatedObjects) || !Array.isArray(item.navigation.occurrences) || !Array.isArray(item.navigation.sources))) fail('A canonical record is missing its navigation envelope.');
+const byId=new Map(model.records.map(item=>[item.canonicalObjectId,item]));
+for(const record of model.records)for(const relation of record.navigation.relatedObjects){
+  const target=byId.get(relation.targetId);if(!target)fail(`Navigation target does not resolve: ${relation.targetId}.`);
+  const inverseDirection=relation.direction==='outbound'?'inbound':'outbound';
+  if(!target.navigation.relatedObjects.some(item=>item.targetId===record.canonicalObjectId&&item.relationshipType===relation.relationshipType&&item.label===relation.label&&item.direction===inverseDirection))fail(`Missing reciprocal navigation for ${record.canonicalObjectId} / ${relation.targetId}.`);
+}
+const reverseOccurrenceLinks=model.records.flatMap(item=>item.navigation.occurrences.map(occurrence=>({canonicalObjectId:item.canonicalObjectId,...occurrence})));
+if(reverseOccurrenceLinks.length!==508)fail(`Expected 508 reverse occurrence links, got ${reverseOccurrenceLinks.length}.`);
+for(const occurrence of measures.filter(item=>item.canonicalObjectId))if(!byId.get(occurrence.canonicalObjectId)?.navigation.occurrences.some(item=>item.occurrenceId===occurrence.occurrenceId))fail(`Missing reverse occurrence link for ${occurrence.occurrenceId}.`);
+if(model.counts.navigation.navigableRelationshipEntries!==model.counts.navigation.reciprocalRelationshipAssertions*2)fail('Reciprocal relationship entry count is not twice the assertion count.');
+if(model.counts.navigation.canonicalOccurrenceLinks!==508)fail('Navigation occurrence count is not 508.');
+if(model.counts.navigation.unresolvedRelationshipReferences!==0)fail(`There are ${model.counts.navigation.unresolvedRelationshipReferences} unresolved relationship references.`);
 if (indicatorRecords.some(item => item.programmeTags.includes('Health Management Information System'))) fail('HMIS leaked into the programme facet.');
 const hmisTaggedIndicators = indicatorRecords.filter(item => item.systemPortalTags.includes('HMIS')).length;
 if (hmisTaggedIndicators !== 130) fail(`Expected 130 HMIS-tagged indicators, got ${hmisTaggedIndicators}.`);

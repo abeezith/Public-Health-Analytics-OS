@@ -110,6 +110,20 @@ This log records material governance decisions separately from indicator and sof
 - **Migration and review date:** Add reciprocal canonical-object and occurrence navigation under UNIFY-07. Review no later than 7 September 2027.
 - **Supersedes:** The occurrence-summary-only boundary recorded in GOV-DEC-006 and GOV-DEC-007.
 
+## GOV-DEC-009 — Publish reciprocal evidence navigation
+
+- **Date:** 7 September 2026
+- **Status:** Adopted
+- **Decision owner:** Project Owner, acting under the interim single-maintainer model
+- **Decision:** Generate reciprocal, resolvable navigation from governed metadata and reviewed crosswalks among canonical indicators, HMIS objects, report occurrences, source evidence and matching graph nodes. Preserve relationship direction, status and evidence.
+- **Reason:** IDs and relationships existed across separate views, but users could not reliably follow them in both directions or distinguish curated relationships from candidates.
+- **Evidence:** Read-model validation resolves 536 assertions as 1,072 reciprocal relationship entries, 508 canonical-to-occurrence reverse paths, 4,797 source-evidence paths and 1,564 graph-node links with zero unresolved relationship targets. Browser tests complete the indicator → data element → occurrence → canonical object → graph → Registry loop on desktop and mobile.
+- **Boundary:** Navigation exposes existing evidence; it does not upgrade candidate matches, assert semantic equivalence, authorize aggregation, establish computability or promote report candidates. External source links identify evidence but do not make Analytics-OS the source custodian.
+- **Alternatives considered:** Infer links from labels at runtime; display only outbound relations; merge graph and Registry identities indiscriminately. These were rejected because they would be non-reproducible, incomplete or semantically unsafe.
+- **Affected artifacts:** Consolidated read model 1.2.0, indicator/HMIS/occurrence modals, graph detail panel, navigation styles, validators, documentation and workstream trackers.
+- **Migration and review date:** Add result-level relationship summaries under UNIFY-08 and automated navigation gates under UNIFY-10. Review no later than 7 September 2027.
+- **Supersedes:** One-way and view-local navigation behavior through UNIFY-06.
+
 ## Decision record template
 
 - **ID and title:**

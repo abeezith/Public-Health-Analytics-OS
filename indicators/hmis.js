@@ -6,7 +6,7 @@ const hmisFields = ['hmis-search','hmis-object-type','hmis-component','hmis-faci
 
 Promise.all([
   window.phaosUnifiedModelPromise,
-  fetch('./data/hmis/crosswalks.json?v=unify-05-1.0.0', {cache:'no-store'}).then(r=>r.json())
+  fetch('./data/hmis/crosswalks.json?v=unify-07-1.0.0', {cache:'no-store'}).then(r=>r.json())
 ]).then(([model,crosswalk])=>{
   hmisState.objects=model.records.filter(record=>record.registryMemberships.includes('hmis')).map(record=>({...record.hmisMetadata,canonicalObjectId:record.canonicalObjectId,canonicalUri:record.canonicalUri,canonicalObjectType:record.canonicalObjectType,representations:record.representations,systemPortalTags:record.systemPortalTags}));
   hmisState.index=new Map(hmisState.objects.map(x=>[x.id,x]));
@@ -109,8 +109,9 @@ function openHmisModal(id){
   }else{
     body=hMeta('Rule expression',x.name,true)+hMeta('Left element',x.leftElement)+hMeta('Operator',x.operator)+hMeta('Right element',x.rightElement)+hMeta('Rule class',x.ruleClass)+hMeta('Interpretation',x.definition)+hMeta('Severity',x.severity,true)+relationButtons(x.leftCandidates,'Left-side data-element candidates')+relationButtons(x.rightCandidates,'Right-side data-element candidates');
   }
-  h$('modal-content').innerHTML='<div class="modal-kicker"><span>'+hEsc(x.id)+'</span><span>'+hEsc(x.objectType)+'</span><span>'+hEsc(x.versionStatus)+'</span></div><p class="eyebrow">HMIS · '+hEsc(x.component||x.domain)+'</p><h2 id="modal-title">'+hEsc(x.name)+'</h2><div class="metadata-grid hmis-modal-grid">'+body+hMeta('WHO health-system pillars',x.whoPillars,true)+hMeta('Potential uses',x.uses,true)+hMeta('Key limitations',x.caveats,true)+hMeta('Source version',x.sourceVersion,true)+'</div><div class="source-panel"><div><span>Source authority</span><strong>'+hEsc(x.sourceAuthority)+'</strong><small>'+hEsc(x.sourceVersion||x.sourcePeriod)+'</small></div><div><span>Version treatment</span><strong>'+hEsc(x.versionStatus)+'</strong><small>Analytics-OS Release 1.4</small></div>'+(graphAvailable?'<button type="button" id="hmis-open-graph" class="modal-graph-link">Explore in graph →</button>':'')+'<a href="'+hEsc(x.sourceUrl)+'" target="_blank" rel="noreferrer">Open source ↗</a></div>';
+  h$('modal-content').innerHTML='<div class="modal-kicker"><span>'+hEsc(x.id)+'</span><span>'+hEsc(x.objectType)+'</span><span>'+hEsc(x.versionStatus)+'</span></div><p class="eyebrow">HMIS · '+hEsc(x.component||x.domain)+'</p><h2 id="modal-title">'+hEsc(x.name)+'</h2><div class="metadata-grid hmis-modal-grid">'+body+hMeta('WHO health-system pillars',x.whoPillars,true)+hMeta('Potential uses',x.uses,true)+hMeta('Key limitations',x.caveats,true)+hMeta('Source version',x.sourceVersion,true)+'</div>'+window.phaosNavigation.renderFor(id)+'<div class="source-panel"><div><span>Source authority</span><strong>'+hEsc(x.sourceAuthority)+'</strong><small>'+hEsc(x.sourceVersion||x.sourcePeriod)+'</small></div><div><span>Version treatment</span><strong>'+hEsc(x.versionStatus)+'</strong><small>Analytics-OS Release 1.4</small></div>'+(graphAvailable?'<button type="button" id="hmis-open-graph" class="modal-graph-link">Explore in graph →</button>':'')+'<a href="'+hEsc(x.sourceUrl)+'" target="_blank" rel="noreferrer">Open source ↗</a></div>';
   h$('modal-backdrop').hidden=false;document.body.style.overflow='hidden';h$('modal-close').focus();
   h$('hmis-open-graph')?.addEventListener('click',()=>{h$('modal-close').click();location.hash='knowledge-graph';graphSelect.value=id;graphSelect.dispatchEvent(new Event('change'));});
+  window.phaosNavigation.bind(h$('modal-content'));
   document.querySelectorAll('#modal-content [data-hmis-open]').forEach(button=>button.addEventListener('click',()=>openHmisModal(button.dataset.hmisOpen)));
 }

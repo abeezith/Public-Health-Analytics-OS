@@ -1,15 +1,15 @@
 {
   "metadata": {
     "id": "PHAOS-UNIFIED-READ-MODEL-MANIFEST",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "generated": "2026-09-07",
-    "task": "UNIFY-06"
+    "task": "UNIFY-07"
   },
   "distribution": {
     "path": "unified-read-model.json",
     "mediaType": "application/json",
-    "bytes": 22241888,
-    "sha256": "8e97e69f380bc9aaecc9f49ec96b1884301aaf27a4ad13976c569e6791518a35"
+    "bytes": 25733385,
+    "sha256": "68a10a625a88a1846a784c635099f131269bb64cbfc64a443ea085b4d5f932df"
   },
   "counts": {
     "canonicalObjects": 4743,
@@ -30,6 +30,14 @@
       "indicator": 3751,
       "hmis": 1046,
       "shared": 54
+    },
+    "navigation": {
+      "reciprocalRelationshipAssertions": 536,
+      "navigableRelationshipEntries": 1072,
+      "canonicalOccurrenceLinks": 508,
+      "sourceEvidenceLinks": 4797,
+      "graphNodeLinks": 1564,
+      "unresolvedRelationshipReferences": 0
     }
   },
   "sources": [
@@ -38,8 +46,10 @@
     "indicators/data/indicators.json",
     "indicators/data/ncd/release.json",
     "indicators/data/hmis/catalog.json",
+    "indicators/data/hmis/crosswalks.json",
     "indicators/data/hmis/headquarters-elements.json",
     "indicators/data/hmis/facility-format-corrections.json",
+    "indicators/data/graph/graph.json",
     "indicators/data/hmis/report-schemas/state-report-20260901/HMIS-RPTSCHEMA-STATE-20260901-001.report-schema-manifest.json",
     "indicators/data/hmis/report-schemas/state-report-20260901/HMIS-RPTSCHEMA-STATE-20260901-001.dimension-dictionary.json",
     "indicators/data/hmis/report-schemas/state-report-20260901/column-to-element-crosswalk.json",

@@ -77,12 +77,45 @@ function initializeRegistryHub(){
 }
 initializeRegistryHub();
 
-window.phaosUnifiedModelPromise=fetch('./data/registry/unified-read-model.json?v=unify-06-1.1.0',{cache:'no-store'}).then(response=>{
+const navEsc=value=>{const node=document.createElement('div');node.textContent=String(value??'');return node.innerHTML;};
+window.phaosNavigation={
+  records:new Map(),
+  initialize(model){this.records=new Map((model.records||[]).map(record=>[record.canonicalObjectId,record]));window.dispatchEvent(new CustomEvent('phaos:navigation-ready'));},
+  hasRecord(id){return this.records.has(id);},
+  renderFor(id,{includeGraph=false}={}){
+    const record=this.records.get(id);if(!record)return '';
+    const navigation=record.navigation||{},relations=(navigation.relatedObjects||[]).slice(0,16),occurrences=(navigation.occurrences||[]).slice(0,12),sources=navigation.sources||[];
+    if(!relations.length&&!occurrences.length&&!sources.length&&!(includeGraph&&navigation.graphNode))return '';
+    const relationButtons=relations.map(item=>`<button type="button" data-nav-object="${navEsc(item.targetId)}"><b>${navEsc(item.targetName)}</b><small>${navEsc(item.direction==='outbound'?item.label:`Referenced by · ${item.label}`)} · ${navEsc(item.assertionStatus)}</small></button>`).join('');
+    const occurrenceButtons=occurrences.map(item=>`<button type="button" data-nav-occurrence="${navEsc(item.occurrenceId)}"><b>Column ${item.columnOrdinal} · ${navEsc(item.displayName)}</b><small>${navEsc(item.linkageStatus)} · ${navEsc(item.occurrenceId)}</small></button>`).join('');
+    const sourceLinks=sources.map(item=>item.url?`<a href="${navEsc(item.url)}" target="_blank" rel="noreferrer"><b>${navEsc(item.label)}</b><small>${navEsc(item.version||item.sourceLayer)}</small></a>`:`<span><b>${navEsc(item.label)}</b><small>${navEsc(item.version||item.sourceLayer)}</small></span>`).join('');
+    const graphButton=includeGraph&&navigation.graphNode?`<button type="button" data-nav-graph="${navEsc(navigation.graphNode.nodeId)}"><b>Open knowledge graph</b><small>${navEsc(navigation.graphNode.nodeType)} · ${navEsc(navigation.graphNode.label)}</small></button>`:'';
+    return `<section class="reciprocal-navigation"><div><p class="eyebrow">Connected registry evidence</p><h3>Follow this object in both directions</h3></div>${relations.length?`<div class="nav-group"><strong>Related canonical objects <span>${navigation.relatedObjects.length}</span></strong><div class="nav-link-grid">${relationButtons}</div></div>`:''}${occurrences.length?`<div class="nav-group"><strong>Observed report occurrences <span>${navigation.occurrences.length}</span></strong><div class="nav-link-grid">${occurrenceButtons}</div></div>`:''}${sources.length?`<div class="nav-group"><strong>Source evidence <span>${sources.length}</span></strong><div class="nav-link-grid source-links">${sourceLinks}</div></div>`:''}${graphButton?`<div class="nav-group"><strong>Knowledge graph</strong><div class="nav-link-grid">${graphButton}</div></div>`:''}</section>`;
+  },
+  bind(container=document){
+    container.querySelectorAll('[data-nav-object]').forEach(button=>button.addEventListener('click',()=>this.openCanonical(button.dataset.navObject)));
+    container.querySelectorAll('[data-nav-occurrence]').forEach(button=>button.addEventListener('click',()=>this.openOccurrence(button.dataset.navOccurrence)));
+    container.querySelectorAll('[data-nav-graph]').forEach(button=>button.addEventListener('click',()=>this.openGraph(button.dataset.navGraph)));
+  },
+  openCanonical(id){
+    const record=this.records.get(id);if(!record)return;
+    closeActiveModal();
+    if(record.registryMemberships.includes('indicator')){activateRegistrySection('indicators',{updateHash:true});openModal(id);}
+    else if(record.registryMemberships.includes('hmis')){activateRegistrySection('hmis',{updateHash:true});openHmisModal(id);}
+  },
+  openOccurrence(id){closeActiveModal();activateRegistrySection('report',{updateHash:true});if(typeof window.openOccurrence==='function')window.openOccurrence(id);},
+  openGraph(id){closeActiveModal();location.hash='knowledge-graph';if(typeof window.phaosGraphFocus==='function')window.phaosGraphFocus(id);else{const select=$('kg-focus');if(select&&[...select.options].some(option=>option.value===id)){select.value=id;select.dispatchEvent(new Event('change'));}}}
+};
+function closeActiveModal(){if(!$('modal-backdrop').hidden)$('modal-close').click();}
+
+window.phaosUnifiedModelPromise=fetch('./data/registry/unified-read-model.json?v=unify-07-1.2.0',{cache:'no-store'}).then(response=>{
   if(!response.ok)throw new Error(`Unified read model request failed: ${response.status}`);
   return response.json();
 });
 
 window.phaosUnifiedModelPromise.then(model => {
+  window.phaosNavigation.initialize(model);
+  window.dispatchEvent(new Event('phaos:navigation-ready'));
   const data={coverage:model.coverage||{}};
   state.indicators=model.records.filter(record=>record.registryMemberships.includes('indicator')).map(record=>({...record.indicatorMetadata,canonicalObjectId:record.canonicalObjectId,canonicalUri:record.canonicalUri,canonicalObjectType:record.canonicalObjectType,representations:record.representations,normalizedLowestReportingLevel:record.normalizedLowestReportingLevel,normalizedProgrammeTags:record.programmeTags,systemPortalTags:record.systemPortalTags}));
   $('metric-indicators').textContent = state.indicators.length;
@@ -180,7 +213,8 @@ function openModal(id){
   const graphSelect=$('kg-focus');
   const graphAvailable=graphSelect&&[...graphSelect.options].some(option=>option.value===id);
   const indiaMeta=x.country?meta('Country / scope',x.country)+meta('India programme',x.normalizedProgrammeTags.join('; ')||'Not assigned')+meta('System / portal',x.systemPortalTags.join('; ')||'Not specified')+meta('Source programme labels',x.programmeTags,true)+meta('Programme component',x.programmeComponent)+meta('Object type',x.objectType||x.recordType)+meta('Official-name status',x.officialNameStatus)+meta('Source-reported system',x.indiaReportingSystem)+meta('Normalized lowest reporting level',x.normalizedLowestReportingLevel)+meta('Source-reported lowest level',x.lowestReportingLevel)+meta('Full reporting levels',x.reportingLevel)+meta('Reporting unit',x.reportingUnit)+meta('Responsible cadre',x.responsibleCadre)+meta('Administrative level',x.administrativeLevel)+meta('Facility type',x.facilityType)+meta('Record type',x.recordType)+meta('Source document',x.sourceDocument)+meta('Source section',x.sourceSection)+meta('Source item code',x.sourceItemCode)+meta('Source version',x.sourceVersion)+meta('Aggregation rule',x.aggregationRule,true)+meta('Zero-denominator rule',x.zeroDenominatorRule,true)+meta('Linked HMIS data elements',x.relatedElementIds,true)+meta('Related registry indicators',x.relatedIndicatorIds,true)+meta('Crosswalk status',x.crosswalkStatus,true)+meta('Data lineage',x.lineage,true)+meta('Currentness',x.currentness,true)+meta('Source location',x.sourcePage,true):'';
-  $('modal-content').innerHTML='<div class="modal-kicker"><span>'+esc(x.id)+'</span><span>'+esc(x.status)+'</span><span>Verified '+esc(x.verified)+'</span></div><p class="eyebrow">'+esc(x.domain)+' · '+esc(x.subdomain)+'</p><h2 id="modal-title">'+esc(x.name)+'</h2><div class="modal-lead"><p>'+esc(x.displayDefinition||x.definition)+'</p><div><span>Collection</span><strong>'+esc(x.collection)+'</strong></div><div><span>Framework</span><strong>'+esc(x.code||'Not assigned')+'</strong></div></div><div class="metadata-grid">'+meta('Measure type',x.measureType)+meta('Scale',x.scaleDisplay)+meta('Normalized formula',x.normalizedFormula,true)+meta('Denominator population',x.denominatorPopulation,true)+indiaMeta+meta('WHO health-system pillars',(x.whoPillars||[]).join('; '),true)+meta('Numerator',x.numerator)+meta('Denominator',x.denominator)+meta('Official / source formula or method',x.formula)+meta('Unit',x.unit)+meta('Reference population',x.population)+meta('Frequency',x.frequency)+meta('Preferred data source',x.dataSource)+meta('Recommended disaggregation',x.disaggregation)+meta('Direction',x.direction)+meta('Potential uses',x.uses)+meta('Key limitations',x.caveats,true)+meta('Pillar classification note',x.whoPillarBasis,true)+meta('Legacy metadata marker','Historical '+x.metadataLevel+' · '+x.completeness+'%; retained for provenance and not a PHAOS-MDQ-001 computed grade',true)+'</div><div class="source-panel"><div><span>Primary registry</span><strong>'+esc(x.source)+'</strong><small>'+esc(x.org)+'</small></div><div><span>Source identity</span><strong>'+esc(x.sourceId)+'</strong><small>'+(x.sourceVariant?'Unresolved source variant':esc(x.indiaReleaseStatus||'Curated record'))+'</small></div>'+(graphAvailable?'<button type="button" id="modal-graph-link" class="modal-graph-link">Explore in graph →</button>':'')+'<a href="'+esc(x.url)+'" target="_blank" rel="noreferrer">Open authoritative metadata ↗</a></div>';
+  $('modal-content').innerHTML='<div class="modal-kicker"><span>'+esc(x.id)+'</span><span>'+esc(x.status)+'</span><span>Verified '+esc(x.verified)+'</span></div><p class="eyebrow">'+esc(x.domain)+' · '+esc(x.subdomain)+'</p><h2 id="modal-title">'+esc(x.name)+'</h2><div class="modal-lead"><p>'+esc(x.displayDefinition||x.definition)+'</p><div><span>Collection</span><strong>'+esc(x.collection)+'</strong></div><div><span>Framework</span><strong>'+esc(x.code||'Not assigned')+'</strong></div></div><div class="metadata-grid">'+meta('Measure type',x.measureType)+meta('Scale',x.scaleDisplay)+meta('Normalized formula',x.normalizedFormula,true)+meta('Denominator population',x.denominatorPopulation,true)+indiaMeta+meta('WHO health-system pillars',(x.whoPillars||[]).join('; '),true)+meta('Numerator',x.numerator)+meta('Denominator',x.denominator)+meta('Official / source formula or method',x.formula)+meta('Unit',x.unit)+meta('Reference population',x.population)+meta('Frequency',x.frequency)+meta('Preferred data source',x.dataSource)+meta('Recommended disaggregation',x.disaggregation)+meta('Direction',x.direction)+meta('Potential uses',x.uses)+meta('Key limitations',x.caveats,true)+meta('Pillar classification note',x.whoPillarBasis,true)+meta('Legacy metadata marker','Historical '+x.metadataLevel+' · '+x.completeness+'%; retained for provenance and not a PHAOS-MDQ-001 computed grade',true)+'</div>'+window.phaosNavigation.renderFor(id)+'<div class="source-panel"><div><span>Primary registry</span><strong>'+esc(x.source)+'</strong><small>'+esc(x.org)+'</small></div><div><span>Source identity</span><strong>'+esc(x.sourceId)+'</strong><small>'+(x.sourceVariant?'Unresolved source variant':esc(x.indiaReleaseStatus||'Curated record'))+'</small></div>'+(graphAvailable?'<button type="button" id="modal-graph-link" class="modal-graph-link">Explore in graph →</button>':'')+'<a href="'+esc(x.url)+'" target="_blank" rel="noreferrer">Open authoritative metadata ↗</a></div>';
+  window.phaosNavigation.bind($('modal-content'));
   $('modal-graph-link')?.addEventListener('click',()=>{ closeModal(); location.hash='knowledge-graph'; graphSelect.value=id; graphSelect.dispatchEvent(new Event('change')); });
   $('modal-backdrop').hidden=false; document.body.style.overflow='hidden'; $('modal-close').focus();
 }

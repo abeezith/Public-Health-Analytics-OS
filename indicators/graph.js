@@ -209,9 +209,11 @@ function showNodeDetail(id) {
     const neighbor = kg.graph.nodes.find(item => item.id === neighborId);
     return `<button type="button" data-kg-node="${kgEsc(neighborId)}"><b>${kgEsc(kgShort(neighbor?.label || neighborId, 72))}</b><small>${kgEsc(edge.label)} · ${kgEsc(edge.assertionStatus)}</small></button>`;
   }).join('');
-  kg$('kg-detail').innerHTML = `<p class="eyebrow">Selected node</p><div class="kg-type-chip">${kgEsc(node.type.replace(/([a-z])([A-Z])/g, '$1 $2'))}</div><h3>${kgEsc(node.label)}</h3><p>${kgEsc(node.description || 'No additional description supplied.')}</p><dl>${preferredFacts.map(([label, value]) => `<div><dt>${kgEsc(label)}</dt><dd>${kgEsc(value)}</dd></div>`).join('')}</dl>${neighbors ? `<div class="kg-relations"><strong>Visible connections</strong><div class="kg-neighbor-list">${neighbors}</div></div>` : ''}${id !== kg.focusId ? '<button id="kg-refocus" class="kg-secondary">Explore from this node</button>' : ''}${node.url ? `<a class="kg-source-link" href="${kgEsc(node.url)}" target="_blank" rel="noreferrer">Open official source ↗</a>` : ''}`;
+  const registryButton=window.phaosNavigation?.hasRecord(id)?`<button type="button" class="kg-registry-link" data-nav-object="${kgEsc(id)}">Open Registry metadata →</button>`:'';
+  kg$('kg-detail').innerHTML = `<p class="eyebrow">Selected node</p><div class="kg-type-chip">${kgEsc(node.type.replace(/([a-z])([A-Z])/g, '$1 $2'))}</div><h3>${kgEsc(node.label)}</h3><p>${kgEsc(node.description || 'No additional description supplied.')}</p><dl>${preferredFacts.map(([label, value]) => `<div><dt>${kgEsc(label)}</dt><dd>${kgEsc(value)}</dd></div>`).join('')}</dl>${neighbors ? `<div class="kg-relations"><strong>Visible connections</strong><div class="kg-neighbor-list">${neighbors}</div></div>` : ''}${id !== kg.focusId ? '<button id="kg-refocus" class="kg-secondary">Explore from this node</button>' : ''}${registryButton}${node.url ? `<a class="kg-source-link" href="${kgEsc(node.url)}" target="_blank" rel="noreferrer">Open official source ↗</a>` : ''}`;
   animateDetail();
   kg$('kg-refocus')?.addEventListener('click', () => setFocus(id));
+  window.phaosNavigation?.bind(kg$('kg-detail'));
   kg$('kg-detail').querySelectorAll('[data-kg-node]').forEach(button => button.addEventListener('click', () => showNodeDetail(button.dataset.kgNode)));
 }
 
@@ -252,6 +254,8 @@ function setFocus(id, historyAction = 'push') {
   if (option) kg$('kg-focus').value = id;
   renderNeighborhood();
 }
+window.phaosGraphFocus=id=>{if(kg.graph&&kg.graph.nodes.some(node=>node.id===id))setFocus(id);};
+window.addEventListener('phaos:navigation-ready',()=>{if(kg.graph)showNodeDetail(kg.selectedId||kg.focusId);});
 
 function updateNavigation() {
   kg$('kg-back').disabled = kg.historyIndex <= 0;

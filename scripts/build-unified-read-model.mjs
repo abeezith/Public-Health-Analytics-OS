@@ -17,10 +17,12 @@ const manifestPath = 'indicators/data/registry/manifest.json';
 const indicatorRelease = read('indicators/data/indicators.json');
 const ncdRelease = read('indicators/data/ncd/release.json');
 const hmisCatalogue = read('indicators/data/hmis/catalog.json');
+const hmisCrosswalks = read('indicators/data/hmis/crosswalks.json');
 const headquarters = read('indicators/data/hmis/headquarters-elements.json');
 const facilityCorrections = read('indicators/data/hmis/facility-format-corrections.json');
 const identities = read('indicators/data/governance/unified-identity-index.json');
 const discovery = read('indicators/data/governance/discovery-facets.json');
+const graph = read('indicators/data/graph/graph.json');
 const reportDir = 'indicators/data/hmis/report-schemas/state-report-20260901';
 const reportManifest = read(`${reportDir}/HMIS-RPTSCHEMA-STATE-20260901-001.report-schema-manifest.json`);
 const dimensionDictionary = read(`${reportDir}/HMIS-RPTSCHEMA-STATE-20260901-001.dimension-dictionary.json`);
@@ -149,6 +151,64 @@ const occurrences = identities.occurrences.map(identity => {
   return {...identity,discovery:{displayName:reference?.sourceHeader||identity.sourceManifestationId,occurrenceClass:'Dimension',group:reference?.category||'Reporting dimension',groupCode:null,sourceCode:reference?.canonicalName||null,linkageStatus:'Reporting dimension',linkedObjectId:null,linkedObjectName:null},reportMetadata:reference,dimensionMetadata};
 });
 
+const recordById = new Map(records.map(item => [item.canonicalObjectId,item]));
+const graphNodeById = new Map((graph.nodes || []).map(item => [item.id,item]));
+const relationshipKeys = new Set();
+let unresolvedRelationshipReferences = 0;
+for (const record of records) {
+  const indicator = record.indicatorMetadata;
+  const hmis = record.hmisMetadata;
+  const sourceLinks = [];
+  if (indicator?.source || indicator?.sourceId || indicator?.url) sourceLinks.push({sourceId:indicator.sourceId||null,label:indicator.source||indicator.org||'Indicator source',authority:indicator.org||null,url:indicator.url||null,version:indicator.sourceVersion||null,sourcePage:indicator.sourcePage||indicator.sourceSection||null,sourceLayer:'Indicator registry'});
+  if (hmis?.sourceAuthority || hmis?.sourceUrl) sourceLinks.push({sourceId:null,label:hmis.sourceAuthority||'HMIS source',authority:hmis.sourceAuthority||null,url:hmis.sourceUrl||null,version:hmis.sourceVersion||hmis.sourcePeriod||null,sourcePage:hmis.sourcePage||null,sourceLayer:'HMIS knowledge registry'});
+  record.navigation={relatedObjects:[],occurrences:[],sources:sourceLinks.filter((item,index,array)=>array.findIndex(other=>`${other.label}|${other.url}|${other.version}`===`${item.label}|${item.url}|${item.version}`)===index),graphNode:null};
+  const graphNode=graphNodeById.get(record.canonicalObjectId);
+  if(graphNode)record.navigation.graphNode={nodeId:graphNode.id,nodeType:graphNode.type,label:graphNode.label};
+}
+
+function addReciprocalRelation(sourceId,targetId,relationshipType,label,assertionStatus,evidence){
+  if(!sourceId||!targetId||sourceId===targetId)return;
+  const source=recordById.get(sourceId),target=recordById.get(targetId);
+  if(!source||!target){unresolvedRelationshipReferences+=1;return;}
+  const key=[sourceId,targetId,relationshipType,label].join('|');
+  if(relationshipKeys.has(key))return;
+  relationshipKeys.add(key);
+  source.navigation.relatedObjects.push({targetId,targetName:target.displayName,targetType:target.canonicalObjectType,relationshipType,label,direction:'outbound',assertionStatus,evidence});
+  target.navigation.relatedObjects.push({targetId:sourceId,targetName:source.displayName,targetType:source.canonicalObjectType,relationshipType,label,direction:'inbound',assertionStatus,evidence});
+}
+
+for(const record of records){
+  const indicator=record.indicatorMetadata||{},hmis=record.hmisMetadata||{};
+  for(const id of indicator.relatedElementIds||[])addReciprocalRelation(record.canonicalObjectId,id,'relatedElement','Uses or relates to data element','curated','Indicator metadata relationship');
+  for(const id of indicator.relatedIndicatorIds||[])addReciprocalRelation(record.canonicalObjectId,id,'relatedIndicator','Related indicator','curated','Indicator metadata relationship');
+  for(const id of hmis.relatedIndicatorIds||[])addReciprocalRelation(record.canonicalObjectId,id,'relatedIndicator','Related indicator','curated','HMIS metadata relationship');
+  for(const id of hmis.relatedValidationRuleIds||[])addReciprocalRelation(record.canonicalObjectId,id,'validationRule','Checked by validation rule','curated','HMIS metadata relationship');
+  for(const candidate of hmis.leftCandidates||[])addReciprocalRelation(record.canonicalObjectId,candidate.elementId,'validationOperand','Left-side validation candidate',candidate.matchStatus==='Exact'?'reviewed':'candidate',candidate.reviewStatus||'HMIS validation-rule candidate');
+  for(const candidate of hmis.rightCandidates||[])addReciprocalRelation(record.canonicalObjectId,candidate.elementId,'validationOperand','Right-side validation candidate',candidate.matchStatus==='Exact'?'reviewed':'candidate',candidate.reviewStatus||'HMIS validation-rule candidate');
+}
+for(const crosswalk of hmisCrosswalks.indicatorElementCrosswalks||[]){
+  for(const candidate of crosswalk.numeratorCandidates||[])addReciprocalRelation(crosswalk.indicatorId,candidate.elementId,'numeratorCandidate','Numerator data-element candidate',candidate.matchStatus==='Exact'?'reviewed':'candidate',candidate.reviewStatus||crosswalk.relationshipStatus);
+  for(const candidate of crosswalk.denominatorCandidates||[])addReciprocalRelation(crosswalk.indicatorId,candidate.elementId,'denominatorCandidate','Denominator data-element candidate',candidate.matchStatus==='Exact'?'reviewed':'candidate',candidate.reviewStatus||crosswalk.relationshipStatus);
+}
+for(const occurrence of occurrences){
+  if(!occurrence.canonicalObjectId)continue;
+  const record=recordById.get(occurrence.canonicalObjectId);
+  if(record)record.navigation.occurrences.push({occurrenceId:occurrence.occurrenceId,columnOrdinal:occurrence.columnOrdinal,displayName:occurrence.discovery.displayName,linkageStatus:occurrence.discovery.linkageStatus,schemaId:occurrence.schemaId});
+}
+for(const record of records){
+  record.navigation.relatedObjects.sort((a,b)=>a.targetName.localeCompare(b.targetName)||a.relationshipType.localeCompare(b.relationshipType));
+  record.navigation.occurrences.sort((a,b)=>a.columnOrdinal-b.columnOrdinal);
+}
+
+const navigationCounts={
+  reciprocalRelationshipAssertions:[...relationshipKeys].length,
+  navigableRelationshipEntries:records.reduce((sum,item)=>sum+item.navigation.relatedObjects.length,0),
+  canonicalOccurrenceLinks:records.reduce((sum,item)=>sum+item.navigation.occurrences.length,0),
+  sourceEvidenceLinks:records.reduce((sum,item)=>sum+item.navigation.sources.length,0),
+  graphNodeLinks:records.filter(item=>item.navigation.graphNode).length,
+  unresolvedRelationshipReferences
+};
+
 const membershipCounts = {
   indicator: records.filter(item => item.registryMemberships.includes('indicator')).length,
   hmis: records.filter(item => item.registryMemberships.includes('hmis')).length,
@@ -158,7 +218,7 @@ const model = {
   metadata: {
     id: 'PHAOS-UNIFIED-READ-MODEL',
     title: 'Public Health Analytics-OS consolidated discovery read model',
-    version: '1.1.0',
+    version: '1.2.0',
     generated: releaseDate,
     task: 'UNIFY-05',
     identityIndexVersion: identities.metadata.version,
@@ -166,7 +226,7 @@ const model = {
     discoveryFacetVersion: discovery.metadata.version,
     interpretationBoundary: 'This generated read model consolidates discovery metadata and preserves source representations in separate namespaces. It is not a dataset of observed values and does not assert semantic equivalence, aggregation safety, computability, source currency or custodian approval.'
   },
-  counts: {...identities.counts, registryMemberships:membershipCounts},
+  counts: {...identities.counts, registryMemberships:membershipCounts, navigation:navigationCounts},
   metrics: {ncdReleaseRecords:ncdRelease.records.length,ncdSourceDocuments:ncdRelease.sources.length},
   coverage: indicatorRelease.coverage,
   records,
@@ -176,7 +236,7 @@ const model = {
 write(modelPath, model);
 const bytes = fs.readFileSync(path.join(root, modelPath));
 const manifest = {
-  metadata: {id:'PHAOS-UNIFIED-READ-MODEL-MANIFEST',version:'1.1.0',generated:releaseDate,task:'UNIFY-06'},
+  metadata: {id:'PHAOS-UNIFIED-READ-MODEL-MANIFEST',version:'1.2.0',generated:releaseDate,task:'UNIFY-07'},
   distribution: {path:'unified-read-model.json',mediaType:'application/json',bytes:bytes.length,sha256:crypto.createHash('sha256').update(bytes).digest('hex')},
   counts: model.counts,
   sources: [
@@ -185,8 +245,10 @@ const manifest = {
     'indicators/data/indicators.json',
     'indicators/data/ncd/release.json',
     'indicators/data/hmis/catalog.json',
+    'indicators/data/hmis/crosswalks.json',
     'indicators/data/hmis/headquarters-elements.json',
     'indicators/data/hmis/facility-format-corrections.json',
+    'indicators/data/graph/graph.json',
     `${reportDir}/HMIS-RPTSCHEMA-STATE-20260901-001.report-schema-manifest.json`,
     `${reportDir}/HMIS-RPTSCHEMA-STATE-20260901-001.dimension-dictionary.json`,
     `${reportDir}/column-to-element-crosswalk.json`,
