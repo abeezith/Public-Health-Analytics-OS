@@ -17,7 +17,7 @@
 - [x] Schema, provenance, read-model, UI and integrated ten-check release validators pass.
 - [x] Local browser UAT passes for reviewed indicator, non-pilot pending state and reviewed HMIS object.
 - [x] Narrow-layout check shows a single-column provenance grid with no page overflow; browser console has no warnings or errors.
-- [ ] GitHub Actions deployment and live Pages smoke test recorded after publication.
+- [x] GitHub Actions run `38293721641` passed and deployed commit `6d64316`; live Release 3.9 footer, versioned scripts and reviewed-indicator provenance were smoke-tested with zero browser warnings or errors.
 
 ## Browser scenarios
 
