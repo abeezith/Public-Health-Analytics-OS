@@ -70,6 +70,8 @@ Within a priority class, sequence by: patient/public-health risk → data-integr
 
 ### Sprint 0 — Reconcile and establish the delivery baseline
 
+**Status:** Complete — 12 October 2026. Evidence: [`PHAOS-RECON-001`](LEGACY-PLAN-RECONCILIATION.md), [`PHAOS-BASELINE-2026-10-12`](DELIVERY-BASELINE-2026-10-12.md) and [`PHAOS-BACKUP-2026-10-12-01`](BACKUP-REGISTER.md).
+
 **Sprint goal:** convert the evaluated four-sprint package and current workstream tracker into one executable backlog without merging incompatible code or claims.
 
 | Story / ticket | User story and deliverable | Pri. | SP | Acceptance criteria |
@@ -292,4 +294,4 @@ A ticket is Done only when all applicable conditions pass:
 
 ## 12. Recommended immediate commitment
 
-Start **Sprint 0** and accept only its four reconciliation tickets. The next delivery commitment is **Sprint 1: `UNIFY-10` + `TRUST-06`**, because every later provenance, semantic, programme and interoperability increment depends on a reliable release gate.
+Sprint 0 is complete. Start **Sprint 1: `UNIFY-10` + `TRUST-06`** as the active delivery commitment, because every later provenance, semantic, programme and interoperability increment depends on a reliable release gate.

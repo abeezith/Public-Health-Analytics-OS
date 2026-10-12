@@ -4,7 +4,7 @@ Last updated: 12 October 2026
 
 This document is the persistent task list for programme expansion and all parallel trust, analytical-utility and interoperability work. It reconciles the September 2026 multi-expert evaluation with the work already completed in Analytics-OS Release 3.7. Programme research remains the authority for official names, definitions, denominators, formulas, source versions and evidence boundaries. Graph, FHIR, terminology and analytical-product workstreams consume governed records but do not silently change them or delay source-bounded registry publication.
 
-The delivery sequence is operationalized in [`PHAOS-ROADMAP-001`](AGILE-ROADMAP.md), with an interactive [Kanban view](../roadmap/). The tracker governs workstream scope and status; the roadmap governs sprint packaging, ticket acceptance and UAT.
+The delivery sequence is operationalized in [`PHAOS-ROADMAP-001`](AGILE-ROADMAP.md), with an interactive [Kanban view](../roadmap/). The tracker governs workstream scope and status; the roadmap governs sprint packaging, ticket acceptance and UAT. Sprint 0 evidence is recorded in the [legacy-plan reconciliation ledger](LEGACY-PLAN-RECONCILIATION.md), [delivery baseline](DELIVERY-BASELINE-2026-10-12.md) and [backup register](BACKUP-REGISTER.md).
 
 ## Status vocabulary
 
@@ -41,7 +41,7 @@ The evaluation is treated as review evidence, not as an instruction set. Recomme
 
 This is the master order for future task-by-task execution. A later task may start early only when its listed dependencies are satisfied.
 
-1. **RECON-00 — Expert-evaluation reconciliation ledger — Complete.** Record each recommendation as already implemented, accepted, adapted, deferred or rejected and connect it to an existing or new workstream.
+1. **RECON-00 — Expert-evaluation and legacy-plan reconciliation — Complete.** Fifty-six legacy tickets and 37 supplied/extracted assets are inventoried, dispositioned and linked to governed work; incompatible assets remain quarantined outside production. The baseline and recovery checkpoint are verified.
 2. **TRUST-01–TRUST-07 — Trust foundation — In progress.** TRUST-01 governance, TRUST-02 schemas, TRUST-03 metadata-quality rules and TRUST-04 persistent identity/lifecycle are complete. Next add entry-level provenance under TRUST-05, followed by automated release validation and source-change monitoring.
 3. **UNIFY-01–UNIFY-10 — Unified registry — In progress.** UNIFY-01 object taxonomy through UNIFY-09 observation-ready modelling are complete. Next automate the integrated validation and release gate under UNIFY-10.
 4. **UTILITY-01–UTILITY-06 — Analyst and programme utility — Pending.** Improve discovery, controlled disaggregation, data-quality and comparability guidance, versioned targets, source-backed response guidance and tested calculations.
