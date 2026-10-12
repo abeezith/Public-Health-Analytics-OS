@@ -51,3 +51,10 @@ The controlled fixture was rejected with all expected percentage-rule errors. Th
 - Nineteen source-bounded NTEP C&DST percentage labels remain governed exceptions because the captured public labels do not specify denominator populations. They remain non-computable pending source/domain review.
 - Passing UAT does not imply custodian approval, semantic equivalence, clinical validity or exhaustive accessibility conformance.
 - No observed health values or public bulk-download controls are introduced.
+
+## Production verification
+
+- GitHub Actions run `38288048955` passed the integrated gate before the dependent Pages deployment job.
+- GitHub Pages is configured for workflow deployment; the validated commit was `93f67b8`.
+- Live smoke tests passed for the home, Registry, graph and roadmap. The live release shows Release 3.8, 3,751 indicators, 1,046 HMIS objects, 560 occurrences, six canonical WHO pillars, 1,766 graph nodes and 7,169 relationships.
+- The live roadmap shows Sprint 1 completed, Sprint 2 active and all 52 tickets present.
