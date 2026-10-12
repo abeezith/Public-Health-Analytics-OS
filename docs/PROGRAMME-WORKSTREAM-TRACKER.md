@@ -1,8 +1,10 @@
 # Analytics-OS programme and standards workstream tracker
 
-Last updated: 7 September 2026
+Last updated: 12 October 2026
 
 This document is the persistent task list for programme expansion and all parallel trust, analytical-utility and interoperability work. It reconciles the September 2026 multi-expert evaluation with the work already completed in Analytics-OS Release 3.7. Programme research remains the authority for official names, definitions, denominators, formulas, source versions and evidence boundaries. Graph, FHIR, terminology and analytical-product workstreams consume governed records but do not silently change them or delay source-bounded registry publication.
+
+The delivery sequence is operationalized in [`PHAOS-ROADMAP-001`](AGILE-ROADMAP.md), with an interactive [Kanban view](../roadmap/). The tracker governs workstream scope and status; the roadmap governs sprint packaging, ticket acceptance and UAT.
 
 ## Status vocabulary
 

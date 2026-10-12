@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Agile Roadmap · Public Health Analytics-OS</title>
+  <meta name="description" content="Sprint, epic, story, ticket and UAT roadmap for Public Health Analytics-OS.">
+  <meta name="theme-color" content="#102f3b">
+  <link rel="canonical" href="https://abeezith.github.io/Public-Health-Analytics-OS/roadmap/">
+  <style>
+    :root{--ink:#102f3b;--muted:#597078;--paper:#f4f1ea;--white:#fff;--line:#d9dedb;--teal:#087f79;--mint:#dff2ea;--gold:#e7a93b;--rose:#a94d57;--blue:#3f6da5;--shadow:0 14px 35px rgba(16,47,59,.09)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+    a{color:inherit}.topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:22px;padding:15px clamp(18px,4vw,60px);background:rgba(16,47,59,.96);color:#fff;backdrop-filter:blur(12px)}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;text-decoration:none;white-space:nowrap}.mark{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#d6efe5;color:var(--ink);font-size:12px}
+    .topbar nav{display:flex;gap:20px;margin-left:auto}.topbar nav a{text-decoration:none;color:#dce9e8;font-size:13px}.topbar nav a:hover,.topbar nav a:focus-visible{color:#fff}
+    .hero{padding:70px clamp(18px,5vw,76px) 44px;background:linear-gradient(135deg,#102f3b,#174d56 65%,#087f79);color:#fff}.hero-inner{max-width:1400px;margin:auto;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(300px,.7fr);gap:44px;align-items:end}
+    .eyebrow{text-transform:uppercase;letter-spacing:.15em;font-size:11px;font-weight:800;color:#9bd5c8}.hero h1{margin:.35rem 0 1rem;font-family:Georgia,serif;font-size:clamp(42px,6vw,78px);font-weight:500;line-height:.98}.hero p{max-width:760px;color:#d7e7e5;font-size:17px}
+    .hero-meta{display:grid;grid-template-columns:1fr 1fr;gap:10px}.metric{padding:18px;border:1px solid rgba(255,255,255,.16);border-radius:16px;background:rgba(255,255,255,.07)}.metric strong{display:block;font-size:25px}.metric span{color:#cfe1df;font-size:12px}
+    main{max-width:1600px;margin:auto;padding:30px clamp(14px,3vw,42px) 70px}.notice{display:flex;gap:12px;align-items:flex-start;margin-bottom:22px;padding:15px 18px;border:1px solid #c8ddd5;border-radius:14px;background:#edf7f2}.notice strong{white-space:nowrap}.notice p{margin:0;color:#3f595e}
+    .controls{position:sticky;top:64px;z-index:15;display:grid;grid-template-columns:minmax(220px,2fr) repeat(3,minmax(145px,1fr)) auto;gap:10px;padding:13px;margin-bottom:18px;border:1px solid var(--line);border-radius:18px;background:rgba(244,241,234,.96);box-shadow:0 8px 20px rgba(16,47,59,.05);backdrop-filter:blur(10px)}
+    input,select,button{font:inherit}input,select{width:100%;min-height:42px;padding:9px 12px;border:1px solid #cbd4d1;border-radius:11px;background:#fff;color:var(--ink)}button{min-height:42px;padding:9px 14px;border:0;border-radius:11px;background:var(--ink);color:#fff;cursor:pointer}button:hover,button:focus-visible{background:var(--teal)}
+    .summary{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:0 4px 18px;color:var(--muted)}.summary strong{color:var(--ink)}.legend{display:flex;flex-wrap:wrap;gap:8px;margin-left:auto}.legend span,.pill{padding:4px 8px;border-radius:999px;font-size:11px;font-weight:750}.p0{background:#f8dfe1;color:#7b2630}.p1{background:#e0ecf9;color:#28527d}.p2{background:#eee8d7;color:#6e591b}.done{background:var(--mint);color:#176055}
+    .board{display:grid;grid-template-columns:repeat(6,minmax(265px,1fr));gap:14px;align-items:start;overflow-x:auto;padding-bottom:16px}.column{min-height:560px;padding:12px;border:1px solid var(--line);border-radius:18px;background:#e9e7e1}.column-head{display:flex;align-items:center;justify-content:space-between;padding:5px 5px 12px}.column-head h2{margin:0;font-size:14px}.column-head span{display:grid;place-items:center;min-width:27px;height:27px;padding:0 7px;border-radius:20px;background:#fff;font-size:12px;font-weight:800}
+    .stack{display:grid;gap:10px}.card{border:1px solid #dce2df;border-radius:14px;background:#fff;box-shadow:0 6px 18px rgba(16,47,59,.055);overflow:hidden;transition:transform .16s ease,box-shadow .16s ease}.card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}.card summary{list-style:none;cursor:pointer;padding:14px}.card summary::-webkit-details-marker{display:none}.card-top{display:flex;align-items:center;gap:7px;margin-bottom:9px}.ticket{font:800 11px/1.2 ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--teal)}.card .sprint{margin-left:auto;color:#6e7e82;font-size:10px}.card h3{margin:0 0 7px;font-size:14px;line-height:1.28}.card .story{margin:0;color:var(--muted);font-size:12.5px}.card-detail{padding:0 14px 14px;border-top:1px solid #edf0ee}.card-detail p{margin:11px 0 0;font-size:12px}.card-detail strong{display:block;margin-bottom:3px;color:#54676b;font-size:10px;text-transform:uppercase;letter-spacing:.08em}.empty{padding:24px 12px;color:#738388;text-align:center;font-size:12px}.hidden{display:none!important}
+    .footer-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:34px}.panel{padding:24px;border:1px solid var(--line);border-radius:18px;background:#fff}.panel h2{margin:0 0 10px;font:500 26px Georgia,serif}.panel p,.panel li{color:var(--muted)}.panel ul{margin:8px 0;padding-left:18px}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:15px}.action{display:inline-flex;align-items:center;min-height:40px;padding:9px 13px;border-radius:10px;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;font-size:13px}.action.secondary{border:1px solid #cdd7d4;background:#fff;color:var(--ink)}
+    footer{display:flex;justify-content:space-between;gap:20px;padding:24px clamp(18px,4vw,60px);background:#0d2831;color:#c4d5d5;font-size:12px}
+    @media(max-width:1050px){.hero-inner{grid-template-columns:1fr}.controls{grid-template-columns:1fr 1fr 1fr}.controls input{grid-column:1/-1}.board{grid-template-columns:repeat(6,285px)}.footer-grid{grid-template-columns:1fr}}
+    @media(max-width:650px){.topbar nav{display:none}.hero{padding-top:48px}.hero-meta{grid-template-columns:1fr 1fr}.controls{position:static;grid-template-columns:1fr}.controls input{grid-column:auto}.notice{display:block}.notice strong{display:block;margin-bottom:4px}.board{grid-template-columns:repeat(6,84vw)}.footer-grid{grid-template-columns:1fr}footer{display:block}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+    @media print{.topbar,.controls,button{display:none!important}.hero{padding:24px;background:#fff;color:#000}.hero p{color:#333}.board{display:block;overflow:visible}.column{min-height:0;margin-bottom:15px}.card{break-inside:avoid}.footer-grid{display:block}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="../"><span class="mark">PH</span><span>Analytics-OS</span></a>
+    <nav aria-label="Roadmap navigation"><a href="../indicators/#registry">Registry</a><a href="../indicators/#knowledge-graph">Graph</a><a href="../indicators/#method">Method</a><a href="../indicators/#coverage">Coverage</a></nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div><div class="eyebrow">PHAOS-ROADMAP-001 · Version 1.0.0</div><h1>Agile delivery roadmap</h1><p>A governed path from reconciliation and release safety to provenance, analytical utility, semantic publication and deeper India programme coverage.</p></div>
+      <div class="hero-meta"><div class="metric"><strong>7</strong><span>sprints · 13 weeks</span></div><div class="metric"><strong>8</strong><span>delivery epics</span></div><div class="metric"><strong id="ticket-total">0</strong><span>tracked tickets</span></div><div class="metric"><strong>P0→P2</strong><span>risk-first priority</span></div></div>
+    </div>
+  </section>
+
+  <main>
+    <div class="notice"><strong>Planning rule</strong><p>Source evidence and adopted governance policies remain authoritative. Blocked operational mappings stay blocked; official names are preserved; public bulk-download controls remain disabled.</p></div>
+    <section class="controls" aria-label="Roadmap filters">
+      <input id="query" type="search" placeholder="Search ticket, outcome or acceptance criteria…" aria-label="Search roadmap">
+      <select id="sprint-filter" aria-label="Filter by sprint"><option value="all">All sprints</option></select>
+      <select id="epic-filter" aria-label="Filter by epic"><option value="all">All epics</option></select>
+      <select id="priority-filter" aria-label="Filter by priority"><option value="all">All priorities</option><option>P0</option><option>P1</option><option>P2</option><option>Blocked</option></select>
+      <button id="clear" type="button">Clear</button>
+    </section>
+    <div class="summary"><span><strong id="visible-count">0</strong> tickets shown</span><span>· Click a card for acceptance criteria</span><div class="legend"><span class="p0">P0 Must</span><span class="p1">P1 Should</span><span class="p2">P2 Could</span><span class="done">Completed</span></div></div>
+
+    <section class="board" id="board" aria-label="Kanban roadmap">
+      <section class="column" data-column="completed"><div class="column-head"><h2>Completed foundation</h2><span>0</span></div><div class="stack"></div></section>
+      <section class="column" data-column="now"><div class="column-head"><h2>Now · Sprint 0</h2><span>0</span></div><div class="stack"></div></section>
+      <section class="column" data-column="next"><div class="column-head"><h2>Next · Sprints 1–2</h2><span>0</span></div><div class="stack"></div></section>
+      <section class="column" data-column="planned"><div class="column-head"><h2>Planned · Sprints 3–6</h2><span>0</span></div><div class="stack"></div></section>
+      <section class="column" data-column="parallel"><div class="column-head"><h2>Parallel standards</h2><span>0</span></div><div class="stack"></div></section>
+      <section class="column" data-column="blocked"><div class="column-head"><h2>Evidence-blocked</h2><span>0</span></div><div class="stack"></div></section>
+    </section>
+
+    <section class="footer-grid">
+      <article class="panel"><h2>Definition of Done</h2><ul><li>Acceptance criteria, validation and applicable UAT pass.</li><li>Official wording, identity, source boundary and history are preserved.</li><li>Accessibility, privacy, licensing and responsive behavior are checked.</li><li>Manifest, tracker, decision log, release notes and rollback point are current.</li><li>GitHub Pages deployment and production smoke test pass.</li></ul></article>
+      <article class="panel"><h2>Release acceptance</h2><p>Zero open severity-1 or severity-2 defects. Product owner and a relevant domain/data reviewer sign off against the frozen release manifest. Accepted severity-3 issues require an owner, target sprint and documented workaround.</p><div class="actions"><a class="action" href="https://github.com/abeezith/Public-Health-Analytics-OS/blob/main/docs/AGILE-ROADMAP.md">Read detailed roadmap →</a><a class="action secondary" href="https://github.com/abeezith/Public-Health-Analytics-OS/blob/main/docs/PROGRAMME-WORKSTREAM-TRACKER.md">Workstream tracker</a></div></article>
+    </section>
+  </main>
+  <footer><span>Public Health Analytics-OS · Planning baseline 12 October 2026</span><span>Complete only within declared source boundaries</span></footer>
+
+  <script>
+    const tickets = [
+      {id:'TRUST-01–04',title:'Trust foundation',story:'Governance, schemas, metadata quality, identity and lifecycle policies adopted.',ac:'Published governed artifacts exist and current registry records validate against their adopted boundaries.',priority:'P0',sprint:'Baseline',epic:'E1',column:'completed'},
+      {id:'UNIFY-01–09',title:'Unified registry foundation',story:'Taxonomy through observation-ready model delivered.',ac:'4,743 canonical objects, 4,797 representations and 560 occurrences reconcile without flattening object classes.',priority:'P0',sprint:'Baseline',epic:'E1',column:'completed'},
+      {id:'PRG-01–05',title:'Five programme layers',story:'NTEP, RMNCH+A, Immunization, VBD foundation and NP-NCD are represented.',ac:'Each programme states its source boundary, evidence gaps and graph scope.',priority:'P1',sprint:'Baseline',epic:'E6',column:'completed'},
+      {id:'RECON-01',title:'Inventory legacy work',story:'Register all supplied epics, stories, tickets and assets.',ac:'Every item has source, proposed epic, dependency and duplicate status.',priority:'P0',sprint:'Sprint 0',epic:'E0',column:'now'},
+      {id:'RECON-02',title:'Assign dispositions',story:'Classify each legacy item against current architecture.',ac:'Each item is completed, adapt, new, blocked, rejected or superseded with rationale.',priority:'P0',sprint:'Sprint 0',epic:'E0',column:'now'},
+      {id:'RECON-03',title:'Quarantine incompatible assets',story:'Keep broken or duplicate proposals out of production while retaining evidence.',ac:'Syntax-broken JS, duplicate scripts and incompatible workflows are traceably archived.',priority:'P1',sprint:'Sprint 0',epic:'E0',column:'now'},
+      {id:'RECON-04',title:'Freeze delivery baseline',story:'Record counts, versions, gaps and deployment path.',ac:'Counts reproduce; policies and blockers are explicit; backlog order is accepted.',priority:'P0',sprint:'Sprint 0',epic:'E0',column:'now'},
+      {id:'VAL-01',title:'Validation orchestrator',story:'Run all schema, semantic and UI gates from one entry point.',ac:'One command returns non-zero on failure and writes a machine-readable summary.',priority:'P0',sprint:'Sprint 1',epic:'E1',column:'next'},
+      {id:'VAL-02',title:'Schema and identity gate',story:'Validate IDs, representations, schema versions and lifecycle links.',ac:'No duplicate canonical IDs; all required records validate; lifecycle pairs agree.',priority:'P0',sprint:'Sprint 1',epic:'E1',column:'next'},
+      {id:'VAL-03',title:'Relationship integrity gate',story:'Validate sources, graph targets, reciprocity and occurrence links.',ac:'No unresolved accepted target; candidates remain target-free; directions pass.',priority:'P0',sprint:'Sprint 1',epic:'E1',column:'next'},
+      {id:'VAL-04',title:'Formula and denominator gate',story:'Test measure type, scale, numerator and denominator consistency.',ac:'Percentages show (numerator ÷ denominator) × 100 and every scale is explicit.',priority:'P0',sprint:'Sprint 1',epic:'E1',column:'next'},
+      {id:'VAL-05',title:'Discovery and accessibility regression',story:'Test counts, filters, views, links, keyboard and responsive behavior.',ac:'Golden scenarios pass for all object classes at mobile and desktop widths.',priority:'P0',sprint:'Sprint 1',epic:'E1',column:'next'},
+      {id:'VAL-06',title:'Reproducible release manifest',story:'Block failed publications and record exact release inputs.',ac:'Manifest records SHA, counts, inputs, schemas, checksums and validation result.',priority:'P0',sprint:'Sprint 1',epic:'E1',column:'next'},
+      {id:'PROV-01',title:'Versioned provenance model',story:'Add reviewer role, method, dates, changed fields, reason and status.',ac:'Schema is versioned and prior representations retain an explicit compatibility path.',priority:'P0',sprint:'Sprint 2',epic:'E2',column:'next'},
+      {id:'PROV-02',title:'Ten-record provenance pilot',story:'Apply change events across global, India and HMIS records.',ac:'All IDs resolve; history is append-only; official wording is not silently changed.',priority:'P0',sprint:'Sprint 2',epic:'E2',column:'next'},
+      {id:'PROV-03',title:'Repair verification extractor',story:'Scan current definition, caveat and source-note fields correctly.',ac:'Fixtures detect known flags and UTF-8 output is clean.',priority:'P1',sprint:'Sprint 2',epic:'E2',column:'next'},
+      {id:'PROV-04',title:'Expose review state',story:'Show status, review date, method and evidence in details.',ac:'Review is visible without implying source authority or custodian approval.',priority:'P1',sprint:'Sprint 2',epic:'E2',column:'next'},
+      {id:'MON-01',title:'Source fingerprints',story:'Detect link, version and content change states.',ac:'HTTP success never equals unchanged meaning; redirects and access loss differ.',priority:'P1',sprint:'Sprint 2',epic:'E2',column:'next'},
+      {id:'MON-02',title:'Human change-review queue',story:'Convert detected changes into governed review items.',ac:'Affected records, fingerprints, severity and disposition are explicit; no auto-rewrite.',priority:'P1',sprint:'Sprint 2',epic:'E2',column:'next'},
+      {id:'DISC-01',title:'Operational discovery facets',story:'Add frequency, cadre, availability, lifecycle, review and computability filters.',ac:'Controlled values and unknowns are retained; counts and deep links remain correct.',priority:'P1',sprint:'Sprint 3',epic:'E3',column:'planned'},
+      {id:'DISAGG-01',title:'Evidence-separated disaggregation',story:'Separate source-required, system-available and analyst-recommended assertions.',ac:'Every assertion carries evidence, scope and review; recommendation never implies availability.',priority:'P0',sprint:'Sprint 3',epic:'E3',column:'planned'},
+      {id:'DISAGG-02',title:'Dimension vocabularies',story:'Govern age, sex, geography, social category, facility and programme dimensions.',ac:'Stable IDs, definitions, hierarchy and unknown/not-applicable semantics validate.',priority:'P1',sprint:'Sprint 3',epic:'E3',column:'planned'},
+      {id:'DISAGG-03',title:'Twenty-record equity pilot',story:'Map reviewed disaggregation across five domains.',ac:'All IDs resolve; availability is evidenced; privacy risk and review are recorded.',priority:'P0',sprint:'Sprint 3',epic:'E3',column:'planned'},
+      {id:'DISAGG-04',title:'Disaggregation discovery UI',story:'Filter and inspect required, available and recommended dimensions.',ac:'States are visually distinct and filters are accurate and accessible.',priority:'P1',sprint:'Sprint 3',epic:'E3',column:'planned'},
+      {id:'DQ-01',title:'Priority comparability guidance',story:'Add lag, interpretation and validation guidance to 30 indicators.',ac:'Guidance is source-aware; unavailable guidance is stated rather than invented.',priority:'P1',sprint:'Sprint 3',epic:'E3',column:'planned'},
+      {id:'SEM-01',title:'SKOS mapping policy',story:'Formalize exact, close, broad, narrow and related mappings.',ac:'Direction and evidence tests pass; mappings do not imply aggregation safety.',priority:'P0',sprint:'Sprint 4',epic:'E4',column:'planned'},
+      {id:'SEM-02',title:'RDF distributions',story:'Publish versioned JSON-LD and Turtle using established vocabularies.',ac:'Identity, provenance, versions and relationship direction survive serialization.',priority:'P1',sprint:'Sprint 4',epic:'E4',column:'planned'},
+      {id:'SEM-03',title:'SHACL release gate',story:'Validate required semantic shapes.',ac:'Identity, provenance, mappings and controlled vocabularies pass or block release.',priority:'P0',sprint:'Sprint 4',epic:'E4',column:'planned'},
+      {id:'SEM-04',title:'Resolvable canonical IDs',story:'Serve /id/{canonicalObjectId} as human and machine representations.',ac:'Active and retired IDs resolve, agree across formats and disclose lifecycle state.',priority:'P0',sprint:'Sprint 4',epic:'E4',column:'planned'},
+      {id:'CITE-01',title:'Citation and rights reconciliation',story:'Correct authorship, affiliation, licensing and reuse statements.',ac:'No placeholders or overclaims; original and third-party rights are distinguished.',priority:'P0',sprint:'Sprint 4',epic:'E4',column:'planned'},
+      {id:'PUB-01',title:'Semantic release candidate',story:'Package validated representations without public bulk-download controls.',ac:'Manifest, notes and evidence exist; no download control is introduced.',priority:'P1',sprint:'Sprint 4',epic:'E4',column:'planned'},
+      {id:'PERF-01',title:'Discovery benchmark',story:'Measure load, first result, filtering and memory on reference devices.',ac:'All object classes and exact baseline counts are included in reproducible results.',priority:'P1',sprint:'Sprint 5',epic:'E5',column:'planned'},
+      {id:'PERF-02',title:'Search architecture decision',story:'Compare browser filtering with a complete static index.',ac:'ADR covers completeness, hosting, accessibility, maintenance and rollback.',priority:'P1',sprint:'Sprint 5',epic:'E5',column:'planned'},
+      {id:'PERF-03',title:'Complete search index',story:'Implement only when benchmark thresholds fail.',ac:'No HMIS/occurrence regression; counts and relevance fixtures reconcile.',priority:'P2',sprint:'Sprint 5',epic:'E5',column:'planned'},
+      {id:'PERF-04',title:'No-JS fallback',story:'Keep core content and a browsable object index available.',ac:'Fallback is useful and limitations of enhanced filtering are explicit.',priority:'P1',sprint:'Sprint 5',epic:'E5',column:'planned'},
+      {id:'PERF-05',title:'Performance and resilience UAT',story:'Validate budgets, accessibility, relevance and coverage.',ac:'Budgets pass or change rolls back; counts and keyboard flows remain valid.',priority:'P0',sprint:'Sprint 5',epic:'E5',column:'planned'},
+      {id:'PRG6-01',title:'IDSP/IHIP source boundary',story:'Inventory authoritative documents, tables and access restrictions.',ac:'Ledger records exact sources, versions, access dates, tables and exclusions.',priority:'P0',sprint:'Sprint 6',epic:'E6',column:'planned'},
+      {id:'PRG6-02',title:'First communicable-disease batch',story:'Extract official measures with normalized metadata.',ac:'Official names remain; formula, scale, frequency, level and source are captured when stated.',priority:'P1',sprint:'Sprint 6',epic:'E6',column:'planned'},
+      {id:'PRG6-03',title:'Programme graph layer',story:'Map concepts, manifestations, sources and structure.',ac:'Edges are governed and evidenced; disease measures are not falsely equated.',priority:'P1',sprint:'Sprint 6',epic:'E6',column:'planned'},
+      {id:'VBD-01',title:'Deepen one VBD disease slice',story:'Complete one public source table beyond the foundation set.',ac:'Boundary, denominator, lowest level and surveillance context are explicit.',priority:'P1',sprint:'Sprint 6',epic:'E6',column:'planned'},
+      {id:'OPMAP-01',title:'Operational mapping policy',story:'Govern system/instance/version-aware field mappings.',ac:'UID, direction, confidence, evidence and validity are required; UIDs are not universal.',priority:'P0',sprint:'Sprint 6',epic:'E6',column:'planned'},
+      {id:'REVIEW-01',title:'External expert validation route',story:'Define review, conflicts and dispositions without implying endorsement.',ac:'Brief, evidence, SLA and accept/reject/defer states are documented.',priority:'P1',sprint:'Sprint 6',epic:'E6',column:'planned'},
+      {id:'FHIR-01',title:'FHIR version policy',story:'Adopt R4 initially and document R4→R5 transformation.',ac:'Canonical/version rules are explicit; ABDM conformance is not implied.',priority:'P1',sprint:'Parallel',epic:'E7',column:'parallel'},
+      {id:'FHIR-02',title:'Object-to-resource matrix',story:'Choose appropriate FHIR resources by object class.',ac:'Not every object becomes Measure; observations and definitions remain distinct.',priority:'P1',sprint:'Parallel',epic:'E7',column:'parallel'},
+      {id:'FHIR-03',title:'Programme mapping template',story:'Create the repeatable standards checklist for each programme.',ac:'Identity, population, scoring, period, evidence and maturity are captured.',priority:'P1',sprint:'Parallel',epic:'E7',column:'parallel'},
+      {id:'FHIR-04',title:'Balanced programme pilots',story:'Validate one representative set per programme.',ac:'Mapped, validated, reviewed, computable and approved states are never conflated.',priority:'P2',sprint:'Parallel',epic:'E7',column:'parallel'},
+      {id:'TERM-01',title:'Terminology eligibility review',story:'Assess ICD, SNOMED CT, LOINC and other slots separately.',ac:'Only eligible clinical concepts map with version, license, evidence and match type.',priority:'P2',sprint:'Parallel',epic:'E7',column:'parallel'},
+      {id:'FHIR-REP',title:'Repeat standards review per programme',story:'Apply the interoperability checklist whenever a programme is added or deepened.',ac:'Applicability, validation evidence, maturity and deferred operational dependencies are recorded.',priority:'P1',sprint:'Parallel',epic:'E7',column:'parallel'},
+      {id:'OPMAP-02',title:'HMIS/DHIS2 operational pilot',story:'Map against an authorized current instance export.',ac:'Cannot start until a versioned, authorized export is available.',priority:'Blocked',sprint:'Evidence required',epic:'E6',column:'blocked'},
+      {id:'OPMAP-03',title:'NTEP operational mapping',story:'Map Ni-kshay fields from an authorized dictionary.',ac:'No field or UID is inferred from screenshots or public labels.',priority:'Blocked',sprint:'Evidence required',epic:'E6',column:'blocked'},
+      {id:'OPMAP-04',title:'NP-NCD operational mapping',story:'Map portal/AMRIT/CBAC fields from authoritative evidence.',ac:'Versioned dictionary or export and mapping review are required.',priority:'Blocked',sprint:'Evidence required',epic:'E6',column:'blocked'},
+      {id:'DOI-01',title:'Zenodo DOI publication',story:'Create a citable archival release after rights review.',ac:'Authorship, affiliation, license and release semantics are approved first.',priority:'Blocked',sprint:'Evidence required',epic:'E4',column:'blocked'}
+    ];
+
+    const columns = [...document.querySelectorAll('.column')];
+    const query = document.querySelector('#query');
+    const sprintFilter = document.querySelector('#sprint-filter');
+    const epicFilter = document.querySelector('#epic-filter');
+    const priorityFilter = document.querySelector('#priority-filter');
+    const unique = key => [...new Set(tickets.map(t => t[key]))];
+    unique('sprint').forEach(value => sprintFilter.add(new Option(value,value)));
+    unique('epic').sort().forEach(value => epicFilter.add(new Option(`${value} · ${({E0:'Reconciliation',E1:'Release trust',E2:'Provenance',E3:'Analytical utility',E4:'Semantic publication',E5:'Performance',E6:'Programme expansion',E7:'Interoperability'})[value]}`,value)));
+    document.querySelector('#ticket-total').textContent = tickets.length;
+
+    function makeCard(ticket){
+      const card=document.createElement('details'); card.className='card';
+      const summary=document.createElement('summary');
+      const top=document.createElement('div'); top.className='card-top';
+      const id=document.createElement('span'); id.className='ticket'; id.textContent=ticket.id;
+      const priority=document.createElement('span'); priority.className=`pill ${ticket.priority==='P0'?'p0':ticket.priority==='P1'?'p1':ticket.priority==='P2'?'p2':'p0'}`; priority.textContent=ticket.priority;
+      const sprint=document.createElement('span'); sprint.className='sprint'; sprint.textContent=ticket.sprint;
+      top.append(id,priority,sprint);
+      const title=document.createElement('h3'); title.textContent=ticket.title;
+      const story=document.createElement('p'); story.className='story'; story.textContent=ticket.story;
+      summary.append(top,title,story);
+      const detail=document.createElement('div'); detail.className='card-detail';
+      const ac=document.createElement('p'); const label=document.createElement('strong'); label.textContent='Acceptance criteria'; ac.append(label,document.createTextNode(ticket.ac));
+      const meta=document.createElement('p'); const metaLabel=document.createElement('strong'); metaLabel.textContent='Epic'; meta.append(metaLabel,document.createTextNode(ticket.epic));
+      detail.append(ac,meta); card.append(summary,detail); return card;
+    }
+
+    function render(){
+      const term=query.value.trim().toLowerCase(); let visible=0;
+      columns.forEach(column=>{column.querySelector('.stack').replaceChildren();});
+      tickets.forEach(ticket=>{
+        const haystack=Object.values(ticket).join(' ').toLowerCase();
+        const match=(!term||haystack.includes(term))&&(sprintFilter.value==='all'||ticket.sprint===sprintFilter.value)&&(epicFilter.value==='all'||ticket.epic===epicFilter.value)&&(priorityFilter.value==='all'||ticket.priority===priorityFilter.value);
+        if(match){document.querySelector(`[data-column="${ticket.column}"] .stack`).append(makeCard(ticket));visible++;}
+      });
+      columns.forEach(column=>{const count=column.querySelector('.stack').children.length;column.querySelector('.column-head span').textContent=count;if(!count){const empty=document.createElement('div');empty.className='empty';empty.textContent='No matching tickets';column.querySelector('.stack').append(empty);}});
+      document.querySelector('#visible-count').textContent=visible;
+    }
+    [query,sprintFilter,epicFilter,priorityFilter].forEach(control=>control.addEventListener(control===query?'input':'change',render));
+    document.querySelector('#clear').addEventListener('click',()=>{query.value='';sprintFilter.value=epicFilter.value=priorityFilter.value='all';render();query.focus();});
+    render();
+  </script>
+</body>
+</html>
