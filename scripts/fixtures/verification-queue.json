@@ -1,0 +1,12 @@
+{
+  "records": [
+    {"canonicalObjectId":"FIXTURE-FLAG-1","indicatorMetadata":{"definition":"Definition pending source verification.","caveats":"Not stated in the source."}},
+    {"canonicalObjectId":"FIXTURE-FLAG-2","hmisMetadata":{"currentness":"Current form requires confirmation.","crosswalkStatus":"Unresolved candidate."}},
+    {"canonicalObjectId":"FIXTURE-CLEAN-1","indicatorMetadata":{"definition":"Live births receiving the stated service.","caveats":"Interpret with the documented denominator."}}
+  ],
+  "expected": {
+    "flaggedSubjects": ["FIXTURE-FLAG-1", "FIXTURE-FLAG-2"],
+    "cleanSubjects": ["FIXTURE-CLEAN-1"],
+    "minimumQueueEntries": 4
+  }
+}

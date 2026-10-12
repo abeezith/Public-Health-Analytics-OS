@@ -1,0 +1,15 @@
+{
+  "id": "PHAOS-PROVENANCE-RELEASE-001",
+  "version": "1.0.0",
+  "released": "2026-10-12",
+  "model": "PHAOS-PROVENANCE-001",
+  "schemaPackage": "1.2.0",
+  "reviewEvents": 10,
+  "changeEvents": 10,
+  "subjects": 10,
+  "reviewerRoles": 3,
+  "publicIdentityPolicy": "role-only",
+  "appendOnly": true,
+  "files": ["review-events.json", "change-events.json"],
+  "boundary": "Pilot provenance for ten existing canonical records. No official indicator wording, source assertion or business version is changed."
+}

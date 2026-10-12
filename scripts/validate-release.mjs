@@ -15,6 +15,8 @@ const checks = [
   command('Metadata-quality profile', 'scripts/validate-metadata-quality.mjs'),
   command('Canonical identity and lifecycle', 'scripts/validate-unified-identities.mjs'),
   command('Unified read model and relationships', 'scripts/validate-unified-read-model.mjs'),
+  command('Entry-level provenance and change history', 'scripts/validate-provenance.mjs'),
+  command('Verification queue extraction', 'scripts/validate-verification-queue.mjs'),
   command('Observation-ready publication boundary', 'scripts/validate-observation-model.mjs'),
   command('Measure, formula, scale and denominator rules', 'scripts/validate-measure-normalization.mjs'),
   command('Static UI, links and accessibility contract', 'scripts/validate-site-ui.mjs'),
@@ -45,7 +47,11 @@ const trackedInputs = [
   'indicators/data/governance/metadata-quality-profile.json',
   'indicators/data/governance/validation-exceptions.json',
   'indicators/data/observations/manifest.json',
-  'indicators/data/schemas/1.1.0/manifest.json',
+  'indicators/data/schemas/1.2.0/manifest.json',
+  'indicators/data/governance/provenance-model.json',
+  'indicators/data/provenance/manifest.json',
+  'indicators/data/provenance/review-events.json',
+  'indicators/data/provenance/change-events.json',
   'index.html',
   'indicators/index.html',
   'indicators/app.js',
@@ -56,12 +62,13 @@ const trackedInputs = [
   'roadmap/index.html'
 ];
 const model = JSON.parse(fs.readFileSync(path.join(root, 'indicators/data/registry/unified-read-model.json'), 'utf8'));
-const schemaManifest = JSON.parse(fs.readFileSync(path.join(root, 'indicators/data/schemas/1.1.0/manifest.json'), 'utf8'));
+const schemaManifest = JSON.parse(fs.readFileSync(path.join(root, 'indicators/data/schemas/1.2.0/manifest.json'), 'utf8'));
+const provenanceManifest = JSON.parse(fs.readFileSync(path.join(root, 'indicators/data/provenance/manifest.json'), 'utf8'));
 const status = results.every(result => result.status === 'pass') ? 'pass' : 'fail';
 const report = {
   metadata: {
     id: 'PHAOS-RELEASE-VALIDATION-REPORT',
-    gateVersion: '1.0.0',
+    gateVersion: '1.1.0',
     generatedAt: new Date().toISOString(),
     commitSha: git(['rev-parse', 'HEAD']),
     branch: git(['branch', '--show-current']),
@@ -75,6 +82,9 @@ const report = {
     hmisMemberships: model.counts.registryMemberships.hmis,
     reportOccurrences: model.occurrences.length,
     schemaPackageVersion: schemaManifest.version,
+    provenanceSubjects: provenanceManifest.subjects,
+    reviewEvents: provenanceManifest.reviewEvents,
+    changeEvents: provenanceManifest.changeEvents,
     publicBulkDownloadControls: 'disabled',
     aggregateObservations: 0,
     referenceValues: 0
@@ -88,4 +98,3 @@ fs.mkdirSync(path.dirname(outputPath), { recursive: true });
 fs.writeFileSync(outputPath, `${JSON.stringify(report, null, 2)}\n`);
 console.log(JSON.stringify({ status, report: path.relative(root, outputPath).replaceAll('\\', '/'), checks: Object.fromEntries(results.map(result => [result.label, result.status])), durationMs: report.metadata.durationMs }, null, 2));
 if (status !== 'pass') process.exitCode = 1;
-

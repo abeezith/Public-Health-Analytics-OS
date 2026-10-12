@@ -1,11 +1,11 @@
 # Analytics-OS versioned JSON Schema guide
 
-**Active schema package:** `1.1.0`
+**Active schema package:** `1.2.0`
 **JSON Schema dialect:** Draft 2020-12  
 **Adopted:** 7 September 2026  
 **Governance task:** TRUST-02
 
-Package [`1.1.0`](../indicators/data/schemas/1.1.0/) retains the definition, graph, evidence and event contracts introduced in immutable package 1.0.0 and adds aggregate-observation and reference-value contracts under UNIFY-09. The unversioned [`manifest.json`](../indicators/data/schemas/manifest.json) is only a discovery pointer. Production consumers must pin the versioned manifest or a versioned schema `$id`.
+Package [`1.2.0`](../indicators/data/schemas/1.2.0/) retains the definition, graph, evidence and value contracts introduced in immutable packages 1.0.0 and 1.1.0, then strengthens review and change events under TRUST-05. The unversioned [`manifest.json`](../indicators/data/schemas/manifest.json) is only a discovery pointer. Production consumers must pin the versioned manifest or a versioned schema `$id`.
 
 ## Contract inventory
 
@@ -37,13 +37,13 @@ Package [`1.1.0`](../indicators/data/schemas/1.1.0/) retains the definition, gra
 9. **Privacy precedes publication.** Person-level fields are outside the aggregate contract. Public records require an allowed disclosure-review state, and suppressed records cannot carry a numeric value.
 10. **Targets are not results.** Reference values have their own authority, applicability and effective period.
 
-## Compatibility boundary in 1.1.0
+## Compatibility boundary in 1.2.0
 
-Package 1.1.0 is a backward-compatible minor release. Existing definition contracts retain the Release 3.7 compatibility rules from 1.0.0. The two new value contracts use `additionalProperties: false` so unidentified or person-level fields cannot enter through an extension point. No observed values or reference values are included in the release.
+Package 1.2.0 is a backward-compatible minor package for definition and value records. Historical review/change events remain valid only against their pinned 1.0.0 or 1.1.0 contracts; new events must meet the stronger 1.2.0 provenance requirements. Review events now require source-access date, reviewed fields and reason. Change events now require status, method and business/source/representation version scope. No observed values or reference values are included in the release.
 
 A null `measureType` still means normalized classification is pending, not that the source supplied a null measure. Older WHO building-block labels beginning `Access to essential medicines` remain compatibility aliases, while new mappings use `Medical products, vaccines and technologies`. Existing NP-NCD tuple records remain accepted as documented legacy payloads; new programme records should use named indicator objects.
 
-This compatibility policy is not permission to add arbitrary fields indefinitely. TRUST-03 publishes the separate [`PHAOS-MDQ-001`](METADATA-QUALITY-SPECIFICATION.md) computed quality profile without rewriting legacy fields. TRUST-04 has adopted [`PHAOS-IDENTITY-001`](IDENTITY-LIFECYCLE-POLICY.md) for canonical, manifestation, representation and occurrence identity plus lifecycle semantics. TRUST-05 will populate entry-level quality/review/change properties, and TRUST-06 will make release validation an automated gate.
+This compatibility policy is not permission to add arbitrary fields indefinitely. TRUST-03 publishes the separate [`PHAOS-MDQ-001`](METADATA-QUALITY-SPECIFICATION.md) computed quality profile without rewriting legacy fields. TRUST-04 adopted [`PHAOS-IDENTITY-001`](IDENTITY-LIFECYCLE-POLICY.md); TRUST-05 now publishes the [`PHAOS-PROVENANCE-001`](ENTRY-LEVEL-PROVENANCE.md) pilot; TRUST-06 enforces them through the integrated release gate.
 
 ## Versioning policy
 

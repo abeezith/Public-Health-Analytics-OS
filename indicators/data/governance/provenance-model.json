@@ -1,0 +1,23 @@
+{
+  "id": "PHAOS-PROVENANCE-001",
+  "version": "1.0.0",
+  "status": "Adopted",
+  "adoptedOn": "2026-10-12",
+  "schemaPackage": "1.2.0",
+  "principles": [
+    "Review and change events are append-only records; prior events are never overwritten.",
+    "Reviewer role is sufficient where publishing personal identity is unnecessary.",
+    "Source access date, review date and change date are distinct.",
+    "Technical validation, source verification, domain review, computability and custodian approval are independent states.",
+    "A provenance event never changes official wording silently and never implies source-custodian approval."
+  ],
+  "publicReviewerPolicy": {
+    "default": "role-only",
+    "namedReviewersRequire": "Documented consent and a legitimate public accountability need",
+    "prohibited": ["private email", "phone number", "unnecessary personal identifier"]
+  },
+  "reviewTypes": ["source-verification", "technical-validation", "domain-review", "computability-review", "semantic-mapping-review", "custodian-approval", "governance-review"],
+  "reviewStatuses": ["not-reviewed", "pending", "in-review", "technically-validated", "domain-reviewed", "computable", "custodian-approved", "rejected", "superseded"],
+  "changeStatuses": ["proposed", "applied", "rejected", "superseded"],
+  "versionScopes": ["business", "source", "representation"]
+}

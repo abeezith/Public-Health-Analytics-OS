@@ -23,6 +23,8 @@ const facilityCorrections = read('indicators/data/hmis/facility-format-correctio
 const identities = read('indicators/data/governance/unified-identity-index.json');
 const discovery = read('indicators/data/governance/discovery-facets.json');
 const graph = read('indicators/data/graph/graph.json');
+const reviewRelease = read('indicators/data/provenance/review-events.json');
+const changeRelease = read('indicators/data/provenance/change-events.json');
 const reportDir = 'indicators/data/hmis/report-schemas/state-report-20260901';
 const reportManifest = read(`${reportDir}/HMIS-RPTSCHEMA-STATE-20260901-001.report-schema-manifest.json`);
 const dimensionDictionary = read(`${reportDir}/HMIS-RPTSCHEMA-STATE-20260901-001.dimension-dictionary.json`);
@@ -112,6 +114,16 @@ const indicators = [...(indicatorRelease.indicators || []), ...expandNcdRelease(
 const hmisObjects = [...applyFacilityCorrections(hmisCatalogue.objects || [], facilityCorrections), ...expandFacilityCorrections(facilityCorrections), ...expandHeadquarters(headquarters)];
 const indicatorById = new Map(indicators.map(item => [item.id,item]));
 const hmisById = new Map(hmisObjects.map(item => [item.id,item]));
+const reviewsBySubject = new Map();
+for (const event of reviewRelease.events || []) {
+  if (!reviewsBySubject.has(event.subjectId)) reviewsBySubject.set(event.subjectId, []);
+  reviewsBySubject.get(event.subjectId).push(event);
+}
+const changesBySubject = new Map();
+for (const event of changeRelease.events || []) {
+  if (!changesBySubject.has(event.subjectId)) changesBySubject.set(event.subjectId, []);
+  changesBySubject.get(event.subjectId).push(event);
+}
 
 const records = identities.canonicalObjects.map(identity => {
   const indicatorMetadata = normalizeMetadataPillars(indicatorById.get(identity.canonicalObjectId) || null);
@@ -122,6 +134,9 @@ const records = identities.canonicalObjects.map(identity => {
   const programmeTags = [...new Set(manifestations.flatMap(programmeTagsFor))].sort();
   const systemPortalTags = [...new Set(manifestations.flatMap(systemPortalTagsFor))].sort();
   const level = indicatorMetadata?.lowestReportingLevel || hmisMetadata?.lowestReportingLevel || '';
+  const reviews = (reviewsBySubject.get(identity.canonicalObjectId) || []).sort((a,b) => a.reviewedOn.localeCompare(b.reviewedOn));
+  const changes = (changesBySubject.get(identity.canonicalObjectId) || []).sort((a,b) => a.changedOn.localeCompare(b.changedOn));
+  const latestReview = reviews.at(-1) || null;
   return {
     canonicalObjectId: identity.canonicalObjectId,
     canonicalUri: identity.canonicalUri,
@@ -142,6 +157,22 @@ const records = identities.canonicalObjects.map(identity => {
     replaces: identity.replaces,
     replacedBy: identity.replacedBy,
     representations: identity.representations,
+    provenance: latestReview ? {
+      status: latestReview.status,
+      reviewType: latestReview.reviewType,
+      reviewedOn: latestReview.reviewedOn,
+      sourceAccessedOn: latestReview.sourceAccessedOn,
+      reviewerRole: latestReview.reviewer.role || null,
+      reviewerName: latestReview.reviewer.name || null,
+      method: latestReview.method,
+      reason: latestReview.reason,
+      scope: latestReview.scope || null,
+      findings: latestReview.findings || null,
+      reviewedFields: latestReview.reviewedFields,
+      publicIdentityPolicy: latestReview.publicIdentityPolicy || 'role-only',
+      reviewEventIds: reviews.map(event => event.id),
+      changeEventIds: changes.map(event => event.id)
+    } : null,
     indicatorMetadata,
     hmisMetadata
   };
@@ -232,13 +263,14 @@ const model = {
   metadata: {
     id: 'PHAOS-UNIFIED-READ-MODEL',
     title: 'Public Health Analytics-OS consolidated discovery read model',
-    version: '1.3.0',
+    version: '1.4.0',
     generated: releaseDate,
-    task: 'UNIFY-10',
+    task: 'TRUST-05',
     identityIndexVersion: identities.metadata.version,
     taxonomyVersion: identities.metadata.taxonomyVersion,
     discoveryFacetVersion: discovery.metadata.version,
-    interpretationBoundary: 'This generated read model consolidates discovery metadata and preserves source representations in separate namespaces. It is not a dataset of observed values and does not assert semantic equivalence, aggregation safety, computability, source currency or custodian approval.'
+    provenanceModel: 'PHAOS-PROVENANCE-001',
+    interpretationBoundary: 'This generated read model consolidates discovery metadata and preserves source representations in separate namespaces. Provenance summaries expose review evidence but do not assert semantic equivalence, aggregation safety, computability, source currency or custodian approval.'
   },
   counts: {...identities.counts, registryMemberships:membershipCounts, navigation:navigationCounts},
   metrics: {ncdReleaseRecords:ncdRelease.records.length,ncdSourceDocuments:ncdRelease.sources.length},
@@ -250,7 +282,7 @@ const model = {
 write(modelPath, model);
 const bytes = fs.readFileSync(path.join(root, modelPath));
 const manifest = {
-  metadata: {id:'PHAOS-UNIFIED-READ-MODEL-MANIFEST',version:'1.3.0',generated:releaseDate,task:'UNIFY-10'},
+  metadata: {id:'PHAOS-UNIFIED-READ-MODEL-MANIFEST',version:'1.4.0',generated:releaseDate,task:'TRUST-05'},
   distribution: {path:'unified-read-model.json',mediaType:'application/json',bytes:bytes.length,sha256:crypto.createHash('sha256').update(bytes).digest('hex')},
   counts: model.counts,
   sources: [
@@ -263,6 +295,8 @@ const manifest = {
     'indicators/data/hmis/headquarters-elements.json',
     'indicators/data/hmis/facility-format-corrections.json',
     'indicators/data/graph/graph.json',
+    'indicators/data/provenance/review-events.json',
+    'indicators/data/provenance/change-events.json',
     `${reportDir}/HMIS-RPTSCHEMA-STATE-20260901-001.report-schema-manifest.json`,
     `${reportDir}/HMIS-RPTSCHEMA-STATE-20260901-001.dimension-dictionary.json`,
     `${reportDir}/column-to-element-crosswalk.json`,

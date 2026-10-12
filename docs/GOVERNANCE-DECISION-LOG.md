@@ -160,6 +160,18 @@ This log records material governance decisions separately from indicator and sof
 - **Migration and review date:** Review gate coverage when the first aggregate observation, new object class or dynamic service is introduced, and no later than 12 October 2027.
 - **Supersedes:** Ad hoc execution of independent validators and legacy branch publication without a validation dependency.
 
+## GOV-DEC-013 — Publish attributable entry-level review and change evidence
+
+- **Date:** 12 October 2026
+- **Status:** Adopted
+- **Decision owner:** Analytics-OS maintainer
+- **Decision:** Adopt `PHAOS-PROVENANCE-001`, schema package 1.2.0 and read model 1.4.0. New review events require source-access date, reviewed fields and reason; new change events require status, method and explicit version scope. Public reviewer identity defaults to role-only, and history is append-only.
+- **Reason and evidence:** Release-level provenance could not show which fields were reviewed, by whom, when or why. The balanced pilot validates 10 subjects, 10 review events, 10 change events and three reviewer roles across global, India programme and HMIS records.
+- **Alternatives considered:** Treat legacy verification dates as complete review evidence; overwrite records in place; publish personal reviewer names by default. These were rejected because they conflate states, erase history or create unnecessary privacy exposure.
+- **Affected artifacts or decision rights:** Provenance model and event stores, schema package, unified read model, detail views, verification extractor, release gate and workstream trackers. Source custodians retain authority over official definitions.
+- **Migration and review date:** Extend through governed events rather than backfilling inferred approval. Review at 100 provenance subjects, any identity-policy change or by 12 October 2027.
+- **Supersedes:** Unstructured entry-level verification labels as sufficient provenance evidence.
+
 ## Decision record template
 
 - **ID and title:**

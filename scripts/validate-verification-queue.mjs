@@ -1,0 +1,20 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {extractVerificationQueue,verificationQueueConfiguration} from './verification-queue.mjs';
+
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const read=relative=>JSON.parse(fs.readFileSync(path.join(root,relative),'utf8'));
+const fixture=read('scripts/fixtures/verification-queue.json');
+const model=read('indicators/data/registry/unified-read-model.json');
+const fixtureQueue=extractVerificationQueue(fixture.records);
+const fixtureSubjects=new Set(fixtureQueue.map(item=>item.canonicalObjectId));
+const errors=[];
+for(const id of fixture.expected.flaggedSubjects)if(!fixtureSubjects.has(id))errors.push(`Fixture failed to flag ${id}`);
+for(const id of fixture.expected.cleanSubjects)if(fixtureSubjects.has(id))errors.push(`Fixture incorrectly flagged ${id}`);
+if(fixtureQueue.length<fixture.expected.minimumQueueEntries)errors.push(`Fixture returned ${fixtureQueue.length}; expected at least ${fixture.expected.minimumQueueEntries}`);
+const liveQueue=extractVerificationQueue(model.records);
+if(!model.records.length)errors.push('Unified read model is empty');
+if(!verificationQueueConfiguration.scanFields.includes('definition')||!verificationQueueConfiguration.scanFields.includes('caveats'))errors.push('Required definition/caveat fields are not configured');
+console.log(JSON.stringify({status:errors.length?'fail':'pass',fixtureEntries:fixtureQueue.length,liveEntries:liveQueue.length,liveSubjects:new Set(liveQueue.map(item=>item.canonicalObjectId)).size,scanFields:verificationQueueConfiguration.scanFields,errors},null,2));
+if(errors.length)process.exitCode=1;

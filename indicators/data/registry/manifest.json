@@ -1,15 +1,15 @@
 {
   "metadata": {
     "id": "PHAOS-UNIFIED-READ-MODEL-MANIFEST",
-    "version": "1.3.0",
+    "version": "1.4.0",
     "generated": "2026-10-12",
-    "task": "UNIFY-10"
+    "task": "TRUST-05"
   },
   "distribution": {
     "path": "unified-read-model.json",
     "mediaType": "application/json",
-    "bytes": 25733558,
-    "sha256": "67d87d86c00c1dbef798ff8105fba708d25e5c7eb105516fafb7ade747b0a773"
+    "bytes": 25865904,
+    "sha256": "b7deee8adefd6eb49fd248072f0a3d5c95cb8b82a5427bd94c6294716714637c"
   },
   "counts": {
     "canonicalObjects": 4743,
@@ -50,6 +50,8 @@
     "indicators/data/hmis/headquarters-elements.json",
     "indicators/data/hmis/facility-format-corrections.json",
     "indicators/data/graph/graph.json",
+    "indicators/data/provenance/review-events.json",
+    "indicators/data/provenance/change-events.json",
     "indicators/data/hmis/report-schemas/state-report-20260901/HMIS-RPTSCHEMA-STATE-20260901-001.report-schema-manifest.json",
     "indicators/data/hmis/report-schemas/state-report-20260901/HMIS-RPTSCHEMA-STATE-20260901-001.dimension-dictionary.json",
     "indicators/data/hmis/report-schemas/state-report-20260901/column-to-element-crosswalk.json",

@@ -106,6 +106,8 @@ Within a priority class, sequence by: patient/public-health risk → data-integr
 
 **Sprint goal:** complete `TRUST-05` and `TRUST-07`, adapting the useful source-verification work to the current canonical model.
 
+**Status:** In progress — `PROV-01..PROV-04` completed in Release 3.9. Source monitoring and the human change-review queue (`MON-01..MON-02` / `TRUST-07`) remain next.
+
 | Story / ticket | User story and deliverable | Pri. | SP | Acceptance criteria |
 |---|---|---:|---:|---|
 | `S2-ST1 / PROV-01` | As reviewer, I need attributable review events. Extend provenance with reviewer role, method, dates, changed fields, reason and status. | P0 | 5 | Schema is versioned; prior representations remain valid through an explicit compatibility path; reviewer role is allowed where personal identity should not be public. |
@@ -296,4 +298,4 @@ A ticket is Done only when all applicable conditions pass:
 
 ## 12. Recommended immediate commitment
 
-Sprints 0 and 1 are complete. Start **Sprint 2: `TRUST-05` + `TRUST-07`** as the active delivery commitment: add attributable entry-level review/change events and source-change monitoring now that every publication is protected by the integrated release gate.
+Sprints 0 and 1 and the TRUST-05 provenance stories are complete. Continue **Sprint 2 with `TRUST-07`**: add source fingerprints and a human change-review queue without automatically rewriting governed records.
