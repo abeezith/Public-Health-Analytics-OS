@@ -2,9 +2,9 @@
   "metadata": {
     "id": "PHAOS-KG-INDIA-0.4",
     "title": "India multi-programme public-health indicator knowledge graph",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "status": "Domain-reviewed, source-bounded graph release",
-    "generated": "2026-09-05",
+    "generated": "2026-10-12",
     "programmes": [
       {
         "id": "PROGRAMME-UIP",
@@ -38604,7 +38604,7 @@
         "whoPillars": [
           "Service delivery",
           "Health information systems",
-          "Access to essential medicines and technologies"
+          "Medical products, vaccines and technologies"
         ],
         "crosswalkStatus": "No reviewed main-registry crosswalk yet",
         "status": "Official source; version-specific",
@@ -38746,7 +38746,7 @@
         "whoPillars": [
           "Service delivery",
           "Health information systems",
-          "Access to essential medicines and technologies"
+          "Medical products, vaccines and technologies"
         ],
         "crosswalkStatus": "No reviewed main-registry crosswalk yet",
         "status": "Official source; version-specific",
@@ -38782,7 +38782,7 @@
         "whoPillars": [
           "Service delivery",
           "Health information systems",
-          "Access to essential medicines and technologies"
+          "Medical products, vaccines and technologies"
         ],
         "crosswalkStatus": "No reviewed main-registry crosswalk yet",
         "status": "Official source; version-specific",
@@ -39961,7 +39961,7 @@
         "whoPillars": [
           "Service delivery",
           "Health information systems",
-          "Access to essential medicines and technologies"
+          "Medical products, vaccines and technologies"
         ],
         "crosswalkStatus": "No reviewed main-registry crosswalk yet",
         "status": "Official source; version-specific",
@@ -43310,7 +43310,7 @@
         "whoPillars": [
           "Service delivery",
           "Health information systems",
-          "Access to essential medicines and technologies"
+          "Medical products, vaccines and technologies"
         ],
         "crosswalkStatus": "No reviewed main-registry crosswalk yet",
         "status": "Official source; version-specific",
@@ -43452,7 +43452,7 @@
         "whoPillars": [
           "Service delivery",
           "Health information systems",
-          "Access to essential medicines and technologies"
+          "Medical products, vaccines and technologies"
         ],
         "crosswalkStatus": "No reviewed main-registry crosswalk yet",
         "status": "Official source; version-specific",
@@ -44522,7 +44522,7 @@
         "whoPillars": [
           "Service delivery",
           "Health information systems",
-          "Access to essential medicines and technologies"
+          "Medical products, vaccines and technologies"
         ],
         "crosswalkStatus": "No reviewed main-registry crosswalk yet",
         "status": "Official source; version-specific",
@@ -44978,7 +44978,7 @@
         "whoPillars": [
           "Service delivery",
           "Health information systems",
-          "Access to essential medicines and technologies"
+          "Medical products, vaccines and technologies"
         ],
         "crosswalkStatus": "No reviewed main-registry crosswalk yet",
         "status": "Official source; version-specific",
@@ -46000,7 +46000,7 @@
         "whoPillars": [
           "Service delivery",
           "Health information systems",
-          "Access to essential medicines and technologies"
+          "Medical products, vaccines and technologies"
         ],
         "crosswalkStatus": "No reviewed main-registry crosswalk yet",
         "status": "Official source; version-specific",
@@ -46176,7 +46176,7 @@
         "whoPillars": [
           "Service delivery",
           "Health information systems",
-          "Access to essential medicines and technologies"
+          "Medical products, vaccines and technologies"
         ],
         "crosswalkStatus": "No reviewed main-registry crosswalk yet",
         "status": "Official source; version-specific",
@@ -46317,7 +46317,7 @@
         "whoPillars": [
           "Service delivery",
           "Health information systems",
-          "Access to essential medicines and technologies"
+          "Medical products, vaccines and technologies"
         ],
         "crosswalkStatus": "No reviewed main-registry crosswalk yet",
         "status": "Official source; version-specific",
@@ -49655,7 +49655,7 @@
         "whoPillars": [
           "Service delivery",
           "Health information systems",
-          "Access to essential medicines and technologies"
+          "Medical products, vaccines and technologies"
         ],
         "crosswalkStatus": "No reviewed main-registry crosswalk yet",
         "status": "Official source; version-specific",

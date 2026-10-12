@@ -148,6 +148,18 @@ This log records material governance decisions separately from indicator and sof
 - **Migration and review date:** No value migration is needed because zero observations and zero reference values are published. Reassess at the first authorized ingestion and no later than 7 September 2027.
 - **Supersedes:** The reserved but undefined observation class in taxonomy 1.0.0.
 
+## GOV-DEC-012 — Gate every public release with reproducible validation
+
+- **Date:** 12 October 2026
+- **Status:** Adopted
+- **Decision owner:** Analytics-OS maintainer
+- **Decision:** A single release command must validate adopted schemas, metadata quality, identity/lifecycle, relationships, observation boundaries, measure normalization and static UI/accessibility. A controlled invalid fixture must also prove that the gate rejects defects. GitHub Pages publication must depend on the successful gate.
+- **Reason and evidence:** Separate validators could pass while another contract or user flow failed. The integrated gate passes eight checks against 4,743 canonical objects, 4,797 representations, 3,751 indicator manifestations, 1,046 HMIS objects and 560 report occurrences; browser UAT confirms class-aware filters, table parity, reciprocal navigation and normalized percentage metadata.
+- **Alternatives considered:** Relying on manual pre-release checks or allowing deployment and validation to run independently was rejected because either permits an unvalidated publication. A package-manager build was rejected because the site is intentionally buildless/static.
+- **Affected artifacts or decision rights:** Release workflow, read-model manifest, validation scripts, governed exception register, Sprint 1 UAT evidence and GitHub Pages deployment settings. Nineteen NTEP denominator gaps remain explicit governed exceptions and do not become computable through this decision.
+- **Migration and review date:** Review gate coverage when the first aggregate observation, new object class or dynamic service is introduced, and no later than 12 October 2027.
+- **Supersedes:** Ad hoc execution of independent validators and legacy branch publication without a validation dependency.
+
 ## Decision record template
 
 - **ID and title:**

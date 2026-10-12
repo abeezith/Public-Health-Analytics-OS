@@ -88,6 +88,8 @@ Within a priority class, sequence by: patient/public-health risk → data-integr
 
 **Sprint goal:** complete `UNIFY-10` and `TRUST-06` for the repository’s actual buildless/static architecture.
 
+**Status:** Complete — 12 October 2026. Eight integrated gates, controlled-failure testing, browser UAT and GitHub Actions publication enforcement passed for Release 3.8.
+
 | Story / ticket | User story and deliverable | Pri. | SP | Acceptance criteria |
 |---|---|---:|---:|---|
 | `S1-ST1 / VAL-01` | As maintainer, I need one validation entry point. Build an orchestrator for schema, semantic and UI-regression checks. | P0 | 5 | One documented command runs all gates, returns non-zero on failure and writes a machine-readable summary. |
@@ -294,4 +296,4 @@ A ticket is Done only when all applicable conditions pass:
 
 ## 12. Recommended immediate commitment
 
-Sprint 0 is complete. Start **Sprint 1: `UNIFY-10` + `TRUST-06`** as the active delivery commitment, because every later provenance, semantic, programme and interoperability increment depends on a reliable release gate.
+Sprints 0 and 1 are complete. Start **Sprint 2: `TRUST-05` + `TRUST-07`** as the active delivery commitment: add attributable entry-level review/change events and source-change monitoring now that every publication is protected by the integrated release gate.

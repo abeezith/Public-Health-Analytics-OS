@@ -10,7 +10,7 @@ const write = (relative, value) => {
   fs.mkdirSync(path.dirname(target), { recursive: true });
   fs.writeFileSync(target, `${JSON.stringify(value, null, 2)}\n`);
 };
-const releaseDate = '2026-09-07';
+const releaseDate = '2026-10-12';
 const modelPath = 'indicators/data/registry/unified-read-model.json';
 const manifestPath = 'indicators/data/registry/manifest.json';
 
@@ -85,6 +85,20 @@ function normalizeLowestReportingLevel(value = '') {
   return 'Source-defined / unresolved';
 }
 
+const whoPillarAliases = new Map([
+  ['Access to essential medicines', 'Medical products, vaccines and technologies'],
+  ['Access to essential medicines and technologies', 'Medical products, vaccines and technologies']
+]);
+function normalizeWhoPillar(value) { return whoPillarAliases.get(value) || value; }
+function normalizeMetadataPillars(item) {
+  if (!item) return null;
+  return {
+    ...item,
+    whoPillars: [...new Set((item.whoPillars || []).map(normalizeWhoPillar))],
+    ...(item.whoPillarPrimary ? { whoPillarPrimary: normalizeWhoPillar(item.whoPillarPrimary) } : {})
+  };
+}
+
 const excludedProgrammes = new Set(discovery.programmeExclusions || []);
 function programmeTagsFor(item) {
   return [...new Set([...(item.programmeTags || []), item.indiaProgram].filter(value => value && !excludedProgrammes.has(value)))].sort();
@@ -100,8 +114,8 @@ const indicatorById = new Map(indicators.map(item => [item.id,item]));
 const hmisById = new Map(hmisObjects.map(item => [item.id,item]));
 
 const records = identities.canonicalObjects.map(identity => {
-  const indicatorMetadata = indicatorById.get(identity.canonicalObjectId) || null;
-  const hmisMetadata = hmisById.get(identity.canonicalObjectId) || null;
+  const indicatorMetadata = normalizeMetadataPillars(indicatorById.get(identity.canonicalObjectId) || null);
+  const hmisMetadata = normalizeMetadataPillars(hmisById.get(identity.canonicalObjectId) || null);
   if (!indicatorMetadata && !hmisMetadata) throw new Error(`No source metadata for ${identity.canonicalObjectId}`);
   const memberships = [indicatorMetadata && 'indicator', hmisMetadata && 'hmis'].filter(Boolean);
   const manifestations = [indicatorMetadata,hmisMetadata].filter(Boolean);
@@ -218,9 +232,9 @@ const model = {
   metadata: {
     id: 'PHAOS-UNIFIED-READ-MODEL',
     title: 'Public Health Analytics-OS consolidated discovery read model',
-    version: '1.2.1',
+    version: '1.3.0',
     generated: releaseDate,
-    task: 'UNIFY-05',
+    task: 'UNIFY-10',
     identityIndexVersion: identities.metadata.version,
     taxonomyVersion: identities.metadata.taxonomyVersion,
     discoveryFacetVersion: discovery.metadata.version,
@@ -236,7 +250,7 @@ const model = {
 write(modelPath, model);
 const bytes = fs.readFileSync(path.join(root, modelPath));
 const manifest = {
-  metadata: {id:'PHAOS-UNIFIED-READ-MODEL-MANIFEST',version:'1.2.1',generated:releaseDate,task:'UNIFY-09'},
+  metadata: {id:'PHAOS-UNIFIED-READ-MODEL-MANIFEST',version:'1.3.0',generated:releaseDate,task:'UNIFY-10'},
   distribution: {path:'unified-read-model.json',mediaType:'application/json',bytes:bytes.length,sha256:crypto.createHash('sha256').update(bytes).digest('hex')},
   counts: model.counts,
   sources: [

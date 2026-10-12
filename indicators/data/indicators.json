@@ -7731,8 +7731,8 @@
       "code": "",
       "definition": "Average number of children a woman would bear under current age-specific fertility rates",
       "numerator": "Not applicable or source-defined count/value",
-      "denominator": "Not applicable unless specified by the source",
-      "formula": "Source-defined aggregation or count",
+      "denominator": "Women aged 15–49 years represented through age-specific fertility rates",
+      "formula": "Source-defined aggregation of age-specific fertility rates",
       "unit": "Births per woman",
       "population": "India programme-defined eligible population or reporting units",
       "frequency": "As specified by the programme source; commonly monthly, quarterly or annual",
@@ -7775,9 +7775,9 @@
       "indiaReleaseStatus": "Included — verified official subset",
       "measureType": "Ratio",
       "scaleDisplay": "ratio",
-      "normalizedFormula": "Source-defined aggregation or count",
-      "denominatorPopulation": "Not applicable—absolute count, source reporting element, or source-defined value",
-      "displayDefinition": "Average number of children a woman would bear under current age-specific fertility rates. Denominator population: Not applicable—absolute count, source reporting element, or source-defined value.",
+      "normalizedFormula": "Source-defined aggregation of age-specific fertility rates",
+      "denominatorPopulation": "Women aged 15–49 years represented through age-specific fertility rates",
+      "displayDefinition": "Average number of children a woman would bear under current age-specific fertility rates. Denominator population: women aged 15–49 years represented through age-specific fertility rates.",
       "programmeTags": [
         "National Family Health Survey"
       ]
@@ -8640,8 +8640,8 @@
       "code": "",
       "definition": "Government health expenditure divided by population",
       "numerator": "Not applicable or source-defined count/value",
-      "denominator": "Not applicable unless specified by the source",
-      "formula": "Source-defined aggregation or count",
+      "denominator": "Resident population for the corresponding geography and reference period",
+      "formula": "Government health expenditure ÷ resident population",
       "unit": "Indian rupees per person",
       "population": "India programme-defined eligible population or reporting units",
       "frequency": "As specified by the programme source; commonly monthly, quarterly or annual",
@@ -8686,9 +8686,9 @@
       "indiaReleaseStatus": "Included — verified official subset",
       "measureType": "Ratio",
       "scaleDisplay": "ratio",
-      "normalizedFormula": "Source-defined aggregation or count",
-      "denominatorPopulation": "Not applicable—absolute count, source reporting element, or source-defined value",
-      "displayDefinition": "Government health expenditure divided by population. Denominator population: Not applicable—absolute count, source reporting element, or source-defined value.",
+      "normalizedFormula": "government health expenditure ÷ resident population",
+      "denominatorPopulation": "Resident population for the corresponding geography and reference period",
+      "displayDefinition": "Government health expenditure divided by population. Denominator population: resident population for the corresponding geography and reference period.",
       "programmeTags": [
         "National Health Profile"
       ]

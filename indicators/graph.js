@@ -14,7 +14,7 @@ const modePredicates = {
   all: null
 };
 
-fetch('./data/graph/graph.json?v=ncd-1.0.0', { cache: 'no-store' })
+fetch('./data/graph/graph.json?v=kg-0.4.1', { cache: 'no-store' })
   .then(response => response.json())
   .then(graph => {
     kg.graph = graph;

@@ -1,0 +1,16 @@
+{
+  "records": [
+    {
+      "id": "TEST-INVALID-PERCENTAGE",
+      "name": "Controlled invalid percentage fixture",
+      "officialIndicatorName": "Controlled invalid percentage fixture",
+      "definition": "Fixture used only to prove that the release gate rejects inconsistent normalized metadata.",
+      "displayDefinition": "Fixture without a denominator statement.",
+      "measureType": "Percentage/proportion",
+      "scaleDisplay": "ratio",
+      "normalizedFormula": "numerator ÷ denominator",
+      "denominatorPopulation": "Not specified"
+    }
+  ]
+}
+

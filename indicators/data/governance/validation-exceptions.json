@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "id": "PHAOS-VALIDATION-EXCEPTIONS-001",
+    "version": "1.0.0",
+    "updated": "2026-10-12",
+    "policy": "Exceptions identify bounded evidence gaps; they never convert unknown metadata into a valid computation. New exceptions require review and an explicit remediation target."
+  },
+  "exceptions": [
+    { "id": "IND-NTEP-193", "rule": "EXPLICIT_DENOMINATOR_GAP", "reason": "The captured public laboratory-performance label does not state the denominator population.", "remediation": "NTEP domain/source review of the C&DST laboratory KPI table." },
+    { "id": "IND-NTEP-194", "rule": "EXPLICIT_DENOMINATOR_GAP", "reason": "The captured public laboratory-performance label does not state the denominator population.", "remediation": "NTEP domain/source review of the C&DST laboratory KPI table." },
+    { "id": "IND-NTEP-195", "rule": "EXPLICIT_DENOMINATOR_GAP", "reason": "The captured public laboratory-performance label does not state the denominator population.", "remediation": "NTEP domain/source review of the C&DST laboratory KPI table." },
+    { "id": "IND-NTEP-196", "rule": "EXPLICIT_DENOMINATOR_GAP", "reason": "The captured public laboratory-performance label does not state the denominator population.", "remediation": "NTEP domain/source review of the C&DST laboratory KPI table." },
+    { "id": "IND-NTEP-197", "rule": "EXPLICIT_DENOMINATOR_GAP", "reason": "The captured public laboratory-performance label does not state the denominator population.", "remediation": "NTEP domain/source review of the C&DST laboratory KPI table." },
+    { "id": "IND-NTEP-198", "rule": "EXPLICIT_DENOMINATOR_GAP", "reason": "The captured public laboratory-performance label does not state the denominator population.", "remediation": "NTEP domain/source review of the C&DST laboratory KPI table." },
+    { "id": "IND-NTEP-199", "rule": "EXPLICIT_DENOMINATOR_GAP", "reason": "The captured public laboratory-performance label does not state the denominator population.", "remediation": "NTEP domain/source review of the C&DST laboratory KPI table." },
+    { "id": "IND-NTEP-200", "rule": "EXPLICIT_DENOMINATOR_GAP", "reason": "The captured public laboratory-performance label does not state the denominator population.", "remediation": "NTEP domain/source review of the C&DST laboratory KPI table." },
+    { "id": "IND-NTEP-201", "rule": "EXPLICIT_DENOMINATOR_GAP", "reason": "The captured public laboratory-performance label does not state the denominator population.", "remediation": "NTEP domain/source review of the C&DST laboratory KPI table." },
+    { "id": "IND-NTEP-202", "rule": "EXPLICIT_DENOMINATOR_GAP", "reason": "The captured public laboratory-performance label does not state the denominator population.", "remediation": "NTEP domain/source review of the C&DST laboratory KPI table." },
+    { "id": "IND-NTEP-203", "rule": "EXPLICIT_DENOMINATOR_GAP", "reason": "The captured public laboratory-performance label does not state the denominator population.", "remediation": "NTEP domain/source review of the C&DST laboratory KPI table." },
+    { "id": "IND-NTEP-204", "rule": "EXPLICIT_DENOMINATOR_GAP", "reason": "The captured public laboratory-performance label does not state the denominator population.", "remediation": "NTEP domain/source review of the C&DST laboratory KPI table." },
+    { "id": "IND-NTEP-205", "rule": "EXPLICIT_DENOMINATOR_GAP", "reason": "The captured public laboratory-performance label does not state the denominator population.", "remediation": "NTEP domain/source review of the C&DST laboratory KPI table." },
+    { "id": "IND-NTEP-206", "rule": "EXPLICIT_DENOMINATOR_GAP", "reason": "The captured public laboratory-performance label does not state the denominator population.", "remediation": "NTEP domain/source review of the C&DST laboratory KPI table." },
+    { "id": "IND-NTEP-207", "rule": "EXPLICIT_DENOMINATOR_GAP", "reason": "The captured public laboratory-performance label does not state the denominator population.", "remediation": "NTEP domain/source review of the C&DST laboratory KPI table." },
+    { "id": "IND-NTEP-208", "rule": "EXPLICIT_DENOMINATOR_GAP", "reason": "The captured public laboratory-performance label does not state the denominator population.", "remediation": "NTEP domain/source review of the C&DST laboratory KPI table." },
+    { "id": "IND-NTEP-209", "rule": "EXPLICIT_DENOMINATOR_GAP", "reason": "The captured public laboratory-performance label does not state the denominator population.", "remediation": "NTEP domain/source review of the C&DST laboratory KPI table." },
+    { "id": "IND-NTEP-210", "rule": "EXPLICIT_DENOMINATOR_GAP", "reason": "The captured public laboratory-performance label does not state the denominator population.", "remediation": "NTEP domain/source review of the C&DST laboratory KPI table." },
+    { "id": "IND-NTEP-211", "rule": "EXPLICIT_DENOMINATOR_GAP", "reason": "The captured public laboratory-performance label does not state the denominator population.", "remediation": "NTEP domain/source review of the C&DST laboratory KPI table." }
+  ]
+}
