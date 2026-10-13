@@ -172,6 +172,18 @@ This log records material governance decisions separately from indicator and sof
 - **Migration and review date:** Extend through governed events rather than backfilling inferred approval. Review at 100 provenance subjects, any identity-policy change or by 12 October 2027.
 - **Supersedes:** Unstructured entry-level verification labels as sufficient provenance evidence.
 
+## GOV-DEC-014 — Convert source changes into human review work
+
+- **Date:** 13 October 2026
+- **Status:** Adopted
+- **Decision owner:** Analytics-OS maintainer
+- **Decision:** Adopt `PHAOS-SOURCE-MONITORING-001` and schema package 1.3.0. Baseline all declared sources, live-probe a bounded pilot, distinguish access and fingerprint states, and generate review items requiring human disposition. Monitoring automation has read-only repository permission and cannot alter governed records.
+- **Reason and evidence:** A successful URL check cannot establish unchanged meaning, while silent source movement or content change can invalidate metadata. The release reconciles 43 source families, links 29 to records, live-probes five, and fixture-tests two unchanged plus content-change, redirect and access-loss states.
+- **Alternatives considered:** Treat HTTP 200 as unchanged; auto-update registry fields from remote content; open public issues automatically. These were rejected as semantically unsafe, non-attributable or unnecessarily representational.
+- **Affected artifacts or decision rights:** Source catalogue, monitoring model and schemas, weekly workflow, review queue, public monitoring panel, release gate and tracker. Human review remains mandatory before any source-derived change event.
+- **Migration and review date:** Expand the live pilot only after false-positive and access-error review. Review after 12 scheduled runs, at 20 monitored sources or by 13 October 2027.
+- **Supersedes:** Release-time-only source checks as the sole source-currentness control.
+
 ## Decision record template
 
 - **ID and title:**

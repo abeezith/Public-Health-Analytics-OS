@@ -1,11 +1,11 @@
 # Analytics-OS versioned JSON Schema guide
 
-**Active schema package:** `1.2.0`
+**Active schema package:** `1.3.0`
 **JSON Schema dialect:** Draft 2020-12  
 **Adopted:** 7 September 2026  
 **Governance task:** TRUST-02
 
-Package [`1.2.0`](../indicators/data/schemas/1.2.0/) retains the definition, graph, evidence and value contracts introduced in immutable packages 1.0.0 and 1.1.0, then strengthens review and change events under TRUST-05. The unversioned [`manifest.json`](../indicators/data/schemas/manifest.json) is only a discovery pointer. Production consumers must pin the versioned manifest or a versioned schema `$id`.
+Package [`1.3.0`](../indicators/data/schemas/1.3.0/) retains the definition, graph, evidence, value and provenance contracts introduced in immutable packages 1.0.0–1.2.0, then adds strict source-snapshot and human-review-item contracts under TRUST-07. The unversioned [`manifest.json`](../indicators/data/schemas/manifest.json) is only a discovery pointer. Production consumers must pin the versioned manifest or a versioned schema `$id`.
 
 ## Contract inventory
 
@@ -23,6 +23,8 @@ Package [`1.2.0`](../indicators/data/schemas/1.2.0/) retains the definition, gra
 | `change-event.schema.json` | Append-only, field-level change descriptions and version transitions |
 | `aggregate-observation.schema.json` | Privacy-aware aggregate values linked to a definition, place/reporting unit, period, grain, source and revision |
 | `reference-value.schema.json` | Targets, benchmarks, thresholds and ranges kept separate from definitions and observed results |
+| `source-snapshot.schema.json` | Link state, metadata/version/content fingerprints, comparison state and affected records for one source observation |
+| `source-review-item.schema.json` | Human triage item generated from a detected source change without automatic registry mutation |
 
 ## Design rules
 
@@ -37,13 +39,15 @@ Package [`1.2.0`](../indicators/data/schemas/1.2.0/) retains the definition, gra
 9. **Privacy precedes publication.** Person-level fields are outside the aggregate contract. Public records require an allowed disclosure-review state, and suppressed records cannot carry a numeric value.
 10. **Targets are not results.** Reference values have their own authority, applicability and effective period.
 
-## Compatibility boundary in 1.2.0
+11. **Monitoring never edits meaning.** Source checks generate evidence and review work; no HTTP or fingerprint state can rewrite a governed record.
 
-Package 1.2.0 is a backward-compatible minor package for definition and value records. Historical review/change events remain valid only against their pinned 1.0.0 or 1.1.0 contracts; new events must meet the stronger 1.2.0 provenance requirements. Review events now require source-access date, reviewed fields and reason. Change events now require status, method and business/source/representation version scope. No observed values or reference values are included in the release.
+## Compatibility boundary in 1.3.0
+
+Package 1.3.0 is backward-compatible for existing definition, value and event records. Historical records remain valid against their pinned package. The new monitoring contracts require explicit link/comparison states, fingerprints, affected records, review disposition and an automatic-mutation prohibition. No observed health values or reference values are included in the release.
 
 A null `measureType` still means normalized classification is pending, not that the source supplied a null measure. Older WHO building-block labels beginning `Access to essential medicines` remain compatibility aliases, while new mappings use `Medical products, vaccines and technologies`. Existing NP-NCD tuple records remain accepted as documented legacy payloads; new programme records should use named indicator objects.
 
-This compatibility policy is not permission to add arbitrary fields indefinitely. TRUST-03 publishes the separate [`PHAOS-MDQ-001`](METADATA-QUALITY-SPECIFICATION.md) computed quality profile without rewriting legacy fields. TRUST-04 adopted [`PHAOS-IDENTITY-001`](IDENTITY-LIFECYCLE-POLICY.md); TRUST-05 now publishes the [`PHAOS-PROVENANCE-001`](ENTRY-LEVEL-PROVENANCE.md) pilot; TRUST-06 enforces them through the integrated release gate.
+This compatibility policy is not permission to add arbitrary fields indefinitely. TRUST-03 publishes the separate [`PHAOS-MDQ-001`](METADATA-QUALITY-SPECIFICATION.md) computed quality profile without rewriting legacy fields. TRUST-04 adopted [`PHAOS-IDENTITY-001`](IDENTITY-LIFECYCLE-POLICY.md); TRUST-05 publishes [`PHAOS-PROVENANCE-001`](ENTRY-LEVEL-PROVENANCE.md); TRUST-07 publishes [`PHAOS-SOURCE-MONITORING-001`](SOURCE-CHANGE-MONITORING.md); TRUST-06 enforces them through the integrated release gate.
 
 ## Versioning policy
 

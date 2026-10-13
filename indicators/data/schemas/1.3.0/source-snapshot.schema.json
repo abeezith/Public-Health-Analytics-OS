@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abeezith.github.io/Public-Health-Analytics-OS/schema/1.3.0/source-snapshot.schema.json",
+  "title": "Source monitoring snapshot",
+  "type": "object",
+  "required": ["snapshotId", "sourceId", "observedOn", "initialUrl", "linkState", "comparisonState", "metadataFingerprint", "versionFingerprint", "affectedRecordIds"],
+  "properties": {
+    "snapshotId": {"type": "string", "minLength": 1},
+    "sourceId": {"type": "string", "minLength": 1},
+    "sourceName": {"type": "string"},
+    "observedOn": {"type": "string", "format": "date"},
+    "initialUrl": {"type": "string", "minLength": 1},
+    "finalUrl": {"type": ["string", "null"]},
+    "httpStatus": {"type": ["integer", "null"], "minimum": 100, "maximum": 599},
+    "linkState": {"enum": ["not-probed", "accessible", "redirected", "http-error", "network-error"]},
+    "comparisonState": {"enum": ["baseline-established", "unchanged", "redirected", "content-changed", "version-changed", "content-and-version-changed", "inaccessible", "indeterminate"]},
+    "metadataFingerprint": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "versionFingerprint": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "contentFingerprint": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"},
+    "contentFingerprintBasis": {"type": ["string", "null"]},
+    "affectedRecordIds": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "pilotLiveProbe": {"type": "boolean"},
+    "error": {"type": ["string", "null"]}
+  },
+  "additionalProperties": false
+}

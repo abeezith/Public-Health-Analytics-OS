@@ -1,8 +1,8 @@
 # Analytics-OS programme and standards workstream tracker
 
-Last updated: 12 October 2026
+Last updated: 13 October 2026
 
-This document is the persistent task list for programme expansion and all parallel trust, analytical-utility and interoperability work. It reconciles the September 2026 multi-expert evaluation with the work completed through Analytics-OS Release 3.9. Programme research remains the authority for official names, definitions, denominators, formulas, source versions and evidence boundaries. Graph, FHIR, terminology and analytical-product workstreams consume governed records but do not silently change them or delay source-bounded registry publication.
+This document is the persistent task list for programme expansion and all parallel trust, analytical-utility and interoperability work. It reconciles the September 2026 multi-expert evaluation with the work completed through Analytics-OS Release 4.0. Programme research remains the authority for official names, definitions, denominators, formulas, source versions and evidence boundaries. Graph, FHIR, terminology and analytical-product workstreams consume governed records but do not silently change them or delay source-bounded registry publication.
 
 The delivery sequence is operationalized in [`PHAOS-ROADMAP-001`](AGILE-ROADMAP.md), with an interactive [Kanban view](../roadmap/). The tracker governs workstream scope and status; the roadmap governs sprint packaging, ticket acceptance and UAT. Sprint 0 evidence is recorded in the [legacy-plan reconciliation ledger](LEGACY-PLAN-RECONCILIATION.md), [delivery baseline](DELIVERY-BASELINE-2026-10-12.md) and [backup register](BACKUP-REGISTER.md).
 
@@ -30,19 +30,19 @@ The evaluation is treated as review evidence, not as an instruction set. Recomme
 | Machine-readable publication | JSON, JSON-LD, graph contract and controlled vocabularies exist; formal JSON Schema, RDF distributions and query services remain pending | Adapted |
 | Persistent identity | `PHAOS-IDENTITY-001` now governs canonical, manifestation, representation and occurrence identities plus lifecycle and version separation; resolvable entry pages remain pending under SEM-04 | Adapted |
 | Graph semantics | Relationship vocabulary exists; formal SKOS predicates, direction tests and SHACL validation remain pending | Adapted |
-| Per-entry provenance | Verification date and India source version are present; named reviewer, method and change-event history remain pending | Adapted |
+| Per-entry provenance | `PHAOS-PROVENANCE-001` now publishes attributable review/change events for a balanced pilot; expansion remains governed | Adapted |
 | Disaggregation and responsible cadre | Present across most India programme records; controlled source-versus-recommended dimensions and remaining cadre gaps require remediation | Adapted |
 | PM-JAY and ABDM | Small verified subsets exist; HWC/CPHC and deep programme extraction remain pending | Adapted |
 | Clinical terminology | Map only terminology-eligible clinical concepts or observations with licensing, version and mapping evidence; never map every indicator by assumption | Adapted |
 | Static FHIR API | GitHub Pages may publish static resources and packages but cannot provide `$lookup`, `$expand` or `$validate-code`; executable operations require a terminology server | Adapted |
-| Governance, formal schemas, lifecycle, data-quality guidance and change monitoring | Governance, schemas, lifecycle and metadata-quality rules are complete; entry-level provenance, release automation and source-change monitoring remain | Adapted |
+| Governance, formal schemas, lifecycle, data-quality guidance and change monitoring | TRUST-01–TRUST-07 are complete; monitoring is bounded to full metadata baselines and a five-source live pilot | Adapted |
 
 ## Integrated execution sequence
 
 This is the master order for future task-by-task execution. A later task may start early only when its listed dependencies are satisfied.
 
 1. **RECON-00 — Expert-evaluation and legacy-plan reconciliation — Complete.** Fifty-six legacy tickets and 37 supplied/extracted assets are inventoried, dispositioned and linked to governed work; incompatible assets remain quarantined outside production. The baseline and recovery checkpoint are verified.
-2. **TRUST-01–TRUST-07 — Trust foundation — In progress.** TRUST-01 governance, TRUST-02 schemas, TRUST-03 metadata-quality rules, TRUST-04 persistent identity/lifecycle, TRUST-05 entry-level provenance and TRUST-06 automated release validation are complete. Next add source-change monitoring under TRUST-07.
+2. **TRUST-01–TRUST-07 — Trust foundation — Complete.** Governance, schemas, metadata quality, identity/lifecycle, entry-level provenance, release validation and non-destructive source-change monitoring are operational.
 3. **UNIFY-01–UNIFY-10 — Unified registry — Complete.** The object taxonomy, identity, facets, single discovery interface, consolidated read model, occurrence layer, reciprocal navigation, result summaries, observation-ready model and validation/release gate are complete.
 4. **UTILITY-01–UTILITY-06 — Analyst and programme utility — Pending.** Improve discovery, controlled disaggregation, data-quality and comparability guidance, versioned targets, source-backed response guidance and tested calculations.
 5. **OPMAP-01–OPMAP-04 — Operational-system mappings — Pending.** Define an instance/version-aware mapping policy, then pilot HMIS/DHIS2, NTEP and NP-NCD operational mappings without inventing restricted identifiers.
@@ -81,8 +81,8 @@ HMIS is tracked as a cross-programme information-system spine, not as a numbered
 3. **TRUST-03 — Metadata-quality specification — Complete.** Adopted `PHAOS-MDQ-001` version `1.0.0`: nine weighted dimensions, criterion states, missing-value rules and A–E computed quality levels. The validator scored 3,708 named records with zero critical identity errors and published an aggregate report; 43 positional NP-NCD tuples remain deliberately unscored pending named-object migration. The governed relationship vocabulary publishes direction, allowed node types, evidence requirements and no-automatic-aggregation rules. Legacy `metadataLevel` and `completeness` values are retained as historical release metadata rather than silently relabelled as computed quality.
 4. **TRUST-04 — Persistent identity and lifecycle policy — Complete.** Adopted [`PHAOS-IDENTITY-001`](IDENTITY-LIFECYCLE-POLICY.md), retaining existing released IDs, separating canonical, manifestation, representation and report-occurrence identity, and governing business/source/schema versions plus `effectiveDate`, `retirementDate`, `replaces` and `replacedBy`. The generated baseline validates 4,743 canonical objects, 4,797 representations and 560 report-column occurrences.
 5. **TRUST-05 — Entry-level provenance and change events — Complete.** `PHAOS-PROVENANCE-001`, schema package 1.2.0 and read model 1.4.0 publish 10 balanced subjects, 10 review events, 10 change events and three reviewer roles. Detail views distinguish Analytics-OS review evidence from source authority and custodian approval; non-pilot records show an explicit pending state. The verification extractor is fixture-tested.
-6. **TRUST-06 — Automated release validation — Complete.** Eight integrated gates validate schemas, unique IDs, source links, formula/scale/denominator consistency, graph integrity, lifecycle rules, static UI/accessibility and controlled failure behavior before GitHub Pages deployment.
-7. **TRUST-07 — Source-change monitoring — Pending.** Combine link checks, source-version/content fingerprints and a human review queue; a successful HTTP response alone must not imply unchanged meaning.
+6. **TRUST-06 — Automated release validation — Complete.** Eleven integrated gates validate schemas, quality, identity, provenance, monitoring, observation boundaries, normalized measures, static UI/accessibility and controlled failure behavior before GitHub Pages deployment.
+7. **TRUST-07 — Source-change monitoring — Complete.** `PHAOS-SOURCE-MONITORING-001` baselines all 43 declared source families, links 29 to affected records and live-probes five sources. Weekly read-only workflow artifacts distinguish access, redirects and content/version fingerprints and generate human-review items without changing registry content.
 
 ## Unified registry workstream
 
@@ -95,7 +95,7 @@ HMIS is tracked as a cross-programme information-system spine, not as a numbered
 7. **UNIFY-07 — Relationship navigation — Complete.** The generated read model 1.2.0 contains 536 governed relationship assertions represented as 1,072 reciprocal entries, 508 reverse report-occurrence links, 4,797 source-evidence paths and 1,564 graph-node links, with zero unresolved targets. Indicator and HMIS detail views expose connected canonical objects, report occurrences and sources; accepted occurrences return to their canonical HMIS object; graph objects return to Registry metadata. Candidate report fields retain an explicit no-canonical-target boundary.
 8. **UNIFY-08 — Result summaries — Complete.** Indicator, HMIS-object and report-occurrence views now show filter-aware totals, active filters, class breakdowns and leading categories. The HMIS summary explicitly states that 54 derived indicators are one class within the 1,046-object HMIS knowledge layer; occurrence summaries separately preserve the 4,743-canonical-object and 765-data-element counting boundaries.
 9. **UNIFY-09 — Observation-ready model — Complete.** Adopted `PHAOS-OBSERVATION-001` and schema package 1.1.0. Future aggregate observations have independent identity, exact grain, canonical subject linkage, period, provenance, revision, privacy and suppression metadata; targets and thresholds use a separate reference-value contract. The publication contains zero values and zero public distributions.
-10. **UNIFY-10 — Validation and release — Complete.** Release 3.9 uses read model 1.4.0, a reproducible manifest and an Actions deployment dependency on the ten-check release gate. Public bulk-download controls remain disabled.
+10. **UNIFY-10 — Validation and release — Complete.** Release 4.0 retains read model 1.4.0 and adds schema package 1.3.0 plus an eleven-check Actions-gated release. Public bulk-download controls remain disabled.
 
 ## Analyst and programme-utility workstream
 

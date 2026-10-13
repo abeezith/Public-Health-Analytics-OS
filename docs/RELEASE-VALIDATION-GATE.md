@@ -1,8 +1,8 @@
 # Integrated release-validation gate
 
 **Control:** `PHAOS-RELEASE-GATE-001`
-**Version:** 1.1.0
-**Tasks:** `UNIFY-10`, `TRUST-05`, `TRUST-06`, Sprint 1 `VAL-01..VAL-06`, Sprint 2 `PROV-01..PROV-04`
+**Version:** 1.2.0
+**Tasks:** `UNIFY-10`, `TRUST-05..TRUST-07`, Sprint 1 `VAL-01..VAL-06`, Sprint 2 `PROV-01..MON-02`
 
 ## Purpose
 
@@ -24,10 +24,11 @@ The command writes a machine-readable report and exits non-zero when any blockin
 4. Unified read-model counts, links, reciprocal relationships and checksum.
 5. Entry-level review/change-event integrity, subject resolution, dates, reviewer roles and read-model parity.
 6. Verification-queue extraction against controlled flagged and clean fixtures.
-7. Observation/reference-value privacy and publication boundary.
-8. Official-name preservation where an explicit official name exists; normalized measure type, scale, formula and denominator rules.
-9. Core-page links, fragments, form labels, button names, image alternatives, required interface IDs, current counts, JavaScript syntax and disabled-download controls.
-10. A controlled invalid fixture that must be rejected with the expected error codes.
+7. Source baselines, fingerprints, comparison states, controlled change fixtures and automatic-mutation prohibition.
+8. Observation/reference-value privacy and publication boundary.
+9. Official-name preservation where an explicit official name exists; normalized measure type, scale, formula and denominator rules.
+10. Core-page links, fragments, form labels, button names, image alternatives, required interface IDs, current counts, JavaScript syntax and disabled-download controls.
+11. A controlled invalid fixture that must be rejected with the expected error codes.
 
 ## Governed exceptions
 

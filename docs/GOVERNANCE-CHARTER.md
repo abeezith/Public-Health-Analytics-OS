@@ -123,7 +123,7 @@ No contributor should submit patient-level, confidential or credential-bearing m
 
 - **Correction releases:** as needed for critical or high-impact errors.
 - **Programme and feature releases:** event-driven after the declared release gates pass.
-- **Review queue:** reviewed at least quarterly once TRUST-07 monitoring is operational; until then, reviewed during each release.
+- **Review queue:** reviewed at least quarterly and during each release under the operational TRUST-07 monitoring policy.
 - **Governance review:** at least annually or when ownership, decision rights, privacy boundary or publication architecture changes.
 - **Source re-verification:** according to the source's publication cadence, detected change or programme review—not merely a global date refresh.
 

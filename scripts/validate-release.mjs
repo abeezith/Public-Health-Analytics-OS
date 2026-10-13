@@ -17,6 +17,7 @@ const checks = [
   command('Unified read model and relationships', 'scripts/validate-unified-read-model.mjs'),
   command('Entry-level provenance and change history', 'scripts/validate-provenance.mjs'),
   command('Verification queue extraction', 'scripts/validate-verification-queue.mjs'),
+  command('Source monitoring and human review queue', 'scripts/validate-source-monitoring.mjs'),
   command('Observation-ready publication boundary', 'scripts/validate-observation-model.mjs'),
   command('Measure, formula, scale and denominator rules', 'scripts/validate-measure-normalization.mjs'),
   command('Static UI, links and accessibility contract', 'scripts/validate-site-ui.mjs'),
@@ -47,28 +48,35 @@ const trackedInputs = [
   'indicators/data/governance/metadata-quality-profile.json',
   'indicators/data/governance/validation-exceptions.json',
   'indicators/data/observations/manifest.json',
-  'indicators/data/schemas/1.2.0/manifest.json',
+  'indicators/data/schemas/1.3.0/manifest.json',
   'indicators/data/governance/provenance-model.json',
   'indicators/data/provenance/manifest.json',
   'indicators/data/provenance/review-events.json',
   'indicators/data/provenance/change-events.json',
+  'indicators/data/sources.json',
+  'indicators/data/coverage.json',
+  'indicators/data/governance/source-monitoring-model.json',
+  'indicators/data/monitoring/source-snapshots.json',
+  'indicators/data/monitoring/review-queue.json',
   'index.html',
   'indicators/index.html',
   'indicators/app.js',
   'indicators/hmis.js',
+  'indicators/monitoring.js',
   'indicators/graph.js',
   'indicators/report-schemas.js',
   'indicators/styles.css',
   'roadmap/index.html'
 ];
 const model = JSON.parse(fs.readFileSync(path.join(root, 'indicators/data/registry/unified-read-model.json'), 'utf8'));
-const schemaManifest = JSON.parse(fs.readFileSync(path.join(root, 'indicators/data/schemas/1.2.0/manifest.json'), 'utf8'));
+const schemaManifest = JSON.parse(fs.readFileSync(path.join(root, 'indicators/data/schemas/1.3.0/manifest.json'), 'utf8'));
+const monitoringRelease = JSON.parse(fs.readFileSync(path.join(root, 'indicators/data/monitoring/source-snapshots.json'), 'utf8'));
 const provenanceManifest = JSON.parse(fs.readFileSync(path.join(root, 'indicators/data/provenance/manifest.json'), 'utf8'));
 const status = results.every(result => result.status === 'pass') ? 'pass' : 'fail';
 const report = {
   metadata: {
     id: 'PHAOS-RELEASE-VALIDATION-REPORT',
-    gateVersion: '1.1.0',
+    gateVersion: '1.2.0',
     generatedAt: new Date().toISOString(),
     commitSha: git(['rev-parse', 'HEAD']),
     branch: git(['branch', '--show-current']),
@@ -85,6 +93,8 @@ const report = {
     provenanceSubjects: provenanceManifest.subjects,
     reviewEvents: provenanceManifest.reviewEvents,
     changeEvents: provenanceManifest.changeEvents,
+    monitoredSourceBaselines: monitoringRelease.counts.declaredSources,
+    monitoringPilotSources: monitoringRelease.counts.pilotSources,
     publicBulkDownloadControls: 'disabled',
     aggregateObservations: 0,
     referenceValues: 0

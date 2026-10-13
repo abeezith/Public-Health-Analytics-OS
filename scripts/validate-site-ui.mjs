@@ -10,7 +10,7 @@ const assert = (condition, code, message) => { if (!condition) errors.push({ cod
 const corePages = ['index.html', 'indicators/index.html', 'roadmap/index.html'];
 const requiredIds = {
   'index.html': ['top', 'workspace', 'products', 'principles', 'roadmap'],
-  'indicators/index.html': ['registry', 'registry-indicators', 'coverage', 'knowledge-graph', 'method', 'india', 'hmis', 'hmis-report-schemas', 'indicator-grid', 'hmis-grid', 'occurrence-grid', 'modal-backdrop'],
+  'indicators/index.html': ['registry', 'registry-indicators', 'coverage', 'knowledge-graph', 'method', 'source-monitoring', 'monitor-pilot-rows', 'monitor-review-queue', 'india', 'hmis', 'hmis-report-schemas', 'indicator-grid', 'hmis-grid', 'occurrence-grid', 'modal-backdrop'],
   'roadmap/index.html': ['query', 'sprint-filter', 'epic-filter', 'priority-filter', 'board', 'visible-count', 'ticket-total']
 };
 
@@ -82,7 +82,7 @@ const expectedText = [
 ];
 for (const [label, value] of expectedText) assert(indicatorsHtml.includes(`>${Number(value).toLocaleString('en-US')}<`) || indicatorsHtml.includes(`>${value}<`), 'STATIC_COUNT', `Indicator page does not expose the current ${label} ${value}.`);
 
-for (const relative of ['indicators/app.js', 'indicators/hmis.js', 'indicators/graph.js', 'indicators/report-schemas.js']) {
+for (const relative of ['indicators/app.js', 'indicators/hmis.js', 'indicators/graph.js', 'indicators/report-schemas.js', 'indicators/monitoring.js']) {
   const result = spawnSync(process.execPath, ['--check', relative], { cwd: root, encoding: 'utf8' });
   assert(result.status === 0, 'JAVASCRIPT_SYNTAX', `${relative} failed syntax check: ${(result.stderr || result.stdout || '').trim()}`);
 }
@@ -92,7 +92,7 @@ const report = {
   pagesChecked: corePages.length,
   requiredUiIds: Object.values(requiredIds).flat().length,
   staticCounts: Object.fromEntries(expectedText),
-  javascriptFilesChecked: 4,
+  javascriptFilesChecked: 5,
   publicDownloadControls: 'disabled',
   warnings,
   errors

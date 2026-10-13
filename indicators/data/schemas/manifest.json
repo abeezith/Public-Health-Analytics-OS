@@ -1,9 +1,9 @@
 {
   "id": "PHAOS-SCHEMA-CATALOGUE",
   "title": "Public Health Analytics-OS JSON Schema catalogue",
-  "activeVersion": "1.2.0",
-  "activeManifest": "./1.2.0/manifest.json",
+  "activeVersion": "1.3.0",
+  "activeManifest": "./1.3.0/manifest.json",
   "schemaDraft": "https://json-schema.org/draft/2020-12/schema",
-  "updated": "2026-10-12",
+  "updated": "2026-10-13",
   "policy": "Consumers must select an explicit schema package version. activeVersion is a discovery pointer, not a floating validation contract."
 }

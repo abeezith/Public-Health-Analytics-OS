@@ -490,5 +490,29 @@
     "status": "Included — declared text boundary complete",
     "observedRecords": 6,
     "lastChecked": "2026-09-04"
+  },
+  {
+    "id": "IND_NPNCD_2023_GUIDELINES",
+    "name": "National Programme for Prevention and Control of Non-Communicable Diseases Operational Guidelines",
+    "org": "Ministry of Health and Family Welfare, Government of India",
+    "url": "https://www.mohfw.gov.in/sites/default/files/NP-NCD%20Operational%20Guidelines.pdf",
+    "access": "Public official PDF",
+    "boundary": "Annexure 9.2 input, process, training, communication, IT-use, output and outcome monitoring manifestations.",
+    "release": "India Programme 5 — NP-NCD",
+    "status": "Included — source-table complete within declared boundary",
+    "observedRecords": 39,
+    "lastChecked": "2026-09-05"
+  },
+  {
+    "id": "IND_NPNCD_TRAINING_2025",
+    "name": "Training Modules for Programme Managers / Medical Officers under NP-NCD",
+    "org": "Ministry of Health and Family Welfare / National Health Mission, Government of India",
+    "url": "https://nhm.gov.in/New-Update-2025-26/Whats-new/Training-Modules-NCDs.pdf",
+    "access": "Public official PDF",
+    "boundary": "Four explicitly defined population-based-screening monitoring indicators in Module 8.",
+    "release": "India Programme 5 — NP-NCD",
+    "status": "Included — declared text boundary complete",
+    "observedRecords": 4,
+    "lastChecked": "2026-09-05"
   }
 ]

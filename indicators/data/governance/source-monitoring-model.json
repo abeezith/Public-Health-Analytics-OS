@@ -1,0 +1,29 @@
+{
+  "id": "PHAOS-SOURCE-MONITORING-001",
+  "version": "1.0.0",
+  "adopted": "2026-10-13",
+  "task": "TRUST-07",
+  "policy": {
+    "automaticSourceMutation": false,
+    "httpSuccessImpliesUnchangedMeaning": false,
+    "firstObservationCreatesChange": false,
+    "humanDispositionRequired": true,
+    "publicQueueContainsSensitiveData": false
+  },
+  "linkStates": ["not-probed", "accessible", "redirected", "http-error", "network-error"],
+  "comparisonStates": ["baseline-established", "unchanged", "redirected", "content-changed", "version-changed", "content-and-version-changed", "inaccessible", "indeterminate"],
+  "reviewDispositions": ["pending-triage", "accepted-source-change", "no-semantic-change", "deferred", "rejected", "superseded"],
+  "severity": ["low", "medium", "high", "critical"],
+  "fingerprintRules": {
+    "metadata": "SHA-256 of canonical source identity, declared version, access mode, boundary and catalogue status.",
+    "version": "SHA-256 of the declared upstream version/release fields; never inferred from HTTP status.",
+    "remoteContent": "SHA-256 of at most the first 2 MiB returned by a live GET; prefix hashing is explicitly labelled.",
+    "redirect": "Initial and final URLs are retained separately.",
+    "absence": "A missing prior comparable fingerprint yields baseline-established or indeterminate, never unchanged."
+  },
+  "pilot": {
+    "sourceIds": ["WHO_IMR", "WB_HEALTH", "UN_SDG", "OECD_HEALTH", "WHO_CORE100"],
+    "schedule": "Weekly GitHub Actions artifact; no automatic registry rewrite or commit",
+    "fullCatalogueMetadataBaselines": 43
+  }
+}

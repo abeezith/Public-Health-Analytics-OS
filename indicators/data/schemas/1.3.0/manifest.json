@@ -1,0 +1,32 @@
+{
+  "id": "PHAOS-SCHEMA-PACKAGE-1.3.0",
+  "title": "Public Health Analytics-OS JSON Schema package",
+  "version": "1.3.0",
+  "released": "2026-10-13",
+  "status": "Adopted",
+  "schemaDraft": "https://json-schema.org/draft/2020-12/schema",
+  "documentation": "../../../../docs/SCHEMA-GUIDE.md",
+  "compatibility": {
+    "analyticsOsRelease": "4.0",
+    "additionalProperties": "Existing definition, value and event contracts retain their 1.2 compatibility boundaries. Source monitoring adds strict snapshot and review-item contracts.",
+    "legacyProgrammeTuples": "Accepted for existing programme releases; new programme records should use named objects.",
+    "validationBoundary": "Structural validity does not imply source verification, semantic equivalence, computability, comparability, privacy clearance, domain review or custodian approval.",
+    "backwardCompatibility": "Packages 1.0.0 through 1.2.0 remain valid historical contracts. Package 1.3.0 adds monitoring contracts without invalidating prior record representations."
+  },
+  "schemas": [
+    { "name": "Common vocabulary", "file": "common.schema.json", "kind": "definitions" },
+    { "name": "Indicator manifestation", "file": "indicator-manifestation.schema.json", "kind": "record" },
+    { "name": "Source document", "file": "source-document.schema.json", "kind": "record" },
+    { "name": "HMIS object", "file": "hmis-object.schema.json", "kind": "record" },
+    { "name": "Graph node", "file": "graph-node.schema.json", "kind": "record" },
+    { "name": "Graph edge", "file": "graph-edge.schema.json", "kind": "record" },
+    { "name": "Evidence gap", "file": "evidence-gap.schema.json", "kind": "record" },
+    { "name": "Programme release", "file": "programme-release.schema.json", "kind": "release" },
+    { "name": "Review event", "file": "review-event.schema.json", "kind": "event" },
+    { "name": "Change event", "file": "change-event.schema.json", "kind": "event" },
+    { "name": "Aggregate observation", "file": "aggregate-observation.schema.json", "kind": "value record" },
+    { "name": "Reference value", "file": "reference-value.schema.json", "kind": "reference record" },
+    { "name": "Source monitoring snapshot", "file": "source-snapshot.schema.json", "kind": "monitoring record" },
+    { "name": "Source change review item", "file": "source-review-item.schema.json", "kind": "review queue record" }
+  ]
+}

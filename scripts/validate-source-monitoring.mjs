@@ -1,0 +1,20 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {buildReviewItem,compareSnapshots} from './source-monitoring-engine.mjs';
+
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),read=relative=>JSON.parse(fs.readFileSync(path.join(root,relative),'utf8'));
+const policy=read('indicators/data/governance/source-monitoring-model.json'),release=read('indicators/data/monitoring/source-snapshots.json'),queue=read('indicators/data/monitoring/review-queue.json'),fixture=read('scripts/fixtures/source-monitoring.json'),errors=[];
+const prior=new Map(fixture.previous.map(item=>[item.sourceId,item])),states=fixture.current.map(item=>compareSnapshots(prior.get(item.sourceId),item)),fixtureItems=fixture.current.map(item=>buildReviewItem(prior.get(item.sourceId),item)).filter(Boolean);
+if(policy.policy.automaticSourceMutation!==false||policy.policy.httpSuccessImpliesUnchangedMeaning!==false)errors.push('Monitoring safety policy invalid');
+if(release.counts.declaredSources!==43||release.snapshots.length!==43)errors.push('Full source catalogue baseline must contain 43 sources');
+if(release.counts.sourcesWithRegistryRecords!==29)errors.push('Expected 29 source families linked to registry records');
+if(release.snapshots.some(item=>!item.metadataFingerprint||!item.versionFingerprint))errors.push('Every source requires metadata and version fingerprints');
+if(release.snapshots.some(item=>item.comparisonState==='unchanged'))errors.push('Initial baseline must not claim sources are unchanged');
+if(release.counts.liveProbed!==5||release.counts.accessible+release.counts.accessErrors+release.counts.redirected!==5)errors.push('Five-source live pilot baseline is incomplete');
+if(queue.items.length||queue.counts.open!==0)errors.push('Initial production queue must not fabricate changes');
+if(states.filter(state=>state==='unchanged').length!==fixture.expected.unchanged)errors.push('Fixture unchanged count mismatch');
+if(fixtureItems.length!==fixture.expected.reviewItems)errors.push('Fixture review-item count mismatch');
+for(const state of fixture.expected.states)if(!states.includes(state))errors.push(`Fixture missing ${state}`);
+if(fixtureItems.some(item=>item.automaticMutationProhibited!==true||!item.affectedRecordIds.length||!item.priorFingerprint))errors.push('Fixture review item lacks governed fields');
+console.log(JSON.stringify({status:errors.length?'fail':'pass',declaredSources:release.snapshots.length,sourcesWithRegistryRecords:release.counts.sourcesWithRegistryRecords,pilotSources:release.counts.pilotSources,productionReviewItems:queue.items.length,fixtureStates:states,fixtureReviewItems:fixtureItems.length,errors},null,2));if(errors.length)process.exitCode=1;

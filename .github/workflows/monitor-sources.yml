@@ -1,0 +1,35 @@
+name: Monitor governed sources
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 3 * * 1'
+
+permissions:
+  contents: read
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Validate monitoring contracts
+        run: node scripts/validate-source-monitoring.mjs
+      - name: Probe five-source pilot
+        run: node scripts/probe-source-links.mjs --output artifacts/source-probe.json
+      - name: Generate human review queue
+        run: node scripts/compare-source-monitoring.mjs --previous indicators/data/monitoring/source-snapshots.json --current artifacts/source-probe.json --output artifacts/source-review-queue.json
+      - name: Preserve monitoring evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-monitoring-${{ github.run_id }}
+          path: |
+            artifacts/source-probe.json
+            artifacts/source-review-queue.json
+          retention-days: 90
+
+      # Deliberately no commit, issue creation or registry mutation step.

@@ -106,7 +106,7 @@ Within a priority class, sequence by: patient/public-health risk → data-integr
 
 **Sprint goal:** complete `TRUST-05` and `TRUST-07`, adapting the useful source-verification work to the current canonical model.
 
-**Status:** In progress — `PROV-01..PROV-04` completed in Release 3.9. Source monitoring and the human change-review queue (`MON-01..MON-02` / `TRUST-07`) remain next.
+**Status:** Complete — `PROV-01..PROV-04` shipped in Release 3.9; `MON-01..MON-02` shipped in Release 4.0 with 43 governed baselines, a five-source live pilot and a read-only weekly review-queue workflow.
 
 | Story / ticket | User story and deliverable | Pri. | SP | Acceptance criteria |
 |---|---|---:|---:|---|
@@ -298,4 +298,4 @@ A ticket is Done only when all applicable conditions pass:
 
 ## 12. Recommended immediate commitment
 
-Sprints 0 and 1 and the TRUST-05 provenance stories are complete. Continue **Sprint 2 with `TRUST-07`**: add source fingerprints and a human change-review queue without automatically rewriting governed records.
+Sprints 0–2 are complete. Start **Sprint 3 with `UTILITY-01`**: add controlled operational discovery fields, followed by evidence-separated disaggregation and the 20-record equity pilot.
