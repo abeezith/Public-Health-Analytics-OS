@@ -19,6 +19,7 @@ const checks = [
   command('Verification queue extraction', 'scripts/validate-verification-queue.mjs'),
   command('Source monitoring and human review queue', 'scripts/validate-source-monitoring.mjs'),
   command('Operational discovery profile', 'scripts/validate-operational-discovery.mjs'),
+  command('Controlled disaggregation assertions', 'scripts/validate-disaggregation-profile.mjs'),
   command('Observation-ready publication boundary', 'scripts/validate-observation-model.mjs'),
   command('Measure, formula, scale and denominator rules', 'scripts/validate-measure-normalization.mjs'),
   command('Static UI, links and accessibility contract', 'scripts/validate-site-ui.mjs'),
@@ -61,6 +62,8 @@ const trackedInputs = [
   'indicators/data/monitoring/review-queue.json',
   'indicators/data/governance/operational-discovery-model.json',
   'scripts/operational-discovery.mjs',
+  'indicators/data/governance/disaggregation-model.json',
+  'scripts/disaggregation-profile.mjs',
   'index.html',
   'indicators/index.html',
   'indicators/app.js',
@@ -79,7 +82,7 @@ const status = results.every(result => result.status === 'pass') ? 'pass' : 'fai
 const report = {
   metadata: {
     id: 'PHAOS-RELEASE-VALIDATION-REPORT',
-    gateVersion: '1.3.0',
+    gateVersion: '1.4.0',
     generatedAt: new Date().toISOString(),
     commitSha: git(['rev-parse', 'HEAD']),
     branch: git(['branch', '--show-current']),
@@ -99,6 +102,8 @@ const report = {
     monitoredSourceBaselines: monitoringRelease.counts.declaredSources,
     monitoringPilotSources: monitoringRelease.counts.pilotSources,
     operationalDiscoveryProfiles: model.records.filter(item => item.operationalDiscovery?.modelId === 'PHAOS-OPDISC-001').length,
+    disaggregationProfiles: model.records.filter(item => item.disaggregationProfile?.modelId === 'PHAOS-DISAGG-001').length,
+    disaggregationAssertions: model.counts.disaggregation.assertions,
     publicBulkDownloadControls: 'disabled',
     aggregateObservations: 0,
     referenceValues: 0

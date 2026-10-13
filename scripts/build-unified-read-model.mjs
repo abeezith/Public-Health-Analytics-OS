@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { operationalDiscovery } from './operational-discovery.mjs';
+import { disaggregationProfile } from './disaggregation-profile.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = relative => JSON.parse(fs.readFileSync(path.join(root, relative), 'utf8'));
@@ -31,6 +32,12 @@ const reportManifest = read(`${reportDir}/HMIS-RPTSCHEMA-STATE-20260901-001.repo
 const dimensionDictionary = read(`${reportDir}/HMIS-RPTSCHEMA-STATE-20260901-001.dimension-dictionary.json`);
 const candidateFields = read(`${reportDir}/candidate-new-elements.json`);
 const reportCrosswalk = read(`${reportDir}/column-to-element-crosswalk.json`);
+const observedReportCanonicalIds = new Set((reportCrosswalk.crosswalk || []).filter(item=>item.reconciliationStatus==='Accepted canonical link').map(item=>item.canonicalElementId));
+const observedReportSchema = {
+  schemaId: reportManifest.metadata.schemaId,
+  version: `${reportManifest.metadata.manifestVersion}; downloaded ${reportManifest.metadata.downloadDate}`,
+  authority: 'HMIS report-schema occurrence layer'
+};
 
 function expandNcdRelease(release) {
   const programme = 'National Programme for Prevention and Control of Non-Communicable Diseases';
@@ -155,6 +162,7 @@ const records = identities.canonicalObjects.map(identity => {
     changeEventIds: changes.map(event => event.id)
   } : null;
   const discoveryProfile = operationalDiscovery({indicator:indicatorMetadata,hmis:hmisMetadata,objectType:identity.canonicalObjectType,provenance,lifecycleStatus:identity.lifecycleStatus});
+  const disaggregation = disaggregationProfile({canonicalObjectId:identity.canonicalObjectId,indicator:indicatorMetadata,hmis:hmisMetadata,provenance,normalizedLowestReportingLevel:normalizeLowestReportingLevel(level),observedReportSchema:observedReportCanonicalIds.has(identity.canonicalObjectId)?observedReportSchema:null});
   return {
     canonicalObjectId: identity.canonicalObjectId,
     canonicalUri: identity.canonicalUri,
@@ -177,6 +185,7 @@ const records = identities.canonicalObjects.map(identity => {
     representations: identity.representations,
     provenance,
     operationalDiscovery: discoveryProfile,
+    disaggregationProfile: disaggregation,
     indicatorMetadata,
     hmisMetadata
   };
@@ -263,20 +272,28 @@ const membershipCounts = {
   hmis: records.filter(item => item.registryMemberships.includes('hmis')).length,
   shared: records.filter(item => item.registryMemberships.length === 2).length
 };
+const disaggregationCounts={
+  profiles:records.length,
+  assertions:records.reduce((sum,item)=>sum+item.disaggregationProfile.assertions.length,0),
+  sourceRequired:records.reduce((sum,item)=>sum+item.disaggregationProfile.assertionCounts.sourceRequired,0),
+  systemAvailable:records.reduce((sum,item)=>sum+item.disaggregationProfile.assertionCounts.systemAvailable,0),
+  analystRecommended:records.reduce((sum,item)=>sum+item.disaggregationProfile.assertionCounts.analystRecommended,0),
+  noGovernedAssertion:records.filter(item=>!item.disaggregationProfile.assertions.length).length
+};
 const model = {
   metadata: {
     id: 'PHAOS-UNIFIED-READ-MODEL',
     title: 'Public Health Analytics-OS consolidated discovery read model',
-    version: '1.5.0',
+    version: '1.6.0',
     generated: releaseDate,
-    task: 'UTILITY-01',
+    task: 'UTILITY-02',
     identityIndexVersion: identities.metadata.version,
     taxonomyVersion: identities.metadata.taxonomyVersion,
     discoveryFacetVersion: discovery.metadata.version,
     provenanceModel: 'PHAOS-PROVENANCE-001',
     interpretationBoundary: 'This generated read model consolidates discovery metadata and preserves source representations in separate namespaces. Provenance summaries expose review evidence but do not assert semantic equivalence, aggregation safety, computability, source currency or custodian approval.'
   },
-  counts: {...identities.counts, registryMemberships:membershipCounts, navigation:navigationCounts},
+  counts: {...identities.counts, registryMemberships:membershipCounts, navigation:navigationCounts, disaggregation:disaggregationCounts},
   metrics: {ncdReleaseRecords:ncdRelease.records.length,ncdSourceDocuments:ncdRelease.sources.length},
   coverage: indicatorRelease.coverage,
   records,
@@ -286,13 +303,14 @@ const model = {
 write(modelPath, model);
 const bytes = fs.readFileSync(path.join(root, modelPath));
 const manifest = {
-  metadata: {id:'PHAOS-UNIFIED-READ-MODEL-MANIFEST',version:'1.5.0',generated:releaseDate,task:'UTILITY-01'},
+  metadata: {id:'PHAOS-UNIFIED-READ-MODEL-MANIFEST',version:'1.6.0',generated:releaseDate,task:'UTILITY-02'},
   distribution: {path:'unified-read-model.json',mediaType:'application/json',bytes:bytes.length,sha256:crypto.createHash('sha256').update(bytes).digest('hex')},
   counts: model.counts,
   sources: [
     'indicators/data/governance/unified-identity-index.json',
     'indicators/data/governance/discovery-facets.json',
     'indicators/data/governance/operational-discovery-model.json',
+    'indicators/data/governance/disaggregation-model.json',
     'indicators/data/indicators.json',
     'indicators/data/ncd/release.json',
     'indicators/data/hmis/catalog.json',

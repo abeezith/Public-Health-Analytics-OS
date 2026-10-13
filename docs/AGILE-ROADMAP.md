@@ -124,7 +124,7 @@ Within a priority class, sequence by: patient/public-health risk → data-integr
 
 **Sprint goal:** start `UTILITY-01–03` with a redesigned model that separates source evidence from analyst recommendation.
 
-**Status:** In progress — `DISC-01 / UTILITY-01` shipped in Release 4.1 with six controlled operational facets across 4,743 canonical objects, source-wording preservation and URL-addressable indicator filters. Next: `DISAGG-01 / UTILITY-02`.
+**Status:** In progress — `DISC-01 / UTILITY-01` and the `DISAGG-01`, `DISAGG-02`, `DISAGG-04 / UTILITY-02` foundation shipped through Release 4.2. All 4,743 objects now separate required, available and recommended disaggregation claims. Next: the reviewed 20-record equity pilot (`DISAGG-03`) and `UTILITY-03` comparability guidance.
 
 | Story / ticket | User story and deliverable | Pri. | SP | Acceptance criteria |
 |---|---|---:|---:|---|
@@ -300,4 +300,4 @@ A ticket is Done only when all applicable conditions pass:
 
 ## 12. Recommended immediate commitment
 
-Sprints 0–2 and `UTILITY-01` are complete. Continue Sprint 3 with **`UTILITY-02 / DISAGG-01`**: separate source-required, system-available and analyst-recommended disaggregation before the 20-record equity pilot.
+Sprints 0–2 and `UTILITY-01..UTILITY-02` are complete. Continue Sprint 3 with the reviewed **`DISAGG-03` equity pilot and `UTILITY-03 / DQ-01`**: verify priority assertions, privacy risk, known data-quality issues and comparability guidance.

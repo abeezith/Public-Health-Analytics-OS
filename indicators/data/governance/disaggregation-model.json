@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "id": "PHAOS-DISAGG-001",
+    "title": "Public Health Analytics-OS controlled disaggregation assertion model",
+    "version": "1.0.0",
+    "adopted": "2026-10-13",
+    "task": "UTILITY-02",
+    "status": "Adopted"
+  },
+  "claimTypes": [
+    {
+      "id": "source-required",
+      "label": "Source-required",
+      "meaning": "The cited source explicitly requires the dimension for this object."
+    },
+    {
+      "id": "system-available",
+      "label": "System-available",
+      "meaning": "The dimension is observed in a named, versioned system artefact applicable to this object."
+    },
+    {
+      "id": "analyst-recommended",
+      "label": "Analyst-recommended",
+      "meaning": "The dimension is analytically useful; no source or system availability claim follows."
+    }
+  ],
+  "dimensions": [
+    {"id":"age","label":"Age or life-course group"},
+    {"id":"sex","label":"Sex"},
+    {"id":"gender-identity","label":"Gender identity"},
+    {"id":"administrative-geography","label":"Administrative geography"},
+    {"id":"residence","label":"Rural / urban residence"},
+    {"id":"socioeconomic-position","label":"Wealth or socioeconomic position"},
+    {"id":"social-group","label":"Social, caste, tribal or ethnic group"},
+    {"id":"education","label":"Education"},
+    {"id":"disability","label":"Disability status"},
+    {"id":"facility-type","label":"Facility or reporting-unit type"},
+    {"id":"service-setting","label":"Service setting"},
+    {"id":"ownership-sector","label":"Ownership or public/private sector"},
+    {"id":"disease-condition","label":"Disease or condition"},
+    {"id":"clinical-category","label":"Clinical or programme category"},
+    {"id":"antigen-dose","label":"Antigen or dose"},
+    {"id":"pregnancy-status","label":"Pregnancy status"},
+    {"id":"cadre","label":"Health-worker cadre"},
+    {"id":"temporal-validity","label":"Temporal validity"},
+    {"id":"other-source-defined","label":"Other source-defined dimension"}
+  ],
+  "reviewStates": ["Domain reviewed", "Technically validated", "Review pending"],
+  "rules": [
+    "Every assertion identifies one controlled dimension, claim type, status, evidence, applicability and review state.",
+    "Analyst recommendation never implies that a source requires or an operational system captures the dimension.",
+    "System availability requires an observed, named and versioned source artefact; portal or national implementation is not inferred.",
+    "Source-required remains empty unless explicit object-level evidence is available.",
+    "Exact legacy free text is preserved for audit even when no controlled dimension can be resolved.",
+    "Absence of an assertion means not evidenced in this release, not unavailable in the real-world system.",
+    "No person-level values or public bulk-download controls are introduced by this model."
+  ]
+}

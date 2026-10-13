@@ -1,8 +1,8 @@
 # Integrated release-validation gate
 
 **Control:** `PHAOS-RELEASE-GATE-001`
-**Version:** 1.3.0
-**Tasks:** `UNIFY-10`, `TRUST-05..TRUST-07`, `UTILITY-01`, Sprint 1 `VAL-01..VAL-06`, Sprint 2 `PROV-01..MON-02`, Sprint 3 `DISC-01`
+**Version:** 1.4.0
+**Tasks:** `UNIFY-10`, `TRUST-05..TRUST-07`, `UTILITY-01..UTILITY-02`, Sprint 1 `VAL-01..VAL-06`, Sprint 2 `PROV-01..MON-02`, Sprint 3 `DISC-01..DISAGG-01`
 
 ## Purpose
 
@@ -25,10 +25,12 @@ The command writes a machine-readable report and exits non-zero when any blockin
 5. Entry-level review/change-event integrity, subject resolution, dates, reviewer roles and read-model parity.
 6. Verification-queue extraction against controlled flagged and clean fixtures.
 7. Source baselines, fingerprints, comparison states, controlled change fixtures and automatic-mutation prohibition.
-8. Observation/reference-value privacy and publication boundary.
-9. Official-name preservation where an explicit official name exists; normalized measure type, scale, formula and denominator rules.
-10. Core-page links, fragments, form labels, button names, image alternatives, required interface IDs, current counts, JavaScript syntax and disabled-download controls.
-11. A controlled invalid fixture that must be rejected with the expected error codes.
+8. Operational-discovery controlled values and non-overclaiming boundaries.
+9. Controlled disaggregation dimensions, evidence, applicability and separation of required, available and recommended claims.
+10. Observation/reference-value privacy and publication boundary.
+11. Official-name preservation where an explicit official name exists; normalized measure type, scale, formula and denominator rules.
+12. Core-page links, fragments, form labels, button names, image alternatives, required interface IDs, current counts, JavaScript syntax and disabled-download controls.
+13. A controlled invalid fixture that must be rejected with the expected error codes.
 
 ## Governed exceptions
 

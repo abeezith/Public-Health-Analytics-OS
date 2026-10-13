@@ -11,7 +11,7 @@ const model = read(modelPath);
 const manifest = read('indicators/data/registry/manifest.json');
 const identities = read('indicators/data/governance/unified-identity-index.json');
 
-if (model.metadata.version !== '1.5.0') fail('Unexpected read-model version.');
+if (model.metadata.version !== '1.6.0') fail('Unexpected read-model version.');
 if (model.records.length !== 4743) fail(`Expected 4743 records, got ${model.records.length}.`);
 const ids = model.records.map(item => item.canonicalObjectId);
 const uris = model.records.map(item => item.canonicalUri);
@@ -65,6 +65,8 @@ if(model.counts.navigation.unresolvedRelationshipReferences!==0)fail(`There are 
 if (indicatorRecords.some(item => item.programmeTags.includes('Health Management Information System'))) fail('HMIS leaked into the programme facet.');
 const hmisTaggedIndicators = indicatorRecords.filter(item => item.systemPortalTags.includes('HMIS')).length;
 if (hmisTaggedIndicators !== 130) fail(`Expected 130 HMIS-tagged indicators, got ${hmisTaggedIndicators}.`);
+if (model.records.some(item => !item.disaggregationProfile || item.disaggregationProfile.modelId !== 'PHAOS-DISAGG-001')) fail('A record is missing its disaggregation profile.');
+if (model.counts.disaggregation.profiles !== model.records.length) fail('Disaggregation profile count is stale.');
 
 const bytes = fs.readFileSync(path.join(root, modelPath));
 const checksum = crypto.createHash('sha256').update(bytes).digest('hex');

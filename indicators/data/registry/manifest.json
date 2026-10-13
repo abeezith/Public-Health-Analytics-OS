@@ -1,15 +1,15 @@
 {
   "metadata": {
     "id": "PHAOS-UNIFIED-READ-MODEL-MANIFEST",
-    "version": "1.5.0",
+    "version": "1.6.0",
     "generated": "2026-10-13",
-    "task": "UTILITY-01"
+    "task": "UTILITY-02"
   },
   "distribution": {
     "path": "unified-read-model.json",
     "mediaType": "application/json",
-    "bytes": 28291252,
-    "sha256": "70b77e0a848f128f5c9fb34f4df6bd7b9c6661b92fd53f96f556d37de72eece6"
+    "bytes": 38828637,
+    "sha256": "04404bd31a695454a6ccfc6847b89753569b9293a30621047ba9b948d9e02e5d"
   },
   "counts": {
     "canonicalObjects": 4743,
@@ -38,12 +38,21 @@
       "sourceEvidenceLinks": 4797,
       "graphNodeLinks": 1564,
       "unresolvedRelationshipReferences": 0
+    },
+    "disaggregation": {
+      "profiles": 4743,
+      "assertions": 6263,
+      "sourceRequired": 0,
+      "systemAvailable": 3036,
+      "analystRecommended": 3227,
+      "noGovernedAssertion": 3518
     }
   },
   "sources": [
     "indicators/data/governance/unified-identity-index.json",
     "indicators/data/governance/discovery-facets.json",
     "indicators/data/governance/operational-discovery-model.json",
+    "indicators/data/governance/disaggregation-model.json",
     "indicators/data/indicators.json",
     "indicators/data/ncd/release.json",
     "indicators/data/hmis/catalog.json",

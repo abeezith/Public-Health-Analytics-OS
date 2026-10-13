@@ -196,6 +196,18 @@ This log records material governance decisions separately from indicator and sof
 - **Migration and review date:** Reassess categories after `UTILITY-06`, after 100 reviewed records or by 13 October 2027. Existing source fields remain unchanged.
 - **Supersedes:** Uncontrolled operational discovery through free-text search alone.
 
+## GOV-DEC-016 — Separate required, available and recommended disaggregation
+
+- **Date:** 13 October 2026
+- **Status:** Adopted
+- **Decision owner:** Analytics-OS maintainer
+- **Decision:** Adopt `PHAOS-DISAGG-001` and read model 1.6.0. Model source-required, system-available and analyst-recommended dimensions as separate assertions with evidence, applicability and review state.
+- **Reason and evidence:** Legacy free text and the supplied draft equity asset could make a useful recommendation appear to be captured operational data. Release 4.2 profiles all 4,743 canonical objects, retains unsupported states as not evidenced and limits system-availability claims to a named observed report schema.
+- **Alternatives considered:** Treat every recommendation as available; infer national system capture from programme context; or publish binary yes/no fields without source version. These were rejected because they create false availability and comparability claims.
+- **Affected artifacts or decision rights:** Disaggregation model and engine, consolidated read model, registry filters/cards/tables/details, HMIS details, release gate and trackers. Source custodians retain authority over required dimensions; system owners retain authority over operational availability.
+- **Migration and review date:** Apply the model through reviewed assertions in the equity pilot. Reassess after 20 reviewed records, any authorized operational export or by 13 October 2027.
+- **Supersedes:** Uncontrolled free-text disaggregation as a sufficient availability statement.
+
 ## Decision record template
 
 - **ID and title:**

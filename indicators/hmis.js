@@ -2,13 +2,14 @@ let savedHmisView='cards';
 try{if(localStorage.getItem('phaos-hmis-view')==='table')savedHmisView='table';}catch(_){}
 const hmisState = { objects: [], filtered: [], visible: 24, index: new Map(), crosswalks: new Map(), activeType: 'All objects', view:savedHmisView };
 const h$ = id => document.getElementById(id);
-const hmisFields = ['hmis-search','hmis-object-type','hmis-component','hmis-facility','hmis-version'];
+const hmisFields = ['hmis-search','hmis-object-type','hmis-component','hmis-facility','hmis-version','hmis-disagg-dimension','hmis-disagg-claim','hmis-disagg-evidence'];
+const hmisClaimLabels={'source-required':'Source-required','system-available':'System-available','analyst-recommended':'Analyst-recommended'};
 
 Promise.all([
   window.phaosUnifiedModelPromise,
   fetch('./data/hmis/crosswalks.json?v=unify-07-1.0.0', {cache:'no-store'}).then(r=>r.json())
 ]).then(([model,crosswalk])=>{
-  hmisState.objects=model.records.filter(record=>record.registryMemberships.includes('hmis')).map(record=>({...record.hmisMetadata,canonicalObjectId:record.canonicalObjectId,canonicalUri:record.canonicalUri,canonicalObjectType:record.canonicalObjectType,representations:record.representations,navigation:record.navigation,provenance:record.provenance,operationalDiscovery:record.operationalDiscovery,systemPortalTags:record.systemPortalTags}));
+  hmisState.objects=model.records.filter(record=>record.registryMemberships.includes('hmis')).map(record=>({...record.hmisMetadata,canonicalObjectId:record.canonicalObjectId,canonicalUri:record.canonicalUri,canonicalObjectType:record.canonicalObjectType,representations:record.representations,navigation:record.navigation,provenance:record.provenance,operationalDiscovery:record.operationalDiscovery,disaggregationProfile:record.disaggregationProfile,systemPortalTags:record.systemPortalTags}));
   hmisState.index=new Map(hmisState.objects.map(x=>[x.id,x]));
   hmisState.crosswalks=new Map((crosswalk.indicatorElementCrosswalks||[]).map(x=>[x.indicatorId,x]));
   const counts=hmisState.objects.reduce((acc,item)=>((acc[item.objectType]=(acc[item.objectType]||0)+1),acc),{});
@@ -21,6 +22,9 @@ Promise.all([
   hmisFill('hmis-component',hmisState.objects.map(x=>x.component).filter(Boolean));
   hmisFill('hmis-facility',hmisState.objects.flatMap(x=>x.facilityTypes||[]));
   hmisFill('hmis-version',hmisState.objects.map(x=>x.versionStatus).filter(Boolean));
+  hmisFill('hmis-disagg-dimension',hmisState.objects.flatMap(x=>(x.disaggregationProfile?.assertions||[]).map(item=>item.dimensionLabel)));
+  hmisFill('hmis-disagg-claim',hmisState.objects.flatMap(x=>(x.disaggregationProfile?.assertions||[]).map(item=>hmisClaimLabels[item.claimType]||item.claimType)));
+  hmisFill('hmis-disagg-evidence',hmisState.objects.map(x=>x.disaggregationProfile?.evidenceState).filter(Boolean));
   const pendingType=h$('hmis-object-type').dataset.pendingValue;
   if(pendingType&&[...h$('hmis-object-type').options].some(option=>option.value===pendingType))h$('hmis-object-type').value=pendingType;
   hmisState.activeType=h$('hmis-object-type').value;
@@ -39,7 +43,7 @@ document.querySelectorAll('[data-hmis-type]').forEach(button=>button.addEventLis
   syncHmisTabs();hmisFilter();
 }));
 h$('hmis-clear').addEventListener('click',()=>{
-  h$('hmis-search').value='';['hmis-object-type','hmis-component','hmis-facility','hmis-version'].forEach(id=>h$(id).selectedIndex=0);
+  h$('hmis-search').value='';['hmis-object-type','hmis-component','hmis-facility','hmis-version','hmis-disagg-dimension','hmis-disagg-claim','hmis-disagg-evidence'].forEach(id=>h$(id).selectedIndex=0);
   hmisState.activeType='All objects';syncHmisTabs();hmisFilter();
 });
 h$('hmis-load-more').addEventListener('click',()=>{hmisState.visible+=24;hmisRender();});
@@ -53,18 +57,19 @@ function syncHmisTabs(){document.querySelectorAll('[data-hmis-type]').forEach(x=
 function syncHmisViewButtons(){document.querySelectorAll('[data-hmis-view]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.hmisView===hmisState.view)));}
 function hmisFilter(){
   hmisState.visible=24;
-  const q=h$('hmis-search').value.trim().toLowerCase(),type=h$('hmis-object-type').value,component=h$('hmis-component').value,facility=h$('hmis-facility').value,version=h$('hmis-version').value;
+  const q=h$('hmis-search').value.trim().toLowerCase(),type=h$('hmis-object-type').value,component=h$('hmis-component').value,facility=h$('hmis-facility').value,version=h$('hmis-version').value,disaggDimension=h$('hmis-disagg-dimension').value,disaggClaim=h$('hmis-disagg-claim').value,disaggEvidence=h$('hmis-disagg-evidence').value;
   hmisState.filtered=hmisState.objects.filter(x=>{
-    const text=[x.id,x.objectType,x.name,x.definition,x.displayDefinition,x.component,x.domain,x.recordClass,x.formula,x.normalizedFormula,x.measureType,x.scaleDisplay,x.denominatorPopulation,x.numerator,x.denominator,x.leftElement,x.rightElement,x.sourceVersion,x.versionStatus,(x.facilityTypes||[]).join(' '),(x.sourceCodes||[]).join(' ')].join(' ').toLowerCase();
-    return (!q||text.includes(q))&&(type==='All objects'||x.objectType===type)&&(component==='All components'||x.component===component)&&(facility==='All facilities'||(x.facilityTypes||[]).includes(facility))&&(version==='All versions'||x.versionStatus===version);
+    const assertions=x.disaggregationProfile?.assertions||[];
+    const text=[x.id,x.objectType,x.name,x.definition,x.displayDefinition,x.component,x.domain,x.recordClass,x.formula,x.normalizedFormula,x.measureType,x.scaleDisplay,x.denominatorPopulation,x.numerator,x.denominator,x.leftElement,x.rightElement,x.sourceVersion,x.versionStatus,(x.facilityTypes||[]).join(' '),(x.sourceCodes||[]).join(' '),...assertions.flatMap(item=>[item.dimensionLabel,hmisClaimLabels[item.claimType],item.evidence?.exactText,item.applicability?.reportingLevel])].join(' ').toLowerCase();
+    return (!q||text.includes(q))&&(type==='All objects'||x.objectType===type)&&(component==='All components'||x.component===component)&&(facility==='All facilities'||(x.facilityTypes||[]).includes(facility))&&(version==='All versions'||x.versionStatus===version)&&(disaggDimension==='All disaggregation dimensions'||assertions.some(item=>item.dimensionLabel===disaggDimension))&&(disaggClaim==='All claim types'||assertions.some(item=>(hmisClaimLabels[item.claimType]||item.claimType)===disaggClaim))&&(disaggEvidence==='All evidence states'||x.disaggregationProfile?.evidenceState===disaggEvidence);
   }).sort((a,b)=>a.objectType.localeCompare(b.objectType)||a.name.localeCompare(b.name));
-  h$('hmis-clear').hidden=!(q||type!=='All objects'||component!=='All components'||facility!=='All facilities'||version!=='All versions');
-  const summaries=window.phaosResultSummaries,counts=Object.fromEntries(summaries.counts(hmisState.filtered,x=>x.objectType)),occurrenceLinked=hmisState.filtered.filter(x=>(x.navigation?.occurrences||[]).length).length,graphLinked=hmisState.filtered.filter(x=>x.navigation?.graphNode).length;
+  h$('hmis-clear').hidden=!(q||type!=='All objects'||component!=='All components'||facility!=='All facilities'||version!=='All versions'||disaggDimension!=='All disaggregation dimensions'||disaggClaim!=='All claim types'||disaggEvidence!=='All evidence states');
+  const summaries=window.phaosResultSummaries,counts=Object.fromEntries(summaries.counts(hmisState.filtered,x=>x.objectType)),occurrenceLinked=hmisState.filtered.filter(x=>(x.navigation?.occurrences||[]).length).length,graphLinked=hmisState.filtered.filter(x=>x.navigation?.graphNode).length,disaggLinked=hmisState.filtered.filter(x=>(x.disaggregationProfile?.assertions||[]).length).length;
   summaries.render('hmis-result-summary',{
     eyebrow:'Result summary · HMIS knowledge layer',title:`${hmisState.filtered.length.toLocaleString()} HMIS knowledge objects in this result`,
-    metrics:[{value:counts['Derived indicator']||0,label:'derived indicators'},{value:counts['Data element']||0,label:'data elements'},{value:counts['Published output']||0,label:'published outputs'},{value:counts['Validation rule']||0,label:'validation rules'},{value:occurrenceLinked,label:'linked to report occurrences'},{value:graphLinked,label:'linked to graph nodes'}],
+    metrics:[{value:counts['Derived indicator']||0,label:'derived indicators'},{value:counts['Data element']||0,label:'data elements'},{value:counts['Published output']||0,label:'published outputs'},{value:counts['Validation rule']||0,label:'validation rules'},{value:occurrenceLinked,label:'linked to report occurrences'},{value:graphLinked,label:'linked to graph nodes'},{value:disaggLinked,label:'with disaggregation assertions'}],
     groups:[{label:'Programme components',values:summaries.counts(hmisState.filtered,x=>x.component||x.domain||'Not classified')},{label:'Version status',values:summaries.counts(hmisState.filtered,x=>x.versionStatus||'Not stated')},{label:'Facility / reporting applicability',values:summaries.counts(hmisState.filtered,x=>x.facilityTypes)}],
-    filters:summaries.activeFilters([['Search',h$('hmis-search').value.trim(),''],['Object type',type,'All objects'],['Component',component,'All components'],['Facility',facility,'All facilities'],['Version',version,'All versions']]),
+    filters:summaries.activeFilters([['Search',h$('hmis-search').value.trim(),''],['Object type',type,'All objects'],['Component',component,'All components'],['Facility',facility,'All facilities'],['Version',version,'All versions'],['Disaggregation dimension',disaggDimension,'All disaggregation dimensions'],['Disaggregation claim',disaggClaim,'All claim types'],['Disaggregation evidence',disaggEvidence,'All evidence states']]),
     boundary:'Derived indicators are one HMIS object class. The 54 derived indicators do not equal the full HMIS layer of 1,046 knowledge objects.'
   });
   hmisRender();
@@ -87,7 +92,7 @@ function hmisCard(x){
   const status=x.versionStatus||'Version not stated';
   const summary=x.displayDefinition||x.definition||x.formula||x.name;
   const measureTags=x.measureType?'<span class="measure-tag">'+hEsc(x.measureType)+'</span><span class="scale-tag">'+hEsc(x.scaleDisplay||'Not specified')+'</span>':'';
-  return '<article class="hmis-card type-'+x.objectType.toLowerCase().replaceAll(' ','-')+'"><div class="card-top"><span>'+hEsc(x.id)+'</span><span>'+hEsc(x.objectType)+'</span></div><div class="card-tags"><span class="card-domain">'+hEsc(x.component||x.domain)+'</span>'+measureTags+'</div><h3>'+hEsc(x.name)+'</h3><p>'+hEsc(summary)+'</p><div class="ops-profile"><span>'+hEsc(x.operationalDiscovery.frequency)+'</span><span>'+hEsc(x.operationalDiscovery.reviewStatus)+'</span><span>'+hEsc(x.operationalDiscovery.computabilityMaturity)+'</span></div><dl><div><dt>Version status</dt><dd>'+hEsc(status)+'</dd></div><div><dt>WHO pillars</dt><dd>'+hEsc((x.whoPillars||[]).join('; '))+'</dd></div></dl><button data-hmis-open="'+hEsc(x.id)+'">View linked metadata <span>→</span></button></article>';
+  return '<article class="hmis-card type-'+x.objectType.toLowerCase().replaceAll(' ','-')+'"><div class="card-top"><span>'+hEsc(x.id)+'</span><span>'+hEsc(x.objectType)+'</span></div><div class="card-tags"><span class="card-domain">'+hEsc(x.component||x.domain)+'</span>'+measureTags+'</div><h3>'+hEsc(x.name)+'</h3><p>'+hEsc(summary)+'</p><div class="ops-profile"><span>'+hEsc(x.operationalDiscovery.frequency)+'</span><span>'+hEsc(x.operationalDiscovery.reviewStatus)+'</span><span>'+hEsc(x.operationalDiscovery.computabilityMaturity)+'</span></div><div class="disagg-summary">'+hEsc(x.disaggregationProfile.dimensions.length?x.disaggregationProfile.dimensions.length+' governed dimensions':x.disaggregationProfile.evidenceState)+'</div><dl><div><dt>Version status</dt><dd>'+hEsc(status)+'</dd></div><div><dt>WHO pillars</dt><dd>'+hEsc((x.whoPillars||[]).join('; '))+'</dd></div></dl><button data-hmis-open="'+hEsc(x.id)+'">View linked metadata <span>→</span></button></article>';
 }
 function hMeta(title,value,wide=false){
   const display=Array.isArray(value)?value.join('; '):value;
@@ -101,6 +106,11 @@ function idRelations(ids,label){
   const rows=(ids||[]).map(id=>hmisState.index.get(id)).filter(Boolean);
   if(!rows.length)return '';
   return '<div class="meta-item wide"><span>'+hEsc(label)+'</span><div class="relation-list">'+rows.slice(0,12).map(x=>'<button data-hmis-open="'+hEsc(x.id)+'"><b>'+hEsc(x.name)+'</b><small>'+hEsc(x.objectType)+' · '+hEsc(x.id)+'</small></button>').join('')+'</div></div>';
+}
+function hmisDisaggregationPanel(profile){
+  const types=[['source-required','Source-required'],['system-available','System-available'],['analyst-recommended','Analyst-recommended']];
+  const columns=types.map(([id,label])=>{const rows=profile.assertions.filter(item=>item.claimType===id);return '<div class="disagg-column claim-'+id+'"><h4>'+hEsc(label)+' <span>'+rows.length+'</span></h4>'+(rows.length?rows.map(item=>'<article><strong>'+hEsc(item.dimensionLabel)+'</strong><p>'+hEsc(item.status)+'</p><small>'+hEsc(item.evidence.exactText)+' · '+hEsc(item.evidence.sourceVersion||'Version not stated')+'</small><details><summary>Evidence and applicability</summary><dl><div><dt>Authority</dt><dd>'+hEsc(item.evidence.authority)+'</dd></div><div><dt>Locator</dt><dd>'+hEsc(item.evidence.locator)+'</dd></div><div><dt>Geography</dt><dd>'+hEsc(item.applicability.geography)+'</dd></div><div><dt>Reporting level</dt><dd>'+hEsc(item.applicability.reportingLevel)+'</dd></div><div><dt>Facility type</dt><dd>'+hEsc(item.applicability.facilityType)+'</dd></div><div><dt>Population</dt><dd>'+hEsc(item.applicability.population)+'</dd></div><div><dt>Review</dt><dd>'+hEsc(item.reviewStatus)+'</dd></div></dl></details></article>').join(''):'<p class="disagg-empty">Not evidenced in this release.</p>')+'</div>';}).join('');
+  return '<section class="disaggregation-profile"><div><p class="eyebrow">UTILITY-02 · PHAOS-DISAGG-001</p><h3>Controlled disaggregation assertions</h3><p>'+hEsc(profile.boundary)+'</p></div><div class="disagg-columns">'+columns+'</div></section>';
 }
 function openHmisModal(id){
   const x=hmisState.index.get(id);if(!x)return;
@@ -119,7 +129,7 @@ function openHmisModal(id){
   }
   const ops=x.operationalDiscovery;
   const opsProfile='<section class="operational-profile"><strong>UTILITY-01 · operational discovery profile</strong><dl><div><dt>Frequency</dt><dd>'+hEsc(ops.frequency)+'<br><small>Source wording: '+hEsc(ops.frequencySource)+'</small></dd></div><div><dt>Responsible cadre</dt><dd>'+hEsc(ops.cadreCategories.join('; '))+'<br><small>Source wording: '+hEsc(ops.responsibleCadreSource)+'</small></dd></div><div><dt>Data availability</dt><dd>'+hEsc(ops.dataAvailability)+'</dd></div><div><dt>Review status</dt><dd>'+hEsc(ops.reviewStatus)+'</dd></div><div><dt>Lifecycle</dt><dd>'+hEsc(ops.lifecycle)+'</dd></div><div><dt>Computability maturity</dt><dd>'+hEsc(ops.computabilityMaturity)+'</dd></div></dl></section>';
-  h$('modal-content').innerHTML='<div class="modal-kicker"><span>'+hEsc(x.id)+'</span><span>'+hEsc(x.objectType)+'</span><span>'+hEsc(x.versionStatus)+'</span></div><p class="eyebrow">HMIS · '+hEsc(x.component||x.domain)+'</p><h2 id="modal-title">'+hEsc(x.name)+'</h2>'+opsProfile+'<div class="metadata-grid hmis-modal-grid">'+body+hMeta('WHO health-system pillars',x.whoPillars,true)+hMeta('Potential uses',x.uses,true)+hMeta('Key limitations',x.caveats,true)+hMeta('Source version',x.sourceVersion,true)+'</div>'+window.phaosProvenancePanel(x.provenance)+window.phaosNavigation.renderFor(id)+'<div class="source-panel"><div><span>Source authority</span><strong>'+hEsc(x.sourceAuthority)+'</strong><small>'+hEsc(x.sourceVersion||x.sourcePeriod)+'</small></div><div><span>Version treatment</span><strong>'+hEsc(x.versionStatus)+'</strong><small>Analytics-OS Release 4.1</small></div>'+(graphAvailable?'<button type="button" id="hmis-open-graph" class="modal-graph-link">Explore in graph →</button>':'')+'<a href="'+hEsc(x.sourceUrl)+'" target="_blank" rel="noreferrer">Open source ↗</a></div>';
+  h$('modal-content').innerHTML='<div class="modal-kicker"><span>'+hEsc(x.id)+'</span><span>'+hEsc(x.objectType)+'</span><span>'+hEsc(x.versionStatus)+'</span></div><p class="eyebrow">HMIS · '+hEsc(x.component||x.domain)+'</p><h2 id="modal-title">'+hEsc(x.name)+'</h2>'+opsProfile+hmisDisaggregationPanel(x.disaggregationProfile)+'<div class="metadata-grid hmis-modal-grid">'+body+hMeta('WHO health-system pillars',x.whoPillars,true)+hMeta('Potential uses',x.uses,true)+hMeta('Key limitations',x.caveats,true)+hMeta('Source version',x.sourceVersion,true)+'</div>'+window.phaosProvenancePanel(x.provenance)+window.phaosNavigation.renderFor(id)+'<div class="source-panel"><div><span>Source authority</span><strong>'+hEsc(x.sourceAuthority)+'</strong><small>'+hEsc(x.sourceVersion||x.sourcePeriod)+'</small></div><div><span>Version treatment</span><strong>'+hEsc(x.versionStatus)+'</strong><small>Analytics-OS Release 4.2</small></div>'+(graphAvailable?'<button type="button" id="hmis-open-graph" class="modal-graph-link">Explore in graph →</button>':'')+'<a href="'+hEsc(x.sourceUrl)+'" target="_blank" rel="noreferrer">Open source ↗</a></div>';
   h$('modal-backdrop').hidden=false;document.body.style.overflow='hidden';h$('modal-close').focus();
   h$('hmis-open-graph')?.addEventListener('click',()=>{h$('modal-close').click();location.hash='knowledge-graph';graphSelect.value=id;graphSelect.dispatchEvent(new Event('change'));});
   window.phaosNavigation.bind(h$('modal-content'));
