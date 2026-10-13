@@ -2,6 +2,7 @@ import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { operationalDiscovery } from './operational-discovery.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = relative => JSON.parse(fs.readFileSync(path.join(root, relative), 'utf8'));
@@ -10,7 +11,7 @@ const write = (relative, value) => {
   fs.mkdirSync(path.dirname(target), { recursive: true });
   fs.writeFileSync(target, `${JSON.stringify(value, null, 2)}\n`);
 };
-const releaseDate = '2026-10-12';
+const releaseDate = '2026-10-13';
 const modelPath = 'indicators/data/registry/unified-read-model.json';
 const manifestPath = 'indicators/data/registry/manifest.json';
 
@@ -137,6 +138,23 @@ const records = identities.canonicalObjects.map(identity => {
   const reviews = (reviewsBySubject.get(identity.canonicalObjectId) || []).sort((a,b) => a.reviewedOn.localeCompare(b.reviewedOn));
   const changes = (changesBySubject.get(identity.canonicalObjectId) || []).sort((a,b) => a.changedOn.localeCompare(b.changedOn));
   const latestReview = reviews.at(-1) || null;
+  const provenance = latestReview ? {
+    status: latestReview.status,
+    reviewType: latestReview.reviewType,
+    reviewedOn: latestReview.reviewedOn,
+    sourceAccessedOn: latestReview.sourceAccessedOn,
+    reviewerRole: latestReview.reviewer.role || null,
+    reviewerName: latestReview.reviewer.name || null,
+    method: latestReview.method,
+    reason: latestReview.reason,
+    scope: latestReview.scope || null,
+    findings: latestReview.findings || null,
+    reviewedFields: latestReview.reviewedFields,
+    publicIdentityPolicy: latestReview.publicIdentityPolicy || 'role-only',
+    reviewEventIds: reviews.map(event => event.id),
+    changeEventIds: changes.map(event => event.id)
+  } : null;
+  const discoveryProfile = operationalDiscovery({indicator:indicatorMetadata,hmis:hmisMetadata,objectType:identity.canonicalObjectType,provenance,lifecycleStatus:identity.lifecycleStatus});
   return {
     canonicalObjectId: identity.canonicalObjectId,
     canonicalUri: identity.canonicalUri,
@@ -157,22 +175,8 @@ const records = identities.canonicalObjects.map(identity => {
     replaces: identity.replaces,
     replacedBy: identity.replacedBy,
     representations: identity.representations,
-    provenance: latestReview ? {
-      status: latestReview.status,
-      reviewType: latestReview.reviewType,
-      reviewedOn: latestReview.reviewedOn,
-      sourceAccessedOn: latestReview.sourceAccessedOn,
-      reviewerRole: latestReview.reviewer.role || null,
-      reviewerName: latestReview.reviewer.name || null,
-      method: latestReview.method,
-      reason: latestReview.reason,
-      scope: latestReview.scope || null,
-      findings: latestReview.findings || null,
-      reviewedFields: latestReview.reviewedFields,
-      publicIdentityPolicy: latestReview.publicIdentityPolicy || 'role-only',
-      reviewEventIds: reviews.map(event => event.id),
-      changeEventIds: changes.map(event => event.id)
-    } : null,
+    provenance,
+    operationalDiscovery: discoveryProfile,
     indicatorMetadata,
     hmisMetadata
   };
@@ -263,9 +267,9 @@ const model = {
   metadata: {
     id: 'PHAOS-UNIFIED-READ-MODEL',
     title: 'Public Health Analytics-OS consolidated discovery read model',
-    version: '1.4.0',
+    version: '1.5.0',
     generated: releaseDate,
-    task: 'TRUST-05',
+    task: 'UTILITY-01',
     identityIndexVersion: identities.metadata.version,
     taxonomyVersion: identities.metadata.taxonomyVersion,
     discoveryFacetVersion: discovery.metadata.version,
@@ -282,12 +286,13 @@ const model = {
 write(modelPath, model);
 const bytes = fs.readFileSync(path.join(root, modelPath));
 const manifest = {
-  metadata: {id:'PHAOS-UNIFIED-READ-MODEL-MANIFEST',version:'1.4.0',generated:releaseDate,task:'TRUST-05'},
+  metadata: {id:'PHAOS-UNIFIED-READ-MODEL-MANIFEST',version:'1.5.0',generated:releaseDate,task:'UTILITY-01'},
   distribution: {path:'unified-read-model.json',mediaType:'application/json',bytes:bytes.length,sha256:crypto.createHash('sha256').update(bytes).digest('hex')},
   counts: model.counts,
   sources: [
     'indicators/data/governance/unified-identity-index.json',
     'indicators/data/governance/discovery-facets.json',
+    'indicators/data/governance/operational-discovery-model.json',
     'indicators/data/indicators.json',
     'indicators/data/ncd/release.json',
     'indicators/data/hmis/catalog.json',

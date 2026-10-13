@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "id": "PHAOS-OPDISC-001",
+    "title": "Public Health Analytics-OS operational discovery profile",
+    "version": "1.0.0",
+    "adopted": "2026-10-13",
+    "task": "UTILITY-01",
+    "status": "Adopted"
+  },
+  "facets": {
+    "frequency": ["Continuous / sub-monthly", "Monthly", "Quarterly", "Semiannual", "Annual", "Event / campaign cycle", "Survey / periodic cycle", "Cohort / follow-up", "Mixed / source-defined", "Source-defined / other", "Not stated"],
+    "cadre": ["Community workforce", "Clinical / facility workforce", "Laboratory workforce", "Data / reporting workforce", "Programme management", "Surveillance / public-health workforce", "Quality / governance body", "Source-defined / other", "Not stated"],
+    "dataAvailability": ["Metadata link available; values not published", "Metadata link not stated; values not published"],
+    "reviewStatus": ["Domain reviewed", "Technically validated", "Review pending"],
+    "lifecycle": ["Active", "Draft", "Superseded", "Retired", "Unknown"],
+    "computabilityMaturity": ["C2 · Formula specified; implementation unvalidated", "C1 · Method stated; inputs incomplete", "C0 · Not assessed / insufficient metadata", "Not applicable to this object class"]
+  },
+  "rules": [
+    "Controlled discovery values are normalized from governed source fields and remain separate from source wording.",
+    "Not stated, unknown and review-pending values remain visible and filterable.",
+    "Cadre categories are assigned only when a responsible-cadre source field is present.",
+    "Data availability describes this publication: Analytics-OS publishes metadata and zero observed health values.",
+    "C2 means that a formula is stated; it does not mean implementation-tested, validated, operationally mapped or custodian approved.",
+    "Validated computability is deliberately unavailable until UTILITY-06 supplies tested calculation templates."
+  ]
+}

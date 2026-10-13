@@ -18,6 +18,7 @@ const checks = [
   command('Entry-level provenance and change history', 'scripts/validate-provenance.mjs'),
   command('Verification queue extraction', 'scripts/validate-verification-queue.mjs'),
   command('Source monitoring and human review queue', 'scripts/validate-source-monitoring.mjs'),
+  command('Operational discovery profile', 'scripts/validate-operational-discovery.mjs'),
   command('Observation-ready publication boundary', 'scripts/validate-observation-model.mjs'),
   command('Measure, formula, scale and denominator rules', 'scripts/validate-measure-normalization.mjs'),
   command('Static UI, links and accessibility contract', 'scripts/validate-site-ui.mjs'),
@@ -58,6 +59,8 @@ const trackedInputs = [
   'indicators/data/governance/source-monitoring-model.json',
   'indicators/data/monitoring/source-snapshots.json',
   'indicators/data/monitoring/review-queue.json',
+  'indicators/data/governance/operational-discovery-model.json',
+  'scripts/operational-discovery.mjs',
   'index.html',
   'indicators/index.html',
   'indicators/app.js',
@@ -76,7 +79,7 @@ const status = results.every(result => result.status === 'pass') ? 'pass' : 'fai
 const report = {
   metadata: {
     id: 'PHAOS-RELEASE-VALIDATION-REPORT',
-    gateVersion: '1.2.0',
+    gateVersion: '1.3.0',
     generatedAt: new Date().toISOString(),
     commitSha: git(['rev-parse', 'HEAD']),
     branch: git(['branch', '--show-current']),
@@ -95,6 +98,7 @@ const report = {
     changeEvents: provenanceManifest.changeEvents,
     monitoredSourceBaselines: monitoringRelease.counts.declaredSources,
     monitoringPilotSources: monitoringRelease.counts.pilotSources,
+    operationalDiscoveryProfiles: model.records.filter(item => item.operationalDiscovery?.modelId === 'PHAOS-OPDISC-001').length,
     publicBulkDownloadControls: 'disabled',
     aggregateObservations: 0,
     referenceValues: 0

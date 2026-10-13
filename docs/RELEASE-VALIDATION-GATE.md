@@ -1,8 +1,8 @@
 # Integrated release-validation gate
 
 **Control:** `PHAOS-RELEASE-GATE-001`
-**Version:** 1.2.0
-**Tasks:** `UNIFY-10`, `TRUST-05..TRUST-07`, Sprint 1 `VAL-01..VAL-06`, Sprint 2 `PROV-01..MON-02`
+**Version:** 1.3.0
+**Tasks:** `UNIFY-10`, `TRUST-05..TRUST-07`, `UTILITY-01`, Sprint 1 `VAL-01..VAL-06`, Sprint 2 `PROV-01..MON-02`, Sprint 3 `DISC-01`
 
 ## Purpose
 

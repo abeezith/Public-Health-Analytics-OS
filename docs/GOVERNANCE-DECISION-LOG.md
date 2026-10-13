@@ -184,6 +184,18 @@ This log records material governance decisions separately from indicator and sof
 - **Migration and review date:** Expand the live pilot only after false-positive and access-error review. Review after 12 scheduled runs, at 20 monitored sources or by 13 October 2027.
 - **Supersedes:** Release-time-only source checks as the sole source-currentness control.
 
+## GOV-DEC-015 — Separate operational discovery from validated computability
+
+- **Date:** 13 October 2026
+- **Status:** Adopted
+- **Decision owner:** Analytics-OS maintainer
+- **Decision:** Adopt `PHAOS-OPDISC-001` and read model 1.5.0. Normalize frequency, responsible cadre, publication-level data availability, review status, lifecycle and computability maturity while preserving source wording and explicit unknown states.
+- **Reason and evidence:** Operational users need to find indicators by reporting context, but the existing interface mixed source text with missing fields and did not distinguish a stated formula from a tested implementation. The profile covers all 4,743 canonical objects while retaining 3,256 not-stated frequencies, 4,204 not-stated cadre profiles and 4,733 review-pending records.
+- **Alternatives considered:** Dropping unknowns, treating a source link as proof that data values are available, and calling every stated formula computable were rejected as misleading. Backfilling cadre from object type was rejected because it would invent source evidence.
+- **Affected artifacts or decision rights:** Consolidated read model, operational profile, indicator filters and URL state, cards/tables/details, HMIS details, release validation and tracker. Source custodians retain authority over official metadata; `UTILITY-06` controls tested calculation maturity.
+- **Migration and review date:** Reassess categories after `UTILITY-06`, after 100 reviewed records or by 13 October 2027. Existing source fields remain unchanged.
+- **Supersedes:** Uncontrolled operational discovery through free-text search alone.
+
 ## Decision record template
 
 - **ID and title:**

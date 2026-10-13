@@ -1,15 +1,15 @@
 {
   "metadata": {
     "id": "PHAOS-UNIFIED-READ-MODEL-MANIFEST",
-    "version": "1.4.0",
-    "generated": "2026-10-12",
-    "task": "TRUST-05"
+    "version": "1.5.0",
+    "generated": "2026-10-13",
+    "task": "UTILITY-01"
   },
   "distribution": {
     "path": "unified-read-model.json",
     "mediaType": "application/json",
-    "bytes": 25865904,
-    "sha256": "b7deee8adefd6eb49fd248072f0a3d5c95cb8b82a5427bd94c6294716714637c"
+    "bytes": 28291252,
+    "sha256": "70b77e0a848f128f5c9fb34f4df6bd7b9c6661b92fd53f96f556d37de72eece6"
   },
   "counts": {
     "canonicalObjects": 4743,
@@ -43,6 +43,7 @@
   "sources": [
     "indicators/data/governance/unified-identity-index.json",
     "indicators/data/governance/discovery-facets.json",
+    "indicators/data/governance/operational-discovery-model.json",
     "indicators/data/indicators.json",
     "indicators/data/ncd/release.json",
     "indicators/data/hmis/catalog.json",

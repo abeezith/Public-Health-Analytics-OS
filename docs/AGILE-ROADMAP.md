@@ -124,6 +124,8 @@ Within a priority class, sequence by: patient/public-health risk → data-integr
 
 **Sprint goal:** start `UTILITY-01–03` with a redesigned model that separates source evidence from analyst recommendation.
 
+**Status:** In progress — `DISC-01 / UTILITY-01` shipped in Release 4.1 with six controlled operational facets across 4,743 canonical objects, source-wording preservation and URL-addressable indicator filters. Next: `DISAGG-01 / UTILITY-02`.
+
 | Story / ticket | User story and deliverable | Pri. | SP | Acceptance criteria |
 |---|---|---:|---:|---|
 | `S3-ST1 / DISC-01` | As analyst, I need operational discovery fields. Add frequency, cadre, availability, review status, lifecycle and computability maturity facets. | P1 | 5 | Facets use controlled values; “unknown” is not dropped; result counts and URL/deep-link state remain correct. |
@@ -298,4 +300,4 @@ A ticket is Done only when all applicable conditions pass:
 
 ## 12. Recommended immediate commitment
 
-Sprints 0–2 are complete. Start **Sprint 3 with `UTILITY-01`**: add controlled operational discovery fields, followed by evidence-separated disaggregation and the 20-record equity pilot.
+Sprints 0–2 and `UTILITY-01` are complete. Continue Sprint 3 with **`UTILITY-02 / DISAGG-01`**: separate source-required, system-available and analyst-recommended disaggregation before the 20-record equity pilot.
