@@ -22,4 +22,6 @@ Passing UAT proves publication structure and interface behaviour. It does not va
 
 ## Deployment evidence
 
-To be recorded after GitHub Pages verification.
+- Release commit: `31c70e5c422f3c5b9b5de9b18ff630c548a012c8`
+- GitHub Actions run `38412639326`: integrated 14-check release gate and Pages deployment passed.
+- Live smoke test: the `quality=Pilot profile available` URL restored the filter, returned 30 indicators, displayed Release 4.3 and produced no browser warnings or errors.
