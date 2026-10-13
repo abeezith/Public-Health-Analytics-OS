@@ -232,6 +232,18 @@ This log records material governance decisions separately from indicator and sof
 - **Migration and review date:** Expand only through source-reviewed batches; review the LaQshya pilot before reuse and no later than 13 October 2027.
 - **Supersedes:** The zero-record implementation state under GOV-DEC-011; the separation principle remains in force.
 
+## GOV-DEC-019 — Separate official response protocols from analyst-advisory review workflows
+
+- **Date:** 13 October 2026
+- **Status:** Adopted
+- **Decision owner:** Analytics-OS maintainer
+- **Decision:** Adopt `PHAOS-RESPONSE-001` and read model 1.9.0. Label an action as official only when an exact versioned SOP/guideline locator supports it; otherwise publish either an explicitly advisory data-review workflow or no governed guidance.
+- **Reason and evidence:** Indicator definitions, targets and interpretation cautions do not automatically authorize a programme or clinical response. The 30-record pilot has useful review safeguards but no sufficiently precise response-protocol evidence in its cited indicator metadata.
+- **Alternatives considered:** Convert targets into alerts, present analyst checks as official actions, or omit the authority state. These were rejected as unsafe and misleading.
+- **Affected artifacts or decision rights:** Unified read model, Registry filter/detail UI, release gate, roadmap and trackers. Source custodians and authorized local programme bodies retain authority over official response protocols.
+- **Migration and review date:** Add official protocols only through separately reviewed source batches; domain-review the advisory pilot before expansion and no later than 13 October 2027.
+- **Supersedes:** Unstructured potential-use text as sufficient response guidance.
+
 ## Decision record template
 
 - **ID and title:**

@@ -2,7 +2,7 @@
 
 **Control:** `PHAOS-RELEASE-GATE-001`
 **Version:** 1.4.0
-**Tasks:** `UNIFY-10`, `TRUST-05..TRUST-07`, `UTILITY-01..UTILITY-03`, Sprint 1 `VAL-01..VAL-06`, Sprint 2 `PROV-01..MON-02`, Sprint 3 `DISC-01..DQ-01`
+**Tasks:** `UNIFY-10`, `TRUST-05..TRUST-07`, `UTILITY-01..UTILITY-05`, Sprint 1 `VAL-01..VAL-06`, Sprint 2 `PROV-01..MON-02`, Sprint 3 `DISC-01..DQ-01`
 
 ## Purpose
 

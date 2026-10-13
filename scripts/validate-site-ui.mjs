@@ -10,7 +10,7 @@ const assert = (condition, code, message) => { if (!condition) errors.push({ cod
 const corePages = ['index.html', 'indicators/index.html', 'roadmap/index.html'];
 const requiredIds = {
   'index.html': ['top', 'workspace', 'products', 'principles', 'roadmap'],
-  'indicators/index.html': ['registry', 'registry-indicators', 'coverage', 'knowledge-graph', 'method', 'source-monitoring', 'monitor-pilot-rows', 'monitor-review-queue', 'india', 'hmis', 'hmis-report-schemas', 'indicator-grid', 'hmis-grid', 'occurrence-grid', 'frequency', 'cadre', 'availability', 'review', 'lifecycle', 'computability', 'disagg-dimension', 'disagg-claim', 'disagg-evidence', 'quality-profile', 'hmis-disagg-dimension', 'hmis-disagg-claim', 'hmis-disagg-evidence', 'hmis-quality-profile', 'modal-backdrop'],
+  'indicators/index.html': ['registry', 'registry-indicators', 'coverage', 'knowledge-graph', 'method', 'source-monitoring', 'monitor-pilot-rows', 'monitor-review-queue', 'india', 'hmis', 'hmis-report-schemas', 'indicator-grid', 'hmis-grid', 'occurrence-grid', 'frequency', 'cadre', 'availability', 'review', 'lifecycle', 'computability', 'disagg-dimension', 'disagg-claim', 'disagg-evidence', 'quality-profile', 'reference-profile', 'response-profile', 'hmis-disagg-dimension', 'hmis-disagg-claim', 'hmis-disagg-evidence', 'hmis-quality-profile', 'modal-backdrop'],
   'roadmap/index.html': ['query', 'sprint-filter', 'epic-filter', 'priority-filter', 'board', 'visible-count', 'ticket-total']
 };
 

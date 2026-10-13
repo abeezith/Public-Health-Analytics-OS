@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "id": "PHAOS-RESPONSE-001",
+    "title": "Public Health Analytics-OS interpretation and response-guidance profile",
+    "version": "1.0.0",
+    "status": "Adopted for UTILITY-05 pilot",
+    "adoptedOn": "2026-10-13"
+  },
+  "scope": "A metadata-only response layer for the 30 UTILITY-03 priority indicators. It separates source-stated protocols from analyst-advisory data-review workflows.",
+  "controlledValues": {
+    "guidanceState": ["Advisory review guidance available", "No governed response guidance"],
+    "officialProtocolStatus": ["Source-stated protocol available", "Not identified in cited indicator metadata"],
+    "reviewStatus": ["Analyst-curated pilot — domain review pending", "Not reviewed under UTILITY-05"]
+  },
+  "rules": [
+    "Official response guidance requires an exact official SOP or guideline source, version and locator.",
+    "An indicator threshold or target does not by itself establish a response protocol.",
+    "Analyst-advisory review steps remain visibly distinct from official actions.",
+    "Guidance never substitutes for clinical judgment, emergency action, programme authority or local escalation policy.",
+    "No observed value is assessed and no automated action is authorized."
+  ],
+  "publicationBoundary": "Metadata-only guidance. No clinical decision support, automated alerting, performance rating, observed values or public bulk-download controls."
+}

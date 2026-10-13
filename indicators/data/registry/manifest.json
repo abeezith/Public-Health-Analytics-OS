@@ -1,15 +1,15 @@
 {
   "metadata": {
     "id": "PHAOS-UNIFIED-READ-MODEL-MANIFEST",
-    "version": "1.8.0",
+    "version": "1.9.0",
     "generated": "2026-10-13",
-    "task": "UTILITY-04"
+    "task": "UTILITY-05"
   },
   "distribution": {
     "path": "unified-read-model.json",
     "mediaType": "application/json",
-    "bytes": 44515476,
-    "sha256": "140634b5f2db50f88e34d6d82b1bf2b666c15ee8fd999e0ed4bb9c4c04e4c848"
+    "bytes": 47468239,
+    "sha256": "98454d13d44d9e3cc8da40fd01846e75784a5b1c47d2cc039cc3df36f9b39612"
   },
   "counts": {
     "canonicalObjects": 4743,
@@ -53,6 +53,12 @@
       "pendingDomainReview": 30,
       "notInPilot": 4713
     },
+    "responseGuidance": {
+      "profiles": 4743,
+      "advisoryProfiles": 30,
+      "officialProtocols": 0,
+      "noGovernedGuidance": 4713
+    },
     "referenceValues": {
       "referenceValues": 20,
       "indicators": 12,
@@ -68,6 +74,7 @@
     "indicators/data/governance/disaggregation-model.json",
     "indicators/data/governance/quality-comparability-model.json",
     "indicators/data/governance/quality-comparability-pilot.json",
+    "indicators/data/governance/response-guidance-model.json",
     "indicators/data/observations/reference-values.json",
     "indicators/data/indicators.json",
     "indicators/data/ncd/release.json",
