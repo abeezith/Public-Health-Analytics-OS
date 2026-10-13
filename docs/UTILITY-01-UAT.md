@@ -19,6 +19,7 @@
 - [x] Desktop browser UAT confirms filtering, URL-state restoration, clear-all behavior, table presentation, indicator/HMIS detail profiles, home navigation and roadmap status.
 - [x] Narrow-viewport UAT confirms no horizontal overflow at the in-app browser's 666 px minimum viewport; responsive rules are also covered by the static UI gate.
 - [x] Integrated release gate passes all 12 checks.
-- [ ] GitHub Actions deployment and live smoke test recorded after publication.
+- [x] GitHub Actions run `38342870902` passed the integrated gate and deployed commit `19f80d2` to GitHub Pages.
+- [x] Live smoke test confirms Release 4.1, 3,751 indicator manifestations, six operational filters, URL-addressable filtering (`Monthly` + `Review pending` = 180), zero download buttons and zero console warnings/errors.
 
 Passing UAT proves controlled discovery and filtering. It does not prove that an upstream operational system contains data, that a formula implementation is correct, or that a source custodian has approved an Analytics-OS normalization.
