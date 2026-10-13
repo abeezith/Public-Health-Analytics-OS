@@ -14,8 +14,15 @@
 | Boundary | 0 aggregate observations; 0 public distributions; downloads disabled | Pass |
 | Regression | Release validation gate passes all 15 checks | Pass |
 | Local browser | URL filter restores 12 results; badges and absolute-target modal are accessible | Pass |
-| Live smoke | Filter, card badge and modal work on GitHub Pages | Pending deployment |
+| Live smoke | Filter, card badge and modal work on GitHub Pages | Pass |
 
 ## Source boundary
 
 Pilot evidence is limited to LaQshya Annexure C, PDF pages 41–42. It is not a complete inventory of targets across Analytics-OS or proof that the cited 2017 targets remain current.
+
+## Deployment evidence
+
+- Implementation commit: `1a044cd`
+- GitHub Actions run: [38418517893](https://github.com/abeezith/Public-Health-Analytics-OS/actions/runs/38418517893) — passed
+- Live page: [governed reference-value results](https://abeezith.github.io/Public-Health-Analytics-OS/indicators/?reference=Has+governed+reference+value#registry-indicators)
+- Live verification: URL state restored 12 results; cards exposed target counts; the metadata view displayed the governed `= 100 %` target, active lifecycle, programme-relative applicability, source version, normalized formula and denominator.
