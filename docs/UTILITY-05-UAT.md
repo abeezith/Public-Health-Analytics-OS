@@ -14,7 +14,9 @@
 | Detail view | Workflow, evidence, authority and boundaries are visible | Pass |
 | Regression | Integrated release gate passes | Pass — 16/16 blocking checks |
 | Local browser | URL state restores 30 pilot results and detail panel exposes all guidance fields | Pass |
-| Live smoke | URL filter and detail panel work on GitHub Pages | Pending deployment |
+| Live smoke | URL filter and detail panel work on GitHub Pages | Pass — 30 results; evidence, authority, workflow and safety text verified |
+
+Deployment evidence: commit `d69de59`; GitHub Actions run `38426587216` passed both the integrated release gate and Pages deployment.
 
 ## Review debt
 
