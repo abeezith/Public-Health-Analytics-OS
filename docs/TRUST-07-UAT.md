@@ -17,6 +17,7 @@
 - [x] Scheduled workflow is read-only and cannot mutate registry content.
 - [x] Public interface shows monitoring coverage, pilot access state and human-review boundary without download controls.
 - [x] Integrated 11-check release gate and browser UAT passed at desktop and 390-pixel mobile widths with zero console warnings or errors.
-- [ ] GitHub Actions deployment and live GitHub Pages smoke test recorded after publication.
+- [x] GitHub Actions run `38337686529` passed the integrated gate and deployed commit `dccee4a`; live Release 4.0, the `43 / 29 / 5 / 0` monitoring summary, five pilot rows and the review boundary were smoke-tested with zero browser warnings or errors.
+- [x] Manual monitoring run `38337855968` passed validation, five-source probing, comparison and 90-day evidence-artifact preservation without repository mutation.
 
 Passing UAT establishes source-change triage infrastructure. It does not establish semantic change, source-custodian approval or current computability.
