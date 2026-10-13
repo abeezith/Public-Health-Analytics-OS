@@ -4,9 +4,9 @@ import { fileURLToPath } from 'node:url';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const read=relative=>JSON.parse(fs.readFileSync(path.join(root,relative),'utf8'));
-const schemaDir=path.join(root,'indicators/data/schemas/1.1.0');
+const schemaDir=path.join(root,'indicators/data/schemas/1.4.0');
 const layerDir=path.join(root,'indicators/data/observations');
-const packageManifest=read('indicators/data/schemas/1.1.0/manifest.json');
+const packageManifest=read('indicators/data/schemas/1.4.0/manifest.json');
 const layerManifest=read('indicators/data/observations/manifest.json');
 const unified=read('indicators/data/registry/unified-read-model.json');
 const canonical=new Map(unified.records.map(record=>[record.canonicalObjectId,record]));
@@ -14,15 +14,15 @@ const errors=[];
 const assert=(condition,message)=>{if(!condition)errors.push(message);};
 
 assert(unified.metadata.taxonomyVersion==='1.1.0','Unified read model must reference taxonomy 1.1.0');
-assert(packageManifest.version==='1.1.0','Schema package version must be 1.1.0');
-assert(packageManifest.schemas.length===12,'Schema package 1.1.0 must declare 12 contracts');
+assert(packageManifest.version==='1.4.0','Schema package version must be 1.4.0');
+assert(packageManifest.schemas.length===14,'Schema package 1.4.0 must declare 14 contracts');
 for(const entry of packageManifest.schemas){
   const file=path.join(schemaDir,entry.file);
   assert(fs.existsSync(file),`Missing schema: ${entry.file}`);
   if(!fs.existsSync(file))continue;
   const schema=JSON.parse(fs.readFileSync(file,'utf8'));
   assert(schema.$schema==='https://json-schema.org/draft/2020-12/schema',`${entry.file}: wrong JSON Schema dialect`);
-  assert(schema.$id?.includes('/1.1.0/'),`${entry.file}: $id must be versioned at 1.1.0`);
+  assert(schema.$id?.includes('/1.4.0/'),`${entry.file}: $id must be versioned at 1.4.0`);
 }
 assert(packageManifest.schemas.some(x=>x.file==='aggregate-observation.schema.json'),'Aggregate observation contract missing from manifest');
 assert(packageManifest.schemas.some(x=>x.file==='reference-value.schema.json'),'Reference-value contract missing from manifest');
@@ -32,7 +32,7 @@ const recordFiles=fs.readdirSync(layerDir,{withFileTypes:true}).flatMap(entry=>{
   if(entry.isDirectory())return fs.readdirSync(path.join(layerDir,entry.name)).filter(name=>name.endsWith('.json')).map(name=>path.join(layerDir,entry.name,name));
   return [];
 });
-const records=recordFiles.flatMap(file=>{const payload=JSON.parse(fs.readFileSync(file,'utf8'));return Array.isArray(payload)?payload:[payload];});
+const records=recordFiles.flatMap(file=>{const payload=JSON.parse(fs.readFileSync(file,'utf8'));return Array.isArray(payload)?payload:Array.isArray(payload.records)?payload.records:[payload];});
 const observations=records.filter(x=>x.recordType==='Observation/aggregate value');
 const references=records.filter(x=>x.recordType==='Reference value');
 assert(records.length===observations.length+references.length,'Unknown record type in observation layer');
@@ -66,10 +66,11 @@ for(const record of references){
   const definition=canonical.get(record.indicatorCanonicalObjectId);
   assert(Boolean(definition),`${record.id}: unresolved reference-value indicator`);
   if(definition)assert(definition.canonicalObjectType==='Indicator',`${record.id}: reference value must link to an Indicator`);
-  assert(Boolean(record.valueQuantity)!==Boolean(record.valueRange),`${record.id}: exactly one reference value form is required`);
+  assert([record.valueQuantity,record.valueRange,record.relativeChange].filter(Boolean).length===1,`${record.id}: exactly one reference value form is required`);
   assert(Boolean(record.publication?.accessClass&&record.publication?.redistributionStatus),`${record.id}: reference-value publication boundary is required`);
   if(record.valueRange)assert(record.valueRange.low<=record.valueRange.high,`${record.id}: reference range is reversed`);
-  if(record.effectivePeriod?.endDate)assert(record.effectivePeriod.startDate<=record.effectivePeriod.endDate,`${record.id}: effective dates are reversed`);
+  if(record.effectivePeriod?.periodBasis==='calendar'&&record.effectivePeriod?.endDate)assert(record.effectivePeriod.startDate<=record.effectivePeriod.endDate,`${record.id}: effective dates are reversed`);
+  if(record.effectivePeriod?.periodBasis==='programme-relative')assert(Boolean(record.effectivePeriod.anchor&&record.effectivePeriod.label),`${record.id}: programme-relative period requires anchor and label`);
 }
 
 if(errors.length){console.error(JSON.stringify({status:'fail',errors},null,2));process.exit(1);}

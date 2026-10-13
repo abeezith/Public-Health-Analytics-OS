@@ -1,17 +1,17 @@
 {
   "id": "PHAOS-OBSERVATION-LAYER",
   "title": "Public Health Analytics-OS observation and reference-value layer",
-  "version": "1.0.0",
-  "updated": "2026-09-07",
-  "status": "Contract-ready; no values published",
-  "schemaPackage": "../schemas/1.1.0/manifest.json",
+  "version": "1.1.0",
+  "updated": "2026-10-13",
+  "status": "Contract-ready; source-bounded reference-value pilot published",
+  "schemaPackage": "../schemas/1.4.0/manifest.json",
   "contracts": {
-    "aggregateObservation": "../schemas/1.1.0/aggregate-observation.schema.json",
-    "referenceValue": "../schemas/1.1.0/reference-value.schema.json"
+    "aggregateObservation": "../schemas/1.4.0/aggregate-observation.schema.json",
+    "referenceValue": "../schemas/1.4.0/reference-value.schema.json"
   },
   "counts": {
     "aggregateObservations": 0,
-    "referenceValues": 0,
+    "referenceValues": 20,
     "publicDistributions": 0
   },
   "publicationState": "metadata-only",
@@ -33,6 +33,6 @@
     "Targets stored as observed results",
     "Observed results embedded into indicator definitions"
   ],
-  "interpretationBoundary": "This manifest publishes an ingestion contract, not health data. Zero aggregate observations and zero reference values are included. Structural conformance will not by itself establish source authority, comparability, data quality, privacy clearance or fitness for analysis.",
+  "interpretationBoundary": "This manifest publishes an ingestion contract and a 20-record source-bounded LaQshya target pilot, not observed health data. Zero aggregate observations are included. Structural conformance does not establish currentness, comparability, data quality, privacy clearance or fitness for analysis.",
   "publicDownloadControls": "disabled"
 }

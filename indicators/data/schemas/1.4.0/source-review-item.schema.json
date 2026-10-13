@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://abeezith.github.io/Public-Health-Analytics-OS/schema/1.4.0/source-review-item.schema.json",
+  "title": "Source change review item",
+  "type": "object",
+  "required": ["reviewItemId", "sourceId", "detectedOn", "changeState", "severity", "disposition", "priorFingerprint", "currentFingerprint", "affectedRecordIds", "automaticMutationProhibited"],
+  "properties": {
+    "reviewItemId": {"type": "string", "minLength": 1},
+    "sourceId": {"type": "string", "minLength": 1},
+    "sourceName": {"type": "string"},
+    "detectedOn": {"type": "string", "format": "date"},
+    "changeState": {"enum": ["redirected", "content-changed", "version-changed", "content-and-version-changed", "inaccessible", "indeterminate"]},
+    "severity": {"enum": ["low", "medium", "high", "critical"]},
+    "disposition": {"enum": ["pending-triage", "accepted-source-change", "no-semantic-change", "deferred", "rejected", "superseded"]},
+    "priorFingerprint": {"type": ["string", "null"]},
+    "currentFingerprint": {"type": ["string", "null"]},
+    "affectedRecordIds": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "reviewReason": {"type": "string"},
+    "automaticMutationProhibited": {"const": true}
+  },
+  "additionalProperties": false
+}

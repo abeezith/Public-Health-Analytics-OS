@@ -7,7 +7,7 @@
 
 ## Purpose and present state
 
-This model defines how Analytics-OS may ingest and publish aggregate public-health results later without mixing values into indicator definitions. It also separates targets, benchmarks and thresholds into reference-value records. The current observation manifest intentionally publishes **zero aggregate observations, zero reference values and zero public distributions**.
+This model defines how Analytics-OS may ingest and publish aggregate public-health results later without mixing values into indicator definitions. It also separates targets, benchmarks and thresholds into reference-value records. Release 4.4 publishes **zero aggregate observations, 20 source-bounded reference values and zero public distributions**.
 
 The model is therefore observation-ready, not an observed-health-data release.
 
@@ -41,7 +41,7 @@ The linked definition is identified by `canonicalObjectId`; `definitionBusinessV
 
 ## Reference values
 
-Targets, benchmarks, alert thresholds and reference ranges use `reference-value.schema.json`. Each record links to an indicator, states its geography/population applicability and effective period, and cites the issuing authority. Reference values do not overwrite indicator metadata and are never counted as observed results. Populating and analytically using this layer remains governed under UTILITY-04.
+Targets, benchmarks, alert thresholds and reference ranges use `reference-value.schema.json`. Each record links to an indicator, states its geography/population applicability and effective period, and cites the issuing authority. Reference values do not overwrite indicator metadata and are never counted as observed results. UTILITY-04 adds the governed model and initial LaQshya pilot; wider coverage remains source-by-source work.
 
 ## Ingestion workflow
 

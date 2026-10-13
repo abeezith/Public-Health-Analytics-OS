@@ -1,11 +1,11 @@
 # Analytics-OS versioned JSON Schema guide
 
-**Active schema package:** `1.3.0`
+**Active schema package:** `1.4.0`
 **JSON Schema dialect:** Draft 2020-12  
 **Adopted:** 7 September 2026  
 **Governance task:** TRUST-02
 
-Package [`1.3.0`](../indicators/data/schemas/1.3.0/) retains the definition, graph, evidence, value and provenance contracts introduced in immutable packages 1.0.0–1.2.0, then adds strict source-snapshot and human-review-item contracts under TRUST-07. The unversioned [`manifest.json`](../indicators/data/schemas/manifest.json) is only a discovery pointer. Production consumers must pin the versioned manifest or a versioned schema `$id`.
+Package [`1.4.0`](../indicators/data/schemas/1.4.0/) retains the earlier definition, graph, evidence, value, provenance and monitoring contracts, then adds source-faithful relative-change and programme-relative target semantics under UTILITY-04. The unversioned [`manifest.json`](../indicators/data/schemas/manifest.json) is only a discovery pointer. Production consumers must pin the versioned manifest or a versioned schema `$id`.
 
 ## Contract inventory
 
@@ -41,9 +41,9 @@ Package [`1.3.0`](../indicators/data/schemas/1.3.0/) retains the definition, gra
 
 11. **Monitoring never edits meaning.** Source checks generate evidence and review work; no HTTP or fingerprint state can rewrite a governed record.
 
-## Compatibility boundary in 1.3.0
+## Compatibility boundary in 1.4.0
 
-Package 1.3.0 is backward-compatible for existing definition, value and event records. Historical records remain valid against their pinned package. The new monitoring contracts require explicit link/comparison states, fingerprints, affected records, review disposition and an automatic-mutation prohibition. No observed health values or reference values are included in the release.
+Package 1.4.0 is backward-compatible for existing definition, value, event and monitoring records. Historical records remain valid against their pinned package. Reference values may express an absolute quantity, range or baseline-relative change and may use a calendar or programme-relative effective period. Release 4.4 includes 20 reference values and zero observed health values.
 
 A null `measureType` still means normalized classification is pending, not that the source supplied a null measure. Older WHO building-block labels beginning `Access to essential medicines` remain compatibility aliases, while new mappings use `Medical products, vaccines and technologies`. Existing NP-NCD tuple records remain accepted as documented legacy payloads; new programme records should use named indicator objects.
 

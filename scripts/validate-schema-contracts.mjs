@@ -7,11 +7,11 @@ const read = relative => JSON.parse(fs.readFileSync(path.join(root, relative), '
 const errors = [];
 const assert = (condition, code, message) => { if (!condition) errors.push({ code, message }); };
 
-const schemaDirectory = path.join(root, 'indicators/data/schemas/1.3.0');
-const manifest = read('indicators/data/schemas/1.3.0/manifest.json');
+const schemaDirectory = path.join(root, 'indicators/data/schemas/1.4.0');
+const manifest = read('indicators/data/schemas/1.4.0/manifest.json');
 const schemaIds = new Set();
 
-assert(manifest.version === '1.3.0', 'SCHEMA_VERSION', 'Schema package manifest must be version 1.3.0.');
+assert(manifest.version === '1.4.0', 'SCHEMA_VERSION', 'Schema package manifest must be version 1.4.0.');
 assert(manifest.schemas?.length === 14, 'SCHEMA_COUNT', `Expected 14 schema contracts, found ${manifest.schemas?.length ?? 0}.`);
 
 for (const entry of manifest.schemas || []) {
@@ -20,7 +20,7 @@ for (const entry of manifest.schemas || []) {
   if (!fs.existsSync(file)) continue;
   const schema = JSON.parse(fs.readFileSync(file, 'utf8'));
   assert(schema.$schema === 'https://json-schema.org/draft/2020-12/schema', 'SCHEMA_DIALECT', `${entry.file} does not declare Draft 2020-12.`);
-  assert(schema.$id?.includes('/1.3.0/'), 'SCHEMA_ID_VERSION', `${entry.file} has an unversioned or incorrect $id.`);
+  assert(schema.$id?.includes('/1.4.0/'), 'SCHEMA_ID_VERSION', `${entry.file} has an unversioned or incorrect $id.`);
   assert(!schemaIds.has(schema.$id), 'SCHEMA_ID_DUPLICATE', `Duplicate schema $id: ${schema.$id}.`);
   schemaIds.add(schema.$id);
   const serialized = JSON.stringify(schema);

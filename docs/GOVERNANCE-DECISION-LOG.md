@@ -220,6 +220,18 @@ This log records material governance decisions separately from indicator and sof
 - **Migration and review date:** Complete domain review before expansion beyond the pilot or by 13 October 2027.
 - **Supersedes:** Unstructured quality cautions available only through legacy caveat text.
 
+## GOV-DEC-018 — Keep targets as versioned evidence records
+
+- **Date:** 13 October 2026
+- **Status:** Adopted
+- **Decision owner:** Analytics-OS maintainer
+- **Decision:** Adopt `PHAOS-REFERENCE-001`, schema package 1.4.0 and read model 1.8.0. Store absolute, ranged and baseline-relative reference values independently from indicator definitions and observations; preserve source alternatives as separate records.
+- **Reason and evidence:** Official programme sources may state alternatives and implementation-relative horizons. A single target field would erase provenance, version, applicability and lifecycle, while mandatory calendar dates would fabricate precision.
+- **Alternatives considered:** Embed one current target in each indicator, convert relative improvement to an inferred absolute value, or assign an invented calendar start date. All were rejected as lossy or misleading.
+- **Affected artifacts or decision rights:** Reference-value schema, observation layer, unified read model, registry discovery/detail UI, release gate and trackers. Source authorities retain control of official targets and currentness.
+- **Migration and review date:** Expand only through source-reviewed batches; review the LaQshya pilot before reuse and no later than 13 October 2027.
+- **Supersedes:** The zero-record implementation state under GOV-DEC-011; the separation principle remains in force.
+
 ## Decision record template
 
 - **ID and title:**

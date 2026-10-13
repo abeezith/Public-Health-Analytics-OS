@@ -124,7 +124,7 @@ Within a priority class, sequence by: patient/public-health risk → data-integr
 
 **Sprint goal:** start `UTILITY-01–03` with a redesigned model that separates source evidence from analyst recommendation.
 
-**Status:** In progress — `UTILITY-01..UTILITY-03` shipped through Release 4.3. All 4,743 objects have governed operational, disaggregation and quality-profile states; 30 priority India indicators have comparability guidance pending domain review. Next: `UTILITY-04` and the reviewed 20-record equity pilot (`DISAGG-03`).
+**Status:** In progress — `UTILITY-01..UTILITY-04` shipped through Release 4.4. All 4,743 objects have governed operational, disaggregation and quality-profile states; 20 source-bounded reference values cover 12 LaQshya indicators without mixing targets with observations. Next: `UTILITY-05` and the reviewed 20-record equity pilot (`DISAGG-03`).
 
 | Story / ticket | User story and deliverable | Pri. | SP | Acceptance criteria |
 |---|---|---:|---:|---|
@@ -300,4 +300,4 @@ A ticket is Done only when all applicable conditions pass:
 
 ## 12. Recommended immediate commitment
 
-Sprints 0–2 and `UTILITY-01..UTILITY-03` are complete. Continue with **`UTILITY-04` versioned targets/reference values** while completing the reviewed `DISAGG-03` equity pilot and programme-domain review of the 30 `DQ-01` profiles.
+Sprints 0–2 and `UTILITY-01..UTILITY-04` are complete. Continue with **`UTILITY-05` interpretation and action guidance** while completing the reviewed `DISAGG-03` equity pilot and programme-domain review of the 30 `DQ-01` profiles.

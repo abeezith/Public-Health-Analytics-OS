@@ -289,20 +289,28 @@ const qualityComparabilityCounts={
   pendingDomainReview:records.filter(item=>item.qualityComparabilityProfile.reviewStatus==='Analyst-curated pilot — domain review pending').length,
   notInPilot:records.filter(item=>item.qualityComparabilityProfile.pilotStatus==='Not in 30-indicator pilot').length
 };
+const referenceRelease=read('indicators/data/observations/reference-values.json');
+const referencesByIndicator=new Map();
+for(const reference of referenceRelease.records){
+  const list=referencesByIndicator.get(reference.indicatorCanonicalObjectId)||[];
+  list.push(reference);referencesByIndicator.set(reference.indicatorCanonicalObjectId,list);
+}
+for(const record of records)record.referenceValues=referencesByIndicator.get(record.canonicalObjectId)||[];
+const referenceValueCounts={...referenceRelease.counts,objectsWithReferenceValues:records.filter(item=>item.referenceValues.length).length};
 const model = {
   metadata: {
     id: 'PHAOS-UNIFIED-READ-MODEL',
     title: 'Public Health Analytics-OS consolidated discovery read model',
-    version: '1.7.0',
+    version: '1.8.0',
     generated: releaseDate,
-    task: 'UTILITY-03',
+    task: 'UTILITY-04',
     identityIndexVersion: identities.metadata.version,
     taxonomyVersion: identities.metadata.taxonomyVersion,
     discoveryFacetVersion: discovery.metadata.version,
     provenanceModel: 'PHAOS-PROVENANCE-001',
     interpretationBoundary: 'This generated read model consolidates discovery metadata and preserves source representations in separate namespaces. Provenance summaries expose review evidence but do not assert semantic equivalence, aggregation safety, computability, source currency or custodian approval.'
   },
-  counts: {...identities.counts, registryMemberships:membershipCounts, navigation:navigationCounts, disaggregation:disaggregationCounts, qualityComparability:qualityComparabilityCounts},
+  counts: {...identities.counts, registryMemberships:membershipCounts, navigation:navigationCounts, disaggregation:disaggregationCounts, qualityComparability:qualityComparabilityCounts, referenceValues:referenceValueCounts},
   metrics: {ncdReleaseRecords:ncdRelease.records.length,ncdSourceDocuments:ncdRelease.sources.length},
   coverage: indicatorRelease.coverage,
   records,
@@ -312,7 +320,7 @@ const model = {
 write(modelPath, model);
 const bytes = fs.readFileSync(path.join(root, modelPath));
 const manifest = {
-  metadata: {id:'PHAOS-UNIFIED-READ-MODEL-MANIFEST',version:'1.7.0',generated:releaseDate,task:'UTILITY-03'},
+  metadata: {id:'PHAOS-UNIFIED-READ-MODEL-MANIFEST',version:'1.8.0',generated:releaseDate,task:'UTILITY-04'},
   distribution: {path:'unified-read-model.json',mediaType:'application/json',bytes:bytes.length,sha256:crypto.createHash('sha256').update(bytes).digest('hex')},
   counts: model.counts,
   sources: [
@@ -322,6 +330,7 @@ const manifest = {
     'indicators/data/governance/disaggregation-model.json',
     'indicators/data/governance/quality-comparability-model.json',
     'indicators/data/governance/quality-comparability-pilot.json',
+    'indicators/data/observations/reference-values.json',
     'indicators/data/indicators.json',
     'indicators/data/ncd/release.json',
     'indicators/data/hmis/catalog.json',

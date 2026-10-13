@@ -11,7 +11,7 @@ const model = read(modelPath);
 const manifest = read('indicators/data/registry/manifest.json');
 const identities = read('indicators/data/governance/unified-identity-index.json');
 
-if (model.metadata.version !== '1.7.0') fail('Unexpected read-model version.');
+if (model.metadata.version !== '1.8.0') fail('Unexpected read-model version.');
 if (model.records.length !== 4743) fail(`Expected 4743 records, got ${model.records.length}.`);
 const ids = model.records.map(item => item.canonicalObjectId);
 const uris = model.records.map(item => item.canonicalUri);
@@ -69,6 +69,7 @@ if (model.records.some(item => !item.disaggregationProfile || item.disaggregatio
 if (model.records.some(item => !item.qualityComparabilityProfile || item.qualityComparabilityProfile.modelId !== 'PHAOS-DQCOMP-001')) fail('A record is missing its quality/comparability profile.');
 if (model.records.filter(item => item.qualityComparabilityProfile.pilotStatus === 'Pilot profile available').length !== 30) fail('Expected 30 UTILITY-03 pilot profiles.');
 if (model.counts.disaggregation.profiles !== model.records.length) fail('Disaggregation profile count is stale.');
+if (model.records.flatMap(item=>item.referenceValues||[]).length !== 20) fail('Expected 20 governed reference values.');
 
 const bytes = fs.readFileSync(path.join(root, modelPath));
 const checksum = crypto.createHash('sha256').update(bytes).digest('hex');

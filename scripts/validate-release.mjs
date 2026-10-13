@@ -22,6 +22,7 @@ const checks = [
   command('Controlled disaggregation assertions', 'scripts/validate-disaggregation-profile.mjs'),
   command('Data-quality and comparability pilot', 'scripts/validate-quality-comparability.mjs'),
   command('Observation-ready publication boundary', 'scripts/validate-observation-model.mjs'),
+  command('Versioned targets and reference values', 'scripts/validate-reference-values.mjs'),
   command('Measure, formula, scale and denominator rules', 'scripts/validate-measure-normalization.mjs'),
   command('Static UI, links and accessibility contract', 'scripts/validate-site-ui.mjs'),
   command('Controlled invalid-fixture rejection', 'scripts/test-release-gate.mjs')
@@ -51,7 +52,8 @@ const trackedInputs = [
   'indicators/data/governance/metadata-quality-profile.json',
   'indicators/data/governance/validation-exceptions.json',
   'indicators/data/observations/manifest.json',
-  'indicators/data/schemas/1.3.0/manifest.json',
+  'indicators/data/schemas/1.4.0/manifest.json',
+  'indicators/data/observations/reference-values.json',
   'indicators/data/governance/provenance-model.json',
   'indicators/data/provenance/manifest.json',
   'indicators/data/provenance/review-events.json',
@@ -79,7 +81,7 @@ const trackedInputs = [
   'roadmap/index.html'
 ];
 const model = JSON.parse(fs.readFileSync(path.join(root, 'indicators/data/registry/unified-read-model.json'), 'utf8'));
-const schemaManifest = JSON.parse(fs.readFileSync(path.join(root, 'indicators/data/schemas/1.3.0/manifest.json'), 'utf8'));
+const schemaManifest = JSON.parse(fs.readFileSync(path.join(root, 'indicators/data/schemas/1.4.0/manifest.json'), 'utf8'));
 const monitoringRelease = JSON.parse(fs.readFileSync(path.join(root, 'indicators/data/monitoring/source-snapshots.json'), 'utf8'));
 const provenanceManifest = JSON.parse(fs.readFileSync(path.join(root, 'indicators/data/provenance/manifest.json'), 'utf8'));
 const status = results.every(result => result.status === 'pass') ? 'pass' : 'fail';
@@ -112,7 +114,8 @@ const report = {
     qualityComparabilityPilotProfiles: model.counts.qualityComparability.pilotProfiles,
     publicBulkDownloadControls: 'disabled',
     aggregateObservations: 0,
-    referenceValues: 0
+    referenceValues: model.counts.referenceValues.referenceValues,
+    indicatorsWithReferenceValues: model.counts.referenceValues.indicators
   },
   inputChecksums: Object.fromEntries(trackedInputs.map(relative => [relative, sha256(relative)])),
   checks: results,

@@ -1,0 +1,948 @@
+{
+  "metadata": {
+    "id": "PHAOS-REFERENCE-VALUE-PILOT",
+    "modelId": "PHAOS-REFERENCE-001",
+    "modelVersion": "1.0.0",
+    "schemaPackageVersion": "1.4.0",
+    "generated": "2026-10-13",
+    "task": "UTILITY-04",
+    "scope": "Source-bounded LaQshya Annexure C numeric target pilot"
+  },
+  "counts": {
+    "referenceValues": 20,
+    "indicators": 12,
+    "absoluteTargets": 12,
+    "relativeChangeTargets": 8
+  },
+  "records": [
+    {
+      "id": "REF-LAQ-046-ABS",
+      "recordType": "Reference value",
+      "schemaVersion": "1.4.0",
+      "businessVersion": "1.0.0",
+      "lifecycleStatus": "active",
+      "indicatorCanonicalObjectId": "IND-RMNCHA2-046",
+      "indicatorCanonicalUri": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-RMNCHA2-046",
+      "definitionBusinessVersion": "1.0.0",
+      "referenceType": "target",
+      "applicability": {
+        "geography": "India",
+        "geographyCode": "IN",
+        "geographyLevel": "National programme guidance",
+        "population": "LaQshya-designated labour rooms and maternity operation theatres",
+        "programme": "LaQshya"
+      },
+      "effectivePeriod": {
+        "periodBasis": "programme-relative",
+        "anchor": "Implementation under the cited LaQshya guideline",
+        "label": "Applies under the cited guideline; no calendar start or end date is asserted by this registry."
+      },
+      "authority": {
+        "source": {
+          "sourceId": "IND_NHM_LAQSHYA_2017",
+          "url": "https://www.nhm.gov.in/New_Updates_2018/NHM_Components/RMNCH_MH_Guidelines/LaQshya-Guidelines.pdf",
+          "locator": "Annexure C: Facility Level Targets for Incentives, PDF pages 41–42"
+        },
+        "sourceVersion": "MoHFW/NHM operational guidelines, 2017",
+        "accessedOn": "2026-09-03",
+        "issuingOrganization": "National Health Mission, Ministry of Health and Family Welfare, Government of India"
+      },
+      "interpretation": {
+        "direction": "at least",
+        "scopeNote": "Official alternative target preserved as an independent reference-value record. It is not an observed result and does not alter the indicator definition."
+      },
+      "publication": {
+        "accessClass": "public",
+        "redistributionStatus": "permitted"
+      },
+      "valueQuantity": {
+        "value": 90,
+        "unit": "%",
+        "comparator": ">="
+      }
+    },
+    {
+      "id": "REF-LAQ-047-ABS",
+      "recordType": "Reference value",
+      "schemaVersion": "1.4.0",
+      "businessVersion": "1.0.0",
+      "lifecycleStatus": "active",
+      "indicatorCanonicalObjectId": "IND-RMNCHA2-047",
+      "indicatorCanonicalUri": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-RMNCHA2-047",
+      "definitionBusinessVersion": "1.0.0",
+      "referenceType": "target",
+      "applicability": {
+        "geography": "India",
+        "geographyCode": "IN",
+        "geographyLevel": "National programme guidance",
+        "population": "LaQshya-designated labour rooms and maternity operation theatres",
+        "programme": "LaQshya"
+      },
+      "effectivePeriod": {
+        "periodBasis": "programme-relative",
+        "anchor": "Implementation under the cited LaQshya guideline",
+        "label": "Applies under the cited guideline; no calendar start or end date is asserted by this registry."
+      },
+      "authority": {
+        "source": {
+          "sourceId": "IND_NHM_LAQSHYA_2017",
+          "url": "https://www.nhm.gov.in/New_Updates_2018/NHM_Components/RMNCH_MH_Guidelines/LaQshya-Guidelines.pdf",
+          "locator": "Annexure C: Facility Level Targets for Incentives, PDF pages 41–42"
+        },
+        "sourceVersion": "MoHFW/NHM operational guidelines, 2017",
+        "accessedOn": "2026-09-03",
+        "issuingOrganization": "National Health Mission, Ministry of Health and Family Welfare, Government of India"
+      },
+      "interpretation": {
+        "direction": "at least",
+        "scopeNote": "Official alternative target preserved as an independent reference-value record. It is not an observed result and does not alter the indicator definition."
+      },
+      "publication": {
+        "accessClass": "public",
+        "redistributionStatus": "permitted"
+      },
+      "valueQuantity": {
+        "value": 90,
+        "unit": "%",
+        "comparator": ">="
+      }
+    },
+    {
+      "id": "REF-LAQ-048-ABS",
+      "recordType": "Reference value",
+      "schemaVersion": "1.4.0",
+      "businessVersion": "1.0.0",
+      "lifecycleStatus": "active",
+      "indicatorCanonicalObjectId": "IND-RMNCHA2-048",
+      "indicatorCanonicalUri": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-RMNCHA2-048",
+      "definitionBusinessVersion": "1.0.0",
+      "referenceType": "target",
+      "applicability": {
+        "geography": "India",
+        "geographyCode": "IN",
+        "geographyLevel": "National programme guidance",
+        "population": "LaQshya-designated labour rooms and maternity operation theatres",
+        "programme": "LaQshya"
+      },
+      "effectivePeriod": {
+        "periodBasis": "programme-relative",
+        "anchor": "Implementation under the cited LaQshya guideline",
+        "label": "Applies under the cited guideline; no calendar start or end date is asserted by this registry."
+      },
+      "authority": {
+        "source": {
+          "sourceId": "IND_NHM_LAQSHYA_2017",
+          "url": "https://www.nhm.gov.in/New_Updates_2018/NHM_Components/RMNCH_MH_Guidelines/LaQshya-Guidelines.pdf",
+          "locator": "Annexure C: Facility Level Targets for Incentives, PDF pages 41–42"
+        },
+        "sourceVersion": "MoHFW/NHM operational guidelines, 2017",
+        "accessedOn": "2026-09-03",
+        "issuingOrganization": "National Health Mission, Ministry of Health and Family Welfare, Government of India"
+      },
+      "interpretation": {
+        "direction": "at least",
+        "scopeNote": "Official alternative target preserved as an independent reference-value record. It is not an observed result and does not alter the indicator definition."
+      },
+      "publication": {
+        "accessClass": "public",
+        "redistributionStatus": "permitted"
+      },
+      "valueQuantity": {
+        "value": 90,
+        "unit": "%",
+        "comparator": ">="
+      }
+    },
+    {
+      "id": "REF-LAQ-049-ABS",
+      "recordType": "Reference value",
+      "schemaVersion": "1.4.0",
+      "businessVersion": "1.0.0",
+      "lifecycleStatus": "active",
+      "indicatorCanonicalObjectId": "IND-RMNCHA2-049",
+      "indicatorCanonicalUri": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-RMNCHA2-049",
+      "definitionBusinessVersion": "1.0.0",
+      "referenceType": "target",
+      "applicability": {
+        "geography": "India",
+        "geographyCode": "IN",
+        "geographyLevel": "National programme guidance",
+        "population": "LaQshya-designated labour rooms and maternity operation theatres",
+        "programme": "LaQshya"
+      },
+      "effectivePeriod": {
+        "periodBasis": "programme-relative",
+        "anchor": "Implementation under the cited LaQshya guideline",
+        "label": "Applies under the cited guideline; no calendar start or end date is asserted by this registry."
+      },
+      "authority": {
+        "source": {
+          "sourceId": "IND_NHM_LAQSHYA_2017",
+          "url": "https://www.nhm.gov.in/New_Updates_2018/NHM_Components/RMNCH_MH_Guidelines/LaQshya-Guidelines.pdf",
+          "locator": "Annexure C: Facility Level Targets for Incentives, PDF pages 41–42"
+        },
+        "sourceVersion": "MoHFW/NHM operational guidelines, 2017",
+        "accessedOn": "2026-09-03",
+        "issuingOrganization": "National Health Mission, Ministry of Health and Family Welfare, Government of India"
+      },
+      "interpretation": {
+        "direction": "at least",
+        "scopeNote": "Official alternative target preserved as an independent reference-value record. It is not an observed result and does not alter the indicator definition."
+      },
+      "publication": {
+        "accessClass": "public",
+        "redistributionStatus": "permitted"
+      },
+      "valueQuantity": {
+        "value": 80,
+        "unit": "%",
+        "comparator": ">="
+      }
+    },
+    {
+      "id": "REF-LAQ-049-REL-INCREASE",
+      "recordType": "Reference value",
+      "schemaVersion": "1.4.0",
+      "businessVersion": "1.0.0",
+      "lifecycleStatus": "active",
+      "indicatorCanonicalObjectId": "IND-RMNCHA2-049",
+      "indicatorCanonicalUri": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-RMNCHA2-049",
+      "definitionBusinessVersion": "1.0.0",
+      "referenceType": "target",
+      "applicability": {
+        "geography": "India",
+        "geographyCode": "IN",
+        "geographyLevel": "National programme guidance",
+        "population": "LaQshya-designated labour rooms and maternity operation theatres",
+        "programme": "LaQshya"
+      },
+      "effectivePeriod": {
+        "periodBasis": "programme-relative",
+        "anchor": "Implementation under the cited LaQshya guideline",
+        "label": "Applies under the cited guideline; no calendar start or end date is asserted by this registry."
+      },
+      "authority": {
+        "source": {
+          "sourceId": "IND_NHM_LAQSHYA_2017",
+          "url": "https://www.nhm.gov.in/New_Updates_2018/NHM_Components/RMNCH_MH_Guidelines/LaQshya-Guidelines.pdf",
+          "locator": "Annexure C: Facility Level Targets for Incentives, PDF pages 41–42"
+        },
+        "sourceVersion": "MoHFW/NHM operational guidelines, 2017",
+        "accessedOn": "2026-09-03",
+        "issuingOrganization": "National Health Mission, Ministry of Health and Family Welfare, Government of India"
+      },
+      "interpretation": {
+        "direction": "at least",
+        "scopeNote": "Official alternative target preserved as an independent reference-value record. It is not an observed result and does not alter the indicator definition."
+      },
+      "publication": {
+        "accessClass": "public",
+        "redistributionStatus": "permitted"
+      },
+      "relativeChange": {
+        "magnitude": 30,
+        "unit": "percent relative change",
+        "direction": "increase",
+        "baseline": "Facility baseline defined by the cited programme source"
+      }
+    },
+    {
+      "id": "REF-LAQ-050-ABS",
+      "recordType": "Reference value",
+      "schemaVersion": "1.4.0",
+      "businessVersion": "1.0.0",
+      "lifecycleStatus": "active",
+      "indicatorCanonicalObjectId": "IND-RMNCHA2-050",
+      "indicatorCanonicalUri": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-RMNCHA2-050",
+      "definitionBusinessVersion": "1.0.0",
+      "referenceType": "target",
+      "applicability": {
+        "geography": "India",
+        "geographyCode": "IN",
+        "geographyLevel": "National programme guidance",
+        "population": "LaQshya-designated labour rooms and maternity operation theatres",
+        "programme": "LaQshya"
+      },
+      "effectivePeriod": {
+        "periodBasis": "programme-relative",
+        "anchor": "Implementation under the cited LaQshya guideline",
+        "label": "Applies under the cited guideline; no calendar start or end date is asserted by this registry."
+      },
+      "authority": {
+        "source": {
+          "sourceId": "IND_NHM_LAQSHYA_2017",
+          "url": "https://www.nhm.gov.in/New_Updates_2018/NHM_Components/RMNCH_MH_Guidelines/LaQshya-Guidelines.pdf",
+          "locator": "Annexure C: Facility Level Targets for Incentives, PDF pages 41–42"
+        },
+        "sourceVersion": "MoHFW/NHM operational guidelines, 2017",
+        "accessedOn": "2026-09-03",
+        "issuingOrganization": "National Health Mission, Ministry of Health and Family Welfare, Government of India"
+      },
+      "interpretation": {
+        "direction": "equal to",
+        "scopeNote": "Official alternative target preserved as an independent reference-value record. It is not an observed result and does not alter the indicator definition."
+      },
+      "publication": {
+        "accessClass": "public",
+        "redistributionStatus": "permitted"
+      },
+      "valueQuantity": {
+        "value": 0,
+        "unit": "%",
+        "comparator": "="
+      }
+    },
+    {
+      "id": "REF-LAQ-050-REL-REDUCTION",
+      "recordType": "Reference value",
+      "schemaVersion": "1.4.0",
+      "businessVersion": "1.0.0",
+      "lifecycleStatus": "active",
+      "indicatorCanonicalObjectId": "IND-RMNCHA2-050",
+      "indicatorCanonicalUri": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-RMNCHA2-050",
+      "definitionBusinessVersion": "1.0.0",
+      "referenceType": "target",
+      "applicability": {
+        "geography": "India",
+        "geographyCode": "IN",
+        "geographyLevel": "National programme guidance",
+        "population": "LaQshya-designated labour rooms and maternity operation theatres",
+        "programme": "LaQshya"
+      },
+      "effectivePeriod": {
+        "periodBasis": "programme-relative",
+        "anchor": "Implementation under the cited LaQshya guideline",
+        "label": "Applies under the cited guideline; no calendar start or end date is asserted by this registry."
+      },
+      "authority": {
+        "source": {
+          "sourceId": "IND_NHM_LAQSHYA_2017",
+          "url": "https://www.nhm.gov.in/New_Updates_2018/NHM_Components/RMNCH_MH_Guidelines/LaQshya-Guidelines.pdf",
+          "locator": "Annexure C: Facility Level Targets for Incentives, PDF pages 41–42"
+        },
+        "sourceVersion": "MoHFW/NHM operational guidelines, 2017",
+        "accessedOn": "2026-09-03",
+        "issuingOrganization": "National Health Mission, Ministry of Health and Family Welfare, Government of India"
+      },
+      "interpretation": {
+        "direction": "at most",
+        "scopeNote": "Official alternative target preserved as an independent reference-value record. It is not an observed result and does not alter the indicator definition."
+      },
+      "publication": {
+        "accessClass": "public",
+        "redistributionStatus": "permitted"
+      },
+      "relativeChange": {
+        "magnitude": 20,
+        "unit": "percent relative change",
+        "direction": "reduction",
+        "baseline": "Facility baseline defined by the cited programme source"
+      }
+    },
+    {
+      "id": "REF-LAQ-051-ABS",
+      "recordType": "Reference value",
+      "schemaVersion": "1.4.0",
+      "businessVersion": "1.0.0",
+      "lifecycleStatus": "active",
+      "indicatorCanonicalObjectId": "IND-RMNCHA2-051",
+      "indicatorCanonicalUri": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-RMNCHA2-051",
+      "definitionBusinessVersion": "1.0.0",
+      "referenceType": "target",
+      "applicability": {
+        "geography": "India",
+        "geographyCode": "IN",
+        "geographyLevel": "National programme guidance",
+        "population": "LaQshya-designated labour rooms and maternity operation theatres",
+        "programme": "LaQshya"
+      },
+      "effectivePeriod": {
+        "periodBasis": "programme-relative",
+        "anchor": "Implementation under the cited LaQshya guideline",
+        "label": "Applies under the cited guideline; no calendar start or end date is asserted by this registry."
+      },
+      "authority": {
+        "source": {
+          "sourceId": "IND_NHM_LAQSHYA_2017",
+          "url": "https://www.nhm.gov.in/New_Updates_2018/NHM_Components/RMNCH_MH_Guidelines/LaQshya-Guidelines.pdf",
+          "locator": "Annexure C: Facility Level Targets for Incentives, PDF pages 41–42"
+        },
+        "sourceVersion": "MoHFW/NHM operational guidelines, 2017",
+        "accessedOn": "2026-09-03",
+        "issuingOrganization": "National Health Mission, Ministry of Health and Family Welfare, Government of India"
+      },
+      "interpretation": {
+        "direction": "equal to",
+        "scopeNote": "Official alternative target preserved as an independent reference-value record. It is not an observed result and does not alter the indicator definition."
+      },
+      "publication": {
+        "accessClass": "public",
+        "redistributionStatus": "permitted"
+      },
+      "valueQuantity": {
+        "value": 0,
+        "unit": "%",
+        "comparator": "="
+      }
+    },
+    {
+      "id": "REF-LAQ-051-REL-REDUCTION",
+      "recordType": "Reference value",
+      "schemaVersion": "1.4.0",
+      "businessVersion": "1.0.0",
+      "lifecycleStatus": "active",
+      "indicatorCanonicalObjectId": "IND-RMNCHA2-051",
+      "indicatorCanonicalUri": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-RMNCHA2-051",
+      "definitionBusinessVersion": "1.0.0",
+      "referenceType": "target",
+      "applicability": {
+        "geography": "India",
+        "geographyCode": "IN",
+        "geographyLevel": "National programme guidance",
+        "population": "LaQshya-designated labour rooms and maternity operation theatres",
+        "programme": "LaQshya"
+      },
+      "effectivePeriod": {
+        "periodBasis": "programme-relative",
+        "anchor": "Implementation under the cited LaQshya guideline",
+        "label": "Applies under the cited guideline; no calendar start or end date is asserted by this registry."
+      },
+      "authority": {
+        "source": {
+          "sourceId": "IND_NHM_LAQSHYA_2017",
+          "url": "https://www.nhm.gov.in/New_Updates_2018/NHM_Components/RMNCH_MH_Guidelines/LaQshya-Guidelines.pdf",
+          "locator": "Annexure C: Facility Level Targets for Incentives, PDF pages 41–42"
+        },
+        "sourceVersion": "MoHFW/NHM operational guidelines, 2017",
+        "accessedOn": "2026-09-03",
+        "issuingOrganization": "National Health Mission, Ministry of Health and Family Welfare, Government of India"
+      },
+      "interpretation": {
+        "direction": "at most",
+        "scopeNote": "Official alternative target preserved as an independent reference-value record. It is not an observed result and does not alter the indicator definition."
+      },
+      "publication": {
+        "accessClass": "public",
+        "redistributionStatus": "permitted"
+      },
+      "relativeChange": {
+        "magnitude": 20,
+        "unit": "percent relative change",
+        "direction": "reduction",
+        "baseline": "Facility baseline defined by the cited programme source"
+      }
+    },
+    {
+      "id": "REF-LAQ-052-ABS",
+      "recordType": "Reference value",
+      "schemaVersion": "1.4.0",
+      "businessVersion": "1.0.0",
+      "lifecycleStatus": "active",
+      "indicatorCanonicalObjectId": "IND-RMNCHA2-052",
+      "indicatorCanonicalUri": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-RMNCHA2-052",
+      "definitionBusinessVersion": "1.0.0",
+      "referenceType": "target",
+      "applicability": {
+        "geography": "India",
+        "geographyCode": "IN",
+        "geographyLevel": "National programme guidance",
+        "population": "LaQshya-designated labour rooms and maternity operation theatres",
+        "programme": "LaQshya"
+      },
+      "effectivePeriod": {
+        "periodBasis": "programme-relative",
+        "anchor": "Implementation under the cited LaQshya guideline",
+        "label": "Applies under the cited guideline; no calendar start or end date is asserted by this registry."
+      },
+      "authority": {
+        "source": {
+          "sourceId": "IND_NHM_LAQSHYA_2017",
+          "url": "https://www.nhm.gov.in/New_Updates_2018/NHM_Components/RMNCH_MH_Guidelines/LaQshya-Guidelines.pdf",
+          "locator": "Annexure C: Facility Level Targets for Incentives, PDF pages 41–42"
+        },
+        "sourceVersion": "MoHFW/NHM operational guidelines, 2017",
+        "accessedOn": "2026-09-03",
+        "issuingOrganization": "National Health Mission, Ministry of Health and Family Welfare, Government of India"
+      },
+      "interpretation": {
+        "direction": "at most",
+        "scopeNote": "Official alternative target preserved as an independent reference-value record. It is not an observed result and does not alter the indicator definition."
+      },
+      "publication": {
+        "accessClass": "public",
+        "redistributionStatus": "permitted"
+      },
+      "valueQuantity": {
+        "value": 5,
+        "unit": "%",
+        "comparator": "<="
+      }
+    },
+    {
+      "id": "REF-LAQ-052-REL-REDUCTION",
+      "recordType": "Reference value",
+      "schemaVersion": "1.4.0",
+      "businessVersion": "1.0.0",
+      "lifecycleStatus": "active",
+      "indicatorCanonicalObjectId": "IND-RMNCHA2-052",
+      "indicatorCanonicalUri": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-RMNCHA2-052",
+      "definitionBusinessVersion": "1.0.0",
+      "referenceType": "target",
+      "applicability": {
+        "geography": "India",
+        "geographyCode": "IN",
+        "geographyLevel": "National programme guidance",
+        "population": "LaQshya-designated labour rooms and maternity operation theatres",
+        "programme": "LaQshya"
+      },
+      "effectivePeriod": {
+        "periodBasis": "programme-relative",
+        "anchor": "Implementation under the cited LaQshya guideline",
+        "label": "Applies under the cited guideline; no calendar start or end date is asserted by this registry."
+      },
+      "authority": {
+        "source": {
+          "sourceId": "IND_NHM_LAQSHYA_2017",
+          "url": "https://www.nhm.gov.in/New_Updates_2018/NHM_Components/RMNCH_MH_Guidelines/LaQshya-Guidelines.pdf",
+          "locator": "Annexure C: Facility Level Targets for Incentives, PDF pages 41–42"
+        },
+        "sourceVersion": "MoHFW/NHM operational guidelines, 2017",
+        "accessedOn": "2026-09-03",
+        "issuingOrganization": "National Health Mission, Ministry of Health and Family Welfare, Government of India"
+      },
+      "interpretation": {
+        "direction": "at most",
+        "scopeNote": "Official alternative target preserved as an independent reference-value record. It is not an observed result and does not alter the indicator definition."
+      },
+      "publication": {
+        "accessClass": "public",
+        "redistributionStatus": "permitted"
+      },
+      "relativeChange": {
+        "magnitude": 30,
+        "unit": "percent relative change",
+        "direction": "reduction",
+        "baseline": "Facility baseline defined by the cited programme source"
+      }
+    },
+    {
+      "id": "REF-LAQ-053-ABS",
+      "recordType": "Reference value",
+      "schemaVersion": "1.4.0",
+      "businessVersion": "1.0.0",
+      "lifecycleStatus": "active",
+      "indicatorCanonicalObjectId": "IND-RMNCHA2-053",
+      "indicatorCanonicalUri": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-RMNCHA2-053",
+      "definitionBusinessVersion": "1.0.0",
+      "referenceType": "target",
+      "applicability": {
+        "geography": "India",
+        "geographyCode": "IN",
+        "geographyLevel": "National programme guidance",
+        "population": "LaQshya-designated labour rooms and maternity operation theatres",
+        "programme": "LaQshya"
+      },
+      "effectivePeriod": {
+        "periodBasis": "programme-relative",
+        "anchor": "Implementation under the cited LaQshya guideline",
+        "label": "Applies under the cited guideline; no calendar start or end date is asserted by this registry."
+      },
+      "authority": {
+        "source": {
+          "sourceId": "IND_NHM_LAQSHYA_2017",
+          "url": "https://www.nhm.gov.in/New_Updates_2018/NHM_Components/RMNCH_MH_Guidelines/LaQshya-Guidelines.pdf",
+          "locator": "Annexure C: Facility Level Targets for Incentives, PDF pages 41–42"
+        },
+        "sourceVersion": "MoHFW/NHM operational guidelines, 2017",
+        "accessedOn": "2026-09-03",
+        "issuingOrganization": "National Health Mission, Ministry of Health and Family Welfare, Government of India"
+      },
+      "interpretation": {
+        "direction": "at least",
+        "scopeNote": "Official alternative target preserved as an independent reference-value record. It is not an observed result and does not alter the indicator definition."
+      },
+      "publication": {
+        "accessClass": "public",
+        "redistributionStatus": "permitted"
+      },
+      "valueQuantity": {
+        "value": 80,
+        "unit": "%",
+        "comparator": ">="
+      }
+    },
+    {
+      "id": "REF-LAQ-053-REL-INCREASE",
+      "recordType": "Reference value",
+      "schemaVersion": "1.4.0",
+      "businessVersion": "1.0.0",
+      "lifecycleStatus": "active",
+      "indicatorCanonicalObjectId": "IND-RMNCHA2-053",
+      "indicatorCanonicalUri": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-RMNCHA2-053",
+      "definitionBusinessVersion": "1.0.0",
+      "referenceType": "target",
+      "applicability": {
+        "geography": "India",
+        "geographyCode": "IN",
+        "geographyLevel": "National programme guidance",
+        "population": "LaQshya-designated labour rooms and maternity operation theatres",
+        "programme": "LaQshya"
+      },
+      "effectivePeriod": {
+        "periodBasis": "programme-relative",
+        "anchor": "Implementation under the cited LaQshya guideline",
+        "label": "Applies under the cited guideline; no calendar start or end date is asserted by this registry."
+      },
+      "authority": {
+        "source": {
+          "sourceId": "IND_NHM_LAQSHYA_2017",
+          "url": "https://www.nhm.gov.in/New_Updates_2018/NHM_Components/RMNCH_MH_Guidelines/LaQshya-Guidelines.pdf",
+          "locator": "Annexure C: Facility Level Targets for Incentives, PDF pages 41–42"
+        },
+        "sourceVersion": "MoHFW/NHM operational guidelines, 2017",
+        "accessedOn": "2026-09-03",
+        "issuingOrganization": "National Health Mission, Ministry of Health and Family Welfare, Government of India"
+      },
+      "interpretation": {
+        "direction": "at least",
+        "scopeNote": "Official alternative target preserved as an independent reference-value record. It is not an observed result and does not alter the indicator definition."
+      },
+      "publication": {
+        "accessClass": "public",
+        "redistributionStatus": "permitted"
+      },
+      "relativeChange": {
+        "magnitude": 30,
+        "unit": "percent relative change",
+        "direction": "increase",
+        "baseline": "Facility baseline defined by the cited programme source"
+      }
+    },
+    {
+      "id": "REF-LAQ-054-ABS",
+      "recordType": "Reference value",
+      "schemaVersion": "1.4.0",
+      "businessVersion": "1.0.0",
+      "lifecycleStatus": "active",
+      "indicatorCanonicalObjectId": "IND-RMNCHA2-054",
+      "indicatorCanonicalUri": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-RMNCHA2-054",
+      "definitionBusinessVersion": "1.0.0",
+      "referenceType": "target",
+      "applicability": {
+        "geography": "India",
+        "geographyCode": "IN",
+        "geographyLevel": "National programme guidance",
+        "population": "LaQshya-designated labour rooms and maternity operation theatres",
+        "programme": "LaQshya"
+      },
+      "effectivePeriod": {
+        "periodBasis": "programme-relative",
+        "anchor": "Implementation under the cited LaQshya guideline",
+        "label": "Applies under the cited guideline; no calendar start or end date is asserted by this registry."
+      },
+      "authority": {
+        "source": {
+          "sourceId": "IND_NHM_LAQSHYA_2017",
+          "url": "https://www.nhm.gov.in/New_Updates_2018/NHM_Components/RMNCH_MH_Guidelines/LaQshya-Guidelines.pdf",
+          "locator": "Annexure C: Facility Level Targets for Incentives, PDF pages 41–42"
+        },
+        "sourceVersion": "MoHFW/NHM operational guidelines, 2017",
+        "accessedOn": "2026-09-03",
+        "issuingOrganization": "National Health Mission, Ministry of Health and Family Welfare, Government of India"
+      },
+      "interpretation": {
+        "direction": "equal to",
+        "scopeNote": "Official alternative target preserved as an independent reference-value record. It is not an observed result and does not alter the indicator definition."
+      },
+      "publication": {
+        "accessClass": "public",
+        "redistributionStatus": "permitted"
+      },
+      "valueQuantity": {
+        "value": 0,
+        "unit": "%",
+        "comparator": "="
+      }
+    },
+    {
+      "id": "REF-LAQ-054-REL-REDUCTION",
+      "recordType": "Reference value",
+      "schemaVersion": "1.4.0",
+      "businessVersion": "1.0.0",
+      "lifecycleStatus": "active",
+      "indicatorCanonicalObjectId": "IND-RMNCHA2-054",
+      "indicatorCanonicalUri": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-RMNCHA2-054",
+      "definitionBusinessVersion": "1.0.0",
+      "referenceType": "target",
+      "applicability": {
+        "geography": "India",
+        "geographyCode": "IN",
+        "geographyLevel": "National programme guidance",
+        "population": "LaQshya-designated labour rooms and maternity operation theatres",
+        "programme": "LaQshya"
+      },
+      "effectivePeriod": {
+        "periodBasis": "programme-relative",
+        "anchor": "Implementation under the cited LaQshya guideline",
+        "label": "Applies under the cited guideline; no calendar start or end date is asserted by this registry."
+      },
+      "authority": {
+        "source": {
+          "sourceId": "IND_NHM_LAQSHYA_2017",
+          "url": "https://www.nhm.gov.in/New_Updates_2018/NHM_Components/RMNCH_MH_Guidelines/LaQshya-Guidelines.pdf",
+          "locator": "Annexure C: Facility Level Targets for Incentives, PDF pages 41–42"
+        },
+        "sourceVersion": "MoHFW/NHM operational guidelines, 2017",
+        "accessedOn": "2026-09-03",
+        "issuingOrganization": "National Health Mission, Ministry of Health and Family Welfare, Government of India"
+      },
+      "interpretation": {
+        "direction": "at most",
+        "scopeNote": "Official alternative target preserved as an independent reference-value record. It is not an observed result and does not alter the indicator definition."
+      },
+      "publication": {
+        "accessClass": "public",
+        "redistributionStatus": "permitted"
+      },
+      "relativeChange": {
+        "magnitude": 25,
+        "unit": "percent relative change",
+        "direction": "reduction",
+        "baseline": "Facility baseline defined by the cited programme source"
+      }
+    },
+    {
+      "id": "REF-LAQ-055-ABS",
+      "recordType": "Reference value",
+      "schemaVersion": "1.4.0",
+      "businessVersion": "1.0.0",
+      "lifecycleStatus": "active",
+      "indicatorCanonicalObjectId": "IND-RMNCHA2-055",
+      "indicatorCanonicalUri": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-RMNCHA2-055",
+      "definitionBusinessVersion": "1.0.0",
+      "referenceType": "target",
+      "applicability": {
+        "geography": "India",
+        "geographyCode": "IN",
+        "geographyLevel": "National programme guidance",
+        "population": "LaQshya-designated labour rooms and maternity operation theatres",
+        "programme": "LaQshya"
+      },
+      "effectivePeriod": {
+        "periodBasis": "programme-relative",
+        "anchor": "Implementation under the cited LaQshya guideline",
+        "label": "Applies under the cited guideline; no calendar start or end date is asserted by this registry."
+      },
+      "authority": {
+        "source": {
+          "sourceId": "IND_NHM_LAQSHYA_2017",
+          "url": "https://www.nhm.gov.in/New_Updates_2018/NHM_Components/RMNCH_MH_Guidelines/LaQshya-Guidelines.pdf",
+          "locator": "Annexure C: Facility Level Targets for Incentives, PDF pages 41–42"
+        },
+        "sourceVersion": "MoHFW/NHM operational guidelines, 2017",
+        "accessedOn": "2026-09-03",
+        "issuingOrganization": "National Health Mission, Ministry of Health and Family Welfare, Government of India"
+      },
+      "interpretation": {
+        "direction": "equal to",
+        "scopeNote": "Official alternative target preserved as an independent reference-value record. It is not an observed result and does not alter the indicator definition."
+      },
+      "publication": {
+        "accessClass": "public",
+        "redistributionStatus": "permitted"
+      },
+      "valueQuantity": {
+        "value": 0,
+        "unit": "%",
+        "comparator": "="
+      }
+    },
+    {
+      "id": "REF-LAQ-055-REL-REDUCTION",
+      "recordType": "Reference value",
+      "schemaVersion": "1.4.0",
+      "businessVersion": "1.0.0",
+      "lifecycleStatus": "active",
+      "indicatorCanonicalObjectId": "IND-RMNCHA2-055",
+      "indicatorCanonicalUri": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-RMNCHA2-055",
+      "definitionBusinessVersion": "1.0.0",
+      "referenceType": "target",
+      "applicability": {
+        "geography": "India",
+        "geographyCode": "IN",
+        "geographyLevel": "National programme guidance",
+        "population": "LaQshya-designated labour rooms and maternity operation theatres",
+        "programme": "LaQshya"
+      },
+      "effectivePeriod": {
+        "periodBasis": "programme-relative",
+        "anchor": "Implementation under the cited LaQshya guideline",
+        "label": "Applies under the cited guideline; no calendar start or end date is asserted by this registry."
+      },
+      "authority": {
+        "source": {
+          "sourceId": "IND_NHM_LAQSHYA_2017",
+          "url": "https://www.nhm.gov.in/New_Updates_2018/NHM_Components/RMNCH_MH_Guidelines/LaQshya-Guidelines.pdf",
+          "locator": "Annexure C: Facility Level Targets for Incentives, PDF pages 41–42"
+        },
+        "sourceVersion": "MoHFW/NHM operational guidelines, 2017",
+        "accessedOn": "2026-09-03",
+        "issuingOrganization": "National Health Mission, Ministry of Health and Family Welfare, Government of India"
+      },
+      "interpretation": {
+        "direction": "at most",
+        "scopeNote": "Official alternative target preserved as an independent reference-value record. It is not an observed result and does not alter the indicator definition."
+      },
+      "publication": {
+        "accessClass": "public",
+        "redistributionStatus": "permitted"
+      },
+      "relativeChange": {
+        "magnitude": 25,
+        "unit": "percent relative change",
+        "direction": "reduction",
+        "baseline": "Facility baseline defined by the cited programme source"
+      }
+    },
+    {
+      "id": "REF-LAQ-058-ABS",
+      "recordType": "Reference value",
+      "schemaVersion": "1.4.0",
+      "businessVersion": "1.0.0",
+      "lifecycleStatus": "active",
+      "indicatorCanonicalObjectId": "IND-RMNCHA2-058",
+      "indicatorCanonicalUri": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-RMNCHA2-058",
+      "definitionBusinessVersion": "1.0.0",
+      "referenceType": "target",
+      "applicability": {
+        "geography": "India",
+        "geographyCode": "IN",
+        "geographyLevel": "National programme guidance",
+        "population": "LaQshya-designated labour rooms and maternity operation theatres",
+        "programme": "LaQshya"
+      },
+      "effectivePeriod": {
+        "periodBasis": "programme-relative",
+        "anchor": "Implementation under the cited LaQshya guideline",
+        "label": "Applies under the cited guideline; no calendar start or end date is asserted by this registry."
+      },
+      "authority": {
+        "source": {
+          "sourceId": "IND_NHM_LAQSHYA_2017",
+          "url": "https://www.nhm.gov.in/New_Updates_2018/NHM_Components/RMNCH_MH_Guidelines/LaQshya-Guidelines.pdf",
+          "locator": "Annexure C: Facility Level Targets for Incentives, PDF pages 41–42"
+        },
+        "sourceVersion": "MoHFW/NHM operational guidelines, 2017",
+        "accessedOn": "2026-09-03",
+        "issuingOrganization": "National Health Mission, Ministry of Health and Family Welfare, Government of India"
+      },
+      "interpretation": {
+        "direction": "equal to",
+        "scopeNote": "Official alternative target preserved as an independent reference-value record. It is not an observed result and does not alter the indicator definition."
+      },
+      "publication": {
+        "accessClass": "public",
+        "redistributionStatus": "permitted"
+      },
+      "valueQuantity": {
+        "value": 100,
+        "unit": "%",
+        "comparator": "="
+      }
+    },
+    {
+      "id": "REF-LAQ-059-ABS",
+      "recordType": "Reference value",
+      "schemaVersion": "1.4.0",
+      "businessVersion": "1.0.0",
+      "lifecycleStatus": "active",
+      "indicatorCanonicalObjectId": "IND-RMNCHA2-059",
+      "indicatorCanonicalUri": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-RMNCHA2-059",
+      "definitionBusinessVersion": "1.0.0",
+      "referenceType": "target",
+      "applicability": {
+        "geography": "India",
+        "geographyCode": "IN",
+        "geographyLevel": "National programme guidance",
+        "population": "LaQshya-designated labour rooms and maternity operation theatres",
+        "programme": "LaQshya"
+      },
+      "effectivePeriod": {
+        "periodBasis": "programme-relative",
+        "anchor": "Implementation under the cited LaQshya guideline",
+        "label": "Applies under the cited guideline; no calendar start or end date is asserted by this registry."
+      },
+      "authority": {
+        "source": {
+          "sourceId": "IND_NHM_LAQSHYA_2017",
+          "url": "https://www.nhm.gov.in/New_Updates_2018/NHM_Components/RMNCH_MH_Guidelines/LaQshya-Guidelines.pdf",
+          "locator": "Annexure C: Facility Level Targets for Incentives, PDF pages 41–42"
+        },
+        "sourceVersion": "MoHFW/NHM operational guidelines, 2017",
+        "accessedOn": "2026-09-03",
+        "issuingOrganization": "National Health Mission, Ministry of Health and Family Welfare, Government of India"
+      },
+      "interpretation": {
+        "direction": "at least",
+        "scopeNote": "Official alternative target preserved as an independent reference-value record. It is not an observed result and does not alter the indicator definition."
+      },
+      "publication": {
+        "accessClass": "public",
+        "redistributionStatus": "permitted"
+      },
+      "valueQuantity": {
+        "value": 80,
+        "unit": "percentage score",
+        "comparator": ">="
+      }
+    },
+    {
+      "id": "REF-LAQ-059-REL-INCREASE",
+      "recordType": "Reference value",
+      "schemaVersion": "1.4.0",
+      "businessVersion": "1.0.0",
+      "lifecycleStatus": "active",
+      "indicatorCanonicalObjectId": "IND-RMNCHA2-059",
+      "indicatorCanonicalUri": "https://abeezith.github.io/Public-Health-Analytics-OS/id/IND-RMNCHA2-059",
+      "definitionBusinessVersion": "1.0.0",
+      "referenceType": "target",
+      "applicability": {
+        "geography": "India",
+        "geographyCode": "IN",
+        "geographyLevel": "National programme guidance",
+        "population": "LaQshya-designated labour rooms and maternity operation theatres",
+        "programme": "LaQshya"
+      },
+      "effectivePeriod": {
+        "periodBasis": "programme-relative",
+        "anchor": "Implementation under the cited LaQshya guideline",
+        "label": "Applies under the cited guideline; no calendar start or end date is asserted by this registry."
+      },
+      "authority": {
+        "source": {
+          "sourceId": "IND_NHM_LAQSHYA_2017",
+          "url": "https://www.nhm.gov.in/New_Updates_2018/NHM_Components/RMNCH_MH_Guidelines/LaQshya-Guidelines.pdf",
+          "locator": "Annexure C: Facility Level Targets for Incentives, PDF pages 41–42"
+        },
+        "sourceVersion": "MoHFW/NHM operational guidelines, 2017",
+        "accessedOn": "2026-09-03",
+        "issuingOrganization": "National Health Mission, Ministry of Health and Family Welfare, Government of India"
+      },
+      "interpretation": {
+        "direction": "at least",
+        "scopeNote": "Official alternative target preserved as an independent reference-value record. It is not an observed result and does not alter the indicator definition."
+      },
+      "publication": {
+        "accessClass": "public",
+        "redistributionStatus": "permitted"
+      },
+      "relativeChange": {
+        "magnitude": 30,
+        "unit": "percent relative change",
+        "direction": "increase",
+        "baseline": "Facility baseline defined by the cited programme source"
+      }
+    }
+  ],
+  "interpretationBoundary": "Only explicit numeric targets in the cited source table are represented. Compliance-status and frequency statements are not coerced into numeric targets. Alternative absolute and baseline-relative targets remain separate. No observed health values are included."
+}
