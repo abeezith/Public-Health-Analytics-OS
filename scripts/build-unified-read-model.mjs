@@ -4,6 +4,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { operationalDiscovery } from './operational-discovery.mjs';
 import { disaggregationProfile } from './disaggregation-profile.mjs';
+import { qualityComparabilityProfile } from './quality-comparability-profile.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = relative => JSON.parse(fs.readFileSync(path.join(root, relative), 'utf8'));
@@ -163,6 +164,7 @@ const records = identities.canonicalObjects.map(identity => {
   } : null;
   const discoveryProfile = operationalDiscovery({indicator:indicatorMetadata,hmis:hmisMetadata,objectType:identity.canonicalObjectType,provenance,lifecycleStatus:identity.lifecycleStatus});
   const disaggregation = disaggregationProfile({canonicalObjectId:identity.canonicalObjectId,indicator:indicatorMetadata,hmis:hmisMetadata,provenance,normalizedLowestReportingLevel:normalizeLowestReportingLevel(level),observedReportSchema:observedReportCanonicalIds.has(identity.canonicalObjectId)?observedReportSchema:null});
+  const qualityComparability = qualityComparabilityProfile({canonicalObjectId:identity.canonicalObjectId,indicator:indicatorMetadata,hmis:hmisMetadata});
   return {
     canonicalObjectId: identity.canonicalObjectId,
     canonicalUri: identity.canonicalUri,
@@ -186,6 +188,7 @@ const records = identities.canonicalObjects.map(identity => {
     provenance,
     operationalDiscovery: discoveryProfile,
     disaggregationProfile: disaggregation,
+    qualityComparabilityProfile: qualityComparability,
     indicatorMetadata,
     hmisMetadata
   };
@@ -280,20 +283,26 @@ const disaggregationCounts={
   analystRecommended:records.reduce((sum,item)=>sum+item.disaggregationProfile.assertionCounts.analystRecommended,0),
   noGovernedAssertion:records.filter(item=>!item.disaggregationProfile.assertions.length).length
 };
+const qualityComparabilityCounts={
+  profiles:records.length,
+  pilotProfiles:records.filter(item=>item.qualityComparabilityProfile.pilotStatus==='Pilot profile available').length,
+  pendingDomainReview:records.filter(item=>item.qualityComparabilityProfile.reviewStatus==='Analyst-curated pilot — domain review pending').length,
+  notInPilot:records.filter(item=>item.qualityComparabilityProfile.pilotStatus==='Not in 30-indicator pilot').length
+};
 const model = {
   metadata: {
     id: 'PHAOS-UNIFIED-READ-MODEL',
     title: 'Public Health Analytics-OS consolidated discovery read model',
-    version: '1.6.0',
+    version: '1.7.0',
     generated: releaseDate,
-    task: 'UTILITY-02',
+    task: 'UTILITY-03',
     identityIndexVersion: identities.metadata.version,
     taxonomyVersion: identities.metadata.taxonomyVersion,
     discoveryFacetVersion: discovery.metadata.version,
     provenanceModel: 'PHAOS-PROVENANCE-001',
     interpretationBoundary: 'This generated read model consolidates discovery metadata and preserves source representations in separate namespaces. Provenance summaries expose review evidence but do not assert semantic equivalence, aggregation safety, computability, source currency or custodian approval.'
   },
-  counts: {...identities.counts, registryMemberships:membershipCounts, navigation:navigationCounts, disaggregation:disaggregationCounts},
+  counts: {...identities.counts, registryMemberships:membershipCounts, navigation:navigationCounts, disaggregation:disaggregationCounts, qualityComparability:qualityComparabilityCounts},
   metrics: {ncdReleaseRecords:ncdRelease.records.length,ncdSourceDocuments:ncdRelease.sources.length},
   coverage: indicatorRelease.coverage,
   records,
@@ -303,7 +312,7 @@ const model = {
 write(modelPath, model);
 const bytes = fs.readFileSync(path.join(root, modelPath));
 const manifest = {
-  metadata: {id:'PHAOS-UNIFIED-READ-MODEL-MANIFEST',version:'1.6.0',generated:releaseDate,task:'UTILITY-02'},
+  metadata: {id:'PHAOS-UNIFIED-READ-MODEL-MANIFEST',version:'1.7.0',generated:releaseDate,task:'UTILITY-03'},
   distribution: {path:'unified-read-model.json',mediaType:'application/json',bytes:bytes.length,sha256:crypto.createHash('sha256').update(bytes).digest('hex')},
   counts: model.counts,
   sources: [
@@ -311,6 +320,8 @@ const manifest = {
     'indicators/data/governance/discovery-facets.json',
     'indicators/data/governance/operational-discovery-model.json',
     'indicators/data/governance/disaggregation-model.json',
+    'indicators/data/governance/quality-comparability-model.json',
+    'indicators/data/governance/quality-comparability-pilot.json',
     'indicators/data/indicators.json',
     'indicators/data/ncd/release.json',
     'indicators/data/hmis/catalog.json',

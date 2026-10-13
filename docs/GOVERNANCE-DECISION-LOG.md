@@ -208,6 +208,18 @@ This log records material governance decisions separately from indicator and sof
 - **Migration and review date:** Apply the model through reviewed assertions in the equity pilot. Reassess after 20 reviewed records, any authorized operational export or by 13 October 2027.
 - **Supersedes:** Uncontrolled free-text disaggregation as a sufficient availability statement.
 
+## GOV-DEC-017 — Publish source-aware quality and comparability guidance as a reviewed pilot
+
+- **Date:** 13 October 2026
+- **Status:** Adopted
+- **Decision owner:** Analytics-OS maintainer
+- **Decision:** Adopt `PHAOS-DQCOMP-001` and read model 1.7.0 for a balanced 30-indicator pilot across five priority India programmes.
+- **Reason and evidence:** Analysts need risks, minimum inputs and comparison conditions alongside definitions. Source documents do not consistently state reporting lag or operational quality rules, so unknowns and analyst interpretation must remain explicit.
+- **Alternatives considered:** Inferring lag from frequency, presenting generic checks as official programme rules, and silently omitting non-pilot objects were rejected as misleading.
+- **Affected artifacts or decision rights:** Consolidated read model, Registry and HMIS discovery, release gate and trackers. Source custodians retain authority; programme reviewers must accept or amend pilot guidance before it can be labelled domain reviewed.
+- **Migration and review date:** Complete domain review before expansion beyond the pilot or by 13 October 2027.
+- **Supersedes:** Unstructured quality cautions available only through legacy caveat text.
+
 ## Decision record template
 
 - **ID and title:**

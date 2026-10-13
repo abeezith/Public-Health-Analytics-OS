@@ -11,7 +11,7 @@ const observations=read('indicators/data/observations/manifest.json');
 const facets=policy.facets;
 
 if(policy.metadata.id!=='PHAOS-OPDISC-001'||policy.metadata.version!=='1.0.0')fail('Unexpected operational-discovery policy.');
-if(model.metadata.version!=='1.6.0'||model.records.length!==4743)fail('Operational discovery requires read model 1.6.0 with 4,743 records.');
+if(model.metadata.version!=='1.7.0'||model.records.length!==4743)fail('Operational discovery requires read model 1.7.0 with 4,743 records.');
 const maturityValues=new Set;
 for(const record of model.records){
   const profile=record.operationalDiscovery;

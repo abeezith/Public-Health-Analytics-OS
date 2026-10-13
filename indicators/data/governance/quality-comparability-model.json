@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "id": "PHAOS-DQCOMP-001",
+    "title": "Public Health Analytics-OS data-quality and comparability profile",
+    "version": "1.0.0",
+    "status": "Adopted for UTILITY-03 pilot",
+    "adoptedOn": "2026-10-13"
+  },
+  "scope": "Interpretation safeguards for a balanced 30-indicator India pilot; no observed values are assessed.",
+  "requiredFields": [
+    "expectedReportingLag",
+    "knownIssues",
+    "commonMisinterpretations",
+    "minimumDataRequirements",
+    "validationChecks",
+    "comparability",
+    "evidence",
+    "reviewStatus"
+  ],
+  "controlledValues": {
+    "pilotStatus": ["Pilot profile available", "Not in 30-indicator pilot"],
+    "evidenceState": ["Source-aware analyst guidance; domain review pending", "No governed pilot profile"],
+    "lagState": ["Stated by source", "Not stated in cited evidence"],
+    "comparabilityStatus": ["Conditional only", "Not assessed"],
+    "issueCategory": ["Completeness", "Timeliness", "Case definition", "Denominator alignment", "Numerator classification", "Duplicate risk", "Cohort maturity", "Reporting intensity", "Small numbers", "Measurement practice", "Source-version sensitivity"]
+  },
+  "rules": [
+    "An expected lag is never invented when the cited source does not state one.",
+    "A validation check is a review safeguard, not proof that a value is valid.",
+    "Comparability is conditional on compatible definition, numerator, denominator, period, geography and source version.",
+    "The profile does not rate programme performance or data quality without observed values.",
+    "Analyst guidance remains visibly distinct from source-stated metadata and domain-reviewed evidence."
+  ],
+  "publicationBoundary": "Metadata-only pilot. No person-level or aggregate values, automated exclusions, performance ratings or public bulk-download controls."
+}
