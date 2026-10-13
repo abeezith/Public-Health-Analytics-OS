@@ -22,6 +22,8 @@
 - [x] Desktop browser UAT: `HMIS-DE-0001` showed zero source-required, six artefact-bounded system-available and zero analyst-recommended assertions, including evidence and applicability.
 - [x] Desktop browser UAT: table view exposed `Disaggregation evidence`; browser console contained no warnings or errors.
 - [x] Integrated release gate passed all 13 checks after the browser-discovered default-filter defect was corrected.
-- [ ] Narrow-viewport UAT, GitHub Actions deployment and live smoke test recorded after publication.
+- [x] Narrow-viewport UAT at 390 × 844 px showed no document overflow (`383 px` document width within a `390 px` viewport); filter and result regions remained within the content width.
+- [x] GitHub Actions validation run `38406392026` passed for release commit `f4704f2`.
+- [x] Live GitHub Pages smoke test returned all 1,046 HMIS objects by default and 506 objects for `Administrative geography` + `System-available`, with no browser warnings or errors.
 
 Passing UAT proves evidence-separated metadata assertions. It does not prove that a dimension is populated, complete, comparable, privacy-safe or available outside the cited artefact.
